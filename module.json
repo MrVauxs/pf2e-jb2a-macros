@@ -1,56 +1,60 @@
 {
-  "name": "pf2e-jb2a-macros",
-  "title": "PF2e x JB2A Macros Compendium",
-  "description": "<p>A module dedicated to making PF2e shine.</p>",
-  "version": "1.0.0",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
-  "author": "MrVauxs and Co.",
-  "systems": [
-    "pf2e"
-  ],
-  "scripts": [
-    "./module/auto-import.js"
-  ],
-  "esmodules": [],
-  "styles": [],
-  "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
-  "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/manifest.json",
-  "download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.zip",
-  "packs": [
-    {
-      "label": "PF2e x JB2A Macros",
-      "entity": "Macro",
-      "name": "Macros",
-      "path": "packs/macros.db",
-      "system": "pf2e"
-    },
-    {
-      "label": "PF2e x JB2A Actors",
-      "entity": "Actor",
-      "name": "Actors",
-      "path": "packs/actors.db",
-      "system": "pf2e"
-    }
-  ],
-  "dependencies": [
-    {
-      "name": "sequencer",
-      "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json"
-    },
-    {
-      "name": "autoanimations",
-      "manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json"
-    },
-    {
-      "name": "warpgate",
-      "manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
-    },
-    {
-      "name": "soundfxlibrary",
-      "manifest": "https://raw.githubusercontent.com/CDeenen/SoundFxLibrary/master/module.json"
-    }
-  ],
-  "languages": [],
-  "socket": false
+    "name": "pf2e-jb2a-macros",
+    "title": "PF2e x JB2A Macros Compendium",
+    "description": "<p>A module dedicated to making PF2e shine.</p>",
+    "version": "1.1.0",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9",
+    "author": "MrVauxs and Co.",
+    "systems": [
+        "pf2e"
+    ],
+    "scripts": [
+        "./module/auto-import.js"
+    ],
+    "esmodules": [],
+    "styles": [],
+    "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
+    "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
+    "download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/download/1.1.0/module.zip",
+    "packs": [
+        {
+            "label": "PF2e x JB2A Macros",
+            "entity": "Macro",
+            "name": "Macros",
+            "path": "packs/macros.db",
+            "system": "pf2e"
+        },
+        {
+            "label": "PF2e x JB2A Actors",
+            "entity": "Actor",
+            "name": "Actors",
+            "path": "packs/actors.db",
+            "system": "pf2e"
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "sequencer",
+            "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json"
+        },
+        {
+            "name": "autoanimations",
+            "manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json"
+        },
+        {
+            "name": "warpgate",
+            "manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
+        },
+        {
+            "name": "soundfxlibrary",
+            "manifest": "https://raw.githubusercontent.com/CDeenen/SoundFxLibrary/master/module.json"
+        },
+        {
+            "name": "socketlib",
+            "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
+        }
+    ],
+    "languages": [],
+    "socket": false
 }
