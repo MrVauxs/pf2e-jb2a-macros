@@ -19332,6 +19332,41 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
+      "name": "Bless",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Bless_Animation",
+        "args": ""
+      },
+      "type": "source",
+      "staticOptions": "creature",
+      "animation": "a1",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuType": "spell"
+    },
+    "23": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
       "name": "Daze",
       "soundOnly": {
         "enable": false
@@ -19590,58 +19625,31 @@
   },
   "auras": {
     "0": {
-      "tint": "#ffffff",
-      "below": true,
       "hidden": true,
-      "name": "Bless",
+      "name": "Spirit Guardians",
       "soundOnly": {
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
       },
-      "menuType": "spell",
-      "animation": "bless",
-      "variant": "loop",
-      "color": "yellow",
+      "animation": "spiritguardians",
+      "variant": "01",
+      "color": "darkblue",
+      "scale": 3.5,
+      "opacity": 0.75,
+      "ignoretargets": true,
+      "below": false,
       "custom": false,
-      "scale": 2,
-      "opacity": null,
-      "ignoretargets": false,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
       "audio": {
         "a01": {
           "enable": false
         }
-      }
-    },
-    "1": {
-      "tint": "#ffffff",
-      "below": true,
-      "hidden": true,
-      "name": "Bane",
-      "soundOnly": {
-        "enable": false
       },
-      "macro": {
-        "enable": false
-      },
-      "menuType": "spell",
-      "animation": "bless",
-      "variant": "loop",
-      "color": "purple",
-      "custom": false,
-      "scale": 2,
-      "opacity": null,
-      "ignoretargets": false,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      }
+      "menuType": "spell"
     }
   },
   "preset": {
@@ -19769,6 +19777,30 @@
       "afterEffect": false
     },
     "4": {
+      "below": false,
+      "hidden": true,
+      "name": "Hunt Prey (unused)",
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "animation": "huntersmark",
+      "variant": "eye",
+      "color": "green",
+      "scale": null,
+      "persistent": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "anchorX": null,
+      "anchorY": null,
+      "menuSection": "3"
+    },
+    "5": {
       "animation": "shieldspell",
       "below": false,
       "color": "blue",
@@ -20228,8 +20260,8 @@
       },
       "repeat": null,
       "delay": null,
-      "scale": null,
-      "opacity": 0.5,
+      "scale": 0.75,
+      "opacity": null,
       "aeDelay": null,
       "persistent": true,
       "unbindAlpha": false,
@@ -20271,6 +20303,41 @@
       "explosion": {
         "enable": false
       }
+    },
+    "14": {
+      "below": false,
+      "hidden": false,
+      "name": "Raise a Shield",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "generic",
+      "animation": "indicator",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": 0.5,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "modules/jb2a_patreon/Library/Generic/Energy/Shimmer01_01_Regular_Blue_400x400.webm"
     }
   }
 }
