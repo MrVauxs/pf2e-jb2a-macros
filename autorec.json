@@ -19623,35 +19623,7 @@
       "persistType": "attachtemplate"
     }
   },
-  "auras": {
-    "0": {
-      "hidden": true,
-      "name": "Spirit Guardians",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "animation": "spiritguardians",
-      "variant": "01",
-      "color": "darkblue",
-      "scale": 3.5,
-      "opacity": 0.75,
-      "ignoretargets": true,
-      "below": false,
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "menuType": "spell"
-    }
-  },
+  "auras": {},
   "preset": {
     "0": {
       "hidden": true,
@@ -19799,35 +19771,13 @@
       "anchorX": null,
       "anchorY": null,
       "menuSection": "3"
-    },
-    "5": {
-      "animation": "shieldspell",
-      "below": false,
-      "color": "blue",
-      "endeffect": "outro_explode",
-      "hidden": true,
-      "name": "Shield",
-      "scale": 1,
-      "variant": "01",
-      "menuSection": "5",
-      "macro": {
-        "enable": false
-      },
-      "addCTA": true,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "unbindAlpha": false,
-      "unbindVisibility": false
     }
   },
   "aefx": {
     "0": {
       "below": false,
       "hidden": true,
-      "name": "Shield",
+      "name": "Effect Shield",
       "soundOnly": {
         "enable": false
       },
@@ -19863,7 +19813,7 @@
     "1": {
       "below": false,
       "hidden": true,
-      "name": "Shillelagh",
+      "name": "Effect Shillelagh",
       "soundOnly": {
         "enable": false
       },
@@ -19931,7 +19881,7 @@
     "3": {
       "below": false,
       "hidden": true,
-      "name": "Panache",
+      "name": "Effect Panache",
       "soundOnly": {
         "enable": false
       },
@@ -19965,7 +19915,7 @@
     "4": {
       "below": false,
       "hidden": true,
-      "name": "Guidance",
+      "name": "Effect Guidance",
       "soundOnly": {
         "enable": false
       },
@@ -20000,7 +19950,7 @@
     "5": {
       "below": false,
       "hidden": true,
-      "name": "Dueling Parry",
+      "name": "Effect Dueling Parry",
       "soundOnly": {
         "enable": false
       },
@@ -20035,7 +19985,7 @@
     "6": {
       "below": false,
       "hidden": true,
-      "name": "Quicksilver Mutagen",
+      "name": "Effect Quicksilver Mutagen",
       "soundOnly": {
         "enable": false
       },
@@ -20239,7 +20189,7 @@
     "12": {
       "below": false,
       "hidden": true,
-      "name": "Mage Armor",
+      "name": "Effect Mage Armor",
       "soundOnly": {
         "enable": false
       },
@@ -20273,7 +20223,7 @@
     "13": {
       "below": false,
       "hidden": true,
-      "name": "Magic Weapon",
+      "name": "Effect Magic Weapon",
       "soundOnly": {
         "enable": false
       },
@@ -20306,8 +20256,8 @@
     },
     "14": {
       "below": false,
-      "hidden": false,
-      "name": "Raise a Shield",
+      "hidden": true,
+      "name": "Effect Raise a Shield",
       "soundOnly": {
         "enable": false
       },
