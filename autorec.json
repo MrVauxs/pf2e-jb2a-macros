@@ -18381,6 +18381,152 @@
       },
       "customPath": "",
       "onlyX": false
+    },
+    "97": {
+      "hidden": false,
+      "anim2d": false,
+      "name": "Alchemist's Fire",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "type": "weapon",
+      "animation": "pumpkin",
+      "variant": "01",
+      "color": "random",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "weapon",
+      "explosion": {
+        "enable": true,
+        "menuType": "fire",
+        "animation": "fireworks",
+        "variant": "01",
+        "color": "orange",
+        "custom": false,
+        "radius": 1.5,
+        "delay": 300,
+        "below": false
+      }
+    },
+    "98": {
+      "hidden": false,
+      "anim2d": false,
+      "name": "Frost Vial",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "type": "weapon",
+      "animation": "pumpkin",
+      "variant": "01",
+      "color": "random",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "weapon",
+      "explosion": {
+        "enable": true,
+        "menuType": "ice",
+        "animation": "snowflake",
+        "variant": "01",
+        "color": "whiteblue",
+        "custom": false,
+        "radius": 1.5,
+        "delay": 300,
+        "below": false
+      }
     }
   },
   "static": {
@@ -19959,11 +20105,11 @@
       },
       "aeType": "static",
       "type": "source",
-      "menuType": "",
-      "animation": "",
-      "variant": "",
-      "color": "",
-      "custom": true,
+      "menuType": "energy",
+      "animation": "shimmer",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
       "audio": {
         "a01": {
           "enable": false
@@ -20244,7 +20390,7 @@
       },
       "repeat": null,
       "delay": null,
-      "scale": 1.25,
+      "scale": 1.3,
       "opacity": null,
       "aeDelay": null,
       "persistent": true,
@@ -20266,11 +20412,11 @@
       },
       "aeType": "static",
       "type": "source",
-      "menuType": "generic",
-      "animation": "indicator",
-      "variant": "",
-      "color": "",
-      "custom": true,
+      "menuType": "energy",
+      "animation": "shimmer",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
       "audio": {
         "a01": {
           "enable": false
@@ -20288,6 +20434,40 @@
         "enable": false
       },
       "customPath": "modules/jb2a_patreon/Library/Generic/Energy/Shimmer01_01_Regular_Blue_400x400.webm"
+    },
+    "15": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Drakeheart Mutagen",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "shieldfx",
+      "animation": "earth",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     }
   }
 }
