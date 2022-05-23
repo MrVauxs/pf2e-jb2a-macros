@@ -18383,7 +18383,7 @@
       "onlyX": false
     },
     "97": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Alchemist's Fire",
       "soundOnly": {
@@ -18456,7 +18456,7 @@
       }
     },
     "98": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Frost Vial",
       "soundOnly": {
@@ -18524,6 +18524,221 @@
         "color": "whiteblue",
         "custom": false,
         "radius": 1.5,
+        "delay": 300,
+        "below": false
+      }
+    },
+    "99": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Acid Flask",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "type": "weapon",
+      "animation": "pumpkin",
+      "variant": "01",
+      "color": "random",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "weapon",
+      "explosion": {
+        "enable": true,
+        "menuType": "liquid",
+        "animation": "splash",
+        "variant": "01",
+        "color": "brightgreen",
+        "custom": false,
+        "radius": 1.5,
+        "delay": 300,
+        "below": false
+      }
+    },
+    "100": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Acid Splash",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "firebolt",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "liquid",
+        "animation": "splash",
+        "variant": "01",
+        "color": "green",
+        "custom": false,
+        "radius": 1.5,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "101": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Peshpine Grenade",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "type": "weapon",
+      "animation": "pumpkin",
+      "variant": "01",
+      "color": "random",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "weapon",
+      "explosion": {
+        "enable": true,
+        "menuType": "spell",
+        "animation": "shatter",
+        "variant": "01",
+        "color": "orange",
+        "custom": false,
+        "radius": 2,
         "delay": 300,
         "below": false
       }
@@ -20451,6 +20666,108 @@
       "animation": "earth",
       "variant": "01",
       "color": "orange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "16": {
+      "below": false,
+      "hidden": true,
+      "name": "Persistent Damage Fire",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "shieldfx",
+      "animation": "fire",
+      "variant": "03",
+      "color": "orange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "17": {
+      "below": false,
+      "hidden": true,
+      "name": "Persistent Damage Acid",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "drop",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "18": {
+      "below": false,
+      "hidden": true,
+      "name": "Persistent Damage Poison",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "poison",
+      "variant": "01",
+      "color": "darkgreen",
       "custom": false,
       "audio": {
         "a01": {
