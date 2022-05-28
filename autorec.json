@@ -19693,41 +19693,6 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Bless",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Bless_Animation",
-        "args": ""
-      },
-      "type": "source",
-      "staticOptions": "creature",
-      "animation": "a1",
-      "variant": "",
-      "color": "",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "persistent": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "explosion": {
-        "enable": false
-      },
-      "menuType": "spell"
-    },
-    "23": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
       "name": "Daze",
       "soundOnly": {
         "enable": false
@@ -19984,7 +19949,68 @@
       "persistType": "attachtemplate"
     }
   },
-  "auras": {},
+  "auras": {
+    "0": {
+      "tint": "#ffffff",
+      "below": true,
+      "hidden": false,
+      "name": "Bless",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Bless_Animation",
+        "args": ""
+      },
+      "menuType": "spell",
+      "animation": "bless",
+      "variant": "loop",
+      "color": "yellow",
+      "custom": false,
+      "scale": 2,
+      "opacity": null,
+      "ignoretargets": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "1": {
+      "tint": "#ffffff",
+      "below": true,
+      "hidden": false,
+      "name": "Bane",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Bane_Animation",
+        "args": ""
+      },
+      "menuType": "spell",
+      "animation": "bless",
+      "variant": "loop",
+      "color": "purple",
+      "custom": false,
+      "scale": 2,
+      "opacity": null,
+      "ignoretargets": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    }
+  },
   "preset": {
     "0": {
       "hidden": true,
@@ -20014,26 +20040,6 @@
       }
     },
     "1": {
-      "hidden": true,
-      "name": "Bless",
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "animation": "bless",
-      "scale": 1.5,
-      "below": true,
-      "color": "yellow",
-      "addCTA": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      }
-    },
-    "2": {
       "hidden": true,
       "name": "Misty Step",
       "macro": {
@@ -20065,7 +20071,7 @@
       "menuType": "spell",
       "menuType02": "spell"
     },
-    "3": {
+    "2": {
       "below": false,
       "hidden": true,
       "name": "Fireball",
@@ -20109,7 +20115,7 @@
       "explosion02Scale": 1.5,
       "afterEffect": false
     },
-    "4": {
+    "3": {
       "below": false,
       "hidden": true,
       "name": "Hunt Prey (unused)",
@@ -20136,6 +20142,210 @@
   },
   "aefx": {
     "0": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Wild Shape",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "energy",
+      "animation": "energyfield",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "1": {
+      "below": false,
+      "hidden": true,
+      "name": "Stunned 1",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "stun",
+      "variant": "03",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "2": {
+      "below": false,
+      "hidden": true,
+      "name": "Stunned 2",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "stun",
+      "variant": "02",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "3": {
+      "below": false,
+      "hidden": true,
+      "name": "Stunned 3",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "stun",
+      "variant": "03",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "4": {
+      "below": false,
+      "hidden": true,
+      "name": "Dazzled",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "marker",
+      "animation": "circleofstars",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": 0.8,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "5": {
+      "below": false,
+      "hidden": true,
+      "name": "Blinded",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "darkness",
+      "variant": "01",
+      "color": "black",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": 0.8,
+      "opacity": 0.9,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "6": {
       "below": false,
       "hidden": true,
       "name": "Effect Shield",
@@ -20171,7 +20381,7 @@
       "endeffect": "outro_explode",
       "addCTA": true
     },
-    "1": {
+    "7": {
       "below": false,
       "hidden": true,
       "name": "Effect Shillelagh",
@@ -20205,41 +20415,7 @@
         "enable": false
       }
     },
-    "2": {
-      "below": false,
-      "hidden": true,
-      "name": "Wild Shape",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "energy",
-      "animation": "energyfield",
-      "variant": "01",
-      "color": "green",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "3": {
+    "8": {
       "below": false,
       "hidden": true,
       "name": "Effect Panache",
@@ -20273,7 +20449,7 @@
         "enable": false
       }
     },
-    "4": {
+    "9": {
       "below": false,
       "hidden": true,
       "name": "Effect Guidance",
@@ -20308,7 +20484,7 @@
       },
       "addCTA": true
     },
-    "5": {
+    "10": {
       "below": false,
       "hidden": true,
       "name": "Effect Dueling Parry",
@@ -20343,7 +20519,7 @@
       },
       "customPath": "modules/jb2a_patreon/Library/Generic/Energy/Shimmer01_01_Regular_Orange_400x400.webm"
     },
-    "6": {
+    "11": {
       "below": false,
       "hidden": true,
       "name": "Effect Quicksilver Mutagen",
@@ -20369,176 +20545,6 @@
       "delay": null,
       "scale": null,
       "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "7": {
-      "below": false,
-      "hidden": true,
-      "name": "Stunned 1",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "conditions",
-      "animation": "stun",
-      "variant": "03",
-      "color": "random",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "8": {
-      "below": false,
-      "hidden": true,
-      "name": "Stunned 2",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "conditions",
-      "animation": "stun",
-      "variant": "02",
-      "color": "random",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "9": {
-      "below": false,
-      "hidden": true,
-      "name": "Stunned 3",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "conditions",
-      "animation": "stun",
-      "variant": "03",
-      "color": "random",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "10": {
-      "below": false,
-      "hidden": true,
-      "name": "Dazzled",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "marker",
-      "animation": "circleofstars",
-      "variant": "01",
-      "color": "random",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": 0.8,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "11": {
-      "below": false,
-      "hidden": true,
-      "name": "Blinded",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "spell",
-      "animation": "darkness",
-      "variant": "01",
-      "color": "black",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": 0.8,
-      "opacity": 0.9,
       "aeDelay": null,
       "persistent": true,
       "unbindAlpha": false,
