@@ -1,4 +1,4 @@
-let version = 111
+let version = 160
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -8,6 +8,11 @@ Hooks.on("init", () => {
 		hint: "Whether or not you have imported the contents of the module using the pop-up when you enabled the module.\nDisable to have them imported again automatically.",
 		type: Boolean,
 		default: false
+	});
+	game.settings.register("pf2e-jb2a-macros", "version", {
+		scope: "world",
+		type: number,
+		default: 0
 	});
 })
 
@@ -30,6 +35,8 @@ async function importAllMacros() {
 		await pack.importAll();
 		if (p.entity === "Macro") macros = game.folders.getName(p.label);
 		if (p.entity === "Actor") actors = game.folders.getName(p.label);
+		if (p.entity === "Item") items = game.folders.getName(p.label);
 	}
-	return game.settings.set("pf2e-jb2a-macros", "imported", true);
+	game.settings.set("pf2e-jb2a-macros", "imported", true);
+	game.settings.set("pf2e-jb2a-macros", "version", version);
 }
