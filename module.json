@@ -2,7 +2,7 @@
     "name": "pf2e-jb2a-macros",
     "title": "PF2e x JB2A Macros Compendium",
     "description": "<p>A module dedicated to making PF2e shine.</p>",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": "9",
     "author": "MrVauxs and Co.",
@@ -30,6 +30,13 @@
             "entity": "Actor",
             "name": "Actors",
             "path": "packs/actors.db",
+            "system": "pf2e"
+        },
+        {
+            "label": "PF2e x JB2A Actions",
+            "entity": "Item",
+            "name": "Actions",
+            "path": "packs/actions.db",
             "system": "pf2e"
         }
     ],
