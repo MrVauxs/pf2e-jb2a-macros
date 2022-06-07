@@ -18067,7 +18067,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Dancing Lights",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dancing Lights",
         "args": ""
       },
       "type": "source",
@@ -18314,7 +18314,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Harm",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Harm",
         "args": ""
       },
       "type": "",
@@ -18350,7 +18350,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Heal",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Heal",
         "args": ""
       },
       "type": "target",
@@ -19135,10 +19135,10 @@
       "scaleY": 1,
       "below": false,
       "custom": false,
-      "opacity": 0.75,
+      "opacity": 0.5,
       "removeTemplate": true,
       "persist": true,
-      "persistType": "overheadtile",
+      "persistType": "attachtemplate",
       "occlusionMode": "3",
       "occlusionAlpha": 0.7,
       "audio": {
@@ -19254,17 +19254,17 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Grim Tendrils",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Grim Tendrils",
         "args": ""
       },
       "type": "",
       "animation": "",
       "variant": "",
       "color": "",
-      "custom": false,
+      "custom": true,
       "repeat": null,
       "delay": null,
-      "scaleX": null,
+      "scaleX": 1.1,
       "scaleY": null,
       "opacity": null,
       "removeTemplate": false,
@@ -19274,8 +19274,9 @@
           "enable": false
         }
       },
-      "menuType": "",
-      "menuSection": "4"
+      "menuType": "ray",
+      "menuSection": "4",
+      "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyStrand_Multiple01_Dark_Purple_30ft_1600x400.webm"
     },
     "6": {
       "below": false,
@@ -19441,7 +19442,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Bane_Animation",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bane_Animation",
         "args": ""
       },
       "menuType": "spell",
@@ -19472,7 +19473,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Bless_Animation",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bless_Animation",
         "args": ""
       },
       "menuType": "spell",
@@ -20124,7 +20125,7 @@
     },
     "14": {
       "below": false,
-      "hidden": true,
+      "hidden": false,
       "name": "Effect Shillelagh",
       "soundOnly": {
         "enable": false
@@ -20134,10 +20135,10 @@
       },
       "aeType": "static",
       "type": "source",
-      "menuType": "energy",
-      "animation": "strands",
-      "variant": "03",
-      "color": "green",
+      "menuType": "leaves",
+      "animation": "loop",
+      "variant": "01",
+      "color": "greenorange",
       "custom": false,
       "audio": {
         "a01": {
@@ -20146,10 +20147,10 @@
       },
       "repeat": null,
       "delay": null,
-      "scale": 1.2,
+      "scale": 2,
       "opacity": null,
       "aeDelay": null,
-      "persistent": false,
+      "persistent": true,
       "unbindAlpha": false,
       "unbindVisibility": false,
       "explosion": {
@@ -20300,7 +20301,7 @@
     "19": {
       "below": false,
       "hidden": true,
-      "name": "Stunned 1",
+      "name": "Stunned",
       "soundOnly": {
         "enable": false
       },
@@ -20333,76 +20334,6 @@
       "menuSection": "1"
     },
     "20": {
-      "below": false,
-      "hidden": true,
-      "name": "Stunned 2",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "conditions",
-      "animation": "stun",
-      "variant": "02",
-      "color": "random",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "2"
-    },
-    "21": {
-      "below": false,
-      "hidden": true,
-      "name": "Stunned 3",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "aeType": "static",
-      "type": "source",
-      "menuType": "conditions",
-      "animation": "stun",
-      "variant": "03",
-      "color": "random",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "3"
-    },
-    "22": {
       "below": false,
       "hidden": true,
       "name": "Wild Shape",
