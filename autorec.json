@@ -18305,7 +18305,7 @@
     },
     "11": {
       "below": false,
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Harm",
       "soundOnly": {
@@ -19246,7 +19246,7 @@
     },
     "5": {
       "below": false,
-      "hidden": true,
+      "hidden": false,
       "name": "Grim Tendrils",
       "soundOnly": {
         "enable": false
@@ -19434,7 +19434,7 @@
     "0": {
       "tint": "#ffffff",
       "below": true,
-      "hidden": true,
+      "hidden": false,
       "name": "Bane",
       "soundOnly": {
         "enable": false
@@ -20125,7 +20125,7 @@
     },
     "14": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "name": "Effect Shillelagh",
       "soundOnly": {
         "enable": false
@@ -20171,8 +20171,8 @@
       "aeType": "static",
       "type": "source",
       "menuType": "energy",
-      "animation": "energyfield",
-      "variant": "01",
+      "animation": "strands",
+      "variant": "03",
       "color": "green",
       "custom": false,
       "audio": {
@@ -20185,7 +20185,7 @@
       "scale": null,
       "opacity": null,
       "aeDelay": null,
-      "persistent": true,
+      "persistent": false,
       "unbindAlpha": false,
       "unbindVisibility": false,
       "explosion": {
@@ -20335,38 +20335,29 @@
     },
     "20": {
       "below": false,
-      "hidden": true,
-      "name": "Wild Shape",
+      "hidden": false,
+      "name": "Effect Rage",
       "soundOnly": {
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Rage",
+        "args": ""
       },
-      "aeType": "static",
+      "aeType": "",
       "type": "source",
-      "menuType": "energy",
-      "animation": "energyfield",
-      "variant": "01",
-      "color": "green",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
       "custom": false,
       "audio": {
         "a01": {
           "enable": false
         }
-      },
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "aeDelay": null,
-      "persistent": true,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "19"
+      }
     }
   }
 }
