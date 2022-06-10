@@ -15071,7 +15071,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bouncing Lightning",
+        "args": ""
       },
       "menuType": "spell",
       "animation": "chainlightning",
@@ -16461,7 +16464,11 @@
       "custom": false,
       "audio": {
         "a01": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "levels3d": {
@@ -17851,6 +17858,67 @@
       },
       "menuType": "spell",
       "menuSection": "61"
+    },
+    "80": {
+      "below": false,
+      "hidden": false,
+      "anim2d": false,
+      "name": "Chain Lightning",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bouncing Lightning",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
     }
   },
   "static": {
@@ -18305,7 +18373,7 @@
     },
     "11": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Harm",
       "soundOnly": {
@@ -18558,7 +18626,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Raise a Shield",
+        "name": "Compendium.pf2e.action-macros.Raise a Shield",
         "args": ""
       },
       "type": "",
@@ -20335,7 +20403,7 @@
     },
     "20": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "name": "Effect Rage",
       "soundOnly": {
         "enable": false
@@ -20357,6 +20425,111 @@
         "a01": {
           "enable": false
         }
+      }
+    },
+    "21": {
+      "below": false,
+      "hidden": true,
+      "name": "Invisible",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Invisibility",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "22": {
+      "below": false,
+      "hidden": true,
+      "name": "Paralyzed",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "lightning",
+      "animation": "staticelectricity",
+      "variant": "03",
+      "color": "blue",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "23": {
+      "below": false,
+      "hidden": true,
+      "name": "Fascinated",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "heart",
+      "variant": "02",
+      "color": "pink",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
       }
     }
   }
