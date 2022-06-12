@@ -1,4 +1,4 @@
-let version = 173
+let version = 174
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -17,6 +17,7 @@ Hooks.on("init", () => {
 })
 
 Hooks.on("renderSettings", () => {
+	if (!game.user.isGM) return
 	if (!game.settings.get("pf2e-jb2a-macros", "imported")) {
 		Dialog.confirm({
 			title: "Macro Importer",
@@ -27,11 +28,8 @@ Hooks.on("renderSettings", () => {
 })
 
 async function importAll() {
-	let actors = null;
-	const pack = game.packs.get("pf2e-jb2a-macros.Actors");
-	await pack.importAll();
-	if (p.entity === "Actor") actors = game.folders.getName(p.label);
-
+	const module = game.modules.get("pf2e-jb2a-macros");
+	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
 	game.settings.set("pf2e-jb2a-macros", "imported", true);
 	game.settings.set("pf2e-jb2a-macros", "version", version);
 }
