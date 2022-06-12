@@ -28,7 +28,6 @@ Hooks.on("renderSettings", () => {
 })
 
 async function importAll() {
-	const module = game.modules.get("pf2e-jb2a-macros");
 	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
 	game.settings.set("pf2e-jb2a-macros", "imported", true);
 	game.settings.set("pf2e-jb2a-macros", "version", version);
