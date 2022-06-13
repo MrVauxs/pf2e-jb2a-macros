@@ -42,24 +42,22 @@
     ],
     "dependencies": [
         {
-            "name": "sequencer",
-            "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json"
+            "name": "sequencer"
         },
         {
-            "name": "autoanimations",
-            "manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json"
+            "name": "autoanimations"
         },
         {
-            "name": "warpgate",
-            "manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
+            "name": "warpgate"
         },
         {
-            "name": "soundfxlibrary",
-            "manifest": "https://raw.githubusercontent.com/CDeenen/SoundFxLibrary/master/module.json"
+            "name": "soundfxlibrary"
         },
         {
-            "name": "socketlib",
-            "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
+            "name": "socketlib"
+        },
+        {
+            "name": "advanced-macros"
         }
     ],
     "languages": [],
