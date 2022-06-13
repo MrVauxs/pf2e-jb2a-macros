@@ -5,15 +5,18 @@
     "version": "1.7.4",
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": "9",
-    "author": "MrVauxs and Co.",
+    "author": [
+        {
+            "name": "MrVauxs",
+            "discord": "MrVauxs#8622"
+        }
+    ],
     "systems": [
         "pf2e"
     ],
     "scripts": [
         "./module/auto-import.js"
     ],
-    "esmodules": [],
-    "styles": [],
     "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
     "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
     "download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.zip",
@@ -59,7 +62,5 @@
         {
             "name": "advanced-macros"
         }
-    ],
-    "languages": [],
-    "socket": false
+    ]
 }
