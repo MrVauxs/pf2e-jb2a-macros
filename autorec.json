@@ -11984,6 +11984,64 @@
     },
     "82": {
       "id": "hzfgu1rl0hwyf59e",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": 0,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "generic",
+        "animation": "musicnote",
+        "variant": "01",
+        "color": "greenyellow",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "name": "Demoralize",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "83": {
+      "id": "ou9g3l0fnbhvx7xe",
       "hidden": false,
       "options": {
         "onlyX": false,
@@ -12018,15 +12076,16 @@
       },
       "primary": {
         "menuType": "generic",
-        "animation": "musicnote",
-        "variant": "01",
-        "color": "greenyellow",
-        "enableCustom": false
+        "animation": "conduit",
+        "variant": "square",
+        "color": "purpleblue",
+        "enableCustom": true,
+        "customPath": "jb2a.breath_weapons.acid.line.blue"
       },
       "macro": {
         "enable": false
       },
-      "name": "Demoralize",
+      "name": "Hydraulic Push",
       "soundOnly": false,
       "explosions": {
         "isMasked": false,
@@ -13229,7 +13288,7 @@
     "22": {
       "id": "etiqjvsrkhos9e9g",
       "name": "Tanglefoot",
-      "hidden": false,
+      "hidden": true,
       "options": {
         "below": false,
         "hidden": true,
@@ -13515,6 +13574,666 @@
         "enable": false
       },
       "menuSection": "static"
+    },
+    "28": {
+      "id": "1k8xkbav9qggich9",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Dimensional Steps",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "29": {
+      "id": "lphuwvk2jxjwbjmg",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Dimensional Assault",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "30": {
+      "id": "ygj1k47151i1mx2j",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Abundant Step",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "31": {
+      "id": "v9vgjphjt4hqrp8p",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Dimension Door",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "32": {
+      "id": "4ovquw8cit5af2g6",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Blink Charge",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "33": {
+      "id": "r0va7cjorunjtipu",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Collective Transposition",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "34": {
+      "id": "knx8elipbqj9vf78",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Shadow Jump",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "35": {
+      "id": "v0lqq6uruejv04fd",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Snare Hopping",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "36": {
+      "id": "am3bz34szxmzb8xi",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Terrain Transposition",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "37": {
+      "id": "8ngnzgoekuj1ramv",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Unexpected Transposition",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
+    },
+    "38": {
+      "id": "lnh442wbv5l0xeto",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "playWhen": "2"
+      },
+      "name": "Teleport",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      }
     }
   },
   "templatefx": {
@@ -14199,7 +14918,10 @@
       "presetType": "bardicinspiration",
       "name": "Bardic Inspiration",
       "hidden": true,
-      "menuSection": "preset"
+      "menuSection": "preset",
+      "macro": {
+        "enable": false
+      }
     },
     "1": {
       "id": "hozq6s14yi8n93ka",
@@ -14224,113 +14946,72 @@
           "animation": "fireballbeam",
           "variant": "01",
           "color": "orange",
-          "repeat": null,
-          "delay": null,
-          "wait": null,
-          "below": false
+          "repeat": 1,
+          "delay": 0,
+          "wait": 0,
+          "below": false,
+          "enableCustom": false
         },
         "explosion01": {
           "menuType": "",
           "animation": "",
           "variant": "",
           "color": "",
-          "repeat": null,
-          "delay": null,
-          "scale": null,
-          "wait": null,
+          "repeat": 1,
+          "delay": 0,
+          "scale": 1,
+          "wait": 0,
           "below": false,
-          "enable": false
+          "enable": false,
+          "enableCustom": false,
+          "showPreExplosion": false
         },
         "explosion02": {
           "menuType": "spell",
           "animation": "fireball",
           "variant": "explode",
           "color": "orange",
-          "repeat": null,
-          "delay": null,
-          "scale": 1.5
+          "repeat": 1,
+          "delay": 0,
+          "scale": 1.5,
+          "enableCustom": false,
+          "below": false
         },
         "afterImage": {
           "enable": false,
           "below": true,
-          "scale": 1
-        }
+          "scale": 1,
+          "customPath": "",
+          "persistent": false,
+          "wait": 0
+        },
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
       },
       "presetType": "fireball",
       "name": "Fireball",
       "hidden": true,
-      "menuSection": "preset"
-    },
-    "2": {
-      "id": "uafbpve38571pd3i",
-      "huntersmark": {
-        "audio": {
-          "a01": {
-            "enable": false
-          }
-        },
-        "macro": {
-          "enable": false,
-          "playWhen": "0",
-          "name": "",
-          "args": ""
-        },
-        "variant": "eye",
-        "color": "green",
-        "scale": null,
-        "below": false,
-        "persistent": true,
-        "anchorX": null,
-        "anchorY": null
+      "menuSection": "preset",
+      "macro": {
+        "enable": false
       },
-      "name": "Hunt Prey (unused)",
-      "presetType": "huntersmark",
-      "hidden": true,
-      "menuSection": "preset"
-    },
-    "3": {
-      "id": "e8xbghfuv3qkkha4",
-      "teleportation": {
-        "audio": {
-          "a01": {
-            "enable": false
-          }
-        },
-        "macro": {
+      "audio": {
+        "a01": {
           "enable": false,
-          "playWhen": "0",
-          "name": "",
-          "args": ""
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         },
-        "range": 30,
-        "measureType": "alternating",
-        "start": {
-          "menuType": "spell",
-          "animation": "mistystep",
-          "variant": "01",
-          "color": "blue",
-          "below": false,
-          "enableCustom": false,
-          "scale": 1.5
-        },
-        "between": {
-          "enable": false
-        },
-        "end": {
-          "menuType": "spell",
-          "animation": "mistystep",
-          "variant": "02",
-          "color": "blue",
-          "below": false,
-          "enableCustom": false,
-          "scale": 1.5,
-          "delay": null
+        "e02": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
-      },
-      "presetType": "teleportation",
-      "name": "Misty Step",
-      "hidden": true,
-      "menuSection": "preset"
+      }
     }
   },
   "aefx": {
@@ -15738,7 +16419,7 @@
     },
     "30": {
       "id": "i8ib62e8b2qayg0w",
-      "hidden": false,
+      "hidden": true,
       "options": {
         "onlyX": false,
         "staticType": "targetDefault",
@@ -15764,7 +16445,7 @@
       "audio": {
         "a01": {
           "enable": false,
-          "startTime": null,
+          "startTime": 0,
           "volume": 0.75,
           "delay": 0,
           "file": ""
