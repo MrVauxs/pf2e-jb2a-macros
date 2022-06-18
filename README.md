@@ -13,10 +13,11 @@ Once downloaded, head over to the Automated Animations settings and Configure Au
 ![image](https://user-images.githubusercontent.com/32039708/174436836-fab72b76-525e-40b9-8be2-d23c3b6d8ab8.png)
 
 At the bottom of the menu, you have Overwrite / Merge Menu. This is where you input the file.
-If you haven't created any effects of your own, I recommend Overwriting. If you have made your own animations, note that Overriding is going to delete those entries, so instead use Merge. The How-To on updating _existing_ entries can be found below in .
+If you haven't created any effects of your own, I recommend Overwriting. If you have made your own animations, note that Overriding is going to delete those entries, so instead use Merge. The How-To on updating _existing_ entries can be found below in [Updating the Autorecognition Settings](https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/README.md#updating-the-autorecognition-settings).
 
 ![image](https://user-images.githubusercontent.com/32039708/174436900-f1e9b74a-7261-404a-b738-ce0a34622592.png)
 
+Hopefully in the future automatic merging / overwriting of AA's autorec settings will be possible, but currently it is manual.
 
 ### Updating the Autorecognition Settings
 If you have created custom effects, you can update your existing settings without losing your custom ones by doing the following:
