@@ -7,6 +7,8 @@ You can probably appropriate most of this module for other systems, I simply don
 
 ## Installing the module
 
+The basics of enabling the module can be found [here](https://foundryvtt.com/article/modules/). 
+
 This module is created to accompany the **PF2e Community Complete Autorec** file, which can be downloaded by pressing [this](https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json) hyperlink.
 
 Once downloaded, head over to the Automated Animations settings and Configure Automatic Recognition.
