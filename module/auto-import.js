@@ -11,7 +11,7 @@ Hooks.on("init", () => {
 	});
 	game.settings.register("pf2e-jb2a-macros", "version", {
 		scope: "world",
-		type: number,
+		type: Number,
 		default: 0
 	});
 })
