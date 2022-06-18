@@ -20,6 +20,8 @@ If you haven't created any effects of your own, I recommend Overwriting. If you 
 
 ![image](https://user-images.githubusercontent.com/32039708/174436900-f1e9b74a-7261-404a-b738-ce0a34622592.png)
 
+And that's it!
+
 Hopefully in the future automatic merging / overwriting of AA's autorec settings will be possible, but currently it is manual.
 
 ### Updating the Autorecognition Settings
