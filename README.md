@@ -2,9 +2,21 @@
 A collection of JB2A macros for the PF2e Foundry system.
 
 Created to accompany the Community Complete Autorec for [Automated Animations](https://github.com/otigon/automated-jb2a-animations).
-The **autorec file** can be found [here](https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json).
-
+The **autorec file** can be found .
 You can appropriate most of this module for other systems, I simply don't have interest in doing so.
+
+## Installing the module
+
+This module is created to accompany the PF2e Community Complete Autorec file, which can be downloaded by pressing [this](https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json) hyperlink.
+
+Once downloaded, head over to the Automated Animations settings and Configure Automatic Recognition.
+![image](https://user-images.githubusercontent.com/32039708/174436836-fab72b76-525e-40b9-8be2-d23c3b6d8ab8.png)
+
+At the bottom of the menu, you have Overwrite / Merge Menu. This is where you input the file.
+If you haven't created any effects of your own, I recommend Overwriting. If you have made your own animations, note that Overriding is going to delete those entries, so instead use Merge. The How-To on updating _existing_ entries can be found below in .
+
+![image](https://user-images.githubusercontent.com/32039708/174436900-f1e9b74a-7261-404a-b738-ce0a34622592.png)
+
 
 ### Updating the Autorecognition Settings
 If you have created custom effects, you can update your existing settings without losing your custom ones by doing the following:
