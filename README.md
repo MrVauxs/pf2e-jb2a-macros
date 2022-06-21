@@ -3,7 +3,7 @@ A collection of JB2A macros for the PF2e Foundry system.
 
 Created to accompany the Community Complete Autorec for [Automated Animations](https://github.com/otigon/automated-jb2a-animations).
 
-**Requires JB2A Assets modules. Built primarily for the _Patreon_ version.** Full compatibility with the Free version are on the To-Do list, but not a priority.
+**Requires JB2A Assets modules. Built primarily for the _Patreon_ version.** Full compatibility with the Free version is on the To-Do list, but not a priority.
 
 You can probably appropriate most of this module for other systems, I simply don't have interest in doing so.
 
