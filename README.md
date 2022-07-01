@@ -3,13 +3,15 @@ A collection of JB2A macros for the PF2e Foundry system.
 
 Created to accompany the Community Complete Autorec for [Automated Animations](https://github.com/otigon/automated-jb2a-animations).
 
+**Requires JB2A Assets modules. Built primarily for the _Patreon_ version.** Full compatibility with the Free version is on the To-Do list, but not a priority.
+
 You can probably appropriate most of this module for other systems, I simply don't have interest in doing so.
 
 ## Installing the module
 
-The basics of enabling the module can be found [here](https://foundryvtt.com/article/modules/). 
+The basics of installing and enabling the module can be found [here](https://foundryvtt.com/article/modules/). 
 
-This module is created to accompany the **PF2e Community Complete Autorec** file, which can be downloaded by pressing [this](https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json) hyperlink.
+Beyond that, this module is created to accompany the **PF2e Community Complete Autorec** file, which can be downloaded by pressing [this](https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json) hyperlink.
 
 Once downloaded, head over to the Automated Animations settings and Configure Automatic Recognition.
 ![image](https://user-images.githubusercontent.com/32039708/174436836-fab72b76-525e-40b9-8be2-d23c3b6d8ab8.png)
