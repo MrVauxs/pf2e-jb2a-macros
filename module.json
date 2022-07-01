@@ -15,7 +15,7 @@
         "pf2e"
     ],
     "scripts": [
-        "./module/auto-import.js"
+        "./module/module.js"
     ],
     "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
     "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
