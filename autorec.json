@@ -13,7 +13,23 @@
         "scale": 1,
         "below": false,
         "switchType": "on",
-        "menuSection": "0"
+        "menuSection": "0",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
         "menuType": "weapon",
@@ -24,10 +40,25 @@
       },
       "audio": {
         "a01": {
-          "enable": false
+          "enable": false,
+          "startTime": 0,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         },
         "a02": {
-          "enable": false
+          "enable": false,
+          "startTime": 0,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
       },
       "macro": {
@@ -40,8 +71,36 @@
         "type": ""
       },
       "soundOnly": false,
-      "explosions": {},
-      "menuSection": "melee"
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      },
+      "menuSection": "melee",
+      "meleeSwitch": {
+        "switchType": "on",
+        "menuType": "weapon",
+        "animation": "arrow",
+        "variant": "regular",
+        "color": "regular",
+        "enableCustom": false,
+        "returning": false,
+        "detect": "auto",
+        "range": 2
+      }
     },
     "1": {
       "id": "8vf6bo6bw0hs6u6l",
@@ -1373,7 +1432,23 @@
         "switchVariant": "01",
         "switchColor": "white",
         "detect": "auto",
-        "menuSection": "30"
+        "menuSection": "30",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
         "menuType": "weapon",
@@ -1384,10 +1459,25 @@
       },
       "audio": {
         "a01": {
-          "enable": false
+          "enable": false,
+          "startTime": 0,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         },
         "a02": {
-          "enable": false
+          "enable": false,
+          "startTime": 0,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
       },
       "macro": {
@@ -1401,9 +1491,35 @@
       },
       "soundOnly": false,
       "explosions": {
-        "enable": false
+        "enable": false,
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
       },
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "meleeSwitch": {
+        "switchType": "on",
+        "menuType": "weapon",
+        "animation": "arrow",
+        "variant": "regular",
+        "color": "regular",
+        "enableCustom": false,
+        "returning": false,
+        "detect": "auto",
+        "range": 2
+      }
     },
     "32": {
       "id": "095bxs4n0huto7lk",
@@ -10695,18 +10811,46 @@
         "repeat": 3,
         "delay": 500,
         "below": false,
-        "menuSection": "41"
+        "menuSection": "41",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "scale": 1,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
         "menuType": "spell",
         "animation": "magicmissile",
         "variant": "01",
-        "color": "purple",
+        "color": "random",
         "enableCustom": false
       },
       "audio": {
         "a01": {
-          "enable": false
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
       },
       "macro": {
@@ -10720,7 +10864,22 @@
       },
       "soundOnly": false,
       "explosions": {
-        "enable": false
+        "enable": false,
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
       },
       "menuSection": "range"
     },
@@ -12042,7 +12201,7 @@
     },
     "83": {
       "id": "ou9g3l0fnbhvx7xe",
-      "hidden": false,
+      "hidden": true,
       "options": {
         "onlyX": false,
         "staticType": "targetDefault",
@@ -12068,7 +12227,7 @@
       "audio": {
         "a01": {
           "enable": false,
-          "startTime": null,
+          "startTime": 0,
           "volume": 0.75,
           "delay": 0,
           "file": ""
@@ -12098,6 +12257,78 @@
         "customPath": "",
         "enable": false
       }
+    },
+    "84": {
+      "id": "5h12fnfp8krkemx4",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": 0,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "spell",
+        "animation": "magicmissile",
+        "variant": "01",
+        "color": "random",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "name": "Force Bolt",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
     }
   },
   "static": {
@@ -12110,14 +12341,27 @@
         "anim2d": false,
         "type": "target",
         "staticOptions": "creature",
-        "opacity": null,
+        "opacity": 1,
         "persistent": false,
         "repeat": 1,
         "delay": 500,
         "scale": 1,
         "below": false,
         "menuSection": "0",
-        "staticType": "target"
+        "staticType": "target",
+        "onlyX": false,
+        "returning": false,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
         "menuType": "creature",
@@ -12128,7 +12372,11 @@
       },
       "audio": {
         "a01": {
-          "enable": false
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
       },
       "macro": {
@@ -12141,7 +12389,17 @@
         "type": ""
       },
       "soundOnly": false,
-      "explosions": {},
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false
+      },
       "menuSection": "static"
     },
     "1": {
@@ -12386,7 +12644,7 @@
       "audio": {
         "a01": {
           "enable": false,
-          "startTime": null,
+          "startTime": 0,
           "volume": 0.75,
           "delay": 0,
           "file": ""
@@ -12421,15 +12679,27 @@
         "hidden": true,
         "anim2d": false,
         "type": "targetDefault",
-        "repeat": null,
-        "delay": null,
-        "scale": null,
-        "opacity": null,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "opacity": 1,
         "unbindAlpha": false,
         "unbindVisibility": false,
         "persistent": false,
         "menuSection": "14",
-        "staticType": "targetDefault"
+        "staticType": "targetDefault",
+        "onlyX": false,
+        "returning": false,
+        "zIndex": 1,
+        "unbindVisbility": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
         "menuType": "spell",
@@ -12440,7 +12710,11 @@
       },
       "audio": {
         "a01": {
-          "enable": false
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
       },
       "macro": {
@@ -12451,7 +12725,15 @@
       },
       "soundOnly": false,
       "explosions": {
-        "enable": false
+        "enable": false,
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": ""
       },
       "menuSection": "static"
     },
@@ -12550,15 +12832,27 @@
         "hidden": true,
         "anim2d": false,
         "type": "source",
-        "repeat": null,
-        "delay": null,
-        "scale": null,
-        "opacity": null,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "opacity": 1,
         "persistent": false,
         "unbindAlpha": false,
         "unbindVisibility": false,
         "menuSection": "26",
-        "staticType": "source"
+        "staticType": "source",
+        "onlyX": false,
+        "returning": false,
+        "zIndex": 1,
+        "unbindVisbility": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
         "menuType": "generic",
@@ -12571,15 +12865,15 @@
         "a01": {
           "enable": true,
           "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Fly-By/arrow-fly-by-*",
-          "startTime": null,
+          "startTime": 0,
           "volume": 1,
-          "delay": null
+          "delay": 0
         }
       },
       "macro": {
         "enable": true,
         "playWhen": "1",
-        "name": "Next Chamber",
+        "name": "Compendium.pf2e-ranged-combat.macros.Next Chamber",
         "args": ""
       },
       "levels3d": {
@@ -12587,7 +12881,15 @@
       },
       "soundOnly": false,
       "explosions": {
-        "enable": false
+        "enable": false,
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "enableCustom": false,
+        "customPath": ""
       },
       "menuSection": "static"
     },
@@ -14802,7 +15104,7 @@
     "0": {
       "id": "6bh762pm2wvxlsg3",
       "name": "Bane",
-      "hidden": false,
+      "hidden": true,
       "options": {
         "tint": "#ffffff",
         "below": true,
