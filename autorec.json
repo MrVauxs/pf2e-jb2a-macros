@@ -10495,44 +10495,6 @@
       "menuSection": "range"
     },
     "44": {
-      "id": "9c34s7wbu67hueic",
-      "name": "Guiding Bolt",
-      "hidden": true,
-      "options": {
-        "hidden": true,
-        "anim2d": false,
-        "type": "spell",
-        "repeat": 1,
-        "delay": 500,
-        "below": false,
-        "menuSection": "33"
-      },
-      "primary": {
-        "menuType": "spell",
-        "animation": "guidingbolt",
-        "variant": "01",
-        "color": "yellowblue",
-        "enableCustom": false
-      },
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "levels3d": {
-        "type": ""
-      },
-      "soundOnly": false,
-      "explosions": {},
-      "menuSection": "range"
-    },
-    "45": {
       "id": "oonphq2g43yo705h",
       "name": "Guiding Star",
       "hidden": true,
@@ -10570,7 +10532,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "46": {
+    "45": {
       "id": "udozs941yqk27p7x",
       "name": "Halfling Sling Staff",
       "hidden": true,
@@ -10608,7 +10570,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "47": {
+    "46": {
       "id": "ejs2yn48jn6kytmj",
       "name": "Hardened Harrow Deck",
       "hidden": true,
@@ -10646,7 +10608,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "48": {
+    "47": {
       "id": "grv2zkvkqgb8tjlc",
       "name": "Iris of the Sky",
       "hidden": true,
@@ -10684,7 +10646,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "49": {
+    "48": {
       "id": "743x234uimvfnmiy",
       "name": "Javelin",
       "hidden": true,
@@ -10722,7 +10684,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "50": {
+    "49": {
       "id": "00ami63ctn4tpnr7",
       "name": "Jezail",
       "hidden": true,
@@ -10760,7 +10722,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "51": {
+    "50": {
       "id": "vl0guzmg8igaxor9",
       "name": "Liar's Gun",
       "hidden": true,
@@ -10800,7 +10762,7 @@
       },
       "menuSection": "range"
     },
-    "52": {
+    "51": {
       "id": "1abe8azrsx4kbu0p",
       "name": "Magic Missile",
       "hidden": true,
@@ -10883,7 +10845,7 @@
       },
       "menuSection": "range"
     },
-    "53": {
+    "52": {
       "id": "n12kq13cqgjt68e5",
       "name": "Message",
       "hidden": true,
@@ -10919,7 +10881,7 @@
       },
       "menuSection": "range"
     },
-    "54": {
+    "53": {
       "id": "sxd346ve374et6h6",
       "name": "Mountebank's Passage",
       "hidden": true,
@@ -10957,7 +10919,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "55": {
+    "54": {
       "id": "zghia2aivrquvkzv",
       "name": "Peshpine Grenade",
       "hidden": true,
@@ -11008,7 +10970,7 @@
       },
       "menuSection": "range"
     },
-    "56": {
+    "55": {
       "id": "oo3svjfw29cokh0k",
       "name": "Petrification Cannon",
       "hidden": true,
@@ -11046,7 +11008,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "57": {
+    "56": {
       "id": "22oqkh82997i8dq7",
       "name": "Produce Flame",
       "hidden": true,
@@ -11090,7 +11052,7 @@
       },
       "menuSection": "range"
     },
-    "58": {
+    "57": {
       "id": "n2i20238shsdewm4",
       "name": "Ray of Enfeeblement",
       "hidden": true,
@@ -11143,7 +11105,7 @@
       },
       "menuSection": "range"
     },
-    "59": {
+    "58": {
       "id": "7v1o7gvyfcprd6mx",
       "name": "Ray of Frost",
       "hidden": true,
@@ -11181,7 +11143,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "60": {
+    "59": {
       "id": "xc4pvumbe4ozgmj8",
       "name": "Reaper's Grasp",
       "hidden": true,
@@ -11219,7 +11181,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "61": {
+    "60": {
       "id": "ud3pkpdmrgdr3ld8",
       "name": "Rowan Rifle",
       "hidden": true,
@@ -11257,7 +11219,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "62": {
+    "61": {
       "id": "abbp8zr9ebc7pnwf",
       "name": "Scorching Ray",
       "hidden": true,
@@ -11295,7 +11257,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "63": {
+    "62": {
       "id": "b19qjglb2ydm70r1",
       "name": "Screech Shooter",
       "hidden": true,
@@ -11333,7 +11295,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "64": {
+    "63": {
       "id": "po20u64ybrrq0buc",
       "name": "Shobhad Longrifle",
       "hidden": true,
@@ -11371,7 +11333,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "65": {
+    "64": {
       "id": "coje7978pndmt6fs",
       "name": "Shuriken",
       "hidden": true,
@@ -11409,7 +11371,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "66": {
+    "65": {
       "id": "7l8vkmscm49v9ki4",
       "name": "Sling",
       "hidden": true,
@@ -11447,7 +11409,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "67": {
+    "66": {
       "id": "9oxvzsqw4p6lhuu6",
       "name": "Spider Gun",
       "hidden": true,
@@ -11485,7 +11447,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "68": {
+    "67": {
       "id": "jdxxgwgck2s314f5",
       "name": "Spike Launcher",
       "hidden": true,
@@ -11523,7 +11485,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "69": {
+    "68": {
       "id": "j0qp2a36qmpwprwp",
       "name": "Stabilize",
       "hidden": true,
@@ -11563,7 +11525,7 @@
       },
       "menuSection": "range"
     },
-    "70": {
+    "69": {
       "id": "2r1nobn3mhek79kr",
       "name": "Starknife",
       "hidden": true,
@@ -11601,7 +11563,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "71": {
+    "70": {
       "id": "v39fb2rqxn1j072l",
       "name": "Stoneraiser Javelin",
       "hidden": true,
@@ -11640,7 +11602,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "72": {
+    "71": {
       "id": "5tz9xkkmu1mzrvi3",
       "name": "Chakram",
       "hidden": true,
@@ -11678,7 +11640,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "73": {
+    "72": {
       "id": "atfek5bg5vs24pz3",
       "name": "Taw Launcher",
       "hidden": true,
@@ -11716,7 +11678,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "74": {
+    "73": {
       "id": "omp5hx2wvhqdqwdc",
       "name": "Telekinetic Projectile",
       "hidden": true,
@@ -11754,7 +11716,7 @@
       },
       "menuSection": "range"
     },
-    "75": {
+    "74": {
       "id": "u5a507yoy2nzfqc8",
       "name": "Throwing Knife",
       "hidden": true,
@@ -11792,7 +11754,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "76": {
+    "75": {
       "id": "tdpzwf1lgzql5tfe",
       "name": "Tiger's Claw",
       "hidden": true,
@@ -11830,7 +11792,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "77": {
+    "76": {
       "id": "ygin7wt6x1hn2uon",
       "name": "Vexing Vapor",
       "hidden": true,
@@ -11881,7 +11843,7 @@
       },
       "menuSection": "range"
     },
-    "78": {
+    "77": {
       "id": "3b8iqvv2z67k8hcw",
       "name": "Wind and Fire Wheel",
       "hidden": true,
@@ -11919,7 +11881,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "79": {
+    "78": {
       "id": "pwl77t6wdya1mv5w",
       "name": "Witch Bolt",
       "hidden": true,
@@ -11957,7 +11919,7 @@
       "explosions": {},
       "menuSection": "range"
     },
-    "80": {
+    "79": {
       "id": "lc6tb8sp80dgkvf8",
       "name": "Chain Lightning",
       "hidden": true,
@@ -11995,7 +11957,7 @@
       },
       "menuSection": "range"
     },
-    "81": {
+    "80": {
       "id": "mw3tom9q57dn1xuq",
       "hidden": true,
       "options": {
@@ -12141,7 +12103,7 @@
       },
       "menuSection": "range"
     },
-    "82": {
+    "81": {
       "id": "hzfgu1rl0hwyf59e",
       "hidden": true,
       "options": {
@@ -12199,7 +12161,7 @@
         "enable": false
       }
     },
-    "83": {
+    "82": {
       "id": "ou9g3l0fnbhvx7xe",
       "hidden": true,
       "options": {
@@ -12258,7 +12220,7 @@
         "enable": false
       }
     },
-    "84": {
+    "83": {
       "id": "5h12fnfp8krkemx4",
       "hidden": true,
       "options": {
@@ -14536,6 +14498,1116 @@
         "customPath": "",
         "enable": false
       }
+    },
+    "39": {
+      "id": "2wuorsdx4nlp9wb6",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "name": "Inspire Courage",
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "40": {
+      "id": "w0i7i5aigsce5mkd",
+      "hidden": true,
+      "name": "Hymn Of Healing",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "41": {
+      "id": "tt2dt9ktrklgxjmq",
+      "hidden": true,
+      "name": "Inspire Competence",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "42": {
+      "id": "p7uhti8zccxdrvf7",
+      "hidden": true,
+      "name": "Song Of Strength",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "43": {
+      "id": "jfkgceb4pah5qbcn",
+      "hidden": true,
+      "name": "Inspire Defense",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "44": {
+      "id": "udsqxkeg6nr6vop1",
+      "hidden": true,
+      "name": "Triple Time",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "45": {
+      "id": "bm4512jwksukb73t",
+      "hidden": true,
+      "name": "Dirge Of Doom",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "46": {
+      "id": "2varrgwt4q6h1dzs",
+      "hidden": true,
+      "name": "Song Of Marching",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "47": {
+      "id": "qypw3c1name1ovqj",
+      "hidden": true,
+      "name": "House Of Imaginary Walls",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "48": {
+      "id": "652busjrfzswyzz1",
+      "hidden": true,
+      "name": "Ode To Ouroboros",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "49": {
+      "id": "2lbjrwjcz33lvogg",
+      "hidden": true,
+      "name": "Symphony Of The Unfettered Heart",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "50": {
+      "id": "8sj4fc2udjkx6gzg",
+      "hidden": true,
+      "name": "Allegro",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "51": {
+      "id": "g8jaynxcdo73enes",
+      "hidden": true,
+      "name": "Soothing Ballad",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "52": {
+      "id": "u4zi3pbhdmmi9vjh",
+      "hidden": true,
+      "name": "Fatal Aria",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
+    },
+    "53": {
+      "id": "r3g6cyl6n3lkt696",
+      "hidden": true,
+      "name": "Pied Piping",
+      "options": {
+        "onlyX": false,
+        "staticType": "source",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "e01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "playWhen": "2"
+      },
+      "soundOnly": false,
+      "explosions": {
+        "isMasked": false,
+        "radius": 1.5,
+        "delay": 250,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "menuType": "conditions",
+        "animation": "drop",
+        "variant": "01",
+        "color": "green",
+        "enableCustom": false,
+        "customPath": "",
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      }
     }
   },
   "templatefx": {
@@ -14772,50 +15844,6 @@
       "menuSection": "templatefx"
     },
     "5": {
-      "id": "lg7aydav71b4fsro",
-      "name": "Grim Tendrils",
-      "hidden": true,
-      "options": {
-        "below": false,
-        "hidden": false,
-        "type": "",
-        "repeat": null,
-        "delay": null,
-        "scaleX": 1.1,
-        "scaleY": null,
-        "opacity": null,
-        "removeTemplate": false,
-        "persist": false,
-        "menuSection": "4",
-        "persistent": false
-      },
-      "primary": {
-        "menuType": "circle",
-        "animation": "armsofhadar",
-        "variant": "01",
-        "color": "darkgreen",
-        "enableCustom": true,
-        "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyStrand_Multiple01_Dark_Purple_30ft_1600x400.webm"
-      },
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Grim Tendrils",
-        "args": ""
-      },
-      "levels3d": {
-        "type": ""
-      },
-      "soundOnly": false,
-      "explosions": {},
-      "menuSection": "templatefx"
-    },
-    "6": {
       "id": "4cdcq928buu7sqfm",
       "name": "Haunting Hymn",
       "hidden": true,
@@ -14919,7 +15947,7 @@
       },
       "menuSection": "templatefx"
     },
-    "7": {
+    "6": {
       "id": "erpf2651707affez",
       "name": "Lethargy Bomb",
       "hidden": true,
@@ -14959,7 +15987,7 @@
       "explosions": {},
       "menuSection": "templatefx"
     },
-    "8": {
+    "7": {
       "id": "wjbob7od1rr6akp4",
       "name": "Obscuring Mist",
       "hidden": true,
@@ -14999,7 +16027,7 @@
       "explosions": {},
       "menuSection": "templatefx"
     },
-    "9": {
+    "8": {
       "id": "896fwke57vlm7pp2",
       "name": "Splash of Art",
       "hidden": true,
@@ -15056,7 +16084,7 @@
       "explosions": {},
       "menuSection": "templatefx"
     },
-    "10": {
+    "9": {
       "id": "8p44t59n9r3cup7c",
       "name": "Thunderwave",
       "hidden": true,
@@ -15098,6 +16126,55 @@
       "soundOnly": false,
       "explosions": {},
       "menuSection": "templatefx"
+    },
+    "10": {
+      "id": "dunn3nrfawwigdj1",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "circle",
+        "animation": "armsofhadar",
+        "variant": "01",
+        "color": "darkgreen",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Grim Tendrils",
+        "playWhen": "2"
+      },
+      "name": "Grim Tendrils",
+      "soundOnly": false
     }
   },
   "aura": {
@@ -15184,48 +16261,6 @@
   },
   "preset": {
     "0": {
-      "id": "mrlndlj3uxfpxjc5",
-      "bardicinspiration": {
-        "audio": {
-          "a01": {
-            "enable": false
-          }
-        },
-        "macro": {
-          "enable": false,
-          "playWhen": "0",
-          "name": "",
-          "args": ""
-        },
-        "below": false,
-        "scale": 1,
-        "self": {
-          "enable": true,
-          "animation": "notes",
-          "color": "blue",
-          "variant": "01"
-        },
-        "target": {
-          "enable": true,
-          "animation": "bardicinspiration",
-          "color": "greenorange",
-          "variant": "inspire"
-        },
-        "marker": {
-          "enable": true,
-          "selfColor": "greenorange",
-          "targetColor": "greenorange"
-        }
-      },
-      "presetType": "bardicinspiration",
-      "name": "Bardic Inspiration",
-      "hidden": true,
-      "menuSection": "preset",
-      "macro": {
-        "enable": false
-      }
-    },
-    "1": {
       "id": "hozq6s14yi8n93ka",
       "fireball": {
         "audio": {
@@ -15595,14 +16630,15 @@
           "enable": false
         },
         "below": false,
-        "scale": null,
+        "scale": 1,
         "menuType": "spell",
         "animation": "bless",
         "variant": "01",
-        "color": "blue",
+        "color": "yellow",
         "unbindAlpha": false,
         "unbindVisibility": false,
-        "persistent": true
+        "persistent": true,
+        "unbindVisbility": false
       },
       "presetType": "bless",
       "name": "Effect Guidance",
@@ -15613,31 +16649,56 @@
         "hidden": true,
         "aeType": "preset",
         "type": "source",
-        "repeat": null,
-        "delay": null,
-        "scale": null,
-        "opacity": null,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "opacity": 1,
         "aeDelay": null,
-        "persistent": false,
+        "persistent": true,
         "unbindAlpha": false,
         "unbindVisibility": false,
         "addCTA": true,
-        "menuSection": "9"
+        "menuSection": "9",
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "zIndex": 1,
+        "unbindVisbility": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
       },
       "primary": {
-        "menuType": "conditions",
-        "animation": "drop",
-        "variant": "01",
-        "color": "green",
+        "menuType": "spell",
+        "animation": "divinesmite",
+        "variant": "source",
+        "color": "yellowblue",
         "enableCustom": false
       },
       "audio": {
         "a01": {
-          "enable": false
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        },
+        "s01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
         }
       },
       "macro": {
-        "enable": false
+        "enable": false,
+        "playWhen": "0"
       },
       "levels3d": {
         "type": ""
@@ -15645,6 +16706,47 @@
       "soundOnly": false,
       "explosions": {
         "enable": false
+      },
+      "sourceToken": {
+        "options": {
+          "repeat": 1,
+          "delay": 250,
+          "scale": 1,
+          "below": false,
+          "opacity": 1,
+          "zIndex": 1,
+          "unbindAlpha": false,
+          "unbindVisbility": false,
+          "persistent": false,
+          "delayAfter": 0,
+          "delayStart": 0,
+          "isMasked": false,
+          "showOptions": false
+        },
+        "primary": {
+          "menuType": "conditions",
+          "animation": "drop",
+          "variant": "01",
+          "color": "green",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "enable": false,
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false
+      },
+      "shield": {
+        "menuType": "spell",
+        "animation": "shieldspell",
+        "variant": "01",
+        "color": "blue",
+        "endEffect": "outro_explode",
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "below": false,
+        "scale": 1
       }
     },
     "7": {
@@ -16765,6 +17867,54 @@
       },
       "animType": "static",
       "name": "Enfeebled",
+      "soundOnly": false
+    },
+    "31": {
+      "id": "kp4khqj7n3lcfpou",
+      "hidden": true,
+      "options": {
+        "onlyX": false,
+        "staticType": "targetDefault",
+        "returning": false,
+        "repeat": 1,
+        "delay": 250,
+        "scale": 1,
+        "below": false,
+        "opacity": 1,
+        "zIndex": 1,
+        "unbindAlpha": false,
+        "unbindVisbility": false,
+        "persistent": false,
+        "removeTemplate": false,
+        "persistType": "sequencerground",
+        "ignoreTarget": false,
+        "occlusionMode": "3",
+        "occlusionAlpha": 0.5,
+        "addTokenWidth": false,
+        "isMasked": false,
+        "showOptions": false
+      },
+      "audio": {
+        "a01": {
+          "enable": false,
+          "startTime": null,
+          "volume": 0.75,
+          "delay": 0,
+          "file": ""
+        }
+      },
+      "primary": {
+        "menuType": "spell",
+        "animation": "divinesmite",
+        "variant": "source",
+        "color": "yellowblue",
+        "enableCustom": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "animType": "static",
+      "name": "Effect Guidance Immunity",
       "soundOnly": false
     }
   },

@@ -43,6 +43,7 @@ async function importAll() {
 
 async function _executeMacroByName(
     macroName,
+	args,
     compendiumName = "pf2e-jb2a-macros.Macros"
 ) {
     const pack = game.packs.get(compendiumName);
@@ -52,7 +53,7 @@ async function _executeMacroByName(
         if (macro_data) {
             const temp_macro = new Macro(macro_data);
             temp_macro.data.permission.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
-            temp_macro.execute();
+            temp_macro.execute(args);
         } else {
             ui.notifications.error("Macro " + macroName + " not found");
         }
@@ -62,10 +63,15 @@ async function _executeMacroByName(
 }
 
 Hooks.on("createChatMessage", (data) => {
-        let flavor = data.data.flavor || "";
-        let target = data.target || null;
-        let token = data.token || null;
-        if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
-            _executeMacroByName('Sneak Attack')
-        }
+        let flavor = data.data.flavor ?? null;
+        let args = data ?? null;
+		if (game.user.id !== data.data.user) return;
+		// Default Matches
+        if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) _executeMacroByName('Sneak Attack', args)
+		// Persistent Damage Matches
+		if (/Received Fast Healing|Persistent \w+ damage/.test(flavor) && game.modules.get("pf2e-persistent-damage")?.active) {
+			_executeMacroByName('Persistent Conditions', args)
+		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
+			ui.notifications.error("Please enable the PF2e Persistent Damage module to use the the macro.")
+		}
 })
