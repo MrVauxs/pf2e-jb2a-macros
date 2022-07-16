@@ -34,7 +34,13 @@ If you want to keep your own custom effects, you can update your existing settin
 
 ## Previews:
 
-https://user-images.githubusercontent.com/32039708/174186764-756e10d1-216a-439f-8fdd-60ec6d29f0f2.mp4
+https://user-images.githubusercontent.com/32039708/179333855-3fb05dea-8733-43ea-a796-b9dad3f06eb7.mp4
+
+https://user-images.githubusercontent.com/32039708/179329782-b3890b8f-4a11-4f3f-af67-53cac4967a0a.mp4
+
+https://user-images.githubusercontent.com/32039708/179329770-23b3bcde-9c99-4e21-b49b-66b512b1de8b.mp4
+
+https://user-images.githubusercontent.com/32039708/179329792-633aaaf8-12c2-41d6-8326-0f493036cdde.mp4
 
 Includes Sound!
 
