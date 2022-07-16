@@ -37,6 +37,7 @@ If you want to keep your own custom effects, you can update your existing settin
 https://user-images.githubusercontent.com/32039708/179334491-0ce49dee-1106-4173-857f-ca365395035d.mp4
 
 Free Version:
+
 https://user-images.githubusercontent.com/32039708/179333855-3fb05dea-8733-43ea-a796-b9dad3f06eb7.mp4
 
 https://user-images.githubusercontent.com/32039708/179329782-b3890b8f-4a11-4f3f-af67-53cac4967a0a.mp4
