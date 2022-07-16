@@ -1,4 +1,4 @@
-let version = 175
+let version = 176
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -48,7 +48,7 @@ async function _executeMacroByName(
 ) {
     const pack = game.packs.get(compendiumName);
     if (pack) {
-        const macro_data = game.settings.get("pf2e-jb2a-macros", "useLocalMacros") ? game.macros.getName(macroName) : (await pack.getDocuments()).find((i) => i.data.name === macroName)?.toObject();
+        const macro_data = game.settings.get("pf2e-jb2a-macros", "useLocalMacros") ? game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.data.name === macroName)?.toObject();
 
         if (macro_data) {
             const temp_macro = new Macro(macro_data);
