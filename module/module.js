@@ -1,4 +1,4 @@
-let version = 180
+let version = 175
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -63,11 +63,17 @@ async function _executeMacroByName(
 }
 
 Hooks.on("createChatMessage", (data) => {
+		let targets = Array.from(game.user.targets);
+		let token = data.token
         let flavor = data.data.flavor ?? null;
         let args = data ?? null;
 		if (game.user.id !== data.data.user) return;
 		// Default Matches
-        if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) _executeMacroByName('Sneak Attack', args)
+        if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
+			//let [item] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
+			//AutoAnimations.playAnimation(token, targets, item)
+			_executeMacroByName('Sneak Attack', args)
+		}
 		// Persistent Damage Matches
 		if (/Received Fast Healing|Persistent \w+ damage/.test(flavor) && game.modules.get("pf2e-persistent-damage")?.active) {
 			_executeMacroByName('Persistent Conditions', args)

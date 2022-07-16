@@ -2,7 +2,7 @@
     "name": "pf2e-jb2a-macros",
     "title": "PF2e x JB2A Macros Compendium",
     "description": "<p>A module dedicated to making PF2e shine.</p>",
-    "version": "1.8.0",
+    "version": "1.7.5",
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": "9",
     "author": [
