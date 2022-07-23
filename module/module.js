@@ -1,4 +1,4 @@
-let version = 177
+let version = 178;
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -22,7 +22,21 @@ Hooks.on("init", () => {
 		type: Number,
 		default: 0
 	});
-})
+	game.settings.register("pf2e-jb2a-macros", "version-previous", {
+		scope: "world",
+		type: Number,
+		default: 0
+	});
+});
+
+Hooks.on("ready", () => {
+	if (game.settings.get("pf2e-jb2a-macros", "version") < version) {
+		game.settings.set("pf2e-jb2a-macros", "version-previous", game.settings.get("pf2e-jb2a-macros", "version"));
+		game.settings.set("pf2e-jb2a-macros", "version", version);
+		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
+		console.log("Updated from PF2e JB2A Macros v" + previousVersion + " to v" + version + ".");
+	} else console.log("PF2e JB2A Macros v" + game.settings.get("pf2e-jb2a-macros", "version") + " loaded");
+});
 
 Hooks.on("renderSettings", () => {
 	if (!game.user.isGM) return
@@ -33,15 +47,14 @@ Hooks.on("renderSettings", () => {
 			yes: () => importAll()
 		});
 	}
-})
+});
 
 async function importAll() {
 	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
 	game.settings.set("pf2e-jb2a-macros", "imported", true);
-	game.settings.set("pf2e-jb2a-macros", "version", version);
-}
+};
 
-async function _executeMacroByName(
+async function runJB2Apf2eMacro(
     macroName,
 	args,
     compendiumName = "pf2e-jb2a-macros.Macros"
@@ -60,24 +73,33 @@ async function _executeMacroByName(
     } else {
         ui.notifications.error("Compendium " + compendiumName + " not found");
     }
-}
+};
 
 Hooks.on("createChatMessage", (data) => {
-		let targets = Array.from(game.user.targets);
-		let token = data.token
-        let flavor = data.data.flavor ?? null;
-        let args = data ?? null;
-		if (game.user.id !== data.data.user) return;
-		// Default Matches
-        if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
-			//let [item] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
-			//AutoAnimations.playAnimation(token, targets, item)
-			_executeMacroByName('Sneak Attack', args)
-		}
-		// Persistent Damage Matches
-		if (/Received Fast Healing|Persistent \w+ damage/.test(flavor) && game.modules.get("pf2e-persistent-damage")?.active) {
-			_executeMacroByName('Persistent Conditions', args)
-		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
-			ui.notifications.error("Please enable the PF2e Persistent Damage module to use the the macro.")
-		}
-})
+	let targets = Array.from(game.user.targets);
+	let token = data.token
+	let flavor = data.data.flavor ?? null;
+	let args = data ?? null;
+	if (game.user.id !== data.data.user) return;
+
+	// Default Matches
+	if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
+		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
+		return AutoAnimations.playAnimation(token, targets, sneak)
+		// runJB2Apf2eMacro('Sneak Attack', args)
+	}
+	// Persistent Damage Matches
+	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor) && game.modules.get("pf2e-persistent-damage")?.active) {
+		return runJB2Apf2eMacro('Persistent Conditions', args)
+	} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
+		return ui.notifications.error("Please enable the PF2e Persistent Damage module to use the the macro.")
+	}
+});
+
+Hooks.on("preUpdateItem", (data, changes) => {
+	return runJB2Apf2eMacro('Equipment Changes', {data, changes})
+});
+
+Hooks.on("preCreateChatMessage", (data) => {
+	data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data.data.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null });
+});

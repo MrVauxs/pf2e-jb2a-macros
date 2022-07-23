@@ -20840,7 +20840,7 @@
     },
     "1": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "name": "Sneak Attack",
       "macro": {
         "enable": false
