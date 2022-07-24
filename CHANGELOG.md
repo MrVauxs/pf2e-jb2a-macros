@@ -2,10 +2,10 @@
 - Added CHANGELOG.md
 - Switched Sneak Attack to active an Automated Animations entry than a macro.
 - Added an "Equipment Changes" macro that triggers every time the itemUpdate hook is triggered. This allows to create "On Equip" and "On Invest" animations.
- - On that note, Aeon Stones animations have been added. Invest a stone to have it floating around your token.
+  - On that note, Aeon Stones animations have been added. Invest a stone to have it floating around your token.
 - Finished "Bardic Cantripry" macro, at least with the most common composition cantrips out there.
 - Fixed "Dimension Jumps" macro to actually use the level of the spell being cast than the player's maximum spell level.
- - This also marks the addition of the pf2eJB2AMacros flag, right now used to give mark the level of the spell in a more accessible way.
+  - This also marks the addition of the `pf2eJB2AMacros` flag, right now used to mark the level of the spell in a more accessible way.
 
 # Version 1.7.8
 - Fixed an error happening with the lack of a fire animation in Persistent Conditions macro. (thanks @ Michael_B)
@@ -17,9 +17,10 @@
 # Version 1.7.6 a.k.a. "Just Push so There's Something" Edition
 - Added Sneak Attack and Persistent Damage macros which do not use AA but an in-house method to detect when to be played.
   - This peculiarity also means that in order to have users be able to modify those animations without the module deleting their efforts upon an update, a new setting has been added, causing the module to instead play macros from your **World** than the **Compendium**.
- ![image](https://user-images.githubusercontent.com/32039708/179329693-9b13e2b7-2aa2-4aed-9f2d-f0768aeb7408.png)
 
-__Note that this applies to ALL macros using this method, so you'll need both Persistent Conditions AND Sneak Attack macros imported to your world for them to properly work with this setting, even if only one of them is modified.__
+  ![image](https://user-images.githubusercontent.com/32039708/179329693-9b13e2b7-2aa2-4aed-9f2d-f0768aeb7408.png)
+
+  __Note that this applies to ALL macros using this method, so you'll need both Persistent Conditions AND Sneak Attack macros imported to your world for them to properly work with this setting, even if only one of them is modified.__
   - Persistent Damage animations require the [PF2E Persistent Damage](https://foundryvtt.com/packages/pf2e-persistent-damage) module.
 - Added plenty of condition animations.
 - Added Various Teleportation animations to most if not all spells which teleport the player.
@@ -69,7 +70,7 @@ __Note that this applies to ALL macros using this method, so you'll need both Pe
 
 # Version 1.2.0
 - Fixed ability-made AE animations, such as Guidance, Dueling Parry, etc. activating when the ability itself was put into chat rather than added as an AE by renaming the Active Effects to contain the "Effect" prefix.
- - tl;dr This fixes double-animations when you post an ability to chat and add the AE by the same name to a token.
+  - tl;dr This fixes double-animations when you post an ability to chat and add the AE by the same name to a token.
 
 # Version 1.1.1
 - Added a setting to automatically re-import assets.
