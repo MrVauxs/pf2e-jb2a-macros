@@ -1,4 +1,4 @@
-let version = 178;
+let version = 180;
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -13,7 +13,7 @@ Hooks.on("init", () => {
 		scope: "world",
 		config: true,
 		name: "Use Local Macros",
-		hint: "Certain animations such as Sneak Attack are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.",
+		hint: "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes",
 		type: Boolean,
 		default: false
 	});
@@ -89,10 +89,12 @@ Hooks.on("createChatMessage", (data) => {
 		// runJB2Apf2eMacro('Sneak Attack', args)
 	}
 	// Persistent Damage Matches
-	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor) && game.modules.get("pf2e-persistent-damage")?.active) {
-		return runJB2Apf2eMacro('Persistent Conditions', args)
-	} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
-		return ui.notifications.error("Please enable the PF2e Persistent Damage module to use the the macro.")
+	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor)) {
+		if (game.modules.get("pf2e-persistent-damage")?.active)	{
+			return runJB2Apf2eMacro('Persistent Conditions', args)
+		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
+			return ui.notifications.error("Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.")
+		}
 	}
 });
 
