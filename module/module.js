@@ -53,15 +53,16 @@ async function importAll() {
 	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
 	game.settings.set("pf2e-jb2a-macros", "imported", true);
 };
-
+// Thanks xdy for pretty much this entire function.
 async function runJB2Apf2eMacro(
     macroName,
 	args,
     compendiumName = "pf2e-jb2a-macros.Macros"
 ) {
+	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros")
     const pack = game.packs.get(compendiumName);
     if (pack) {
-        const macro_data = game.settings.get("pf2e-jb2a-macros", "useLocalMacros") ? game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.data.name === macroName)?.toObject();
+        const macro_data = useLocal ? game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.data.name === macroName)?.toObject();
 
         if (macro_data) {
             const temp_macro = new Macro(macro_data);
