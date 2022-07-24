@@ -1,4 +1,4 @@
-# Version 1.8.0
+# Version 1.8.0 - Equipment!
 - Added CHANGELOG.md
 - Switched Sneak Attack to active an Automated Animations entry than a macro.
 - Added an "Equipment Changes" macro that triggers every time the itemUpdate hook is triggered. This allows to create "On Equip" and "On Invest" animations.
@@ -9,7 +9,7 @@
 
 # Version 1.7.8
 - Fixed an error happening with the lack of a fire animation in Persistent Conditions macro. (thanks @ Michael_B)
-  - (There is still no animation as the default is them being on fire already, and there's no real "fire bursts" assets outside of fireball, this fix is just so there are no errors popping up and exit gracefully.)
+  - (There is still no animation as the default is the token being on fire already, and there's no "fire bursts" animations outside of fireball; This fix is just so there are no errors popping up and exit gracefully.)
 
 # Version 1.7.7
 - Fixed a bug relating to "Use Local Macros" setting. (Thanks @ Micheal_B)
@@ -18,6 +18,7 @@
 - Added Sneak Attack and Persistent Damage macros which do not use AA but an in-house method to detect when to be played.
   - This peculiarity also means that in order to have users be able to modify those animations without the module deleting their efforts upon an update, a new setting has been added, causing the module to instead play macros from your **World** than the **Compendium**.
  ![image](https://user-images.githubusercontent.com/32039708/179329693-9b13e2b7-2aa2-4aed-9f2d-f0768aeb7408.png)
+
 __Note that this applies to ALL macros using this method, so you'll need both Persistent Conditions AND Sneak Attack macros imported to your world for them to properly work with this setting, even if only one of them is modified.__
   - Persistent Damage animations require the [PF2E Persistent Damage](https://foundryvtt.com/packages/pf2e-persistent-damage) module.
 - Added plenty of condition animations.
