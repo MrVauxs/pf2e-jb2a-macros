@@ -20728,70 +20728,7 @@
       "menuSection": "10"
     }
   },
-  "auras": {
-    "0": {
-      "tint": "#ffffff",
-      "below": true,
-      "hidden": true,
-      "name": "Bane",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Bane_Animation",
-        "args": ""
-      },
-      "menuType": "spell",
-      "animation": "bless",
-      "variant": "loop",
-      "color": "purple",
-      "custom": false,
-      "scale": 2,
-      "opacity": null,
-      "ignoretargets": false,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "menuSection": "0"
-    },
-    "1": {
-      "tint": "#ffffff",
-      "below": true,
-      "hidden": true,
-      "name": "Bless",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Bless_Animation",
-        "args": ""
-      },
-      "menuType": "spell",
-      "animation": "bless",
-      "variant": "loop",
-      "color": "yellow",
-      "custom": false,
-      "scale": 2,
-      "opacity": null,
-      "ignoretargets": false,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "menuSection": "1"
-    }
-  },
+  "auras": {},
   "preset": {
     "0": {
       "below": false,
@@ -21858,6 +21795,160 @@
         "enable": false
       },
       "menuSection": "25"
+    },
+    "29": {
+      "below": false,
+      "hidden": true,
+      "name": "Aura Bless",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bless",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "30": {
+      "below": false,
+      "hidden": true,
+      "name": "Spell Effect Bless",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "divinesmite",
+      "variant": "source",
+      "color": "yellowblue",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "31": {
+      "below": false,
+      "hidden": true,
+      "name": "Aura Bane",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bane",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "32": {
+      "below": false,
+      "hidden": true,
+      "name": "Spell Effect Bane",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "divinesmite",
+      "variant": "source",
+      "color": "darkpurple",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "33": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Marshals Aura",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "shields",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-let version = 180;
+let version = 181;
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -43,7 +43,7 @@ Hooks.on("renderSettings", () => {
 	if (!game.settings.get("pf2e-jb2a-macros", "imported")) {
 		Dialog.confirm({
 			title: "Macro Importer",
-			content: "<p>Welcome to the <strong>PF2e x JB2A</strong> module. Would you like to import all actors to your World?",
+			content: "<p>Welcome to the <strong>PF2e x JB2A</strong> module. Would you like to import all required actors to your World?",
 			yes: () => importAll()
 		});
 	}
