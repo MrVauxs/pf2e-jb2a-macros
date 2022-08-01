@@ -104,5 +104,5 @@ Hooks.on("preUpdateItem", (data, changes) => {
 });
 
 Hooks.on("preCreateChatMessage", (data) => {
-	data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data.data.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null });
+	if (data.flags.pf2e.casting) data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null });
 });
