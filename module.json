@@ -1,87 +1,87 @@
 {
-	"name": "pf2e-jb2a-macros",
-	"title": "PF2e x JB2A Macros Compendium",
-	"description": "<p>A module dedicated to making PF2e shine.</p>",
-	"author": [
-		{
-			"name": "MrVauxs",
-			"discord": "MrVauxs#8622"
-		}
-	],
-	"authors": [],
-	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
-	"flags": {},
-	"version": "1.8.1",
-	"minimumCoreVersion": "9",
-	"compatibleCoreVersion": "9",
-	"scripts": [
-		"./module/module.js"
-	],
-	"esmodules": [],
-	"styles": [],
-	"languages": [],
-	"packs": [
-		{
-			"label": "PF2e x JB2A Macros",
-			"entity": "Macro",
-			"name": "Macros",
-			"path": "packs/macros.db",
-			"system": "pf2e",
-			"type": "Macro",
-			"private": false
-		},
-		{
-			"label": "PF2e x JB2A Actors",
-			"entity": "Actor",
-			"name": "Actors",
-			"path": "packs/actors.db",
-			"system": "pf2e",
-			"type": "Actor",
-			"private": false
-		},
-		{
-			"label": "PF2e x JB2A Actions",
-			"entity": "Item",
-			"name": "Actions",
-			"path": "packs/actions.db",
-			"system": "pf2e",
-			"type": "Item",
-			"private": false
-		}
-	],
-	"system": [
-		"pf2e"
-	],
-	"dependencies": [
-		{
-			"name": "sequencer",
-			"type": "module"
-		},
-		{
-			"name": "autoanimations",
-			"type": "module"
-		},
-		{
-			"name": "warpgate",
-			"type": "module"
-		},
-		{
-			"name": "soundfxlibrary",
-			"type": "module"
-		},
-		{
-			"name": "socketlib",
-			"type": "module"
-		},
-		{
-			"name": "advanced-macros",
-			"type": "module"
-		}
-	],
-	"socket": false,
-	"manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
-	"download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/download/1.7.8/module.zip",
-	"protected": false,
-	"coreTranslation": false,
-	"library": false
+  "name": "pf2e-jb2a-macros",
+  "title": "PF2e x JB2A Macros Compendium",
+  "description": "<p>A module dedicated to making PF2e shine.</p>",
+  "author": [
+    {
+      "name": "MrVauxs",
+      "discord": "MrVauxs#8622"
+    }
+  ],
+  "authors": [],
+  "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
+  "flags": {},
+  "version": "1.8.1",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "scripts": [
+    "./module/module.js"
+  ],
+  "esmodules": [],
+  "styles": [],
+  "languages": [],
+  "packs": [
+    {
+      "label": "PF2e x JB2A Macros",
+      "entity": "Macro",
+      "name": "Macros",
+      "path": "packs/macros.db",
+      "system": "pf2e",
+      "type": "Macro",
+      "private": false
+    },
+    {
+      "label": "PF2e x JB2A Actors",
+      "entity": "Actor",
+      "name": "Actors",
+      "path": "packs/actors.db",
+      "system": "pf2e",
+      "type": "Actor",
+      "private": false
+    },
+    {
+      "label": "PF2e x JB2A Actions",
+      "entity": "Item",
+      "name": "Actions",
+      "path": "packs/actions.db",
+      "system": "pf2e",
+      "type": "Item",
+      "private": false
+    }
+  ],
+  "system": [
+    "pf2e"
+  ],
+  "dependencies": [
+    {
+      "name": "sequencer",
+      "type": "module"
+    },
+    {
+      "name": "autoanimations",
+      "type": "module"
+    },
+    {
+      "name": "warpgate",
+      "type": "module"
+    },
+    {
+      "name": "soundfxlibrary",
+      "type": "module"
+    },
+    {
+      "name": "socketlib",
+      "type": "module"
+    },
+    {
+      "name": "advanced-macros",
+      "type": "module"
+    }
+  ],
+  "socket": false,
+  "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
+  "download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/download/1.8.1/module.zip",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
 }

@@ -12827,6 +12827,74 @@
       },
       "menuType": "weapon",
       "menuSection": "194"
+    },
+    "195": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Antler",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "creature",
+      "animation": "claw",
+      "variant": "01",
+      "color": "brown",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 0.2,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "return": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "18"
+    },
+    "196": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Hoof",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "generic",
+      "animation": "2hb",
+      "variant": "01",
+      "color": "white",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "return": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "19"
     }
   },
   "range": {
@@ -18116,30 +18184,30 @@
       "menuSection": "83"
     },
     "84": {
+      "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Witch Bolt",
+      "name": "Moonlight Ray",
       "soundOnly": {
         "enable": false
       },
       "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
+        "enable": false
       },
-      "type": "spell",
+      "menuType": "spell",
       "animation": "witchbolt",
       "variant": "01",
       "color": "blue",
+      "custom": false,
       "repeat": null,
       "delay": null,
-      "below": false,
-      "custom": false,
       "audio": {
         "a01": {
           "enable": false
         }
+      },
+      "explosion": {
+        "enable": false
       },
       "levels3d": {
         "type": "",
@@ -18172,11 +18240,68 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
+      "customPath": "",
+      "onlyX": false,
+      "menuSection": "119"
+    },
+    "85": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Searing Light",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
       "menuType": "spell",
-      "menuSection": "84",
+      "animation": "scorchingray",
+      "variant": "01",
+      "color": "yellow",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
       "explosion": {
         "enable": false
-      }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "117"
     }
   },
   "static": {
@@ -20303,7 +20428,9 @@
         "enable": false
       },
       "menuType": "tokenborder",
-      "menuSection": "53"
+      "menuSection": "53",
+      "unbindAlpha": false,
+      "unbindVisibility": false
     },
     "53": {
       "staticOptions": "creature",
@@ -20344,25 +20471,186 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Rebounding Toss",
+      "name": "Clinging Ice",
       "soundOnly": {
         "enable": false
       },
       "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Rebounding Toss",
-        "args": ""
+        "enable": false
       },
-      "type": "",
-      "menuType": "",
-      "animation": "",
-      "variant": "",
-      "color": "",
+      "type": "target",
+      "menuType": "conditions",
+      "animation": "snowflakes",
+      "variant": "02",
+      "color": "blue",
       "custom": false,
       "repeat": null,
       "delay": null,
       "scale": null,
+      "opacity": null,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "modules/jb2a_patreon/Library/Generic/Ice/IceSpikesRadialBurst_01_Regular_White_1000x1000.webm",
+      "menuSection": "52",
+      "unbindAlpha": false,
+      "unbindVisibility": false
+    },
+    "55": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Lay on Hands",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "targetDefault",
+      "menuType": "spell",
+      "animation": "divinesmite",
+      "variant": "source",
+      "color": "yellowwhite",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "",
+      "menuSection": "51",
+      "unbindAlpha": false,
+      "unbindVisibility": false
+    },
+    "56": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Phantom Pain",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "spell",
+      "animation": "divinesmite",
+      "variant": "source",
+      "color": "darkpurple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "animation": "",
+        "variant": "",
+        "color": "",
+        "custom": true,
+        "radius": null,
+        "delay": 250,
+        "below": true,
+        "customPath": "modules/jb2a_patreon/Library/4th_Level/Black_Tentacles/BlackTentacles_01_Dark_Purple_600x600.webm",
+        "menuType": ""
+      },
+      "customPath": "modules/jb2a_patreon/Library/2nd_Level/Divine_Smite/DivineSmite_01_Dark_Purple_Target_400x400.webm",
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "menuSection": "53"
+    },
+    "57": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Worm's Repast",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "shieldfx",
+      "animation": "eldritchweb",
+      "variant": "01",
+      "color": "darkgreen",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "animation": "",
+        "variant": "",
+        "color": "",
+        "custom": true,
+        "radius": null,
+        "delay": 260,
+        "below": false,
+        "customPath": "modules/jb2a_patreon/Library/1st_Level/Arms_Of_Hadar/ArmsOfHadar_01_Dark_Red_500x500.webm",
+        "menuType": ""
+      },
+      "customPath": "modules/jb2a_patreon/Library/2nd_Level/Divine_Smite/DivineSmite_01_Dark_Red_Target_400x400.webm",
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "menuSection": "54"
+    },
+    "58": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Sudden Bolt",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "lightning",
+      "animation": "strike",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
       "opacity": null,
       "unbindAlpha": false,
       "unbindVisibility": false,
@@ -20375,6 +20663,41 @@
       "explosion": {
         "enable": false
       }
+    },
+    "59": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Lay on Hands (Vs. Undead)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "targetDefault",
+      "menuType": "spell",
+      "animation": "divinesmite",
+      "variant": "source",
+      "color": "yellowwhite",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "",
+      "menuSection": "51",
+      "unbindAlpha": false,
+      "unbindVisibility": false
     }
   },
   "templates": {
@@ -20693,39 +21016,6 @@
         }
       },
       "menuSection": "9"
-    },
-    "10": {
-      "hidden": true,
-      "name": "Thunderwave",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "type": "rect",
-      "animation": "thunderwave",
-      "variant": "left",
-      "color": "blue",
-      "repeat": 3,
-      "delay": 500,
-      "scaleX": 1,
-      "scaleY": 1,
-      "below": false,
-      "custom": false,
-      "opacity": 0.75,
-      "removeTemplate": true,
-      "persist": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "menuType": "square",
-      "menuSection": "10"
     }
   },
   "auras": {},
@@ -20793,6 +21083,34 @@
           "enable": false
         }
       }
+    },
+    "2": {
+      "hidden": true,
+      "name": "Lingering Composition",
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "animation": "bardicinspiration",
+      "scale": 1,
+      "below": false,
+      "animateSelf": true,
+      "selfAnimation": "music",
+      "selfColor": "blue",
+      "animateTarget": true,
+      "targetAnimation": "bardicinspiration",
+      "targetColor": "greenorange",
+      "marker": true,
+      "selfMarkerColor": "greenorange",
+      "targetMarkerColor": "greenorange",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "8"
     }
   },
   "aefx": {
@@ -20874,7 +21192,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -20909,7 +21230,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -20970,7 +21294,7 @@
       "explosion": {
         "enable": false
       },
-      "customPath": "modules/jb2a_patreon/Library/1st_Level/Hunters_Mark/HuntersMark_01_Regular_Red_Pulse_200x200.webm",
+      "customPath": "jb2a.hunters_mark.pulse.01",
       "menuSection": "4"
     },
     "5": {
@@ -20988,7 +21312,7 @@
       "menuType": "bless",
       "animation": "",
       "variant": "",
-      "color": "blue",
+      "color": "",
       "custom": false,
       "audio": {
         "a01": {
@@ -21052,7 +21376,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -21087,7 +21414,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -21122,7 +21452,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -21157,7 +21490,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -21254,7 +21590,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -21290,7 +21629,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "preset",
       "type": "source",
@@ -21949,6 +22291,289 @@
       "explosion": {
         "enable": false
       }
+    },
+    "34": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Mountain Stronghold",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "shieldfx",
+      "animation": "earth",
+      "variant": "03",
+      "color": "darkorange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "modules/jb2a_patreon/Library/Generic/Fire/ShieldMoltenEarthBelow01_01_Dark_Orange_400x400.webm",
+      "menuSection": "47"
+    },
+    "35": {
+      "below": false,
+      "hidden": true,
+      "name": "Incapacitated",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "dizzystars",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "40",
+      "unbindAlpha": true,
+      "unbindVisibility": true
+    },
+    "36": {
+      "below": false,
+      "hidden": true,
+      "name": "Prone",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "crackedshield",
+      "variant": "03",
+      "color": "purple",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "43",
+      "unbindAlpha": false,
+      "unbindVisibility": false
+    },
+    "37": {
+      "below": false,
+      "hidden": true,
+      "name": "Quickened",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "tokenborder",
+      "animation": "static",
+      "variant": "09",
+      "color": "blue",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "repeat": null,
+      "delay": null,
+      "persistent": true,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "49"
+    },
+    "38": {
+      "below": false,
+      "hidden": true,
+      "name": "Restrained",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "chains",
+      "animation": "standard",
+      "variant": "complete",
+      "color": "blue",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "44",
+      "unbindAlpha": false,
+      "unbindVisibility": false
+    },
+    "39": {
+      "below": true,
+      "hidden": true,
+      "name": "Stance Mountain Stance",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "generic",
+      "animation": "boulderimpact",
+      "variant": "01",
+      "color": "white",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "modules/jb2a_patreon/Library/Generic/Impact/GroundCrackImpact_02_Regular_Orange_600x600.webm",
+      "repeat": null,
+      "delay": null,
+      "scale": 1.5,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "48"
+    },
+    "40": {
+      "below": false,
+      "hidden": true,
+      "name": "Unconscious",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "dizzystars",
+      "variant": "01",
+      "color": "red",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": 0.75,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "45",
+      "unbindAlpha": false,
+      "unbindVisibility": false
+    },
+    "41": {
+      "below": false,
+      "hidden": true,
+      "name": "Wounded",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "drop",
+      "variant": "02",
+      "color": "red",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Dizzy_Stars/DizzyStars_01_Green_Thumb.webp",
+      "repeat": null,
+      "delay": null,
+      "scale": 0.75,
+      "opacity": 0.75,
+      "aeDelay": null,
+      "persistent": true,
+      "explosion": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "menuSection": "46"
     }
   }
 }
