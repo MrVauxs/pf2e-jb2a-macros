@@ -1,3 +1,7 @@
+# Version 1.8.1
+- Adjusted Heal, Harm, Bane, and Bless to PF2e v3.13.X
+- Added Marshal's Aura
+
 # Version 1.8.0 - Equipment!
 - Added CHANGELOG.md
 - Switched Sneak Attack to active an Automated Animations entry than a macro.
