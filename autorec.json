@@ -18047,7 +18047,10 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "81"
+      "menuSection": "81",
+      "explosion": {
+        "enable": false
+      }
     },
     "82": {
       "hidden": true,
@@ -18302,6 +18305,67 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuSection": "117"
+    },
+    "86": {
+      "below": false,
+      "hidden": false,
+      "anim2d": false,
+      "name": "Tanglefoot",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Tanglefoot",
+        "args": ""
+      },
+      "menuType": "spell",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
     }
   },
   "static": {
@@ -20046,39 +20110,6 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Tanglefoot",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "type": "target",
-      "menuType": "",
-      "animation": "",
-      "variant": "",
-      "color": "",
-      "custom": true,
-      "repeat": null,
-      "delay": null,
-      "scale": 0.75,
-      "opacity": null,
-      "persistent": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "explosion": {
-        "enable": false
-      },
-      "customPath": "modules/jb2a_patreon/Library/1st_Level/Entangle/Entangle_01_Green_400x400.webm",
-      "menuSection": "45"
-    },
-    "45": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
       "name": "Teleport",
       "soundOnly": {
         "enable": false
@@ -20112,7 +20143,7 @@
       },
       "menuSection": "46"
     },
-    "46": {
+    "45": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20149,76 +20180,7 @@
       },
       "menuSection": "47"
     },
-    "47": {
-      "hidden": true,
-      "anim2d": false,
-      "name": "Toll the Dead",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "type": "target",
-      "staticOptions": "staticSpells",
-      "animation": "tollthedead",
-      "variant": "complete",
-      "color": "green",
-      "opacity": null,
-      "persistent": false,
-      "repeat": 1,
-      "delay": 500,
-      "scale": 1,
-      "below": false,
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "levels3d": {
-        "type": "",
-        "color01": "#000000",
-        "color02": "#000000",
-        "speed": null,
-        "repeat": null,
-        "arc": null,
-        "delay": null,
-        "scale": null,
-        "alpha": null,
-        "gravity": null,
-        "mass": null,
-        "life": null,
-        "emittersize": null,
-        "rate": null,
-        "addexplosion": {
-          "enable": false,
-          "color01": "#000000",
-          "color02": "#000000",
-          "speed": null,
-          "scale": null,
-          "alpha": null,
-          "gravity": null,
-          "mass": null,
-          "life": null,
-          "emittersize": null,
-          "rate": null,
-          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
-        },
-        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      },
-      "menuType": "spell",
-      "menuSection": "48",
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      }
-    },
-    "48": {
+    "46": {
       "hidden": true,
       "anim2d": false,
       "name": "Treat Wounds",
@@ -20288,7 +20250,7 @@
       "unbindVisibility": false,
       "menuSection": "49"
     },
-    "49": {
+    "47": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20325,7 +20287,7 @@
       },
       "menuSection": "50"
     },
-    "50": {
+    "48": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20362,7 +20324,7 @@
       },
       "menuSection": "51"
     },
-    "51": {
+    "49": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20397,7 +20359,7 @@
       },
       "menuSection": "52"
     },
-    "52": {
+    "50": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20432,7 +20394,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "53": {
+    "51": {
       "staticOptions": "creature",
       "animation": "bite",
       "below": false,
@@ -20467,7 +20429,7 @@
         "enable": false
       }
     },
-    "54": {
+    "52": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20502,7 +20464,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "55": {
+    "53": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20537,7 +20499,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "56": {
+    "54": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20584,7 +20546,7 @@
       "unbindVisibility": false,
       "menuSection": "53"
     },
-    "57": {
+    "55": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20631,7 +20593,7 @@
       "unbindVisibility": false,
       "menuSection": "54"
     },
-    "58": {
+    "56": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20664,7 +20626,7 @@
         "enable": false
       }
     },
-    "59": {
+    "57": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21417,7 +21379,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
-        "args": ""
+        "args": "magic weapon"
       },
       "aeType": "static",
       "type": "source",
@@ -21454,7 +21416,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Overdrive",
         "args": ""
       },
       "aeType": "static",
@@ -21492,7 +21454,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Panache",
         "args": ""
       },
       "aeType": "static",
@@ -22406,7 +22368,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Token Borders",
+        "args": ""
       },
       "aeType": "static",
       "type": "source",
@@ -22574,6 +22539,159 @@
       "unbindAlpha": false,
       "unbindVisibility": false,
       "menuSection": "46"
+    },
+    "42": {
+      "below": false,
+      "hidden": true,
+      "name": "Clumsy",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Clumsy",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "43": {
+      "below": false,
+      "hidden": true,
+      "name": "Petrified",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Petrified",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "44": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Protective Ward",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "preset",
+      "type": "source",
+      "menuType": "shieldspell",
+      "animation": "",
+      "variant": "03",
+      "color": "yellow",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "endeffect": "outro_fade",
+      "addCTA": true
+    },
+    "45": {
+      "below": false,
+      "hidden": true,
+      "name": "Aura Protective Ward",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Protective Ward",
+        "args": ""
+      },
+      "aeType": "preset",
+      "type": "source",
+      "menuType": "shieldspell",
+      "animation": "",
+      "variant": "03",
+      "color": "yellow",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "endeffect": "outro_fade",
+      "addCTA": true
+    },
+    "46": {
+      "below": false,
+      "hidden": false,
+      "name": "Stance Arcane Cascade",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Arcane Cascade",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
     }
   }
 }
