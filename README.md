@@ -7,6 +7,8 @@ Created to accompany the Community Complete Autorec for [Automated Animations](h
 
 You can probably appropriate most of this module for other systems, I simply don't have interest in doing so.
 
+If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs)!
+
 ## Installing the module
 
 The basics of installing and enabling the module can be found [here](https://foundryvtt.com/article/modules/). 
