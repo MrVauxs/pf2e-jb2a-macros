@@ -18308,7 +18308,7 @@
     },
     "86": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Tanglefoot",
       "soundOnly": {
@@ -18324,6 +18324,64 @@
       "animation": "",
       "variant": "",
       "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "87": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Fire Ray",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "scorchingray",
+      "variant": "01",
+      "color": "orange",
       "custom": false,
       "repeat": null,
       "delay": null,
@@ -20660,6 +20718,120 @@
       "menuSection": "51",
       "unbindAlpha": false,
       "unbindVisibility": false
+    },
+    "58": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Rebounding Toss",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Rebounding Toss",
+        "args": ""
+      },
+      "type": "",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      }
+    },
+    "59": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Agonizing Despair",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "spell",
+      "animation": "tollthedead",
+      "variant": "skull",
+      "color": "purple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": true,
+        "menuType": "spell",
+        "animation": "shatter",
+        "variant": "01",
+        "color": "purple",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      }
+    },
+    "60": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "See Invisibility",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "jb2a.eyes.01.dark_green.single.0"
     }
   },
   "templates": {
@@ -20978,6 +21150,34 @@
         }
       },
       "menuSection": "9"
+    },
+    "10": {
+      "below": false,
+      "hidden": true,
+      "name": "Sound Burst",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "circle",
+      "animation": "outpulse",
+      "variant": "01",
+      "color": "whiteblue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
     }
   },
   "auras": {},
@@ -22669,7 +22869,7 @@
     },
     "46": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "name": "Stance Arcane Cascade",
       "soundOnly": {
         "enable": false
@@ -22691,6 +22891,135 @@
         "a01": {
           "enable": false
         }
+      }
+    },
+    "47": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Incendiary Aura",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "shieldfx",
+      "animation": "fire",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "modules/jb2a_patreon/Library/Generic/Fire/FireRing_01_Circle_Red_500.webm",
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "repeat": null,
+      "delay": null,
+      "persistent": true,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "48": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Lay on Hands",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "bless",
+      "variant": "loop",
+      "color": "yellow",
+      "custom": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false,
+        "menuType": "spell",
+        "animation": "bless",
+        "variant": "intro",
+        "color": "yellow",
+        "custom": false,
+        "radius": null,
+        "delay": -100,
+        "below": false
+      },
+      "customPath": "jb2a.dodecahedron.star.below.blueyellow"
+    },
+    "49": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Lay on Hands Vs. Undead",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "bless",
+      "variant": "loop",
+      "color": "yellow",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false,
+        "menuType": "spell",
+        "animation": "bless",
+        "variant": "intro",
+        "color": "yellow",
+        "custom": false,
+        "radius": null,
+        "delay": -100,
+        "below": false
       }
     }
   }
