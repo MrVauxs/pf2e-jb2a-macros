@@ -1,3 +1,41 @@
+# Version 1.9.0
+- Added "On Hit/Miss" Animations from [PF2e Workbench](https://github.com/xdy/xdy-pf2e-workbench)
+  - Configurable in the Autorecognition Menu.
+  - You can also override it on per character basis by importing the Attack Animation Template of your choosing from the Actions compendium to your character sheet.
+  - A setting to disable it is provided, regardless of it existing in the Autorecognition Menu or not.
+  - A setting to have the "Miss" animations miss the target locations is also, provided. Don't know why you would want that though.
+- Added the following effects:
+  - Moonlight Ray
+  - Searing Light
+  - Tanglefoot (Attack and Effect)
+  - Fire Ray
+  - Sudden Bolt
+  - Lay on Hands (Vs. Undead)
+  - Agonizing Despair
+  - See Invisibility
+  - Attack Animation Templates for the feature above
+  - Sound Burst
+  - Lingering Composition
+  - Effect Lay on Hands Vs. Undead
+  - Effect Lay on Hands
+  - Effect Incendiary Aura
+  - Stance Arcane Cascade
+  - Aura Protective Ward
+  - Effect Protective Ward
+  - Petrified
+  - Stance Mountain Stance
+  - Unconscious
+  - Wounded
+  - Quickened
+  - Restrained
+  - Prone
+  - Incapacitated
+  - Effect Mountain Stronghold
+  - Effect Marshals Aura
+- Revamped Bless and Bane to work with PF2e Workbench Auras.
+  - Normal Casting and Effects are now temporary, rather than persistent.
+
+
 # Version 1.8.1
 - Adjusted Heal, Harm, Bane, and Bless to PF2e v3.13.X
 - Added Marshal's Aura

@@ -1,4 +1,4 @@
-let version = 181;
+let version = 190;
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -14,6 +14,22 @@ Hooks.on("init", () => {
 		config: true,
 		name: "Use Local Macros",
 		hint: "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes",
+		type: Boolean,
+		default: false
+	});
+	game.settings.register("pf2e-jb2a-macros", "disableHitAnims", {
+		scope: "world",
+		config: true,
+		name: "Disable Strike Animations",
+		hint: "While you can remove the animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable them.",
+		type: Boolean,
+		default: false
+	});
+	game.settings.register("pf2e-jb2a-macros", "randomHitAnims", {
+		scope: "world",
+		config: true,
+		name: "Make miss Strike animations appear Off-Target",
+		hint: "Make miss and critical miss animations appear at a random spot near the missed target token.",
 		type: Boolean,
 		default: false
 	});
@@ -53,7 +69,8 @@ async function importAll() {
 	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
 	game.settings.set("pf2e-jb2a-macros", "imported", true);
 };
-// Thanks xdy for pretty much this entire function.
+
+// Thanks @ xdy for this function.
 async function runJB2Apf2eMacro(
     macroName,
 	args,
@@ -76,19 +93,26 @@ async function runJB2Apf2eMacro(
     }
 };
 
-Hooks.on("createChatMessage", (data) => {
+// As above @ xdy.
+function degreeOfSuccessWithRerollHandling(message) {
+    const flags = message.data.flags.pf2e;
+    let degreeOfSuccess = flags.context?.outcome ?? "";
+    if (flags?.context?.isReroll) {
+        const match = message.data.flavor?.match('Result: <span .*? class="(.*?)"');
+        if (match && match[1]) {
+            degreeOfSuccess = match[1];
+        }
+    }
+    return degreeOfSuccess;
+}
+
+Hooks.on("createChatMessage", async (data) => {
+	if (game.user.id !== data.data.user) return;
 	let targets = Array.from(game.user.targets);
 	let token = data.token
 	let flavor = data.data.flavor ?? null;
 	let args = data ?? null;
-	if (game.user.id !== data.data.user) return;
 
-	// Default Matches
-	if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
-		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
-		return AutoAnimations.playAnimation(token, targets, sneak)
-		// runJB2Apf2eMacro('Sneak Attack', args)
-	}
 	// Persistent Damage Matches
 	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor)) {
 		if (game.modules.get("pf2e-persistent-damage")?.active)	{
@@ -96,6 +120,41 @@ Hooks.on("createChatMessage", (data) => {
 		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
 			return ui.notifications.error("Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.")
 		}
+	}
+	// Default Matches
+	if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
+		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
+		AutoAnimations.playAnimation(token, targets, sneak)
+	}
+	// Attack Matches
+	if (data.data.flags.pf2e?.context?.type === "attack-roll") {
+		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
+        const degreeOfSuccess = degreeOfSuccessWithRerollHandling(data);
+		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
+		if (!pack) ui.notifications.error("PF2e x JB2A Macros | Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?");
+
+		let items = data.token._actor.items.filter(i => i.data.name.includes("Attack Animation Template"));
+		if (Object.keys(items).length === 0) {
+			items = (await pack.getDocuments()).filter(i => i.data.name.includes("Attack Animation Template"))
+		} else if (Object.keys(items).length < 4) {
+			items.push((await pack.getDocuments()).filter(i => i.data.name.includes("Attack Animation Template")))
+		}
+		items = items.flat()
+		let item = ""
+		switch (degreeOfSuccess) {
+            case "criticalSuccess":
+				item = items.find(i => i.data.name.includes("(Critical Success)"))
+				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
+            case "criticalFailure":
+				item = items.find(i => i.data.name.includes("(Critical Failure)"))
+				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
+            case "failure":
+				item = items.find(i => i.data.name.includes("(Failure)"))
+				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
+            case "success":
+				item = items.find(i => i.data.name.includes("(Success)"))
+				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
+        }
 	}
 });
 

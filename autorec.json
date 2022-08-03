@@ -20832,6 +20832,157 @@
         "enable": false
       },
       "customPath": "jb2a.eyes.01.dark_green.single.0"
+    },
+    "61": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Attack Animation Template (Success)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "generic",
+      "animation": "impact",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-1.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      }
+    },
+    "62": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Attack Animation Template (Critical Success)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "generic",
+      "animation": "impact",
+      "variant": "01",
+      "color": "random",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-13.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "jb2a.ui.critical."
+    },
+    "63": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Attack Animation Template (Critical Failure)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "generic",
+      "animation": "impact",
+      "variant": "01",
+      "color": "random",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Melee%20Miss/melee-miss-1.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "jb2a.ui.critical_miss."
+    },
+    "64": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Attack Animation Template (Failure)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "generic",
+      "animation": "impact",
+      "variant": "01",
+      "color": "random",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Melee%20Miss/melee-miss-1.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "jb2a.ui.miss"
     }
   },
   "templates": {
@@ -20866,7 +21017,8 @@
         }
       },
       "menuType": "cone",
-      "menuSection": "0"
+      "menuSection": "0",
+      "persistType": ""
     },
     "1": {
       "hidden": true,
