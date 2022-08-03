@@ -35,7 +35,6 @@
 - Revamped Bless and Bane to work with PF2e Workbench Auras.
   - Normal Casting and Effects are now temporary, rather than persistent.
 
-
 # Version 1.8.1
 - Adjusted Heal, Harm, Bane, and Bless to PF2e v3.13.X
 - Added Marshal's Aura
