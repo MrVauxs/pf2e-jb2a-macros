@@ -1,4 +1,4 @@
-let version = 190;
+let version = 191;
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
