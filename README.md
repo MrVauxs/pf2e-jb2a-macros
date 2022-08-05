@@ -1,4 +1,6 @@
 # pf2e-jb2a-macros
+![Latest Release Download Count](https://img.shields.io/github/downloads/MrVauxs/pf2e-jb2a-macros/latest/module.zip) ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%pf2e-jb2a-macros&colorB=4aa94a)
+
 A collection of JB2A macros for the PF2e Foundry system.
 
 Created to accompany the Community Complete Autorec for [Automated Animations](https://github.com/otigon/automated-jb2a-animations).
