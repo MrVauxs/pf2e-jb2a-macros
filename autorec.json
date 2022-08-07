@@ -12028,7 +12028,7 @@
     "183": {
       "hidden": true,
       "anim2d": false,
-      "name": "Unarmed Strike",
+      "name": "Unarmed Attack",
       "soundOnly": {
         "enable": false
       },
@@ -12041,10 +12041,10 @@
       "meleeType": "weapon",
       "animation": "unarmedstrike",
       "variant": "physical",
-      "color": "blue",
-      "repeat": 1,
-      "delay": 500,
-      "scale": 1,
+      "color": "random",
+      "repeat": null,
+      "delay": null,
+      "scale": null,
       "below": false,
       "custom": false,
       "audio": {

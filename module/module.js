@@ -1,4 +1,5 @@
-let version = 191;
+let version = 192;
+const versionsWithAutorecUpdates = [192];
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -50,7 +51,8 @@ Hooks.on("ready", () => {
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.settings.get("pf2e-jb2a-macros", "version"));
 		game.settings.set("pf2e-jb2a-macros", "version", version);
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
-		console.log("Updated from PF2e JB2A Macros v" + previousVersion + " to v" + version + ".");
+		let updateAutorec = versionsWithAutorecUpdates.includes(version) ? `<hr>This new version has also updated the autorec. A new version can be downloaded <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json">here</a>, and be seen <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest">here</a>.` : ""
+		ui.notifications.info(`Updated from PF2e JB2A Macros v${previousVersion} to v${version}. ${updateAutorec}`, { permanent: true });
 	} else console.log("PF2e JB2A Macros v" + game.settings.get("pf2e-jb2a-macros", "version") + " loaded");
 });
 
