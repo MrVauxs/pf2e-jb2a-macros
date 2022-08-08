@@ -23173,6 +23173,58 @@
         "delay": -100,
         "below": false
       }
+    },
+    "50": {
+      "below": false,
+      "hidden": true,
+      "name": "Inspire Defense",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "51": {
+      "below": false,
+      "hidden": true,
+      "name": "Inspire Courage",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bardic Cantripry",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
     }
   }
 }
