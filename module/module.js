@@ -49,6 +49,7 @@ Hooks.on("init", () => {
 Hooks.on("ready", () => {
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
+		return;
 	}
 	if (game.settings.get("pf2e-jb2a-macros", "version") < version) {
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.settings.get("pf2e-jb2a-macros", "version"));
