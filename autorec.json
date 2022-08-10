@@ -23225,6 +23225,32 @@
           "enable": false
         }
       }
+    },
+    "52": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Unleash Psyche",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Unleash Psyche",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
     }
   }
 }
