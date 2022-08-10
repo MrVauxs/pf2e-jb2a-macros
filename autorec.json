@@ -12973,7 +12973,7 @@
       "menuSection": "0"
     },
     "1": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Acid Flask",
       "soundOnly": {
@@ -12986,11 +12986,11 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "pumpkin",
-      "variant": "01",
-      "color": "random",
-      "repeat": 1,
-      "delay": 500,
+      "animation": "flask",
+      "variant": "03",
+      "color": "green",
+      "repeat": null,
+      "delay": null,
       "below": false,
       "custom": false,
       "audio": {
@@ -21348,7 +21348,7 @@
       "projectileColor": "orange",
       "projectileRepeat": null,
       "projectileDelay": null,
-      "wait01": null,
+      "wait01": 200,
       "removeTemplate": false,
       "audio": {
         "a01": {
@@ -21375,9 +21375,11 @@
       "explosion02Color": "orange",
       "explosion02Repeat": null,
       "explosion02Delay": null,
-      "explosion02Scale": 1.5,
+      "explosion02Scale": 2,
       "afterEffect": false,
-      "menuSection": "0"
+      "menuSection": "0",
+      "afterEffectPath": "",
+      "wait03": null
     },
     "1": {
       "below": false,
@@ -23250,6 +23252,51 @@
         "a01": {
           "enable": false
         }
+      }
+    },
+    "53": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect True Strike",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "huntersmark",
+      "variant": "eye",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false,
+        "menuType": "",
+        "animation": "",
+        "variant": "",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
       }
     }
   }
