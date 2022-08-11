@@ -1,4 +1,4 @@
-let version = 192;
+let version = 193;
 const versionsWithAutorecUpdates = [192];
 
 Hooks.on("init", () => {
