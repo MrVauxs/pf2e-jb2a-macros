@@ -1,3 +1,15 @@
+# Version 1.9.2
+- Added the following effects
+  - Unleash Psyche
+  - Unarmed Attack
+  - Effect Inspire Courage
+  - Effect Inspire Defense
+  - True Strike
+  - Drain Bonded Item
+- Added a warning for users who don't have any JB2A module enabled.
+- Added a notification saying if you updated to a version with a new autorec file available for download.
+- Hopefully made the module.json V10 compatible (?)
+
 # Version 1.9.1
 - Fixed Shield effect and lack of Mage Armor effect
 

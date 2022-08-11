@@ -44,6 +44,10 @@ Free Version of the Rage Animation:
 
 https://user-images.githubusercontent.com/32039708/179333855-3fb05dea-8733-43ea-a796-b9dad3f06eb7.mp4
 
+https://user-images.githubusercontent.com/32039708/184184742-befa2eea-f08f-4922-b5db-c6229cc2e9a2.mp4
+
+https://user-images.githubusercontent.com/32039708/184184929-45da8eee-0072-44ee-8e45-b65ee73c2de6.mp4
+
 https://user-images.githubusercontent.com/32039708/180655584-e7173e43-367f-49cf-8d83-a7c2b9b4d10c.mp4
 
 https://user-images.githubusercontent.com/32039708/180655580-1c2c64bd-9fb9-4e8d-9b77-fa75026ca30f.mp4
