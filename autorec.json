@@ -14211,65 +14211,6 @@
       "menuSection": "19"
     },
     "20": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
-      "name": "Chill Touch",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "menuType": "generic",
-      "animation": "skull",
-      "variant": "01",
-      "color": "purplepink",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "explosion": {
-        "enable": false
-      },
-      "levels3d": {
-        "type": "",
-        "color01": "#000000",
-        "color02": "#000000",
-        "speed": null,
-        "repeat": null,
-        "arc": null,
-        "delay": null,
-        "scale": null,
-        "alpha": null,
-        "gravity": null,
-        "mass": null,
-        "life": null,
-        "emittersize": null,
-        "rate": null,
-        "addexplosion": {
-          "enable": false,
-          "color01": "#000000",
-          "color02": "#000000",
-          "speed": null,
-          "scale": null,
-          "alpha": null,
-          "gravity": null,
-          "mass": null,
-          "life": null,
-          "emittersize": null,
-          "rate": null,
-          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
-        },
-        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      },
-      "menuSection": "20"
-    },
-    "21": {
       "hidden": true,
       "anim2d": false,
       "name": "Combat Grapnel",
@@ -14329,7 +14270,7 @@
       "menuType": "weapon",
       "menuSection": "21"
     },
-    "22": {
+    "21": {
       "hidden": true,
       "anim2d": false,
       "name": "Crossbow",
@@ -14411,7 +14352,7 @@
       },
       "menuSection": "22"
     },
-    "23": {
+    "22": {
       "hidden": true,
       "anim2d": false,
       "name": "Daikyu",
@@ -14471,7 +14412,7 @@
       "menuType": "weapon",
       "menuSection": "23"
     },
-    "24": {
+    "23": {
       "hidden": true,
       "anim2d": false,
       "name": "Dart",
@@ -14531,7 +14472,7 @@
       "menuType": "weapon",
       "menuSection": "24"
     },
-    "25": {
+    "24": {
       "hidden": true,
       "anim2d": false,
       "name": "Dart Umbrella",
@@ -14591,7 +14532,7 @@
       "menuType": "weapon",
       "menuSection": "25"
     },
-    "26": {
+    "25": {
       "hidden": true,
       "anim2d": false,
       "name": "Deepdread Claw",
@@ -14651,7 +14592,7 @@
       "menuType": "weapon",
       "menuSection": "26"
     },
-    "27": {
+    "26": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -14710,7 +14651,7 @@
       },
       "menuSection": "27"
     },
-    "28": {
+    "27": {
       "hidden": true,
       "anim2d": false,
       "name": "Disintegrate",
@@ -14770,7 +14711,7 @@
       "menuType": "spell",
       "menuSection": "28"
     },
-    "29": {
+    "28": {
       "hidden": true,
       "name": "Divine Lance",
       "animation": "scorchingray",
@@ -14830,7 +14771,7 @@
       },
       "menuType": "spell"
     },
-    "30": {
+    "29": {
       "hidden": true,
       "anim2d": false,
       "name": "Dragon Mouth Pistol",
@@ -14893,7 +14834,7 @@
       },
       "menuSection": "30"
     },
-    "31": {
+    "30": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Acid)",
@@ -14956,7 +14897,7 @@
       },
       "menuSection": "31"
     },
-    "32": {
+    "31": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Cold)",
@@ -15016,7 +14957,7 @@
       "menuType": "spell",
       "menuSection": "32"
     },
-    "33": {
+    "32": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Electricity)",
@@ -15076,7 +15017,7 @@
       "menuType": "spell",
       "menuSection": "33"
     },
-    "34": {
+    "33": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Fire)",
@@ -15139,7 +15080,7 @@
       },
       "menuSection": "34"
     },
-    "35": {
+    "34": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Poison)",
@@ -15202,7 +15143,7 @@
         "enable": false
       }
     },
-    "36": {
+    "35": {
       "hidden": true,
       "anim2d": false,
       "name": "Duchy Defender",
@@ -15262,7 +15203,7 @@
       "menuType": "weapon",
       "menuSection": "36"
     },
-    "37": {
+    "36": {
       "hidden": true,
       "anim2d": false,
       "name": "Eclipse",
@@ -15322,7 +15263,7 @@
       "menuType": "weapon",
       "menuSection": "37"
     },
-    "38": {
+    "37": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -15384,7 +15325,7 @@
       },
       "menuSection": "38"
     },
-    "39": {
+    "38": {
       "hidden": true,
       "anim2d": false,
       "name": "Fire Lance",
@@ -15447,7 +15388,7 @@
       },
       "menuSection": "39"
     },
-    "40": {
+    "39": {
       "hidden": true,
       "anim2d": false,
       "name": "Fire Poi",
@@ -15507,7 +15448,7 @@
       "menuType": "spell",
       "menuSection": "40"
     },
-    "41": {
+    "40": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -15585,7 +15526,7 @@
       },
       "menuSection": "41"
     },
-    "42": {
+    "41": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -15646,7 +15587,7 @@
       "onlyX": false,
       "menuSection": "42"
     },
-    "43": {
+    "42": {
       "hidden": true,
       "anim2d": false,
       "name": "Forked Bipod",
@@ -15706,7 +15647,7 @@
       "menuType": "weapon",
       "menuSection": "43"
     },
-    "44": {
+    "43": {
       "hidden": true,
       "anim2d": false,
       "name": "Four-Ways Dogslicer",
@@ -15766,7 +15707,7 @@
       "menuType": "weapon",
       "menuSection": "44"
     },
-    "45": {
+    "44": {
       "hidden": true,
       "anim2d": false,
       "name": "Frost Vial",
@@ -15840,7 +15781,7 @@
       },
       "menuSection": "45"
     },
-    "46": {
+    "45": {
       "hidden": true,
       "anim2d": false,
       "name": "Gnome Flickmace",
@@ -15900,7 +15841,7 @@
       "menuType": "weapon",
       "menuSection": "46"
     },
-    "47": {
+    "46": {
       "hidden": true,
       "anim2d": false,
       "name": "Growth Gun",
@@ -15963,7 +15904,7 @@
       },
       "menuSection": "47"
     },
-    "48": {
+    "47": {
       "hidden": true,
       "anim2d": false,
       "name": "Guiding Bolt",
@@ -16023,7 +15964,7 @@
       "menuType": "spell",
       "menuSection": "48"
     },
-    "49": {
+    "48": {
       "hidden": true,
       "anim2d": false,
       "name": "Guiding Star",
@@ -16083,7 +16024,7 @@
       "menuType": "weapon",
       "menuSection": "49"
     },
-    "50": {
+    "49": {
       "hidden": true,
       "anim2d": false,
       "name": "Halfling Sling Staff",
@@ -16143,7 +16084,7 @@
       "menuType": "weapon",
       "menuSection": "50"
     },
-    "51": {
+    "50": {
       "hidden": true,
       "anim2d": false,
       "name": "Hardened Harrow Deck",
@@ -16203,7 +16144,7 @@
       "menuType": "weapon",
       "menuSection": "51"
     },
-    "52": {
+    "51": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16264,7 +16205,7 @@
       "onlyX": false,
       "menuSection": "52"
     },
-    "53": {
+    "52": {
       "hidden": true,
       "anim2d": false,
       "name": "Iris of the Sky",
@@ -16324,7 +16265,7 @@
       "menuType": "weapon",
       "menuSection": "53"
     },
-    "54": {
+    "53": {
       "hidden": true,
       "anim2d": false,
       "name": "Javelin",
@@ -16384,7 +16325,7 @@
       "menuType": "weapon",
       "menuSection": "54"
     },
-    "55": {
+    "54": {
       "hidden": true,
       "anim2d": false,
       "name": "Jezail",
@@ -16444,7 +16385,7 @@
       "menuType": "weapon",
       "menuSection": "55"
     },
-    "56": {
+    "55": {
       "hidden": true,
       "anim2d": false,
       "name": "Liar's Gun",
@@ -16507,7 +16448,7 @@
       },
       "menuSection": "56"
     },
-    "57": {
+    "56": {
       "hidden": true,
       "anim2d": false,
       "name": "Magic Missile",
@@ -16570,7 +16511,7 @@
       },
       "menuSection": "57"
     },
-    "58": {
+    "57": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16629,7 +16570,7 @@
       },
       "menuSection": "58"
     },
-    "59": {
+    "58": {
       "hidden": true,
       "anim2d": false,
       "name": "Mountebank's Passage",
@@ -16689,7 +16630,7 @@
       "menuType": "weapon",
       "menuSection": "59"
     },
-    "60": {
+    "59": {
       "hidden": true,
       "anim2d": false,
       "name": "Peshpine Grenade",
@@ -16763,7 +16704,7 @@
       },
       "menuSection": "60"
     },
-    "61": {
+    "60": {
       "hidden": true,
       "anim2d": false,
       "name": "Petrification Cannon",
@@ -16823,7 +16764,7 @@
       "menuType": "spell",
       "menuSection": "61"
     },
-    "62": {
+    "61": {
       "hidden": true,
       "anim2d": false,
       "name": "Produce Flame",
@@ -16890,7 +16831,7 @@
       },
       "menuSection": "62"
     },
-    "63": {
+    "62": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16966,7 +16907,7 @@
       "onlyX": false,
       "menuSection": "63"
     },
-    "64": {
+    "63": {
       "hidden": true,
       "anim2d": false,
       "name": "Ray of Frost",
@@ -17026,7 +16967,7 @@
       "menuType": "spell",
       "menuSection": "64"
     },
-    "65": {
+    "64": {
       "hidden": true,
       "anim2d": false,
       "name": "Reaper's Grasp",
@@ -17086,7 +17027,7 @@
       "menuType": "weapon",
       "menuSection": "65"
     },
-    "66": {
+    "65": {
       "hidden": true,
       "anim2d": false,
       "name": "Rowan Rifle",
@@ -17146,7 +17087,7 @@
       "menuType": "spell",
       "menuSection": "66"
     },
-    "67": {
+    "66": {
       "hidden": true,
       "anim2d": false,
       "name": "Scorching Ray",
@@ -17206,7 +17147,7 @@
       "menuType": "spell",
       "menuSection": "67"
     },
-    "68": {
+    "67": {
       "hidden": true,
       "anim2d": false,
       "name": "Screech Shooter",
@@ -17266,7 +17207,7 @@
       "menuType": "spell",
       "menuSection": "68"
     },
-    "69": {
+    "68": {
       "hidden": true,
       "anim2d": false,
       "name": "Shobhad Longrifle",
@@ -17326,7 +17267,7 @@
       "menuType": "weapon",
       "menuSection": "69"
     },
-    "70": {
+    "69": {
       "hidden": true,
       "anim2d": false,
       "name": "Shuriken",
@@ -17386,7 +17327,7 @@
       "menuType": "weapon",
       "menuSection": "70"
     },
-    "71": {
+    "70": {
       "hidden": true,
       "anim2d": false,
       "name": "Sling",
@@ -17446,7 +17387,7 @@
       "menuType": "weapon",
       "menuSection": "71"
     },
-    "72": {
+    "71": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17508,7 +17449,7 @@
       },
       "menuSection": "72"
     },
-    "73": {
+    "72": {
       "hidden": true,
       "anim2d": false,
       "name": "Spider Gun",
@@ -17568,7 +17509,7 @@
       "menuType": "generic",
       "menuSection": "73"
     },
-    "74": {
+    "73": {
       "hidden": true,
       "anim2d": false,
       "name": "Spike Launcher",
@@ -17628,7 +17569,7 @@
       "menuType": "weapon",
       "menuSection": "74"
     },
-    "75": {
+    "74": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17691,7 +17632,7 @@
       "menuType": "",
       "menuSection": "75"
     },
-    "76": {
+    "75": {
       "hidden": true,
       "anim2d": false,
       "name": "Starknife",
@@ -17751,7 +17692,7 @@
       "menuType": "weapon",
       "menuSection": "76"
     },
-    "77": {
+    "76": {
       "hidden": true,
       "anim2d": false,
       "name": "Stoneraiser Javelin",
@@ -17808,7 +17749,7 @@
       },
       "menuSection": "77"
     },
-    "78": {
+    "77": {
       "hidden": true,
       "anim2d": false,
       "name": "Taw Launcher",
@@ -17868,7 +17809,7 @@
       "menuType": "weapon",
       "menuSection": "78"
     },
-    "79": {
+    "78": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17929,7 +17870,7 @@
       "onlyX": false,
       "menuSection": "79"
     },
-    "80": {
+    "79": {
       "hidden": true,
       "anim2d": false,
       "name": "Throwing Knife",
@@ -17989,7 +17930,7 @@
       "menuType": "weapon",
       "menuSection": "80"
     },
-    "81": {
+    "80": {
       "hidden": true,
       "anim2d": false,
       "name": "Tiger's Claw",
@@ -18052,7 +17993,7 @@
         "enable": false
       }
     },
-    "82": {
+    "81": {
       "hidden": true,
       "anim2d": false,
       "name": "Vexing Vapor",
@@ -18126,7 +18067,7 @@
       },
       "menuSection": "82"
     },
-    "83": {
+    "82": {
       "hidden": true,
       "anim2d": false,
       "name": "Wind and Fire Wheel",
@@ -18186,7 +18127,7 @@
       "menuType": "weapon",
       "menuSection": "83"
     },
-    "84": {
+    "83": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18247,7 +18188,7 @@
       "onlyX": false,
       "menuSection": "119"
     },
-    "85": {
+    "84": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18306,7 +18247,7 @@
       },
       "menuSection": "117"
     },
-    "86": {
+    "85": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18367,7 +18308,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "87": {
+    "86": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18638,7 +18579,9 @@
       "explosion": {
         "enable": false
       },
-      "menuType": "marker"
+      "menuType": "marker",
+      "unbindAlpha": false,
+      "unbindVisibility": false
     },
     "5": {
       "hidden": true,
@@ -21019,6 +20962,42 @@
       "explosion": {
         "enable": false
       }
+    },
+    "66": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Humanoid Form",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Humanoid Form",
+        "args": ""
+      },
+      "type": "",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      }
     }
   },
   "templates": {
@@ -21353,6 +21332,37 @@
       "animation": "outpulse",
       "variant": "01",
       "color": "whiteblue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
+    },
+    "11": {
+      "below": false,
+      "hidden": false,
+      "name": "Lightning Bolt",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Lightning Bolt",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
       "custom": false,
       "repeat": null,
       "delay": null,
@@ -23333,6 +23343,32 @@
         "radius": null,
         "delay": null,
         "below": false
+      }
+    },
+    "54": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Illusory Disguise",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Illusory Disguise",
+        "args": ""
+      },
+      "aeType": "",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
       }
     }
   }
