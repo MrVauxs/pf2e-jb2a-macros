@@ -11,44 +11,9 @@ You can probably appropriate most of this module for other systems, I simply don
 
 If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs)!
 
-## Installing the module
+## [Installing the Module](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Installing-the-Module)
 
-The basics of installing and enabling the module can be found [here](https://foundryvtt.com/article/modules/). 
-
-Beyond that, this module is created to accompany the **PF2e Community Complete Autorec** file, which can be downloaded by pressing [this](https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json) hyperlink.
-
-Once downloaded, head over to the Automated Animations settings and Configure Automatic Recognition.
-![image](https://user-images.githubusercontent.com/32039708/174436836-fab72b76-525e-40b9-8be2-d23c3b6d8ab8.png)
-
-At the bottom of the menu, you have **Overwrite / Merge Menu**. This is where you input the file.
-
-If you haven't created any effects of your own, I recommend Overwriting. If you have made your own animations, note that Overriding is going to delete those entries, so instead use Merge. The How-To on updating _existing_ entries can be found below in [Updating the Autorecognition Settings](https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/README.md#updating-the-autorecognition-settings).
-
-![image](https://user-images.githubusercontent.com/32039708/174436900-f1e9b74a-7261-404a-b738-ce0a34622592.png)
-
-And that's it!
-
-Hopefully in the future automatic merging / overwriting of AA's autorec settings will be possible, but currently it is manual.
-
-### Updating the Autorecognition Settings
-If you want to keep your own custom effects, you can update your existing settings without losing your custom ones by doing the following:
-1. **Export** your existing menu to a separate file
-2. **Override** the menu in Foundry with the new PF2e x JB2A autorec file
-3. **Merge** the newly overriden menu with your exported file
-
-**Note that this still overrides any changes you made to the pre-existing animations!**
-
-## "On Hit/Miss" Animations from [PF2e Workbench](https://github.com/xdy/xdy-pf2e-workbench)
-
-PF2e x JB2A Macros inherited the special function of PF2e Workbench to play special effects on critical or not hits and misses.
-You can configure those animations in your Autorecognition Menu.
-You can also drag the following Attack Animation Templates onto your character sheets to be able to customize it on per-player basis.
-You can disable them in PF2e x JB2A Macros module settings.
-
-![image](https://user-images.githubusercontent.com/32039708/182642887-4573cc07-389e-47d1-a6e7-1027b134bb90.png)
-![image](https://user-images.githubusercontent.com/32039708/182642897-6f2684de-b6a7-4e9f-ad7d-53f792e1832e.png)
-![image](https://user-images.githubusercontent.com/32039708/182642905-6815d6a3-3b24-4a96-8531-0e85fd9da69c.png)
-
+## ["On Hit/Miss" Animations](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/%22On-Hit-Miss%22-Animations) from [PF2e Workbench](https://github.com/xdy/xdy-pf2e-workbench)
 
 ## Previews:
 
