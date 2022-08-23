@@ -36,6 +36,20 @@ If you want to keep your own custom effects, you can update your existing settin
 2. **Override** the menu in Foundry with the new PF2e x JB2A autorec file
 3. **Merge** the newly overriden menu with your exported file
 
+**Note that this still overrides any changes you made to the pre-existing animations!**
+
+## "On Hit/Miss" Animations from [PF2e Workbench](https://github.com/xdy/xdy-pf2e-workbench)
+
+PF2e x JB2A Macros inherited the special function of PF2e Workbench to play special effects on critical or not hits and misses.
+You can configure those animations in your Autorecognition Menu.
+You can also drag the following Attack Animation Templates onto your character sheets to be able to customize it on per-player basis.
+You can disable them in PF2e x JB2A Macros module settings.
+
+![image](https://user-images.githubusercontent.com/32039708/182642887-4573cc07-389e-47d1-a6e7-1027b134bb90.png)
+![image](https://user-images.githubusercontent.com/32039708/182642897-6f2684de-b6a7-4e9f-ad7d-53f792e1832e.png)
+![image](https://user-images.githubusercontent.com/32039708/182642905-6815d6a3-3b24-4a96-8531-0e85fd9da69c.png)
+
+
 ## Previews:
 
 https://user-images.githubusercontent.com/32039708/179334491-0ce49dee-1106-4173-857f-ca365395035d.mp4
@@ -63,12 +77,6 @@ https://user-images.githubusercontent.com/32039708/182643247-0fe24b89-fec4-4706-
 https://user-images.githubusercontent.com/32039708/182643413-a136f8f6-4024-4c96-bdad-e57f6b50b847.mp4
 
 https://user-images.githubusercontent.com/32039708/182642845-160dd063-0efe-45b4-8de3-cee1bf3e8a0f.mp4
-
-![image](https://user-images.githubusercontent.com/32039708/182643583-8cfb235e-75c9-41b2-805f-6c2678fe446a.gif)
-![image](https://user-images.githubusercontent.com/32039708/182642887-4573cc07-389e-47d1-a6e7-1027b134bb90.png)
-![image](https://user-images.githubusercontent.com/32039708/182642897-6f2684de-b6a7-4e9f-ad7d-53f792e1832e.png)
-![image](https://user-images.githubusercontent.com/32039708/182642905-6815d6a3-3b24-4a96-8531-0e85fd9da69c.png)
-
 
 Includes Sound!
 
