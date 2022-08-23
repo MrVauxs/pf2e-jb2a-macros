@@ -14,3 +14,4 @@ If you want to support me, you can tip me over on [Patreon](https://www.patreon.
 ## [Installing the Module](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Installing-the-Module)
 ## [Previews](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Previews)
 ## ["On Hit/Miss" Animations](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/%22On-Hit-Miss%22-Animations) from [PF2e Workbench](https://github.com/xdy/xdy-pf2e-workbench)
+## [Local Macros](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Local-Macros)
