@@ -21,15 +21,15 @@ Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "disableHitAnims", {
 		scope: "world",
 		config: true,
-		name: "Disable Strike Animations",
-		hint: "While you can remove the animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable them.",
+		name: 'Disable "On Hit or Miss" Animations',
+		hint: "While you can remove these animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable these animations.",
 		type: Boolean,
 		default: false
 	});
 	game.settings.register("pf2e-jb2a-macros", "randomHitAnims", {
 		scope: "world",
 		config: true,
-		name: "Make miss Strike animations appear Off-Target",
+		name: `Make "On Hit or Miss" miss animations appear Off-Target`,
 		hint: "Make miss and critical miss animations appear at a random spot near the missed target token.",
 		type: Boolean,
 		default: false
@@ -57,7 +57,7 @@ Hooks.on("ready", () => {
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
 		let updateAutorec = versionsWithAutorecUpdates.includes(version) ? `<hr>This new version has also updated the autorec. A new version can be downloaded <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json">here</a>, and be seen <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest">here</a>.` : ""
 		ui.notifications.info(`Updated from PF2e JB2A Macros v${previousVersion} to v${version}. ${updateAutorec}`, { permanent: true });
-	} else console.log("PF2e JB2A Macros v" + game.settings.get("pf2e-jb2a-macros", "version") + " loaded");
+	} else console.log("PF2e JB2A Macros v" + game.settings.get("pf2e-jb2a-macros", "version") + " loaded.");
 });
 
 Hooks.on("renderSettings", () => {
@@ -114,8 +114,8 @@ function degreeOfSuccessWithRerollHandling(message) {
 
 Hooks.on("createChatMessage", async (data) => {
 	if (game.user.id !== data.data.user) return;
-	let targets = Array.from(game.user.targets);
-	let token = data.token
+	let targets = data.target?.token ?? data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
+	let token = data.token ?? canvas.tokens.controlled[0];
 	let flavor = data.data.flavor ?? null;
 	let args = data ?? null;
 
@@ -128,9 +128,13 @@ Hooks.on("createChatMessage", async (data) => {
 		}
 	}
 	// Default Matches
-	if (/Sneak Attack \+(\d+|\d+d\d+)/.test(flavor)) {
+	if (/Sneak Attack +\d/.test(flavor)) {
 		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
-		AutoAnimations.playAnimation(token, targets, sneak)
+		// Modify sneak to not be a feat because AA no like feat
+		sneak.data.type = "strike"
+		await AutoAnimations.playAnimation(token, targets, sneak)
+		// Go back to not break opening the sheet, apparently
+		sneak.data.type = "feat"
 	}
 	// Attack Matches
 	if (data.data.flags.pf2e?.context?.type === "attack-roll") {
