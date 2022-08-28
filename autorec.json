@@ -12832,74 +12832,6 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Antler",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "menuType": "creature",
-      "animation": "claw",
-      "variant": "01",
-      "color": "brown",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": 0.2,
-      "audio": {
-        "a01": {
-          "enable": false
-        },
-        "a02": {
-          "enable": false
-        }
-      },
-      "switchType": "on",
-      "return": false,
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "18"
-    },
-    "196": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
-      "name": "Hoof",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false
-      },
-      "menuType": "generic",
-      "animation": "2hb",
-      "variant": "01",
-      "color": "white",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "audio": {
-        "a01": {
-          "enable": false
-        },
-        "a02": {
-          "enable": false
-        }
-      },
-      "switchType": "on",
-      "return": false,
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "19"
-    },
-    "197": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
       "name": "Forked Bipod",
       "soundOnly": {
         "enable": false
@@ -12929,7 +12861,7 @@
         "enable": false
       }
     },
-    "198": {
+    "196": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -12962,7 +12894,7 @@
         "enable": false
       }
     },
-    "199": {
+    "197": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -12995,7 +12927,7 @@
         "enable": false
       }
     },
-    "200": {
+    "198": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -13033,7 +12965,7 @@
       "switchColor": "white",
       "detect": "auto"
     },
-    "201": {
+    "199": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -13046,6 +12978,138 @@
       },
       "menuType": "weapon",
       "animation": "dagger",
+      "variant": "01",
+      "color": "white",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "200": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Antler",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "generic",
+      "animation": "2hp",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "off",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "201": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Fist",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "unarmedstrike",
+      "variant": "physical",
+      "color": "random",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "off",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "202": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Shield Bash",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "generic",
+      "animation": "2hb",
+      "variant": "01",
+      "color": "white",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "off",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "203": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Horns",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "generic",
+      "animation": "2hp",
       "variant": "01",
       "color": "white",
       "custom": false,
@@ -13705,9 +13769,9 @@
         "enable": false
       },
       "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
         "args": ""
       },
       "type": "weapon",
@@ -13759,7 +13823,7 @@
       },
       "menuType": "weapon",
       "explosion": {
-        "enable": true,
+        "enable": false,
         "menuType": "generic",
         "animation": "explosion",
         "variant": "01",
@@ -16270,80 +16334,6 @@
     "51": {
       "hidden": true,
       "anim2d": false,
-      "name": "Peshpine Grenade",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "type": "weapon",
-      "animation": "pumpkin",
-      "variant": "01",
-      "color": "random",
-      "repeat": 1,
-      "delay": 500,
-      "below": false,
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        },
-        "e01": {
-          "enable": false
-        }
-      },
-      "levels3d": {
-        "type": "",
-        "color01": "#000000",
-        "color02": "#000000",
-        "speed": null,
-        "repeat": null,
-        "arc": null,
-        "delay": null,
-        "scale": null,
-        "alpha": null,
-        "gravity": null,
-        "mass": null,
-        "life": null,
-        "emittersize": null,
-        "rate": null,
-        "addexplosion": {
-          "enable": false,
-          "color01": "#000000",
-          "color02": "#000000",
-          "speed": null,
-          "scale": null,
-          "alpha": null,
-          "gravity": null,
-          "mass": null,
-          "life": null,
-          "emittersize": null,
-          "rate": null,
-          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
-        },
-        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      },
-      "menuType": "weapon",
-      "explosion": {
-        "enable": true,
-        "menuType": "spell",
-        "animation": "shatter",
-        "variant": "01",
-        "color": "orange",
-        "custom": false,
-        "radius": 2,
-        "delay": 300,
-        "below": false
-      },
-      "menuSection": "60"
-    },
-    "52": {
-      "hidden": true,
-      "anim2d": false,
       "name": "Petrification Cannon",
       "soundOnly": {
         "enable": false
@@ -16401,7 +16391,7 @@
       "menuType": "spell",
       "menuSection": "61"
     },
-    "53": {
+    "52": {
       "hidden": true,
       "anim2d": false,
       "name": "Produce Flame",
@@ -16421,7 +16411,7 @@
       "repeat": 1,
       "delay": 500,
       "below": false,
-      "custom": false,
+      "custom": true,
       "audio": {
         "a01": {
           "enable": true,
@@ -16429,6 +16419,9 @@
           "startTime": null,
           "volume": null,
           "delay": null
+        },
+        "e01": {
+          "enable": false
         }
       },
       "levels3d": {
@@ -16464,11 +16457,21 @@
       },
       "menuType": "spell",
       "explosion": {
-        "enable": false
+        "enable": false,
+        "menuType": "",
+        "animation": "",
+        "variant": "",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
       },
-      "menuSection": "62"
+      "menuSection": "62",
+      "customPath": "",
+      "onlyX": false
     },
-    "54": {
+    "53": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16544,7 +16547,7 @@
       "onlyX": false,
       "menuSection": "63"
     },
-    "55": {
+    "54": {
       "hidden": true,
       "anim2d": false,
       "name": "Ray of Frost",
@@ -16604,7 +16607,7 @@
       "menuType": "spell",
       "menuSection": "64"
     },
-    "56": {
+    "55": {
       "hidden": true,
       "anim2d": false,
       "name": "Reaper's Grasp",
@@ -16664,7 +16667,7 @@
       "menuType": "weapon",
       "menuSection": "65"
     },
-    "57": {
+    "56": {
       "hidden": true,
       "anim2d": false,
       "name": "Rowan Rifle",
@@ -16724,7 +16727,7 @@
       "menuType": "spell",
       "menuSection": "66"
     },
-    "58": {
+    "57": {
       "hidden": true,
       "anim2d": false,
       "name": "Scorching Ray",
@@ -16787,7 +16790,7 @@
         "enable": false
       }
     },
-    "59": {
+    "58": {
       "hidden": true,
       "anim2d": false,
       "name": "Screech Shooter",
@@ -16847,7 +16850,7 @@
       "menuType": "spell",
       "menuSection": "68"
     },
-    "60": {
+    "59": {
       "hidden": true,
       "anim2d": false,
       "name": "Shobhad Longrifle",
@@ -16907,7 +16910,7 @@
       "menuType": "weapon",
       "menuSection": "69"
     },
-    "61": {
+    "60": {
       "hidden": true,
       "anim2d": false,
       "name": "Shuriken",
@@ -16967,7 +16970,7 @@
       "menuType": "weapon",
       "menuSection": "70"
     },
-    "62": {
+    "61": {
       "hidden": true,
       "anim2d": false,
       "name": "Sling",
@@ -17027,7 +17030,7 @@
       "menuType": "weapon",
       "menuSection": "71"
     },
-    "63": {
+    "62": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17089,7 +17092,7 @@
       },
       "menuSection": "72"
     },
-    "64": {
+    "63": {
       "hidden": true,
       "anim2d": false,
       "name": "Spider Gun",
@@ -17149,7 +17152,7 @@
       "menuType": "generic",
       "menuSection": "73"
     },
-    "65": {
+    "64": {
       "hidden": true,
       "anim2d": false,
       "name": "Spike Launcher",
@@ -17209,7 +17212,7 @@
       "menuType": "weapon",
       "menuSection": "74"
     },
-    "66": {
+    "65": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17218,25 +17221,36 @@
         "enable": false
       },
       "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Stabilize_Animation",
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
         "args": ""
       },
       "type": "",
-      "animation": "",
-      "variant": "",
-      "color": "",
+      "animation": "energystrand",
+      "variant": "01",
+      "color": "random",
       "custom": false,
       "repeat": null,
       "delay": null,
       "audio": {
         "a01": {
           "enable": false
+        },
+        "e01": {
+          "enable": false
         }
       },
       "explosion": {
-        "enable": false
+        "enable": true,
+        "menuType": "spell",
+        "animation": "curewounds",
+        "variant": "01",
+        "color": "random",
+        "custom": false,
+        "radius": 1,
+        "delay": null,
+        "below": false
       },
       "levels3d": {
         "type": "",
@@ -17269,10 +17283,10 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuType": "",
+      "menuType": "generic",
       "menuSection": "75"
     },
-    "67": {
+    "66": {
       "hidden": true,
       "anim2d": false,
       "name": "Stoneraiser Javelin",
@@ -17329,7 +17343,7 @@
       },
       "menuSection": "77"
     },
-    "68": {
+    "67": {
       "hidden": true,
       "anim2d": false,
       "name": "Taw Launcher",
@@ -17389,7 +17403,7 @@
       "menuType": "weapon",
       "menuSection": "78"
     },
-    "69": {
+    "68": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17450,7 +17464,7 @@
       "onlyX": false,
       "menuSection": "79"
     },
-    "70": {
+    "69": {
       "hidden": true,
       "anim2d": false,
       "name": "Tiger's Claw",
@@ -17513,7 +17527,7 @@
         "enable": false
       }
     },
-    "71": {
+    "70": {
       "hidden": true,
       "anim2d": false,
       "name": "Vexing Vapor",
@@ -17587,7 +17601,7 @@
       },
       "menuSection": "82"
     },
-    "72": {
+    "71": {
       "hidden": true,
       "anim2d": false,
       "name": "Wind and Fire Wheel",
@@ -17647,7 +17661,7 @@
       "menuType": "weapon",
       "menuSection": "83"
     },
-    "73": {
+    "72": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17708,7 +17722,7 @@
       "onlyX": false,
       "menuSection": "119"
     },
-    "74": {
+    "73": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17767,7 +17781,7 @@
       },
       "menuSection": "117"
     },
-    "75": {
+    "74": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17828,7 +17842,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "76": {
+    "75": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17889,7 +17903,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "77": {
+    "76": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17950,7 +17964,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "78": {
+    "77": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18011,7 +18025,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "79": {
+    "78": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18072,11 +18086,11 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "80": {
+    "79": {
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Peshspine Grenade",
+      "name": "Peshpine Grenade",
       "soundOnly": {
         "enable": false
       },
@@ -18133,7 +18147,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "81": {
+    "80": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18194,7 +18208,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "82": {
+    "81": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18255,7 +18269,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "83": {
+    "82": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18316,7 +18330,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "84": {
+    "83": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18377,7 +18391,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "85": {
+    "84": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18438,7 +18452,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "86": {
+    "85": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18499,7 +18513,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "87": {
+    "86": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18560,7 +18574,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "88": {
+    "87": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18621,7 +18635,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "89": {
+    "88": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18682,7 +18696,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "90": {
+    "89": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18743,7 +18757,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       }
     },
-    "91": {
+    "90": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18761,6 +18775,613 @@
       "animation": "",
       "variant": "",
       "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "91": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Dwarven Daisy",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "92": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Junk Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "93": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Mud Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "94": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Pernicious Spore Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "95": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Pressure Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "96": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Redpitch Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "97": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Tallow Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "98": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Twigjack Sack",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "99": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Water Bomb",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Bombs",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "100": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Tongue",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "generic",
+      "animation": "energystrand",
+      "variant": "01",
+      "color": "darkgreen",
       "custom": false,
       "repeat": null,
       "delay": null,
@@ -18900,9 +19521,9 @@
       "color": "red",
       "opacity": null,
       "persistent": false,
-      "repeat": 1,
-      "delay": 500,
-      "scale": 1,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
       "below": false,
       "custom": false,
       "audio": {
@@ -19041,9 +19662,9 @@
       "color": "red",
       "opacity": null,
       "persistent": false,
-      "repeat": 1,
-      "delay": 500,
-      "scale": 1,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
       "below": false,
       "custom": false,
       "audio": {
@@ -19083,7 +19704,12 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "creature",
-      "menuSection": "5"
+      "menuSection": "5",
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "6": {
       "below": false,
@@ -20839,11 +21465,11 @@
       "below": false,
       "color": "red",
       "custom": false,
-      "delay": 500,
+      "delay": null,
       "hidden": true,
-      "name": "Wolf Instinct Jaws",
-      "repeat": 1,
-      "scale": 1,
+      "name": "Jaws",
+      "repeat": null,
+      "scale": 2,
       "type": "target",
       "variant": "01",
       "menuSection": "54",
@@ -20877,13 +21503,16 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
       },
       "type": "target",
-      "menuType": "conditions",
-      "animation": "snowflakes",
-      "variant": "02",
-      "color": "blue",
+      "menuType": "ice",
+      "animation": "snowflake",
+      "variant": "01",
+      "color": "whiteblue",
       "custom": false,
       "repeat": null,
       "delay": null,
@@ -21436,6 +22065,75 @@
       "explosion": {
         "enable": false
       }
+    },
+    "67": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Animal Instinct",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Animal Instinct",
+        "args": ""
+      },
+      "type": "target",
+      "menuType": "creature",
+      "animation": "bite",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      }
+    },
+    "68": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Fangs",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "creature",
+      "animation": "bite",
+      "variant": "01",
+      "color": "green",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      }
     }
   },
   "templates": {
@@ -21814,6 +22512,35 @@
           "enable": false
         }
       }
+    },
+    "12": {
+      "below": false,
+      "hidden": true,
+      "name": "Black Tentacles",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "circle",
+      "animation": "blacktentacles",
+      "variant": "01",
+      "color": "darkpurple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "persistType": "attachtemplate"
     }
   },
   "auras": {},

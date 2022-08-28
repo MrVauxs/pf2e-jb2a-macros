@@ -1,3 +1,17 @@
+# Version 1.10.0
+- Added the following effects
+  - All Alchemical Bombs
+  - (Waiting for AA Update / Consideration) All Animal Instinct Strikes
+  - Shield Bash
+  - Scorching Ray
+  - Humanoid Form
+  - Illusory Disguise
+  - Lightning Bolt
+  - Possibly more that I forgot about
+- Categorized everything into Compendium Folders. Requires [Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders).
+- Changed the version settings to use strings and built-in Foundry version checker, rather than Integers.
+- Added "at will" compatibility for Dimension Jumps. (#14)
+
 # Version 1.9.2
 - Added the following effects
   - Unleash Psyche
