@@ -8,6 +8,8 @@
   - Illusory Disguise
   - Lightning Bolt
   - Possibly more that I forgot about
+- Renamed few settings for consistency's sake.
+- Fix Sneak Attack.
 - Categorized everything into Compendium Folders. Requires [Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders).
 - Changed the version settings to use strings and built-in Foundry version checker, rather than Integers.
 - Added "at will" compatibility for Dimension Jumps. (#14)
