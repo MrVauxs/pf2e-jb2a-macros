@@ -1,3 +1,7 @@
+# Version 1.10.3 - "Don't code when your brain's melted" Edition
+- Fixed the module breaking on startup.
+- Fixed the module not telling you updated.
+
 # Version 1.10.2
 - Fixed how the module passes down targets to AA and Macros. (#17)
 - Added "Debug Mode" setting.

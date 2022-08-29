@@ -59,12 +59,12 @@ Hooks.on("ready", () => {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
 		return;
 	}
-	if (isNewerVersion(game.settings.get("pf2e-jb2a-macros", "version"), version)) {
+	if (isNewerVersion(version, game.settings.get("pf2e-jb2a-macros", "version"))) {
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.settings.get("pf2e-jb2a-macros", "version"));
 		game.settings.set("pf2e-jb2a-macros", "version", version);
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
 		let updateAutorec = versionsWithAutorecUpdates.includes(version) ? `<hr>This new version has also updated the autorec. A new version can be downloaded <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json">here</a>, and be seen <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest">here</a>.` : ""
-		ui.notifications.info(`Updated from PF2e JB2A Macros v${previousVersion} to v${version} ${updateAutorec}`, { permanent: true });
+		ui.notifications.info(`Updated from PF2e x JB2A Macros v${previousVersion} to v${version} ${updateAutorec}`, { permanent: true });
 	} else console.log("PF2e JB2A Macros v" + game.settings.get("pf2e-jb2a-macros", "version") + " loaded.");
 });
 
