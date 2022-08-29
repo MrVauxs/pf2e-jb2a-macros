@@ -114,7 +114,9 @@ function degreeOfSuccessWithRerollHandling(message) {
 
 Hooks.on("createChatMessage", async (data) => {
 	if (game.user.id !== data.data.user) return;
+	// console.log("PF2e x JB2A Macros | Message Data |", data)
 	let targets = data.target?.token ?? data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
+	targets = [targets].flat()
 	let token = data.token ?? canvas.tokens.controlled[0];
 	let flavor = data.data.flavor ?? null;
 	let args = data ?? null;
@@ -128,7 +130,7 @@ Hooks.on("createChatMessage", async (data) => {
 		}
 	}
 	// Default Matches
-	if (/Sneak Attack +\d/.test(flavor)) {
+	if (data.isDamageRoll && /Sneak Attack/.test(flavor)) {
 		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
 		// Modify sneak to not be a feat because AA no like feat
 		sneak.data.type = "strike"

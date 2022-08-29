@@ -1,3 +1,6 @@
+# Version 1.10.1
+- Fixed Sneak Attack. For real this time.
+
 # Version 1.10.0
 - Added the following effects
   - All Alchemical Bombs
