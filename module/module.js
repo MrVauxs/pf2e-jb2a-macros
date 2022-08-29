@@ -1,4 +1,4 @@
-let version = "1.10.0";
+let version = "1.10.1";
 const versionsWithAutorecUpdates = ["1.9.2", "1.10.0"];
 
 Hooks.on("init", () => {
