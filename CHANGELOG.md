@@ -1,3 +1,7 @@
+# Version 1.10.2
+- Fixed how the module passes down targets to AA and Macros. (#17)
+- Added "Debug Mode" setting.
+
 # Version 1.10.1
 - Fixed Sneak Attack. For real this time.
 

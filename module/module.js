@@ -1,4 +1,4 @@
-let version = "1.10.1";
+const version = game.modules.get("pf2e-jb2a-macros").data.version;
 const versionsWithAutorecUpdates = ["1.9.2", "1.10.0"];
 
 function debug(msg, args = "") {
@@ -131,9 +131,6 @@ Hooks.on("createChatMessage", async (data) => {
 	let token = data.token ?? canvas.tokens.controlled[0];
 	let flavor = data.data.flavor ?? null;
 	let args = data ?? null;
-
-	debug("What is it", { array: Array.from(game.user.targets), targets: targets})
-	debug("Macro Args", {targets, token, flavor, args});
 
 	// Persistent Damage Matches
 	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor)) {
