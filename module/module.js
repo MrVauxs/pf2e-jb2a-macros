@@ -1,6 +1,10 @@
 let version = "1.10.1";
 const versionsWithAutorecUpdates = ["1.9.2", "1.10.0"];
 
+function debug(msg, args = "") {
+    if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
+}
+
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
 		scope: "world",
@@ -31,6 +35,14 @@ Hooks.on("init", () => {
 		config: true,
 		name: `Make "On Hit or Miss" miss animations appear Off-Target`,
 		hint: "Make miss and critical miss animations appear at a random spot near the missed target token.",
+		type: Boolean,
+		default: false
+	});
+	game.settings.register("pf2e-jb2a-macros", "debug", {
+		scope: "world",
+		config: true,
+		name: `Debug Mode`,
+		hint: "Enables console logs of what PF2e x JB2A Macros module is doing.",
 		type: Boolean,
 		default: false
 	});
@@ -114,23 +126,28 @@ function degreeOfSuccessWithRerollHandling(message) {
 
 Hooks.on("createChatMessage", async (data) => {
 	if (game.user.id !== data.data.user) return;
-	// console.log("PF2e x JB2A Macros | Message Data |", data)
-	let targets = data.target?.token ?? data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
+	let targets = data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
 	targets = [targets].flat()
 	let token = data.token ?? canvas.tokens.controlled[0];
 	let flavor = data.data.flavor ?? null;
 	let args = data ?? null;
 
+	debug("What is it", { array: Array.from(game.user.targets), targets: targets})
+	debug("Macro Args", {targets, token, flavor, args});
+
 	// Persistent Damage Matches
 	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor)) {
 		if (game.modules.get("pf2e-persistent-damage")?.active)	{
+			debug("Persistent Damage / Healing", data);
 			return runJB2Apf2eMacro('Persistent Conditions', args)
 		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
+			debug("No \"PF2e Persistent Damage\" module found!");
 			return ui.notifications.error("Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.")
 		}
 	}
 	// Default Matches
 	if (data.isDamageRoll && /Sneak Attack/.test(flavor)) {
+		debug("Sneak Attack", data);
 		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
 		// Modify sneak to not be a feat because AA no like feat
 		sneak.data.type = "strike"
@@ -156,19 +173,19 @@ Hooks.on("createChatMessage", async (data) => {
 		switch (degreeOfSuccess) {
             case "criticalSuccess":
 				item = items.find(i => i.data.name.includes("(Critical Success)"))
-				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Critical Success animation")
+				debug("\"On Hit/Miss\" Critical Success animation", {token, targets, item})
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
             case "criticalFailure":
 				item = items.find(i => i.data.name.includes("(Critical Failure)"))
-				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Critical Failure animation")
+				debug("\"On Hit/Miss\" Critical Failure animation", {token, targets, item})
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
             case "failure":
 				item = items.find(i => i.data.name.includes("(Failure)"))
-				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Failure animation")
+				debug("\"On Hit/Miss\" Failure animation", {token, targets, item})
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
             case "success":
 				item = items.find(i => i.data.name.includes("(Success)"))
-				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Success animation")
+				debug("\"On Hit/Miss\" Success animation", {token, targets, item})
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
         }
 	}
@@ -179,5 +196,8 @@ Hooks.on("preUpdateItem", (data, changes) => {
 });
 
 Hooks.on("preCreateChatMessage", (data) => {
-	if (data.flags.pf2e.casting) data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null });
+	if (data.flags.pf2e.casting) {
+		data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null })
+		debug("Added spell level flags to Chat Message", {data: data, update: data.data.content.flags.runJB2Apf2eMacro});
+	};
 });
