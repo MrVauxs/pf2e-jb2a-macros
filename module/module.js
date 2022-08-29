@@ -156,15 +156,19 @@ Hooks.on("createChatMessage", async (data) => {
 		switch (degreeOfSuccess) {
             case "criticalSuccess":
 				item = items.find(i => i.data.name.includes("(Critical Success)"))
+				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Critical Success animation")
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
             case "criticalFailure":
 				item = items.find(i => i.data.name.includes("(Critical Failure)"))
+				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Critical Failure animation")
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
             case "failure":
 				item = items.find(i => i.data.name.includes("(Failure)"))
+				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Failure animation")
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
             case "success":
 				item = items.find(i => i.data.name.includes("(Success)"))
+				console.log("PF2e x JB2A Macros | Playing \"On Hit/Miss\" Success animation")
 				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
         }
 	}
