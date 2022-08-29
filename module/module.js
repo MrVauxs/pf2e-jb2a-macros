@@ -1,9 +1,4 @@
-const version = game.modules.get("pf2e-jb2a-macros").data.version;
 const versionsWithAutorecUpdates = ["1.9.2", "1.10.0"];
-
-function debug(msg, args = "") {
-    if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
-}
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
@@ -59,6 +54,7 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("ready", () => {
+	const version = game.modules.get("pf2e-jb2a-macros").data.version;
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
 		return;
@@ -82,6 +78,10 @@ Hooks.on("renderSettings", () => {
 		});
 	}
 });
+
+function debug(msg, args = "") {
+    if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
+}
 
 async function importAll() {
 	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
