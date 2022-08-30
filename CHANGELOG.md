@@ -1,3 +1,8 @@
+# Version 1.10.4
+- Updated Humanoid Form to have smoother transitions into new form.
+- Updated Illusory Disguise to have "Turn original token invisible" checkbox, on by default.
+- Updated the Scorching Ray Macro to work under Sequencer 2.2.0. Requires Sequencer 2.2.0.
+
 # Version 1.10.3 - "Don't code when your brain's melted" Edition
 - Fixed the module breaking on startup.
 - Fixed the module not telling you updated.

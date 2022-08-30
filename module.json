@@ -16,7 +16,7 @@
 		}
 	],
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
-	"version": "1.10.3",
+	"version": "1.10.4",
 	"minimumCoreVersion": "9",
 	"compatibleCoreVersion": "9",
 	"compatibility": {
@@ -58,10 +58,47 @@
 	"system": [
 		"pf2e"
 	],
+	"relationships": {
+		"systems": [
+			{
+				"id": "pf2e",
+				"type": "system"
+			}
+		],
+		"requires": [
+			{
+				"id": "sequencer",
+				"type": "module",
+				"compatibility": {
+					"minimum": "2.2.0"
+				}
+			},
+			{
+				"id": "autoanimations",
+				"type": "module"
+			},
+			{
+				"id": "warpgate",
+				"type": "module"
+			},
+			{
+				"id": "soundfxlibrary",
+				"type": "module"
+			},
+			{
+				"id": "socketlib",
+				"type": "module"
+			},
+			{
+				"id": "advanced-macros",
+				"type": "module"
+			}
+		]
+	},
 	"dependencies": [
 		{
 			"name": "sequencer",
-			"version": "2.1.14",
+			"version": "2.2.0",
 			"type": "module"
 		},
 		{
