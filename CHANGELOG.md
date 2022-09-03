@@ -1,3 +1,7 @@
+# Version 1.10.5
+- Fixed an issue regarding debug mode with spells.
+- Updated Illusory Disguise and Scorching Ray to be less ugly.
+
 # Version 1.10.4
 - Updated Humanoid Form to have smoother transitions into new form.
 - Updated Illusory Disguise to have "Turn original token invisible" checkbox, on by default.
