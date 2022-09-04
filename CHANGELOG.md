@@ -1,3 +1,6 @@
+# Version 1.10.6
+- Fixed an issue regarding debug mode with spells 2: Electric Boogalo.
+
 # Version 1.10.5
 - Fixed an issue regarding debug mode with spells.
 - Updated Illusory Disguise and Scorching Ray to be less ugly.

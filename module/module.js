@@ -195,6 +195,6 @@ Hooks.on("preUpdateItem", (data, changes) => {
 Hooks.on("preCreateChatMessage", (data) => {
 	if (data.flags.pf2e.casting) {
 		data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null })
-		debug("Added spell level flags to Chat Message", {data: data, update: data.data.content.flags.pf2eJB2AMacros});
+		debug("Added spell level flags to Chat Message", {data: data, update: data?.data?.content?.flags?.pf2eJB2AMacros});
 	};
 });
