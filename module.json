@@ -60,7 +60,7 @@
 				"id": "sequencer",
 				"type": "module",
 				"compatibility": {
-					"minimum": "2.3.0"
+					"minimum": "2.3.2"
 				}
 			},
 			{
@@ -77,6 +77,11 @@
 			},
 			{
 				"id": "soundfxlibrary",
+				"type": "module",
+				"compatibility": {}
+			},
+			{
+				"id": "libwrapper",
 				"type": "module",
 				"compatibility": {}
 			},
