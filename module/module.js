@@ -125,7 +125,7 @@ function degreeOfSuccessWithRerollHandling(message) {
 }
 
 Hooks.on("createChatMessage", async (data) => {
-	if (game.user.id !== data.data.user) return;
+	if (game.user.id !== data.user) return;
 	let targets = data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
 	targets = [targets].flat()
 	let token = data.token ?? canvas.tokens.controlled[0];
@@ -195,6 +195,6 @@ Hooks.on("preUpdateItem", (data, changes) => {
 Hooks.on("preCreateChatMessage", (data) => {
 	if (data.flags.pf2e.casting) {
 		data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null })
-		debug("Added spell level flags to Chat Message", {data: data, update: data.data.content.flags.pf2eJB2AMacros});
+		debug("Added spell level flags to Chat Message", {data: data, update: data.data.flags.pf2eJB2AMacros});
 	};
 });
