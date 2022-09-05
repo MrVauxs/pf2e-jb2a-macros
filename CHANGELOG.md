@@ -1,6 +1,3 @@
-# Version 1.10.7
-- Fixed Encumbered being too large on Sequencer 2.2.0.
-
 # Version 1.10.6
 - Fixed an issue regarding debug mode with spells 2: Electric Boogalo.
 
