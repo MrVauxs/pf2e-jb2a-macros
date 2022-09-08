@@ -33,6 +33,19 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
+	game.settings.register("pf2e-jb2a-macros", "smallTokenScale", {
+		scope: "world",
+		config: !game.settings.get("pf2e","tokens.autoscale"),
+		name: `Default Scale for Small Tokens`,
+		hint: "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8.",
+		type: Number,
+		default: 0.8,
+		range: {
+			min: 0.2,
+			max: 3,
+			step: 0.1
+		}
+	});
 	game.settings.register("pf2e-jb2a-macros", "debug", {
 		scope: "world",
 		config: true,
@@ -69,8 +82,8 @@ Hooks.on("ready", () => {
 });
 
 Hooks.on("renderSettings", () => {
-	if (!game.user.isGM) return
-	if (!game.settings.get("pf2e-jb2a-macros", "imported")) {
+	if (game.settings.get("pf2e","tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
+	if (game.user.isGM && !game.settings.get("pf2e-jb2a-macros", "imported")) {
 		Dialog.confirm({
 			title: "Macro Importer",
 			content: "<p>Welcome to the <strong>PF2e x JB2A</strong> module. Would you like to import all required actors to your World?",
@@ -122,6 +135,13 @@ function degreeOfSuccessWithRerollHandling(message) {
         }
     }
     return degreeOfSuccess;
+}
+
+async function vauxsMacroHelpers(args = []) {
+	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
+	if (!tokenD) {ui.notifications.error("No source token found."); return;}
+	const tokenScale = tokenD.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
+    return [tokenD, tokenScale];
 }
 
 Hooks.on("createChatMessage", async (data) => {
