@@ -1,3 +1,9 @@
+# Version 1.11.0
+- Updated all macros with the following:
+ - Compatible with Sequencer 2.2.0 and beyond
+ - Compatible with Foundry V10
+ - The default for macros is now playable standalone, only a few are still unusable without AA (mainly conglomerations of a lot of individual effects which will be later split down the line)
+
 # Version 1.10.6
 - Fixed an issue regarding debug mode with spells 2: Electric Boogalo.
 
