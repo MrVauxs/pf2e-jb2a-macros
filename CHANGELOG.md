@@ -3,6 +3,7 @@
  - Compatible with Sequencer 2.2.0 and beyond
  - Compatible with Foundry V10
  - The default for macros is now playable standalone, only a few are still unusable without AA (mainly conglomerations of a lot of individual effects which will be later split down the line)
+ - Made Aura animations compatible with Update Aura Macro from PF2e Workbench... [once the pull request is accepted](https://gitlab.com/symonsch/my-foundryvtt-macros/-/merge_requests/20)
 
 # Version 1.10.6
 - Fixed an issue regarding debug mode with spells 2: Electric Boogalo.
