@@ -33,6 +33,19 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
+	game.settings.register("pf2e-jb2a-macros", "smallTokenScale", {
+		scope: "world",
+		config: !game.settings.get("pf2e","tokens.autoscale"),
+		name: `Default Scale for Small Tokens`,
+		hint: "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8.",
+		type: Number,
+		default: 0.8,
+		range: {
+			min: 0.2,
+			max: 3,
+			step: 0.1
+		}
+	});
 	game.settings.register("pf2e-jb2a-macros", "debug", {
 		scope: "world",
 		config: true,
@@ -41,15 +54,10 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
-	game.settings.register("pf2e-jb2a-macros", "version", {
-		scope: "world",
-		type: String,
-		default: "?"
-	});
 	game.settings.register("pf2e-jb2a-macros", "version-previous", {
 		scope: "world",
 		type: String,
-		default: "?"
+		default: "0"
 	});
 });
 
@@ -59,18 +67,17 @@ Hooks.on("ready", () => {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
 		return;
 	}
-	if (isNewerVersion(version, game.settings.get("pf2e-jb2a-macros", "version"))) {
-		game.settings.set("pf2e-jb2a-macros", "version-previous", game.settings.get("pf2e-jb2a-macros", "version"));
-		game.settings.set("pf2e-jb2a-macros", "version", version);
+	if (isNewerVersion(version, game.settings.get("pf2e-jb2a-macros", "version-previous"))) {
+		game.settings.set("pf2e-jb2a-macros", "version-previous", version);
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
 		let updateAutorec = versionsWithAutorecUpdates.includes(version) ? `<hr>This new version has also updated the autorec. A new version can be downloaded <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json">here</a>, and be seen <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest">here</a>.` : ""
 		ui.notifications.info(`Updated from PF2e x JB2A Macros v${previousVersion} to v${version} ${updateAutorec}`, { permanent: true });
-	} else console.log("PF2e JB2A Macros v" + game.settings.get("pf2e-jb2a-macros", "version") + " loaded.");
+	} else console.log("PF2e x JB2A Macros v" + version + " loaded.");
 });
 
 Hooks.on("renderSettings", () => {
-	if (!game.user.isGM) return
-	if (!game.settings.get("pf2e-jb2a-macros", "imported")) {
+	if (game.settings.get("pf2e","tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
+	if (game.user.isGM && !game.settings.get("pf2e-jb2a-macros", "imported")) {
 		Dialog.confirm({
 			title: "Macro Importer",
 			content: "<p>Welcome to the <strong>PF2e x JB2A</strong> module. Would you like to import all required actors to your World?",
@@ -124,8 +131,16 @@ function degreeOfSuccessWithRerollHandling(message) {
     return degreeOfSuccess;
 }
 
+async function vauxsMacroHelpers(args = []) {
+	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
+	if (!tokenD) {ui.notifications.error("No source token found."); return;}
+	const tokenScale = tokenD.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
+    return [tokenD, tokenScale];
+}
+
 Hooks.on("createChatMessage", async (data) => {
-	if (game.user.id !== data.data.user) return;
+	console.log(data)
+	if (game.user.id !== data.user.id) return;
 	let targets = data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
 	targets = [targets].flat()
 	let token = data.token ?? canvas.tokens.controlled[0];
@@ -195,6 +210,6 @@ Hooks.on("preUpdateItem", (data, changes) => {
 Hooks.on("preCreateChatMessage", (data) => {
 	if (data.flags.pf2e.casting) {
 		data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null })
-		debug("Added spell level flags to Chat Message", {data: data, update: data?.data?.content?.flags?.pf2eJB2AMacros});
+		debug("Added spell level flags to Chat Message", {data: data, update: data.data.flags.pf2eJB2AMacros});
 	};
 });
