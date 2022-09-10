@@ -72,23 +72,23 @@
 			},
 			{
 				"id": "warpgate",
-				"type": "module",
-				"compatibility": {}
+				"type": "module"
 			},
 			{
 				"id": "soundfxlibrary",
-				"type": "module",
-				"compatibility": {}
-			},
-			{
-				"id": "libwrapper",
-				"type": "module",
-				"compatibility": {}
+				"type": "module"
 			},
 			{
 				"id": "socketlib",
+				"type": "module"
+			},
+			{
+				"id": "lib-wrapper",
 				"type": "module",
-				"compatibility": {}
+				"compatibility": {
+					"minimum": "1.12.5.0",
+					"verified": "1.12.8.0"
+				}
 			},
 			{
 				"id": "advanced-macros",
