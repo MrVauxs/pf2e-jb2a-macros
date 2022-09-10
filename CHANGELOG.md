@@ -1,3 +1,6 @@
+# Version 1.11.1
+- Fixed typo in module.json making it impossible to enable
+
 # Version 1.11.0
 - Updated all macros with the following:
  - Compatible with Sequencer 2.2.0 and beyond
