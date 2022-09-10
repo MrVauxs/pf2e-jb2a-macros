@@ -1,5 +1,5 @@
 # Version 1.11.1
-- Fixed typo in module.json making it impossible to enable
+- Fixed a typo in module.json making the module impossible to enable
 
 # Version 1.11.0
 - Updated all macros with the following:
