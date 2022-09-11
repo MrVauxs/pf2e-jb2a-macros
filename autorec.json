@@ -65,7 +65,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "0",
+      "menuSection": "melee",
       "return": false,
       "explosion": {
         "enable": false
@@ -140,7 +140,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "1"
+      "menuSection": "melee"
     },
     "2": {
       "hidden": true,
@@ -205,7 +205,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "2"
+      "menuSection": "melee"
     },
     "3": {
       "hidden": true,
@@ -270,7 +270,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "3"
+      "menuSection": "melee"
     },
     "4": {
       "hidden": true,
@@ -335,7 +335,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "4"
+      "menuSection": "melee"
     },
     "5": {
       "hidden": true,
@@ -400,7 +400,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "5"
+      "menuSection": "melee"
     },
     "6": {
       "hidden": true,
@@ -469,7 +469,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "6"
+      "menuSection": "melee"
     },
     "7": {
       "hidden": true,
@@ -543,7 +543,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "7"
+      "menuSection": "melee"
     },
     "8": {
       "hidden": true,
@@ -612,7 +612,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "8"
+      "menuSection": "melee"
     },
     "9": {
       "below": false,
@@ -646,7 +646,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "9"
+      "menuSection": "melee"
     },
     "10": {
       "hidden": true,
@@ -711,7 +711,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "10"
+      "menuSection": "melee"
     },
     "11": {
       "hidden": true,
@@ -776,7 +776,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "11"
+      "menuSection": "melee"
     },
     "12": {
       "hidden": true,
@@ -845,7 +845,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "12"
+      "menuSection": "melee"
     },
     "13": {
       "hidden": true,
@@ -910,7 +910,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "13"
+      "menuSection": "melee"
     },
     "14": {
       "hidden": true,
@@ -975,7 +975,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "14"
+      "menuSection": "melee"
     },
     "15": {
       "hidden": true,
@@ -1040,7 +1040,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "15"
+      "menuSection": "melee"
     },
     "16": {
       "hidden": true,
@@ -1105,7 +1105,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "16"
+      "menuSection": "melee"
     },
     "17": {
       "hidden": true,
@@ -1170,7 +1170,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "17"
+      "menuSection": "melee"
     },
     "18": {
       "hidden": true,
@@ -1235,7 +1235,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "18"
+      "menuSection": "melee"
     },
     "19": {
       "hidden": true,
@@ -1300,7 +1300,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "19"
+      "menuSection": "melee"
     },
     "20": {
       "hidden": true,
@@ -1365,7 +1365,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "20"
+      "menuSection": "melee"
     },
     "21": {
       "hidden": true,
@@ -1430,7 +1430,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "21"
+      "menuSection": "melee"
     },
     "22": {
       "hidden": true,
@@ -1495,7 +1495,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "22"
+      "menuSection": "melee"
     },
     "23": {
       "hidden": true,
@@ -1560,7 +1560,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "23"
+      "menuSection": "melee"
     },
     "24": {
       "hidden": true,
@@ -1625,7 +1625,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "24"
+      "menuSection": "melee"
     },
     "25": {
       "hidden": true,
@@ -1690,7 +1690,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "25"
+      "menuSection": "melee"
     },
     "26": {
       "hidden": true,
@@ -1755,7 +1755,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "26"
+      "menuSection": "melee"
     },
     "27": {
       "hidden": true,
@@ -1820,7 +1820,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "27"
+      "menuSection": "melee"
     },
     "28": {
       "hidden": true,
@@ -1885,7 +1885,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "28"
+      "menuSection": "melee"
     },
     "29": {
       "hidden": true,
@@ -1950,7 +1950,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "29"
+      "menuSection": "melee"
     },
     "30": {
       "hidden": true,
@@ -2015,7 +2015,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "30"
+      "menuSection": "melee"
     },
     "31": {
       "hidden": true,
@@ -2089,7 +2089,7 @@
       "switchVariant": "01",
       "switchColor": "white",
       "detect": "auto",
-      "menuSection": "31"
+      "menuSection": "melee"
     },
     "32": {
       "hidden": true,
@@ -2160,7 +2160,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "32"
+      "menuSection": "melee"
     },
     "33": {
       "hidden": true,
@@ -2225,7 +2225,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "33"
+      "menuSection": "melee"
     },
     "34": {
       "hidden": true,
@@ -2290,7 +2290,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "34"
+      "menuSection": "melee"
     },
     "35": {
       "hidden": true,
@@ -2355,7 +2355,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "35"
+      "menuSection": "melee"
     },
     "36": {
       "hidden": true,
@@ -2420,7 +2420,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "36"
+      "menuSection": "melee"
     },
     "37": {
       "hidden": true,
@@ -2491,7 +2491,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "37"
+      "menuSection": "melee"
     },
     "38": {
       "hidden": true,
@@ -2556,7 +2556,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "38"
+      "menuSection": "melee"
     },
     "39": {
       "hidden": true,
@@ -2627,7 +2627,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "39"
+      "menuSection": "melee"
     },
     "40": {
       "hidden": true,
@@ -2692,7 +2692,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "40"
+      "menuSection": "melee"
     },
     "41": {
       "hidden": true,
@@ -2757,7 +2757,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "41"
+      "menuSection": "melee"
     },
     "42": {
       "hidden": true,
@@ -2822,7 +2822,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "42"
+      "menuSection": "melee"
     },
     "43": {
       "hidden": true,
@@ -2887,7 +2887,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "43"
+      "menuSection": "melee"
     },
     "44": {
       "hidden": true,
@@ -2952,7 +2952,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "44"
+      "menuSection": "melee"
     },
     "45": {
       "hidden": true,
@@ -3017,7 +3017,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "45"
+      "menuSection": "melee"
     },
     "46": {
       "hidden": true,
@@ -3082,7 +3082,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "46"
+      "menuSection": "melee"
     },
     "47": {
       "hidden": true,
@@ -3147,7 +3147,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "47"
+      "menuSection": "melee"
     },
     "48": {
       "hidden": true,
@@ -3212,7 +3212,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "48"
+      "menuSection": "melee"
     },
     "49": {
       "hidden": true,
@@ -3277,7 +3277,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "49"
+      "menuSection": "melee"
     },
     "50": {
       "hidden": true,
@@ -3345,7 +3345,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "50"
+      "menuSection": "melee"
     },
     "51": {
       "hidden": true,
@@ -3410,7 +3410,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "51"
+      "menuSection": "melee"
     },
     "52": {
       "hidden": true,
@@ -3475,7 +3475,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "52"
+      "menuSection": "melee"
     },
     "53": {
       "hidden": true,
@@ -3540,7 +3540,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "53"
+      "menuSection": "melee"
     },
     "54": {
       "hidden": true,
@@ -3605,7 +3605,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "54"
+      "menuSection": "melee"
     },
     "55": {
       "hidden": true,
@@ -3670,7 +3670,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "55"
+      "menuSection": "melee"
     },
     "56": {
       "hidden": true,
@@ -3735,7 +3735,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "56"
+      "menuSection": "melee"
     },
     "57": {
       "hidden": true,
@@ -3806,7 +3806,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "57"
+      "menuSection": "melee"
     },
     "58": {
       "hidden": true,
@@ -3871,7 +3871,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "58"
+      "menuSection": "melee"
     },
     "59": {
       "hidden": true,
@@ -3936,7 +3936,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "59"
+      "menuSection": "melee"
     },
     "60": {
       "hidden": true,
@@ -4001,7 +4001,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "60"
+      "menuSection": "melee"
     },
     "61": {
       "hidden": true,
@@ -4066,7 +4066,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "61"
+      "menuSection": "melee"
     },
     "62": {
       "hidden": true,
@@ -4131,7 +4131,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "62"
+      "menuSection": "melee"
     },
     "63": {
       "hidden": true,
@@ -4196,7 +4196,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "63"
+      "menuSection": "melee"
     },
     "64": {
       "hidden": true,
@@ -4261,7 +4261,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "64"
+      "menuSection": "melee"
     },
     "65": {
       "hidden": true,
@@ -4326,7 +4326,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "65"
+      "menuSection": "melee"
     },
     "66": {
       "hidden": true,
@@ -4397,7 +4397,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "66"
+      "menuSection": "melee"
     },
     "67": {
       "hidden": true,
@@ -4462,7 +4462,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "67"
+      "menuSection": "melee"
     },
     "68": {
       "hidden": true,
@@ -4527,7 +4527,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "68"
+      "menuSection": "melee"
     },
     "69": {
       "hidden": true,
@@ -4598,7 +4598,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "69"
+      "menuSection": "melee"
     },
     "70": {
       "hidden": true,
@@ -4663,7 +4663,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "70"
+      "menuSection": "melee"
     },
     "71": {
       "hidden": true,
@@ -4734,7 +4734,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "71"
+      "menuSection": "melee"
     },
     "72": {
       "hidden": true,
@@ -4805,7 +4805,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "72"
+      "menuSection": "melee"
     },
     "73": {
       "hidden": true,
@@ -4870,7 +4870,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "73"
+      "menuSection": "melee"
     },
     "74": {
       "hidden": true,
@@ -4932,7 +4932,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "74"
+      "menuSection": "melee"
     },
     "75": {
       "hidden": true,
@@ -4997,7 +4997,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "75"
+      "menuSection": "melee"
     },
     "76": {
       "hidden": true,
@@ -5062,7 +5062,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "76"
+      "menuSection": "melee"
     },
     "77": {
       "hidden": true,
@@ -5127,7 +5127,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "77"
+      "menuSection": "melee"
     },
     "78": {
       "hidden": true,
@@ -5192,7 +5192,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "78"
+      "menuSection": "melee"
     },
     "79": {
       "hidden": true,
@@ -5257,7 +5257,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "79"
+      "menuSection": "melee"
     },
     "80": {
       "hidden": true,
@@ -5322,7 +5322,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "80"
+      "menuSection": "melee"
     },
     "81": {
       "hidden": true,
@@ -5387,7 +5387,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "81"
+      "menuSection": "melee"
     },
     "82": {
       "hidden": true,
@@ -5452,7 +5452,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "82"
+      "menuSection": "melee"
     },
     "83": {
       "hidden": true,
@@ -5517,7 +5517,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "83"
+      "menuSection": "melee"
     },
     "84": {
       "hidden": true,
@@ -5582,7 +5582,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "84"
+      "menuSection": "melee"
     },
     "85": {
       "hidden": true,
@@ -5647,7 +5647,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "85"
+      "menuSection": "melee"
     },
     "86": {
       "hidden": true,
@@ -5712,7 +5712,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "86"
+      "menuSection": "melee"
     },
     "87": {
       "hidden": true,
@@ -5777,7 +5777,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "87"
+      "menuSection": "melee"
     },
     "88": {
       "hidden": true,
@@ -5842,7 +5842,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "88"
+      "menuSection": "melee"
     },
     "89": {
       "hidden": true,
@@ -5913,7 +5913,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "89"
+      "menuSection": "melee"
     },
     "90": {
       "hidden": true,
@@ -5978,7 +5978,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "90"
+      "menuSection": "melee"
     },
     "91": {
       "hidden": true,
@@ -6043,7 +6043,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "91"
+      "menuSection": "melee"
     },
     "92": {
       "hidden": true,
@@ -6108,7 +6108,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "92"
+      "menuSection": "melee"
     },
     "93": {
       "hidden": true,
@@ -6173,7 +6173,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "93"
+      "menuSection": "melee"
     },
     "94": {
       "hidden": true,
@@ -6238,7 +6238,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "94"
+      "menuSection": "melee"
     },
     "95": {
       "hidden": true,
@@ -6303,7 +6303,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "95"
+      "menuSection": "melee"
     },
     "96": {
       "hidden": true,
@@ -6368,7 +6368,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "96"
+      "menuSection": "melee"
     },
     "97": {
       "hidden": true,
@@ -6433,7 +6433,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "97"
+      "menuSection": "melee"
     },
     "98": {
       "hidden": true,
@@ -6498,7 +6498,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "98"
+      "menuSection": "melee"
     },
     "99": {
       "hidden": true,
@@ -6563,7 +6563,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "99"
+      "menuSection": "melee"
     },
     "100": {
       "hidden": true,
@@ -6634,7 +6634,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "100"
+      "menuSection": "melee"
     },
     "101": {
       "hidden": true,
@@ -6705,7 +6705,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "101"
+      "menuSection": "melee"
     },
     "102": {
       "hidden": true,
@@ -6770,7 +6770,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "102"
+      "menuSection": "melee"
     },
     "103": {
       "hidden": true,
@@ -6835,7 +6835,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "103"
+      "menuSection": "melee"
     },
     "104": {
       "hidden": true,
@@ -6900,7 +6900,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "104"
+      "menuSection": "melee"
     },
     "105": {
       "hidden": true,
@@ -6965,7 +6965,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "105"
+      "menuSection": "melee"
     },
     "106": {
       "hidden": true,
@@ -7030,7 +7030,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "106"
+      "menuSection": "melee"
     },
     "107": {
       "hidden": true,
@@ -7095,7 +7095,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "107"
+      "menuSection": "melee"
     },
     "108": {
       "hidden": true,
@@ -7160,7 +7160,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "108"
+      "menuSection": "melee"
     },
     "109": {
       "hidden": true,
@@ -7225,7 +7225,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "109"
+      "menuSection": "melee"
     },
     "110": {
       "hidden": true,
@@ -7290,7 +7290,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "110"
+      "menuSection": "melee"
     },
     "111": {
       "hidden": true,
@@ -7355,7 +7355,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "111"
+      "menuSection": "melee"
     },
     "112": {
       "hidden": true,
@@ -7420,7 +7420,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "112"
+      "menuSection": "melee"
     },
     "113": {
       "hidden": true,
@@ -7485,7 +7485,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "113"
+      "menuSection": "melee"
     },
     "114": {
       "hidden": true,
@@ -7550,7 +7550,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "114"
+      "menuSection": "melee"
     },
     "115": {
       "hidden": true,
@@ -7615,7 +7615,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "115"
+      "menuSection": "melee"
     },
     "116": {
       "hidden": true,
@@ -7686,7 +7686,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "116"
+      "menuSection": "melee"
     },
     "117": {
       "hidden": true,
@@ -7751,7 +7751,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "117"
+      "menuSection": "melee"
     },
     "118": {
       "hidden": true,
@@ -7816,7 +7816,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "118"
+      "menuSection": "melee"
     },
     "119": {
       "hidden": true,
@@ -7881,7 +7881,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "119"
+      "menuSection": "melee"
     },
     "120": {
       "hidden": true,
@@ -7946,7 +7946,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "120"
+      "menuSection": "melee"
     },
     "121": {
       "hidden": true,
@@ -8011,7 +8011,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "121"
+      "menuSection": "melee"
     },
     "122": {
       "hidden": true,
@@ -8085,7 +8085,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "122"
+      "menuSection": "melee"
     },
     "123": {
       "hidden": true,
@@ -8150,7 +8150,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "123"
+      "menuSection": "melee"
     },
     "124": {
       "hidden": true,
@@ -8215,7 +8215,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "124"
+      "menuSection": "melee"
     },
     "125": {
       "hidden": true,
@@ -8280,7 +8280,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "125"
+      "menuSection": "melee"
     },
     "126": {
       "hidden": true,
@@ -8345,7 +8345,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "126"
+      "menuSection": "melee"
     },
     "127": {
       "hidden": true,
@@ -8410,7 +8410,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "127"
+      "menuSection": "melee"
     },
     "128": {
       "hidden": true,
@@ -8475,7 +8475,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "128"
+      "menuSection": "melee"
     },
     "129": {
       "hidden": true,
@@ -8540,7 +8540,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "129"
+      "menuSection": "melee"
     },
     "130": {
       "hidden": true,
@@ -8605,7 +8605,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "130"
+      "menuSection": "melee"
     },
     "131": {
       "hidden": true,
@@ -8679,7 +8679,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "131"
+      "menuSection": "melee"
     },
     "132": {
       "hidden": true,
@@ -8744,7 +8744,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "132"
+      "menuSection": "melee"
     },
     "133": {
       "hidden": true,
@@ -8809,7 +8809,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "133"
+      "menuSection": "melee"
     },
     "134": {
       "hidden": true,
@@ -8874,7 +8874,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "134"
+      "menuSection": "melee"
     },
     "135": {
       "hidden": true,
@@ -8939,7 +8939,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "135"
+      "menuSection": "melee"
     },
     "136": {
       "hidden": true,
@@ -9004,7 +9004,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "136"
+      "menuSection": "melee"
     },
     "137": {
       "hidden": true,
@@ -9069,7 +9069,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "137"
+      "menuSection": "melee"
     },
     "138": {
       "hidden": true,
@@ -9134,7 +9134,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "138"
+      "menuSection": "melee"
     },
     "139": {
       "hidden": true,
@@ -9199,7 +9199,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "139"
+      "menuSection": "melee"
     },
     "140": {
       "hidden": true,
@@ -9264,7 +9264,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "140"
+      "menuSection": "melee"
     },
     "141": {
       "hidden": true,
@@ -9329,7 +9329,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "141"
+      "menuSection": "melee"
     },
     "142": {
       "hidden": true,
@@ -9394,7 +9394,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "142"
+      "menuSection": "melee"
     },
     "143": {
       "hidden": true,
@@ -9459,7 +9459,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "143"
+      "menuSection": "melee"
     },
     "144": {
       "hidden": true,
@@ -9524,7 +9524,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "144"
+      "menuSection": "melee"
     },
     "145": {
       "hidden": true,
@@ -9589,7 +9589,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "145"
+      "menuSection": "melee"
     },
     "146": {
       "hidden": true,
@@ -9654,7 +9654,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "146"
+      "menuSection": "melee"
     },
     "147": {
       "hidden": true,
@@ -9719,7 +9719,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "147"
+      "menuSection": "melee"
     },
     "148": {
       "hidden": true,
@@ -9784,7 +9784,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "148"
+      "menuSection": "melee"
     },
     "149": {
       "hidden": true,
@@ -9849,7 +9849,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "149"
+      "menuSection": "melee"
     },
     "150": {
       "hidden": true,
@@ -9914,7 +9914,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "150"
+      "menuSection": "melee"
     },
     "151": {
       "hidden": true,
@@ -9979,7 +9979,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "151"
+      "menuSection": "melee"
     },
     "152": {
       "hidden": true,
@@ -10044,7 +10044,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "152"
+      "menuSection": "melee"
     },
     "153": {
       "hidden": true,
@@ -10115,7 +10115,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "153"
+      "menuSection": "melee"
     },
     "154": {
       "hidden": true,
@@ -10180,7 +10180,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "154"
+      "menuSection": "melee"
     },
     "155": {
       "hidden": true,
@@ -10245,7 +10245,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "155"
+      "menuSection": "melee"
     },
     "156": {
       "hidden": true,
@@ -10310,7 +10310,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "156"
+      "menuSection": "melee"
     },
     "157": {
       "hidden": true,
@@ -10375,7 +10375,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "157"
+      "menuSection": "melee"
     },
     "158": {
       "hidden": true,
@@ -10440,7 +10440,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "158"
+      "menuSection": "melee"
     },
     "159": {
       "hidden": true,
@@ -10511,7 +10511,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "159"
+      "menuSection": "melee"
     },
     "160": {
       "hidden": true,
@@ -10576,7 +10576,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "160"
+      "menuSection": "melee"
     },
     "161": {
       "hidden": true,
@@ -10641,7 +10641,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "161"
+      "menuSection": "melee"
     },
     "162": {
       "hidden": true,
@@ -10706,7 +10706,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "162"
+      "menuSection": "melee"
     },
     "163": {
       "hidden": true,
@@ -10771,7 +10771,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "163"
+      "menuSection": "melee"
     },
     "164": {
       "hidden": true,
@@ -10836,7 +10836,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "164"
+      "menuSection": "melee"
     },
     "165": {
       "hidden": true,
@@ -10901,7 +10901,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "165"
+      "menuSection": "melee"
     },
     "166": {
       "hidden": true,
@@ -10966,7 +10966,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "166"
+      "menuSection": "melee"
     },
     "167": {
       "hidden": true,
@@ -11031,7 +11031,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "167"
+      "menuSection": "melee"
     },
     "168": {
       "hidden": true,
@@ -11096,7 +11096,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "168"
+      "menuSection": "melee"
     },
     "169": {
       "hidden": true,
@@ -11165,7 +11165,7 @@
         "enable": false
       },
       "menuType": "weapon",
-      "menuSection": "169"
+      "menuSection": "melee"
     },
     "170": {
       "hidden": true,
@@ -11230,7 +11230,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "170"
+      "menuSection": "melee"
     },
     "171": {
       "hidden": true,
@@ -11295,7 +11295,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "171"
+      "menuSection": "melee"
     },
     "172": {
       "hidden": true,
@@ -11360,7 +11360,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "172"
+      "menuSection": "melee"
     },
     "173": {
       "hidden": true,
@@ -11425,7 +11425,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "173"
+      "menuSection": "melee"
     },
     "174": {
       "hidden": true,
@@ -11490,7 +11490,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "174"
+      "menuSection": "melee"
     },
     "175": {
       "hidden": true,
@@ -11568,7 +11568,7 @@
       "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
-      "menuSection": "175"
+      "menuSection": "melee"
     },
     "176": {
       "hidden": true,
@@ -11633,7 +11633,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "176"
+      "menuSection": "melee"
     },
     "177": {
       "hidden": true,
@@ -11698,7 +11698,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "177"
+      "menuSection": "melee"
     },
     "178": {
       "hidden": true,
@@ -11763,7 +11763,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "178"
+      "menuSection": "melee"
     },
     "179": {
       "hidden": true,
@@ -11828,7 +11828,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "179"
+      "menuSection": "melee"
     },
     "180": {
       "hidden": true,
@@ -11893,7 +11893,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "180"
+      "menuSection": "melee"
     },
     "181": {
       "hidden": true,
@@ -11958,7 +11958,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "181"
+      "menuSection": "melee"
     },
     "182": {
       "hidden": true,
@@ -12023,7 +12023,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "182"
+      "menuSection": "melee"
     },
     "183": {
       "hidden": true,
@@ -12088,7 +12088,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "183",
+      "menuSection": "melee",
       "return": false,
       "explosion": {
         "enable": false
@@ -12157,7 +12157,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "184"
+      "menuSection": "melee"
     },
     "185": {
       "hidden": true,
@@ -12222,7 +12222,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "185"
+      "menuSection": "melee"
     },
     "186": {
       "hidden": true,
@@ -12287,7 +12287,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "186"
+      "menuSection": "melee"
     },
     "187": {
       "hidden": true,
@@ -12358,7 +12358,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "187"
+      "menuSection": "melee"
     },
     "188": {
       "hidden": true,
@@ -12423,7 +12423,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "188"
+      "menuSection": "melee"
     },
     "189": {
       "hidden": true,
@@ -12497,7 +12497,7 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "189"
+      "menuSection": "melee"
     },
     "190": {
       "hidden": true,
@@ -12566,7 +12566,7 @@
         "enable": false
       },
       "menuType": "generic",
-      "menuSection": "190"
+      "menuSection": "melee"
     },
     "191": {
       "hidden": true,
@@ -12631,7 +12631,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "191"
+      "menuSection": "melee"
     },
     "192": {
       "hidden": true,
@@ -12696,7 +12696,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "192"
+      "menuSection": "melee"
     },
     "193": {
       "hidden": true,
@@ -12761,7 +12761,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "193"
+      "menuSection": "melee"
     },
     "194": {
       "hidden": true,
@@ -12826,7 +12826,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "194"
+      "menuSection": "melee"
     },
     "195": {
       "below": false,
@@ -12859,7 +12859,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "196": {
       "below": false,
@@ -12892,7 +12893,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "197": {
       "below": false,
@@ -12925,7 +12927,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "198": {
       "below": false,
@@ -12963,7 +12966,8 @@
       "switchAnimation": "chakram",
       "switchVariant": "01",
       "switchColor": "white",
-      "detect": "auto"
+      "detect": "auto",
+      "menuSection": "melee"
     },
     "199": {
       "below": false,
@@ -12996,7 +13000,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "200": {
       "below": false,
@@ -13029,7 +13034,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "201": {
       "below": false,
@@ -13062,7 +13068,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "202": {
       "below": false,
@@ -13095,7 +13102,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     },
     "203": {
       "below": false,
@@ -13128,7 +13136,8 @@
       "return": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "melee"
     }
   },
   "range": {
@@ -13204,7 +13213,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "0"
+      "menuSection": "range"
     },
     "1": {
       "below": false,
@@ -13274,7 +13283,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "2"
+      "menuSection": "range"
     },
     "2": {
       "below": false,
@@ -13333,7 +13342,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "3"
+      "menuSection": "range"
     },
     "3": {
       "hidden": true,
@@ -13393,7 +13402,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "4"
+      "menuSection": "range"
     },
     "4": {
       "hidden": true,
@@ -13453,7 +13462,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "6"
+      "menuSection": "range"
     },
     "5": {
       "hidden": true,
@@ -13513,7 +13522,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "7"
+      "menuSection": "range"
     },
     "6": {
       "hidden": true,
@@ -13573,7 +13582,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "8"
+      "menuSection": "range"
     },
     "7": {
       "hidden": true,
@@ -13636,7 +13645,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "9"
+      "menuSection": "range"
     },
     "8": {
       "hidden": true,
@@ -13699,7 +13708,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "10"
+      "menuSection": "range"
     },
     "9": {
       "hidden": true,
@@ -13759,7 +13768,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "11"
+      "menuSection": "range"
     },
     "10": {
       "hidden": true,
@@ -13833,7 +13842,7 @@
         "delay": null,
         "below": false
       },
-      "menuSection": "12"
+      "menuSection": "range"
     },
     "11": {
       "hidden": true,
@@ -13915,7 +13924,7 @@
         "delay": null,
         "below": false
       },
-      "menuSection": "14"
+      "menuSection": "range"
     },
     "12": {
       "hidden": true,
@@ -13975,7 +13984,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "15"
+      "menuSection": "range"
     },
     "13": {
       "below": false,
@@ -14038,7 +14047,7 @@
         "enable": false
       },
       "menuType": "spell",
-      "menuSection": "16"
+      "menuSection": "range"
     },
     "14": {
       "hidden": true,
@@ -14098,7 +14107,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "17"
+      "menuSection": "range"
     },
     "15": {
       "below": false,
@@ -14160,7 +14169,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "18"
+      "menuSection": "range"
     },
     "16": {
       "hidden": true,
@@ -14220,7 +14229,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "19"
+      "menuSection": "range"
     },
     "17": {
       "hidden": true,
@@ -14280,7 +14289,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "21"
+      "menuSection": "range"
     },
     "18": {
       "hidden": true,
@@ -14362,7 +14371,7 @@
         "delay": null,
         "below": false
       },
-      "menuSection": "22"
+      "menuSection": "range"
     },
     "19": {
       "hidden": true,
@@ -14422,7 +14431,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "23"
+      "menuSection": "range"
     },
     "20": {
       "hidden": true,
@@ -14482,7 +14491,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "24"
+      "menuSection": "range"
     },
     "21": {
       "hidden": true,
@@ -14542,7 +14551,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "25"
+      "menuSection": "range"
     },
     "22": {
       "hidden": true,
@@ -14602,7 +14611,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "26"
+      "menuSection": "range"
     },
     "23": {
       "below": false,
@@ -14661,7 +14670,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "27"
+      "menuSection": "range"
     },
     "24": {
       "hidden": true,
@@ -14721,7 +14730,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "28"
+      "menuSection": "range"
     },
     "25": {
       "hidden": true,
@@ -14732,7 +14741,7 @@
       "repeat": 1,
       "delay": 500,
       "type": "spell",
-      "menuSection": "29",
+      "menuSection": "range",
       "anim2d": false,
       "soundOnly": {
         "enable": false
@@ -14844,7 +14853,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "30"
+      "menuSection": "range"
     },
     "27": {
       "hidden": true,
@@ -14907,7 +14916,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "31"
+      "menuSection": "range"
     },
     "28": {
       "hidden": true,
@@ -14967,7 +14976,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "32"
+      "menuSection": "range"
     },
     "29": {
       "hidden": true,
@@ -15027,7 +15036,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "33"
+      "menuSection": "range"
     },
     "30": {
       "hidden": true,
@@ -15090,7 +15099,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "34"
+      "menuSection": "range"
     },
     "31": {
       "hidden": true,
@@ -15150,7 +15159,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "35",
+      "menuSection": "range",
       "explosion": {
         "enable": false
       }
@@ -15213,7 +15222,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "36"
+      "menuSection": "range"
     },
     "33": {
       "hidden": true,
@@ -15273,7 +15282,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "37"
+      "menuSection": "range"
     },
     "34": {
       "below": false,
@@ -15335,7 +15344,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "38"
+      "menuSection": "range"
     },
     "35": {
       "hidden": true,
@@ -15398,7 +15407,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "39"
+      "menuSection": "range"
     },
     "36": {
       "hidden": true,
@@ -15458,7 +15467,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "40"
+      "menuSection": "range"
     },
     "37": {
       "below": false,
@@ -15495,7 +15504,7 @@
         }
       },
       "explosion": {
-        "enable": true,
+        "enable": false,
         "menuType": "generic",
         "animation": "impact",
         "variant": "01",
@@ -15536,7 +15545,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "41"
+      "menuSection": "range"
     },
     "38": {
       "below": false,
@@ -15597,7 +15606,7 @@
       },
       "customPath": "",
       "onlyX": false,
-      "menuSection": "42"
+      "menuSection": "range"
     },
     "39": {
       "hidden": true,
@@ -15660,7 +15669,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "47"
+      "menuSection": "range"
     },
     "40": {
       "hidden": true,
@@ -15720,7 +15729,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "49"
+      "menuSection": "range"
     },
     "41": {
       "hidden": true,
@@ -15780,7 +15789,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "50",
+      "menuSection": "range",
       "explosion": {
         "enable": false
       }
@@ -15843,7 +15852,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "51"
+      "menuSection": "range"
     },
     "43": {
       "below": false,
@@ -15904,7 +15913,7 @@
       },
       "customPath": "jb2a.breath_weapons.acid.line.blue",
       "onlyX": false,
-      "menuSection": "52"
+      "menuSection": "range"
     },
     "44": {
       "hidden": true,
@@ -15964,7 +15973,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "53"
+      "menuSection": "range"
     },
     "45": {
       "hidden": true,
@@ -16024,7 +16033,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "54"
+      "menuSection": "range"
     },
     "46": {
       "hidden": true,
@@ -16084,7 +16093,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "55"
+      "menuSection": "range"
     },
     "47": {
       "hidden": true,
@@ -16147,7 +16156,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "56"
+      "menuSection": "range"
     },
     "48": {
       "hidden": true,
@@ -16210,7 +16219,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "57"
+      "menuSection": "range"
     },
     "49": {
       "below": false,
@@ -16269,7 +16278,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "58"
+      "menuSection": "range"
     },
     "50": {
       "hidden": true,
@@ -16329,7 +16338,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "59"
+      "menuSection": "range"
     },
     "51": {
       "hidden": true,
@@ -16389,7 +16398,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "61"
+      "menuSection": "range"
     },
     "52": {
       "hidden": true,
@@ -16467,7 +16476,7 @@
         "delay": null,
         "below": false
       },
-      "menuSection": "62",
+      "menuSection": "range",
       "customPath": "",
       "onlyX": false
     },
@@ -16545,7 +16554,7 @@
       },
       "customPath": "",
       "onlyX": false,
-      "menuSection": "63"
+      "menuSection": "range"
     },
     "54": {
       "hidden": true,
@@ -16605,7 +16614,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "64"
+      "menuSection": "range"
     },
     "55": {
       "hidden": true,
@@ -16665,7 +16674,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "65"
+      "menuSection": "range"
     },
     "56": {
       "hidden": true,
@@ -16725,7 +16734,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "66"
+      "menuSection": "range"
     },
     "57": {
       "hidden": true,
@@ -16785,7 +16794,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "67",
+      "menuSection": "range",
       "explosion": {
         "enable": false
       }
@@ -16848,10 +16857,10 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "spell",
-      "menuSection": "68"
+      "menuSection": "range"
     },
     "59": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Shobhad Longrifle",
       "soundOnly": {
@@ -16873,7 +16882,11 @@
       "custom": false,
       "audio": {
         "a01": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Fly-By/arrow-fly-by-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "levels3d": {
@@ -16908,7 +16921,10 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "69"
+      "menuSection": "range",
+      "explosion": {
+        "enable": false
+      }
     },
     "60": {
       "hidden": true,
@@ -16968,7 +16984,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "70"
+      "menuSection": "range"
     },
     "61": {
       "hidden": true,
@@ -17028,7 +17044,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "71"
+      "menuSection": "range"
     },
     "62": {
       "below": false,
@@ -17090,7 +17106,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "72"
+      "menuSection": "range"
     },
     "63": {
       "hidden": true,
@@ -17150,7 +17166,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "73"
+      "menuSection": "range"
     },
     "64": {
       "hidden": true,
@@ -17210,7 +17226,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "74"
+      "menuSection": "range"
     },
     "65": {
       "below": false,
@@ -17284,7 +17300,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "generic",
-      "menuSection": "75"
+      "menuSection": "range"
     },
     "66": {
       "hidden": true,
@@ -17341,7 +17357,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "77"
+      "menuSection": "range"
     },
     "67": {
       "hidden": true,
@@ -17401,7 +17417,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "78"
+      "menuSection": "range"
     },
     "68": {
       "below": false,
@@ -17462,7 +17478,7 @@
       },
       "customPath": "jb2a.boulder.toss",
       "onlyX": false,
-      "menuSection": "79"
+      "menuSection": "range"
     },
     "69": {
       "hidden": true,
@@ -17522,7 +17538,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "81",
+      "menuSection": "range",
       "explosion": {
         "enable": false
       }
@@ -17599,7 +17615,7 @@
         "delay": 300,
         "below": false
       },
-      "menuSection": "82"
+      "menuSection": "range"
     },
     "71": {
       "hidden": true,
@@ -17659,7 +17675,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "83"
+      "menuSection": "range"
     },
     "72": {
       "below": false,
@@ -17720,7 +17736,7 @@
       },
       "customPath": "",
       "onlyX": false,
-      "menuSection": "119"
+      "menuSection": "range"
     },
     "73": {
       "below": false,
@@ -17779,7 +17795,7 @@
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
-      "menuSection": "117"
+      "menuSection": "range"
     },
     "74": {
       "below": false,
@@ -17840,7 +17856,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "75": {
       "below": false,
@@ -17901,7 +17918,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "76": {
       "below": false,
@@ -17962,7 +17980,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "77": {
       "below": false,
@@ -18023,7 +18042,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "78": {
       "below": false,
@@ -18084,7 +18104,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "79": {
       "below": false,
@@ -18145,7 +18166,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "80": {
       "below": false,
@@ -18206,7 +18228,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "81": {
       "below": false,
@@ -18267,7 +18290,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "82": {
       "below": false,
@@ -18328,7 +18352,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "83": {
       "below": false,
@@ -18389,7 +18414,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "84": {
       "below": false,
@@ -18450,7 +18476,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "85": {
       "below": false,
@@ -18511,7 +18538,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "86": {
       "below": false,
@@ -18572,7 +18600,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "87": {
       "below": false,
@@ -18633,7 +18662,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "88": {
       "below": false,
@@ -18694,7 +18724,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "89": {
       "below": false,
@@ -18755,7 +18786,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "90": {
       "below": false,
@@ -18816,7 +18848,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "91": {
       "below": false,
@@ -18877,7 +18910,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "92": {
       "below": false,
@@ -18938,7 +18972,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "93": {
       "below": false,
@@ -18999,7 +19034,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "94": {
       "below": false,
@@ -19060,7 +19096,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "95": {
       "below": false,
@@ -19121,7 +19158,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "96": {
       "below": false,
@@ -19182,7 +19220,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "97": {
       "below": false,
@@ -19243,7 +19282,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "98": {
       "below": false,
@@ -19304,7 +19344,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "99": {
       "below": false,
@@ -19365,7 +19406,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     },
     "100": {
       "below": false,
@@ -19423,7 +19465,8 @@
           "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
         },
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      }
+      },
+      "menuSection": "range"
     }
   },
   "static": {
@@ -19462,7 +19505,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "0"
+      "menuSection": "static"
     },
     "1": {
       "below": false,
@@ -19499,7 +19542,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "1"
+      "menuSection": "static"
     },
     "2": {
       "hidden": true,
@@ -19563,7 +19606,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "creature",
-      "menuSection": "2",
+      "menuSection": "static",
       "unbindAlpha": false,
       "unbindVisibility": false,
       "explosion": {
@@ -19605,7 +19648,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "3"
+      "menuSection": "static"
     },
     "4": {
       "hidden": true,
@@ -19619,7 +19662,7 @@
       "scale": 1,
       "below": false,
       "type": "target",
-      "menuSection": "4",
+      "menuSection": "static",
       "anim2d": false,
       "soundOnly": {
         "enable": false
@@ -19704,7 +19747,7 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "creature",
-      "menuSection": "5",
+      "menuSection": "static",
       "unbindAlpha": false,
       "unbindVisibility": false,
       "explosion": {
@@ -19746,7 +19789,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "6"
+      "menuSection": "static"
     },
     "7": {
       "below": false,
@@ -19787,7 +19830,7 @@
       },
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "7"
+      "menuSection": "static"
     },
     "8": {
       "below": false,
@@ -19824,7 +19867,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "8"
+      "menuSection": "static"
     },
     "9": {
       "below": false,
@@ -19858,7 +19901,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "9"
+      "menuSection": "static"
     },
     "10": {
       "below": false,
@@ -19895,7 +19938,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "10"
+      "menuSection": "static"
     },
     "11": {
       "below": false,
@@ -19932,7 +19975,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "11"
+      "menuSection": "static"
     },
     "12": {
       "below": false,
@@ -19969,7 +20012,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "12"
+      "menuSection": "static"
     },
     "13": {
       "below": false,
@@ -20006,7 +20049,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "13"
+      "menuSection": "static"
     },
     "14": {
       "below": false,
@@ -20040,7 +20083,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "14"
+      "menuSection": "static"
     },
     "15": {
       "below": false,
@@ -20074,7 +20117,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "15"
+      "menuSection": "static"
     },
     "16": {
       "below": false,
@@ -20108,7 +20151,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "16"
+      "menuSection": "static"
     },
     "17": {
       "below": false,
@@ -20145,7 +20188,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "17"
+      "menuSection": "static"
     },
     "18": {
       "below": false,
@@ -20186,7 +20229,7 @@
       },
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "18"
+      "menuSection": "static"
     },
     "19": {
       "below": false,
@@ -20218,7 +20261,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "19",
+      "menuSection": "static",
       "menuType": "shieldfx"
     },
     "20": {
@@ -20256,7 +20299,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "20"
+      "menuSection": "static"
     },
     "21": {
       "hidden": true,
@@ -20325,7 +20368,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "21"
+      "menuSection": "static"
     },
     "22": {
       "hidden": true,
@@ -20394,7 +20437,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "22"
+      "menuSection": "static"
     },
     "23": {
       "below": false,
@@ -20431,7 +20474,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "23"
+      "menuSection": "static"
     },
     "24": {
       "below": false,
@@ -20468,7 +20511,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "24"
+      "menuSection": "static"
     },
     "25": {
       "below": false,
@@ -20505,7 +20548,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "25"
+      "menuSection": "static"
     },
     "26": {
       "below": false,
@@ -20542,7 +20585,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "26"
+      "menuSection": "static"
     },
     "27": {
       "below": false,
@@ -20579,7 +20622,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "27"
+      "menuSection": "static"
     },
     "28": {
       "below": false,
@@ -20613,7 +20656,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "28"
+      "menuSection": "static"
     },
     "29": {
       "below": false,
@@ -20650,7 +20693,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "29"
+      "menuSection": "static"
     },
     "30": {
       "below": false,
@@ -20687,7 +20730,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "30"
+      "menuSection": "static"
     },
     "31": {
       "below": false,
@@ -20719,7 +20762,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "31",
+      "menuSection": "static",
       "menuType": "shieldfx",
       "unbindAlpha": false,
       "unbindVisibility": false
@@ -20759,7 +20802,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "32"
+      "menuSection": "static"
     },
     "33": {
       "below": false,
@@ -20800,7 +20843,7 @@
       },
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "33"
+      "menuSection": "static"
     },
     "34": {
       "below": false,
@@ -20841,7 +20884,7 @@
       },
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "34"
+      "menuSection": "static"
     },
     "35": {
       "below": false,
@@ -20878,7 +20921,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "35"
+      "menuSection": "static"
     },
     "36": {
       "below": false,
@@ -20915,7 +20958,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "36"
+      "menuSection": "static"
     },
     "37": {
       "below": false,
@@ -20952,7 +20995,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "38"
+      "menuSection": "static"
     },
     "38": {
       "below": false,
@@ -20989,7 +21032,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "39"
+      "menuSection": "static"
     },
     "39": {
       "below": false,
@@ -21026,7 +21069,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "40"
+      "menuSection": "static"
     },
     "40": {
       "below": false,
@@ -21060,7 +21103,7 @@
       },
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "41"
+      "menuSection": "static"
     },
     "41": {
       "below": false,
@@ -21095,7 +21138,7 @@
         "enable": false
       },
       "customPath": "jb2a.healing_generic.200px.yellow",
-      "menuSection": "42"
+      "menuSection": "static"
     },
     "42": {
       "below": false,
@@ -21132,7 +21175,7 @@
         "enable": false
       },
       "menuType": "spell",
-      "menuSection": "43"
+      "menuSection": "static"
     },
     "43": {
       "below": false,
@@ -21169,7 +21212,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "44"
+      "menuSection": "static"
     },
     "44": {
       "below": false,
@@ -21206,7 +21249,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "46"
+      "menuSection": "static"
     },
     "45": {
       "below": false,
@@ -21243,7 +21286,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "47"
+      "menuSection": "static"
     },
     "46": {
       "hidden": true,
@@ -21313,7 +21356,7 @@
       "customPath": "jb2a.healing_generic.200px.red",
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "49"
+      "menuSection": "static"
     },
     "47": {
       "below": false,
@@ -21350,7 +21393,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "50"
+      "menuSection": "static"
     },
     "48": {
       "below": false,
@@ -21387,7 +21430,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "51"
+      "menuSection": "static"
     },
     "49": {
       "below": false,
@@ -21422,7 +21465,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "52"
+      "menuSection": "static"
     },
     "50": {
       "below": false,
@@ -21455,7 +21498,7 @@
         "enable": false
       },
       "menuType": "tokenborder",
-      "menuSection": "53",
+      "menuSection": "static",
       "unbindAlpha": false,
       "unbindVisibility": false
     },
@@ -21472,7 +21515,7 @@
       "scale": 2,
       "type": "target",
       "variant": "01",
-      "menuSection": "54",
+      "menuSection": "static",
       "menuType": "creature",
       "anim2d": false,
       "soundOnly": {
@@ -21528,7 +21571,7 @@
         "enable": false
       },
       "customPath": "modules/jb2a_patreon/Library/Generic/Ice/IceSpikesRadialBurst_01_Regular_White_1000x1000.webm",
-      "menuSection": "52",
+      "menuSection": "static",
       "unbindAlpha": false,
       "unbindVisibility": false
     },
@@ -21563,7 +21606,7 @@
         "enable": false
       },
       "customPath": "",
-      "menuSection": "51",
+      "menuSection": "static",
       "unbindAlpha": false,
       "unbindVisibility": false
     },
@@ -21612,7 +21655,7 @@
       "customPath": "modules/jb2a_patreon/Library/2nd_Level/Divine_Smite/DivineSmite_01_Dark_Purple_Target_400x400.webm",
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "53"
+      "menuSection": "static"
     },
     "55": {
       "below": false,
@@ -21659,7 +21702,7 @@
       "customPath": "modules/jb2a_patreon/Library/2nd_Level/Divine_Smite/DivineSmite_01_Dark_Red_Target_400x400.webm",
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "54"
+      "menuSection": "static"
     },
     "56": {
       "below": false,
@@ -21692,7 +21735,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     },
     "57": {
       "below": false,
@@ -21725,7 +21769,7 @@
         "enable": false
       },
       "customPath": "",
-      "menuSection": "51",
+      "menuSection": "static",
       "unbindAlpha": false,
       "unbindVisibility": false
     },
@@ -21763,7 +21807,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     },
     "59": {
       "below": false,
@@ -21807,7 +21852,8 @@
         "radius": null,
         "delay": null,
         "below": false
-      }
+      },
+      "menuSection": "static"
     },
     "60": {
       "below": false,
@@ -21841,7 +21887,8 @@
       "explosion": {
         "enable": false
       },
-      "customPath": "jb2a.eyes.01.dark_green.single.0"
+      "customPath": "jb2a.eyes.01.dark_green.single.0",
+      "menuSection": "static"
     },
     "61": {
       "below": false,
@@ -21858,7 +21905,7 @@
       "menuType": "generic",
       "animation": "impact",
       "variant": "01",
-      "color": "random",
+      "color": "yellow",
       "custom": false,
       "repeat": null,
       "delay": null,
@@ -21878,7 +21925,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     },
     "62": {
       "below": false,
@@ -21916,7 +21964,8 @@
       "explosion": {
         "enable": false
       },
-      "customPath": "jb2a.ui.critical."
+      "customPath": "jb2a.ui.critical.",
+      "menuSection": "static"
     },
     "63": {
       "below": false,
@@ -21954,7 +22003,8 @@
       "explosion": {
         "enable": false
       },
-      "customPath": "jb2a.ui.critical_miss."
+      "customPath": "jb2a.ui.critical_miss.",
+      "menuSection": "static"
     },
     "64": {
       "below": false,
@@ -21992,7 +22042,8 @@
       "explosion": {
         "enable": false
       },
-      "customPath": "jb2a.ui.miss"
+      "customPath": "jb2a.ui.miss",
+      "menuSection": "static"
     },
     "65": {
       "below": false,
@@ -22028,7 +22079,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     },
     "66": {
       "below": false,
@@ -22064,7 +22116,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     },
     "67": {
       "below": false,
@@ -22100,7 +22153,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     },
     "68": {
       "below": false,
@@ -22133,7 +22187,8 @@
       },
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "static"
     }
   },
   "templates": {
@@ -22168,7 +22223,7 @@
         }
       },
       "menuType": "cone",
-      "menuSection": "0",
+      "menuSection": "templates",
       "persistType": ""
     },
     "1": {
@@ -22205,7 +22260,7 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "1"
+      "menuSection": "templates"
     },
     "2": {
       "below": false,
@@ -22235,7 +22290,7 @@
         }
       },
       "persistType": "",
-      "menuSection": "2"
+      "menuSection": "templates"
     },
     "3": {
       "below": false,
@@ -22264,7 +22319,7 @@
           "enable": false
         }
       },
-      "menuSection": "3"
+      "menuSection": "templates"
     },
     "4": {
       "hidden": true,
@@ -22300,7 +22355,7 @@
         }
       },
       "menuType": "circle",
-      "menuSection": "4"
+      "menuSection": "templates"
     },
     "5": {
       "below": false,
@@ -22333,7 +22388,7 @@
         }
       },
       "menuType": "ray",
-      "menuSection": "5",
+      "menuSection": "templates",
       "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyStrand_Multiple01_Dark_Purple_30ft_1600x400.webm"
     },
     "6": {
@@ -22363,7 +22418,7 @@
           "enable": false
         }
       },
-      "menuSection": "6"
+      "menuSection": "templates"
     },
     "7": {
       "below": false,
@@ -22393,7 +22448,7 @@
         }
       },
       "persistType": "",
-      "menuSection": "7"
+      "menuSection": "templates"
     },
     "8": {
       "below": false,
@@ -22423,7 +22478,7 @@
         }
       },
       "persistType": "attachtemplate",
-      "menuSection": "8"
+      "menuSection": "templates"
     },
     "9": {
       "below": false,
@@ -22452,7 +22507,7 @@
           "enable": false
         }
       },
-      "menuSection": "9"
+      "menuSection": "templates"
     },
     "10": {
       "below": false,
@@ -22480,7 +22535,8 @@
         "a01": {
           "enable": false
         }
-      }
+      },
+      "menuSection": "templates"
     },
     "11": {
       "below": false,
@@ -22511,7 +22567,8 @@
         "a01": {
           "enable": false
         }
-      }
+      },
+      "menuSection": "templates"
     },
     "12": {
       "below": false,
@@ -22540,7 +22597,8 @@
           "enable": false
         }
       },
-      "persistType": "attachtemplate"
+      "persistType": "attachtemplate",
+      "menuSection": "templates"
     }
   },
   "auras": {},
@@ -22588,7 +22646,7 @@
       "explosion02Delay": null,
       "explosion02Scale": 2,
       "afterEffect": false,
-      "menuSection": "0",
+      "menuSection": "preset",
       "afterEffectPath": "",
       "wait03": null
     },
@@ -22609,7 +22667,8 @@
         "a01": {
           "enable": false
         }
-      }
+      },
+      "menuSection": "preset"
     },
     "2": {
       "hidden": true,
@@ -22637,7 +22696,7 @@
           "enable": false
         }
       },
-      "menuSection": "8"
+      "menuSection": "preset"
     }
   },
   "aefx": {
@@ -23817,7 +23876,8 @@
       "unbindVisibility": false,
       "explosion": {
         "enable": false
-      }
+      },
+      "menuSection": "aefx"
     },
     "34": {
       "below": false,
