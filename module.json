@@ -6,11 +6,13 @@
 		{
 			"name": "MrVauxs",
 			"discord": "MrVauxs#8622",
+			"twitter": "@ThatVauxs",
+			"patreon": "mrvauxs",
 			"flags": {}
 		}
 	],
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
-	"version": "1.11.0",
+	"version": "1.11.2",
 	"compatibility": {
 		"minimum": "10",
 		"verified": "10.285"
@@ -99,6 +101,13 @@
 			}
 		]
 	},
+	"media": [
+		{
+		  	"type": "icon",
+		  	"url": "https://i.imgur.com/yJYqVvA.png",
+			"caption": "Pathfinder 2e and Foundry logo + JB2A logo Macros with a gold/yellow tape in the upper left corner saying REQUIRES AUTOMATED ANIMATIONS across it."
+		}
+	],
 	"changelog": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/CHANGELOG.md",
 	"manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
 	"download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.zip"

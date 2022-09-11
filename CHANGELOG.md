@@ -1,3 +1,7 @@
+# Version 1.11.2
+- Added All Animal Instinct Strikes with new AA implementation
+- Improved Firearm effects (thanks @Janonas)
+
 # Version 1.11.1
 - Fixed a typo in module.json making the module impossible to enable
 
@@ -7,6 +11,9 @@
  - Compatible with Foundry V10
  - The default for macros is now playable standalone, only a few are still unusable without AA (mainly conglomerations of a lot of individual effects which will be later split down the line)
  - Made Aura animations compatible with Update Aura Macro from PF2e Workbench... [once the pull request is accepted](https://gitlab.com/symonsch/my-foundryvtt-macros/-/merge_requests/20)
+- Added token scale setting to the module settings, which determines what size the effects should be for small tokens.
+  Disabled when PF2e's "Scale tokens according to size" setting is enabled.
+  Default is 0.8, goes from 0.2 to 3.0 (as usual token config allows).
 
 # Version 1.10.6
 - Fixed an issue regarding debug mode with spells 2: Electric Boogalo.

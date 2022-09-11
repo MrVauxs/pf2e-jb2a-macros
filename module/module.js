@@ -1,4 +1,4 @@
-const versionsWithAutorecUpdates = ["1.9.2", "1.10.0"];
+const versionsWithAutorecUpdates = ["1.9.2", "1.10.0", "1.11.2"];
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "imported", {
