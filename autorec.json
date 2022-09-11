@@ -502,9 +502,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "1",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -2122,9 +2122,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "1",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -4359,9 +4359,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "1",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -4696,9 +4696,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "1",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -6596,9 +6596,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "1",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -8044,9 +8044,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "2",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -8638,9 +8638,9 @@
         }
       },
       "switchType": "custom",
-      "switchAnimation": "bullet",
+      "switchAnimation": "snipe",
       "return": false,
-      "switchVariant": "2",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "levels3d": {
@@ -11564,8 +11564,8 @@
         "enable": false
       },
       "switchMenuType": "weapon",
-      "switchAnimation": "bullet",
-      "switchVariant": "2",
+      "switchAnimation": "snipe",
+      "switchVariant": "01",
       "switchColor": "orange",
       "detect": "auto",
       "menuSection": "175"
@@ -13409,8 +13409,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -13469,8 +13469,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -13931,8 +13931,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "red",
       "repeat": 1,
       "delay": 500,
@@ -15169,8 +15169,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -15472,8 +15472,8 @@
         "enable": false
       },
       "menuType": "weapon",
-      "animation": "bullet",
-      "variant": "2",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "custom": false,
       "repeat": null,
@@ -15481,7 +15481,7 @@
       "audio": {
         "a01": {
           "enable": true,
-          "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Fly-By/arrow-fly-by-*.mp3",
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
           "startTime": null,
           "volume": null,
           "delay": null
@@ -15920,8 +15920,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -16040,8 +16040,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -16100,8 +16100,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 4,
       "delay": 500,
@@ -16285,8 +16285,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -16621,8 +16621,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
@@ -17478,8 +17478,8 @@
         "args": ""
       },
       "type": "weapon",
-      "animation": "bullet",
-      "variant": "1",
+      "animation": "snipe",
+      "variant": "01",
       "color": "orange",
       "repeat": 1,
       "delay": 500,
