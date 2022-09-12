@@ -67,6 +67,7 @@ Hooks.on("ready", () => {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
 		return;
 	}
+	if (game.user.isGM && game.settings.get("pf2e","tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
 	if (isNewerVersion(version, game.settings.get("pf2e-jb2a-macros", "version-previous"))) {
 		game.settings.set("pf2e-jb2a-macros", "version-previous", version);
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
@@ -75,25 +76,9 @@ Hooks.on("ready", () => {
 	} else console.log("PF2e x JB2A Macros v" + version + " loaded.");
 });
 
-Hooks.on("renderSettings", () => {
-	if (game.settings.get("pf2e","tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
-	if (game.user.isGM && !game.settings.get("pf2e-jb2a-macros", "imported")) {
-		Dialog.confirm({
-			title: "Macro Importer",
-			content: "<p>Welcome to the <strong>PF2e x JB2A</strong> module. Would you like to import all required actors to your World?",
-			yes: () => importAll()
-		});
-	}
-});
-
 function debug(msg, args = "") {
     if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
 }
-
-async function importAll() {
-	await game.packs.get("pf2e-jb2a-macros.Actors").importAll();
-	game.settings.set("pf2e-jb2a-macros", "imported", true);
-};
 
 // Thanks @ xdy for this function.
 async function runJB2Apf2eMacro(
