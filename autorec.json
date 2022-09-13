@@ -16860,7 +16860,7 @@
       "menuSection": "range"
     },
     "59": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Shobhad Longrifle",
       "soundOnly": {
@@ -22189,6 +22189,43 @@
         "enable": false
       },
       "menuSection": "static"
+    },
+    "69": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Summon Animal",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Spell",
+        "args": "Animal"
+      },
+      "type": "",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "static"
     }
   },
   "templates": {
@@ -22199,10 +22236,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.burning_hands.02.orange"
       },
       "type": "cone",
       "animation": "burninghands",
@@ -22399,7 +22436,10 @@
         "enable": false
       },
       "macro": {
-        "enable": false
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Haunting Hymn",
+        "args": ""
       },
       "menuType": "cone",
       "animation": "coneofcold",
@@ -22598,6 +22638,327 @@
         }
       },
       "persistType": "attachtemplate",
+      "menuSection": "templates"
+    },
+    "13": {
+      "below": false,
+      "hidden": true,
+      "name": "Chilling Spray",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.cone_of_cold.blue"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "14": {
+      "below": false,
+      "hidden": true,
+      "name": "Color Spray",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "rainbow"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "purple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "15": {
+      "below": false,
+      "hidden": true,
+      "name": "Cry Of Destruction",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Haunting Hymn",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "16": {
+      "below": false,
+      "hidden": true,
+      "name": "Dazzling Flash",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dazzling Flash",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "17": {
+      "below": false,
+      "hidden": true,
+      "name": "Pummeling Rubble",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Pummeling Rubble",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "jb2a.falling_rocks.side.1x1",
+      "menuSection": "templates"
+    },
+    "18": {
+      "below": false,
+      "hidden": true,
+      "name": "Rejuvenating Flames",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.burning_hands.02.green"
+      },
+      "menuType": "cone",
+      "animation": "burninghands",
+      "variant": "02",
+      "color": "green",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "19": {
+      "below": false,
+      "hidden": true,
+      "name": "Shockwave",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dazzling Flash",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "20": {
+      "below": false,
+      "hidden": true,
+      "name": "Spray Of Stars",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.cone_of_cold.purple"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "purple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "21": {
+      "below": false,
+      "hidden": true,
+      "name": "Cone of Cold",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.cone_of_cold.blue"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "22": {
+      "below": false,
+      "hidden": true,
+      "name": "Feral Shades",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Feral Shades",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
       "menuSection": "templates"
     }
   },
@@ -23487,33 +23848,6 @@
     "22": {
       "below": false,
       "hidden": true,
-      "name": "Invisible",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Invisibility",
-        "args": ""
-      },
-      "aeType": "",
-      "type": "source",
-      "menuType": "",
-      "animation": "",
-      "variant": "",
-      "color": "",
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "menuSection": "20"
-    },
-    "23": {
-      "below": false,
-      "hidden": true,
       "name": "Paralyzed",
       "soundOnly": {
         "enable": false
@@ -23549,7 +23883,7 @@
       },
       "menuSection": "21"
     },
-    "24": {
+    "23": {
       "below": false,
       "hidden": true,
       "name": "Persistent Damage Acid",
@@ -23584,7 +23918,7 @@
       },
       "menuSection": "16"
     },
-    "25": {
+    "24": {
       "below": false,
       "hidden": true,
       "name": "Persistent Damage Fire",
@@ -23619,7 +23953,7 @@
       },
       "menuSection": "17"
     },
-    "26": {
+    "25": {
       "below": false,
       "hidden": true,
       "name": "Persistent Damage Poison",
@@ -23654,7 +23988,7 @@
       },
       "menuSection": "18"
     },
-    "27": {
+    "26": {
       "below": false,
       "hidden": true,
       "name": "Stunned",
@@ -23689,7 +24023,7 @@
       },
       "menuSection": "19"
     },
-    "28": {
+    "27": {
       "below": false,
       "hidden": true,
       "name": "Stupefied",
@@ -23724,7 +24058,7 @@
       },
       "menuSection": "25"
     },
-    "29": {
+    "28": {
       "below": false,
       "hidden": true,
       "name": "Aura Bless",
@@ -23750,7 +24084,7 @@
         }
       }
     },
-    "30": {
+    "29": {
       "below": false,
       "hidden": true,
       "name": "Spell Effect Bless",
@@ -23784,7 +24118,7 @@
         "enable": false
       }
     },
-    "31": {
+    "30": {
       "below": false,
       "hidden": true,
       "name": "Aura Bane",
@@ -23810,7 +24144,7 @@
         }
       }
     },
-    "32": {
+    "31": {
       "below": false,
       "hidden": true,
       "name": "Spell Effect Bane",
@@ -23844,7 +24178,7 @@
         "enable": false
       }
     },
-    "33": {
+    "32": {
       "below": false,
       "hidden": true,
       "name": "Effect Marshals Aura",
@@ -23879,7 +24213,7 @@
       },
       "menuSection": "aefx"
     },
-    "34": {
+    "33": {
       "below": false,
       "hidden": true,
       "name": "Effect Mountain Stronghold",
@@ -23915,7 +24249,7 @@
       "customPath": "modules/jb2a_patreon/Library/Generic/Fire/ShieldMoltenEarthBelow01_01_Dark_Orange_400x400.webm",
       "menuSection": "47"
     },
-    "35": {
+    "34": {
       "below": false,
       "hidden": true,
       "name": "Incapacitated",
@@ -23950,7 +24284,7 @@
       "unbindAlpha": true,
       "unbindVisibility": true
     },
-    "36": {
+    "35": {
       "below": false,
       "hidden": true,
       "name": "Prone",
@@ -23985,7 +24319,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "37": {
+    "36": {
       "below": false,
       "hidden": true,
       "name": "Quickened",
@@ -24023,7 +24357,7 @@
       },
       "menuSection": "49"
     },
-    "38": {
+    "37": {
       "below": false,
       "hidden": true,
       "name": "Restrained",
@@ -24058,7 +24392,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "39": {
+    "38": {
       "below": true,
       "hidden": true,
       "name": "Stance Mountain Stance",
@@ -24094,7 +24428,7 @@
       },
       "menuSection": "48"
     },
-    "40": {
+    "39": {
       "below": false,
       "hidden": true,
       "name": "Unconscious",
@@ -24129,7 +24463,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "41": {
+    "40": {
       "below": false,
       "hidden": true,
       "name": "Wounded",
@@ -24165,7 +24499,7 @@
       "unbindVisibility": false,
       "menuSection": "46"
     },
-    "42": {
+    "41": {
       "below": false,
       "hidden": true,
       "name": "Clumsy",
@@ -24191,7 +24525,7 @@
         }
       }
     },
-    "43": {
+    "42": {
       "below": false,
       "hidden": true,
       "name": "Petrified",
@@ -24217,7 +24551,7 @@
         }
       }
     },
-    "44": {
+    "43": {
       "below": false,
       "hidden": true,
       "name": "Effect Protective Ward",
@@ -24253,7 +24587,7 @@
       "endeffect": "outro_fade",
       "addCTA": true
     },
-    "45": {
+    "44": {
       "below": false,
       "hidden": true,
       "name": "Aura Protective Ward",
@@ -24292,7 +24626,7 @@
       "endeffect": "outro_fade",
       "addCTA": true
     },
-    "46": {
+    "45": {
       "below": false,
       "hidden": true,
       "name": "Stance Arcane Cascade",
@@ -24318,7 +24652,7 @@
         }
       }
     },
-    "47": {
+    "46": {
       "below": false,
       "hidden": true,
       "name": "Effect Incendiary Aura",
@@ -24356,7 +24690,7 @@
         "enable": false
       }
     },
-    "48": {
+    "47": {
       "below": false,
       "hidden": true,
       "name": "Effect Lay on Hands",
@@ -24402,7 +24736,7 @@
       },
       "customPath": "jb2a.dodecahedron.star.below.blueyellow"
     },
-    "49": {
+    "48": {
       "below": false,
       "hidden": true,
       "name": "Effect Lay on Hands Vs. Undead",
@@ -24447,7 +24781,7 @@
         "below": false
       }
     },
-    "50": {
+    "49": {
       "below": false,
       "hidden": true,
       "name": "Inspire Defense",
@@ -24473,7 +24807,7 @@
         }
       }
     },
-    "51": {
+    "50": {
       "below": false,
       "hidden": true,
       "name": "Inspire Courage",
@@ -24499,7 +24833,7 @@
         }
       }
     },
-    "52": {
+    "51": {
       "below": false,
       "hidden": true,
       "name": "Effect Unleash Psyche",
@@ -24525,7 +24859,7 @@
         }
       }
     },
-    "53": {
+    "52": {
       "below": false,
       "hidden": true,
       "name": "Effect True Strike",
@@ -24570,7 +24904,7 @@
         "below": false
       }
     },
-    "54": {
+    "53": {
       "below": false,
       "hidden": true,
       "name": "Effect Illusory Disguise",

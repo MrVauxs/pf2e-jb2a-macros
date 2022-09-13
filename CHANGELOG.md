@@ -1,6 +1,19 @@
 # Version 1.11.2
-- Added All Animal Instinct Strikes with new AA implementation
+- Adjusted Animal Instinct macro to work with AA implementation
 - Improved Firearm effects (thanks @Janonas)
+- Added / Changed the following effects:
+ - Summon Animal
+ - Burning Hands (made it an actually 45 degree cone)
+ - Chilling Spray
+ - Color Spray
+ - Dazzling Flash
+ - Pummeling Rubble
+ - Rejevunating Flames
+ - Shockwave
+ - Spray of Stars
+ - Cone of Cold
+ - Feral Shades
+- Removed Invisibility effect
 
 # Version 1.11.1
 - Fixed a typo in module.json making the module impossible to enable

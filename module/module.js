@@ -1,14 +1,6 @@
 const versionsWithAutorecUpdates = ["1.9.2", "1.10.0", "1.11.2"];
 
 Hooks.on("init", () => {
-	game.settings.register("pf2e-jb2a-macros", "imported", {
-		scope: "world",
-		config: true,
-		name: "Imported Contents",
-		hint: "Whether or not you have imported the contents of the module using the pop-up when you enabled the module.\nDisable to have them imported again automatically.",
-		type: Boolean,
-		default: false
-	});
 	game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
 		scope: "world",
 		config: true,
@@ -35,7 +27,7 @@ Hooks.on("init", () => {
 	});
 	game.settings.register("pf2e-jb2a-macros", "smallTokenScale", {
 		scope: "world",
-		config: !game.settings.get("pf2e","tokens.autoscale"),
+		config: !game.settings.get("pf2e", "tokens.autoscale"),
 		name: `Default Scale for Small Tokens`,
 		hint: "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8.",
 		type: Number,
@@ -59,15 +51,26 @@ Hooks.on("init", () => {
 		type: String,
 		default: "0"
 	});
+	game.settings.register("pf2e-jb2a-macros", "dummyPCId", {
+		scope: "world",
+		type: String,
+		default: ""
+	});
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId", {
+		scope: "world",
+		type: String,
+		default: ""
+	});
 });
 
 Hooks.on("ready", () => {
-	const version = game.modules.get("pf2e-jb2a-macros").data.version;
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
 		return;
 	}
-	if (game.user.isGM && game.settings.get("pf2e","tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
+	if (!game.user.isGM) return;
+	const version = game.modules.get("pf2e-jb2a-macros").data.version;
+	if (game.settings.get("pf2e", "tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
 	if (isNewerVersion(version, game.settings.get("pf2e-jb2a-macros", "version-previous"))) {
 		game.settings.set("pf2e-jb2a-macros", "version-previous", version);
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
@@ -77,54 +80,102 @@ Hooks.on("ready", () => {
 });
 
 function debug(msg, args = "") {
-    if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
+	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
 }
 
 // Thanks @ xdy for this function.
 async function runJB2Apf2eMacro(
-    macroName,
+	macroName,
 	args,
-    compendiumName = "pf2e-jb2a-macros.Macros"
+	compendiumName = "pf2e-jb2a-macros.Macros"
 ) {
 	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros")
-    const pack = game.packs.get(compendiumName);
-    if (pack) {
-        const macro_data = useLocal ? game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.data.name === macroName)?.toObject();
+	const pack = game.packs.get(compendiumName);
+	if (pack) {
+		const macro_data = useLocal ? game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.data.name === macroName)?.toObject();
 
-        if (macro_data) {
-            const temp_macro = new Macro(macro_data);
-            temp_macro.data.permission.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
-            temp_macro.execute(args);
-        } else {
-            ui.notifications.error("Macro " + macroName + " not found");
-        }
-    } else {
-        ui.notifications.error("Compendium " + compendiumName + " not found");
-    }
+		if (macro_data) {
+			const temp_macro = new Macro(macro_data);
+			temp_macro.data.permission.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
+			temp_macro.execute(args);
+		} else {
+			ui.notifications.error("Macro " + macroName + " not found");
+		}
+	} else {
+		ui.notifications.error("Compendium " + compendiumName + " not found");
+	}
 };
 
 // As above @ xdy.
 function degreeOfSuccessWithRerollHandling(message) {
-    const flags = message.data.flags.pf2e;
-    let degreeOfSuccess = flags.context?.outcome ?? "";
-    if (flags?.context?.isReroll) {
-        const match = message.data.flavor?.match('Result: <span .*? class="(.*?)"');
-        if (match && match[1]) {
-            degreeOfSuccess = match[1];
-        }
-    }
-    return degreeOfSuccess;
+	const flags = message.data.flags.pf2e;
+	let degreeOfSuccess = flags.context?.outcome ?? "";
+	if (flags?.context?.isReroll) {
+		const match = message.data.flavor?.match('Result: <span .*? class="(.*?)"');
+		if (match && match[1]) {
+			degreeOfSuccess = match[1];
+		}
+	}
+	return degreeOfSuccess;
 }
 
 async function vauxsMacroHelpers(args = []) {
 	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
-	if (!tokenD) {ui.notifications.error("No source token found."); return;}
+	if (!tokenD) { ui.notifications.error("No source token found."); return; }
 	const tokenScale = tokenD.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
-    return [tokenD, tokenScale];
+	return [tokenD, tokenScale];
+}
+
+async function createIfMissingDummy() {
+	let message = "PF2e x JB2A Macros | Missing dummy actors for summoning macros. ";
+	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
+	pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
+	if (!npcActor) {
+		message += "Creating dummy NPC... ";
+		npcActor = await Actor.create({
+			name: "Dummy NPC",
+			type: "npc",
+			img: "icons/svg/cowled.svg"
+		})
+		await game.settings.set("pf2e-jb2a-macros", "dummyNPCId", npcActor.id);
+	}
+	if (!pcActor) {
+		message += "Creating dummy PC... ";
+		pcActor = await Actor.create({
+			name: "Dummy PC",
+			type: "character",
+			img: "icons/svg/aura.svg"
+		})
+		await game.settings.set("pf2e-jb2a-macros", "dummyPCId", pcActor.id);
+	}
+	if (message.includes("PC")) ui.notifications.info(message);
+}
+
+async function askGMforSummon(args = { actorName: "", updates: {}, callbacks: {}, options: {} }) {
+	if (!warpgate.util.isFirstGM()) return;
+	createIfMissingDummy();
+	new Dialog({
+		title: "Player Summon Request",
+		content: "A player has requested to summon a [insert creature].",
+		buttons: {
+			button1: {
+				label: "Accept",
+				callback: async () => {
+					ui.notifications.info("Accepted!");
+					await warpgate.spawn(args.actorName, args.updates = {}, args.callbacks = {}, args.options = {})
+				},
+				icon: `<i class="fas fa-check"></i>`
+			},
+			button2: {
+				label: "Decline",
+				callback: () => { ui.notifications.info("Declined!") },
+				icon: `<i class="fas fa-times"></i>`
+			}
+		}
+	}).render(true);
 }
 
 Hooks.on("createChatMessage", async (data) => {
-	console.log(data)
 	if (game.user.id !== data.user.id) return;
 	let targets = data?.data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
 	targets = [targets].flat()
@@ -134,7 +185,7 @@ Hooks.on("createChatMessage", async (data) => {
 
 	// Persistent Damage Matches
 	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor)) {
-		if (game.modules.get("pf2e-persistent-damage")?.active)	{
+		if (game.modules.get("pf2e-persistent-damage")?.active) {
 			debug("Persistent Damage / Healing", data);
 			return runJB2Apf2eMacro('Persistent Conditions', args)
 		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
@@ -155,7 +206,7 @@ Hooks.on("createChatMessage", async (data) => {
 	// Attack Matches
 	if (data.data.flags.pf2e?.context?.type === "attack-roll") {
 		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
-        const degreeOfSuccess = degreeOfSuccessWithRerollHandling(data);
+		const degreeOfSuccess = degreeOfSuccessWithRerollHandling(data);
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
 		if (!pack) ui.notifications.error("PF2e x JB2A Macros | Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?");
 
@@ -168,33 +219,33 @@ Hooks.on("createChatMessage", async (data) => {
 		items = items.flat()
 		let item = ""
 		switch (degreeOfSuccess) {
-            case "criticalSuccess":
+			case "criticalSuccess":
 				item = items.find(i => i.data.name.includes("(Critical Success)"))
-				debug("\"On Hit/Miss\" Critical Success animation", {token, targets, item})
-				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
-            case "criticalFailure":
+				debug("\"On Hit/Miss\" Critical Success animation", { token, targets, item })
+				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: targets }); break;
+			case "criticalFailure":
 				item = items.find(i => i.data.name.includes("(Critical Failure)"))
-				debug("\"On Hit/Miss\" Critical Failure animation", {token, targets, item})
-				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
-            case "failure":
+				debug("\"On Hit/Miss\" Critical Failure animation", { token, targets, item })
+				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : [] }); break;
+			case "failure":
 				item = items.find(i => i.data.name.includes("(Failure)"))
-				debug("\"On Hit/Miss\" Failure animation", {token, targets, item})
-				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : []}); break;
-            case "success":
+				debug("\"On Hit/Miss\" Failure animation", { token, targets, item })
+				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : [] }); break;
+			case "success":
 				item = items.find(i => i.data.name.includes("(Success)"))
-				debug("\"On Hit/Miss\" Success animation", {token, targets, item})
-				AutoAnimations.playAnimation(token, targets, item, {playOnMiss: true, hitTargets: targets}); break;
-        }
+				debug("\"On Hit/Miss\" Success animation", { token, targets, item })
+				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: targets }); break;
+		}
 	}
 });
 
 Hooks.on("preUpdateItem", (data, changes) => {
-	return runJB2Apf2eMacro('Equipment Changes', {data, changes})
+	return runJB2Apf2eMacro('Equipment Changes', { data, changes })
 });
 
 Hooks.on("preCreateChatMessage", (data) => {
 	if (data.flags.pf2e.casting) {
 		data.data.update({ "flags.pf2eJB2AMacros.spellLevel": data?.data?.content.match(/data-spell-lvl="(\d+)"/)[1] ?? null })
-		debug("Added spell level flags to Chat Message", {data: data, update: data.data.flags.pf2eJB2AMacros});
+		debug("Added spell level flags to Chat Message", { data: data, update: data.data.flags.pf2eJB2AMacros });
 	};
 });
