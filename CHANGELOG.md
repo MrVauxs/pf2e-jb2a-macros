@@ -2,16 +2,16 @@
 - Adjusted Animal Instinct macro to work with AA implementation
 - Improved Firearm effects (thanks @Janonas)
 - Added / Changed the following effects:
- - Burning Hands (made it an actually 45 degree cone)
- - Chilling Spray
- - Color Spray
- - Dazzling Flash
- - Pummeling Rubble
- - Rejevunating Flames
- - Shockwave
- - Spray of Stars
- - Cone of Cold
- - Feral Shades
+  - Burning Hands (made it an actually 45 degree cone)
+  - Chilling Spray
+  - Color Spray
+  - Dazzling Flash
+  - Pummeling Rubble
+  - Rejevunating Flames
+  - Shockwave
+  - Spray of Stars
+  - Cone of Cold
+  - Feral Shades
 - Removed Invisibility effect
 - Moved certain setting changes from `renderSettings` hook to `ready` hook
 - Removed the Import pop-up in favour of an incoming Summoning Macros system
@@ -21,10 +21,10 @@
 
 # Version 1.11.0
 - Updated all macros with the following:
- - Compatible with Sequencer 2.2.0 and beyond
- - Compatible with Foundry V10
- - The default for macros is now playable standalone, only a few are still unusable without AA (mainly conglomerations of a lot of individual effects which will be later split down the line)
- - Made Aura animations compatible with Update Aura Macro from PF2e Workbench... [once the pull request is accepted](https://gitlab.com/symonsch/my-foundryvtt-macros/-/merge_requests/20)
+  - Compatible with Sequencer 2.2.0 and beyond
+  - Compatible with Foundry V10
+  - The default for macros is now playable standalone, only a few are still unusable without AA (mainly conglomerations of a lot of individual effects which will be later split down the line)
+  - Made Aura animations compatible with Update Aura Macro from PF2e Workbench... [once the pull request is accepted](https://gitlab.com/symonsch/my-foundryvtt-macros/-/merge_requests/20)
 - Added token scale setting to the module settings, which determines what size the effects should be for small tokens.
   Disabled when PF2e's "Scale tokens according to size" setting is enabled.
   Default is 0.8, goes from 0.2 to 3.0 (as usual token config allows).

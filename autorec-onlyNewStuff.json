@@ -1,0 +1,473 @@
+{
+  "version": 4,
+  "search": "",
+  "melee": {},
+  "range": {
+    "0": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Firearm",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "snipe",
+      "variant": "01",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "below": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      }
+    },
+    "1": {
+      "hidden": true,
+      "name": "Shobhad Longrifle"
+    }
+  },
+  "static": {
+    "0": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Attack Animation Template (Success)",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "target",
+      "menuType": "generic",
+      "animation": "impact",
+      "variant": "01",
+      "color": "yellow",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-1.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "static"
+    }
+  },
+  "templates": {
+    "0": {
+      "hidden": true,
+      "name": "Burning Hands",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.burning_hands.02.orange"
+      },
+      "type": "cone",
+      "animation": "burninghands",
+      "variant": "02",
+      "color": "orange",
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "below": false,
+      "custom": false,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuType": "cone",
+      "menuSection": "templates",
+      "persistType": ""
+    },
+    "1": {
+      "below": false,
+      "hidden": true,
+      "name": "Chilling Spray",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.cone_of_cold.blue"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "2": {
+      "below": false,
+      "hidden": true,
+      "name": "Color Spray",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "rainbow"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "purple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "3": {
+      "below": false,
+      "hidden": true,
+      "name": "Cry Of Destruction",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Haunting Hymn",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "4": {
+      "below": false,
+      "hidden": true,
+      "name": "Dazzling Flash",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dazzling Flash",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "5": {
+      "below": false,
+      "hidden": true,
+      "name": "Pummeling Rubble",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Pummeling Rubble",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "jb2a.falling_rocks.side.1x1",
+      "menuSection": "templates"
+    },
+    "6": {
+      "below": false,
+      "hidden": true,
+      "name": "Rejuvenating Flames",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.burning_hands.02.green"
+      },
+      "menuType": "cone",
+      "animation": "burninghands",
+      "variant": "02",
+      "color": "green",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "7": {
+      "below": false,
+      "hidden": true,
+      "name": "Shockwave",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dazzling Flash",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "8": {
+      "below": false,
+      "hidden": true,
+      "name": "Spray Of Stars",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.cone_of_cold.purple"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "purple",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "9": {
+      "below": false,
+      "hidden": true,
+      "name": "Cone of Cold",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+        "args": "jb2a.cone_of_cold.blue"
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    },
+    "10": {
+      "below": false,
+      "hidden": true,
+      "name": "Feral Shades",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Feral Shades",
+        "args": ""
+      },
+      "menuType": "cone",
+      "animation": "coneofcold",
+      "variant": "01",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates"
+    }
+  },
+  "auras": {},
+  "preset": {},
+  "aefx": {}
+}
