@@ -22189,43 +22189,6 @@
         "enable": false
       },
       "menuSection": "static"
-    },
-    "69": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
-      "name": "Summon Animal",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Spell",
-        "args": "Animal"
-      },
-      "type": "",
-      "menuType": "",
-      "animation": "",
-      "variant": "",
-      "color": "",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": null,
-      "opacity": null,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "persistent": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "static"
     }
   },
   "templates": {

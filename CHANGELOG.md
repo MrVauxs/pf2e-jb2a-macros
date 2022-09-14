@@ -2,7 +2,6 @@
 - Adjusted Animal Instinct macro to work with AA implementation
 - Improved Firearm effects (thanks @Janonas)
 - Added / Changed the following effects:
- - Summon Animal
  - Burning Hands (made it an actually 45 degree cone)
  - Chilling Spray
  - Color Spray
@@ -14,6 +13,8 @@
  - Cone of Cold
  - Feral Shades
 - Removed Invisibility effect
+- Moved certain setting changes from `renderSettings` hook to `ready` hook
+- Removed the Import pop-up in favour of an incoming Summoning Macros system
 
 # Version 1.11.1
 - Fixed a typo in module.json making the module impossible to enable

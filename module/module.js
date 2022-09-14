@@ -64,11 +64,18 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("ready", () => {
+	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
 		return;
 	}
+	// Create an event for summoning macros.
+	warpgate.event.watch("askGMforSummon", askGMforSummon, () => warpgate.util.isFirstGM())
+
+	// GM-Only stuff.
 	if (!game.user.isGM) return;
+
+	// Update version number. Check if it has new autorecs. Notify if has relevant info to the user.
 	const version = game.modules.get("pf2e-jb2a-macros").data.version;
 	if (game.settings.get("pf2e", "tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
 	if (isNewerVersion(version, game.settings.get("pf2e-jb2a-macros", "version-previous"))) {
@@ -79,7 +86,7 @@ Hooks.on("ready", () => {
 	} else console.log("PF2e x JB2A Macros v" + version + " loaded.");
 });
 
-function debug(msg, args = "") {
+function debug(msg = "", args = "") {
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
 }
 
@@ -119,6 +126,7 @@ function degreeOfSuccessWithRerollHandling(message) {
 	return degreeOfSuccess;
 }
 
+// Get token data and token scale.
 async function vauxsMacroHelpers(args = []) {
 	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 	if (!tokenD) { ui.notifications.error("No source token found."); return; }
@@ -126,6 +134,8 @@ async function vauxsMacroHelpers(args = []) {
 	return [tokenD, tokenScale];
 }
 
+// Creates dummy NPC and PC actors for summoning purposes.
+// Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 async function createIfMissingDummy() {
 	let message = "PF2e x JB2A Macros | Missing dummy actors for summoning macros. ";
 	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
@@ -151,18 +161,18 @@ async function createIfMissingDummy() {
 	if (message.includes("PC")) ui.notifications.info(message);
 }
 
-async function askGMforSummon(args = { actorName: "", updates: {}, callbacks: {}, options: {} }) {
+async function askGMforSummon(args = { location: {}, actorName: "Dummy NPC", updates: {}, callbacks: {}, options: {} }) {
 	if (!warpgate.util.isFirstGM()) return;
 	createIfMissingDummy();
+	debug("Summoning Request", args)
 	new Dialog({
 		title: "Player Summon Request",
-		content: "A player has requested to summon a [insert creature].",
+		content: `A player has requested to summon a ${args?.updates?.token?.name}`,
 		buttons: {
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					ui.notifications.info("Accepted!");
-					await warpgate.spawn(args.actorName, args.updates = {}, args.callbacks = {}, args.options = {})
+					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options)
 				},
 				icon: `<i class="fas fa-check"></i>`
 			},
