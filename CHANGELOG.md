@@ -1,3 +1,6 @@
+# Version 1.11.4
+- Fixed Dancing Lights Macro
+
 # Version 1.11.3
 - Fixed Lightning Ray not working without a token selected
 - Fixed Cone effects always playing rainbows
