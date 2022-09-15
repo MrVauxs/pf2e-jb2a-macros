@@ -1,3 +1,7 @@
+# Version 1.11.3
+- Fixed Lightning Ray not working without a token selected
+- Fixed Cone effects always playing rainbows
+
 # Version 1.11.2
 - Adjusted Animal Instinct macro to work with AA implementation
 - Improved Firearm effects (thanks @Janonas)
