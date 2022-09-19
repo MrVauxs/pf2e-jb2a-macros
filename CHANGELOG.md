@@ -1,3 +1,6 @@
+# Version 1.12.0
+- Added `.tieToDocuments()` to Active Effect animations
+
 # Version 1.11.4
 - Fixed Dancing Lights Macro
 

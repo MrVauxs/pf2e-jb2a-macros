@@ -70,7 +70,7 @@ Hooks.on("ready", () => {
 		return;
 	}
 	// Create an event for summoning macros.
-	warpgate.event.watch("askGMforSummon", askGMforSummon, () => warpgate.util.isFirstGM())
+	warpgate.event.watch("askGMforSummon", (eventData) => {debug("Warpgate Summoning Event", eventData); askGMforSummon(eventData)})
 
 	// GM-Only stuff.
 	if (!game.user.isGM) return;
@@ -161,8 +161,10 @@ async function createIfMissingDummy() {
 	if (message.includes("PC")) ui.notifications.info(message);
 }
 
-async function askGMforSummon(args = { location: {}, actorName: "Dummy NPC", updates: {}, callbacks: {}, options: {} }) {
+async function askGMforSummon(args) {
 	if (!warpgate.util.isFirstGM()) return;
+
+	// Checks if Dummy NPC/PC actors exist. If not, creates them.
 	createIfMissingDummy();
 	debug("Summoning Request", args)
 	new Dialog({
@@ -172,7 +174,11 @@ async function askGMforSummon(args = { location: {}, actorName: "Dummy NPC", upd
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options)
+					if (args.options) {
+						args.updates.token.actorData = {ownership: args.options.controllingActor.ownership};
+					};
+					await debug("Summoning...", args)
+					await warpgate.spawnAt(args.location, args.actorName, args?.updates, args?.callbacks, args?.options)
 				},
 				icon: `<i class="fas fa-check"></i>`
 			},
