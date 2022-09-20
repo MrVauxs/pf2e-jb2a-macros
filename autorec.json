@@ -22130,7 +22130,7 @@
       "macro": {
         "enable": true,
         "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Animal Instinct",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Unarmed Strikes",
         "args": ""
       },
       "type": "target",
@@ -23314,7 +23314,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "6"
+      "menuSection": "aefx"
     },
     "8": {
       "below": false,
@@ -23390,7 +23390,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "8"
+      "menuSection": "aefx"
     },
     "10": {
       "below": false,
@@ -23428,7 +23428,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "9"
+      "menuSection": "aefx"
     },
     "11": {
       "below": false,
@@ -23490,7 +23490,7 @@
           "enable": false
         }
       },
-      "menuSection": "11"
+      "menuSection": "aefx"
     },
     "13": {
       "below": false,
@@ -24820,7 +24820,8 @@
         "a01": {
           "enable": false
         }
-      }
+      },
+      "menuSection": "aefx"
     },
     "52": {
       "below": false,

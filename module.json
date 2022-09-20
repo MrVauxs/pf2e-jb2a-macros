@@ -95,10 +95,7 @@
 			},
 			{
 				"id": "advanced-macros",
-				"type": "module",
-				"compatibility": {
-					"minimum": "v1.15"
-				}
+				"type": "module"
 			}
 		]
 	},

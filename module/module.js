@@ -39,7 +39,7 @@ Hooks.on("init", () => {
 		}
 	});
 	game.settings.register("pf2e-jb2a-macros", "debug", {
-		scope: "world",
+		scope: "client",
 		config: true,
 		name: `Debug Mode`,
 		hint: "Enables console logs of what PF2e x JB2A Macros module is doing.",
@@ -70,7 +70,7 @@ Hooks.on("ready", () => {
 		return;
 	}
 	// Create an event for summoning macros.
-	warpgate.event.watch("askGMforSummon", (eventData) => {debug("Warpgate Summoning Event", eventData); askGMforSummon(eventData)})
+	warpgate.event.watch("askGMforSummon", (eventData) => {askGMforSummon(eventData)})
 
 	// GM-Only stuff.
 	if (!game.user.isGM) return;
@@ -161,32 +161,77 @@ async function createIfMissingDummy() {
 	if (message.includes("PC")) ui.notifications.info(message);
 }
 
+/**
+ *
+ * @param {Object} args Args passed down in the macro.
+ * @param {Object} importedActor Actor to spawn.
+ */
+async function playerSummons({args, importedActor, spawnArgs}) {
+	const [tokenD, tokenScale] = await vauxsMacroHelpers(args)
+
+	// let spawnArgs = { location: {}, actorName: "", updates: {}, callbacks: {}, options: {} }
+
+	spawnArgs.options = {... spawnArgs.options, ...{controllingActor: tokenD.actor} }
+
+	let importedToken = importedActor.prototypeToken
+
+	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
+
+	if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
+
+	let crossHairConfig = {
+		label: importedToken.name,
+		interval: -1,
+		lockSize: true,
+		drawIcon: true,
+		icon: importedToken.texture.src
+	}
+
+	const crosshairs = await warpgate.crosshairs.show(crossHairConfig)
+
+	if (crosshairs.cancelled) return;
+
+	spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [crosshairs]))[0]
+
+	debug("Requesting to GM", spawnArgs)
+	await warpgate.event.notify("askGMforSummon", spawnArgs)
+}
+
 async function askGMforSummon(args) {
 	if (!warpgate.util.isFirstGM()) return;
 
 	// Checks if Dummy NPC/PC actors exist. If not, creates them.
 	createIfMissingDummy();
 	debug("Summoning Request", args)
+	let template = await canvas.templates.get(args.location.id) ?? await canvas.templates.get(args.location._id);
 	new Dialog({
 		title: "Player Summon Request",
-		content: `A player has requested to summon a ${args?.updates?.token?.name}`,
+		content: `
+		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `A player`} has requested to summon <b>${args.updates.token.name}</b>.</p>
+		<p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p>
+		<p>Closing this window will delete the template and nothing will be spawned.</p>
+		`,
 		buttons: {
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					if (args.options) {
-						args.updates.token.actorData = {ownership: args.options.controllingActor.ownership};
-					};
-					await debug("Summoning...", args)
-					await warpgate.spawnAt(args.location, args.actorName, args?.updates, args?.callbacks, args?.options)
+					if (args.options) args.updates.token.actorData = {ownership: args.options.controllingActor.ownership};
+					args.location = template;
+					debug("Summoning...", args)
+					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
 				},
 				icon: `<i class="fas fa-check"></i>`
 			},
 			button2: {
 				label: "Decline",
-				callback: () => { ui.notifications.info("Declined!") },
+				callback: async () => {
+					ui.notifications.info("Declined!");
+				},
 				icon: `<i class="fas fa-times"></i>`
 			}
+		},
+		close: async () => {
+			template.document.delete();
 		}
 	}).render(true);
 }
