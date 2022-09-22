@@ -70,7 +70,7 @@ Hooks.on("ready", () => {
 		return;
 	}
 	// Create an event for summoning macros.
-	warpgate.event.watch("askGMforSummon", (eventData) => {askGMforSummon(eventData)})
+	warpgate.event.watch("askGMforSummon", (eventData) => { askGMforSummon(eventData) })
 
 	// GM-Only stuff.
 	if (!game.user.isGM) return;
@@ -88,6 +88,22 @@ Hooks.on("ready", () => {
 
 function debug(msg = "", args = "") {
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
+}
+
+// https://stackoverflow.com/a/13627586/12227966
+function ordinalSuffixOf(i) {
+	var j = i % 10,
+		k = i % 100;
+	if (j == 1 && k != 11) {
+		return i + "st";
+	}
+	if (j == 2 && k != 12) {
+		return i + "nd";
+	}
+	if (j == 3 && k != 13) {
+		return i + "rd";
+	}
+	return i + "th";
 }
 
 // Thanks @ xdy for this function.
@@ -137,27 +153,49 @@ async function vauxsMacroHelpers(args = []) {
 // Creates dummy NPC and PC actors for summoning purposes.
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 async function createIfMissingDummy() {
-	let message = "PF2e x JB2A Macros | Missing dummy actors for summoning macros. ";
+	let message = "PF2e x JB2A Macros | Missing dummy actors for summoning macros.";
 	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
-	pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
+	// pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
 	if (!npcActor) {
-		message += "Creating dummy NPC... ";
+		message += " Creating dummy NPC... ";
 		npcActor = await Actor.create({
 			name: "Dummy NPC",
 			type: "npc",
-			img: "icons/svg/cowled.svg"
+			img: "icons/svg/cowled.svg",
+			data: {
+				attributes: {
+					hp: {
+						max: 999,
+						value: 999,
+						base: 999,
+						slug: "hp"
+					}
+				}
+			}
 		})
 		await game.settings.set("pf2e-jb2a-macros", "dummyNPCId", npcActor.id);
 	}
+	/*
 	if (!pcActor) {
-		message += "Creating dummy PC... ";
+		message += " Creating dummy PC... ";
 		pcActor = await Actor.create({
 			name: "Dummy PC",
 			type: "character",
-			img: "icons/svg/aura.svg"
+			img: "icons/svg/aura.svg",
+			data: {
+				attributes: {
+					hp: {
+						max: 999,
+						value: 999,
+						base: 999,
+						slug: "hp"
+					}
+				}
+			}
 		})
 		await game.settings.set("pf2e-jb2a-macros", "dummyPCId", pcActor.id);
 	}
+	*/
 	if (message.includes("PC")) ui.notifications.info(message);
 }
 
@@ -166,24 +204,88 @@ async function createIfMissingDummy() {
  * @param {Object} args Args passed down in the macro.
  * @param {Object} importedActor Actor to spawn.
  */
-async function playerSummons({args, importedActor, spawnArgs}) {
+async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) {
 	const [tokenD, tokenScale] = await vauxsMacroHelpers(args)
 
-	// let spawnArgs = { location: {}, actorName: "", updates: {}, callbacks: {}, options: {} }
+	// If no actor is passed, prompt a player to select one.
+	if (!Object.keys(importedActor).length) {
+		let packs = await game.pf2e.compendiumBrowser.tabs.bestiary.indexData;
 
-	spawnArgs.options = {... spawnArgs.options, ...{controllingActor: tokenD.actor} }
+		if (!packs.length) {
+			await game.pf2e.compendiumBrowser.tabs.bestiary.loadData();
+			packs = await game.pf2e.compendiumBrowser.tabs.bestiary.indexData;
+		}
+
+		debug("Summon Creature Options", packs)
+
+		let sortedHow = {
+			type: "info",
+			label: "Sorted with...?"
+		}
+
+		if (args[2]?.length && args[2][0] === "summon-spell") {
+			const trait = args[2][1].replace('trait-', '')
+			let multiplier = -1;
+			if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
+			if (args[0].flags.pf2e.casting.level >= 3) multiplier = 2;
+			if (args[0].flags.pf2e.casting.level >= 4) multiplier = 3;
+			if (args[0].flags.pf2e.casting.level >= 5) multiplier = 5;
+			if (args[0].flags.pf2e.casting.level >= 6) multiplier = 7;
+			if (args[0].flags.pf2e.casting.level >= 7) multiplier = 9;
+			if (args[0].flags.pf2e.casting.level >= 8) multiplier = 11;
+			if (args[0].flags.pf2e.casting.level >= 9) multiplier = 13;
+			if (args[0].flags.pf2e.casting.level >= 10) multiplier = 15;
+			packs = packs.filter(x => x.traits.includes(trait) && x.level <= multiplier)
+			packs = packs.sort((a, b) => {
+				return a.level < b.level ? 1 : -1;
+			});
+			sortedHow.label = `Sorted by level <b>(max. level ${multiplier} from ${ordinalSuffixOf(args[0].flags.pf2e.casting.level)} level spell)</b>. Filtered by the <b>${trait}</b> trait.`;
+		} else {
+			packs = packs.sort((a, b) => a.name.localeCompare(b.name));
+			sortedHow.label = "Sorted alphabetically.";
+		}
+
+		const options = await warpgate.menu(
+			{
+				inputs: [
+					sortedHow,
+					{
+						type: "select",
+						label: "Creature",
+						options: packs.map(x => x.name)
+					},
+					{
+						type: "number",
+						label: "Amount",
+						options: 1
+					}
+				]
+			},
+			{
+				title: "Summon Anything"
+			}
+		)
+
+		const actor = await packs.filter(x => x.name === options.inputs[1])[0];
+		importedActor = await fromUuid(actor.uuid) // ?? await game.packs.get(actor.compendium ?? actor.uuid.split(".")[1] + "." + actor.uuid.split(".")[2]).getDocument(actor._id ?? actor.id ?? actor.uuid.split(".")[3]);
+		spawnArgs = { options: { duplicates: options.inputs[2] } }
+	}
+
+	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
 	let importedToken = importedActor.prototypeToken
 
 	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
 
-	if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
+	//if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
+	spawnArgs.actorName = "Dummy NPC"
 
 	let crossHairConfig = {
 		label: importedToken.name,
-		interval: -1,
+		interval: importedToken.height < 1 ? 4 : importedToken.height % 2 === 0 ? 1 : -1,
 		lockSize: true,
 		drawIcon: true,
+		size: importedToken.height,
 		icon: importedToken.texture.src
 	}
 
@@ -207,7 +309,7 @@ async function askGMforSummon(args) {
 	new Dialog({
 		title: "Player Summon Request",
 		content: `
-		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `A player`} has requested to summon <b>${args.updates.token.name}</b>.</p>
+		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `An unknown user`} has requested to summon <b>${args.options.duplicates ?? "1"} ${args.updates.token.name}</b>.</p>
 		<p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p>
 		<p>Closing this window will delete the template and nothing will be spawned.</p>
 		`,
@@ -215,10 +317,11 @@ async function askGMforSummon(args) {
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					if (args.options) args.updates.token.actorData = {ownership: args.options.controllingActor.ownership};
+					if (args.options) args.updates.token.actorData = { ownership: args.options.controllingActor.ownership };
 					args.location = template;
 					debug("Summoning...", args)
 					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
+					await template.document.delete();
 				},
 				icon: `<i class="fas fa-check"></i>`
 			},
@@ -226,13 +329,11 @@ async function askGMforSummon(args) {
 				label: "Decline",
 				callback: async () => {
 					ui.notifications.info("Declined!");
+					await template.document.delete();
 				},
 				icon: `<i class="fas fa-times"></i>`
 			}
 		},
-		close: async () => {
-			template.document.delete();
-		}
 	}).render(true);
 }
 
