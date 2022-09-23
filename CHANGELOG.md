@@ -1,5 +1,11 @@
 # Version 1.12.0
 - Added `.tieToDocuments()` to Active Effect animations
+- Added the following effects:
+ - **Summon** Animal / Construct / Fey / Plant or Fungus / Elemental / Anarch / Axiom / Celestial / Dragon / Entity / Fiend / Giant
+ - Revamped Dancing Lights to use the above Summon effect
+ - Crane / Dragon / Gorilla / Mountain / Rain of Embers/ Reflective Ripple / Stoked Flame / Stumbling / Tiger / Wolf / Cobra / Ironblood / Tangled Forest **Stance**
+ - Sterling Dynamo
+- Removed Mountain Stance effect to make Falling Stone attacks work
 
 # Version 1.11.4
 - Fixed Dancing Lights Macro

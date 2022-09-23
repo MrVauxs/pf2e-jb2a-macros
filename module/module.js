@@ -261,7 +261,6 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 				&& (traitsOr ? traitsOr.some(traitOr => x.traits.includes(traitOr)) : true)
 				// traits AND filter
 				&& (traitsAnd ? traitsAnd.some(traitAnd => x.traits.includes(traitAnd)) : true)
-
 			)
 			packs = packs.sort((a, b) => {
 				return a.level < b.level ? 1 : -1;
@@ -340,7 +339,7 @@ async function askGMforSummon(args) {
 		content: `
 		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `An unknown user`} has requested to summon <b>${args.options.duplicates ?? "1"} ${args.updates.token.name}</b>.</p>
 		<p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p>
-		<p>Closing this window will delete the template and nothing will be spawned.</p>
+		<p>Declining the request or Closing this window will delete the template and nothing will be spawned.</p>
 		`,
 		buttons: {
 			button1: {
