@@ -199,22 +199,39 @@ async function createIfMissingDummy() {
 	if (message.includes("PC")) ui.notifications.info(message);
 }
 
+function alignmentStringToTraits (alignment) {
+	// returns an array of traits for the alignment string
+	// e.g. "LG" -> ["Lawful", "Good"]
+	let traits = [];
+	if (alignment.includes("L")) traits.push("lawful");
+	if (alignment.includes("N")) traits.push("neutral");
+	if (alignment.includes("C")) traits.push("chaotic");
+	if (alignment.includes("G")) traits.push("good");
+	if (alignment.includes("E")) traits.push("evil");
+	return traits;
+}
+
 /**
  *
  * @param {Object} args Args passed down in the macro.
  * @param {Object} importedActor Actor to spawn.
+ * @param {Object} spawnArgs Arguments to be passed down to Warpgate spawnAt function, order insensitive.
  */
 async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) {
 	const [tokenD, tokenScale] = await vauxsMacroHelpers(args)
 
 	// If no actor is passed, prompt a player to select one.
 	if (!Object.keys(importedActor).length) {
+		// packs is an outdated term, it currently means the indexed actors
 		let packs = await game.pf2e.compendiumBrowser.tabs.bestiary.indexData;
 
 		if (!packs.length) {
 			await game.pf2e.compendiumBrowser.tabs.bestiary.loadData();
 			packs = await game.pf2e.compendiumBrowser.tabs.bestiary.indexData;
 		}
+
+		// adding size and alignment traits
+		packs = packs.map(pack => { return { ...pack, traits: pack.traits.concat(pack.actorSize, alignmentStringToTraits(pack.alignment)) } });
 
 		debug("Summon Creature Options", packs)
 
@@ -224,7 +241,9 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 		}
 
 		if (args[2]?.length && args[2][0] === "summon-spell") {
-			const trait = args[2][1].replace('trait-', '')
+			const traitsOr = args[2][1]?.replace('trait-', '').split('-')
+			const traitsAnd = args[2][2]?.replace('trait-and-', '').split('-')
+
 			let multiplier = -1;
 			if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
 			if (args[0].flags.pf2e.casting.level >= 3) multiplier = 2;
@@ -235,11 +254,19 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 			if (args[0].flags.pf2e.casting.level >= 8) multiplier = 11;
 			if (args[0].flags.pf2e.casting.level >= 9) multiplier = 13;
 			if (args[0].flags.pf2e.casting.level >= 10) multiplier = 15;
-			packs = packs.filter(x => x.traits.includes(trait) && x.level <= multiplier)
+			packs = packs.filter(
+				// level equal or less filter
+				x => (x.level <= multiplier)
+				// traits OR filter
+				&& (traitsOr ? traitsOr.some(traitOr => x.traits.includes(traitOr)) : true)
+				// traits AND filter
+				&& (traitsAnd ? traitsAnd.some(traitAnd => x.traits.includes(traitAnd)) : true)
+
+			)
 			packs = packs.sort((a, b) => {
 				return a.level < b.level ? 1 : -1;
 			});
-			sortedHow.label = `Sorted by level <b>(max. level ${multiplier} from ${ordinalSuffixOf(args[0].flags.pf2e.casting.level)} level spell)</b>. Filtered by the <b>${trait}</b> trait.`;
+			sortedHow.label = `Sorted by level <b>(max. level ${multiplier} from ${ordinalSuffixOf(args[0].flags.pf2e.casting.level)} level spell)</b>.`;
 		} else {
 			packs = packs.sort((a, b) => a.name.localeCompare(b.name));
 			sortedHow.label = "Sorted alphabetically.";
@@ -266,9 +293,11 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 			}
 		)
 
+		if (options.buttons === false) return;
+
 		const actor = await packs.filter(x => x.name === options.inputs[1])[0];
-		importedActor = await fromUuid(actor.uuid) // ?? await game.packs.get(actor.compendium ?? actor.uuid.split(".")[1] + "." + actor.uuid.split(".")[2]).getDocument(actor._id ?? actor.id ?? actor.uuid.split(".")[3]);
-		spawnArgs = { options: { duplicates: options.inputs[2] } }
+		importedActor = await fromUuid(actor.uuid); // ?? await game.packs.get(actor.compendium ?? actor.uuid.split(".")[1] + "." + actor.uuid.split(".")[2]).getDocument(actor._id ?? actor.id ?? actor.uuid.split(".")[3]);
+		(spawnArgs.options ??= {}).duplicates = options.inputs[2];
 	}
 
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
@@ -304,8 +333,8 @@ async function askGMforSummon(args) {
 
 	// Checks if Dummy NPC/PC actors exist. If not, creates them.
 	createIfMissingDummy();
-	debug("Summoning Request", args)
-	let template = await canvas.templates.get(args.location.id) ?? await canvas.templates.get(args.location._id);
+	debug("Summoning Request", args);
+	let template = await canvas.templates.get(args.location.id ?? args.location._id);
 	new Dialog({
 		title: "Player Summon Request",
 		content: `
