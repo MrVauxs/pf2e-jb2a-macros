@@ -1,4 +1,4 @@
-const versionsWithAutorecUpdates = ["1.9.2", "1.10.0", "1.11.2"];
+const versionsWithAutorecUpdates = ["1.9.2", "1.10.0", "1.11.2", "1.12.0"];
 
 Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
@@ -346,6 +346,9 @@ async function askGMforSummon(args) {
 				label: "Accept",
 				callback: async () => {
 					if (args.options) args.updates.token.actorData = { ownership: args.options.controllingActor.ownership };
+
+					// Temporary fix as this seems to be warpgate's fault. Also cannot be an object because they are truthy.
+					args.options.controllingActor = false
 					args.location = template;
 					debug("Summoning...", args)
 					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);

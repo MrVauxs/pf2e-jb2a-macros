@@ -23069,6 +23069,43 @@
         "enable": false
       },
       "menuSection": "static"
+    },
+    "84": {
+      "below": false,
+      "hidden": false,
+      "anim2d": false,
+      "name": "Sudden Charge",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Sudden Charge",
+        "args": ""
+      },
+      "type": "",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "static"
     }
   },
   "templates": {

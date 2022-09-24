@@ -1,22 +1,31 @@
 # Version 1.12.0
-- Added `.tieToDocuments()` to Active Effect animations
+- Added `.tieToDocuments()` to Active Effect animations.
 - Added the following effects:
  - **Summon** Animal / Construct / Fey / Plant or Fungus / Elemental / Anarch / Axiom / Celestial / Dragon / Entity / Fiend / Giant
  - Revamped Dancing Lights to use the above Summon effect
  - Crane / Dragon / Gorilla / Mountain / Rain of Embers/ Reflective Ripple / Stoked Flame / Stumbling / Tiger / Wolf / Cobra / Ironblood / Tangled Forest **Stance**
  - Sterling Dynamo
-- Removed Mountain Stance effect to make Falling Stone attacks work
+ - Sudden Charge
+- Removed Mountain Stance effect to make Falling Stone attacks work.
+
+### Known Issues
+- The player may not be able to Dismiss creatures they summoned. They can remedy that by turning "Dismiss button scope" Warp Gate setting to "All owned tokens". Note that this also makes them able to dismiss themselves!
+- When summoning certain creatures, they have floating text deducting their HP.
+- When summoning more than one creature, they spawn on top of each other. See this [issue](https://github.com/trioderegion/warpgate/issues/77).
+- When summoning anything that isn't Medium, they scale from Medium to their size instead of spawning in proper size from the beginning.
+ - This also causes larger creatures to have a "missing hitbox", only allowing their upper left corner to be selected. This can be fixed on a map refresh.
+- Due to lack of PDF to Foundry module in V10, it has not been tested whether the summons include the token images it creates. There is a chance they don't.
 
 # Version 1.11.4
-- Fixed Dancing Lights Macro
+- Fixed Dancing Lights Macro.
 
 # Version 1.11.3
-- Fixed Lightning Ray not working without a token selected
-- Fixed Cone effects always playing rainbows
+- Fixed Lightning Ray not working without a token selected.
+- Fixed Cone effects always playing rainbows.
 
 # Version 1.11.2
-- Adjusted Animal Instinct macro to work with AA implementation
-- Improved Firearm effects (thanks @Janonas)
+- Adjusted Animal Instinct macro to work with AA implementation.
+- Improved Firearm effects (thanks @Janonas).
 - Added / Changed the following effects:
   - Burning Hands (made it an actually 45 degree cone)
   - Chilling Spray
@@ -28,12 +37,12 @@
   - Spray of Stars
   - Cone of Cold
   - Feral Shades
-- Removed Invisibility effect
-- Moved certain setting changes from `renderSettings` hook to `ready` hook
-- Removed the Import pop-up in favour of an incoming Summoning Macros system
+- Removed Invisibility effect.
+- Moved certain setting changes from `renderSettings` hook to `ready` hook.
+- Removed the Import pop-up in favour of an incoming Summoning Macros system.
 
 # Version 1.11.1
-- Fixed a typo in module.json making the module impossible to enable
+- Fixed a typo in module.json making the module impossible to enable.
 
 # Version 1.11.0
 - Updated all macros with the following:
