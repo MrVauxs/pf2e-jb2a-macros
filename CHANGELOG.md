@@ -1,12 +1,39 @@
 # Version 1.12.0
 - Added `.tieToDocuments()` to Active Effect animations.
 - Added the following effects:
- - **Summon** Animal / Construct / Fey / Plant or Fungus / Elemental / Anarch / Axiom / Celestial / Dragon / Entity / Fiend / Giant
- - Revamped Dancing Lights to use the above Summon effect
- - Crane / Dragon / Gorilla / Mountain / Rain of Embers/ Reflective Ripple / Stoked Flame / Stumbling / Tiger / Wolf / Cobra / Ironblood / Tangled Forest **Stance**
+ - **Summon**
+  - Animal
+  - Construct
+  - Fey
+  - Plant or Fungus
+  - Elemental
+  - Anarch
+  - Axiom
+  - Celestial
+  - Dragon
+  - Entity
+  - Fiend
+  - Giant
+ - Dancing Lights (Revamped to use the above Summon effect)
+ - [...] Stance
+  - Crane
+  - Dragon
+  - Gorilla
+  - Mountain
+  - Rain of Embers
+  - Reflective Ripple
+  - Stoked Flame
+  - Stumbling
+  - Tiger
+  - Wolf
+  - Cobra
+  - Ironblood
+  - Tangled Forest
  - Sterling Dynamo
  - Sudden Charge
 - Removed Mountain Stance effect to make Falling Stone attacks work.
+- Fixed Tanglefoot effect.
+- Fixed a bunch of deprecation / compatibility warnings (thanks @surged20).
 
 ### Known Issues
 - The player may not be able to Dismiss creatures they summoned. They can remedy that by turning "Dismiss button scope" Warp Gate setting to "All owned tokens". Note that this also makes them able to dismiss themselves!
