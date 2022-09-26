@@ -13455,6 +13455,200 @@
         "below": false
       },
       "menuSection": "melee"
+    },
+    "213": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Beak",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "customPath": "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/DmgPiercing_01_Regular_Yellow_2Handed_800x600.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "switchType": "off",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "melee",
+      "menuType": "generic",
+      "animation": "2hp",
+      "variant": "01",
+      "color": "white"
+    },
+    "214": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Longsword",
+      "meleeType": "weapon",
+      "animation": "sword",
+      "variant": "01",
+      "color": "white",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "weapon",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "melee"
+    },
+    "215": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Unarmed",
+      "meleeType": "weapon",
+      "animation": "unarmedstrike",
+      "variant": "physical",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "weapon",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "return": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "melee"
     }
   },
   "range": {
@@ -13555,7 +13749,11 @@
           "enable": false
         },
         "e01": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Misc/Single/Water%20Splash/water-splash-2.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "explosion": {
@@ -19961,6 +20159,66 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuSection": "range"
+    },
+    "104": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Polar Ray",
+      "type": "spell",
+      "animation": "rayoffrost",
+      "variant": "01",
+      "color": "blue",
+      "repeat": 1,
+      "delay": 500,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "spell",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "range"
     }
   },
   "static": {
@@ -20756,7 +21014,9 @@
         "enable": false
       },
       "menuSection": "static",
-      "menuType": "shieldfx"
+      "menuType": "shieldfx",
+      "unbindAlpha": false,
+      "unbindVisibility": false
     },
     "20": {
       "below": false,
@@ -20865,75 +21125,6 @@
       "menuSection": "static"
     },
     "22": {
-      "hidden": true,
-      "anim2d": false,
-      "name": "Healing Word",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "type": "targetDefault",
-      "staticOptions": "staticSpells",
-      "animation": "generichealing",
-      "variant": "01",
-      "color": "blue",
-      "opacity": null,
-      "persistent": false,
-      "repeat": 1,
-      "delay": 500,
-      "scale": 1.5,
-      "below": true,
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "levels3d": {
-        "type": "",
-        "color01": "#000000",
-        "color02": "#000000",
-        "speed": null,
-        "repeat": null,
-        "arc": null,
-        "delay": null,
-        "scale": null,
-        "alpha": null,
-        "gravity": null,
-        "mass": null,
-        "life": null,
-        "emittersize": null,
-        "rate": null,
-        "addexplosion": {
-          "enable": false,
-          "color01": "#000000",
-          "color02": "#000000",
-          "speed": null,
-          "scale": null,
-          "alpha": null,
-          "gravity": null,
-          "mass": null,
-          "life": null,
-          "emittersize": null,
-          "rate": null,
-          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
-        },
-        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      },
-      "menuType": "spell",
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "static"
-    },
-    "23": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20970,7 +21161,7 @@
       },
       "menuSection": "static"
     },
-    "24": {
+    "23": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21007,7 +21198,7 @@
       },
       "menuSection": "static"
     },
-    "25": {
+    "24": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21044,7 +21235,7 @@
       },
       "menuSection": "static"
     },
-    "26": {
+    "25": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21081,7 +21272,7 @@
       },
       "menuSection": "static"
     },
-    "27": {
+    "26": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21118,7 +21309,7 @@
       },
       "menuSection": "static"
     },
-    "28": {
+    "27": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21152,7 +21343,7 @@
       },
       "menuSection": "static"
     },
-    "29": {
+    "28": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21189,7 +21380,7 @@
       },
       "menuSection": "static"
     },
-    "30": {
+    "29": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21226,7 +21417,7 @@
       },
       "menuSection": "static"
     },
-    "31": {
+    "30": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21261,7 +21452,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "32": {
+    "31": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21298,7 +21489,7 @@
       },
       "menuSection": "static"
     },
-    "33": {
+    "32": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21339,7 +21530,7 @@
       "unbindVisibility": false,
       "menuSection": "static"
     },
-    "34": {
+    "33": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21380,7 +21571,7 @@
       "unbindVisibility": false,
       "menuSection": "static"
     },
-    "35": {
+    "34": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21417,7 +21608,7 @@
       },
       "menuSection": "static"
     },
-    "36": {
+    "35": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21454,7 +21645,7 @@
       },
       "menuSection": "static"
     },
-    "37": {
+    "36": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21491,7 +21682,7 @@
       },
       "menuSection": "static"
     },
-    "38": {
+    "37": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21528,7 +21719,7 @@
       },
       "menuSection": "static"
     },
-    "39": {
+    "38": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21565,7 +21756,7 @@
       },
       "menuSection": "static"
     },
-    "40": {
+    "39": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21599,7 +21790,7 @@
       "unbindVisibility": false,
       "menuSection": "static"
     },
-    "41": {
+    "40": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21634,7 +21825,7 @@
       "customPath": "jb2a.healing_generic.200px.yellow",
       "menuSection": "static"
     },
-    "42": {
+    "41": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21671,7 +21862,7 @@
       "menuType": "spell",
       "menuSection": "static"
     },
-    "43": {
+    "42": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21708,7 +21899,7 @@
       },
       "menuSection": "static"
     },
-    "44": {
+    "43": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21745,7 +21936,7 @@
       },
       "menuSection": "static"
     },
-    "45": {
+    "44": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21782,7 +21973,7 @@
       },
       "menuSection": "static"
     },
-    "46": {
+    "45": {
       "hidden": true,
       "anim2d": false,
       "name": "Treat Wounds",
@@ -21852,7 +22043,7 @@
       "unbindVisibility": false,
       "menuSection": "static"
     },
-    "47": {
+    "46": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21889,7 +22080,7 @@
       },
       "menuSection": "static"
     },
-    "48": {
+    "47": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21926,7 +22117,7 @@
       },
       "menuSection": "static"
     },
-    "49": {
+    "48": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21961,7 +22152,7 @@
       },
       "menuSection": "static"
     },
-    "50": {
+    "49": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -21996,7 +22187,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "51": {
+    "50": {
       "staticOptions": "creature",
       "animation": "bite",
       "below": false,
@@ -22031,7 +22222,7 @@
         "enable": false
       }
     },
-    "52": {
+    "51": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22069,7 +22260,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "53": {
+    "52": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22104,7 +22295,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "54": {
+    "53": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22151,7 +22342,7 @@
       "unbindVisibility": false,
       "menuSection": "static"
     },
-    "55": {
+    "54": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22198,7 +22389,7 @@
       "unbindVisibility": false,
       "menuSection": "static"
     },
-    "56": {
+    "55": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22232,7 +22423,7 @@
       },
       "menuSection": "static"
     },
-    "57": {
+    "56": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22267,7 +22458,7 @@
       "unbindAlpha": false,
       "unbindVisibility": false
     },
-    "58": {
+    "57": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22304,7 +22495,7 @@
       },
       "menuSection": "static"
     },
-    "59": {
+    "58": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22349,7 +22540,7 @@
       },
       "menuSection": "static"
     },
-    "60": {
+    "59": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22384,7 +22575,7 @@
       "customPath": "jb2a.eyes.01.dark_green.single.0",
       "menuSection": "static"
     },
-    "61": {
+    "60": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22422,7 +22613,7 @@
       },
       "menuSection": "static"
     },
-    "62": {
+    "61": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22461,7 +22652,7 @@
       "customPath": "jb2a.ui.critical.",
       "menuSection": "static"
     },
-    "63": {
+    "62": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22500,7 +22691,7 @@
       "customPath": "jb2a.ui.critical_miss.",
       "menuSection": "static"
     },
-    "64": {
+    "63": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22539,7 +22730,7 @@
       "customPath": "jb2a.ui.miss",
       "menuSection": "static"
     },
-    "65": {
+    "64": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22576,7 +22767,7 @@
       },
       "menuSection": "static"
     },
-    "66": {
+    "65": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22613,7 +22804,7 @@
       },
       "menuSection": "static"
     },
-    "67": {
+    "66": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22650,7 +22841,7 @@
       },
       "menuSection": "static"
     },
-    "68": {
+    "67": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22684,7 +22875,7 @@
       },
       "menuSection": "static"
     },
-    "69": {
+    "68": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22721,7 +22912,7 @@
       },
       "menuSection": "static"
     },
-    "70": {
+    "69": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22758,7 +22949,7 @@
       },
       "menuSection": "static"
     },
-    "71": {
+    "70": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22795,7 +22986,7 @@
       },
       "menuSection": "static"
     },
-    "72": {
+    "71": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22832,7 +23023,7 @@
       },
       "menuSection": "static"
     },
-    "73": {
+    "72": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22869,7 +23060,7 @@
       },
       "menuSection": "static"
     },
-    "74": {
+    "73": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22906,7 +23097,7 @@
       },
       "menuSection": "static"
     },
-    "75": {
+    "74": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22943,7 +23134,7 @@
       },
       "menuSection": "static"
     },
-    "76": {
+    "75": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22980,7 +23171,7 @@
       },
       "menuSection": "static"
     },
-    "77": {
+    "76": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23017,7 +23208,7 @@
       },
       "menuSection": "static"
     },
-    "78": {
+    "77": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23054,7 +23245,7 @@
       },
       "menuSection": "static"
     },
-    "79": {
+    "78": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23091,7 +23282,7 @@
       },
       "menuSection": "static"
     },
-    "80": {
+    "79": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23128,7 +23319,7 @@
       },
       "menuSection": "static"
     },
-    "81": {
+    "80": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23165,7 +23356,7 @@
       },
       "menuSection": "static"
     },
-    "82": {
+    "81": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23199,7 +23390,7 @@
       },
       "menuSection": "static"
     },
-    "83": {
+    "82": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23233,7 +23424,7 @@
       },
       "menuSection": "static"
     },
-    "84": {
+    "83": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23268,6 +23459,976 @@
       "explosion": {
         "enable": false
       },
+      "menuSection": "static"
+    },
+    "84": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Athletic Rush",
+      "type": "source",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "customPath": "modules/jb2a_patreon/Library/Generic/UI/Indicator_01_Regular_Yellow_Thumb.webp",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "generic",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "indicator",
+      "variant": "chevron",
+      "color": "yellow"
+    },
+    "85": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Dimensional Anchor",
+      "type": "target",
+      "opacity": null,
+      "persistent": false,
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
+      "below": false,
+      "custom": false,
+      "customPath": "effects/spells/spell-level-4/dimensional-anchor.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "marker",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "energystrand",
+      "variant": "01",
+      "color": "blueorange"
+    },
+    "86": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Endure Elements",
+      "type": "targetDefault",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "customPath": "effects/spells/spell-level-2/endure-elements.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "energy",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "energyfield",
+      "variant": "01",
+      "color": "rainbow"
+    },
+    "87": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Glyph of Warding",
+      "type": "source",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
+      "below": false,
+      "custom": true,
+      "customPath": "jb2a.magic_signs.circle.02.evocation.intro",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "spell",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "",
+      "variant": "",
+      "color": ""
+    },
+    "88": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Impaling Spike",
+      "type": "target",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
+      "below": false,
+      "custom": false,
+      "customPath": "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/Legacy/Spear01_01_Regular_White_800x600.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "ice",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "icespikes",
+      "variant": "01",
+      "color": "white"
+    },
+    "89": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Implosion",
+      "type": "target",
+      "staticOptions": "creature",
+      "animation": "vortex",
+      "variant": "intro",
+      "color": "purple",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "generic",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "90": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Mask of Terror",
+      "type": "source",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": 2,
+      "below": false,
+      "custom": false,
+      "customPath": "effects/spells/spell-level-7/mask-of-terror.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "generic",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "ui",
+      "variant": "fear",
+      "color": "random"
+    },
+    "91": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Prestidigitation",
+      "type": "targetDefault",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "customPath": "effects/spells/cantrip/prestidigitation.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "energy",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "sparkles",
+      "variant": "01",
+      "color": "blue"
+    },
+    "92": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Read Aura",
+      "type": "target",
+      "opacity": null,
+      "persistent": false,
+      "repeat": 3,
+      "delay": 1500,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "customPath": "effects/spells/cantrip/read-aura.webm",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "generic",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "indicator",
+      "variant": "06",
+      "color": "green"
+    },
+    "93": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Regenerate",
+      "type": "targetDefault",
+      "staticOptions": "creature",
+      "animation": "generichealing",
+      "variant": "",
+      "color": "",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "spell",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "94": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Restoration",
+      "type": "targetDefault",
+      "staticOptions": "creature",
+      "animation": "curewounds",
+      "variant": "01",
+      "color": "random",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "spell",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "95": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Shatter",
+      "type": "target",
+      "staticOptions": "explosion",
+      "animation": "shatter",
+      "variant": "01",
+      "color": "random",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Misc/Single/Impact/impact-3.mp3",
+          "delay": null,
+          "volume": null,
+          "startTime": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "spell",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "96": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Soothe",
+      "type": "target",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "customPath": "effects/spells/spell-level-1/soothe.webm",
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "sounds/spells/spell-level-1/soothe.wav",
+          "delay": null,
+          "volume": null,
+          "startTime": null
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "spell",
+      "menuSection": "static",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "animation": "curewounds",
+      "variant": "01",
+      "color": "random"
+    },
+    "97": {
+      "hidden": true,
+      "anim2d": false,
+      "name": "Talon",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false,
+        "playWhen": "0",
+        "name": "",
+        "args": ""
+      },
+      "type": "target",
+      "staticOptions": "creature",
+      "animation": "claw",
+      "variant": "01",
+      "color": "darkred",
+      "opacity": null,
+      "persistent": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "below": false,
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuType": "creature",
+      "menuSection": "static",
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "98": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Foresight",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "type": "sourcetarget",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "jb2a.eyes.01.dark_green.many",
       "menuSection": "static"
     }
   },
@@ -23654,7 +24815,7 @@
       "menuSection": "templates"
     },
     "12": {
-      "below": false,
+      "below": true,
       "hidden": true,
       "name": "Black Tentacles",
       "soundOnly": {
@@ -23667,7 +24828,7 @@
       "animation": "blacktentacles",
       "variant": "01",
       "color": "darkpurple",
-      "custom": false,
+      "custom": true,
       "repeat": null,
       "delay": null,
       "scaleX": null,
@@ -23681,7 +24842,8 @@
         }
       },
       "persistType": "attachtemplate",
-      "menuSection": "templates"
+      "menuSection": "templates",
+      "customPath": "jb2a.entangle.02.complete.01.dark_pinkpurple"
     },
     "13": {
       "below": false,
@@ -24195,6 +25357,194 @@
         }
       },
       "menuSection": "templates"
+    },
+    "29": {
+      "hidden": true,
+      "name": "Entangle",
+      "type": "circle",
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "below": true,
+      "custom": true,
+      "customPath": "jb2a.entangle.02.complete.02",
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": true,
+      "persistType": "attachtemplate",
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuType": "circle",
+      "menuSection": "templates",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "animation": "",
+      "variant": "",
+      "color": ""
+    },
+    "30": {
+      "hidden": true,
+      "name": "Storm of Vengeance",
+      "type": "circle",
+      "animation": "calllightning",
+      "variant": "01",
+      "color": "random",
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "below": false,
+      "custom": false,
+      "opacity": null,
+      "removeTemplate": true,
+      "persist": true,
+      "persistType": "attachtemplate",
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Nature/Single/Thunder/thunder-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        }
+      },
+      "menuType": "circle",
+      "menuSection": "templates",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      }
+    },
+    "31": {
+      "hidden": true,
+      "name": "Vomit Swarm",
+      "type": "cone",
+      "animation": "breathweapon",
+      "variant": "poison",
+      "color": "green",
+      "repeat": 1,
+      "delay": 250,
+      "scaleX": 1,
+      "scaleY": 1,
+      "below": false,
+      "custom": false,
+      "opacity": 0.75,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuType": "cone",
+      "menuSection": "templates",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      }
+    },
+    "32": {
+      "below": true,
+      "hidden": true,
+      "name": "Alarm",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "circle",
+      "animation": "magicsign",
+      "variant": "abjuration",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "menuSection": "templates",
+      "persistType": "attachtemplate"
+    },
+    "33": {
+      "below": false,
+      "hidden": true,
+      "name": "Antimagic Field",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "circle",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scaleX": 1.03,
+      "scaleY": 1.03,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "jb2a.wall_of_force.sphere",
+      "persistType": "attachtemplate",
+      "menuSection": "templates"
+    },
+    "34": {
+      "below": false,
+      "hidden": true,
+      "name": "Sleep",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "circle",
+      "animation": "stun",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "repeat": null,
+      "delay": null,
+      "scaleX": 2,
+      "scaleY": 2,
+      "opacity": 0.8,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "jb2a.sleep.target",
+      "menuSection": "templates"
     }
   },
   "auras": {},
@@ -24531,7 +25881,7 @@
       "animation": "divinesmite",
       "variant": "source",
       "color": "yellowblue",
-      "custom": false,
+      "custom": true,
       "audio": {
         "a01": {
           "enable": false
@@ -24548,7 +25898,8 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "27"
+      "menuSection": "27",
+      "customPath": "jb2a.divine_smite.caster.reversed.blueyellow"
     },
     "7": {
       "below": false,
@@ -25550,7 +26901,7 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "43",
+      "menuSection": "aefx",
       "unbindAlpha": false,
       "unbindVisibility": false
     },
@@ -25643,7 +26994,7 @@
       "animation": "dizzystars",
       "variant": "01",
       "color": "red",
-      "custom": false,
+      "custom": true,
       "audio": {
         "a01": {
           "enable": false
@@ -25651,16 +27002,17 @@
       },
       "repeat": null,
       "delay": null,
-      "scale": 0.75,
+      "scale": 1.5,
       "opacity": null,
       "aeDelay": null,
-      "persistent": false,
+      "persistent": true,
       "explosion": {
         "enable": false
       },
-      "menuSection": "45",
+      "menuSection": "aefx",
       "unbindAlpha": false,
-      "unbindVisibility": false
+      "unbindVisibility": false,
+      "customPath": "jb2a.sleep.symbol"
     },
     "39": {
       "below": false,
@@ -25687,8 +27039,8 @@
       "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Dizzy_Stars/DizzyStars_01_Green_Thumb.webp",
       "repeat": null,
       "delay": null,
-      "scale": 0.75,
-      "opacity": 0.75,
+      "scale": null,
+      "opacity": 0.8,
       "aeDelay": null,
       "persistent": true,
       "explosion": {
@@ -25696,7 +27048,7 @@
       },
       "unbindAlpha": false,
       "unbindVisibility": false,
-      "menuSection": "46"
+      "menuSection": "aefx"
     },
     "40": {
       "below": false,
@@ -26130,6 +27482,533 @@
           "enable": false
         }
       }
+    },
+    "53": {
+      "below": false,
+      "hidden": true,
+      "name": "Drained",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "heart",
+      "variant": "03",
+      "color": "darkred",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": 0.8,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "54": {
+      "below": false,
+      "hidden": true,
+      "name": "Dying",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "conditions",
+      "animation": "skull",
+      "variant": "02",
+      "color": "darkorange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": 0.8,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "55": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Athletic Rush",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "generic",
+      "animation": "indicator",
+      "variant": "chevron",
+      "color": "yellow",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "56": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Dimensional Anchor",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "marker",
+      "animation": "energystrand",
+      "variant": "01",
+      "color": "blueorange",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "57": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Endure Elements",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "energy",
+      "animation": "energyfield",
+      "variant": "01",
+      "color": "rainbow",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "58": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Energy Aegis",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "energy",
+      "animation": "energyfield",
+      "variant": "01",
+      "color": "rainbow",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "59": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Feather Fall",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "jb2a.smoke.ring.01.white",
+      "repeat": null,
+      "delay": null,
+      "scale": 1.5,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "60": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Fly",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "customPath": "jb2a.smoke.ring.01.white",
+      "repeat": null,
+      "delay": null,
+      "scale": 1.5,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "61": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Foresight",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": 1.5,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx",
+      "customPath": "jb2a.ward.rune.yellow.02"
+    },
+    "62": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Air Walk",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "whirlwind",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "63": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Heroism",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "preset",
+      "type": "source",
+      "menuType": "bless",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": false,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "addCTA": true,
+      "menuSection": "5"
+    },
+    "64": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Needle of Vengeance",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "generic",
+      "animation": "vortex",
+      "variant": "loop",
+      "color": "purple",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      }
+    },
+    "65": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Resilient Sphere",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "spell",
+      "animation": "wallofforce",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
+    },
+    "66": {
+      "below": true,
+      "hidden": true,
+      "name": "Effect Sanctuary",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "customPath": "jb2a.ward.star.yellow"
+    },
+    "67": {
+      "below": false,
+      "hidden": true,
+      "name": "Effect Veil of Confidence",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "aeType": "static",
+      "type": "source",
+      "menuType": "marker",
+      "animation": "energystrand",
+      "variant": "01",
+      "color": "darkred",
+      "custom": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": 0.8,
+      "aeDelay": null,
+      "persistent": true,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "explosion": {
+        "enable": false
+      },
+      "menuSection": "aefx"
     }
   }
 }
