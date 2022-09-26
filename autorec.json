@@ -13410,6 +13410,51 @@
         "enable": false
       },
       "menuSection": "melee"
+    },
+    "212": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Shocking Grasp",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "unarmedstrike",
+      "variant": "magical",
+      "color": "blue",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        },
+        "a02": {
+          "enable": false
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "switchType": "on",
+      "return": false,
+      "explosion": {
+        "enable": true,
+        "menuType": "lightning",
+        "animation": "staticelectricity",
+        "variant": "02",
+        "color": "blue",
+        "custom": false,
+        "radius": 0.7,
+        "delay": null,
+        "below": false
+      },
+      "menuSection": "melee"
     }
   },
   "range": {
@@ -19798,6 +19843,124 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuSection": "range"
+    },
+    "102": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Force Fang",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "spell",
+      "animation": "magicmissile",
+      "variant": "01",
+      "color": "random",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "range"
+    },
+    "103": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Shooting Star",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "arrow",
+      "variant": "physical",
+      "color": "random",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "range"
     }
   },
   "static": {
@@ -23072,7 +23235,7 @@
     },
     "84": {
       "below": false,
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Sudden Charge",
       "soundOnly": {
@@ -24678,7 +24841,7 @@
       },
       "endeffect": "outro_explode",
       "addCTA": true,
-      "menuSection": "13"
+      "menuSection": "aefx"
     },
     "15": {
       "below": false,
@@ -25923,7 +26086,7 @@
       },
       "repeat": null,
       "delay": null,
-      "scale": null,
+      "scale": 0.8,
       "opacity": null,
       "aeDelay": null,
       "persistent": false,
@@ -25939,7 +26102,8 @@
         "radius": null,
         "delay": null,
         "below": false
-      }
+      },
+      "menuSection": "aefx"
     },
     "52": {
       "below": false,

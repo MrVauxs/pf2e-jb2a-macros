@@ -1,6 +1,11 @@
-# Version 1.12.0
+# Version 1.12.0 "S.M.M., Summoner, Monk, and Magus"
 - Added `.tieToDocuments()` to Active Effect animations.
 - Added the following effects:
+ - Shocking Grasp
+ - Force Fang
+ - Shooting Star
+ - Sterling Dynamo
+ - Sudden Charge
  - **Summon**
   - Animal
   - Construct
@@ -29,8 +34,6 @@
   - Cobra
   - Ironblood
   - Tangled Forest
- - Sterling Dynamo
- - Sudden Charge
 - Removed Mountain Stance effect to make Falling Stone attacks work.
 - Fixed Tanglefoot effect.
 - Fixed a bunch of deprecation / compatibility warnings (thanks @surged20).
