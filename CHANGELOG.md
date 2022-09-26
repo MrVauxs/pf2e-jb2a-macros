@@ -1,78 +1,78 @@
 # Version 1.12.0 "Extemporaneous"
 - Added `.tieToDocuments()` to Active Effect animations.
 - Added the following effects (thanks Octavio#2519 for suggesting a bunch of these):
- - Shocking Grasp
- - Force Fang
- - Shooting Star
- - Sterling Dynamo
- - Sudden Charge
- - Polar Ray
- - Air Walk (Extempore Effect)
- - Alarm
- - Athletic Rush (Spell and Effect)
- - Dying
- - Drained
- - Antimagic Field
- - Entangle
- - Storm of Vengeance
- - Vomit Swarm
- - Beak
- - Longsword (seriously how long has it not been there?)
- - Unarmed
- - Talon
- - Dimensional Anchor (Spell and Extempore Effect)
- - Endure Elements (Spell and Extempore Effect)
- - Energy Aegis (Effect)
- - Feather Fall (Extempore Effect)
- - Fly (Extempore Effect)
- - Foresight (Spell and Extempore Effect)
- - Glyph of Warding
- - Heroism (Extempore Effect)
- - Needle of Vengeance (Extempore Effect)
- - Mask of Terror
- - Impaling Spike
- - Implosion
- - Prestidigitation
- - Needle of Vengeance (Extempore Effect)
- - Resilient Sphere (Extempore Effect)
- - Prestidigitation
- - Read Aura
- - Regenerate
- - Restoration
- - Sanctuary (Extempore Effect)
- - Shatter
- - Sleep
- - Unconscious (Changed it to Sleep symbol animation)
- - Soothe
- - Veil of Confidence (Extempore Effect)
- - Summon [...]
-  - Animal
-  - Construct
-  - Fey
-  - Plant or Fungus
-  - Elemental
-  - Anarch
-  - Axiom
-  - Celestial
-  - Dragon
-  - Entity
-  - Fiend
-  - Giant
- - Dancing Lights (Revamped to use the above Summon effect)
- - [...] Stance
-  - Crane
-  - Dragon
-  - Gorilla
-  - Mountain
-  - Rain of Embers
-  - Reflective Ripple
-  - Stoked Flame
-  - Stumbling
-  - Tiger
-  - Wolf
-  - Cobra
-  - Ironblood
-  - Tangled Forest
+  - Shocking Grasp
+  - Force Fang
+  - Shooting Star
+  - Sterling Dynamo
+  - Sudden Charge
+  - Polar Ray
+  - Air Walk (Extempore Effect)
+  - Alarm
+  - Athletic Rush (Spell and Effect)
+  - Dying
+  - Drained
+  - Antimagic Field
+  - Entangle
+  - Storm of Vengeance
+  - Vomit Swarm
+  - Beak
+  - Longsword (seriously how long has it not been there?)
+  - Unarmed
+  - Talon
+  - Dimensional Anchor (Spell and Extempore Effect)
+  - Endure Elements (Spell and Extempore Effect)
+  - Energy Aegis (Effect)
+  - Feather Fall (Extempore Effect)
+  - Fly (Extempore Effect)
+  - Foresight (Spell and Extempore Effect)
+  - Glyph of Warding
+  - Heroism (Extempore Effect)
+  - Needle of Vengeance (Extempore Effect)
+  - Mask of Terror
+  - Impaling Spike
+  - Implosion
+  - Prestidigitation
+  - Needle of Vengeance (Extempore Effect)
+  - Resilient Sphere (Extempore Effect)
+  - Prestidigitation
+  - Read Aura
+  - Regenerate
+  - Restoration
+  - Sanctuary (Extempore Effect)
+  - Shatter
+  - Sleep
+  - Unconscious (Changed it to Sleep symbol animation)
+  - Soothe
+  - Veil of Confidence (Extempore Effect)
+  - Summon [...]
+    - Animal
+    - Construct
+    - Fey
+    - Plant or Fungus
+    - Elemental
+    - Anarch
+    - Axiom
+    - Celestial
+    - Dragon
+    - Entity
+    - Fiend
+    - Giant
+  - Dancing Lights (Revamped to use the above Summon effect)
+  - [...] Stance
+    - Crane
+    - Dragon
+    - Gorilla
+    - Mountain
+    - Rain of Embers
+    - Reflective Ripple
+    - Stoked Flame
+    - Stumbling
+    - Tiger
+    - Wolf
+    - Cobra
+    - Ironblood
+    - Tangled Forest
 - Removed Mountain Stance effect to make Falling Stone attacks work.
 - Fixed Tanglefoot effect.
 - Fixed a bunch of deprecation / compatibility warnings (thanks @surged20).
