@@ -1,3 +1,6 @@
+# Version 1.12.1
+- Added `await` when getting a local macro for an animation
+
 # Version 1.12.0 "Extemporaneous"
 - Added `.tieToDocuments()` to Active Effect animations.
 - Added the following effects (thanks Octavio#2519 for suggesting a bunch of these):
