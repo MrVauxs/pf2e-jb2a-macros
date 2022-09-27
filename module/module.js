@@ -115,7 +115,7 @@ async function runJB2Apf2eMacro(
 	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros")
 	const pack = game.packs.get(compendiumName);
 	if (pack) {
-		const macro_data = useLocal ? game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.name === macroName)?.toObject();
+		const macro_data = useLocal ? await game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.name === macroName)?.toObject();
 
 		if (macro_data) {
 			const temp_macro = new Macro(macro_data);
