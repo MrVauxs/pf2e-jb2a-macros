@@ -12041,7 +12041,7 @@
       "meleeType": "weapon",
       "animation": "unarmedstrike",
       "variant": "physical",
-      "color": "random",
+      "color": "blue",
       "repeat": null,
       "delay": null,
       "scale": null,
