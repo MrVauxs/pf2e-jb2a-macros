@@ -1,5 +1,6 @@
 # Version 1.12.1
 - Added `await` when getting a local macro for an animation
+- Added effects for Darkness spell, as well as integration with Perfect Vision to automatically restrict vision.
 
 # Version 1.12.0 "Extemporaneous"
 - Added `.tieToDocuments()` to Active Effect animations.
