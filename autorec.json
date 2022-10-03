@@ -25545,6 +25545,39 @@
       },
       "customPath": "jb2a.sleep.target",
       "menuSection": "templates"
+    },
+    "35": {
+      "below": false,
+      "hidden": true,
+      "name": "Darkness",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "0",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Darkness",
+        "args": ""
+      },
+      "menuType": "circle",
+      "animation": "darkness",
+      "variant": "01",
+      "color": "black",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": 1.1,
+      "scaleY": 1.1,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": true,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "persistType": "attachtemplate",
+      "menuSection": "templates"
     }
   },
   "auras": {},
@@ -27356,7 +27389,8 @@
         "a01": {
           "enable": false
         }
-      }
+      },
+      "menuSection": "aefx"
     },
     "49": {
       "below": false,
