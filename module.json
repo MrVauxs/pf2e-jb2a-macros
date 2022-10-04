@@ -55,7 +55,9 @@
 			{
 				"id": "pf2e",
 				"type": "system",
-				"compatibility": {}
+				"compatibility": {
+					"minimum": "4.2.1"
+				}
 			}
 		],
 		"requires": [
@@ -89,8 +91,7 @@
 				"id": "lib-wrapper",
 				"type": "module",
 				"compatibility": {
-					"minimum": "1.12.5.0",
-					"verified": "1.12.8.0"
+					"minimum": "1.12.5.0"
 				}
 			},
 			{

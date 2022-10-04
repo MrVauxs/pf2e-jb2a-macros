@@ -22808,43 +22808,6 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Animal Instinct",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Unarmed Strikes",
-        "args": ""
-      },
-      "type": "target",
-      "menuType": "creature",
-      "animation": "bite",
-      "variant": "01",
-      "color": "random",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": 2,
-      "opacity": null,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "persistent": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "static"
-    },
-    "67": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
       "name": "Fang",
       "soundOnly": {
         "enable": false
@@ -22875,7 +22838,7 @@
       },
       "menuSection": "static"
     },
-    "68": {
+    "67": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22912,7 +22875,7 @@
       },
       "menuSection": "static"
     },
-    "69": {
+    "68": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22949,7 +22912,7 @@
       },
       "menuSection": "static"
     },
-    "70": {
+    "69": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -22986,7 +22949,7 @@
       },
       "menuSection": "static"
     },
-    "71": {
+    "70": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23023,7 +22986,7 @@
       },
       "menuSection": "static"
     },
-    "72": {
+    "71": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23060,7 +23023,7 @@
       },
       "menuSection": "static"
     },
-    "73": {
+    "72": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23097,7 +23060,7 @@
       },
       "menuSection": "static"
     },
-    "74": {
+    "73": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23134,7 +23097,7 @@
       },
       "menuSection": "static"
     },
-    "75": {
+    "74": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23171,7 +23134,7 @@
       },
       "menuSection": "static"
     },
-    "76": {
+    "75": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23208,7 +23171,7 @@
       },
       "menuSection": "static"
     },
-    "77": {
+    "76": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23245,7 +23208,7 @@
       },
       "menuSection": "static"
     },
-    "78": {
+    "77": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23282,7 +23245,7 @@
       },
       "menuSection": "static"
     },
-    "79": {
+    "78": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23319,44 +23282,7 @@
       },
       "menuSection": "static"
     },
-    "80": {
-      "below": false,
-      "hidden": true,
-      "anim2d": false,
-      "name": "Stance",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": true,
-        "playWhen": "2",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Unarmed Strikes",
-        "args": ""
-      },
-      "type": "target",
-      "menuType": "creature",
-      "animation": "bite",
-      "variant": "01",
-      "color": "random",
-      "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": 2,
-      "opacity": null,
-      "unbindAlpha": false,
-      "unbindVisibility": false,
-      "persistent": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "static"
-    },
-    "81": {
+    "79": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23390,7 +23316,7 @@
       },
       "menuSection": "static"
     },
-    "82": {
+    "80": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23424,7 +23350,7 @@
       },
       "menuSection": "static"
     },
-    "83": {
+    "81": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -23461,7 +23387,7 @@
       },
       "menuSection": "static"
     },
-    "84": {
+    "82": {
       "hidden": true,
       "anim2d": false,
       "name": "Athletic Rush",
@@ -23527,7 +23453,7 @@
       "variant": "chevron",
       "color": "yellow"
     },
-    "85": {
+    "83": {
       "hidden": true,
       "anim2d": false,
       "name": "Dimensional Anchor",
@@ -23593,7 +23519,7 @@
       "variant": "01",
       "color": "blueorange"
     },
-    "86": {
+    "84": {
       "hidden": true,
       "anim2d": false,
       "name": "Endure Elements",
@@ -23659,7 +23585,7 @@
       "variant": "01",
       "color": "rainbow"
     },
-    "87": {
+    "85": {
       "hidden": true,
       "anim2d": false,
       "name": "Glyph of Warding",
@@ -23725,7 +23651,7 @@
       "variant": "",
       "color": ""
     },
-    "88": {
+    "86": {
       "hidden": true,
       "anim2d": false,
       "name": "Impaling Spike",
@@ -23791,7 +23717,7 @@
       "variant": "01",
       "color": "white"
     },
-    "89": {
+    "87": {
       "hidden": true,
       "anim2d": false,
       "name": "Implosion",
@@ -23857,7 +23783,7 @@
         "enable": false
       }
     },
-    "90": {
+    "88": {
       "hidden": true,
       "anim2d": false,
       "name": "Mask of Terror",
@@ -23923,7 +23849,7 @@
       "variant": "fear",
       "color": "random"
     },
-    "91": {
+    "89": {
       "hidden": true,
       "anim2d": false,
       "name": "Prestidigitation",
@@ -23989,7 +23915,7 @@
       "variant": "01",
       "color": "blue"
     },
-    "92": {
+    "90": {
       "hidden": true,
       "anim2d": false,
       "name": "Read Aura",
@@ -24055,7 +23981,7 @@
       "variant": "06",
       "color": "green"
     },
-    "93": {
+    "91": {
       "hidden": true,
       "anim2d": false,
       "name": "Regenerate",
@@ -24121,7 +24047,7 @@
         "enable": false
       }
     },
-    "94": {
+    "92": {
       "hidden": true,
       "anim2d": false,
       "name": "Restoration",
@@ -24187,7 +24113,7 @@
         "enable": false
       }
     },
-    "95": {
+    "93": {
       "hidden": true,
       "anim2d": false,
       "name": "Shatter",
@@ -24257,7 +24183,7 @@
         "enable": false
       }
     },
-    "96": {
+    "94": {
       "hidden": true,
       "anim2d": false,
       "name": "Soothe",
@@ -24327,7 +24253,7 @@
       "variant": "01",
       "color": "random"
     },
-    "97": {
+    "95": {
       "hidden": true,
       "anim2d": false,
       "name": "Talon",
@@ -24396,7 +24322,7 @@
         "enable": false
       }
     },
-    "98": {
+    "96": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -24429,6 +24355,43 @@
         "enable": false
       },
       "customPath": "jb2a.eyes.01.dark_green.many",
+      "menuSection": "static"
+    },
+    "97": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Ki Rush",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Dimension Jumps",
+        "args": ""
+      },
+      "type": "",
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scale": null,
+      "opacity": null,
+      "unbindAlpha": false,
+      "unbindVisibility": false,
+      "persistent": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false
+      },
       "menuSection": "static"
     }
   },
