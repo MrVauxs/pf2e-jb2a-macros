@@ -2,6 +2,7 @@
 - Added `await` when getting a local macro for an animation.
 - Added effects for Darkness spell, as well as integration with Perfect Vision to automatically restrict vision. This does not automate effects on tokens, nor does it abide by the rules that tokens with Darkvision see inside the Darkness template.
 - Added Ki Rush spell.
+- Fixed Abundant Spell.
 - Removed Stances and Animal Instinct effects, and Unarmed Strikes macro. No longer necessary with updates to the system.
 - Removed unnecessary (and no longer working) by this point script to add spell level flags to chat messages.
 
