@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "search": "",
+  "search": "black",
   "melee": {
     "0": {
       "hidden": true,
@@ -270,7 +270,11 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "4": {
       "hidden": true,
@@ -472,7 +476,7 @@
       "menuSection": "melee"
     },
     "7": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Axe Musket",
       "soundOnly": {
@@ -498,7 +502,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -543,7 +551,8 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "range": null
     },
     "8": {
       "hidden": true,
@@ -649,7 +658,7 @@
       "menuSection": "melee"
     },
     "10": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Black Powder Knuckle Dusters",
       "soundOnly": {
@@ -663,8 +672,8 @@
       },
       "meleeType": "weapon",
       "animation": "unarmedstrike",
-      "variant": "magical",
-      "color": "darkred",
+      "variant": "physical",
+      "color": "orange",
       "repeat": 1,
       "delay": 500,
       "scale": 1,
@@ -673,6 +682,13 @@
       "audio": {
         "a01": {
           "enable": false
+        },
+        "a02": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "off",
@@ -711,7 +727,14 @@
       "explosion": {
         "enable": false
       },
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "return": false,
+      "switchMenuType": "weapon",
+      "switchAnimation": "snipe",
+      "switchVariant": "01",
+      "switchColor": "orange",
+      "detect": "manual",
+      "range": 3
     },
     "11": {
       "hidden": true,
@@ -1430,7 +1453,11 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "22": {
       "hidden": true,
@@ -2092,7 +2119,7 @@
       "menuSection": "melee"
     },
     "32": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Dagger Pistol",
       "soundOnly": {
@@ -2118,7 +2145,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -2160,7 +2191,10 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "explosion": {
+        "enable": false
+      }
     },
     "33": {
       "hidden": true,
@@ -2420,7 +2454,11 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "37": {
       "hidden": true,
@@ -4001,7 +4039,11 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "61": {
       "hidden": true,
@@ -4355,7 +4397,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -4397,7 +4443,10 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "explosion": {
+        "enable": false
+      }
     },
     "67": {
       "hidden": true,
@@ -4692,7 +4741,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -4734,7 +4787,10 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "explosion": {
+        "enable": false
+      }
     },
     "72": {
       "hidden": true,
@@ -5715,7 +5771,7 @@
       "menuSection": "melee"
     },
     "87": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Knuckle Duster",
       "soundOnly": {
@@ -5777,7 +5833,11 @@
         "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "return": false,
+      "explosion": {
+        "enable": false
+      }
     },
     "88": {
       "hidden": true,
@@ -6566,7 +6626,7 @@
       "menuSection": "melee"
     },
     "100": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Mace Multipistol",
       "soundOnly": {
@@ -6592,7 +6652,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -6634,7 +6698,10 @@
       },
       "menuType": "weapon",
       "switchMenuType": "weapon",
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "explosion": {
+        "enable": false
+      }
     },
     "101": {
       "hidden": true,
@@ -8014,7 +8081,7 @@
       "menuSection": "melee"
     },
     "122": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Piercing Wind",
       "soundOnly": {
@@ -8040,7 +8107,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -8608,7 +8679,7 @@
       "menuSection": "melee"
     },
     "131": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Rapier Pistol",
       "soundOnly": {
@@ -8634,7 +8705,11 @@
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
       "switchType": "custom",
@@ -11493,7 +11568,7 @@
       "menuSection": "melee"
     },
     "175": {
-      "hidden": true,
+      "hidden": false,
       "anim2d": false,
       "name": "Three Peaked Tree",
       "soundOnly": {
@@ -11567,8 +11642,9 @@
       "switchAnimation": "snipe",
       "switchVariant": "01",
       "switchColor": "orange",
-      "detect": "auto",
-      "menuSection": "melee"
+      "detect": "manual",
+      "menuSection": "melee",
+      "range": 3
     },
     "176": {
       "hidden": true,
@@ -12866,7 +12942,7 @@
       "below": false,
       "hidden": true,
       "anim2d": false,
-      "name": "Dogslicer",
+      "name": "Explosive Dogslicer",
       "soundOnly": {
         "enable": false
       },
@@ -12878,23 +12954,32 @@
       "variant": "01",
       "color": "white",
       "custom": false,
-      "repeat": null,
-      "delay": null,
-      "scale": null,
+      "repeat": 1,
+      "delay": 500,
+      "scale": 1,
       "audio": {
         "a01": {
           "enable": false
         },
         "a02": {
-          "enable": false
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-5.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
         }
       },
-      "switchType": "off",
+      "switchType": "custom",
       "return": false,
       "explosion": {
         "enable": false
       },
-      "menuSection": "melee"
+      "menuSection": "melee",
+      "switchMenuType": "weapon",
+      "switchAnimation": "bullet",
+      "switchVariant": "2",
+      "switchColor": "orange",
+      "detect": "auto"
     },
     "197": {
       "below": false,
@@ -15310,69 +15395,6 @@
     "26": {
       "hidden": true,
       "anim2d": false,
-      "name": "Dragon Mouth Pistol",
-      "soundOnly": {
-        "enable": false
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0",
-        "name": "",
-        "args": ""
-      },
-      "type": "spell",
-      "animation": "fireballbeam",
-      "variant": "01",
-      "color": "orange",
-      "repeat": 1,
-      "delay": 500,
-      "below": false,
-      "custom": false,
-      "audio": {
-        "a01": {
-          "enable": false
-        }
-      },
-      "levels3d": {
-        "type": "",
-        "color01": "#000000",
-        "color02": "#000000",
-        "speed": null,
-        "repeat": null,
-        "arc": null,
-        "delay": null,
-        "scale": null,
-        "alpha": null,
-        "gravity": null,
-        "mass": null,
-        "life": null,
-        "emittersize": null,
-        "rate": null,
-        "addexplosion": {
-          "enable": false,
-          "color01": "#000000",
-          "color02": "#000000",
-          "speed": null,
-          "scale": null,
-          "alpha": null,
-          "gravity": null,
-          "mass": null,
-          "life": null,
-          "emittersize": null,
-          "rate": null,
-          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
-        },
-        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
-      },
-      "menuType": "spell",
-      "explosion": {
-        "enable": false
-      },
-      "menuSection": "range"
-    },
-    "27": {
-      "hidden": true,
-      "anim2d": false,
       "name": "Drake Rifle (Acid)",
       "soundOnly": {
         "enable": false
@@ -15433,7 +15455,7 @@
       },
       "menuSection": "range"
     },
-    "28": {
+    "27": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Cold)",
@@ -15493,7 +15515,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "29": {
+    "28": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Electricity)",
@@ -15553,7 +15575,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "30": {
+    "29": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Fire)",
@@ -15616,7 +15638,7 @@
       },
       "menuSection": "range"
     },
-    "31": {
+    "30": {
       "hidden": true,
       "anim2d": false,
       "name": "Drake Rifle (Poison)",
@@ -15679,7 +15701,7 @@
         "enable": false
       }
     },
-    "32": {
+    "31": {
       "hidden": true,
       "anim2d": false,
       "name": "Duchy Defender",
@@ -15739,7 +15761,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "33": {
+    "32": {
       "hidden": true,
       "anim2d": false,
       "name": "Eclipse",
@@ -15799,7 +15821,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "34": {
+    "33": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -15861,7 +15883,7 @@
       },
       "menuSection": "range"
     },
-    "35": {
+    "34": {
       "hidden": true,
       "anim2d": false,
       "name": "Fire Lance",
@@ -15924,7 +15946,7 @@
       },
       "menuSection": "range"
     },
-    "36": {
+    "35": {
       "hidden": true,
       "anim2d": false,
       "name": "Fire Poi",
@@ -15984,7 +16006,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "37": {
+    "36": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16062,7 +16084,7 @@
       },
       "menuSection": "range"
     },
-    "38": {
+    "37": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16123,7 +16145,7 @@
       "onlyX": false,
       "menuSection": "range"
     },
-    "39": {
+    "38": {
       "hidden": true,
       "anim2d": false,
       "name": "Growth Gun",
@@ -16186,7 +16208,7 @@
       },
       "menuSection": "range"
     },
-    "40": {
+    "39": {
       "hidden": true,
       "anim2d": false,
       "name": "Guiding Star",
@@ -16246,7 +16268,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "41": {
+    "40": {
       "hidden": true,
       "anim2d": false,
       "name": "Halfling Sling Staff",
@@ -16309,7 +16331,7 @@
         "enable": false
       }
     },
-    "42": {
+    "41": {
       "hidden": true,
       "anim2d": false,
       "name": "Hardened Harrow Deck",
@@ -16369,7 +16391,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "43": {
+    "42": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16430,7 +16452,7 @@
       "onlyX": false,
       "menuSection": "range"
     },
-    "44": {
+    "43": {
       "hidden": true,
       "anim2d": false,
       "name": "Iris of the Sky",
@@ -16490,7 +16512,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "45": {
+    "44": {
       "hidden": true,
       "anim2d": false,
       "name": "Javelin",
@@ -16550,7 +16572,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "46": {
+    "45": {
       "hidden": true,
       "anim2d": false,
       "name": "Jezail",
@@ -16610,7 +16632,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "47": {
+    "46": {
       "hidden": true,
       "anim2d": false,
       "name": "Liar's Gun",
@@ -16673,7 +16695,7 @@
       },
       "menuSection": "range"
     },
-    "48": {
+    "47": {
       "hidden": true,
       "anim2d": false,
       "name": "Magic Missile",
@@ -16736,7 +16758,7 @@
       },
       "menuSection": "range"
     },
-    "49": {
+    "48": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -16795,7 +16817,7 @@
       },
       "menuSection": "range"
     },
-    "50": {
+    "49": {
       "hidden": true,
       "anim2d": false,
       "name": "Mountebank's Passage",
@@ -16855,7 +16877,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "51": {
+    "50": {
       "hidden": true,
       "anim2d": false,
       "name": "Petrification Cannon",
@@ -16915,7 +16937,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "52": {
+    "51": {
       "hidden": true,
       "anim2d": false,
       "name": "Produce Flame",
@@ -16995,7 +17017,7 @@
       "customPath": "",
       "onlyX": false
     },
-    "53": {
+    "52": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17071,7 +17093,7 @@
       "onlyX": false,
       "menuSection": "range"
     },
-    "54": {
+    "53": {
       "hidden": true,
       "anim2d": false,
       "name": "Ray of Frost",
@@ -17131,7 +17153,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "55": {
+    "54": {
       "hidden": true,
       "anim2d": false,
       "name": "Reaper's Grasp",
@@ -17191,7 +17213,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "56": {
+    "55": {
       "hidden": true,
       "anim2d": false,
       "name": "Rowan Rifle",
@@ -17251,7 +17273,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "57": {
+    "56": {
       "hidden": true,
       "anim2d": false,
       "name": "Scorching Ray",
@@ -17314,7 +17336,7 @@
         "enable": false
       }
     },
-    "58": {
+    "57": {
       "hidden": true,
       "anim2d": false,
       "name": "Screech Shooter",
@@ -17374,7 +17396,7 @@
       "menuType": "spell",
       "menuSection": "range"
     },
-    "59": {
+    "58": {
       "hidden": true,
       "anim2d": false,
       "name": "Shobhad Longrifle",
@@ -17441,7 +17463,7 @@
         "enable": false
       }
     },
-    "60": {
+    "59": {
       "hidden": true,
       "anim2d": false,
       "name": "Shuriken",
@@ -17501,7 +17523,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "61": {
+    "60": {
       "hidden": true,
       "anim2d": false,
       "name": "Sling",
@@ -17561,7 +17583,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "62": {
+    "61": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17623,7 +17645,7 @@
       },
       "menuSection": "range"
     },
-    "63": {
+    "62": {
       "hidden": true,
       "anim2d": false,
       "name": "Spider Gun",
@@ -17683,7 +17705,7 @@
       "menuType": "generic",
       "menuSection": "range"
     },
-    "64": {
+    "63": {
       "hidden": true,
       "anim2d": false,
       "name": "Spike Launcher",
@@ -17743,7 +17765,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "65": {
+    "64": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17817,7 +17839,7 @@
       "menuType": "generic",
       "menuSection": "range"
     },
-    "66": {
+    "65": {
       "hidden": true,
       "anim2d": false,
       "name": "Stoneraiser Javelin",
@@ -17874,7 +17896,7 @@
       },
       "menuSection": "range"
     },
-    "67": {
+    "66": {
       "hidden": true,
       "anim2d": false,
       "name": "Taw Launcher",
@@ -17934,7 +17956,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "68": {
+    "67": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -17995,7 +18017,7 @@
       "onlyX": false,
       "menuSection": "range"
     },
-    "69": {
+    "68": {
       "hidden": true,
       "anim2d": false,
       "name": "Tiger's Claw",
@@ -18058,7 +18080,7 @@
         "enable": false
       }
     },
-    "70": {
+    "69": {
       "hidden": true,
       "anim2d": false,
       "name": "Vexing Vapor",
@@ -18132,7 +18154,7 @@
       },
       "menuSection": "range"
     },
-    "71": {
+    "70": {
       "hidden": true,
       "anim2d": false,
       "name": "Wind and Fire Wheel",
@@ -18192,7 +18214,7 @@
       "menuType": "weapon",
       "menuSection": "range"
     },
-    "72": {
+    "71": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18253,7 +18275,7 @@
       "onlyX": false,
       "menuSection": "range"
     },
-    "73": {
+    "72": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18312,7 +18334,7 @@
       },
       "menuSection": "range"
     },
-    "74": {
+    "73": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18374,7 +18396,7 @@
       },
       "menuSection": "range"
     },
-    "75": {
+    "74": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18436,7 +18458,7 @@
       },
       "menuSection": "range"
     },
-    "76": {
+    "75": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18498,7 +18520,7 @@
       },
       "menuSection": "range"
     },
-    "77": {
+    "76": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18560,7 +18582,7 @@
       },
       "menuSection": "range"
     },
-    "78": {
+    "77": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18622,7 +18644,7 @@
       },
       "menuSection": "range"
     },
-    "79": {
+    "78": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18684,7 +18706,7 @@
       },
       "menuSection": "range"
     },
-    "80": {
+    "79": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18746,7 +18768,7 @@
       },
       "menuSection": "range"
     },
-    "81": {
+    "80": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18808,7 +18830,7 @@
       },
       "menuSection": "range"
     },
-    "82": {
+    "81": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18870,7 +18892,7 @@
       },
       "menuSection": "range"
     },
-    "83": {
+    "82": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18932,7 +18954,7 @@
       },
       "menuSection": "range"
     },
-    "84": {
+    "83": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -18994,7 +19016,7 @@
       },
       "menuSection": "range"
     },
-    "85": {
+    "84": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19056,7 +19078,7 @@
       },
       "menuSection": "range"
     },
-    "86": {
+    "85": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19118,7 +19140,7 @@
       },
       "menuSection": "range"
     },
-    "87": {
+    "86": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19180,7 +19202,7 @@
       },
       "menuSection": "range"
     },
-    "88": {
+    "87": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19242,7 +19264,7 @@
       },
       "menuSection": "range"
     },
-    "89": {
+    "88": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19304,7 +19326,7 @@
       },
       "menuSection": "range"
     },
-    "90": {
+    "89": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19366,7 +19388,7 @@
       },
       "menuSection": "range"
     },
-    "91": {
+    "90": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19428,7 +19450,7 @@
       },
       "menuSection": "range"
     },
-    "92": {
+    "91": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19490,7 +19512,7 @@
       },
       "menuSection": "range"
     },
-    "93": {
+    "92": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19552,7 +19574,7 @@
       },
       "menuSection": "range"
     },
-    "94": {
+    "93": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19614,7 +19636,7 @@
       },
       "menuSection": "range"
     },
-    "95": {
+    "94": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19676,7 +19698,7 @@
       },
       "menuSection": "range"
     },
-    "96": {
+    "95": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19738,7 +19760,7 @@
       },
       "menuSection": "range"
     },
-    "97": {
+    "96": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19800,7 +19822,7 @@
       },
       "menuSection": "range"
     },
-    "98": {
+    "97": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19862,7 +19884,7 @@
       },
       "menuSection": "range"
     },
-    "99": {
+    "98": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19924,7 +19946,7 @@
       },
       "menuSection": "range"
     },
-    "100": {
+    "99": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -19983,7 +20005,7 @@
       },
       "menuSection": "range"
     },
-    "101": {
+    "100": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20042,7 +20064,7 @@
       },
       "menuSection": "range"
     },
-    "102": {
+    "101": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20101,7 +20123,7 @@
       },
       "menuSection": "range"
     },
-    "103": {
+    "102": {
       "below": false,
       "hidden": true,
       "anim2d": false,
@@ -20160,7 +20182,7 @@
       },
       "menuSection": "range"
     },
-    "104": {
+    "103": {
       "hidden": true,
       "anim2d": false,
       "name": "Polar Ray",
@@ -20217,6 +20239,376 @@
       },
       "explosion": {
         "enable": false
+      },
+      "menuSection": "range"
+    },
+    "104": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Blunderbuss",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "bullet",
+      "variant": "2",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-5.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "generic",
+        "animation": "explosion",
+        "variant": "01",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "range"
+    },
+    "105": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Dragon Mouth Pistol",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "bullet",
+      "variant": "2",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-5.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "generic",
+        "animation": "explosion",
+        "variant": "01",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "range"
+    },
+    "106": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Dwarven Scattergun",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "bullet",
+      "variant": "2",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-5.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "generic",
+        "animation": "explosion",
+        "variant": "01",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "range"
+    },
+    "107": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Flingflenser",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "bullet",
+      "variant": "2",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-5.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "generic",
+        "animation": "explosion",
+        "variant": "01",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+      },
+      "menuSection": "range"
+    },
+    "108": {
+      "below": false,
+      "hidden": true,
+      "anim2d": false,
+      "name": "Spoon Gun",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": false
+      },
+      "menuType": "weapon",
+      "animation": "bullet",
+      "variant": "2",
+      "color": "orange",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "audio": {
+        "a01": {
+          "enable": true,
+          "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-5.mp3",
+          "startTime": null,
+          "volume": null,
+          "delay": null
+        },
+        "e01": {
+          "enable": false
+        }
+      },
+      "explosion": {
+        "enable": false,
+        "menuType": "generic",
+        "animation": "explosion",
+        "variant": "01",
+        "color": "",
+        "custom": false,
+        "radius": null,
+        "delay": null,
+        "below": false
+      },
+      "levels3d": {
+        "type": "",
+        "color01": "#000000",
+        "color02": "#000000",
+        "speed": null,
+        "repeat": null,
+        "arc": null,
+        "delay": null,
+        "scale": null,
+        "alpha": null,
+        "gravity": null,
+        "mass": null,
+        "life": null,
+        "emittersize": null,
+        "rate": null,
+        "addexplosion": {
+          "enable": false,
+          "color01": "#000000",
+          "color02": "#000000",
+          "speed": null,
+          "scale": null,
+          "alpha": null,
+          "gravity": null,
+          "mass": null,
+          "life": null,
+          "emittersize": null,
+          "rate": null,
+          "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
       },
       "menuSection": "range"
     }
