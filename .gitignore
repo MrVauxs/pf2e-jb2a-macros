@@ -1,4 +1,4 @@
-pf2e-jb2a-macros.lock
+*.lock
 .vscode/*
 *.code-workspace
 .history/
