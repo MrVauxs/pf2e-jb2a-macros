@@ -1,3 +1,9 @@
+# 1.13.0
+- Added Web Spell Template.
+- Improved Heal spell to account for Constructs and automatically pick the actions from the chat card (thank you @cdverrett94!).
+- Improved scatter and combination weapon sounds and animations (thank you @Janonas!).
+- Fixed a few issues with Chain Lightning / Electric Arc and made it less ear-deafening.
+
 # Version 1.12.1
 - Added `await` when getting a local macro for an animation.
 - Added effects for Darkness spell, as well as integration with Perfect Vision to automatically restrict vision. This does not automate effects on tokens, nor does it abide by the rules that tokens with Darkvision see inside the Darkness template.

@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "search": "black",
+  "search": "",
   "melee": {
     "0": {
       "hidden": true,
@@ -476,7 +476,7 @@
       "menuSection": "melee"
     },
     "7": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Axe Musket",
       "soundOnly": {
@@ -658,7 +658,7 @@
       "menuSection": "melee"
     },
     "10": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Black Powder Knuckle Dusters",
       "soundOnly": {
@@ -2119,7 +2119,7 @@
       "menuSection": "melee"
     },
     "32": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Dagger Pistol",
       "soundOnly": {
@@ -5771,7 +5771,7 @@
       "menuSection": "melee"
     },
     "87": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Knuckle Duster",
       "soundOnly": {
@@ -6626,7 +6626,7 @@
       "menuSection": "melee"
     },
     "100": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Mace Multipistol",
       "soundOnly": {
@@ -8081,7 +8081,7 @@
       "menuSection": "melee"
     },
     "122": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Piercing Wind",
       "soundOnly": {
@@ -8679,7 +8679,7 @@
       "menuSection": "melee"
     },
     "131": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Rapier Pistol",
       "soundOnly": {
@@ -11568,7 +11568,7 @@
       "menuSection": "melee"
     },
     "175": {
-      "hidden": false,
+      "hidden": true,
       "anim2d": false,
       "name": "Three Peaked Tree",
       "soundOnly": {
@@ -25933,6 +25933,37 @@
       },
       "persistType": "attachtemplate",
       "menuSection": "templates"
+    },
+    "36": {
+      "below": false,
+      "hidden": true,
+      "name": "Web",
+      "soundOnly": {
+        "enable": false
+      },
+      "macro": {
+        "enable": true,
+        "playWhen": "2",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Web",
+        "args": ""
+      },
+      "menuType": "",
+      "animation": "",
+      "variant": "",
+      "color": "",
+      "custom": false,
+      "repeat": null,
+      "delay": null,
+      "scaleX": null,
+      "scaleY": null,
+      "opacity": null,
+      "removeTemplate": false,
+      "persist": false,
+      "audio": {
+        "a01": {
+          "enable": false
+        }
+      }
     }
   },
   "auras": {},

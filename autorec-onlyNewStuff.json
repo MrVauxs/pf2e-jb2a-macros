@@ -3,7 +3,7 @@
   "search": "",
   "melee": {},
   "range": {},
-  "static": {"1": {
+  "static": {"0": {
     "below": false,
     "hidden": true,
     "anim2d": false,
@@ -40,7 +40,7 @@
     },
     "menuSection": "static"
   }},
-  "templates": {"1": {
+  "templates": {"0": {
     "below": false,
     "hidden": true,
     "name": "Darkness",
