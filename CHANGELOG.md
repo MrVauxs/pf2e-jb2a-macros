@@ -1,4 +1,4 @@
-# 1.13.0
+# Version 1.13.0
 - Added Web Spell Template.
 - Improved Heal spell to account for Constructs and automatically pick the actions from the chat card (thank you @cdverrett94!).
 - Improved scatter and combination weapon sounds and animations (thank you @Janonas!).
