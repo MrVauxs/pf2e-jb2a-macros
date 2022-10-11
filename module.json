@@ -1,6 +1,6 @@
 {
 	"id": "pf2e-jb2a-macros",
-	"title": "PF2e x JB2A Macros Compendium",
+	"title": "PF2e Animation Macros",
 	"description": "<p>A module dedicated to making PF2e shine.</p>",
 	"authors": [
 		{
@@ -56,32 +56,36 @@
 				"id": "pf2e",
 				"type": "system",
 				"compatibility": {
-					"minimum": "4.2.1"
+					"minimum": "4.2.5"
 				}
 			}
 		],
 		"requires": [
 			{
 				"id": "lib-wrapper",
-				"type": "module"
+				"type": "module",
+				"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
 			},
 			{
 				"id": "socketlib",
-				"type": "module"
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
 			},
 			{
 				"id": "advanced-macros",
-				"type": "module"
+				"type": "module",
+				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
 			},
 			{
 				"id": "sequencer",
 				"type": "module",
+				"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/manifest.json",
 				"compatibility": {
 					"minimum": "2.3.2"
 				}
 			},
 			{
-				"id": "autoanimations",
+				"manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json",				"id": "autoanimations",
 				"type": "module",
 				"compatibility": {
 					"minimum": "4.0.0"
@@ -89,9 +93,11 @@
 			},
 			{
 				"id": "warpgate",
-				"type": "module"
+				"type": "module",
+				"manifest":"https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
 			},
 			{
+				"manifest": "https://raw.githubusercontent.com/CDeenen/SoundFxLibrary/master/module.json",
 				"id": "soundfxlibrary",
 				"type": "module"
 			}
