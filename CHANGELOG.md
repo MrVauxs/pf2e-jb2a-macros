@@ -4,6 +4,8 @@
   - Also no onlyNewStuff autorec file due to this massive change in how autorecs are generated.
 - Removed Token Borders macro in favour of AA animations.
 - Added automatic Guidance Immunity on removal of Guidance effect.
+- Added semi-/automatic Rage effect when you use the Rage action.
+- Removed Dragon / Kobold Breath entries in favour of customizing it yourself on per-Actor basis.
 
 # Version 1.13.0
 - Added Web Spell Template.
