@@ -1,8 +1,8 @@
 # Version 2.0.0
-- Renamed from PF2e x JB2A Macros to PF2e Animation Macros.
+- Renamed from "PF2e x JB2A Macros Compendium" to "PF2e Animation Macros".
 - Updated autorec for Automated Animations Version 4.
   - **THIS MEANS IT IS INCOMPATIBLE WITH EARLIER VERSIONS OF AUTOMATED ANIMATIONS, LET ALONE FOUNDRY.**
-  - This also means no onlyNewStuff autorec file due to this massive change in how autorecs are generated. The file will also likely no longer exist in the future, in favour of an automated process. In the module itself.
+  - This also means no onlyNewStuff autorec file due to this massive change in how autorecs are generated. The file will also likely no longer exist in the future, in favour of an automated process in the module itself.
 - Removed Token Borders macro in favour of AA animations.
 - Added automatic Guidance Immunity on removal of Guidance effect.
 - Added a pop-up to add the Rage effect when you use the Rage action. Can be set to automatically accept in the module settings.
