@@ -25,6 +25,14 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
+	game.settings.register("pf2e-jb2a-macros", "autoAccept", {
+		scope: "client",
+		config: true,
+		name: `Automatically accept Effects`,
+		hint: "Automatically accept Effects from macros, such as adding the Rage Effect when you use the Rage action.",
+		type: Boolean,
+		default: false
+	});
 	game.settings.register("pf2e-jb2a-macros", "smallTokenScale", {
 		scope: "world",
 		config: !game.settings.get("pf2e", "tokens.autoscale"),
@@ -42,7 +50,7 @@ Hooks.on("init", () => {
 		scope: "client",
 		config: true,
 		name: `Debug Mode`,
-		hint: "Enables console logs of what PF2e x JB2A Macros module is doing.",
+		hint: "Enables console logs of what PF2e Animations Macros module is doing.",
 		type: Boolean,
 		default: false
 	});
@@ -66,7 +74,7 @@ Hooks.on("init", () => {
 Hooks.on("ready", () => {
 	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
-		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e x JB2A Macros module!`, { permanent: true });
+		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e Animations Macros module!`, { permanent: true });
 		return;
 	}
 	// Create an event for summoning macros.
@@ -82,12 +90,12 @@ Hooks.on("ready", () => {
 		game.settings.set("pf2e-jb2a-macros", "version-previous", version);
 		let previousVersion = game.settings.get("pf2e-jb2a-macros", "version-previous")
 		let updateAutorec = versionsWithAutorecUpdates.includes(version) ? `<hr>This new version has also updated the autorec. A new version can be downloaded <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/autorec.json">here</a>, and be seen <a href="https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest">here</a>.` : ""
-		ui.notifications.info(`Updated from PF2e x JB2A Macros v${previousVersion} to v${version} ${updateAutorec}`, { permanent: true });
-	} else console.log("PF2e x JB2A Macros v" + version + " loaded.");
+		ui.notifications.info(`Updated from PF2e Animations Macros v${previousVersion} to v${version} ${updateAutorec}`, { permanent: true });
+	} else console.log("PF2e Animations Macros v" + version + " loaded.");
 });
 
 function debug(msg = "", args = "") {
-	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e x JB2A Macros | ${msg}`, args)
+	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e Animations Macros | ${msg}`, args)
 }
 
 // https://stackoverflow.com/a/13627586/12227966
@@ -153,7 +161,7 @@ async function vauxsMacroHelpers(args = []) {
 // Creates dummy NPC and PC actors for summoning purposes.
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 async function createIfMissingDummy() {
-	let message = "PF2e x JB2A Macros | Missing dummy actors for summoning macros.";
+	let message = "PF2e Animations Macros | Missing dummy actors for summoning macros.";
 	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
 	// pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
 	if (!npcActor) {
@@ -401,7 +409,7 @@ Hooks.on("createChatMessage", async (data) => {
 		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
 		const degreeOfSuccess = degreeOfSuccessWithRerollHandling(data);
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
-		if (!pack) ui.notifications.error("PF2e x JB2A Macros | Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?");
+		if (!pack) ui.notifications.error("PF2e Animations Macros | Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?");
 
 		let items = data.token._actor.items.filter(i => i.name.includes("Attack Animation Template"));
 		if (Object.keys(items).length === 0) {
