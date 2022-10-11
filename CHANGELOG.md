@@ -1,11 +1,12 @@
 # Version 2.0.0
 - Updated autorec for Automated Animations Version 4.
-  - THIS MEANS IT IS INCOMPATIBLE WITH EARLIER VERSIONS OF AUTOMATED ANIMATIONS, LET ALONE FOUNDRY.
-  - Also no onlyNewStuff autorec file due to this massive change in how autorecs are generated.
+  - **THIS MEANS IT IS INCOMPATIBLE WITH EARLIER VERSIONS OF AUTOMATED ANIMATIONS, LET ALONE FOUNDRY.**
+  - This also means no onlyNewStuff autorec file due to this massive change in how autorecs are generated. The file will also likely no longer exist in the future, in favour of an automated process. In the module itself.
 - Removed Token Borders macro in favour of AA animations.
 - Added automatic Guidance Immunity on removal of Guidance effect.
-- Added semi-/automatic Rage effect when you use the Rage action.
+- Added a pop-up to add the Rage effect when you use the Rage action. Can be set to automatically accept in the module settings.
 - Removed Dragon / Kobold Breath entries in favour of customizing it yourself on per-Actor basis.
+- Removed duplicate Fist and Unarmed Attacks.
 
 # Version 1.13.0
 - Added Web Spell Template.
