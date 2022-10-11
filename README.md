@@ -9,7 +9,7 @@ Created to accompany the [Automated Animations](https://github.com/otigon/automa
 
 You can probably appropriate most of this module for other systems, I simply don't have interest in doing so.
 
-If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs)!
+If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs) or [Ko-Fi](https://ko-fi.com/mrvauxs)!
 
 ## [Installing the Module](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Installing-the-Module)
 ## [Previews](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Previews)
