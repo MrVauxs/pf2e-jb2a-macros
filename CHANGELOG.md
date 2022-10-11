@@ -1,4 +1,5 @@
 # Version 2.0.0
+- Renamed from PF2e x JB2A Macros to PF2e Animation Macros.
 - Updated autorec for Automated Animations Version 4.
   - **THIS MEANS IT IS INCOMPATIBLE WITH EARLIER VERSIONS OF AUTOMATED ANIMATIONS, LET ALONE FOUNDRY.**
   - This also means no onlyNewStuff autorec file due to this massive change in how autorecs are generated. The file will also likely no longer exist in the future, in favour of an automated process. In the module itself.
