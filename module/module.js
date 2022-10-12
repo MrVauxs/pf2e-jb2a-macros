@@ -265,7 +265,7 @@ async function createIfMissingDummy() {
 	if (message.includes("PC")) ui.notifications.info(message);
 }
 
-function alignmentStringToTraits (alignment) {
+function alignmentStringToTraits(alignment) {
 	// returns an array of traits for the alignment string
 	// e.g. "LG" -> ["Lawful", "Good"]
 	let traits = [];
@@ -323,10 +323,10 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 			packs = packs.filter(
 				// level equal or less filter
 				x => (x.level <= multiplier)
-				// traits OR filter
-				&& (traitsOr ? traitsOr.some(traitOr => x.traits.includes(traitOr)) : true)
-				// traits AND filter
-				&& (traitsAnd ? traitsAnd.some(traitAnd => x.traits.includes(traitAnd)) : true)
+					// traits OR filter
+					&& (traitsOr ? traitsOr.some(traitOr => x.traits.includes(traitOr)) : true)
+					// traits AND filter
+					&& (traitsAnd ? traitsAnd.some(traitAnd => x.traits.includes(traitAnd)) : true)
 			)
 			packs = packs.sort((a, b) => {
 				return a.level < b.level ? 1 : -1;
@@ -432,4 +432,57 @@ async function askGMforSummon(args) {
 			}
 		},
 	}).render(true);
+}
+
+async function getJSON(url) {
+	const response = await fetch(url)
+	const json = await response.json();
+	return json;
+}
+
+async function autorecUpdate() {
+	console.group("PF2e Animations Macros | Autorecognition Menu Update");
+	console.info("Started Autorecognition Menu Update.")
+	const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
+	const oldAutorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec-old.json");
+	let settings = {}
+	settings.autorecMelee = await game.settings.get('autoanimations', 'aaAutorec-melee');
+	settings.autorecRange = await game.settings.get('autoanimations', 'aaAutorec-range');
+	settings.autorecOnToken = await game.settings.get('autoanimations', 'aaAutorec-ontoken');
+	settings.autorecTemplateFX = await game.settings.get('autoanimations', 'aaAutorec-templatefx');
+	settings.autorecPreset = await game.settings.get('autoanimations', 'aaAutorec-preset');
+	settings.autorecAura = await game.settings.get('autoanimations', 'aaAutorec-aura');
+	settings.autorecAEFX = await game.settings.get('autoanimations', 'aaAutorec-aefx');
+
+	for (const key of Object.keys(settings)) {
+		// Bang Bang, you're a Boolean
+		settings[key] = settings[key].filter(x => !!x.metaData && x.metaData.name === "PF2e Animation Macros");
+	}
+
+	console.info("Done.")
+	return console.groupEnd()
+}
+
+// https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
+function deepEqual(object1, object2) {
+	const keys1 = Object.keys(object1);
+	const keys2 = Object.keys(object2);
+	if (keys1.length !== keys2.length) {
+		return false;
+	}
+	for (const key of keys1) {
+		const val1 = object1[key];
+		const val2 = object2[key];
+		const areObjects = isObject(val1) && isObject(val2);
+		if (
+			areObjects && !deepEqual(val1, val2) ||
+			!areObjects && val1 !== val2
+		) {
+			return false;
+		}
+	}
+	return true;
+}
+function isObject(object) {
+	return object != null && typeof object === 'object';
 }
