@@ -440,29 +440,6 @@ async function getJSON(url) {
 	return json;
 }
 
-async function autorecUpdate() {
-	console.group("PF2e Animations Macros | Autorecognition Menu Update");
-	console.info("Started Autorecognition Menu Update.")
-	const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
-	const oldAutorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec-old.json");
-	let settings = {}
-	settings.autorecMelee = await game.settings.get('autoanimations', 'aaAutorec-melee');
-	settings.autorecRange = await game.settings.get('autoanimations', 'aaAutorec-range');
-	settings.autorecOnToken = await game.settings.get('autoanimations', 'aaAutorec-ontoken');
-	settings.autorecTemplateFX = await game.settings.get('autoanimations', 'aaAutorec-templatefx');
-	settings.autorecPreset = await game.settings.get('autoanimations', 'aaAutorec-preset');
-	settings.autorecAura = await game.settings.get('autoanimations', 'aaAutorec-aura');
-	settings.autorecAEFX = await game.settings.get('autoanimations', 'aaAutorec-aefx');
-
-	for (const key of Object.keys(settings)) {
-		// Bang Bang, you're a Boolean
-		settings[key] = settings[key].filter(x => !!x.metaData && x.metaData.name === "PF2e Animation Macros");
-	}
-
-	console.info("Done.")
-	return console.groupEnd()
-}
-
 // https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
 function deepEqual(object1, object2) {
 	const keys1 = Object.keys(object1);
@@ -485,4 +462,77 @@ function deepEqual(object1, object2) {
 }
 function isObject(object) {
 	return object != null && typeof object === 'object';
+}
+
+async function autorecUpdate() {
+	console.group("PF2e Animations Macros | Autorecognition Menu Update");
+	console.info("Started Autorecognition Menu Update.")
+	const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
+	const oldAutorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec-old.json");
+	let settings = {}
+	settings.melee = await game.settings.get('autoanimations', 'aaAutorec-melee');
+	settings.range = await game.settings.get('autoanimations', 'aaAutorec-range');
+	settings.ontoken = await game.settings.get('autoanimations', 'aaAutorec-ontoken');
+	settings.templatefx = await game.settings.get('autoanimations', 'aaAutorec-templatefx');
+	settings.preset = await game.settings.get('autoanimations', 'aaAutorec-preset');
+	settings.aura = await game.settings.get('autoanimations', 'aaAutorec-aura');
+	settings.aefx = await game.settings.get('autoanimations', 'aaAutorec-aefx');
+
+	let updatedEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	let missingEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	let custom = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	let modified = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+
+	// Function to retrieve full version from label
+	function getFullVersion(label, array) {
+		return array.find(e => e.label === label)
+	}
+
+	for (const key of Object.keys(settings)) {
+		autorec[key].map(x => x.label).forEach(async x => {
+			// If an entry of the same name exists...
+			if (settings[key].map(x => x.label).includes(x)) {
+				const xEntry = getFullVersion(x, settings[key])
+
+				// If it does, check if it comes from PF2e Animation Macros by checking the metadata's name, using getFullVersion
+				/* (Bang Bang, you're a Boolean) */
+				if (!!xEntry.metaData && xEntry.metaData.name === "PF2e Animation Macros") {
+					// console.log(`${x} exists and is from PF2e Animation Macros.`)
+
+					// If it is, check if it's the same as from the previous version of the module.
+					const oldxEntry = getFullVersion(x, oldAutorec[key])
+					const noMetaData_oldxEntry = { ...oldxEntry, metaData: undefined }
+					const noMetaData_xEntry = { ...xEntry, metaData: undefined }
+					if (deepEqual(noMetaData_xEntry, noMetaData_oldxEntry)) {
+						// If it is, add the new version to updatedEntries.
+						updatedEntries[key].push(getFullVersion(x, autorec[key]))
+					} else {
+						// If it isn't, add the new version to modified.
+						modified[key].push(xEntry)
+					}
+				} else {
+					// console.log(`${x} exists and is not from PF2e Animation Macros.`)
+					custom[key].push(xEntry)
+				}
+			} else {
+				// If it does not, just add it.
+				missingEntries[key].push(getFullVersion(x, autorec[key]))
+			}
+		});
+	}
+	console.info("The following effects did not exist before and have been added.", missingEntries)
+	console.info("The following effects have been updated from a previous version of 'PF2e Animation Macros'.", updatedEntries)
+	console.info("The following effects have not been added due to them already existing from an unknown source, if you want the 'PF2e Animation Macros' version, delete them.", custom)
+	console.info("The following effects have not been added due to them already existing and having been modified from the original version of the module, or are severely outdated.", modified)
+
+	// Merge all the arrays into one.
+	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	for (const key of Object.keys(settings)) {
+		console.log("Updating settings...")
+		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...modified[key]]
+		game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
+		console.log(`Updated aaAutorec-${key}...`)
+	}
+	console.info("Done.")
+	console.groupEnd()
 }
