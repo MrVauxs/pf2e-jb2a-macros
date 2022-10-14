@@ -1,0 +1,12 @@
+.animation-macros-list {
+    padding: 5px;
+    background-color: #eee;
+    display: inline-block;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.animation-macros-text {
+    float: left;
+    overflow: hidden;
+}

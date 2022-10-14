@@ -20,6 +20,9 @@
 	"scripts": [
 		"module/module.js"
 	],
+	"styles": [
+		"styles/pf2e-animation-macros.css"
+	],
 	"manifestPlusVersion": "1.2.0",
 	"packs": [
 		{
@@ -85,7 +88,8 @@
 				}
 			},
 			{
-				"manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json",				"id": "autoanimations",
+				"manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json",
+				"id": "autoanimations",
 				"type": "module",
 				"compatibility": {
 					"minimum": "4.0.0"
@@ -94,7 +98,7 @@
 			{
 				"id": "warpgate",
 				"type": "module",
-				"manifest":"https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
+				"manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
 			},
 			{
 				"manifest": "https://raw.githubusercontent.com/CDeenen/SoundFxLibrary/master/module.json",
@@ -105,13 +109,13 @@
 	},
 	"media": [
 		{
-		  	"type": "icon",
-		  	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/logo.png?raw=true",
+			"type": "icon",
+			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/logo.png?raw=true",
 			"caption": "Pathfinder 2e and Foundry logo + JB2A logo Macros with a gold/yellow tape in the upper left corner saying REQUIRES AUTOMATED ANIMATIONS across it."
 		},
 		{
-		  	"type": "cover",
-		  	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/cover.png?raw=true",
+			"type": "cover",
+			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/cover.png?raw=true",
 			"caption": "Pathfinder 2e and Foundry logo + JB2A logo Macros with a gold/yellow tape in the upper left corner saying REQUIRES AUTOMATED ANIMATIONS across it."
 		}
 	],
