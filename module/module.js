@@ -84,6 +84,7 @@ Hooks.on("ready", () => {
 		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e Animations Macros module!`, { permanent: true });
 		return;
 	}
+
 	// Create an event for summoning macros.
 	warpgate.event.watch("askGMforSummon", (eventData) => { askGMforSummon(eventData) })
 

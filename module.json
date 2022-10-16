@@ -93,7 +93,7 @@
 				"id": "autoanimations",
 				"type": "module",
 				"compatibility": {
-					"minimum": "4.0.0"
+					"minimum": "4.0.10"
 				}
 			},
 			{

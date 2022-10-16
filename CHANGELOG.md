@@ -1,3 +1,7 @@
+# Version 2.1.0
+- Added the Autorecognition Menu Update Menu, available in Settings. It is from now on your go-to way to update PF2e animations in Automated Animations.
+- Fixed and perhaps added a bunch of effects. Unfortunately the list of them is lost to time spent on the above.
+
 # Version 2.0.0
 - Renamed from "PF2e x JB2A Macros Compendium" to "PF2e Animation Macros".
 - Updated autorec for Automated Animations Version 4.
