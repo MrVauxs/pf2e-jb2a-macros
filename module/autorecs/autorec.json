@@ -94517,9 +94517,9 @@
         "video": {
           "dbSection": "templatefx",
           "menuType": "circle",
-          "animation": "horror",
-          "variant": "01",
-          "color": "darkteal",
+          "animation": "magicsign",
+          "variant": "abjuration",
+          "color": "blue",
           "enableCustom": false
         }
       },
@@ -94646,6 +94646,11 @@
           "enableCustom": false,
           "customPath": ""
         }
+      },
+      "metaData": {
+        "name": "PF2e Animation Macros",
+        "version": 2,
+        "moduleVersion": "2.1.0"
       }
     },
     {

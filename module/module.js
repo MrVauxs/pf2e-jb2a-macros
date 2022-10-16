@@ -478,8 +478,7 @@ async function generateAutorecUpdate() {
 				const xEntry = getFullVersion(x, settings[key])
 
 				/* (Bang Bang, you're a Boolean) */
-				console.log(xEntry.metaData.default)
-				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData.default)) {
+				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData?.default)) {
 					// Entry is from PF2e Animation Macros, but the same version. Skip.
 					if (xEntry?.metaData?.version === getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
 
