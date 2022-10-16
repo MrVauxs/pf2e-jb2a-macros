@@ -8,6 +8,7 @@
 			"discord": "MrVauxs#8622",
 			"twitter": "@ThatVauxs",
 			"patreon": "mrvauxs",
+			"ko-fi": "mrvauxs",
 			"flags": {}
 		}
 	],
@@ -26,7 +27,7 @@
 	"manifestPlusVersion": "1.2.0",
 	"packs": [
 		{
-			"label": "PF2e x JB2A Macros",
+			"label": "PF2e Animation Macros",
 			"name": "Macros",
 			"path": "packs/macros.db",
 			"system": "pf2e",
@@ -35,7 +36,7 @@
 			"flags": {}
 		},
 		{
-			"label": "PF2e x JB2A Actors",
+			"label": "PF2e Animation Actors",
 			"name": "Actors",
 			"path": "packs/actors.db",
 			"system": "pf2e",
@@ -44,7 +45,7 @@
 			"flags": {}
 		},
 		{
-			"label": "PF2e x JB2A Actions",
+			"label": "PF2e Animation Actions",
 			"name": "Actions",
 			"path": "packs/actions.db",
 			"system": "pf2e",

@@ -67,6 +67,14 @@ Hooks.on("init", () => {
 		type: String,
 		default: ""
 	});
+	game.settings.registerMenu("pf2e-jb2a-macros", "autorecUpdate", {
+		name: "Autorecognition Menu Update",
+		label: "Update Menu",
+		hint: "Check if there are any updates to be made to your animations?",
+		icon: "fa-solid fa-wrench",
+		type: autorecUpdateFormApplication,
+		restricted: true
+	});
 });
 
 Hooks.on("ready", () => {
@@ -547,33 +555,46 @@ async function autorecUpdate() {
 	customEntriesList = customEntriesList.flat()
 	modifiedEntriesList = modifiedEntriesList.flat()
 
-	new Dialog({
-		title: "PF2e Animation Macros",
-		content: `${!missingEntriesList.length && !updatedEntriesList.length && !customEntriesList.length && !modifiedEntriesList.length ? "No new effects were found." : `
-		${missingEntriesList.length ? `<p class="animation-macros-text">The following effects did not exist before and have been added. <ul class="animation-macros-list">${missingEntriesList.map(x => `<li>${x}</li>`).join("")}</ul></p>` : ""}
-		${updatedEntriesList.length ? `<p class="animation-macros-text">The following effects have been updated from a previous version of 'PF2e Animation Macros'. <ul class="animation-macros-list">${updatedEntriesList.map(x => `<li>${x}</li>`).join("")}</ul></p>` : ""}
-		${customEntriesList.length ? `<p class="animation-macros-text">The following effects have not been added due to them already existing from an unknown source, if you want the 'PF2e Animation Macros' version, delete them. <ul class="animation-macros-list">${customEntriesList.map(x => `<li>${x}</li>`).join("")}</ul></p>` : ""}
-		${modifiedEntriesList.length ? `<p class="animation-macros-text">The following effects have not been added due to them already existing and having been modified from the original version of the module, or are severely outdated. <ul class="animation-macros-list">${modifiedEntriesList.map(x => `<li>${x}</li>`).join("")}</ul></p>` : ""}
-		`}`,
-		buttons: {
-			button1: {
-				label: "Accept",
-				callback: async () => {
-					// Merge all the arrays into one.
-					let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
-					for (const key of Object.keys(settings)) {
-						console.log("Updating settings...")
-						newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...modified[key], ...same[key]]
-						game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
-						console.log(`Updated aaAutorec-${key}...`)
-					}
-				},
-				icon: `<i class="fas fa-check"></i>`
-			},
-			button2: {
-				label: "Cancel",
-				icon: `<i class="fas fa-times"></i>`
-			}
-		},
-	}).render(true);
+	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	for (const key of Object.keys(settings)) {
+		// Merge all the arrays into one.
+		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...modified[key], ...same[key]]
+	}
+	return newSettings
 }
+
+class autorecUpdateFormApplication extends FormApplication {
+	constructor(exampleOption) {
+		super();
+		this.exampleOption = exampleOption;
+	}
+
+	static get defaultOptions() {
+		return mergeObject(super.defaultOptions, {
+			classes: ['form'],
+			popOut: true,
+			template: `modules/pf2e-jb2a-macros/module/autorecUpdateMenu.html`,
+			id: 'autorecUpdateMenu',
+			title: 'PF2e Animations Update',
+		});
+	}
+
+	async getData() {
+		// Send data to the template
+		return {
+			updates: await autorecUpdate(),
+			msg: this.exampleOption,
+			color: 'red',
+		};
+	}
+
+	activateListeners(html) {
+		super.activateListeners(html);
+	}
+
+	async _updateObject(event, formData) {
+		console.log(formData.exampleInput);
+	}
+}
+
+window.autorecUpdateFormApplication = autorecUpdateFormApplication;
