@@ -448,35 +448,9 @@ async function getJSON(url) {
 	return json;
 }
 
-// https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
-function deepEqual(object1, object2) {
-	const keys1 = Object.keys(object1);
-	const keys2 = Object.keys(object2);
-	if (keys1.length !== keys2.length) {
-		return false;
-	}
-	for (const key of keys1) {
-		const val1 = object1[key];
-		const val2 = object2[key];
-		const areObjects = isObject(val1) && isObject(val2);
-		if (
-			areObjects && !deepEqual(val1, val2) ||
-			!areObjects && val1 !== val2
-		) {
-			return false;
-		}
-	}
-	return true;
-}
-function isObject(object) {
-	return object != null && typeof object === 'object';
-}
-
-async function autorecUpdate() {
-	console.group("PF2e Animations Macros | Autorecognition Menu Update");
-	console.info("Started Autorecognition Menu Update.")
+async function generateAutorecUpdate() {
+	console.group("PF2e Animations Macros | Autorecognition Menu Check");
 	const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
-	const oldAutorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec-old.json");
 	let settings = {}
 	settings.melee = await game.settings.get('autoanimations', 'aaAutorec-melee');
 	settings.range = await game.settings.get('autoanimations', 'aaAutorec-range');
@@ -489,7 +463,6 @@ async function autorecUpdate() {
 	let updatedEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let missingEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let custom = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
-	let modified = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let same = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 
 	// Function to retrieve full version from label
@@ -503,70 +476,96 @@ async function autorecUpdate() {
 			if (settings[key].map(x => x.label).includes(x)) {
 				const xEntry = getFullVersion(x, settings[key])
 
-				// If it does, check if it comes from PF2e Animation Macros by checking the metadata's name, using getFullVersion
 				/* (Bang Bang, you're a Boolean) */
-				if (!!xEntry.metaData && xEntry.metaData.name === "PF2e Animation Macros") {
-					// console.log(`${x} exists and is from PF2e Animation Macros.`)
-
-					// If they are the same version, add it to same, which just skips ahead of everything.
+				console.log(xEntry.metaData.default)
+				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData.default)) {
+					// Entry is from PF2e Animation Macros, but the same version. Skip.
 					if (xEntry?.metaData?.version === getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
 
-					// If it is, check if it's the same as from the previous version of the module.
-					const oldxEntry = getFullVersion(x, oldAutorec[key])
-					const noMetaData_oldxEntry = { ...oldxEntry, metaData: undefined }
-					const noMetaData_xEntry = { ...xEntry, metaData: undefined }
-					if (deepEqual(noMetaData_xEntry, noMetaData_oldxEntry)) {
-						// If it is, add the new version to updatedEntries.
-						return updatedEntries[key].push(getFullVersion(x, autorec[key]))
-					} else {
-						// If it isn't, add the new version to modified.
-						return modified[key].push(xEntry)
-					}
+					// Entry is from PF2e Animation Macros, but outdated. Update.
+					return updatedEntries[key].push(getFullVersion(x, autorec[key]))
 				} else {
-					// console.log(`${x} exists and is not from PF2e Animation Macros.`)
+					// Entry does exist but it's not from PF2e Animation Macros. Add it to custom.
 					return custom[key].push(xEntry)
 				}
 			} else {
-				// If it does not, just add it.
+				// Entry does not exist, add it.
 				return missingEntries[key].push(getFullVersion(x, autorec[key]))
 			}
 		});
 	}
-	console.info("The following effects did not exist before and have been added.", missingEntries)
+	console.info("The following effects did not exist before.", missingEntries)
 	console.info("The following effects have no updates.", same)
-	console.info("The following effects have been updated from a previous version of 'PF2e Animation Macros'.", updatedEntries)
-	console.info("The following effects have not been added due to them already existing from an unknown source, if you want the 'PF2e Animation Macros' version, delete them.", custom)
-	console.info("The following effects have not been added due to them already existing and having been modified from the original version of the module, or are severely outdated.", modified)
+	console.info("The following effects can be updated from a previous version of 'PF2e Animation Macros'.", updatedEntries)
+	console.info("The following effects cannot be added due to them already existing from an unknown source. If you want the 'PF2e Animation Macros' version, delete them.", custom)
 	console.groupEnd()
 
 	// Create a list of all effects done.
 	let missingEntriesList = []
 	let updatedEntriesList = []
 	let customEntriesList = []
-	let modifiedEntriesList = []
 	for (const key of Object.keys(settings)) {
 		missingEntriesList.push(missingEntries[key].map(x => x.label))
 		updatedEntriesList.push(updatedEntries[key].map(x => x.label))
 		customEntriesList.push(custom[key].map(x => x.label))
-		modifiedEntriesList.push(modified[key].map(x => x.label))
 	}
 	missingEntriesList = missingEntriesList.flat()
 	updatedEntriesList = updatedEntriesList.flat()
 	customEntriesList = customEntriesList.flat()
-	modifiedEntriesList = modifiedEntriesList.flat()
 
 	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	for (const key of Object.keys(settings)) {
 		// Merge all the arrays into one.
-		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...modified[key], ...same[key]]
+		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key]]
 	}
-	return newSettings
+	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList}
+}
+
+async function generateAutorecUpdateHTML() {
+	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList} = await generateAutorecUpdate()
+	let html = ``
+
+	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length) {
+		if (missingEntriesList.length) {
+			html += `
+			<div class="pf2e-animations-autorec-update-child">
+				<p>The following effects are going to be added to your Auto-Recognition settings.</p>
+				<ul class="pf2e-animations-autorec-update-ul">
+					${missingEntriesList.map(x => `<li>${x}</li>`).join("")}
+				</ul>
+			</div>
+			`
+		}
+		if (customEntriesList.length) {
+			html += `
+			<div class="pf2e-animations-autorec-update-child">
+				<p>The following effects won't be added due to them already existing from an unknown source.</p>
+				<p>If you want the 'PF2e Animation Macros' version, delete them from your Autorecognition Menu.</p>
+				<ul class="pf2e-animations-autorec-update-ul">
+					${customEntriesList.map(x => `<li>${x}</li>`).join("")}
+				</ul>
+			</div>
+			`
+		}
+		if (updatedEntriesList.length) {
+			html += `
+			<div class="pf2e-animations-autorec-update-child">
+				<p>The following effects will be updated from a previous version of 'PF2e Animation Macros' (or from Automated Animations default menu).</p>
+				<ul class="pf2e-animations-autorec-update-ul">
+					${updatedEntriesList.map(x => `<li>${x}</li>`).join("")}
+				</ul>
+			</div>
+			`
+		}
+	} else {
+		html += `<p style="text-align: center">No updates were found.</p>`
+	}
+	return html
 }
 
 class autorecUpdateFormApplication extends FormApplication {
-	constructor(exampleOption) {
+	constructor() {
 		super();
-		this.exampleOption = exampleOption;
 	}
 
 	static get defaultOptions() {
@@ -581,19 +580,25 @@ class autorecUpdateFormApplication extends FormApplication {
 
 	async getData() {
 		// Send data to the template
-		return {
-			updates: await autorecUpdate(),
-			msg: this.exampleOption,
-			color: 'red',
-		};
+		return { literallyEverything: await generateAutorecUpdateHTML() };
 	}
 
 	activateListeners(html) {
 		super.activateListeners(html);
 	}
 
-	async _updateObject(event, formData) {
-		console.log(formData.exampleInput);
+	async _updateObject(event) {
+		if (event.submitter.name === "update") {
+			console.group("PF2e Animations Macros | Autorecognition Menu Update");
+			console.log("Updating settings...");
+			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList} = await generateAutorecUpdate();
+			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length)) return;
+			for (const key of Object.keys(newSettings)) {
+				await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
+				console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
+			};
+			ui.notifications.info("PF2e Animations Macros | Autorecognition Menu Updated");
+		}
 	}
 }
 

@@ -1,12 +1,19 @@
-.animation-macros-list {
+.pf2e-animations-autorec-update-child {
+    flex: 1;
+    border: 2px solid #6f6c66;
     padding: 5px;
-    background-color: #eee;
-    display: inline-block;
-    max-height: 200px;
-    overflow: scroll;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
-.animation-macros-text {
-    float: left;
-    overflow: hidden;
+.pf2e-animations-autorec-update-child:first-child {
+    padding-right: 10px;
+}
+
+.pf2e-animations-autorec-update-ul {
+    column-count: 2;
+}
+
+.pf2e-animations-autorec-update-buttons {
+    height: 36px;
 }
