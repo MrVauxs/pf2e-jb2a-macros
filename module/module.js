@@ -465,6 +465,7 @@ async function generateAutorecUpdate() {
 	let missingEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let custom = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let same = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	let customNew = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 
 	// Function to retrieve full version from label
 	function getFullVersion(label, array) {
@@ -493,7 +494,14 @@ async function generateAutorecUpdate() {
 				return missingEntries[key].push(getFullVersion(x, autorec[key]))
 			}
 		});
+		settings[key].map(x => x.label).forEach(async y => {
+			if (!autorec[key].map(x => x.label).some(e => e === y)) {
+				// Entry does not exist in autorec.json. Add it to customNew.
+				return customNew[key].push(getFullVersion(y, settings[key]))
+			}
+		})
 	}
+	console.info("The following effects do not exist in PF2e Animation Macros.", customNew)
 	console.info("The following effects did not exist before.", missingEntries)
 	console.info("The following effects have no updates.", same)
 	console.info("The following effects can be updated from a previous version of 'PF2e Animation Macros'.", updatedEntries)
@@ -516,7 +524,7 @@ async function generateAutorecUpdate() {
 	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	for (const key of Object.keys(settings)) {
 		// Merge all the arrays into one.
-		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key]]
+		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
 	}
 	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList}
 }
