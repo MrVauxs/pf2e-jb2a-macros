@@ -1,3 +1,6 @@
+# Version 2.1.1
+- Fixed bug in Autorecognition Menu Update Menu where it "updated" entries that contained the same name (ex. Fang, Magic Fang, Fangs === Fang).
+
 # Version 2.1.0
 - Added the Autorecognition Menu Update Menu, available in Settings. It is from now on your go-to way to update PF2e animations in Automated Animations.
 - Fixed and perhaps added a bunch of effects. Unfortunately the list of them is lost to time spent on the above.
