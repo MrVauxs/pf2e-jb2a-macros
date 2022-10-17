@@ -474,7 +474,7 @@ async function generateAutorecUpdate() {
 	for (const key of Object.keys(settings)) {
 		autorec[key].map(x => x.label).forEach(async x => {
 			// If an entry of the same name exists...
-			if (settings[key].map(x => x.label).includes(x)) {
+			if (settings[key].map(x => x.label).some(e => e === x)) {
 				const xEntry = getFullVersion(x, settings[key])
 
 				/* (Bang Bang, you're a Boolean) */
@@ -523,7 +523,7 @@ async function generateAutorecUpdate() {
 
 async function generateAutorecUpdateHTML() {
 	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList} = await generateAutorecUpdate()
-	let html = ``
+	let html = `<p style="text-align: center"><b>Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE.</b></p>`
 
 	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length) {
 		if (missingEntriesList.length) {
