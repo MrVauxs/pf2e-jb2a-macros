@@ -1,3 +1,6 @@
+# Version 2.1.2
+- Fixed a bug where completely custom animations that do not exist in PF2e Animation Macros were deleted upon using the Update Menu.
+
 # Version 2.1.1
 - Fixed bug in Autorecognition Menu Update Menu where it "updated" entries that contained the same name (ex. Fang, Magic Fang, Fangs === Fang).
 
