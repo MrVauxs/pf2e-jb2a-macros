@@ -158,7 +158,8 @@ Hooks.on("createChatMessage", async (data) => {
 });
 
 Hooks.on("preUpdateItem", (data, changes) => {
-	return runJB2Apf2eMacro('Equipment Changes', { data, changes })
+	debug("Running Equipment Changes Macro.", { data, changes });
+	runJB2Apf2eMacro('Equipment Changes', { data, changes })
 });
 
 function debug(msg = "", args = "") {
@@ -187,7 +188,7 @@ async function runJB2Apf2eMacro(
 	args,
 	compendiumName = "pf2e-jb2a-macros.Macros"
 ) {
-	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros")
+	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros");
 	const pack = game.packs.get(compendiumName);
 	if (pack) {
 		const macro_data = useLocal ? await game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.name === macroName)?.toObject();
@@ -195,6 +196,7 @@ async function runJB2Apf2eMacro(
 		if (macro_data) {
 			const temp_macro = new Macro(macro_data);
 			temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
+			debug(`Running ${macroName} macro`, { macro_data, temp_macro, args });
 			temp_macro.execute(args);
 		} else {
 			ui.notifications.error("Macro " + macroName + " not found");
@@ -218,7 +220,8 @@ function degreeOfSuccessWithRerollHandling(message) {
 }
 
 // Get token data and token scale.
-async function vauxsMacroHelpers(args = []) {
+function vauxsMacroHelpers(args) {
+	debug("Vaux's Macro Helpers", args);
 	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 	if (!tokenD) { ui.notifications.error("No source token found."); return; }
 	const tokenScale = tokenD.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
@@ -480,8 +483,8 @@ async function generateAutorecUpdate() {
 
 				/* (Bang Bang, you're a Boolean) */
 				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData?.default)) {
-					// Entry is from PF2e Animation Macros, but the same version. Skip.
-					if (xEntry?.metaData?.version === getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
+					// Entry is from PF2e Animation Macros, but the same or higher version. Skip.
+					if (xEntry?.metaData?.version >= getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
 
 					// Entry is from PF2e Animation Macros, but outdated. Update.
 					return updatedEntries[key].push(getFullVersion(x, autorec[key]))
@@ -566,7 +569,7 @@ async function generateAutorecUpdateHTML() {
 			`
 		}
 	} else {
-		html += `<p style="text-align: center">No updates were found.</p>`
+		html = `<p style="text-align: center">No updates were found.</p>`
 	}
 	return html
 }
