@@ -1,3 +1,7 @@
+# Version 2.2.0
+- Fixed active effect animations and Humanoid Form not working with the new A-A v4.0.11
+- Added Brain Drain
+
 # Version 2.1.2
 - Fixed a bug where completely custom animations that do not exist in PF2e Animation Macros were deleted upon using the Update Menu.
 
