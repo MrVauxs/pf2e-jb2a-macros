@@ -85,6 +85,11 @@ Hooks.on("ready", () => {
 		return;
 	}
 
+	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
+		ui.notifications.info(`PF2e Animations Macros v${game.modules.get("pf2e-jb2a-macros").version} loaded. Please check if you don't have new animations to be added to your autorecognition menu!`)
+		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
+	}
+
 	// Create an event for summoning macros.
 	warpgate.event.watch("askGMforSummon", (eventData) => { askGMforSummon(eventData) })
 
