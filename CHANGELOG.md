@@ -1,12 +1,12 @@
 # Version 2.2.1
-- Added removal of outdated effects in the Autorecognition Update Menu
-- Added Black Tentacles attack animation
+- Added removal of outdated effects in the Autorecognition Update Menu.
+- Added Black Tentacles attack animation.
 - Moved most Bombs to Autorec Menu. Only Vexing Vapors and Dread Ampoule remain in macros due to their special cloud effect.
 - Fixed Add Effects macro, which affected Guidance and Rage (the Action).
 
 # Version 2.2.0
 - Fixed active effect animations and Humanoid Form not working with the new A-A v4.0.11
-- Added Brain Drain
+- Added Brain Drain.
 
 # Version 2.1.2
 - Fixed a bug where completely custom animations that do not exist in PF2e Animation Macros were deleted upon using the Update Menu.
