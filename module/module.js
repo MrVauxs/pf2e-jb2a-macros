@@ -474,6 +474,7 @@ async function generateAutorecUpdate() {
 	let custom = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let same = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let customNew = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	let removed = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 
 	// Function to retrieve full version from label
 	function getFullVersion(label, array) {
@@ -502,13 +503,19 @@ async function generateAutorecUpdate() {
 				return missingEntries[key].push(getFullVersion(x, autorec[key]))
 			}
 		});
-		settings[key].map(x => x.label).forEach(async y => {
-			if (!autorec[key].map(x => x.label).some(e => e === y)) {
-				// Entry does not exist in autorec.json. Add it to customNew.
-				return customNew[key].push(getFullVersion(y, settings[key]))
+		settings[key].map(x => { return {label: x.label, metaData: x.metaData} }).forEach(async y => {
+			if (!autorec[key].map(x => { return {label: x.label, metaData: x.metaData} }).some(e => e.label === y.label)) {
+				if (y.metaData.name === "PF2e Animation Macros") {
+					// Entry does not exist in autorec, but is from PF2e Animation Macros. Add them to removed.
+					return removed[key].push(getFullVersion(y.label, settings[key]))
+				} else {
+					// Entry does not exist in autorec.json. Add it to customNew.
+					return customNew[key].push(getFullVersion(y.label, settings[key]));
+				}
 			}
 		})
 	}
+	console.info("The following effects no LONGER exist in PF2e Animation Macros. They will be DELETED.", removed)
 	console.info("The following effects do not exist in PF2e Animation Macros.", customNew)
 	console.info("The following effects did not exist before.", missingEntries)
 	console.info("The following effects have no updates.", same)
@@ -520,13 +527,16 @@ async function generateAutorecUpdate() {
 	let missingEntriesList = []
 	let updatedEntriesList = []
 	let customEntriesList = []
+	let removedEntriesList = []
 	for (const key of Object.keys(settings)) {
 		missingEntriesList.push(missingEntries[key].map(x => x.label))
 		updatedEntriesList.push(updatedEntries[key].map(x => x.label))
+		removedEntriesList.push(removed[key].map(x => x.label))
 		customEntriesList.push(custom[key].map(x => x.label))
 	}
 	missingEntriesList = missingEntriesList.flat()
 	updatedEntriesList = updatedEntriesList.flat()
+	removedEntriesList = removedEntriesList.flat()
 	customEntriesList = customEntriesList.flat()
 
 	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
@@ -534,14 +544,24 @@ async function generateAutorecUpdate() {
 		// Merge all the arrays into one.
 		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
 	}
-	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList}
+	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList}
 }
 
 async function generateAutorecUpdateHTML() {
-	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList} = await generateAutorecUpdate()
+	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate()
 	let html = `<p style="text-align: center"><b>Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE.</b></p>`
 
-	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length) {
+	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length) {
+		if (removedEntriesList.length) {
+			html += `
+			<div class="pf2e-animations-autorec-update-child">
+				<p>The following effects will be DELETED from a previous version of 'PF2e Animation Macros'.</p>
+				<ul class="pf2e-animations-autorec-update-ul">
+					${removedEntriesList.map(x => `<li>${x}</li>`).join("")}
+				</ul>
+			</div>
+			`
+		}
 		if (missingEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
@@ -607,8 +627,8 @@ class autorecUpdateFormApplication extends FormApplication {
 		if (event.submitter.name === "update") {
 			console.group("PF2e Animations Macros | Autorecognition Menu Update");
 			console.log("Updating settings...");
-			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList} = await generateAutorecUpdate();
-			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length)) return;
+			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate();
+			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
 			for (const key of Object.keys(newSettings)) {
 				await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
 				console.log(`Updated aaAutorec-${key} with:`, newSettings[key])

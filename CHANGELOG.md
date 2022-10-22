@@ -1,3 +1,8 @@
+# Version 2.2.1
+- Added removal of outdated effects in the Autorecognition Update Menu
+- Added Black Tentacles attack animation
+- Moved most Bombs to Autorec Menu. Only Vexing Vapors and Dread Ampoule remain in macros due to their special cloud effect.
+
 # Version 2.2.0
 - Fixed active effect animations and Humanoid Form not working with the new A-A v4.0.11
 - Added Brain Drain
@@ -6,10 +11,10 @@
 - Fixed a bug where completely custom animations that do not exist in PF2e Animation Macros were deleted upon using the Update Menu.
 
 # Version 2.1.1
-- Fixed bug in Autorecognition Menu Update Menu where it "updated" entries that contained the same name (ex. Fang, Magic Fang, Fangs === Fang).
+- Fixed bug in Autorecognition Update Menu where it "updated" entries that contained the same name (ex. Fang, Magic Fang, Fangs === Fang).
 
 # Version 2.1.0
-- Added the Autorecognition Menu Update Menu, available in Settings. It is from now on your go-to way to update PF2e animations in Automated Animations.
+- Added the Autorecognition Update Menu, available in Settings. It is from now on your go-to way to update PF2e animations in Automated Animations.
 - Fixed and perhaps added a bunch of effects. Unfortunately the list of them is lost to time spent on the above.
 
 # Version 2.0.0
