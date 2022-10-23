@@ -626,15 +626,18 @@ class autorecUpdateFormApplication extends FormApplication {
 	}
 
 	async _updateObject(event) {
+		$( ".pf2e-animations-autorec-update-buttons" ).attr("disabled", true)
 		if (event.submitter.name === "update") {
 			console.group("PF2e Animations Macros | Autorecognition Menu Update");
-			console.log("Updating settings...");
 			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate();
 			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
+			ui.notifications.info("PF2e Animations Macros | Updating Autorecognition Menu...");
 			for (const key of Object.keys(newSettings)) {
 				await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
 				console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
 			};
+			// Doesn't work?
+			// AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings));
 			ui.notifications.info("PF2e Animations Macros | Autorecognition Menu Updated");
 		}
 	}
