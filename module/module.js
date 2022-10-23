@@ -505,7 +505,7 @@ async function generateAutorecUpdate() {
 		});
 		settings[key].map(x => { return {label: x.label, metaData: x.metaData} }).forEach(async y => {
 			if (!autorec[key].map(x => { return {label: x.label, metaData: x.metaData} }).some(e => e.label === y.label)) {
-				if (y.metaData.name === "PF2e Animation Macros") {
+				if (y?.metaData?.name === "PF2e Animation Macros") {
 					// Entry does not exist in autorec, but is from PF2e Animation Macros. Add them to removed.
 					return removed[key].push(getFullVersion(y.label, settings[key]))
 				} else {
@@ -529,20 +529,22 @@ async function generateAutorecUpdate() {
 	let customEntriesList = []
 	let removedEntriesList = []
 	for (const key of Object.keys(settings)) {
-		missingEntriesList.push(missingEntries[key].map(x => x.label))
-		updatedEntriesList.push(updatedEntries[key].map(x => x.label))
-		removedEntriesList.push(removed[key].map(x => x.label))
-		customEntriesList.push(custom[key].map(x => x.label))
+		missingEntriesList.push(missingEntries[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
+		updatedEntriesList.push(updatedEntries[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
+		removedEntriesList.push(removed[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
+		customEntriesList.push(custom[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 	}
-	missingEntriesList = missingEntriesList.flat()
-	updatedEntriesList = updatedEntriesList.flat()
-	removedEntriesList = removedEntriesList.flat()
-	customEntriesList = customEntriesList.flat()
+	missingEntriesList = missingEntriesList.flat().sort()
+	updatedEntriesList = updatedEntriesList.flat().sort()
+	removedEntriesList = removedEntriesList.flat().sort()
+	customEntriesList = customEntriesList.flat().sort()
 
+	let newSettingsDirty = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	for (const key of Object.keys(settings)) {
 		// Merge all the arrays into one.
-		newSettings[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
+		newSettingsDirty[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
+		newSettings[key] = [...new Map(newSettingsDirty[key].map(v => [v.id, v])).values()].sort((a, b) => a.label.localeCompare(b.label))
 	}
 	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList}
 }
