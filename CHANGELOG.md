@@ -1,5 +1,5 @@
 # Version 2.2.2
-- Improved Autorec Update Menu and fixed a major bug.
+- Improved Autorecognition Update Menu and fixed a major bug.
   - It now sorts entries by label.
   - It now shows the type of entry (melee, ranged, ontoken, etc.).
   - Fixed a bug where the auto-deletion process would error on (and as such, practically delete) animations without metaData.
