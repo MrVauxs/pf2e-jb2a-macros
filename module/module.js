@@ -461,13 +461,13 @@ async function generateAutorecUpdate() {
 	console.group("PF2e Animations Macros | Autorecognition Menu Check");
 	const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
 	let settings = {}
-	settings.melee = await game.settings.get('autoanimations', 'aaAutorec-melee');
-	settings.range = await game.settings.get('autoanimations', 'aaAutorec-range');
-	settings.ontoken = await game.settings.get('autoanimations', 'aaAutorec-ontoken');
-	settings.templatefx = await game.settings.get('autoanimations', 'aaAutorec-templatefx');
-	settings.preset = await game.settings.get('autoanimations', 'aaAutorec-preset');
-	settings.aura = await game.settings.get('autoanimations', 'aaAutorec-aura');
-	settings.aefx = await game.settings.get('autoanimations', 'aaAutorec-aefx');
+	settings.melee = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-melee').map(v => [v.id, v])).values()]
+	settings.range = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-range').map(v => [v.id, v])).values()]
+	settings.ontoken = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-ontoken').map(v => [v.id, v])).values()]
+	settings.templatefx = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-templatefx').map(v => [v.id, v])).values()]
+	settings.preset = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-preset').map(v => [v.id, v])).values()]
+	settings.aura = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-aura').map(v => [v.id, v])).values()]
+	settings.aefx = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-aefx').map(v => [v.id, v])).values()]
 
 	let updatedEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let missingEntries = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
