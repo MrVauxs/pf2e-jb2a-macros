@@ -1,5 +1,5 @@
 # Version 2.2.3
-- Fixed module.json
+- Fixed module.json.
 
 # Version 2.2.2
 - Improved the Autorecognition Update Menu and fixed a major bug.
