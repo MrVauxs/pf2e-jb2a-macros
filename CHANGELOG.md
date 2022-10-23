@@ -3,6 +3,7 @@
   - It now sorts entries by label.
   - It now shows the type of entry (melee, ranged, ontoken, etc.).
   - Fixed a bug where the auto-deletion process would error on (and as such, practically delete) animations without metaData.
+  - Added a (hopefully not needed) de-duplication process based on entry IDs.
 
 # Version 2.2.1
 - Added removal of outdated effects in the Autorecognition Update Menu.
