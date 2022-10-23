@@ -546,6 +546,8 @@ async function generateAutorecUpdate() {
 		newSettingsDirty[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
 		newSettings[key] = [...new Map(newSettingsDirty[key].map(v => [v.id, v])).values()].sort((a, b) => a.label.localeCompare(b.label))
 	}
+	// Adds the current Autorec version into the menu to ensure it will not get wiped going through the Autorec Merge scripts
+	newSettings.version = await game.settings.get('autoanimations', 'aaAutorec').version
 	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList}
 }
 
@@ -632,12 +634,13 @@ class autorecUpdateFormApplication extends FormApplication {
 			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate();
 			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
 			ui.notifications.info("PF2e Animations Macros | Updating Autorecognition Menu...");
-			for (const key of Object.keys(newSettings)) {
-				await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
-				console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
-			};
+			//for (const key of Object.keys(newSettings)) {
+				//await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
+				//console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
+			//};
 			// Doesn't work?
-			// AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings));
+			// Passing submitAll: true to ensure menus are updated
+			AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {submitAll: true});
 			ui.notifications.info("PF2e Animations Macros | Autorecognition Menu Updated");
 		}
 	}
