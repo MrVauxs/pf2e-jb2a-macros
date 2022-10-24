@@ -92,7 +92,7 @@
 				"type": "module",
 				"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/manifest.json",
 				"compatibility": {
-					"minimum": "2.3.12"
+					"minimum": "2.3.13"
 				}
 			},
 			{
@@ -100,7 +100,7 @@
 				"id": "autoanimations",
 				"type": "module",
 				"compatibility": {
-					"minimum": "4.0.11"
+					"minimum": "4.0.16"
 				}
 			},
 			{

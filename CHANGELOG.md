@@ -1,3 +1,9 @@
+# Version 2.3.1
+- Fixed various animations requiring custom assets.
+- Updated module.json to require the latest versions of Automated Animations and Sequencer.
+- Improved the styling of the Autorecognition Update Menu a little.
+- Removed the doubled console logs when opening the above.
+
 # Version 2.3.0
 - Changed how the Autorecognition Update Menu overrides the settings, it now uses the built-in override function in Automated Animations. Thanks to @ Otigon for the PR (and AA in general!)
 - Added new effects. See the update menu for what has been added. Thanks to @ darkim for the contribution!
