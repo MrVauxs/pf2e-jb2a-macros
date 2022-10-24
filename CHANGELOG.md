@@ -1,7 +1,7 @@
 # Version 2.3.0
 - Changed how the Autorecognition Update Menu overrides the settings, it now uses the built-in override function in Automated Animations. Thanks to @ Otigon for the PR (and AA in general!)
 - Added new effects. See the update menu for what has been added. Thanks to @ darkim for the contribution!
-- Added localization files. Weblate is now open for translations.
+- Added localization files and submitted them to Weblate.
 
 # Version 2.2.3
 - Fixed module.json.
