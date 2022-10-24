@@ -2,40 +2,40 @@ Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
 		scope: "world",
 		config: true,
-		name: "Use Local Macros",
-		hint: "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.useLocalMacros.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.useLocalMacros.hint"),
 		type: Boolean,
 		default: false
 	});
 	game.settings.register("pf2e-jb2a-macros", "disableHitAnims", {
 		scope: "world",
 		config: true,
-		name: 'Disable "On Hit or Miss" Animations',
-		hint: "While you can remove these animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable these animations.",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.disableHitAnims.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.disableHitAnims.hint"),
 		type: Boolean,
 		default: false
 	});
 	game.settings.register("pf2e-jb2a-macros", "randomHitAnims", {
 		scope: "world",
 		config: true,
-		name: `Make "On Hit or Miss" miss animations appear Off-Target`,
-		hint: "Make miss and critical miss animations appear at a random spot near the missed target token.",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.randomHitAnims.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.randomHitAnims.hint"),
 		type: Boolean,
 		default: false
 	});
 	game.settings.register("pf2e-jb2a-macros", "autoAccept", {
 		scope: "client",
 		config: true,
-		name: `Automatically accept Effects`,
-		hint: "Automatically accept Effects from macros, such as adding the Rage Effect when you use the Rage action.",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.autoAccept.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.autoAccept.hint"),
 		type: Boolean,
 		default: false
 	});
 	game.settings.register("pf2e-jb2a-macros", "smallTokenScale", {
 		scope: "world",
 		config: !game.settings.get("pf2e", "tokens.autoscale"),
-		name: `Default Scale for Small Tokens`,
-		hint: "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8.",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.smallTokenScale.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.smallTokenScale.hint"),
 		type: Number,
 		default: 0.8,
 		range: {
@@ -47,8 +47,8 @@ Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "debug", {
 		scope: "client",
 		config: true,
-		name: `Debug Mode`,
-		hint: "Enables console logs of what PF2e Animations Macros module is doing.",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.debug.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.debug.hint"),
 		type: Boolean,
 		default: false
 	});
@@ -68,9 +68,9 @@ Hooks.on("init", () => {
 		default: ""
 	});
 	game.settings.registerMenu("pf2e-jb2a-macros", "autorecUpdate", {
-		name: "Autorecognition Menu Update",
-		label: "Update Menu",
-		hint: "Check if there are any updates to be made to your animations?",
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.autorecUpdate.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.autorecUpdate.hint"),
+		label: game.i18n.localize("pf2e-jb2a-macros.settings.autorecUpdate.label"),
 		icon: "fa-solid fa-wrench",
 		type: autorecUpdateFormApplication,
 		restricted: true
@@ -81,12 +81,12 @@ Hooks.on("ready", () => {
 	console.log("PF2e Animations Macros v" + game.modules.get("pf2e-jb2a-macros").version + " loaded.");
 	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
-		ui.notifications.error(`You need a <a href="https://jb2a.com/home/content-information/#free_library">JB2A module</a> enabled to use with PF2e Animations Macros module!`, { permanent: true });
+		ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noJB2A"), { permanent: true });
 		return;
 	}
 
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
-		ui.notifications.info(`PF2e Animations Macros v${game.modules.get("pf2e-jb2a-macros").version} loaded. Please check if you don't have new animations to be added to your autorecognition menu!`)
+		ui.notifications.info(game.i18n.localize("pf2e-jb2a-macros.notifications.update").replace("[[version]]", game.modules.get("pf2e-jb2a-macros").version))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
 	}
 
@@ -113,7 +113,7 @@ Hooks.on("createChatMessage", async (data) => {
 			return runJB2Apf2eMacro('Persistent Conditions', args)
 		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
 			debug("No \"PF2e Persistent Damage\" module found!");
-			return ui.notifications.error("Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.")
+			return ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noPersistentDamage"));
 		}
 	}
 	// Default Matches
@@ -131,7 +131,7 @@ Hooks.on("createChatMessage", async (data) => {
 		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
 		const degreeOfSuccess = degreeOfSuccessWithRerollHandling(data);
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
-		if (!pack) ui.notifications.error("PF2e Animations Macros | Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?");
+		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
 		let items = data.token._actor.items.filter(i => i.name.includes("Attack Animation Template"));
 		if (Object.keys(items).length === 0) {
@@ -228,7 +228,7 @@ function degreeOfSuccessWithRerollHandling(message) {
 function vauxsMacroHelpers(args) {
 	debug("Vaux's Macro Helpers", args);
 	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
-	if (!tokenD) { ui.notifications.error("No source token found."); return; }
+	if (!tokenD) { ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
 	const tokenScale = tokenD.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
 	return [tokenD, tokenScale];
 }
@@ -236,7 +236,7 @@ function vauxsMacroHelpers(args) {
 // Creates dummy NPC and PC actors for summoning purposes.
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 async function createIfMissingDummy() {
-	let message = "PF2e Animations Macros | Missing dummy actors for summoning macros.";
+	let message = `PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
 	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
 	// pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
 	if (!npcActor) {
@@ -301,7 +301,7 @@ function alignmentStringToTraits(alignment) {
  * @param {Object} spawnArgs Arguments to be passed down to Warpgate spawnAt function, order insensitive.
  */
 async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) {
-	const [tokenD, tokenScale] = await vauxsMacroHelpers(args)
+	const [tokenD, tokenScale] = vauxsMacroHelpers(args)
 
 	// If no actor is passed, prompt a player to select one.
 	if (!Object.keys(importedActor).length) {
@@ -318,6 +318,7 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 
 		debug("Summon Creature Options", packs)
 
+		// TODO: Translate this
 		let sortedHow = {
 			type: "info",
 			label: "Sorted with...?"
@@ -417,6 +418,7 @@ async function askGMforSummon(args) {
 	createIfMissingDummy();
 	debug("Summoning Request", args);
 	let template = await canvas.templates.get(args.location.id ?? args.location._id);
+	// TODO: Translate this
 	new Dialog({
 		title: "Player Summon Request",
 		content: `
@@ -553,13 +555,13 @@ async function generateAutorecUpdate() {
 
 async function generateAutorecUpdateHTML() {
 	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate()
-	let html = `<p style="text-align: center"><b>Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE.</b></p>`
+	let html = `<p style="text-align: center"><b>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.warning")}</b></p>`
 
 	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length) {
 		if (removedEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>The following effects will be DELETED from a previous version of 'PF2e Animation Macros'.</p>
+				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.deleted")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${removedEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -569,7 +571,7 @@ async function generateAutorecUpdateHTML() {
 		if (missingEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>The following effects are going to be added to your Auto-Recognition settings.</p>
+				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.added")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${missingEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -579,8 +581,8 @@ async function generateAutorecUpdateHTML() {
 		if (customEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>The following effects won't be added due to them already existing from an unknown source.</p>
-				<p>If you want the 'PF2e Animation Macros' version, delete them from your Autorecognition Menu.</p>
+				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.custom")}</p>
+				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.customHint")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${customEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -590,7 +592,7 @@ async function generateAutorecUpdateHTML() {
 		if (updatedEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>The following effects will be updated from a previous version of 'PF2e Animation Macros' (or from Automated Animations default menu).</p>
+				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.updated")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${updatedEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -598,7 +600,7 @@ async function generateAutorecUpdateHTML() {
 			`
 		}
 	} else {
-		html = `<p style="text-align: center">No updates were found.</p>`
+		html = `<p style="text-align: center">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.nothing")}</p>`
 	}
 	return html
 }
