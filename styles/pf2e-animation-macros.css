@@ -6,6 +6,10 @@
     border-radius: 5px;
 }
 
+.pf2e-animations-autorec-update-text {
+    text-align: center;
+}
+
 .pf2e-animations-autorec-update-child:first-child {
     padding-right: 10px;
 }

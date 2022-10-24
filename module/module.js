@@ -459,8 +459,8 @@ async function getJSON(url) {
 	return json;
 }
 
-async function generateAutorecUpdate() {
-	console.group("PF2e Animations Macros | Autorecognition Menu Check");
+async function generateAutorecUpdate(quiet = true) {
+	if (quiet) console.group("PF2e Animations Macros | Autorecognition Menu Check");
 	const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
 	let settings = {}
 	settings.melee = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-melee').map(v => [v.id, v])).values()]
@@ -517,13 +517,13 @@ async function generateAutorecUpdate() {
 			}
 		})
 	}
-	console.info("The following effects no LONGER exist in PF2e Animation Macros. They will be DELETED.", removed)
-	console.info("The following effects do not exist in PF2e Animation Macros.", customNew)
-	console.info("The following effects did not exist before.", missingEntries)
-	console.info("The following effects have no updates.", same)
-	console.info("The following effects can be updated from a previous version of 'PF2e Animation Macros'.", updatedEntries)
-	console.info("The following effects cannot be added due to them already existing from an unknown source. If you want the 'PF2e Animation Macros' version, delete them.", custom)
-	console.groupEnd()
+	if (quiet) console.info("The following effects did not exist before. They will be ADDED.", missingEntries)
+	if (quiet) console.info("The following effects can be updated from a previous version of 'PF2e Animation Macros'. They will be UPDATED.", updatedEntries)
+	if (quiet) console.info("The following effects no LONGER exist in PF2e Animation Macros. They will be DELETED.", removed)
+	if (quiet) console.info("The following effects do not exist in PF2e Animation Macros. They will be IGNORED.", customNew)
+	if (quiet) console.info("The following effects cannot be added or updated, due to them already existing from an unknown source. They will be IGNORED.", custom)
+	if (quiet) console.info("The following effects have no updates.", same)
+	if (quiet) console.groupEnd()
 
 	// Create a list of all effects done.
 	let missingEntriesList = []
@@ -554,14 +554,14 @@ async function generateAutorecUpdate() {
 }
 
 async function generateAutorecUpdateHTML() {
-	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate()
-	let html = `<p style="text-align: center"><b>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.warning")}</b></p>`
+	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate(false)
+	let html = `<p style="text-align: center; font-size: 1.2em; font-weight: bold;">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.warning")}</p>`
 
 	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length) {
 		if (removedEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.deleted")}</p>
+				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.deleted")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${removedEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -571,7 +571,7 @@ async function generateAutorecUpdateHTML() {
 		if (missingEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.added")}</p>
+				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.added")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${missingEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -581,8 +581,8 @@ async function generateAutorecUpdateHTML() {
 		if (customEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.custom")}</p>
-				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.customHint")}</p>
+				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.custom")}</p>
+				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.customHint")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${customEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -592,7 +592,7 @@ async function generateAutorecUpdateHTML() {
 		if (updatedEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
-				<p>${game.i18n.localize("pf2e-jb2a-macros.updateMenu.updated")}</p>
+				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.updated")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${updatedEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
@@ -600,7 +600,7 @@ async function generateAutorecUpdateHTML() {
 			`
 		}
 	} else {
-		html = `<p style="text-align: center">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.nothing")}</p>`
+		html = `<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.nothing")}</p>`
 	}
 	return html
 }
@@ -608,6 +608,14 @@ async function generateAutorecUpdateHTML() {
 class autorecUpdateFormApplication extends FormApplication {
 	constructor() {
 		super();
+	}
+
+	async html() {
+		return await generateAutorecUpdateHTML()
+	}
+
+	async settings() {
+		return await generateAutorecUpdate()
 	}
 
 	static get defaultOptions() {
@@ -622,10 +630,12 @@ class autorecUpdateFormApplication extends FormApplication {
 
 	async getData() {
 		// Send data to the template
-		return { literallyEverything: await generateAutorecUpdateHTML() };
+		return { literallyEverything: await this.html() };
 	}
 
-	activateListeners(html) {
+	async activateListeners(html) {
+		const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await this.settings()
+		if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) $( '[name="update"]' ).remove()
 		super.activateListeners(html);
 	}
 
@@ -633,7 +643,7 @@ class autorecUpdateFormApplication extends FormApplication {
 		$( ".pf2e-animations-autorec-update-buttons" ).attr("disabled", true)
 		if (event.submitter.name === "update") {
 			console.group("PF2e Animations Macros | Autorecognition Menu Update");
-			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate();
+			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await this.settings();
 			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
 			/*
 			for (const key of Object.keys(newSettings)) {
