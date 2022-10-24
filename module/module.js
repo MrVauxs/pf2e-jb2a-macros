@@ -505,8 +505,8 @@ async function generateAutorecUpdate() {
 		});
 		settings[key].map(x => { return {label: x.label, metaData: x.metaData} }).forEach(async y => {
 			if (!autorec[key].map(x => { return {label: x.label, metaData: x.metaData} }).some(e => e.label === y.label)) {
-				if (y?.metaData?.name === "PF2e Animation Macros") {
-					// Entry does not exist in autorec, but is from PF2e Animation Macros. Add them to removed.
+				if (y?.metaData?.name === "PF2e Animation Macros" && y?.metaData?.version < autorec.melee[0].metaData.version) {
+					// Entry does not exist in autorec, but is from PF2e Animation Macros and of a lower version. Add them to removed.
 					return removed[key].push(getFullVersion(y.label, settings[key]))
 				} else {
 					// Entry does not exist in autorec.json. Add it to customNew.
@@ -633,15 +633,14 @@ class autorecUpdateFormApplication extends FormApplication {
 			console.group("PF2e Animations Macros | Autorecognition Menu Update");
 			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate();
 			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
-			ui.notifications.info("PF2e Animations Macros | Updating Autorecognition Menu...");
-			//for (const key of Object.keys(newSettings)) {
-				//await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
-				//console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
-			//};
-			// Doesn't work?
+			/*
+			for (const key of Object.keys(newSettings)) {
+				await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
+				console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
+			};
+			*/
 			// Passing submitAll: true to ensure menus are updated
 			AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {submitAll: true});
-			ui.notifications.info("PF2e Animations Macros | Autorecognition Menu Updated");
 		}
 	}
 }
