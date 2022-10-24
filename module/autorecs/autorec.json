@@ -85373,11 +85373,11 @@
         "video": {
           "dbSection": "static",
           "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": true,
-          "customPath": "modules/animated-spell-effects/spell-effects/fire/fire_ball_CIRCLE_05.webm"
+          "animation": "fireball",
+          "variant": "explode",
+          "color": "orange",
+          "enableCustom": false,
+          "customPath": ""
         }
       },
       "secondary": {
@@ -98031,7 +98031,7 @@
           "variant": "01",
           "color": "blue",
           "enableCustom": true,
-          "customPath": "modules/jb2a_patreon/Library/1st_Level/Bardic_Inspiration/BardicInspiration_01_Regular_BlueYellow_400x400.webm"
+          "customPath": "jb2a.bardic_inspiration.blueyellow"
         }
       },
       "secondary": {
@@ -103968,7 +103968,7 @@
           "variant": "01",
           "color": "blue",
           "enableCustom": true,
-          "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyStrand_Multiple01_Dark_Purple_30ft_1600x400.webm"
+          "customPath": "jb2a.energy_strands.range.standard.dark_purple.01"
         }
       },
       "secondary": {
