@@ -1,3 +1,8 @@
+# Version 2.4.0
+- Added weapon sound contributions by @ darkim.
+- Added Brain Drain by @ Trueprophet. Thanks to both!
+- Added the ability to preset settings for Humanoid Form and added Change Shape autorec entry with such settings ready to be filled out.
+
 # Version 2.3.1
 - Fixed various animations requiring custom assets.
 - Updated module.json to require the latest versions of Automated Animations and Sequencer.
