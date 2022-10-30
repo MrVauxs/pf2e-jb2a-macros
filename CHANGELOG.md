@@ -1,5 +1,7 @@
 # Version 2.5.0
 - Removed default AA 5e animations and added code to remove them automatically
+- Added / Fixed Heroism and Animate Dead
+- Added Manifest Eidolon macro
 
 # Version 2.4.0
 - Added weapon sound contributions by @ darkim.

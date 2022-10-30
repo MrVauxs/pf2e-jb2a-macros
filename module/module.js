@@ -422,7 +422,7 @@ async function askGMforSummon(args) {
 	new Dialog({
 		title: "Player Summon Request",
 		content: `
-		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `An unknown user`} has requested to summon <b>${args.options.duplicates ?? "1"} ${args.updates.token.name}</b>.</p>
+		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `An unknown user`} has requested to summon <b>${args?.options?.duplicates ?? "1"} ${args?.updates?.token?.name ?? args.actorName}</b>.</p>
 		<p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p>
 		<p>Declining the request or Closing this window will delete the template and nothing will be spawned.</p>
 		`,
@@ -430,7 +430,7 @@ async function askGMforSummon(args) {
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					if (args.options) args.updates.token.actorData = { ownership: args.options.controllingActor.ownership };
+					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: args.options.controllingActor.ownership };
 
 					// Temporary fix as this seems to be warpgate's fault. Also cannot be an object because they are truthy.
 					args.options.controllingActor = false
