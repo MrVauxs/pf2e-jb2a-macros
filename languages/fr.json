@@ -1,1 +1,13 @@
-{}
+{
+	"pf2e-jb2a-macros": {
+		"updateMenu": {
+			"deleted": "Les effets suivants seront EFFACÉS d'une précédente version de 'PF2e Animations Macros'.",
+			"custom": "Les effets suivants ne seront pas ajoutés car ils existent déjà et proviennent d'une source inconnue.",
+			"customHint": "Si vous souhaitez la version 'PF2e Animation Macros', effacez les de votre Menu Auto reconnaissance.",
+			"nothing": "Aucune mise à jour n'a été trouvée.",
+			"warning": "Soyez certain de faire une sauvegarde de votre Menu auto reconnaissance ! CE PROCESSUS EST IRRÉVERSIBLE.",
+			"added": "Les effets suivants vont être rajoutés à vos réglages d'Auto reconnaissance.",
+			"updated": "Les effets suivants seront mis à jour d'une version précédente de 'PF2e Animation Marcos' (ou issus du menu par défaut de Automated Animations)."
+		}
+	}
+}
