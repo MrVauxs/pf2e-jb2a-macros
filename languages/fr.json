@@ -8,6 +8,46 @@
 			"warning": "Soyez certain de faire une sauvegarde de votre Menu auto reconnaissance ! CE PROCESSUS EST IRRÉVERSIBLE.",
 			"added": "Les effets suivants vont être rajoutés à vos réglages d'Auto reconnaissance.",
 			"updated": "Les effets suivants seront mis à jour d'une version précédente de 'PF2e Animation Marcos' (ou issus du menu par défaut de Automated Animations)."
+		},
+		"notifications": {
+			"noJB2A": "Vous avez besoin d'un <a href=\"https://jb2a.com/home/content-information/#free_library\">module JB2A</a> actif pour l'utiliser avec le module PF2e Animation Macros !",
+			"update": "PF2e Animations Macros v[[version]] est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
+			"noPersistentDamage": "Veuillez activer le module PF2e dégâts persistants pour utiliser la macro États persistants.",
+			"creatingDummy": " Création d'un PNJ fictif... ",
+			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
+			"noDummy": "Acteurs fictifs manquants pour les macros d'invocation.",
+			"noToken": "Pas de jeton source trouvé."
+		},
+		"settings": {
+			"useLocalMacros": {
+				"name": "Utiliser les macros locales",
+				"hint": "Certaines animations ne sont pas configurables dans les paramètres d'autoreconnaissance des animations automatisées.\nActivez cette option pour utiliser les macros locales au lieu de celles du compendium pour ces animations spécifiques.\nLes animations actuelles qui relèvent de ce paramètre incluent les suivantes : Changements d'équipement"
+			},
+			"disableHitAnims": {
+				"name": "Désactiver Animations \"Si touché ou échec\"",
+				"hint": "Bien que vous puissiez supprimer ces animations du menu d'Auto reconnaissance de AA, elles reviendront probablement lorsque vous le mettrez à jour. Activez cette option pour désactiver ces animations."
+			},
+			"randomHitAnims": {
+				"name": "Faire en sorte que les animations ratées \"Touché ou raté\" apparaissent hors cible",
+				"hint": "Les animations daté et raté critique apparaissent à un endroit aléatoire près du jeton ciblé raté."
+			},
+			"autoAccept": {
+				"name": "Accepter automatiquement les effets",
+				"hint": "Accepter automatiquement les effets des macros, par exemple en ajoutant l'effet Rage lorsque vous utilisez l'action Rage."
+			},
+			"smallTokenScale": {
+				"name": "Échelle par défaut pour les petits jetons",
+				"hint": "Détermine l'échelle que les animations prennent en compte pour les petits personnages. Si vous utilisez le paramètre système Pathfinder 2e \"Ajuster les jetons en fonction de la taille\", ce paramètre est désactivé et sera de 0.8."
+			},
+			"debug": {
+				"name": "Mode débogage",
+				"hint": "Active les journaux de console de ce que le module PF2e Animations Macros est en train de faire."
+			},
+			"autorecUpdate": {
+				"name": "Mise à jour du menu Auto reconnaissance",
+				"label": "Menu de mise à jour",
+				"hint": "Vérifiez s'il y a des mises à jour à apporter à vos animations ?"
+			}
 		}
 	}
 }
