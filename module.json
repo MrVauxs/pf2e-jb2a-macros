@@ -14,9 +14,19 @@
 	],
 	"languages": [
 		{
-		  "lang": "en",
-		  "name": "English",
-		  "path": "languages/en.json"
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		},
+		{
+			"lang": "pl",
+			"name": "polski",
+			"path": "languages/pl.json"
+		},
+		{
+			"lang": "fr",
+			"name": "Français",
+			"path": "languages/fr.json"
 		}
 	],
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
