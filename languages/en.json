@@ -1,53 +1,53 @@
 {
-    "pf2e-jb2a-macros": {
-        "updateMenu": {
-            "deleted": "The following effects will be DELETED from a previous version of 'PF2e Animation Macros'.",
-            "added": "The following effects are going to be added to your Auto-Recognition settings.",
-            "custom": "The following effects won't be added due to them already existing from an unknown source.",
-            "customHint": "If you want the 'PF2e Animation Macros' version, delete them from your Autorecognition Menu.",
-            "updated": "The following effects will be updated from a previous version of 'PF2e Animation Macros' (or from Automated Animations default menu).",
-            "nothing": "No updates were found.",
-            "warning": "Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE."
-        },
-        "notifications": {
-            "noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations Macros module!",
-            "update": "PF2e Animations Macros v[[version]] loaded. Please check if you don't have new animations to be added to your autorecognition menu!",
-            "noPersistentDamage": "Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.",
-            "noToken": "No source token found.",
-            "noDummy": "Missing dummy actors for summoning macros.",
-            "creatingDummy": " Creating dummy NPC... ",
-            "noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?"
-        },
-        "settings": {
-            "useLocalMacros": {
-                "name": "Use Local Macros",
-                "hint": "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes"
-            },
-            "disableHitAnims": {
-                "name": "Disable \"On Hit or Miss\" Animations",
-                "hint": "While you can remove these animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable these animations."
-            },
-            "randomHitAnims": {
-                "name": "Make \"On Hit or Miss\" miss animations appear Off-Target",
-                "hint": "Make miss and critical miss animations appear at a random spot near the missed target token."
-            },
-            "autoAccept": {
-                "name": "Automatically accept Effects",
-                "hint": "Automatically accept Effects from macros, such as adding the Rage Effect when you use the Rage action."
-            },
-            "smallTokenScale": {
-                "name": "Default Scale for Small Tokens",
-                "hint": "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8."
-            },
-            "debug": {
-                "name": "Debug Mode",
-                "hint": "Enables console logs of what PF2e Animations Macros module is doing."
-            },
-            "autorecUpdate": {
-                "name": "Autorecognition Menu Update",
-                "label": "Update Menu",
-                "hint": "Check if there are any updates to be made to your animations?"
-            }
-        }
-    }
+	"pf2e-jb2a-macros": {
+		"updateMenu": {
+			"deleted": "The following effects will be DELETED from a previous version of 'PF2e Animation Macros'.",
+			"added": "The following effects are going to be added to your Auto-Recognition settings.",
+			"custom": "The following effects won't be added due to them already existing from an unknown source.",
+			"customHint": "If you want the 'PF2e Animation Macros' version, delete them from your Autorecognition Menu.",
+			"updated": "The following effects will be updated from a previous version of 'PF2e Animation Macros' (or from Automated Animations default menu).",
+			"nothing": "No updates were found.",
+			"warning": "Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE."
+		},
+		"notifications": {
+			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations Macros module!",
+			"update": "PF2e Animations Macros v[[version]] loaded. Please check if you don't have new animations to be added to your autorecognition menu!",
+			"noPersistentDamage": "Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.",
+			"noToken": "No source token found.",
+			"noDummy": "Missing dummy actors for summoning macros.",
+			"creatingDummy": " Creating dummy NPC… ",
+			"noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?"
+		},
+		"settings": {
+			"useLocalMacros": {
+				"name": "Use Local Macros",
+				"hint": "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes"
+			},
+			"disableHitAnims": {
+				"name": "Disable \"On Hit or Miss\" Animations",
+				"hint": "While you can remove these animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable these animations."
+			},
+			"randomHitAnims": {
+				"name": "Make \"On Hit or Miss\" miss animations appear Off-Target",
+				"hint": "Make miss and critical miss animations appear at a random spot near the missed target token."
+			},
+			"autoAccept": {
+				"name": "Automatically accept Effects",
+				"hint": "Automatically accept Effects from macros, such as adding the Rage Effect when you use the Rage action."
+			},
+			"smallTokenScale": {
+				"name": "Default Scale for Small Tokens",
+				"hint": "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8."
+			},
+			"debug": {
+				"name": "Debug Mode",
+				"hint": "Enables console logs of what PF2e Animations Macros module is doing."
+			},
+			"autorecUpdate": {
+				"name": "Autorecognition Menu Update",
+				"label": "Update Menu",
+				"hint": "Check if there are any updates to be made to your animations?"
+			}
+		}
+	}
 }
