@@ -11,7 +11,33 @@
 		},
 		"settings": {
 			"useLocalMacros": {
-				"name": "Użyj Lokalnych Makr"
+				"name": "Użyj Lokalnych Makr",
+				"hint": "Nie można niektórych animacji skonfigurować w Automated Animations menu Auto-Rozpoznawania. \nWłącz te ustawienie aby używać lokalnych makr zamiast tych w kompendium dla tych specyficznych animacji. \nW tej chwili te makra to są: Equipment Changes"
+			},
+			"disableHitAnims": {
+				"name": "Wyłącz Animacje \"Trafić lub Chybić\"",
+				"hint": "Kiedy możesz usunąć te animacje z menu Auto-rozpoznawania, one powrócą podczas aktualizowania modułu. Włącz te ustawienie aby wyłączyć te animacje."
+			},
+			"randomHitAnims": {
+				"name": "Spraw aby animacje \"Trafić lub Chybić\" pojawiały się poza celem",
+				"hint": "Włącz to ustawienie aby animacje Pudła i Krytycznego Pudła same pojawiały się poza celem."
+			},
+			"autoAccept": {
+				"name": "Automatycznie akceptuj Efekty",
+				"hint": "Automatycznie akceptuj Efekty z mark, jak np. dodawanie efektu Rage kiedy się używa akcji Rage."
+			},
+			"smallTokenScale": {
+				"name": "Domyślna Skala dla Małych Tokenów",
+				"hint": "Określa, jaką skalę animacje zakładają dla małych postaci. Jeśli używasz ustawienia \"Skaluj żetony według rozmiaru\" systemu Pathfinder 2e, to ustawienie jest wyłączone i przyjmuje wartość 0,8."
+			},
+			"debug": {
+				"name": "Tryb Debugowania",
+				"hint": "Włącza logi konsoli pokazujące co PF2e Animation Macros robi."
+			},
+			"autorecUpdate": {
+				"name": "Aktualizacja Menu Auto-Rozpoznawania",
+				"label": "Menu Aktualizacji",
+				"hint": "Sprawdź czy nie ma aktualizacji dla twoich animacji?"
 			}
 		},
 		"updateMenu": {
