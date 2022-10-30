@@ -1,3 +1,6 @@
+# Version 2.5.1
+- Fixed Dimension Jumps macro not working with spells including brackets
+
 # Version 2.5.0
 - Removed default AA 5e animations and added code to remove them automatically in the update menu
 - Added / Fixed Heroism and Animate Dead
