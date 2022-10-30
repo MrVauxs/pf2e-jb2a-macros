@@ -507,7 +507,7 @@ async function generateAutorecUpdate(quiet = true) {
 		});
 		settings[key].map(x => { return {label: x.label, metaData: x.metaData} }).forEach(async y => {
 			if (!autorec[key].map(x => { return {label: x.label, metaData: x.metaData} }).some(e => e.label === y.label)) {
-				if (y?.metaData?.name === "PF2e Animation Macros" && y?.metaData?.version < autorec.melee[0].metaData.version) {
+				if (y.metaData?.default || (y?.metaData?.name === "PF2e Animation Macros" && y?.metaData?.version < autorec.melee[0].metaData.version)) {
 					// Entry does not exist in autorec, but is from PF2e Animation Macros and of a lower version. Add them to removed.
 					return removed[key].push(getFullVersion(y.label, settings[key]))
 				} else {
