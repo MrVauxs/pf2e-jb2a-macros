@@ -1,5 +1,5 @@
 # Version 2.5.0
-- Removed default AA 5e animations and added code to remove them automatically
+- Removed default AA 5e animations and added code to remove them automatically in the update menu
 - Added / Fixed Heroism and Animate Dead
 - Fixed Arcane Cascade not working with translations
 - Added Manifest Eidolon macro
