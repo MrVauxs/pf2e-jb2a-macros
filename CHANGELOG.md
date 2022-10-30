@@ -6,6 +6,7 @@
 - Added French (thanks @ rectulo!) and Polish translations
 - Fixed Dimension Door making you look like a matchstick and hopefully made the macro translation-compatible
 - Added a setting to automatically open the Autorecognition Update Menu when the module is updated (lots of updates in this update huh?)
+- Added Arcane Cascade and Panache actions to grant their respective effects
 
 # Version 2.4.0
 - Added weapon sound contributions by @ darkim.
