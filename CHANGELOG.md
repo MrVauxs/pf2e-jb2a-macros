@@ -1,3 +1,7 @@
+# Version 2.5.2
+- Fixed Dimension Jumps macro now working with localization
+- Fixed some Arcane Cascade animations
+
 # Version 2.5.1
 - Fixed Dimension Jumps macro not working with spells including brackets
 
