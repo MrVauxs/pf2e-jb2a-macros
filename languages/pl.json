@@ -26,6 +26,10 @@
 				"name": "Automatycznie akceptuj Efekty",
 				"hint": "Automatycznie akceptuj Efekty z mark, jak np. dodawanie efektu Rage kiedy się używa akcji Rage."
 			},
+			"autoUpdate": {
+				"name": "Otwórz Menu Aktualizacji podczas aktualizacji modułu",
+				"hint": "Automatycznie otwórz menu Aktualizacji Auto-rozpoznawania kiedy moduł jest zaktualizowny."
+			},
 			"smallTokenScale": {
 				"name": "Domyślna Skala dla Małych Tokenów",
 				"hint": "Określa, jaką skalę animacje zakładają dla małych postaci. Jeśli używasz ustawienia \"Skaluj żetony według rozmiaru\" systemu Pathfinder 2e, to ustawienie jest wyłączone i przyjmuje wartość 0,8."

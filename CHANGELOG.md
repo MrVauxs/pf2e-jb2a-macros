@@ -2,6 +2,9 @@
 - Removed default AA 5e animations and added code to remove them automatically
 - Added / Fixed Heroism and Animate Dead
 - Added Manifest Eidolon macro
+- Added French (thanks @ rectulo!) and Polish translations
+- Fixed Dimension Door making you look like a matchstick
+- Added a setting to automatically open the Autorecognition Update Menu when the module is updated (lots of updates in this update huh?)
 
 # Version 2.4.0
 - Added weapon sound contributions by @ darkim.

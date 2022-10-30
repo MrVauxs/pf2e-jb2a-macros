@@ -7,6 +7,14 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
+	game.settings.register("pf2e-jb2a-macros", "autoUpdate", {
+		scope: "world",
+		config: true,
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.autoUpdate.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.autoUpdate.hint"),
+		type: Boolean,
+		default: true
+	});
 	game.settings.register("pf2e-jb2a-macros", "disableHitAnims", {
 		scope: "world",
 		config: true,
@@ -88,6 +96,7 @@ Hooks.on("ready", () => {
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
 		ui.notifications.info(game.i18n.localize("pf2e-jb2a-macros.notifications.update").replace("[[version]]", game.modules.get("pf2e-jb2a-macros").version))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
+		if (game.user.isGM && game.settings.get("pf2e-jb2a-macros", "autoUpdate")) new autorecUpdateFormApplication().render(true)
 	}
 
 	// Create an event for summoning macros.
@@ -196,15 +205,15 @@ async function runJB2Apf2eMacro(
 	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros");
 	const pack = game.packs.get(compendiumName);
 	if (pack) {
-		const macro_data = useLocal ? await game.macros.getName(macroName).toObject() : (await pack.getDocuments()).find((i) => i.name === macroName)?.toObject();
+		const macro_data = useLocal ? await game.macros.getName(macroName) : (await pack.getDocuments()).find((i) => i.name === macroName);
 
 		if (macro_data) {
-			const temp_macro = new Macro(macro_data);
+			const temp_macro = new Macro(macro_data.toObject());
 			temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
 			debug(`Running ${macroName} macro`, { macro_data, temp_macro, args });
 			temp_macro.execute(args);
 		} else {
-			ui.notifications.error("Macro " + macroName + " not found");
+			ui.notifications.error("Macro " + macroName + " not found in " + useLocal ? "the world" : ("compendium " + compendiumName));
 		}
 	} else {
 		ui.notifications.error("Compendium " + compendiumName + " not found");
@@ -555,7 +564,7 @@ async function generateAutorecUpdate(quiet = true) {
 
 async function generateAutorecUpdateHTML() {
 	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate(false)
-	let html = `<p style="text-align: center; font-size: 1.2em; font-weight: bold;">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.warning")}</p>`
+	let html = `<h1 style="text-align: center; font-weight: bold;">PF2e Animations Macros Update Menu</h1>`
 
 	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length) {
 		if (removedEntriesList.length) {
@@ -599,6 +608,7 @@ async function generateAutorecUpdateHTML() {
 			</div>
 			`
 		}
+		html += `<p style="text-align: center; font-size: 1.2em; font-weight: bold;">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.warning")}</p>`
 	} else {
 		html = `<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.nothing")}</p>`
 	}

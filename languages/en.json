@@ -35,6 +35,10 @@
 				"name": "Automatically accept Effects",
 				"hint": "Automatically accept Effects from macros, such as adding the Rage Effect when you use the Rage action."
 			},
+			"autoUpdate": {
+				"name": "Open Update Menu on Module Update",
+				"hint": "Automatically open the Autorecognition Update Menu when the module is updated."
+			},
 			"smallTokenScale": {
 				"name": "Default Scale for Small Tokens",
 				"hint": "Determines what scale the animations assume Small characters are. If you use the \"Scale tokens according to size\" Pathfinder 2e system setting, this setting is disabled and assumed to be 0.8."
