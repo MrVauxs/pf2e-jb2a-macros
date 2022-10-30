@@ -1,3 +1,6 @@
+# Version 2.5.0
+- Removed default AA 5e animations and added code to remove them automatically
+
 # Version 2.4.0
 - Added weapon sound contributions by @ darkim.
 - Added Brain Drain by @ Trueprophet. Thanks to both!
