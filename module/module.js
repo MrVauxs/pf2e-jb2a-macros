@@ -213,7 +213,7 @@ async function runJB2Apf2eMacro(
 			debug(`Running ${macroName} macro`, { macro_data, temp_macro, args });
 			temp_macro.execute(args);
 		} else {
-			ui.notifications.error("Macro " + macroName + " not found in " + compendiumName + " or the world.");
+			ui.notifications.error("Macro " + macroName + " not found in " + compendiumName + " or the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).");
 		}
 	} else {
 		ui.notifications.error("Compendium " + compendiumName + " not found");

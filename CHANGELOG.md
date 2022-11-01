@@ -1,3 +1,6 @@
+# Version 2.5.3 "ZA WARUDO" edition
+- Fixed "the world" error
+
 # Version 2.5.2
 - Fixed Dimension Jumps macro now working with localization
 - Fixed some Arcane Cascade animations
