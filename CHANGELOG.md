@@ -1,22 +1,24 @@
 # Version 2.5.3 "ZA WARUDO" edition
-- Fixed "the world" error
+- Fixed "the world" error.
+- Fixed more localization issues with macros.
+- Added Simplified Chinese translation by @ AlphaStarguide, thank you!
 
 # Version 2.5.2
-- Fixed Dimension Jumps macro now working with localization
-- Fixed some Arcane Cascade animations
+- Fixed Dimension Jumps macro now working with localization.
+- Fixed some Arcane Cascade animations.
 
 # Version 2.5.1
-- Fixed Dimension Jumps macro not working with spells including brackets
+- Fixed Dimension Jumps macro not working with spells including brackets.
 
 # Version 2.5.0
-- Removed default AA 5e animations and added code to remove them automatically in the update menu
-- Added / Fixed Heroism and Animate Dead
-- Fixed Arcane Cascade not working with translations
-- Added Manifest Eidolon macro
-- Added French (thanks @ rectulo!) and Polish translations
-- Fixed Dimension Door making you look like a matchstick and hopefully made the macro translation-compatible
+- Removed default AA 5e animations and added code to remove them automatically in the update menu.
+- Added / Fixed Heroism and Animate Dead.
+- Fixed Arcane Cascade not working with translations.
+- Added Manifest Eidolon macro.
+- Added French (thanks @ rectulo!) and Polish translations.
+- Fixed Dimension Door making you look like a matchstick and hopefully made the macro translation-compatible.
 - Added a setting to automatically open the Autorecognition Update Menu when the module is updated (lots of updates in this update huh?)
-- Added Arcane Cascade and Panache actions to grant their respective effects
+- Added Arcane Cascade and Panache actions to grant their respective effects.
 
 # Version 2.4.0
 - Added weapon sound contributions by @ darkim.
