@@ -1,0 +1,57 @@
+{
+	"pf2e-jb2a-macros": {
+		"updateMenu": {
+			"added": "下列效果将会被加入到你的自动识别设定文件中。",
+			"updated": "下列效果将从旧的'PF2e Animation Macros'版本（或Automated Animations的默认版本）更新。",
+			"nothing": "没有更新。",
+			"warning": "确保你备份了你的自动识别文件！这个操作是无法被撤销的。",
+			"deleted": "下列效果将会从'PF2e Animation Macros'中被移除。",
+			"custom": "下列效果不会被加入，因为他们已被从另外的源导入。",
+			"customHint": "如果你想要使用'PF2e Animation Macros'版本的配置，请先将他们从你的自动识别菜单里删除。"
+		},
+		"notifications": {
+			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a>才能使用PF2e Animations Macros模组（也就是本模组）！",
+			"noPersistentDamage": "为了使用Persistent Conditions（持续状态）宏，请启用PF2e Persistent Damage模组。",
+			"noToken": "未找到源指示物。",
+			"creatingDummy": " 正在创建假人NPC… ",
+			"noDummy": "缺少召唤宏所需的假人演员卡。",
+			"noPack": "无法找到'pf2e-jb2a-macros.Actions'包，解决一下？",
+			"update": "PF2e Animations Macros v[[version]] 已加载。请确认你是否有新的自动识别文件可用！"
+		},
+		"settings": {
+			"useLocalMacros": {
+				"name": "使用本地宏",
+				"hint": "某些动画无法被Automated Animations自动识别。\n开启本项为这些特定的动画使用本地宏而不是合集包的宏。\n现在这项设定的动画包括：Equipment Changes"
+			},
+			"disableHitAnims": {
+				"name": "关闭\"On Hit or Miss\"动画",
+				"hint": "当你更新Automated Animation时，它的自动识别文件会自动再生成，开启本项来禁用这些动画。"
+			},
+			"randomHitAnims": {
+				"hint": "使失败和大失败的攻击失手动画随机出现在攻击目标的指示物附近。",
+				"name": "使\"On Hit or Miss\"的失手动画出现在目标指示物外"
+			},
+			"autoAccept": {
+				"name": "自动使用效果",
+				"hint": "自动使用来自宏的效果，比如当你使用Rage动作时自动使用Rage的效果。"
+			},
+			"autoUpdate": {
+				"name": "模组更新时打开更新设定文件菜单",
+				"hint": "当模组更新时，自动打开自动识别文件的更新菜单。"
+			},
+			"smallTokenScale": {
+				"name": "默认小型指示物尺寸",
+				"hint": "定义小型角色的动画。若你使用PF2E的\"Scale tokens according to size\"设定，本项应关闭却自动定义为0.8。"
+			},
+			"debug": {
+				"name": "Debug模式",
+				"hint": "打开Console记录本模组的行为。"
+			},
+			"autorecUpdate": {
+				"name": "自动识别文件更新",
+				"label": "更新文件",
+				"hint": "检查是否有动画的更新可用？"
+			}
+		}
+	}
+}

@@ -44,9 +44,13 @@
 				"hint": "Active les journaux de console de ce que le module PF2e Animations Macros est en train de faire."
 			},
 			"autorecUpdate": {
-				"name": "Mise à jour du menu Auto reconnaissance",
+				"name": "Mise à jour du menu de l'auto-reconnaissance",
 				"label": "Menu de mise à jour",
 				"hint": "Vérifiez s'il y a des mises à jour à apporter à vos animations ?"
+			},
+			"autoUpdate": {
+				"name": "Ouvrir le menu de mise à jour lors de la mise à jour du module",
+				"hint": "Ouvre automatiquement le menu de mise à jour de l'auto-reconnaissance lorsque le module est mis à jour."
 			}
 		}
 	}
