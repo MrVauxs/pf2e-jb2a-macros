@@ -29,9 +29,9 @@
 			"path": "languages/fr.json"
 		},
 		{
-			"lang": "zh-Hans",
+			"lang": "cn",
 			"name": "中文（简体）",
-			"path": "languages/zh_Hans.json"
+			"path": "languages/cn.json"
 		}
 	],
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
