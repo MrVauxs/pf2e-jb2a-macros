@@ -1,3 +1,6 @@
+# Version 2.5.4
+- Added `.tieToDocuments` function to Bardic Cantripry, hopefully making it more reliably shut itself down when the effects are removed.
+
 # Version 2.5.3 "ZA WARUDO" edition
 - Fixed "the world" error.
 - Fixed more localization issues with macros.
