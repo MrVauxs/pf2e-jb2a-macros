@@ -1,3 +1,6 @@
+# Version 2.6.0
+- Summoning macros and Sudden Charge macro now minimize and maximize your character sheet in the workflow.
+
 # Version 2.5.4
 - Added `.tieToDocuments` function to Bardic Cantripry, hopefully making it more reliably shut itself down when the effects are removed.
 

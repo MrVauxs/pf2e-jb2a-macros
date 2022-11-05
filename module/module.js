@@ -412,14 +412,15 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 		icon: importedToken.texture.src
 	}
 
+	tokenD.actor.sheet.minimize();
 	const crosshairs = await warpgate.crosshairs.show(crossHairConfig)
-
 	if (crosshairs.cancelled) return;
 
 	spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [crosshairs]))[0]
 
 	debug("Requesting to GM", spawnArgs)
 	await warpgate.event.notify("askGMforSummon", spawnArgs)
+	tokenD.actor.sheet.maximize();
 }
 
 async function askGMforSummon(args) {
