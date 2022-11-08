@@ -131,7 +131,7 @@ Hooks.on("createChatMessage", async (data) => {
 		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
 		// Modify sneak to not be a feat because AA no like feat
 		sneak.type = "strike"
-		await AutoAnimations.playAnimation(token, targets, sneak)
+		await AutomatedAnimations.playAnimation(token, sneak, { targets: targets })
 		// Go back to not break opening the sheet, apparently
 		sneak.type = "feat"
 	}
@@ -154,19 +154,19 @@ Hooks.on("createChatMessage", async (data) => {
 			case "criticalSuccess":
 				item = items.find(i => i.name.includes("(Critical Success)"))
 				debug("\"On Hit/Miss\" Critical Success animation", { token, targets, item })
-				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: targets }); break;
+				AutomatedAnimations.playAnimation(token, item, { playOnMiss: true, targets: targets, hitTargets: targets }); break;
 			case "criticalFailure":
 				item = items.find(i => i.name.includes("(Critical Failure)"))
 				debug("\"On Hit/Miss\" Critical Failure animation", { token, targets, item })
-				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : [] }); break;
+				AutomatedAnimations.playAnimation(token, item, { playOnMiss: true, targets: targets, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : [] }); break;
 			case "failure":
 				item = items.find(i => i.name.includes("(Failure)"))
 				debug("\"On Hit/Miss\" Failure animation", { token, targets, item })
-				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : [] }); break;
+				AutomatedAnimations.playAnimation(token, item, { playOnMiss: true, targets: targets, hitTargets: !game.settings.get("pf2e-jb2a-macros", "randomHitAnims") ? targets : [] }); break;
 			case "success":
 				item = items.find(i => i.name.includes("(Success)"))
 				debug("\"On Hit/Miss\" Success animation", { token, targets, item })
-				AutoAnimations.playAnimation(token, targets, item, { playOnMiss: true, hitTargets: targets }); break;
+				AutomatedAnimations.playAnimation(token, item, { playOnMiss: true, targets: targets, hitTargets: targets }); break;
 		}
 	}
 });
@@ -251,7 +251,7 @@ async function createIfMissingDummy() {
 	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
 	// pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
 	if (!npcActor) {
-		message += " Creating dummy NPC... ";
+		message += ` ${game.i18n.localize("pf2e-jb2a-macros.notifications.creatingDummy")} `;
 		npcActor = await Actor.create({
 			name: "Dummy NPC",
 			type: "npc",
@@ -268,6 +268,7 @@ async function createIfMissingDummy() {
 			}
 		})
 		await game.settings.set("pf2e-jb2a-macros", "dummyNPCId", npcActor.id);
+		ui.notifications.info(message);
 	}
 	/*
 	if (!pcActor) {
@@ -290,7 +291,6 @@ async function createIfMissingDummy() {
 		await game.settings.set("pf2e-jb2a-macros", "dummyPCId", pcActor.id);
 	}
 	*/
-	if (message.includes("PC")) ui.notifications.info(message);
 }
 
 function alignmentStringToTraits(alignment) {
@@ -329,10 +329,9 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 
 		debug("Summon Creature Options", packs)
 
-		// TODO: Translate this
 		let sortedHow = {
 			type: "info",
-			label: "Sorted with...?"
+			label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
 		}
 
 		if (args[2]?.length && args[2][0] === "summon-spell") {
@@ -360,10 +359,10 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 			packs = packs.sort((a, b) => {
 				return a.level < b.level ? 1 : -1;
 			});
-			sortedHow.label = `Sorted by level <b>(max. level ${multiplier} from ${ordinalSuffixOf(args[0].flags.pf2e.casting.level)} level spell)</b>.`;
+			sortedHow.label = game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sortedByLevel").replace("[[multiplier]]", multiplier).replace("[[spellLevel]]", ordinalSuffixOf(args[0].flags.pf2e.casting.level));
 		} else {
 			packs = packs.sort((a, b) => a.name.localeCompare(b.name));
-			sortedHow.label = "Sorted alphabetically.";
+			sortedHow.label = game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sortedAlphabetically");
 		}
 
 		const options = await warpgate.menu(
@@ -372,18 +371,18 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 					sortedHow,
 					{
 						type: "select",
-						label: "Creature",
+						label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
 						options: packs.map(x => x.name)
 					},
 					{
 						type: "number",
-						label: "Amount",
+						label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.amount"),
 						options: 1
 					}
 				]
 			},
 			{
-				title: "Summon Anything"
+				title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.title")
 			}
 		)
 
@@ -393,6 +392,8 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 		importedActor = await fromUuid(actor.uuid); // ?? await game.packs.get(actor.compendium ?? actor.uuid.split(".")[1] + "." + actor.uuid.split(".")[2]).getDocument(actor._id ?? actor.id ?? actor.uuid.split(".")[3]);
 		(spawnArgs.options ??= {}).duplicates = options.inputs[2];
 	}
+
+	spawnArgs.origins = { tokenUuid: args[1].sourceToken.data.uuid, itemUuid: args[1].itemUuid, itemName: args[1].itemName }
 
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
@@ -430,14 +431,41 @@ async function askGMforSummon(args) {
 	createIfMissingDummy();
 	debug("Summoning Request", args);
 	let template = await canvas.templates.get(args.location.id ?? args.location._id);
-	// TODO: Translate this
+
+	if (!args.callbacks) args.callbacks = {};
+
+	if (args?.callbacks?.pre) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.pre function to the summoning macro. Please note it is going to be overriden in the module.");
+
+	args.callbacks.pre = async (location, updates) => {
+        mergeObject(updates, {
+            token: {
+                alpha: 0
+            }
+        })
+	};
+
+	if (args?.callbacks?.post) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
+
+	args.callbacks.post = async (location, spawnedTokenDoc, updates, iteration) => {
+		console.log("hi", location, spawnedTokenDoc, updates, iteration, args)
+        const pack = game.packs.get("pf2e-jb2a-macros.Actions");
+		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
+
+		let items = args.options.controllingActor.items.filter(i => i.name.includes("Summoning Animation Template"));
+		items.push((await pack.getDocuments()).filter(i => i.name.includes("Summoning Animation Template")));
+
+		items = items.flat();
+
+		let token = (await fromUuid(args.origins.tokenUuid)).object;
+		let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName})`)) ?? items.find(i => i.name.includes(`Summoning Animation Template (${args.origins.itemName})`)) ?? items.find(i => i.name === `Summoning Animation Template`)
+
+		debug("Summoning Animation", [token, item, spawnedTokenDoc])
+		await AutomatedAnimations.playAnimation(token, item, { targets: [spawnedTokenDoc.object] });
+	};
+
 	new Dialog({
-		title: "Player Summon Request",
-		content: `
-		<p>${args.userId ? game.users.find(x => x.id === args.userId).name : `An unknown user`} has requested to summon <b>${args?.options?.duplicates ?? "1"} ${args?.updates?.token?.name ?? args.actorName}</b>.</p>
-		<p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p>
-		<p>Declining the request or Closing this window will delete the template and nothing will be spawned.</p>
-		`,
+		title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.title"),
+		content: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.content").replace("[[actorName]]", args?.updates?.token?.name ?? args.actorName).replace("[[amount]]", args?.options?.duplicates ?? "1").replace("[[user]]", args.userId ? game.users.find(x => x.id === args.userId).name : game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser")),
 		buttons: {
 			button1: {
 				label: "Accept",
@@ -445,7 +473,7 @@ async function askGMforSummon(args) {
 					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: args.options.controllingActor.ownership };
 
 					// Temporary fix as this seems to be warpgate's fault. Also cannot be an object because they are truthy.
-					args.options.controllingActor = false
+					// args.options.controllingActor = false
 					args.location = template;
 					debug("Summoning...", args)
 					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
@@ -456,7 +484,7 @@ async function askGMforSummon(args) {
 			button2: {
 				label: "Decline",
 				callback: async () => {
-					ui.notifications.info("Declined!");
+					ui.notifications.info(game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.declined"));
 					await template.document.delete();
 				},
 				icon: `<i class="fas fa-times"></i>`
@@ -541,17 +569,20 @@ async function generateAutorecUpdate(quiet = true) {
 	let missingEntriesList = []
 	let updatedEntriesList = []
 	let customEntriesList = []
+	let customNewEntriesList = []
 	let removedEntriesList = []
 	for (const key of Object.keys(settings)) {
 		missingEntriesList.push(missingEntries[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		updatedEntriesList.push(updatedEntries[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		removedEntriesList.push(removed[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		customEntriesList.push(custom[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
+		customNewEntriesList.push(customNew[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 	}
 	missingEntriesList = missingEntriesList.flat().sort()
 	updatedEntriesList = updatedEntriesList.flat().sort()
 	removedEntriesList = removedEntriesList.flat().sort()
 	customEntriesList = customEntriesList.flat().sort()
+	customNewEntriesList = customNewEntriesList.flat().sort()
 
 	let newSettingsDirty = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
@@ -562,14 +593,14 @@ async function generateAutorecUpdate(quiet = true) {
 	}
 	// Adds the current Autorec version into the menu to ensure it will not get wiped going through the Autorec Merge scripts
 	newSettings.version = await game.settings.get('autoanimations', 'aaAutorec').version
-	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList}
+	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList}
 }
 
 async function generateAutorecUpdateHTML() {
-	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await generateAutorecUpdate(false)
+	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList} = await generateAutorecUpdate(false)
 	let html = `<h1 style="text-align: center; font-weight: bold;">PF2e Animations Macros Update Menu</h1>`
 
-	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length) {
+	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || (game.settings.get("pf2e-jb2a-macros", "debug") && customNewEntriesList.length)) {
 		if (removedEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
@@ -611,6 +642,16 @@ async function generateAutorecUpdateHTML() {
 			</div>
 			`
 		}
+		if (game.settings.get("pf2e-jb2a-macros", "debug") && customNewEntriesList.length) {
+			html += `
+			<div class="pf2e-animations-autorec-update-child">
+				<p class="pf2e-animations-autorec-update-text"><strong>[DEBUG]</strong> ${game.i18n.localize("pf2e-jb2a-macros.updateMenu.debugCustom")}</p>
+				<ul class="pf2e-animations-autorec-update-ul">
+					${customNewEntriesList.map(x => `<li>${x}</li>`).join("")}
+				</ul>
+			</div>
+			`
+		}
 		html += `<p style="text-align: center; font-size: 1.2em; font-weight: bold;">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.warning")}</p>`
 	} else {
 		html = `<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.nothing")}</p>`
@@ -638,6 +679,7 @@ class autorecUpdateFormApplication extends FormApplication {
 			template: `modules/pf2e-jb2a-macros/module/autorecUpdateMenu.html`,
 			id: 'autorecUpdateMenu',
 			title: 'PF2e Animations Update',
+			resizable: true,
 		});
 	}
 

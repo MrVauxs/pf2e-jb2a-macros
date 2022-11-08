@@ -1,5 +1,9 @@
 # Version 2.6.0
+- Added "debug" mode to the Autorecognition Update Menu, where it also shows the user-added effects that are not gonna be touched by the module.
 - Summoning macros and Sudden Charge macro now minimize and maximize your character sheet in the workflow.
+- Summoning, Illusory Disguise, and Humanoid Form macros are now translate-able.
+- Summoning spells and Manifest Eidolon animations can now be customized down to the creature you are summoning.
+  - You can see examples in "Summoning Animation Template" action in PF2e Animation Actions compendium.
 
 # Version 2.5.4
 - Added `.tieToDocuments` function to Bardic Cantripry, hopefully making it more reliably shut itself down when the effects are removed.

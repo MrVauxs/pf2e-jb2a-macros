@@ -7,7 +7,8 @@
 			"customHint": "If you want the 'PF2e Animation Macros' version, delete them from your Autorecognition Menu.",
 			"updated": "The following effects will be updated from a previous version of 'PF2e Animation Macros' (or from Automated Animations default menu).",
 			"nothing": "No updates were found.",
-			"warning": "Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE."
+			"warning": "Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE.",
+			"debugCustom": "The following effects do not exist in PF2e Animation Macros, they are completely new and will remain in your Auto-Recognition Menu."
 		},
 		"notifications": {
 			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations Macros module!",
@@ -17,6 +18,41 @@
 			"noDummy": "Missing dummy actors for summoning macros.",
 			"creatingDummy": " Creating dummy NPC… ",
 			"noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?"
+		},
+		"macro": {
+			"suddenCharge": {
+				"notif": "Sudden Charge! Select where you want to move. Right click to cancel.",
+				"suddenCharge": "Sudden Charge."
+			},
+			"disguise": {
+				"humanoidForm": "🎭Humanoid Form🎭",
+				"illusoryDisguise": "🎭Illusory Disguise🎭",
+				"cast": "Cast!",
+				"name": "Name",
+				"tokenImage": "Token Image",
+				"tokenImageHint": "Make sure it works on the scene, CORS is a fickle god.",
+				"tokenScale": "Token Scale",
+				"tokenScaleHint": "In case the token you are going into is a pop-out token. Or is smaller than you!",
+				"invisible": "Turn your original token invisible?",
+				"invisibleHint": "Enabled by default, this hides the token under the disguise. Useful for disguising into a smaller or a top-down token."
+			},
+			"summoning": {
+				"player": {
+					"dancingLights": "Select your dancing lights...",
+					"sortedByLevel": "Sorted by level <b>(max. level [[multiplier]] from [[spellLevel]] level spell)</b>.",
+					"sortedAlphabetically": "Sorted alphabetically.",
+					"label": "Sorted with...?",
+					"creature": "Creature",
+					"amount": "Amount",
+					"title": "Summon Anything"
+				},
+				"gm": {
+					"title": "Player Summon Request",
+					"unknownUser": "An unknown user",
+					"declined": "Declined!",
+					"content": "<p>[[user]] has requested to summon <b>[[amount]] [[actorName]]</b>.</p><p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p><p>Declining the request or Closing this window will delete the template and nothing will be spawned.</p>"
+				}
+			}
 		},
 		"settings": {
 			"useLocalMacros": {
