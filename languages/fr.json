@@ -7,7 +7,8 @@
 			"nothing": "Aucune mise à jour n'a été trouvée.",
 			"warning": "Soyez certain de faire une sauvegarde de votre Menu auto reconnaissance ! CE PROCESSUS EST IRRÉVERSIBLE.",
 			"added": "Les effets suivants vont être rajoutés à vos réglages d'Auto reconnaissance.",
-			"updated": "Les effets suivants seront mis à jour d'une version précédente de 'PF2e Animation Marcos' (ou issus du menu par défaut de Automated Animations)."
+			"updated": "Les effets suivants seront mis à jour d'une version précédente de 'PF2e Animation Marcos' (ou issus du menu par défaut de Automated Animations).",
+			"debugCustom": "Les effets suivants n'existent pas dans PF2e Animation Macros, ils sont complètement nouveaux et resteront dans votre Menu d'auto-reconnaissance."
 		},
 		"notifications": {
 			"noJB2A": "Vous avez besoin d'un <a href=\"https://jb2a.com/home/content-information/#free_library\">module JB2A</a> actif pour l'utiliser avec le module PF2e Animation Macros !",
@@ -51,6 +52,19 @@
 			"autoUpdate": {
 				"name": "Ouvrir le menu de mise à jour lors de la mise à jour du module",
 				"hint": "Ouvre automatiquement le menu de mise à jour de l'auto-reconnaissance lorsque le module est mis à jour."
+			}
+		},
+		"macro": {
+			"suddenCharge": {
+				"notif": "Charge soudaine ! Choisissez où vous voulez vous déplacer. Clic droit pour annuler.",
+				"suddenCharge": "Charge soudaine."
+			},
+			"disguise": {
+				"humanoidForm": "🎭Forme humanoïde🎭",
+				"illusoryDisguise": "🎭Déguisement illusoire🎭",
+				"cast": "Lancé !",
+				"name": "Nom",
+				"tokenImage": "Image du jeton"
 			}
 		}
 	}
