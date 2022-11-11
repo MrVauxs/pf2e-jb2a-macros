@@ -451,7 +451,7 @@ async function askGMforSummon(args) {
         const pack = game.packs.get("pf2e-jb2a-macros.Actions");
 		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
-		let items = args.options.controllingActor.items.filter(i => i.name.includes("Summoning Animation Template"));
+		let items = (args.options.controllingActor.items || []).filter(i => i.name.includes("Summoning Animation Template"));
 		items.push((await pack.getDocuments()).filter(i => i.name.includes("Summoning Animation Template")));
 
 		items = items.flat();
@@ -474,10 +474,8 @@ async function askGMforSummon(args) {
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: args.options.controllingActor.ownership };
+					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: { [args.userId]: 3} };
 
-					// Temporary fix as this seems to be warpgate's fault. Also cannot be an object because they are truthy.
-					// args.options.controllingActor = false
 					args.location = template;
 					debug("Summoning...", args)
 					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
