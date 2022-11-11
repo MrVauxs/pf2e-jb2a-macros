@@ -457,7 +457,11 @@ async function askGMforSummon(args) {
 		items = items.flat();
 
 		let token = (await fromUuid(args.origins.tokenUuid)).object;
-		let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName})`)) ?? items.find(i => i.name.includes(`Summoning Animation Template (${args.origins.itemName})`)) ?? items.find(i => i.name === `Summoning Animation Template`)
+		// 1. Actor Name (usually Dummy NPC or the name of the Eidolon)
+		// 2. Copied Actor Name (what Dummy NPC takes the form OF, like Beaver)
+		// 3. Item Name (usually a summoning spell, such as Summon Animal)
+		// 4. Default (the default summoning animation)
+		let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName})`)) ?? items.find(i => i.name.includes(`Summoning Animation Template (${args?.updates?.token?.name})`)) ?? items.find(i => i.name.includes(`Summoning Animation Template (${args.origins.itemName})`)) ?? items.find(i => i.name === `Summoning Animation Template`)
 
 		debug("Summoning Animation", [token, item, spawnedTokenDoc])
 		await AutomatedAnimations.playAnimation(token, item, { targets: [spawnedTokenDoc.object] });
