@@ -1,5 +1,5 @@
 # Version 2.6.0
-- Fixed bug in Equipment Changes macro in recent Advanced Macros update. The minimum version now for Advanced Macros is 1.19.1.
+- Fixed bug in Equipment Changes macro due to a recent Advanced Macros update. The minimum version for Advanced Macros is now 1.19.1.
 - Added "debug" mode to the Autorecognition Update Menu, where it also shows the user-added effects that are not gonna be touched by the module.
 - Summoning macros and Sudden Charge macro now minimize and maximize your character sheet in the workflow.
 - Summoning, Illusory Disguise, and Humanoid Form macros are now translate-able.
