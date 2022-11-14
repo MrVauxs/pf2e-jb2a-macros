@@ -51,7 +51,43 @@
 			"customHint": "Jeżeli chcesz wersje z 'PF2e Animation Macros', usuń je z menu Auto-Rozpoznawania.",
 			"updated": "Poniższe efekty zostaną zaktualizowane z poprzedniej wersji 'PF2e Animation Macros' (lub z domyślnych efektów Automated Animations).",
 			"nothing": "Brak aktualizacji.",
-			"warning": "Upewnij się, że wykonano kopię zapasową menu auto-rozpoznawania! TEN PROCES JEST NIEODWRACALNY."
+			"warning": "Upewnij się, że wykonano kopię zapasową menu auto-rozpoznawania! TEN PROCES JEST NIEODWRACALNY.",
+			"debugCustom": "Poniższe efekty nie istnieją w PF2e Animation Macros. One są kompletnie nowe i pozostaną w twoim menu Auto-Rozpoznawania."
+		},
+		"macro": {
+			"disguise": {
+				"tokenScale": "Skala Tokena",
+				"tokenScaleHint": "Gdybyś chciał zamienić się w tokena który jest mniejszy od ciebie, lub ma styl \"pop-out\"!",
+				"invisible": "Zamień twój oryginalny token niewidzialny?",
+				"invisibleHint": "Włączone domyślnie, to ukrywa token pod przebraniem. Przydatne do przebrania się w token mniejszym od ciebie lub w innym stylu.",
+				"humanoidForm": "🎭Ludzka Forma🎭",
+				"illusoryDisguise": "🎭Przebranie w Iluzje🎭",
+				"cast": "Czaruj!",
+				"name": "Imię",
+				"tokenImage": "Obraz Tokena",
+				"tokenImageHint": "Upewnij się że działa na scenie, CORS lubi robić psikusy."
+			},
+			"summoning": {
+				"player": {
+					"label": "Sortowane jak...?",
+					"dancingLights": "Wybierz swe tańczące światełka...",
+					"sortedByLevel": "Sortowane przez poziom <b>(max. poziom [[multiplier]] z [[spellLevel]]-ego poziomu zaklęcia)</b>.",
+					"sortedAlphabetically": "Sortowane alfabetycznie.",
+					"creature": "Stwór",
+					"amount": "Ilość",
+					"title": "Przywołaj Cokolwiek"
+				},
+				"gm": {
+					"content": "<p>[[user]] chce przywołać <b>[[amount]] [[actorName]]</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
+					"title": "Prośba Gracza o Przywołanie",
+					"unknownUser": "Nieznany gracz",
+					"declined": "Odrzucone!"
+				}
+			},
+			"suddenCharge": {
+				"notif": "Nagła Szarża! Wybierz gdzie chcesz się poruszyć. Kliknij prawy przycisk aby anulować.",
+				"suddenCharge": "Nagła Szarża."
+			}
 		}
 	}
 }
