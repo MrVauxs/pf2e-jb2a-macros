@@ -1,9 +1,11 @@
 # Version 2.6.0
+- Fixed bug in Equipment Changes macro in recent Advanced Macros update. The minimum version now for Advanced Macros is 1.19.1.
 - Added "debug" mode to the Autorecognition Update Menu, where it also shows the user-added effects that are not gonna be touched by the module.
 - Summoning macros and Sudden Charge macro now minimize and maximize your character sheet in the workflow.
 - Summoning, Illusory Disguise, and Humanoid Form macros are now translate-able.
 - Summoning spells and Manifest Eidolon animations can now be customized down to the creature you are summoning.
   - You can see examples in "Summoning Animation Template" action in PF2e Animation Actions compendium.
+  - Note that this update has been released before Automated Animations "Await Animation Completion" setting for macros has been released. As such, your creatures will appear instantly, and then the summoning animation will commence.
 
 # Version 2.5.4
 - Added `.tieToDocuments` function to Bardic Cantripry, hopefully making it more reliably shut itself down when the effects are removed.
