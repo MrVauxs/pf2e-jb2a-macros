@@ -1,3 +1,6 @@
+# Version 2.6.1
+- Updated localization files.
+
 # Version 2.6.0
 - Fixed bug in Equipment Changes macro due to a recent Advanced Macros update. The minimum version for Advanced Macros is now 1.19.1.
 - Added "debug" mode to the Autorecognition Update Menu, where it also shows the user-added effects that are not gonna be touched by the module.
