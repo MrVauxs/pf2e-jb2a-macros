@@ -103,7 +103,7 @@
 				"compatibility": {
 					"maximum": "1.18.1"
 				},
-				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
+				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/download/v1.18.1/module.json"
 			},
 			{
 				"id": "sequencer",

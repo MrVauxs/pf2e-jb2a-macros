@@ -1,5 +1,8 @@
 # Version 2.6.1
 - Updated localization files.
+- Reverted back to Advanced Macros 1.18.1 due to the breaking changes introduced in 1.19 and other modules not yet updating back to that version.
+  - Now the module warns you if you are on 1.19 to revert back.
+  - The MAXIMUM version of Advanced Macros is now 1.18.1 in module.json.
 
 # Version 2.6.0
 - Fixed bug in Equipment Changes macro due to a recent Advanced Macros update. The minimum version for Advanced Macros is now 1.19.1.
