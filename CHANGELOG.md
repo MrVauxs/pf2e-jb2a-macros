@@ -1,4 +1,4 @@
-# Version 2.6.1
+# Version 2.6.1 "Whackamole"
 - Updated localization files.
 - Reverted back to Advanced Macros 1.18.1 due to the breaking changes introduced in 1.19 and other modules not yet updating back to that version.
   - Now the module warns you if you are on 1.19 to revert back.
