@@ -99,8 +99,9 @@
 			},
 			{
 				"id": "advanced-macros",
-				"type": "module","compatibility": {
-					"minimum": "1.19.1"
+				"type": "module",
+				"compatibility": {
+					"maximum": "1.18.1"
 				},
 				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
 			},

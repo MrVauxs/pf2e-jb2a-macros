@@ -93,6 +93,10 @@ Hooks.on("ready", () => {
 		return;
 	}
 
+	if (game.modules.get("advanced-macros")?.version.includes("1.19")) {
+		ui.notifications.error("PF2e Animation Macros | Please downgrade Advanced Macros module to 1.18.1. Version 1.19 has introduced <a href='https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/issues/46'>breaking changes</a> that have not yet been resolved.", { permanent: true });
+	}
+
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
 		ui.notifications.info(game.i18n.localize("pf2e-jb2a-macros.notifications.update").replace("[[version]]", game.modules.get("pf2e-jb2a-macros").version))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
@@ -334,7 +338,7 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 			label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
 		}
 
-		if (args[2]?.length && args[2][0] === "summon-spell") {
+		if (args && args[2]?.length && args[2][0] === "summon-spell") {
 			const traitsOr = args[2][1]?.replace('trait-', '').split('-')
 			const traitsAnd = args[2][2]?.replace('trait-and-', '').split('-')
 
@@ -393,7 +397,7 @@ async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) 
 		(spawnArgs.options ??= {}).duplicates = options.inputs[2];
 	}
 
-	spawnArgs.origins = { tokenUuid: args[1].sourceToken.data.uuid, itemUuid: args[1].itemUuid, itemName: args[1].itemName }
+	spawnArgs.origins = { tokenUuid: tokenD.data.uuid, itemUuid: args?.[1].itemUuid, itemName: args?.[1].itemName }
 
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
@@ -447,7 +451,6 @@ async function askGMforSummon(args) {
 	if (args?.callbacks?.post) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
 
 	args.callbacks.post = async (location, spawnedTokenDoc, updates, iteration) => {
-		console.log("hi", location, spawnedTokenDoc, updates, iteration, args)
         const pack = game.packs.get("pf2e-jb2a-macros.Actions");
 		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
