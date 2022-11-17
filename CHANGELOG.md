@@ -1,3 +1,9 @@
+# Version 2.6.2
+- With Sequencer 2.3.18, Advanced Macros v1.19.1 is now available. Both Sequencer's and Advanced Macros' minimum versions were raised to newest. Advanced Macros maximum version has been removed.
+- Removed Compendium Folders entries in favour of PF2e's integrated compendium search function.
+- Updated Equipment Changes and Aeon Stone macros to not use deprecated data paths.
+- Updated localization files.
+
 # Version 2.6.1 "Whackamole"
 - Updated localization files.
 - Reverted back to Advanced Macros 1.18.1 due to the breaking changes introduced in 1.19 and other modules not yet updating to that version.

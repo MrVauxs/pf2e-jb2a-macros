@@ -93,10 +93,6 @@ Hooks.on("ready", () => {
 		return;
 	}
 
-	if (game.modules.get("advanced-macros")?.version.includes("1.19")) {
-		ui.notifications.error("PF2e Animation Macros | Please downgrade Advanced Macros module to 1.18.1. Version 1.19 has introduced <a href='https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/issues/46'>breaking changes</a> that have not yet been resolved.", { permanent: true });
-	}
-
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
 		ui.notifications.info(game.i18n.localize("pf2e-jb2a-macros.notifications.update").replace("[[version]]", game.modules.get("pf2e-jb2a-macros").version))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
@@ -215,7 +211,7 @@ async function runJB2Apf2eMacro(
 			const temp_macro = new Macro(macro_data.toObject());
 			temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
 			debug(`Running ${macroName} macro`, { macro_data, temp_macro, args });
-			temp_macro.execute(args);
+			temp_macro.execute([args]);
 		} else {
 			useLocal ?
 			ui.notifications.error("Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
@@ -241,6 +237,7 @@ function degreeOfSuccessWithRerollHandling(message) {
 
 // Get token data and token scale.
 function vauxsMacroHelpers(args) {
+	args = args || [];
 	debug("Vaux's Macro Helpers", args);
 	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 	if (!tokenD) { ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noToken")); return; }

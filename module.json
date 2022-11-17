@@ -100,17 +100,17 @@
 			{
 				"id": "advanced-macros",
 				"type": "module",
+				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/latest/download/manifest.json",
 				"compatibility": {
-					"maximum": "v1.18.1"
-				},
-				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/download/v1.18.1/module.json"
+					"minimum": "v1.19.1"
+				}
 			},
 			{
 				"id": "sequencer",
 				"type": "module",
 				"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/manifest.json",
 				"compatibility": {
-					"minimum": "2.3.16"
+					"minimum": "2.3.18"
 				}
 			},
 			{
