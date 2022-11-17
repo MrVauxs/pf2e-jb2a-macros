@@ -100,7 +100,7 @@
 			{
 				"id": "advanced-macros",
 				"type": "module",
-				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/latest/download/manifest.json",
+				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json",
 				"compatibility": {
 					"minimum": "v1.19.1"
 				}
