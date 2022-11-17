@@ -7,7 +7,8 @@
 			"warning": "确保你备份了你的自动识别文件！这个操作是无法被撤销的。",
 			"deleted": "下列效果将会从'PF2e Animation Macros'中被移除。",
 			"custom": "下列效果不会被加入，因为他们已被从另外的源导入。",
-			"customHint": "如果你想要使用'PF2e Animation Macros'版本的配置，请先将他们从你的自动识别菜单里删除。"
+			"customHint": "如果你想要使用'PF2e Animation Macros'版本的配置，请先将他们从你的自动识别菜单里删除。",
+			"debugCustom": "下列效果不存在于PF2e Animation Macros中，他们将继续留在您的自动识别文件里。"
 		},
 		"notifications": {
 			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a>才能使用PF2e Animations Macros模组（也就是本模组）！",
@@ -51,6 +52,41 @@
 				"name": "自动识别文件更新",
 				"label": "更新文件",
 				"hint": "检查是否有动画的更新可用？"
+			}
+		},
+		"macro": {
+			"suddenCharge": {
+				"notif": "突袭冲锋！选择你想去的位置。右键取消。",
+				"suddenCharge": "突袭冲锋。"
+			},
+			"disguise": {
+				"illusoryDisguise": "🎭幻象伪装🎭",
+				"tokenImageHint": "确保它在场景上工作，CORS是一个善变的神。",
+				"tokenScale": "指示物尺寸",
+				"invisible": "将你原来的指示物隐形？",
+				"humanoidForm": "🎭类人形态🎭",
+				"cast": "施放！",
+				"name": "姓名",
+				"tokenImage": "指示物图像",
+				"tokenScaleHint": "如果你要进入的令牌是一个拓展画令牌。或者比你更小！",
+				"invisibleHint": "默认打开，这会将指示物隐藏在幻象之下。在伪装成一个比你小或者头顶视角的指示物的时候很有用。"
+			},
+			"summoning": {
+				"player": {
+					"dancingLights": "选择你的舞光术...",
+					"sortedAlphabetically": "根据首字母排序。",
+					"sortedByLevel": "根据等级排序<b>（[[spellLevel]]级法术最高能召唤[[multiplier]]级）</b>。",
+					"label": "根据什么排序？",
+					"amount": "总数",
+					"title": "召唤任何东西",
+					"creature": "生物"
+				},
+				"gm": {
+					"unknownUser": "一个未知用户",
+					"declined": "拒绝！",
+					"title": "玩家请求召唤",
+					"content": "<p>[[user]]请求召唤<b>[[amount]] [[actorName]]</b>。</p><p>一个位置标识已经被创建在召唤的位置。如果你接受，召唤物将出现在那个位置。你可以在接受之前移动位置标识的位置。</p><p>拒绝请求或关闭本窗口会删除位置标识并结束召唤流程。</p>"
+				}
 			}
 		}
 	}
