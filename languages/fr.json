@@ -64,7 +64,9 @@
 				"illusoryDisguise": "🎭Déguisement illusoire🎭",
 				"cast": "Lancé !",
 				"name": "Nom",
-				"tokenImage": "Image du jeton"
+				"tokenImage": "Image du jeton",
+				"tokenScale": "Échelle du jeton",
+				"tokenImageHint": "Vérifie que cela fonctionne sur la scène. CORS est un dieu capricieux."
 			}
 		}
 	}
