@@ -41,7 +41,7 @@
 		"verified": "10"
 	},
 	"scripts": [
-		"module/module.js"
+		"module/pf2e-animation-macros.js"
 	],
 	"styles": [
 		"styles/pf2e-animation-macros.css"
