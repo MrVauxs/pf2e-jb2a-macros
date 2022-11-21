@@ -238,6 +238,7 @@ function degreeOfSuccessWithRerollHandling(message) {
 // Get token data and token scale.
 function vauxsMacroHelpers(args) {
 	args = args || [];
+	// if (args.length === 1 && Array.isArray(args[0])) args = args.flat(); // Send help. I'm being flattened.
 	debug("Vaux's Macro Helpers", args);
 	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 	if (!tokenD) { ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
