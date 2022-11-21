@@ -100,10 +100,7 @@
 			{
 				"id": "advanced-macros",
 				"type": "module",
-				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "1.19.1"
-				}
+				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
 			},
 			{
 				"id": "sequencer",
