@@ -1,3 +1,7 @@
+# Version 2.6.4
+- Fixed module for Advanced Macros 1.19.2.
+- Fixed Shield active effect not using the complete animation.
+
 # Version 2.6.3
 - Literally nothing
 

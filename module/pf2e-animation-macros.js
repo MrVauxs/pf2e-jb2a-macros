@@ -211,11 +211,20 @@ async function runJB2Apf2eMacro(
 			const temp_macro = new Macro(macro_data.toObject());
 			temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
 			debug(`Running ${macroName} macro`, { macro_data, temp_macro, args });
-			temp_macro.execute([args]);
+			// https://github.com/MrVauxs/FoundryVTT-Sequencer/blob/4d1c63102f4f40878a6c13224918d499a6390547/scripts/module/sequencer.js#L109
+			const version = game.modules.get("advanced-macros")?.version;
+			const bugAdvancedMacros = game.modules.get("advanced-macros")?.active
+				&& isNewerVersion(version.startsWith('v') ? version.slice(1) : version, "1.18.2")
+				&& !isNewerVersion(version.startsWith('v') ? version.slice(1) : version, "1.19.1");
+			if (bugAdvancedMacros) {
+				await temp_macro.execute([args]);
+			} else {
+				await temp_macro.execute(args);
+			}
 		} else {
 			useLocal ?
-			ui.notifications.error("Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
-			 : ui.notifications.error("Macro " + macroName + " not found in " + compendiumName + ".")
+				ui.notifications.error("Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
+				: ui.notifications.error("Macro " + macroName + " not found in " + compendiumName + ".")
 		}
 	} else {
 		ui.notifications.error("Compendium " + compendiumName + " not found");
@@ -439,17 +448,17 @@ async function askGMforSummon(args) {
 	if (args?.callbacks?.pre) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.pre function to the summoning macro. Please note it is going to be overriden in the module.");
 
 	args.callbacks.pre = async (location, updates) => {
-        mergeObject(updates, {
-            token: {
-                alpha: 0
-            }
-        })
+		mergeObject(updates, {
+			token: {
+				alpha: 0
+			}
+		})
 	};
 
 	if (args?.callbacks?.post) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
 
 	args.callbacks.post = async (location, spawnedTokenDoc, updates, iteration) => {
-        const pack = game.packs.get("pf2e-jb2a-macros.Actions");
+		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
 		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
 		let items = (args.options.controllingActor.items || []).filter(i => i.name.includes("Summoning Animation Template"));
@@ -475,7 +484,7 @@ async function askGMforSummon(args) {
 			button1: {
 				label: "Accept",
 				callback: async () => {
-					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: { [args.userId]: 3} };
+					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: { [args.userId]: 3 } };
 
 					args.location = template;
 					debug("Summoning...", args)
@@ -548,8 +557,8 @@ async function generateAutorecUpdate(quiet = true) {
 				return missingEntries[key].push(getFullVersion(x, autorec[key]))
 			}
 		});
-		settings[key].map(x => { return {label: x.label, metaData: x.metaData} }).forEach(async y => {
-			if (!autorec[key].map(x => { return {label: x.label, metaData: x.metaData} }).some(e => e.label === y.label)) {
+		settings[key].map(x => { return { label: x.label, metaData: x.metaData } }).forEach(async y => {
+			if (!autorec[key].map(x => { return { label: x.label, metaData: x.metaData } }).some(e => e.label === y.label)) {
 				if (y.metaData?.default || (y?.metaData?.name === "PF2e Animation Macros" && y?.metaData?.version < autorec.melee[0].metaData.version)) {
 					// Entry does not exist in autorec, but is from PF2e Animation Macros and of a lower version. Add them to removed.
 					return removed[key].push(getFullVersion(y.label, settings[key]))
@@ -596,11 +605,11 @@ async function generateAutorecUpdate(quiet = true) {
 	}
 	// Adds the current Autorec version into the menu to ensure it will not get wiped going through the Autorec Merge scripts
 	newSettings.version = await game.settings.get('autoanimations', 'aaAutorec').version
-	return {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList}
+	return { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList }
 }
 
 async function generateAutorecUpdateHTML() {
-	const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList} = await generateAutorecUpdate(false)
+	const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList } = await generateAutorecUpdate(false)
 	let html = `<h1 style="text-align: center; font-weight: bold;">PF2e Animations Macros Update Menu</h1>`
 
 	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || (game.settings.get("pf2e-jb2a-macros", "debug") && customNewEntriesList.length)) {
@@ -692,16 +701,16 @@ class autorecUpdateFormApplication extends FormApplication {
 	}
 
 	async activateListeners(html) {
-		const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await this.settings()
-		if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) $( '[name="update"]' ).remove()
+		const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList } = await this.settings()
+		if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) $('[name="update"]').remove()
 		super.activateListeners(html);
 	}
 
 	async _updateObject(event) {
-		$( ".pf2e-animations-autorec-update-buttons" ).attr("disabled", true)
+		$(".pf2e-animations-autorec-update-buttons").attr("disabled", true)
 		if (event.submitter.name === "update") {
 			console.group("PF2e Animations Macros | Autorecognition Menu Update");
-			const {newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList} = await this.settings();
+			const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList } = await this.settings();
 			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
 			/*
 			for (const key of Object.keys(newSettings)) {
@@ -710,7 +719,7 @@ class autorecUpdateFormApplication extends FormApplication {
 			};
 			*/
 			// Passing submitAll: true to ensure menus are updated
-			AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), {submitAll: true});
+			AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), { submitAll: true });
 		}
 	}
 }
