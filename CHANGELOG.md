@@ -1,6 +1,7 @@
 # Version 2.6.5
 - Updated localization files.
 - Made the module work on all versions of Advanced Macros (specifically 1.18, 1.19, and 1.19.2)
+  - As such, the min/max version requirement has been lifted, making it able for the module to be enabled without the need for updates.
 
 # Version 2.6.4
 - Fixed module for Advanced Macros 1.19.2.
