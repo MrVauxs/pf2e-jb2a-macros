@@ -12,7 +12,7 @@
 		},
 		"notifications": {
 			"noJB2A": "Vous avez besoin d'un <a href=\"https://jb2a.com/home/content-information/#free_library\">module JB2A</a> actif pour l'utiliser avec le module PF2e Animation Macros !",
-			"update": "PF2e Animations Macros v[[version]] est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
+			"update": "PF2e Animations Macros v{version} est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
 			"noPersistentDamage": "Veuillez activer le module PF2e dégâts persistants pour utiliser la macro États persistants.",
 			"creatingDummy": " Création d'un PNJ fictif... ",
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
@@ -79,13 +79,13 @@
 					"amount": "Montant",
 					"title": "Invoquer n'importe quoi",
 					"dancingLights": "Sélectionnez vos lumières dansantes...",
-					"sortedByLevel": "Classé par niveau <b>(niveau max. [[multiplier]] du sort au niveau [[spellLevel]])</b>."
+					"sortedByLevel": "Classé par niveau <b>(niveau max. {multiplier} du sort au niveau {spellLevel})</b>."
 				},
 				"gm": {
 					"title": "Demande d'invocation du joueur",
 					"unknownUser": "Un utilisateur inconnu",
 					"declined": "Refusé !",
-					"content": "<p>[[user]] a demandé à invoquer <b>[[amount]] [[actorName]]</b>.</p><p>Un modèle a été créé pour montrer le gabarit de l'invocation. Si vous acceptez, l'invocation sera placée sur le gabarit. Vous pouvez déplacer le gabarit avant d'accepter.</p><p>Si vous refusez la demande ou si vous fermez cette fenêtre, le gabarit sera supprimé et rien ne sera placé.</p>"
+					"content": "<p>{user} a demandé à invoquer <b>{amount} {actorName}</b>.</p><p>Un modèle a été créé pour montrer le gabarit de l'invocation. Si vous acceptez, l'invocation sera placée sur le gabarit. Vous pouvez déplacer le gabarit avant d'accepter.</p><p>Si vous refusez la demande ou si vous fermez cette fenêtre, le gabarit sera supprimé et rien ne sera placé.</p>"
 				}
 			}
 		}

@@ -12,12 +12,13 @@
 		},
 		"notifications": {
 			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations Macros module!",
-			"update": "PF2e Animations Macros v[[version]] loaded. Please check if you don't have new animations to be added to your autorecognition menu!",
+			"update": "PF2e Animations Macros v{version} loaded. Please check if you don't have new animations to be added to your autorecognition menu!",
 			"noPersistentDamage": "Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.",
 			"noToken": "No source token found.",
 			"noDummy": "Missing dummy actors for summoning macros.",
 			"creatingDummy": " Creating dummy NPC… ",
-			"noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?"
+			"noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?",
+			"metaData": "This animation WILL be replaced when updated. If you don't want it to be, best way is to temporarily change it's <b>animation</b> or <b>variant</b> to something else."
 		},
 		"macro": {
 			"suddenCharge": {
@@ -39,7 +40,7 @@
 			"summoning": {
 				"player": {
 					"dancingLights": "Select your dancing lights...",
-					"sortedByLevel": "Sorted by level <b>(max. level [[multiplier]] from [[spellLevel]] level spell)</b>.",
+					"sortedByLevel": "Sorted by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
 					"sortedAlphabetically": "Sorted alphabetically.",
 					"label": "Sorted with...?",
 					"creature": "Creature",
@@ -50,7 +51,7 @@
 					"title": "Player Summon Request",
 					"unknownUser": "An unknown user",
 					"declined": "Declined!",
-					"content": "<p>[[user]] has requested to summon <b>[[amount]] [[actorName]]</b>.</p><p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p><p>Declining the request or Closing this window will delete the template and nothing will be spawned.</p>"
+					"content": "<p>{user} has requested to summon <b>{amount} {actorName}</b>.</p><p>A template has been created showing the location of the summon. If you accept, the summon will be placed on the template. You can move the template before accepting.</p><p>Declining the request or Closing this window will delete the template and nothing will be spawned.</p>"
 				}
 			}
 		},

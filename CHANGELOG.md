@@ -1,3 +1,10 @@
+# Version 2.6.6
+- Moved all functions into a pf2eAnimations object for easier access and less clutter.
+- Fixed all active effect animations not respecting token visibility nor opacity.
+- Added new functionality for A-A v4.0.22, which is now the required minimum version.
+  - Added a hook to checking the metaData of an object displaying the version of the animation, along with a hint about it going to be updated and how to prevent that from happening.
+  - Fixed Summoning Animation Template making the token visible before the animation finishes with new "Await Animation" option for macros.
+
 # Version 2.6.5
 - Updated localization files.
 - Made the module work on all versions of Advanced Macros (specifically 1.18, 1.19, and 1.19.2).

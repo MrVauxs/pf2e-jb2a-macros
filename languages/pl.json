@@ -1,7 +1,7 @@
 {
 	"pf2e-jb2a-macros": {
 		"notifications": {
-			"update": "PF2e Animations Macros v[[version]] załadowany. Proszę sprawdzić czy nie ma nowych animacji dla twego menu auto-rozpoznawania!",
+			"update": "PF2e Animations Macros v{version} załadowany. Proszę sprawdzić czy nie ma nowych animacji dla twego menu auto-rozpoznawania!",
 			"noPersistentDamage": "Proszę włączyć moduł PF2e Persistent Damage aby móc użyć makro Persistent Conditions.",
 			"noToken": "Nie znaleziono źródłowego tokena.",
 			"noDummy": "Brakuje sztucznego aktora dla makra wzywania.",
@@ -71,14 +71,14 @@
 				"player": {
 					"label": "Sortowane jak...?",
 					"dancingLights": "Wybierz swe tańczące światełka...",
-					"sortedByLevel": "Sortowane przez poziom <b>(max. poziom [[multiplier]] z [[spellLevel]]-ego poziomu zaklęcia)</b>.",
+					"sortedByLevel": "Sortowane przez poziom <b>(max. poziom {multiplier} z {spellLevel}-ego poziomu zaklęcia)</b>.",
 					"sortedAlphabetically": "Sortowane alfabetycznie.",
 					"creature": "Stwór",
 					"amount": "Ilość",
 					"title": "Przywołaj Cokolwiek"
 				},
 				"gm": {
-					"content": "<p>[[user]] chce przywołać <b>[[amount]] [[actorName]]</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
+					"content": "<p>{user} chce przywołać <b>{amount} {actorName}</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
 					"title": "Prośba Gracza o Przywołanie",
 					"unknownUser": "Nieznany gracz",
 					"declined": "Odrzucone!"
