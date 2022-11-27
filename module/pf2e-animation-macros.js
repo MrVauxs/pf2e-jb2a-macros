@@ -383,9 +383,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 					// traits AND filter
 					&& (traitsAnd ? traitsAnd.some(traitAnd => x.traits.includes(traitAnd)) : true)
 			)
-			packs = packs.sort((a, b) => {
-				return a.level < b.level ? 1 : -1;
-			});
+			packs = packs.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name));
 			sortedHow.label = game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.sortedByLevel", {multiplier: multiplier, spellLevel: pf2eAnimations.ordinalSuffixOf(args[0].flags.pf2e.casting.level)});
 		} else {
 			packs = packs.sort((a, b) => a.name.localeCompare(b.name));
@@ -399,7 +397,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 					{
 						type: "select",
 						label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
-						options: packs.map(x => x.name)
+						options: packs.map(x => `${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.level", {level: x.level})} | ${x.name}`),
 					},
 					{
 						type: "number",
@@ -415,7 +413,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 
 		if (options.buttons === false) return;
 
-		const actor = await packs.filter(x => x.name === options.inputs[1])[0];
+		const actor = await packs.filter(x => x.name === options.inputs[1].split("|")[1].trim())[0];
 		importedActor = await fromUuid(actor.uuid); // ?? await game.packs.get(actor.compendium ?? actor.uuid.split(".")[1] + "." + actor.uuid.split(".")[2]).getDocument(actor._id ?? actor.id ?? actor.uuid.split(".")[3]);
 		(spawnArgs.options ??= {}).duplicates = options.inputs[2];
 	}

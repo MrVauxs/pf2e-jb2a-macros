@@ -1,4 +1,9 @@
+# Version 2.6.7
+- Improved summoning spells sorting by making it sort by level and then alphabetically.
+- Added levels to the names of creatures when browsing the summoning list.
+
 # Version 2.6.6
+- Updated localization files.
 - Moved all functions into a pf2eAnimations object for easier access and less clutter.
 - Fixed all active effect animations not respecting token visibility nor opacity.
 - Added new functionality for A-A v4.0.22, which is now the required minimum version.
@@ -15,7 +20,7 @@
 - Fixed Shield active effect not using the complete animation.
 
 # Version 2.6.3
-- Literally nothing
+- Literally nothing.
 
 # Version 2.6.2
 - With Sequencer 2.3.18, Advanced Macros v1.19.1 is now available. Both Sequencer's and Advanced Macros' minimum versions were raised to newest. Advanced Macros maximum version has been removed.

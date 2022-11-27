@@ -45,7 +45,8 @@
 					"label": "Sorted with...?",
 					"creature": "Creature",
 					"amount": "Amount",
-					"title": "Summon Anything"
+					"title": "Summon Anything",
+					"level": "Level {level}"
 				},
 				"gm": {
 					"title": "Player Summon Request",

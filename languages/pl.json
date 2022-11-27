@@ -75,7 +75,8 @@
 					"sortedAlphabetically": "Sortowane alfabetycznie.",
 					"creature": "Stwór",
 					"amount": "Ilość",
-					"title": "Przywołaj Cokolwiek"
+					"title": "Przywołaj Cokolwiek",
+					"level": "Poziom {level}"
 				},
 				"gm": {
 					"content": "<p>{user} chce przywołać <b>{amount} {actorName}</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
