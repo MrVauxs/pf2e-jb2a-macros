@@ -17,7 +17,8 @@
 			"creatingDummy": " Création d'un PNJ fictif... ",
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
 			"noDummy": "Acteurs fictifs manquants pour les macros d'invocation.",
-			"noToken": "Pas de jeton source trouvé."
+			"noToken": "Pas de jeton source trouvé.",
+			"metaData": "Cette animation SERA remplacée lors de la mise à jour. Si vous ne voulez pas qu'elle le soit, le meilleur moyen est de changer temporairement son <b>animation</b> ou sa <b>variante</b> en autre chose."
 		},
 		"settings": {
 			"useLocalMacros": {
@@ -79,7 +80,8 @@
 					"amount": "Montant",
 					"title": "Invoquer n'importe quoi",
 					"dancingLights": "Sélectionnez vos lumières dansantes...",
-					"sortedByLevel": "Classé par niveau <b>(niveau max. {multiplier} du sort au niveau {spellLevel})</b>."
+					"sortedByLevel": "Classé par niveau <b>(niveau max. {multiplier} du sort au niveau {spellLevel})</b>.",
+					"level": "Niveau {level}"
 				},
 				"gm": {
 					"title": "Demande d'invocation du joueur",
