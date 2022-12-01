@@ -1,3 +1,6 @@
+# Version 2.6.8
+- Fix Aeon Stone / Equipment Changes macro
+
 # Version 2.6.7
 - Improved summoning spells sorting by making it sort by level and then alphabetically.
 - Added levels to the names of creatures when browsing the summoning list.
