@@ -231,11 +231,11 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 			}
 		} else {
 			useLocal ?
-				ui.notifications.error("Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
-				: ui.notifications.error("Macro " + macroName + " not found in " + compendiumName + ".")
+				ui.notifications.error("PF2e Animation Macros | Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
+				: ui.notifications.error("PF2e Animation Macros | Macro " + macroName + " not found in " + compendiumName + ".")
 		}
 	} else {
-		ui.notifications.error("Compendium " + compendiumName + " not found");
+		ui.notifications.error("PF2e Animation Macros | Compendium " + compendiumName + " not found");
 	}
 };
 
