@@ -362,7 +362,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 		}
 
 		if (args && args[2]?.length && args[2][0] === "summon-spell") {
-			const traitsOr = args[2][1]?.replace('trait-', '').split('-')
+			const traitsOr = args[2][1]?.replace('trait-or', '').split('-')
 			const traitsAnd = args[2][2]?.replace('trait-and-', '').split('-')
 
 			let multiplier = -1;
@@ -381,7 +381,9 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 					// traits OR filter
 					&& (traitsOr ? traitsOr.some(traitOr => x.traits.includes(traitOr)) : true)
 					// traits AND filter
-					&& (traitsAnd ? traitsAnd.some(traitAnd => x.traits.includes(traitAnd)) : true)
+					&& (traitsAnd ? traitsAnd.every(traitAnd => x.traits.includes(traitAnd)) : true)
+					// common rarity
+					&& (x.rarity === "common")
 			)
 			packs = packs.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name));
 			sortedHow.label = game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.sortedByLevel", {multiplier: multiplier, spellLevel: pf2eAnimations.ordinalSuffixOf(args[0].flags.pf2e.casting.level)});

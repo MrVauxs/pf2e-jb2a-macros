@@ -76640,7 +76640,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-undead"
+        "args": "summon-spell, trait-or-undead"
       },
       "menu": "ontoken",
       "primary": {
@@ -95744,7 +95744,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-celestial-monitor-fiend, trait-and-chaotic"
+        "args": "summon-spell, trait-or-celestial-monitor-fiend, trait-and-chaotic"
       },
       "menu": "ontoken",
       "primary": {
@@ -95941,7 +95941,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-animal"
+        "args": "summon-spell, trait-or-animal"
       },
       "menu": "ontoken",
       "primary": {
@@ -96138,7 +96138,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-celestial-monitor-fiend, trait-and-lawful"
+        "args": "summon-spell, trait-or-celestial-monitor-fiend, trait-and-lawful"
       },
       "menu": "ontoken",
       "primary": {
@@ -96335,7 +96335,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-celestial"
+        "args": "summon-spell, trait-or-celestial"
       },
       "menu": "ontoken",
       "primary": {
@@ -96532,7 +96532,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-construct"
+        "args": "summon-spell, trait-or-construct"
       },
       "menu": "ontoken",
       "primary": {
@@ -96729,7 +96729,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-dragon"
+        "args": "summon-spell, trait-or-dragon"
       },
       "menu": "ontoken",
       "primary": {
@@ -96926,7 +96926,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-elemental"
+        "args": "summon-spell, trait-or-elemental"
       },
       "menu": "ontoken",
       "primary": {
@@ -97123,7 +97123,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-aberration"
+        "args": "summon-spell, trait-or-aberration"
       },
       "menu": "ontoken",
       "primary": {
@@ -97320,7 +97320,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-fey"
+        "args": "summon-spell, trait-or-fey"
       },
       "menu": "ontoken",
       "primary": {
@@ -97517,7 +97517,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-fiend"
+        "args": "summon-spell, trait-or-fiend"
       },
       "menu": "ontoken",
       "primary": {
@@ -97714,7 +97714,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-giant"
+        "args": "summon-spell, trait-or-giant"
       },
       "menu": "ontoken",
       "primary": {
@@ -98109,7 +98109,7 @@
         "enable": true,
         "playWhen": "2",
         "name": "Compendium.pf2e-jb2a-macros.Macros.Summon Anything",
-        "args": "summon-spell, trait-plant-fungus"
+        "args": "summon-spell, trait-or-plant-fungus"
       },
       "menu": "ontoken",
       "primary": {
