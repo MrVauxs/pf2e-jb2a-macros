@@ -53,6 +53,10 @@
 			"autoUpdate": {
 				"name": "Ouvrir le menu de mise à jour lors de la mise à jour du module",
 				"hint": "Ouvre automatiquement le menu de mise à jour de l'auto-reconnaissance lorsque le module est mis à jour."
+			},
+			"allowUncommonSummons": {
+				"name": "Autoriser des invocations pas courantes",
+				"hint": "Permet aux joueurs d'invoquer des créatures peu courantes, rares ou uniques. Vous pouvez également autoriser cela pour des sorts individuels en ajoutant \"peu courant\" aux arguments des sorts soit dans le menu de reconnaissance automatique soit dans le sort lui-même sur une feuille de personnage."
 			}
 		},
 		"macro": {
