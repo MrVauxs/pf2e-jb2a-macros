@@ -59,7 +59,7 @@
 		"settings": {
 			"allowUncommonSummons": {
 				"name": "Allow Non-Common Summons",
-				"hint": "Allow for summoning of Uncommon, Rare, or Unique creatures by the players. You can also allow this for individual spells by adding \"uncommon\" to the spells arguments in Automated Animations."
+				"hint": "Allow for summoning of Uncommon, Rare, or Unique creatures by the players. You can also allow this for individual spells by adding \"uncommon\" to the spells arguments in either Auto-Recognition Menu or the spell itself on a character sheet."
 			},
 			"useLocalMacros": {
 				"name": "Use Local Macros",

@@ -1,3 +1,7 @@
+# Version 2.6.10
+- Added the ability to pick between being able to summon uncommon creatures or not.
+  - You can access this in the settings or by adding "uncommon" to the spells arguments in either Auto-Recognition Menu or the spell itself on a character sheet.
+
 # Version 2.6.9
 - Updated localization files.
 - Fixed blank animation labels creashing the Update Menu.
