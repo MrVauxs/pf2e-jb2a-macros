@@ -1,5 +1,9 @@
+# Version 2.6.9
+- Fixed blank animation labels creashing the Update Menu.
+- Fixed Summoning not filtering for Common creatures.
+
 # Version 2.6.8
-- Fix Aeon Stone / Equipment Changes macro
+- Fixed Aeon Stone / Equipment Changes macro.
 
 # Version 2.6.7
 - Improved summoning spells sorting by making it sort by level and then alphabetically.
