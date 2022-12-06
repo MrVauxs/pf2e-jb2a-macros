@@ -17,7 +17,8 @@
 			"creatingDummy": " 正在创建假人NPC… ",
 			"noDummy": "缺少召唤宏所需的假人演员卡。",
 			"noPack": "无法找到'pf2e-jb2a-macros.Actions'包，解决一下？",
-			"update": "PF2e Animations Macros v{version} 已加载。请确认你是否有新的自动识别文件可用！"
+			"update": "PF2e Animations Macros v{version} 已加载。请确认你是否有新的自动识别文件可用！",
+			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好临时更改一下它的<b>动画</b>或<b>变体</b>。"
 		},
 		"settings": {
 			"useLocalMacros": {
@@ -73,13 +74,14 @@
 			},
 			"summoning": {
 				"player": {
-					"dancingLights": "选择你的舞光术...",
+					"dancingLights": "选择你的舞光术…",
 					"sortedAlphabetically": "根据首字母排序。",
 					"sortedByLevel": "根据等级排序<b>（{spellLevel}级法术最高能召唤{multiplier}级）</b>。",
 					"label": "根据什么排序？",
 					"amount": "总数",
 					"title": "召唤任何东西",
-					"creature": "生物"
+					"creature": "生物",
+					"level": "等级{level}"
 				},
 				"gm": {
 					"unknownUser": "一个未知用户",

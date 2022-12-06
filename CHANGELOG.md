@@ -4,7 +4,7 @@
 
 # Version 2.6.9
 - Updated localization files.
-- Fixed blank animation labels creashing the Update Menu.
+- Fixed blank animation labels crashing the Update Menu.
 - Fixed Summoning not filtering for Common creatures.
 
 # Version 2.6.8
