@@ -57,6 +57,10 @@
 			}
 		},
 		"settings": {
+			"allowUncommonSummons": {
+				"name": "Allow Non-Common Summons",
+				"hint": "Allow for summoning of Uncommon, Rare, or Unique creatures by the players. You can also allow this for individual spells by adding \"uncommon\" to the spells arguments in Automated Animations."
+			},
 			"useLocalMacros": {
 				"name": "Use Local Macros",
 				"hint": "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes"

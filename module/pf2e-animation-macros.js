@@ -31,6 +31,14 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
+	game.settings.register("pf2e-jb2a-macros", "allowUncommonSummons", {
+		scope: "world",
+		config: true,
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.allowUncommonSummons.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.allowUncommonSummons.hint"),
+		type: Boolean,
+		default: false
+	});
 	game.settings.register("pf2e-jb2a-macros", "autoAccept", {
 		scope: "client",
 		config: true,
@@ -361,9 +369,10 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
 		}
 
-		if (args && args[2]?.length && args[2][0] === "summon-spell") {
-			const traitsOr = args[2][1]?.replace('trait-or', '').split('-')
-			const traitsAnd = args[2][2]?.replace('trait-and-', '').split('-')
+		if (args && args[2]?.length && args[2].includes("summon-spell")) {
+			const traitsOr = args[2].find(x => x.includes("trait-or"))?.replace('trait-or', '').split('-')
+			const traitsAnd = args[2].find(x => x.includes("trait-and"))?.replace('trait-and-', '').split('-')
+			const uncommon = args[2].find(x => x.includes("uncommon") || x.includes("rare") || x.includes("unique")) ?? game.settings.get("pf2e-jb2a-macros", "allowUncommonSummons")
 
 			let multiplier = -1;
 			if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
@@ -383,7 +392,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 					// traits AND filter
 					&& (traitsAnd ? traitsAnd.every(traitAnd => x.traits.includes(traitAnd)) : true)
 					// common rarity
-					&& (x.rarity === "common")
+					&& (uncommon ? true : (x.rarity === "common"))
 			)
 			packs = packs.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name));
 			sortedHow.label = game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.sortedByLevel", {multiplier: multiplier, spellLevel: pf2eAnimations.ordinalSuffixOf(args[0].flags.pf2e.casting.level)});
