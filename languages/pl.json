@@ -7,7 +7,8 @@
 			"noDummy": "Brakuje sztucznego aktora dla makra wzywania.",
 			"creatingDummy": " Tworzę sztucznego NPC... ",
 			"noJB2A": "Potrzebujesz włączony <a href=\"https://jb2a.com/home/content-information/#free_library\">moduł JB2A</a> aby użyć razem z PF2e Animations Macros!",
-			"noPack": "Nie można znaleźć paczkę 'pf2e-jb2a-macros.Actions', jak to?"
+			"noPack": "Nie można znaleźć paczkę 'pf2e-jb2a-macros.Actions', jak to?",
+			"metaData": "Ta animacja ZOSTANIE zaktualizowana i nadpisana. Jeżeli nie chcesz aby była nadpisana, najlepiej zmień jej <b>animacje</b> lub <b>wariant</b> na coś innego."
 		},
 		"settings": {
 			"useLocalMacros": {
@@ -69,8 +70,8 @@
 			},
 			"summoning": {
 				"player": {
-					"label": "Sortowane jak...?",
-					"dancingLights": "Wybierz swe tańczące światełka...",
+					"label": "Sortowane jak…?",
+					"dancingLights": "Wybierz swe tańczące światełka…",
 					"sortedByLevel": "Sortowane przez poziom <b>(max. poziom {multiplier} z {spellLevel}-ego poziomu zaklęcia)</b>.",
 					"sortedAlphabetically": "Sortowane alfabetycznie.",
 					"creature": "Stwór",

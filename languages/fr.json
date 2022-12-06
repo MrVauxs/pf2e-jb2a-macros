@@ -75,11 +75,11 @@
 			"summoning": {
 				"player": {
 					"sortedAlphabetically": "Classés par ordre alphabétique.",
-					"label": "Classés par... ?",
+					"label": "Classés par… ?",
 					"creature": "Créature",
 					"amount": "Montant",
 					"title": "Invoquer n'importe quoi",
-					"dancingLights": "Sélectionnez vos lumières dansantes...",
+					"dancingLights": "Sélectionnez vos lumières dansantes…",
 					"sortedByLevel": "Classé par niveau <b>(niveau max. {multiplier} du sort au niveau {spellLevel})</b>.",
 					"level": "Niveau {level}"
 				},

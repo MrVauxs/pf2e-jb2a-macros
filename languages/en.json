@@ -39,10 +39,10 @@
 			},
 			"summoning": {
 				"player": {
-					"dancingLights": "Select your dancing lights...",
+					"dancingLights": "Select your dancing lights…",
 					"sortedByLevel": "Sorted by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
 					"sortedAlphabetically": "Sorted alphabetically.",
-					"label": "Sorted with...?",
+					"label": "Sorted with…?",
 					"creature": "Creature",
 					"amount": "Amount",
 					"title": "Summon Anything",
