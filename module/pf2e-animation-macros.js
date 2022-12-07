@@ -434,6 +434,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
 	let importedToken = importedActor.prototypeToken
+	Object.assign(importedToken.flags, { "pf2e-jb2a-macros": { "scrollingText": game.settings.get("core","scrollingStatusText") } })
 
 	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
 
@@ -478,6 +479,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 				alpha: 0
 			}
 		})
+		await game.settings.set("core", "scrollingStatusText", false)
 	};
 
 	if (args?.callbacks?.post) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
@@ -500,6 +502,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
 		pf2eAnimations.debug("Summoning Animation", [token, item, spawnedTokenDoc])
 		await AutomatedAnimations.playAnimation(token, item, { targets: [spawnedTokenDoc.object] });
+		if (updates.token.flags["pf2e-jb2a-macros"].scrollingText) await game.settings.set("core", "scrollingStatusText", true);
 	};
 
 	new Dialog({

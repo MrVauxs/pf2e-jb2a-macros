@@ -1,6 +1,7 @@
 # Version 2.7.0
-- Added Mirror Image
-- Revamped Resist Energy and Mage Armor
+- Added Mirror Image.
+- Revamped Resist Energy and Mage Armor.
+- Fixed scrolling text on summons, revealing their HP by dealing damage to them (from 999 to their true health pool).
 - Added the ability to pick between being able to summon uncommon creatures or not.
   - You can access this in the settings or by adding "uncommon" to the spells arguments in either Auto-Recognition Menu or the spell itself on a character sheet.
 
