@@ -68962,7 +68962,7 @@
           "animation": "firebolt",
           "variant": "01",
           "color": "orange",
-          "enableCustom": true,
+          "enableCustom": false,
           "customPath": ""
         }
       },
