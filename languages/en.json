@@ -64,6 +64,10 @@
 			}
 		},
 		"settings": {
+			"onlyImageSummons": {
+				"name": "Only Allow Summons that have an Image",
+				"hint": "Only allow for summoning of creatures that have an image."
+			},
 			"allowUncommonSummons": {
 				"name": "Allow Non-Common Summons",
 				"hint": "Allow for summoning of Uncommon, Rare, or Unique creatures by the players. You can also allow this for individual spells by adding \"uncommon\" to the spells arguments in either Auto-Recognition Menu or the spell itself on a character sheet."

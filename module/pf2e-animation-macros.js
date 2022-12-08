@@ -39,6 +39,14 @@ Hooks.on("init", () => {
 		type: Boolean,
 		default: false
 	});
+	game.settings.register("pf2e-jb2a-macros", "onlyImageSummons", {
+		scope: "world",
+		config: true,
+		name: game.i18n.localize("pf2e-jb2a-macros.settings.onlyImageSummons.name"),
+		hint: game.i18n.localize("pf2e-jb2a-macros.settings.onlyImageSummons.hint"),
+		type: Boolean,
+		default: false
+	});
 	game.settings.register("pf2e-jb2a-macros", "autoAccept", {
 		scope: "client",
 		config: true,
@@ -379,7 +387,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			const uncommon = args[2].find(x => x.includes("uncommon") || x.includes("rare") || x.includes("unique")) ?? game.settings.get("pf2e-jb2a-macros", "allowUncommonSummons")
 			const exactLevel = args[2].find(x => x.includes("exact-level"))?.replace('exact-level-', '')
 			const level = args[2].find(x => x.includes("level") && !x.includes("exact-level"))?.replace('level-', '').split('-')
-			const hasImage = args[2].find(x => x.includes("has-image"))
+			const hasImage = game.settings.get("pf2e-jb2a-macros", "onlyImageSummons") || args[2].find(x => x.includes("has-image"))
 			const source = args[2].find(x => x.includes("source"))?.replace('source-', '').split("|").map(x => x.trim()) // separate by | for multiple sources
 			randomCreature = args[2].includes("random-creature")
 			randomAmount = args[2].find(x => x.includes("random-amount"))?.replace('random-amount-', '').split('-')
