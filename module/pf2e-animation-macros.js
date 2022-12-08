@@ -102,7 +102,7 @@ Hooks.on("ready", () => {
 	}
 
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
-		ui.notifications.info(game.i18n.format("pf2e-jb2a-macros.notifications.update", {version: game.modules.get("pf2e-jb2a-macros").version}))
+		ui.notifications.info(game.i18n.format("pf2e-jb2a-macros.notifications.update", { version: game.modules.get("pf2e-jb2a-macros").version }))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
 		if (game.user.isGM && game.settings.get("pf2e-jb2a-macros", "autoUpdate")) new autorecUpdateFormApplication().render(true)
 	}
@@ -369,64 +369,127 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
 		}
 
-		if (args && args[2]?.length && args[2].includes("summon-spell")) {
+		let randomCreature
+		let randomAmount
+
+		if (args && args[2]?.length) {
+			const summon = args[2].includes("summon-spell")
 			const traitsOr = args[2].find(x => x.includes("trait-or"))?.replace('trait-or', '').split('-')
 			const traitsAnd = args[2].find(x => x.includes("trait-and"))?.replace('trait-and-', '').split('-')
 			const uncommon = args[2].find(x => x.includes("uncommon") || x.includes("rare") || x.includes("unique")) ?? game.settings.get("pf2e-jb2a-macros", "allowUncommonSummons")
+			const exactLevel = args[2].find(x => x.includes("exact-level"))?.replace('exact-level-', '')
+			const level = args[2].find(x => x.includes("level") && !x.includes("exact-level"))?.replace('level-', '').split('-')
+			const hasImage = args[2].find(x => x.includes("has-image"))
+			const source = args[2].find(x => x.includes("source"))?.replace('source-', '').split("|").map(x => x.trim()) // separate by | for multiple sources
+			randomCreature = args[2].includes("random-creature")
+			randomAmount = args[2].find(x => x.includes("random-amount"))?.replace('random-amount-', '').split('-')
 
-			let multiplier = -1;
-			if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
-			if (args[0].flags.pf2e.casting.level >= 3) multiplier = 2;
-			if (args[0].flags.pf2e.casting.level >= 4) multiplier = 3;
-			if (args[0].flags.pf2e.casting.level >= 5) multiplier = 5;
-			if (args[0].flags.pf2e.casting.level >= 6) multiplier = 7;
-			if (args[0].flags.pf2e.casting.level >= 7) multiplier = 9;
-			if (args[0].flags.pf2e.casting.level >= 8) multiplier = 11;
-			if (args[0].flags.pf2e.casting.level >= 9) multiplier = 13;
-			if (args[0].flags.pf2e.casting.level >= 10) multiplier = 15;
-			packs = packs.filter(
+			if (summon && (level || exactLevel)) return ui.notifications.error(game.i18n.format("pf2e-jb2a-macros.notifications.tooManyArgs", { issues: "exactLevel, level, summon-spell" }));
+
+			if (source) {
+				// source filter
+				packs = packs.filter(x => source.some(src => x.source === src))
+			}
+			if (summon) {
+				let multiplier = -1;
+				if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
+				if (args[0].flags.pf2e.casting.level >= 3) multiplier = 2;
+				if (args[0].flags.pf2e.casting.level >= 4) multiplier = 3;
+				if (args[0].flags.pf2e.casting.level >= 5) multiplier = 5;
+				if (args[0].flags.pf2e.casting.level >= 6) multiplier = 7;
+				if (args[0].flags.pf2e.casting.level >= 7) multiplier = 9;
+				if (args[0].flags.pf2e.casting.level >= 8) multiplier = 11;
+				if (args[0].flags.pf2e.casting.level >= 9) multiplier = 13;
+				if (args[0].flags.pf2e.casting.level >= 10) multiplier = 15;
 				// level equal or less filter
-				x => (x.level <= multiplier)
-					// traits OR filter
-					&& (traitsOr ? traitsOr.some(traitOr => x.traits.includes(traitOr)) : true)
-					// traits AND filter
-					&& (traitsAnd ? traitsAnd.every(traitAnd => x.traits.includes(traitAnd)) : true)
-					// common rarity
-					&& (uncommon ? true : (x.rarity === "common"))
-			)
+				packs = packs.filter(x => x.level <= multiplier)
+			}
+			if (level) {
+				// level equal or greater filter
+				packs = packs.filter(x => x.level >= level[0])
+				// level equal or less filter
+				if (level[1]) packs = packs.filter(x => x.level <= level[1])
+			}
+			if (exactLevel) {
+				// level equal filter
+				packs = packs.filter(x => x.level == Number(exactLevel))
+			}
+			if (hasImage) {
+				// level equal filter
+				packs = packs.filter(x => !x.img.includes("systems/pf2e/icons/default-icons"))
+			}
+			if (traitsOr) {
+				// traits OR filter
+				packs = packs.filter(x => traitsOr.some(traitOr => x.traits.includes(traitOr)))
+			}
+			if (traitsAnd) {
+				// traits AND filter
+				packs = packs.filter(x => traitsAnd.every(traitAnd => x.traits.includes(traitAnd)))
+			}
+			if (!uncommon) {
+				// common rarity
+				packs = packs.filter(x => x.rarity === "common")
+			}
+
+			const allTraits = (traitsOr || []).concat(traitsAnd || []).filter(n => n)
+
 			packs = packs.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name));
-			sortedHow.label = game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.sortedByLevel", {multiplier: multiplier, spellLevel: pf2eAnimations.ordinalSuffixOf(args[0].flags.pf2e.casting.level)});
-		} else {
-			packs = packs.sort((a, b) => a.name.localeCompare(b.name));
-			sortedHow.label = game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sortedAlphabetically");
+			sortedHow.label = [
+				`<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sorted")}</p>`,
+				args[2].length ? [
+					summon ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.summonArg")}</p>` : "",
+					level ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${level[0]}${level[1] ? ` - ${level[1]}` : ""}` })}</p>` : "",
+					exactLevel ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${exactLevel}` })}</p>` : "",
+					traitsOr || traitsAnd ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.traitsArg", { traits: allTraits.join(", ") })}</p>` : "",
+					uncommon ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.uncommonArg")}</p>` : "",
+					hasImage ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.hasImageArg")}</p>` : "",
+					source ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.sourceArg", { sources: source.join(", ") })}</p>` : "",
+				].join("") : ""
+			].join("")
 		}
 
-		const options = await warpgate.menu(
-			{
-				inputs: [
-					sortedHow,
-					{
-						type: "select",
-						label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
-						options: packs.map(x => `${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.level", {level: x.level})} | ${x.name}`),
-					},
-					{
-						type: "number",
-						label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.amount"),
-						options: 1
-					}
-				]
-			},
-			{
-				title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.title")
-			}
-		)
+		let inputs = [
+			sortedHow,
+		]
 
-		if (options.buttons === false) return;
+		if (packs.length === 0) packs.push({ level: 420, name: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.nothingFound")})
 
-		const actor = await packs.filter(x => x.name === options.inputs[1].split("|")[1].trim())[0];
-		importedActor = await fromUuid(actor.uuid); // ?? await game.packs.get(actor.compendium ?? actor.uuid.split(".")[1] + "." + actor.uuid.split(".")[2]).getDocument(actor._id ?? actor.id ?? actor.uuid.split(".")[3]);
-		(spawnArgs.options ??= {}).duplicates = options.inputs[2];
+		if (!randomCreature) {
+			inputs.push({
+				type: "select",
+				label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
+				options: packs.map(x => `${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.level", { level: x.level })} - ${x.name}`),
+			})
+		}
+
+		if (!randomAmount) {
+			inputs.push({
+				type: "number",
+				label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.amount"),
+				options: 1
+			})
+		}
+
+		let options = [];
+		if (!(randomAmount && randomCreature)) {
+			options = await warpgate.menu(
+				{
+					inputs: inputs
+				},
+				{
+					title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.title")
+				}
+			)
+
+			if (options.buttons === false) return;
+		}
+
+		console.log(options)
+		const actor = randomCreature ?
+			packs[Math.floor(Math.random() * packs.length)]
+			: (await packs.filter(x => x.name === options.inputs[1].split("-")[1].trim())[0]);
+		importedActor = await fromUuid(actor.uuid);
+		(spawnArgs.options ??= {}).duplicates = randomAmount ? Sequencer.Helpers.random_int_between(randomAmount[0], randomAmount[1]) : options.inputs[randomCreature ? 1 : 2];
 	}
 
 	spawnArgs.origins = { tokenUuid: tokenD.data.uuid, itemUuid: args?.[1].itemUuid, itemName: args?.[1].itemName }
@@ -434,7 +497,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
 	let importedToken = importedActor.prototypeToken
-	Object.assign(importedToken.flags, { "pf2e-jb2a-macros": { "scrollingText": game.settings.get("core","scrollingStatusText") } })
+	Object.assign(importedToken.flags, { "pf2e-jb2a-macros": { "scrollingText": game.settings.get("core", "scrollingStatusText") } })
 
 	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
 
@@ -507,7 +570,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
 	new Dialog({
 		title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.title"),
-		content: game.i18n.format("pf2e-jb2a-macros.macro.summoning.gm.content", {actorName: args?.updates?.token?.name ?? args.actorName, amount: args?.options?.duplicates ?? "1", user: args.userId ? game.users.find(x => x.id === args.userId).name : game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser")}),
+		content: game.i18n.format("pf2e-jb2a-macros.macro.summoning.gm.content", { actorName: args?.updates?.token?.name ?? args.actorName, amount: args?.options?.duplicates ?? "1", user: args.userId ? game.users.find(x => x.id === args.userId).name : game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser") }),
 		buttons: {
 			button1: {
 				label: "Accept",

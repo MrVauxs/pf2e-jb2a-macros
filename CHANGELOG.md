@@ -2,8 +2,13 @@
 - Added Mirror Image.
 - Revamped Resist Energy and Mage Armor.
 - Fixed scrolling text on summons, revealing their HP by dealing damage to them (from 999 to their true health pool).
-- Added the ability to pick between being able to summon uncommon creatures or not.
-  - You can access this in the settings or by adding "uncommon" to the spells arguments in either Auto-Recognition Menu or the spell itself on a character sheet.
+- Added a variety of Summoning Filter Options. Thse include:
+  - `level-` and `exact-level`, ex. `level-1-5` for 1st to 5th level and `exact-level-4` for exactly 4th level creatures
+  - `uncommon` for uncommon or higher rarity creatures
+  - `random-creature` for randomly selecting a creature
+  - `random-amount-` ex. `random-amount-1-9` for randomly deciding how many creatures to summon between 1 to 9
+  - `has-image` for whether the creature has an image (helpful with the newly released token pack)
+  - `source-` for the source of the creature, ex. `source-pathfinder-bestiary-3` to only grab the bestiary 3 creatures
 
 # Version 2.6.9
 - Updated localization files.

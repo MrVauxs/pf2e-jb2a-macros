@@ -18,6 +18,7 @@
 			"noDummy": "Missing dummy actors for summoning macros.",
 			"creatingDummy": " Creating dummy NPC… ",
 			"noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?",
+			"tooManyArgs": "Too many arguments for this macro! The following arguments are incompatible: {issues}",
 			"metaData": "This animation WILL be replaced when updated. If you don't want it to be, best way is to temporarily change it's <b>animation</b> or <b>variant</b> to something else."
 		},
 		"macro": {
@@ -40,10 +41,16 @@
 			"summoning": {
 				"player": {
 					"dancingLights": "Select your dancing lights…",
-					"sortedByLevel": "Sorted by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
-					"sortedAlphabetically": "Sorted alphabetically.",
+					"sorted": "Sorted by level and alphabetically.",
+					"summonArg": "Filtered by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
+					"levelArg": "Filtered by level <b>{levels}</b>.",
+					"traitsArg": "Filtered by traits: <b>{traits}</b>.",
+					"hasImageArg": "Filtered by whether a creature has an <b>image</b>.",
+					"uncommonArg": "<b>Uncommon or higher rarity</b> picks allowed.",
+					"sourceArg": "Filtered by source: <b>{sources}</b>.",
 					"label": "Sorted with…?",
 					"creature": "Creature",
+					"nothingFound": "Nothing found. Refine your filter arguments!",
 					"amount": "Amount",
 					"title": "Summon Anything",
 					"level": "Level {level}"
