@@ -1,4 +1,7 @@
-Hooks.on("init", () => {
+const pf2eAnimations = {}
+pf2eAnimations.hooks = {}
+
+pf2eAnimations.hooks.init = Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
 		scope: "world",
 		config: true,
@@ -101,7 +104,7 @@ Hooks.on("init", () => {
 	});
 });
 
-Hooks.on("ready", () => {
+pf2eAnimations.hooks.ready = Hooks.on("ready", () => {
 	console.log("PF2e Animations Macros v" + game.modules.get("pf2e-jb2a-macros").version + " loaded.");
 	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
@@ -123,7 +126,7 @@ Hooks.on("ready", () => {
 	if (game.settings.get("pf2e", "tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
 });
 
-Hooks.on("createChatMessage", async (data) => {
+pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (data) => {
 	if (game.user.id !== data.user.id) return;
 	let targets = data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
 	targets = [targets].flat()
@@ -187,37 +190,70 @@ Hooks.on("createChatMessage", async (data) => {
 	}
 });
 
-Hooks.on("preUpdateItem", (data, changes) => {
+pf2eAnimations.hooks.preUpdateItem = Hooks.on("preUpdateItem", (data, changes) => {
 	pf2eAnimations.debug("Running Equipment Changes Macro.", { data, changes });
 	pf2eAnimations.runMacro('Equipment Changes', { data, changes })
 });
 
-Hooks.on("AutomatedAnimations.metaData", (metaData) => {
-	if (metaData.name === "PF2e Animation Macros") {
+pf2eAnimations.hooks.AutomatedAnimations = {}
+pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimations.metaData", async (metaData) => {
+	if (game.settings.get("pf2e-jb2a-macros", "debug")) {
+		if (!(metaData.label || metaData.menu)) ui.notifications.error("Cannot update this entry's metaData!");
+		await warpgate.menu(
+			{
+				inputs: [
+					{
+						label: 'name',
+						type: 'text',
+						options: metaData.name || "PF2e Animation Macros"
+					},
+					{
+						label: 'moduleVersion',
+						type: 'text',
+						options: metaData.moduleVersion || game.modules.get("pf2e-jb2a-macros").version
+					},
+					{
+						label: 'version',
+						type: 'number',
+						options: metaData.version || 1
+					}
+				],
+				buttons: [
+					{
+						label: 'Apply',
+						value: 1,
+						callback: async (options) => {
+							settings = await game.settings.get("autoanimations", `aaAutorec-${metaData.menu}`);
+							entry = settings.findIndex(obj => obj.label === metaData.label);
+							settings[entry].metaData.name = options.inputs[0] ?? settings[entry].metaData.name;
+							settings[entry].metaData.moduleVersion = options.inputs[1] ?? settings[entry].metaData.moduleVersion;
+							settings[entry].metaData.version = options.inputs[2] ?? settings[entry].metaData.version;
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings}), { [metaData.menu]: true });
+						}
+					},
+					{
+						label: 'Delete MetaData',
+						value: 1,
+						callback: async (options) => {
+							settings = await game.settings.get("autoanimations", `aaAutorec-${metaData.menu}`);
+							entry = settings.findIndex(obj => obj.label === metaData.label);
+							settings[entry].metaData = {};
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings}), { [metaData.menu]: true });
+						}
+					}
+				]
+			},
+			{
+				title: `DEBUG | Add Metadata to ${metaData.label}.`
+			}
+		)
+	} else if (metaData.name === "PF2e Animation Macros") {
 		ui.notifications.notify(`${metaData.name} (v${metaData.moduleVersion}) | Animation Version: ${metaData.version}<hr>${game.i18n.localize("pf2e-jb2a-macros.notifications.metaData")}`);
 	};
 });
 
-let pf2eAnimations = {}
-
 pf2eAnimations.debug = function debug(msg = "", args = "") {
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e Animations Macros | ${msg}`, args);
-}
-
-// https://stackoverflow.com/a/13627586/12227966
-pf2eAnimations.ordinalSuffixOf = function ordinalSuffixOf(i) {
-	var j = i % 10,
-		k = i % 100;
-	if (j == 1 && k != 11) {
-		return i + "st";
-	}
-	if (j == 2 && k != 12) {
-		return i + "nd";
-	}
-	if (j == 3 && k != 13) {
-		return i + "rd";
-	}
-	return i + "th";
 }
 
 // Thanks @ xdy for this function.
@@ -423,7 +459,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 				packs = packs.filter(x => x.level == Number(exactLevel))
 			}
 			if (hasImage) {
-				// level equal filter
+				// non default icons
 				packs = packs.filter(x => !x.img.includes("systems/pf2e/icons/default-icons"))
 			}
 			if (traitsOr) {
@@ -460,7 +496,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			sortedHow,
 		]
 
-		if (packs.length === 0) packs.push({ level: 420, name: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.nothingFound")})
+		if (packs.length === 0) packs.push({ level: 420, name: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.nothingFound") })
 
 		if (!randomCreature) {
 			inputs.push({
@@ -492,7 +528,6 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			if (options.buttons === false) return;
 		}
 
-		console.log(options)
 		const actor = randomCreature ?
 			packs[Math.floor(Math.random() * packs.length)]
 			: (await packs.filter(x => x.name === options.inputs[1].split("-")[1].trim())[0]);
@@ -612,7 +647,7 @@ pf2eAnimations.getJSON = async function getJSON(url) {
 
 pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quiet = true) {
 	if (quiet) console.group("PF2e Animations Macros | Autorecognition Menu Check");
-	const autorec = await pf2eAnimations.getJSON("modules/pf2e-jb2a-macros/module/autorecs/autorec.json");
+	const autorec = await pf2eAnimations.getJSON("modules/pf2e-jb2a-macros/module/autorec.json");
 	let settings = {}
 	settings.melee = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-melee').map(v => [v.id, v])).values()]
 	settings.range = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-range').map(v => [v.id, v])).values()]
@@ -701,6 +736,8 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 		// Merge all the arrays into one.
 		newSettingsDirty[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
 		newSettings[key] = [...new Map(newSettingsDirty[key].map(v => [v.id, v])).values()].sort((a, b) => (a.label || "").localeCompare((b.label || "")))
+		// add to every entry's metaData the name of the entry
+		newSettings[key].map(x => { x.metaData.label = x.label; x.metaData.menu = x.menu; return x })
 	}
 	// Adds the current Autorec version into the menu to ensure it will not get wiped going through the Autorec Merge scripts
 	newSettings.version = await game.settings.get('autoanimations', 'aaAutorec').version
