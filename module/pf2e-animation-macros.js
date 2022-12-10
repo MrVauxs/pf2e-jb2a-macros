@@ -535,7 +535,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 		(spawnArgs.options ??= {}).duplicates = randomAmount ? Sequencer.Helpers.random_int_between(randomAmount[0], randomAmount[1]) : options.inputs[randomCreature ? 1 : 2];
 	}
 
-	spawnArgs.origins = { tokenUuid: tokenD.data.uuid, itemUuid: args?.[1].itemUuid, itemName: args?.[1].itemName }
+	spawnArgs.origins = { tokenUuid: tokenD.data.uuid, itemUuid: args?.[1]?.itemUuid, itemName: args?.[1]?.itemName }
 
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
