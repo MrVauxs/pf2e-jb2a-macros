@@ -4,7 +4,7 @@
     ],
 */
 Hooks.once('sequencer.ready', () => {
-    if (isNewerVersion(game.modules.get("sequencer").version, "2.4.1")) {
+    if (isNewerVersion(game.modules.get("sequencer").version.replace("!", ""), "2.4.1")) {
         Sequencer.Presets.add("pf2eAnimations.breathe", (effect, args) => {
             return effect
                 .loopProperty("spriteContainer", "scale.x", { from: 0.9, to: 1.1, duration: args?.duration ?? 3000, pingPong: true, ease: "easeInOutSine" })

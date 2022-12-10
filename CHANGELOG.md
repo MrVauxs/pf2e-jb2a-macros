@@ -1,4 +1,5 @@
 # Version 2.7.0
+- Renamed PF2e Animation Macros to PF2e Animations.
 - Added Mirror Image.
 - Revamped Resist Energy and Mage Armor.
 - Added Animal Shapes using the Pathfinder Token Pack: Bestiaries module.

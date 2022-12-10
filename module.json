@@ -1,6 +1,6 @@
 {
 	"id": "pf2e-jb2a-macros",
-	"title": "PF2e Animation Macros",
+	"title": "PF2e Animations",
 	"description": "<p>A module dedicated to making PF2e shine.</p>",
 	"authors": [
 		{
@@ -143,6 +143,11 @@
 			"type": "cover",
 			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/cover.png?raw=true",
 			"caption": "Pathfinder 2e and Foundry logo + JB2A logo Macros with a gold/yellow tape in the upper left corner saying REQUIRES AUTOMATED ANIMATIONS across it."
+		},
+		{
+			"type": "cover",
+			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/previw.gif?raw=true",
+			"caption": "Preview of PF2e Animations module."
 		}
 	],
 	"changelog": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/CHANGELOG.md",
