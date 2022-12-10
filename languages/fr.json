@@ -18,7 +18,7 @@
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
 			"noDummy": "Acteurs fictifs manquants pour les macros d'invocation.",
 			"noToken": "Pas de jeton source trouvé.",
-			"metaData": "Cette animation SERA remplacée lors de la mise à jour. Si vous ne voulez pas qu'elle le soit, le meilleur moyen est de changer temporairement son <b>animation</b> ou sa <b>variante</b> en autre chose.",
+			"metaData": "Cette animation SERA remplacée lors de la mise à jour. Si vous ne voulez pas qu'elle le soit, le meilleur moyen est de changer temporairement son <b>animation</b> ou sa <b>variante</b> en autre chose, ou en activant le mode débogage dans les réglages et en pressant de nouveau le bouton Metadonnées de nouveau.",
 			"tooManyArgs": "Trop d'arguments pour cette macro ! Les arguments suivants sont incompatibles : {issues}"
 		},
 		"settings": {
