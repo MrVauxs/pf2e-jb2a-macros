@@ -737,7 +737,7 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 		newSettingsDirty[key] = [...missingEntries[key], ...updatedEntries[key], ...custom[key], ...same[key], ...customNew[key]]
 		newSettings[key] = [...new Map(newSettingsDirty[key].map(v => [v.id, v])).values()].sort((a, b) => (a.label || "").localeCompare((b.label || "")))
 		// add to every entry's metaData the name of the entry
-		newSettings[key].map(x => { x.metaData.label = x.label; x.metaData.menu = x.menu; return x })
+		newSettings[key].map(x => { x.metaData = x.metaData ?? {}; x.metaData.label = x.label; x.metaData.menu = x.menu; return x })
 	}
 	// Adds the current Autorec version into the menu to ensure it will not get wiped going through the Autorec Merge scripts
 	newSettings.version = await game.settings.get('autoanimations', 'aaAutorec').version
