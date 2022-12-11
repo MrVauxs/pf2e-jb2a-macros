@@ -18,7 +18,8 @@
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
 			"noDummy": "Acteurs fictifs manquants pour les macros d'invocation.",
 			"noToken": "Pas de jeton source trouvé.",
-			"metaData": "Cette animation SERA remplacée lors de la mise à jour. Si vous ne voulez pas qu'elle le soit, le meilleur moyen est de changer temporairement son <b>animation</b> ou sa <b>variante</b> en autre chose."
+			"metaData": "Cette animation SERA remplacée lors de la mise à jour. Si vous ne voulez pas qu'elle le soit, le meilleur moyen est de changer temporairement son <b>animation</b> ou sa <b>variante</b> en autre chose, ou en activant le mode débogage dans les réglages et en pressant de nouveau le bouton Metadonnées de nouveau.",
+			"tooManyArgs": "Trop d'arguments pour cette macro ! Les arguments suivants sont incompatibles : {issues}"
 		},
 		"settings": {
 			"useLocalMacros": {
@@ -53,6 +54,14 @@
 			"autoUpdate": {
 				"name": "Ouvrir le menu de mise à jour lors de la mise à jour du module",
 				"hint": "Ouvre automatiquement le menu de mise à jour de l'auto-reconnaissance lorsque le module est mis à jour."
+			},
+			"allowUncommonSummons": {
+				"name": "Autoriser des invocations pas courantes",
+				"hint": "Permet aux joueurs d'invoquer des créatures peu courantes, rares ou uniques. Vous pouvez également autoriser cela pour des sorts individuels en ajoutant le terme en anglais \"uncommon\" aux arguments des sorts soit dans le menu de reconnaissance automatique soit dans le sort lui-même sur une feuille de personnage."
+			},
+			"onlyImageSummons": {
+				"name": "N'autoriser que les Invocations qui ont une image",
+				"hint": "Permet d'invoquer uniquement des créatures qui ont une image."
 			}
 		},
 		"macro": {
@@ -81,7 +90,15 @@
 					"title": "Invoquer n'importe quoi",
 					"dancingLights": "Sélectionnez vos lumières dansantes…",
 					"sortedByLevel": "Classé par niveau <b>(niveau max. {multiplier} du sort au niveau {spellLevel})</b>.",
-					"level": "Niveau {level}"
+					"level": "Niveau {level}",
+					"sorted": "Classés par niveau et alphabétiquement.",
+					"summonArg": "Filtré par niveau <b>(niveau max. {multiplier} de niveau de sort {spellLevel})</b>.",
+					"levelArg": "Filtré par niveau <b>{levels}</b>.",
+					"traitsArg": "Filtré par traits : <b>{traits}</b>.",
+					"hasImageArg": "Filtré selon que la créature possède une <b>image </b> .",
+					"uncommonArg": "Les choix <b>peu courants ou plus rares</b> sont autorisés.",
+					"sourceArg": "Filtré par source : <b>{sources}</b>.",
+					"nothingFound": "Rien trouvé. Affinez vos arguments pour filtrer !"
 				},
 				"gm": {
 					"title": "Demande d'invocation du joueur",
