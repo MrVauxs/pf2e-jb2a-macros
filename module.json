@@ -125,11 +125,6 @@
 				"id": "warpgate",
 				"type": "module",
 				"manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
-			},
-			{
-				"manifest": "https://raw.githubusercontent.com/CDeenen/SoundFxLibrary/master/module.json",
-				"id": "soundfxlibrary",
-				"type": "module"
 			}
 		]
 	},
