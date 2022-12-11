@@ -3,15 +3,21 @@
 
 ![--A gif showcasing the module's various animations--](https://github.com/MrVauxs/pf2e-jb2a-macros/raw/main/preview.gif)
 
-A collection of JB2A macros for the PF2e Foundry system.
+A fully automated preset of animations for the Pathfinder 2e system in FoundryVTT.
 
 Created to accompany the [Automated Animations](https://github.com/otigon/automated-jb2a-animations) module.
+**Requires JB2A Assets modules. The module is built primarily for the _Patreon_ version.** Full compatibility with the free version is tenuous, and not on the priority list.
 
-**Requires JB2A Assets modules. Built primarily for the _Patreon_ version.** Full compatibility with the Free version is on the To-Do list, but not a priority.
-
-You can probably appropriate most of this module for other systems, I simply don't have interest in doing so.
+You can appropriate most of this module for other systems, I simply don't have interest in doing so.
 
 If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs) or [Ko-Fi](https://ko-fi.com/mrvauxs)!
+
+## Optional Modules
+- [SoundFx Library](https://github.com/CDeenen/SoundFxLibrary) and [Animated Spell Effects: Cartoon](https://github.com/jackkerouac/animated-spell-effects-cartoon) for sounds.
+- [PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat) is integrated into the module. Various reload actions can be found in the PF2e Animations Compendiums which provide both reloading functions and animation + sound effects to your reloads.
+
+## Not-Recommended Modules
+- [Automated Evocations](https://github.com/theripper93/automated-evocations), PF2e Animations provides full range of automation for summoning spells as well as animations for them, which are fully customizable by both the GM and the player, on global and individual actor scale.
 
 ## [Installing the Module](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Installing-the-Module)
 ## [Previews](https://github.com/MrVauxs/pf2e-jb2a-macros/wiki/Previews)
