@@ -1,3 +1,6 @@
+# Version 2.7.1
+- Fixed bug regarding summoning -1 level creatures.
+
 # Version 2.7.0
 - Renamed PF2e Animation Macros to PF2e Animations.
 - Added Mirror Image.
