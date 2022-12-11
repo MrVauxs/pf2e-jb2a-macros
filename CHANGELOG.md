@@ -5,7 +5,7 @@
 - Revamped Resist Energy and Mage Armor.
 - Added Animal Shapes using the Pathfinder Token Pack: Bestiaries module.
 - Fixed scrolling text on summons, revealing their HP by dealing damage to them (from 999 to their true health pool).
-- Added a variety of Summoning Filter Options. Thse include:
+- Added a variety of Summoning Filter Options. These include:
   - `level-` and `exact-level`, ex. `level-1-5` for 1st to 5th level and `exact-level-4` for exactly 4th level creatures.
   - `uncommon` for uncommon or higher rarity creatures.
   - `random-creature` for randomly selecting a creature.
