@@ -40,6 +40,7 @@
 			},
 			"summoning": {
 				"player": {
+					"unique": "The filters are uniqely set as per {unique}.",
 					"dancingLights": "Select your dancing lights…",
 					"sorted": "Sorted by level and alphabetically.",
 					"summonArg": "Filtered by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",

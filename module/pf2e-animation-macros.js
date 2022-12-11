@@ -228,7 +228,7 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 							settings[entry].metaData.name = options.inputs[0] ?? settings[entry].metaData.name;
 							settings[entry].metaData.moduleVersion = options.inputs[1] ?? settings[entry].metaData.moduleVersion;
 							settings[entry].metaData.version = options.inputs[2] ?? settings[entry].metaData.version;
-							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings}), { [metaData.menu]: true });
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings }), { [metaData.menu]: true });
 						}
 					},
 					{
@@ -238,7 +238,7 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 							settings = await game.settings.get("autoanimations", `aaAutorec-${metaData.menu}`);
 							entry = settings.findIndex(obj => obj.label === metaData.label);
 							settings[entry].metaData = {};
-							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings}), { [metaData.menu]: true });
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings }), { [metaData.menu]: true });
 						}
 					}
 				]
@@ -372,9 +372,16 @@ pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
  * @param {string} alignment Alignment as a String ex. CG.
  * @returns {Array} traits Array of traits.
  */
-pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignment) {
+pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignment, reverse = false) {
 	// returns an array of traits for the alignment string
-	// e.g. "LG" -> ["Lawful", "Good"]
+	// e.g. "LG" -> ["lawful", "good"]
+
+	// reverse = true will return the opposite traits
+	// e.g. "LG" -> ["chaotic", "evil"]
+	// thanks Co-Pilot for the code below
+	if (reverse) {
+		alignment = alignment.split("").map(a => a === "L" ? "C" : a === "C" ? "L" : a === "G" ? "E" : a === "E" ? "G" : a).join("");
+	}
 	let traits = [];
 	if (alignment.includes("L")) traits.push("lawful");
 	if (alignment.includes("N")) traits.push("neutral");
@@ -384,6 +391,41 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 	return traits;
 }
 
+// Borrowed from PF2eTools Utils
+// https://github.com/Pf2eToolsOrg/Pf2eTools/blob/1f241bbb353c20bbcc726843b4ae0992dad7f999/js/utils.js#L69
+String.prototype.toTitleCase = String.prototype.toTitleCase || function () {
+	let str = this.replace(/([^\W_]+[^\s-/]*) */g, m0 => m0.charAt(0).toUpperCase() + m0.substr(1).toLowerCase());
+
+	StrUtil = {
+		// Certain minor words should be left lowercase unless they are the first or last words in the string
+		TITLE_LOWER_WORDS: ["a", "an", "the", "and", "but", "or", "for", "nor", "as", "at", "by", "for", "from", "in", "into", "near", "of", "on", "onto", "to", "with", "over"],
+		// Certain words such as initialisms or acronyms should be left uppercase
+		TITLE_UPPER_WORDS: ["Id", "Tv", "Dm", "Ok"],
+	};
+
+	// Require space surrounded, as title-case requires a full word on either side
+	StrUtil._TITLE_LOWER_WORDS_RE = StrUtil._TITLE_LOWER_WORDS_RE = StrUtil.TITLE_LOWER_WORDS.map(it => new RegExp(`\\s${it}\\s`, "gi"));
+	StrUtil._TITLE_UPPER_WORDS_RE = StrUtil._TITLE_UPPER_WORDS_RE = StrUtil.TITLE_UPPER_WORDS.map(it => new RegExp(`\\b${it}\\b`, "g"));
+
+	const len = StrUtil.TITLE_LOWER_WORDS.length;
+	for (let i = 0; i < len; i++) {
+		str = str.replace(
+			StrUtil._TITLE_LOWER_WORDS_RE[i],
+			txt => txt.toLowerCase(),
+		);
+	}
+
+	const len1 = StrUtil.TITLE_UPPER_WORDS.length;
+	for (let i = 0; i < len1; i++) {
+		str = str.replace(
+			StrUtil._TITLE_UPPER_WORDS_RE[i],
+			StrUtil.TITLE_UPPER_WORDS[i].toUpperCase(),
+		);
+	}
+
+	return str;
+};
+
 /**
  *
  * @param {Object} args Args passed down in the macro.
@@ -391,7 +433,7 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
  * @param {Object} spawnArgs Arguments to be passed down to Warpgate spawnAt function, order insensitive.
  */
 pf2eAnimations.playerSummons = async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) {
-	const [tokenD, tokenScale] = pf2eAnimations.macroHelpers(args)
+	const [tokenD, tokenScale] = pf2eAnimations.macroHelpers(args);
 
 	// If no actor is passed, prompt a player to select one.
 	if (!Object.keys(importedActor).length) {
@@ -413,12 +455,39 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
 		}
 
-		let randomCreature
-		let randomAmount
+		let randomCreature, randomAmount;
 
 		if (args && args[2]?.length) {
-			const summon = args[2].includes("summon-spell")
-			const traitsOr = args[2].find(x => x.includes("trait-or"))?.replace('trait-or', '').split('-')
+			pf2eAnimations.debug("Summoning Args", args);
+			let unique, uniqueString, alignment;
+			if (args[2].find(x => x.includes("unique"))) {
+				unique = args[2].find(x => x.includes("unique-"))?.replace('unique-', '')
+				if (unique && args[2].length > 1) return ui.notifications.error("You can only select one unique summon type.");
+				switch (unique) {
+					case "lesser-servitor": {
+						// spell level
+						let multiplier = -1;
+						if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
+						if (args[0].flags.pf2e.casting.level >= 3) multiplier = 2;
+						if (args[0].flags.pf2e.casting.level >= 4) multiplier = 3;
+						packs = packs.filter(x => x.level <= multiplier)
+						packs = packs.filter(x =>
+							// celestial, monitor, or fiend
+							["celestial","monitor","fiend"].some(traitOr => x.traits.includes(traitOr))
+							// or any of the below animal names
+							|| ["Eagle", "Guard Dog", "Raven", "Black Bear", "Giant Bat", "Leopard", "Tiger", "Great White Shark"].some(v => x.name.includes(v))
+						)
+						// get the actors alignment
+						alignment = args[1].sourceToken.actor?.deity?.system?.alignment?.own ?? args[1].sourceToken.actor?.details?.alignment?.value;
+						packs = packs.filter(x => pf2eAnimations.alignmentStringToTraits(alignment, true).some(t => !x.traits.includes(t)))
+						// create string for the dialog
+						uniqueString = `<a class="content-link" draggable="true" data-pack="pf2e.spells-srd" data-uuid="Compendium.pf2e.spells-srd.B0FZLkoHsiRgw7gv" data-id="B0FZLkoHsiRgw7gv"><i class="fas fa-suitcase"></i>Summon Lesser Servitor</a>`
+						break;
+					}
+				}
+			}
+			const summon = args[2].includes("summon-spell-") ? args[2].find(x => x.includes("summon-spell-"))?.replace('summon-spell-', '').split('-') : args[2].includes("summon-spell-")
+			const traitsOr = args[2].find(x => x.includes("trait-or-"))?.replace('trait-or-', '').split('-')
 			const traitsAnd = args[2].find(x => x.includes("trait-and"))?.replace('trait-and-', '').split('-')
 			const uncommon = args[2].find(x => x.includes("uncommon") || x.includes("rare") || x.includes("unique")) ?? game.settings.get("pf2e-jb2a-macros", "allowUncommonSummons")
 			const exactLevel = args[2].find(x => x.includes("exact-level"))?.replace('exact-level-', '')
@@ -481,6 +550,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			sortedHow.label = [
 				`<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sorted")}</p>`,
 				args[2].length ? [
+					unique ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.unique", { unique: uniqueString})}</p>` : "",
 					summon ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.summonArg")}</p>` : "",
 					level ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${level[0]}${level[1] ? ` - ${level[1]}` : ""}` })}</p>` : "",
 					exactLevel ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${exactLevel}` })}</p>` : "",

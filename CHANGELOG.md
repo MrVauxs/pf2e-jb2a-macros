@@ -1,16 +1,18 @@
 # Version 2.7.0
 - Renamed PF2e Animation Macros to PF2e Animations.
 - Added Mirror Image.
+- Added / Fixed lack of Summon Lesser Servitor.
 - Revamped Resist Energy and Mage Armor.
 - Added Animal Shapes using the Pathfinder Token Pack: Bestiaries module.
 - Fixed scrolling text on summons, revealing their HP by dealing damage to them (from 999 to their true health pool).
 - Added a variety of Summoning Filter Options. Thse include:
-  - `level-` and `exact-level`, ex. `level-1-5` for 1st to 5th level and `exact-level-4` for exactly 4th level creatures
-  - `uncommon` for uncommon or higher rarity creatures
-  - `random-creature` for randomly selecting a creature
-  - `random-amount-` ex. `random-amount-1-9` for randomly deciding how many creatures to summon between 1 to 9
-  - `has-image` for whether the creature has an image (helpful with the newly released token pack)
-  - `source-` for the source of the creature, ex. `source-pathfinder-bestiary-3` to only grab the bestiary 3 creatures
+  - `level-` and `exact-level`, ex. `level-1-5` for 1st to 5th level and `exact-level-4` for exactly 4th level creatures.
+  - `uncommon` for uncommon or higher rarity creatures.
+  - `random-creature` for randomly selecting a creature.
+  - `random-amount-` ex. `random-amount-1-9` for randomly deciding how many creatures to summon between 1 to 9.
+  - `has-image` for whether the creature has an image (helpful with the newly released token pack).
+  - `source-` for the source of the creature, ex. `source-pathfinder-bestiary-3` to only grab the bestiary 3 creatures.
+  - `unique-` for in-house automation. Currently only accepts `unique-lesser-servitor` for use with Summon Lesser Servitor spell.
 
 # Version 2.6.9
 - Updated localization files.
