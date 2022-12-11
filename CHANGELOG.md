@@ -13,6 +13,7 @@
   - `has-image` for whether the creature has an image (helpful with the newly released token pack).
   - `source-` for the source of the creature, ex. `source-pathfinder-bestiary-3` to only grab the bestiary 3 creatures.
   - `unique-` for in-house automation. Currently only accepts `unique-lesser-servitor` for use with Summon Lesser Servitor spell.
+- Updated localization files.
 
 # Version 2.6.9
 - Updated localization files.
