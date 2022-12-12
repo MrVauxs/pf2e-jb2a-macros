@@ -1,3 +1,5 @@
+# Version 2.7.4
+
 # Version 2.7.3
 - Actually add Summon Lesser Servitor...
 - Fixed Dinosaur Form (Brontosaurus) scaling.
