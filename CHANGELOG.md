@@ -1,5 +1,6 @@
 # Version 2.7.2
 - Removed soundfxlibrary dependency. Animations with sounds will not play the sound if it is missing.
+- Updated localization files.
 
 # Version 2.7.1
 - Fixed bug regarding summoning -1 level creatures.
