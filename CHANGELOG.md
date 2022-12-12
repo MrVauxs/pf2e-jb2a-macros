@@ -1,3 +1,7 @@
+# Version 2.7.3
+- Actually add Summon Lesser Servitor...
+- Fixed Dinosaur Form (Brontosaurus) scaling.
+
 # Version 2.7.2
 - Removed soundfxlibrary dependency. Animations with sounds will not play the sound if it is missing.
 - Updated localization files.
