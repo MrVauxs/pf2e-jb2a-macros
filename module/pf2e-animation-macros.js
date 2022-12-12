@@ -455,7 +455,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
 		}
 
-		let randomCreature, randomAmount;
+		let randomCreature, randomAmount, multiplier;
 
 		if (args && args[2]?.length) {
 			pf2eAnimations.debug("Summoning Args", args);
@@ -475,7 +475,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 							// celestial, monitor, or fiend
 							["celestial","monitor","fiend"].some(traitOr => x.traits.includes(traitOr))
 							// or any of the below animal names
-							|| ["Eagle", "Guard Dog", "Raven", "Black Bear", "Giant Bat", "Leopard", "Tiger", "Great White Shark"].some(v => x.name.includes(v))
+							|| ["Eagle", "Guard Dog", "Raven", "Black Bear", "Giant Bat", "Leopard", "Tiger", "Great White Shark"].some(v => x.name === v)
 						)
 						// get the actors alignment
 						alignment = args[1].sourceToken.actor?.deity?.system?.alignment?.own ?? args[1].sourceToken.actor?.details?.alignment?.value;
@@ -486,25 +486,25 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 					}
 				}
 			}
-			const summon = args[2].includes("summon-spell-") ? args[2].find(x => x.includes("summon-spell-"))?.replace('summon-spell-', '').split('-') : args[2].includes("summon-spell-")
+			const summon = args[2].includes("summon-spell-") ? args[2].find(x => x.includes("summon-spell-"))?.replace('summon-spell-', '').split('-') : args[2].includes("summon-spell")
 			const traitsOr = args[2].find(x => x.includes("trait-or-"))?.replace('trait-or-', '').split('-')
 			const traitsAnd = args[2].find(x => x.includes("trait-and"))?.replace('trait-and-', '').split('-')
 			const uncommon = args[2].find(x => x.includes("uncommon") || x.includes("rare") || x.includes("unique")) ?? game.settings.get("pf2e-jb2a-macros", "allowUncommonSummons")
 			const exactLevel = args[2].find(x => x.includes("exact-level"))?.replace('exact-level-', '')
-			const level = args[2].find(x => x.includes("level") && !x.includes("exact-level"))?.replace('level-', '').split('-')
+			const level = args[2].find(x => x.includes("level") && !x.includes("exact-level"))?.replace('level-', '').replaceAll("-1", "~1").split('-')
 			const hasImage = game.settings.get("pf2e-jb2a-macros", "onlyImageSummons") || args[2].find(x => x.includes("has-image"))
 			const source = args[2].find(x => x.includes("source"))?.replace('source-', '').split("|").map(x => x.trim()) // separate by | for multiple sources
 			randomCreature = args[2].includes("random-creature")
 			randomAmount = args[2].find(x => x.includes("random-amount"))?.replace('random-amount-', '').split('-')
 
-			if (summon && (level || exactLevel)) return ui.notifications.error(game.i18n.format("pf2e-jb2a-macros.notifications.tooManyArgs", { issues: "exactLevel, level, summon-spell" }));
+			if ([exactLevel, level, summon].filter(Boolean).length > 1) return ui.notifications.error(game.i18n.format("pf2e-jb2a-macros.notifications.tooManyArgs", { issues: "exactLevel, level, summon-spell" }));
 
 			if (source) {
 				// source filter
 				packs = packs.filter(x => source.some(src => x.source === src))
 			}
 			if (summon) {
-				let multiplier = -1;
+				multiplier = -1;
 				if (args[0].flags.pf2e.casting.level >= 2) multiplier = 1;
 				if (args[0].flags.pf2e.casting.level >= 3) multiplier = 2;
 				if (args[0].flags.pf2e.casting.level >= 4) multiplier = 3;
@@ -519,13 +519,13 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			}
 			if (level) {
 				// level equal or greater filter
-				packs = packs.filter(x => x.level >= level[0])
+				packs = packs.filter(x => x.level >= Number(level[0].replace("~", "-")))
 				// level equal or less filter
-				if (level[1]) packs = packs.filter(x => x.level <= level[1])
+				if (level[1]) packs = packs.filter(x => x.level <= Number(level[1].replace("~", "-")))
 			}
 			if (exactLevel) {
 				// level equal filter
-				packs = packs.filter(x => x.level == Number(exactLevel))
+				packs = packs.filter(x => x.level == Number(exactLevel.replace("~", "-")))
 			}
 			if (hasImage) {
 				// non default icons
@@ -551,8 +551,8 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 				`<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sorted")}</p>`,
 				args[2].length ? [
 					unique ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.unique", { unique: uniqueString})}</p>` : "",
-					summon ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.summonArg")}</p>` : "",
-					level ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${level[0]}${level[1] ? ` - ${level[1]}` : ""}` })}</p>` : "",
+					summon ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.summonArg", { multiplier: multiplier, spellLevel: args[0].flags.pf2e.casting.level })}</p>` : "",
+					level ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { level1: level[0].replace("~", "-"), level2: level[1]?.replace("~", "-") ?? "<span style=\"font-size:18px\">∞</span>" })}</p>` : "",
 					exactLevel ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${exactLevel}` })}</p>` : "",
 					traitsOr || traitsAnd ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.traitsArg", { traits: allTraits.join(", ") })}</p>` : "",
 					uncommon ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.uncommonArg")}</p>` : "",

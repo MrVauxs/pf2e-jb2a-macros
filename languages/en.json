@@ -44,7 +44,7 @@
 					"dancingLights": "Select your dancing lights…",
 					"sorted": "Sorted by level and alphabetically.",
 					"summonArg": "Filtered by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
-					"levelArg": "Filtered by level <b>{levels}</b>.",
+					"levelArg": "Filtered by level <b>{level1} and above, up to {level2}</b>.",
 					"traitsArg": "Filtered by traits: <b>{traits}</b>.",
 					"hasImageArg": "Filtered by whether a creature has an <b>image</b>.",
 					"uncommonArg": "<b>Uncommon or higher rarity</b> picks allowed.",
