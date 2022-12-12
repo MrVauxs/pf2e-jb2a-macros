@@ -98,7 +98,8 @@
 					"hasImageArg": "Filtré selon que la créature possède une <b>image </b> .",
 					"uncommonArg": "Les choix <b>peu courants ou plus rares</b> sont autorisés.",
 					"sourceArg": "Filtré par source : <b>{sources}</b>.",
-					"nothingFound": "Rien trouvé. Affinez vos arguments pour filtrer !"
+					"nothingFound": "Rien trouvé. Affinez vos arguments pour filtrer !",
+					"unique": "Les filtres sont définis de manière unique selon {unique}."
 				},
 				"gm": {
 					"title": "Demande d'invocation du joueur",
