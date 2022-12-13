@@ -746,7 +746,7 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 				const xEntry = getFullVersion(x, settings[key])
 
 				/* (Bang Bang, you're a Boolean) */
-				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animations" || xEntry.metaData?.default)) {
+				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData.name === "PF2e Animations" || xEntry.metaData?.default)) {
 					// Entry is from PF2e Animations, but the same or higher version. Skip.
 					if (xEntry?.metaData?.version >= getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
 
@@ -763,7 +763,7 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 		});
 		settings[key].map(x => { return { label: x.label, metaData: x.metaData } }).forEach(async y => {
 			if (!autorec[key].map(x => { return { label: x.label, metaData: x.metaData } }).some(e => e.label === y.label)) {
-				if (y.metaData?.default || (y?.metaData?.name === "PF2e Animations" && y?.metaData?.version < autorec.melee[0].metaData.version)) {
+				if (y.metaData?.default || ((y?.metaData?.name === "PF2e Animation Macros" || y?.metaData?.name === "PF2e Animations") && y?.metaData?.version < autorec.melee[0].metaData.version)) {
 					// Entry does not exist in autorec, but is from PF2e Animations and of a lower version. Add them to removed.
 					return removed[key].push(getFullVersion(y.label, settings[key]))
 				} else {
