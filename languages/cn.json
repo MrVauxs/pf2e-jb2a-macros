@@ -2,13 +2,13 @@
 	"pf2e-jb2a-macros": {
 		"updateMenu": {
 			"added": "下列效果将会被加入到你的自动识别设定文件中。",
-			"updated": "下列效果将从旧的'PF2e Animation Macros'版本（或Automated Animations的默认版本）更新。",
+			"updated": "下列效果将从旧的'PF2e Animations'版本（或Automated Animations的默认版本）更新。",
 			"nothing": "没有更新。",
 			"warning": "确保你备份了你的自动识别文件！这个操作是无法被撤销的。",
-			"deleted": "下列效果将会从'PF2e Animation Macros'中被移除。",
+			"deleted": "下列效果将会从'PF2e Animations'中被移除。",
 			"custom": "下列效果不会被加入，因为他们已被从另外的源导入。",
-			"customHint": "如果你想要使用'PF2e Animation Macros'版本的配置，请先将他们从你的自动识别菜单里删除。",
-			"debugCustom": "下列效果不存在于PF2e Animation Macros中，他们将继续留在您的自动识别文件里。"
+			"customHint": "如果你想要使用'PF2e Animations'版本的配置，请先将他们从你的自动识别菜单里删除。",
+			"debugCustom": "下列效果不存在于PF2e Animations中，他们将继续留在您的自动识别文件里。"
 		},
 		"notifications": {
 			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a>才能使用PF2e Animations Macros模组（也就是本模组）！",

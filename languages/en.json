@@ -1,14 +1,14 @@
 {
 	"pf2e-jb2a-macros": {
 		"updateMenu": {
-			"deleted": "The following effects will be DELETED from a previous version of 'PF2e Animation Macros'.",
+			"deleted": "The following effects will be DELETED from a previous version of 'PF2e Animations'.",
 			"added": "The following effects are going to be added to your Auto-Recognition settings.",
 			"custom": "The following effects won't be added due to them already existing from an unknown source.",
-			"customHint": "If you want the 'PF2e Animation Macros' version, delete them from your Autorecognition Menu.",
-			"updated": "The following effects will be updated from a previous version of 'PF2e Animation Macros' (or from Automated Animations default menu).",
+			"customHint": "If you want the 'PF2e Animations' version, delete them from your Autorecognition Menu.",
+			"updated": "The following effects will be updated from a previous version of 'PF2e Animations' (or from Automated Animations default menu).",
 			"nothing": "No updates were found.",
 			"warning": "Make sure to backup your autorecognition menu! THIS PROCESS IS IRREVERSIBLE.",
-			"debugCustom": "The following effects do not exist in PF2e Animation Macros, they are completely new and will remain in your Auto-Recognition Menu."
+			"debugCustom": "The following effects do not exist in PF2e Animations, they are completely new and will remain in your Auto-Recognition Menu."
 		},
 		"notifications": {
 			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations Macros module!",

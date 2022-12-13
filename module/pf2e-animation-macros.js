@@ -203,19 +203,19 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 			{
 				inputs: [
 					{
-						label: 'name',
+						label: `name${metaData.name ? "": " (auto)"}`,
 						type: 'text',
-						options: metaData.name || "PF2e Animation Macros"
+						options: metaData.name || "PF2e Animations"
 					},
 					{
-						label: 'moduleVersion',
+						label: `moduleVersion${metaData.moduleVersion ? "": " (auto)"}`,
 						type: 'text',
 						options: metaData.moduleVersion || game.modules.get("pf2e-jb2a-macros").version
 					},
 					{
-						label: 'version',
+						label: `version${metaData.version ? "": " (auto)"}`,
 						type: 'number',
-						options: metaData.version || 1
+						options: metaData.version || Number(game.modules.get("pf2e-jb2a-macros").version.replaceAll(".", ""))
 					}
 				],
 				buttons: [
@@ -247,7 +247,7 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 				title: `DEBUG | Add Metadata to ${metaData.label}.`
 			}
 		)
-	} else if (metaData.name === "PF2e Animation Macros") {
+	} else if (metaData.name === "PF2e Animations") {
 		ui.notifications.notify(`${metaData.name} (v${metaData.moduleVersion}) | Animation Version: ${metaData.version}<hr>${game.i18n.localize("pf2e-jb2a-macros.notifications.metaData")}`);
 	};
 });
@@ -283,11 +283,11 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 			}
 		} else {
 			useLocal ?
-				ui.notifications.error("PF2e Animation Macros | Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
-				: ui.notifications.error("PF2e Animation Macros | Macro " + macroName + " not found in " + compendiumName + ".")
+				ui.notifications.error("PF2e Animations | Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
+				: ui.notifications.error("PF2e Animations | Macro " + macroName + " not found in " + compendiumName + ".")
 		}
 	} else {
-		ui.notifications.error("PF2e Animation Macros | Compendium " + compendiumName + " not found");
+		ui.notifications.error("PF2e Animations | Compendium " + compendiumName + " not found");
 	}
 };
 
@@ -647,7 +647,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
 	if (!args.callbacks) args.callbacks = {};
 
-	if (args?.callbacks?.pre) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.pre function to the summoning macro. Please note it is going to be overriden in the module.");
+	if (args?.callbacks?.pre) ui.notifications.error("PF2e Animations | You are providing a callbacks.pre function to the summoning macro. Please note it is going to be overriden in the module.");
 
 	args.callbacks.pre = async (location, updates) => {
 		mergeObject(updates, {
@@ -658,7 +658,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 		await game.settings.set("core", "scrollingStatusText", false)
 	};
 
-	if (args?.callbacks?.post) ui.notifications.error("PF2e Animation Macros | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
+	if (args?.callbacks?.post) ui.notifications.error("PF2e Animations | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
 
 	args.callbacks.post = async (location, spawnedTokenDoc, updates, iteration) => {
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
@@ -746,14 +746,14 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 				const xEntry = getFullVersion(x, settings[key])
 
 				/* (Bang Bang, you're a Boolean) */
-				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData?.default)) {
-					// Entry is from PF2e Animation Macros, but the same or higher version. Skip.
+				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animations" || xEntry.metaData?.default)) {
+					// Entry is from PF2e Animations, but the same or higher version. Skip.
 					if (xEntry?.metaData?.version >= getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
 
-					// Entry is from PF2e Animation Macros, but outdated. Update.
+					// Entry is from PF2e Animations, but outdated. Update.
 					return updatedEntries[key].push(getFullVersion(x, autorec[key]))
 				} else {
-					// Entry does exist but it's not from PF2e Animation Macros. Add it to custom.
+					// Entry does exist but it's not from PF2e Animations. Add it to custom.
 					return custom[key].push(xEntry)
 				}
 			} else {
@@ -763,8 +763,8 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 		});
 		settings[key].map(x => { return { label: x.label, metaData: x.metaData } }).forEach(async y => {
 			if (!autorec[key].map(x => { return { label: x.label, metaData: x.metaData } }).some(e => e.label === y.label)) {
-				if (y.metaData?.default || (y?.metaData?.name === "PF2e Animation Macros" && y?.metaData?.version < autorec.melee[0].metaData.version)) {
-					// Entry does not exist in autorec, but is from PF2e Animation Macros and of a lower version. Add them to removed.
+				if (y.metaData?.default || (y?.metaData?.name === "PF2e Animations" && y?.metaData?.version < autorec.melee[0].metaData.version)) {
+					// Entry does not exist in autorec, but is from PF2e Animations and of a lower version. Add them to removed.
 					return removed[key].push(getFullVersion(y.label, settings[key]))
 				} else {
 					// Entry does not exist in autorec.json. Add it to customNew.
@@ -774,9 +774,9 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 		})
 	}
 	if (quiet) console.info("The following effects did not exist before. They will be ADDED.", missingEntries)
-	if (quiet) console.info("The following effects can be updated from a previous version of 'PF2e Animation Macros'. They will be UPDATED.", updatedEntries)
-	if (quiet) console.info("The following effects no LONGER exist in PF2e Animation Macros. They will be DELETED.", removed)
-	if (quiet) console.info("The following effects do not exist in PF2e Animation Macros. They will be IGNORED.", customNew)
+	if (quiet) console.info("The following effects can be updated from a previous version of 'PF2e Animations'. They will be UPDATED.", updatedEntries)
+	if (quiet) console.info("The following effects no LONGER exist in PF2e Animations. They will be DELETED.", removed)
+	if (quiet) console.info("The following effects do not exist in PF2e Animations. They will be IGNORED.", customNew)
 	if (quiet) console.info("The following effects cannot be added or updated, due to them already existing from an unknown source. They will be IGNORED.", custom)
 	if (quiet) console.info("The following effects have no updates.", same)
 	if (quiet) console.groupEnd()

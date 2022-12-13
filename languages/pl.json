@@ -37,7 +37,7 @@
 			},
 			"debug": {
 				"name": "Tryb Debugowania",
-				"hint": "Włącza logi konsoli pokazujące co PF2e Animation Macros robi."
+				"hint": "Włącza logi konsoli pokazujące co PF2e Animations robi."
 			},
 			"autorecUpdate": {
 				"name": "Aktualizacja Menu Auto-Rozpoznawania",
@@ -46,14 +46,14 @@
 			}
 		},
 		"updateMenu": {
-			"deleted": "Poniższe efekty zostaną USUNIĘTE z poprzedniej wersji 'PF2e Animation Macros'.",
+			"deleted": "Poniższe efekty zostaną USUNIĘTE z poprzedniej wersji 'PF2e Animations'.",
 			"added": "Poniższe efekty zostaną dodane do twoich ustawień Auto-Rozpoznawania.",
 			"custom": "Poniższe efekty nie zostaną dodane gdyż już istnieje kopia z nieznanego źródła.",
-			"customHint": "Jeżeli chcesz wersje z 'PF2e Animation Macros', usuń je z menu Auto-Rozpoznawania.",
-			"updated": "Poniższe efekty zostaną zaktualizowane z poprzedniej wersji 'PF2e Animation Macros' (lub z domyślnych efektów Automated Animations).",
+			"customHint": "Jeżeli chcesz wersje z 'PF2e Animations', usuń je z menu Auto-Rozpoznawania.",
+			"updated": "Poniższe efekty zostaną zaktualizowane z poprzedniej wersji 'PF2e Animations' (lub z domyślnych efektów Automated Animations).",
 			"nothing": "Brak aktualizacji.",
 			"warning": "Upewnij się, że wykonano kopię zapasową menu auto-rozpoznawania! TEN PROCES JEST NIEODWRACALNY.",
-			"debugCustom": "Poniższe efekty nie istnieją w PF2e Animation Macros. One są kompletnie nowe i pozostaną w twoim menu Auto-Rozpoznawania."
+			"debugCustom": "Poniższe efekty nie istnieją w PF2e Animations. One są kompletnie nowe i pozostaną w twoim menu Auto-Rozpoznawania."
 		},
 		"macro": {
 			"disguise": {
