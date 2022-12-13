@@ -1,7 +1,7 @@
 {
 	"pf2e-jb2a-macros": {
 		"updateMenu": {
-			"deleted": "Les effets suivants seront EFFACÉS d'une précédente version de 'PF2e Animations Macros'.",
+			"deleted": "Les effets suivants seront EFFACÉS d'une précédente version de 'PF2e Animations'.",
 			"custom": "Les effets suivants ne seront pas ajoutés car ils existent déjà et proviennent d'une source inconnue.",
 			"customHint": "Si vous souhaitez la version 'PF2e Animations', effacez les de votre Menu Auto reconnaissance.",
 			"nothing": "Aucune mise à jour n'a été trouvée.",
@@ -12,7 +12,7 @@
 		},
 		"notifications": {
 			"noJB2A": "Vous avez besoin d'un <a href=\"https://jb2a.com/home/content-information/#free_library\">module JB2A</a> actif pour l'utiliser avec le module PF2e Animations !",
-			"update": "PF2e Animations Macros v{version} est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
+			"update": "PF2e Animations v{version} est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
 			"noPersistentDamage": "Veuillez activer le module PF2e dégâts persistants pour utiliser la macro États persistants.",
 			"creatingDummy": " Création d'un PNJ fictif... ",
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
@@ -44,7 +44,7 @@
 			},
 			"debug": {
 				"name": "Mode débogage",
-				"hint": "Active les journaux de console de ce que le module PF2e Animations Macros est en train de faire."
+				"hint": "Active les journaux de console de ce que le module PF2e Animations est en train de faire."
 			},
 			"autorecUpdate": {
 				"name": "Mise à jour du menu de l'auto-reconnaissance",

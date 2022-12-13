@@ -105,7 +105,7 @@ pf2eAnimations.hooks.init = Hooks.on("init", () => {
 });
 
 pf2eAnimations.hooks.ready = Hooks.on("ready", () => {
-	console.log("PF2e Animations Macros v" + game.modules.get("pf2e-jb2a-macros").version + " loaded.");
+	console.log("PF2e Animations v" + game.modules.get("pf2e-jb2a-macros").version + " loaded.");
 	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
 		ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noJB2A"), { permanent: true });
@@ -159,7 +159,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
 		const degreeOfSuccess = pf2eAnimations.degreeOfSuccessWithRerollHandling(data);
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
-		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
+		if (!pack) ui.notifications.error(`PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
 		let items = data.token._actor.items.filter(i => i.name.includes("Attack Animation Template"));
 		if (Object.keys(items).length === 0) {
@@ -253,7 +253,7 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 });
 
 pf2eAnimations.debug = function debug(msg = "", args = "") {
-	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e Animations Macros | ${msg}`, args);
+	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e Animations | ${msg}`, args);
 }
 
 // Thanks @ xdy for this function.
@@ -322,7 +322,7 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args) {
 // Creates dummy NPC and PC actors for summoning purposes.
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
-	let message = `PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
+	let message = `PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
 	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
 	// pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
 	if (!npcActor) {
@@ -662,7 +662,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
 	args.callbacks.post = async (location, spawnedTokenDoc, updates, iteration) => {
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
-		if (!pack) ui.notifications.error(`PF2e Animations Macros | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
+		if (!pack) ui.notifications.error(`PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
 		let items = (args.options.controllingActor.items || []).filter(i => i.name.includes("Summoning Animation Template"));
 		items.push((await pack.getDocuments()).filter(i => i.name.includes("Summoning Animation Template")));
@@ -716,7 +716,7 @@ pf2eAnimations.getJSON = async function getJSON(url) {
 }
 
 pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quiet = true) {
-	if (quiet) console.group("PF2e Animations Macros | Autorecognition Menu Check");
+	if (quiet) console.group("PF2e Animations | Autorecognition Menu Check");
 	const autorec = await pf2eAnimations.getJSON("modules/pf2e-jb2a-macros/module/autorec.json");
 	let settings = {}
 	settings.melee = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-melee').map(v => [v.id, v])).values()]
@@ -816,7 +816,7 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 
 pf2eAnimations.generateAutorecUpdateHTML = async function generateAutorecUpdateHTML() {
 	const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList } = await pf2eAnimations.generateAutorecUpdate(false)
-	let html = `<h1 style="text-align: center; font-weight: bold;">PF2e Animations Macros Update Menu</h1>`
+	let html = `<h1 style="text-align: center; font-weight: bold;">PF2e Animations Update Menu</h1>`
 
 	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || (game.settings.get("pf2e-jb2a-macros", "debug") && customNewEntriesList.length)) {
 		if (removedEntriesList.length) {
@@ -915,7 +915,7 @@ class autorecUpdateFormApplication extends FormApplication {
 	async _updateObject(event) {
 		$(".pf2e-animations-autorec-update-buttons").attr("disabled", true)
 		if (event.submitter.name === "update") {
-			console.group("PF2e Animations Macros | Autorecognition Menu Update");
+			console.group("PF2e Animations | Autorecognition Menu Update");
 			const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList } = await this.settings();
 			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
 			/*
