@@ -93,7 +93,7 @@
 					"level": "Niveau {level}",
 					"sorted": "Classés par niveau et alphabétiquement.",
 					"summonArg": "Filtré par niveau <b>(niveau max. {multiplier} de niveau de sort {spellLevel})</b>.",
-					"levelArg": "Filtré par niveau <b>{levels}</b>.",
+					"levelArg": "Filtré par niveau <b>{level1} et supérieur, jusqu'au {level2}</b>.",
 					"traitsArg": "Filtré par traits : <b>{traits}</b>.",
 					"hasImageArg": "Filtré selon que la créature possède une <b>image </b> .",
 					"uncommonArg": "Les choix <b>peu courants ou plus rares</b> sont autorisés.",
