@@ -81,7 +81,8 @@
 					"amount": "总数",
 					"title": "召唤任何东西",
 					"creature": "生物",
-					"level": "等级{level}"
+					"level": "等级{level}",
+					"sorted": "根据等级和字母排序。"
 				},
 				"gm": {
 					"unknownUser": "一个未知用户",
