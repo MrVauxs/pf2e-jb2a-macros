@@ -1,5 +1,17 @@
 const pf2eAnimations = {}
 pf2eAnimations.hooks = {}
+pf2eAnimations.blacklist = {
+	menu: [],
+	entries: {
+		melee: [],
+		range: [],
+		ontoken: [],
+		templatefx: [],
+		preset: [],
+		aura: [],
+		aefx: [],
+	},
+}
 
 pf2eAnimations.hooks.init = Hooks.on("init", () => {
 	game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
@@ -93,6 +105,11 @@ pf2eAnimations.hooks.init = Hooks.on("init", () => {
 		scope: "world",
 		type: String,
 		default: ""
+	});
+	game.settings.register("pf2e-jb2a-macros", "blacklist", {
+		scope: "world",
+		type: Object,
+		default: pf2eAnimations.blacklist
 	});
 	game.settings.registerMenu("pf2e-jb2a-macros", "autorecUpdate", {
 		name: game.i18n.localize("pf2e-jb2a-macros.settings.autorecUpdate.name"),
@@ -741,6 +758,7 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 	let same = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let customNew = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let removed = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
+	let blacklist = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 
 	// Function to retrieve full version from label
 	function getFullVersion(label, array) {
@@ -755,6 +773,11 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 
 				/* (Bang Bang, you're a Boolean) */
 				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData.name === "PF2e Animations" || xEntry.metaData?.default)) {
+					// If menu it exists from is blacklisted, add it to blacklisted.
+					if (pf2eAnimations.blacklist.menu.includes(key)) return blacklist[key].push(xEntry);
+					// If it's blacklisted by name, add it to blacklisted.
+					if (pf2eAnimations.blacklist.entries[key].includes(x)) return blacklist[key].push(xEntry);
+
 					// Entry is from PF2e Animations, but the same or higher version. Skip.
 					if (xEntry?.metaData?.version >= getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
 
@@ -765,6 +788,10 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 					return custom[key].push(xEntry)
 				}
 			} else {
+				// If menu it exists from is blacklisted, add it to blacklisted.
+				if (pf2eAnimations.blacklist.menu.includes(key)) return blacklist[key].push(getFullVersion(x, autorec[key]));
+				// If it's blacklisted by name, add it to blacklisted.
+				if (pf2eAnimations.blacklist.entries[key].includes(x)) return blacklist[key].push(getFullVersion(x, autorec[key]));
 				// Entry does not exist, add it.
 				return missingEntries[key].push(getFullVersion(x, autorec[key]))
 			}
