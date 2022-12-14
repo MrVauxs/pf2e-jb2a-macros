@@ -718,7 +718,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 }
 
 pf2eAnimations.getJSON = async function getJSON(url) {
-	const response = await fetch(url)
+	const response = await fetch(url);
 	const json = await response.json();
 	return json;
 }
