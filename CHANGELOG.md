@@ -2,6 +2,7 @@
 - Fixed a variety of macros.
 - Increased the minimum version of Sequencer to 2.4.2.
 - Added Stumbling Stance, thank you Vdub for the commission!
+- Added blacklisting animations from being added by the module.
 
 # Version 2.7.3
 - Actually add Summon Lesser Servitor...

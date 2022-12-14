@@ -2,15 +2,7 @@ const pf2eAnimations = {}
 pf2eAnimations.hooks = {}
 pf2eAnimations.blacklist = {
 	menu: [],
-	entries: {
-		melee: [],
-		range: [],
-		ontoken: [],
-		templatefx: [],
-		preset: [],
-		aura: [],
-		aefx: [],
-	},
+	entries: [],
 }
 
 pf2eAnimations.hooks.init = Hooks.on("init", () => {
@@ -774,9 +766,9 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 				/* (Bang Bang, you're a Boolean) */
 				if (!!xEntry.metaData && (xEntry.metaData.name === "PF2e Animation Macros" || xEntry.metaData.name === "PF2e Animations" || xEntry.metaData?.default)) {
 					// If menu it exists from is blacklisted, add it to blacklisted.
-					if (pf2eAnimations.blacklist.menu.includes(key)) return blacklist[key].push(xEntry);
+					if (game.settings.get("pf2e-jb2a-macros", "blacklist").menu.includes(key)) return blacklist[key].push(xEntry);
 					// If it's blacklisted by name, add it to blacklisted.
-					if (pf2eAnimations.blacklist.entries[key].includes(x)) return blacklist[key].push(xEntry);
+					if (game.settings.get("pf2e-jb2a-macros", "blacklist").entries.includes(x)) return blacklist[key].push(xEntry);
 
 					// Entry is from PF2e Animations, but the same or higher version. Skip.
 					if (xEntry?.metaData?.version >= getFullVersion(x, autorec[key]).metaData.version) return same[key].push(xEntry);
@@ -789,9 +781,9 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 				}
 			} else {
 				// If menu it exists from is blacklisted, add it to blacklisted.
-				if (pf2eAnimations.blacklist.menu.includes(key)) return blacklist[key].push(getFullVersion(x, autorec[key]));
+				if (game.settings.get("pf2e-jb2a-macros", "blacklist").menu.includes(key)) return;
 				// If it's blacklisted by name, add it to blacklisted.
-				if (pf2eAnimations.blacklist.entries[key].includes(x)) return blacklist[key].push(getFullVersion(x, autorec[key]));
+				if (game.settings.get("pf2e-jb2a-macros", "blacklist").entries.includes(x)) return;
 				// Entry does not exist, add it.
 				return missingEntries[key].push(getFullVersion(x, autorec[key]))
 			}
@@ -814,6 +806,7 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 	if (quiet) console.info("The following effects do not exist in PF2e Animations. They will be IGNORED.", customNew)
 	if (quiet) console.info("The following effects cannot be added or updated, due to them already existing from an unknown source. They will be IGNORED.", custom)
 	if (quiet) console.info("The following effects have no updates.", same)
+	if (quiet) console.info("The following effects have been blacklisted.", blacklist)
 	if (quiet) console.groupEnd()
 
 	// Create a list of all effects done.
@@ -822,18 +815,21 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 	let customEntriesList = []
 	let customNewEntriesList = []
 	let removedEntriesList = []
+	let blacklistEntriesList = []
 	for (const key of Object.keys(settings)) {
 		missingEntriesList.push(missingEntries[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		updatedEntriesList.push(updatedEntries[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		removedEntriesList.push(removed[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		customEntriesList.push(custom[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 		customNewEntriesList.push(customNew[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
+		blacklistEntriesList.push(blacklist[key].map(x => `${x.label} <i class="pf2e-animations-muted">(${key})</i>`))
 	}
 	missingEntriesList = missingEntriesList.flat().sort()
 	updatedEntriesList = updatedEntriesList.flat().sort()
 	removedEntriesList = removedEntriesList.flat().sort()
 	customEntriesList = customEntriesList.flat().sort()
 	customNewEntriesList = customNewEntriesList.flat().sort()
+	blacklistEntriesList = blacklistEntriesList.flat().sort()
 
 	let newSettingsDirty = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
 	let newSettings = { melee: [], range: [], ontoken: [], templatefx: [], aura: [], preset: [], aefx: [], }
@@ -846,14 +842,14 @@ pf2eAnimations.generateAutorecUpdate = async function generateAutorecUpdate(quie
 	}
 	// Adds the current Autorec version into the menu to ensure it will not get wiped going through the Autorec Merge scripts
 	newSettings.version = await game.settings.get('autoanimations', 'aaAutorec').version
-	return { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList }
+	return { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList, blacklistEntriesList }
 }
 
 pf2eAnimations.generateAutorecUpdateHTML = async function generateAutorecUpdateHTML() {
-	const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList } = await pf2eAnimations.generateAutorecUpdate(false)
+	const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, customNewEntriesList, blacklistEntriesList } = await pf2eAnimations.generateAutorecUpdate(false)
 	let html = `<h1 style="text-align: center; font-weight: bold;">PF2e Animations Update Menu</h1>`
 
-	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || (game.settings.get("pf2e-jb2a-macros", "debug") && customNewEntriesList.length)) {
+	if (missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || blacklistEntriesList.length || (game.settings.get("pf2e-jb2a-macros", "debug") && customNewEntriesList.length)) {
 		if (removedEntriesList.length) {
 			html += `
 			<div class="pf2e-animations-autorec-update-child">
@@ -891,6 +887,16 @@ pf2eAnimations.generateAutorecUpdateHTML = async function generateAutorecUpdateH
 				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.updated")}</p>
 				<ul class="pf2e-animations-autorec-update-ul">
 					${updatedEntriesList.map(x => `<li>${x}</li>`).join("")}
+				</ul>
+			</div>
+			`
+		}
+		if (blacklistEntriesList.length) {
+			html += `
+			<div class="pf2e-animations-autorec-update-child">
+				<p class="pf2e-animations-autorec-update-text">${game.i18n.localize("pf2e-jb2a-macros.updateMenu.blacklisted")}</p>
+				<ul class="pf2e-animations-autorec-update-ul">
+					${blacklistEntriesList.map(x => `<li>${x}</li>`).join("")}
 				</ul>
 			</div>
 			`
@@ -942,8 +948,8 @@ class autorecUpdateFormApplication extends FormApplication {
 	}
 
 	async activateListeners(html) {
-		const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList } = await this.settings()
-		if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) $('[name="update"]').remove()
+		const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, blacklistEntriesList } = await this.settings()
+		if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || blacklistEntriesList.length)) $('[name="update"]').remove()
 		super.activateListeners(html);
 	}
 
@@ -951,8 +957,8 @@ class autorecUpdateFormApplication extends FormApplication {
 		$(".pf2e-animations-autorec-update-buttons").attr("disabled", true)
 		if (event.submitter.name === "update") {
 			console.group("PF2e Animations | Autorecognition Menu Update");
-			const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList } = await this.settings();
-			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length)) return console.log("Nothing to update!");
+			const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, blacklistEntriesList } = await this.settings()
+			if (!(missingEntriesList.length || updatedEntriesList.length || customEntriesList.length || removedEntriesList.length || blacklistEntriesList.length)) return console.log("Nothing to update!");
 			/*
 			for (const key of Object.keys(newSettings)) {
 				await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
