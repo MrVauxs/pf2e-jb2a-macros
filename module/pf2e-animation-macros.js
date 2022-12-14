@@ -196,9 +196,10 @@ pf2eAnimations.hooks.preUpdateItem = Hooks.on("preUpdateItem", (data, changes) =
 });
 
 pf2eAnimations.hooks.AutomatedAnimations = {}
-pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimations.metaData", async (metaData) => {
+pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimations.metaData", async (data) => {
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) {
-		if (!(metaData.label || metaData.menu)) ui.notifications.error("Cannot update this entry's metaData!");
+		pf2eAnimations.debug("AutomatedAnimations.metaData hook", data);
+		let metaData = data.metaData;
 		await warpgate.menu(
 			{
 				inputs: [
@@ -223,28 +224,28 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 						label: 'Apply',
 						value: 1,
 						callback: async (options) => {
-							settings = await game.settings.get("autoanimations", `aaAutorec-${metaData.menu}`);
-							entry = settings.findIndex(obj => obj.label === metaData.label);
+							settings = await game.settings.get("autoanimations", `aaAutorec-${data.menu}`);
+							entry = settings.findIndex(obj => obj.label === data.label);
 							settings[entry].metaData.name = options.inputs[0] ?? settings[entry].metaData.name;
 							settings[entry].metaData.moduleVersion = options.inputs[1] ?? settings[entry].metaData.moduleVersion;
 							settings[entry].metaData.version = options.inputs[2] ?? settings[entry].metaData.version;
-							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings }), { [metaData.menu]: true });
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [data.menu]: settings }), { [data.menu]: true });
 						}
 					},
 					{
 						label: 'Delete MetaData',
 						value: 1,
 						callback: async (options) => {
-							settings = await game.settings.get("autoanimations", `aaAutorec-${metaData.menu}`);
-							entry = settings.findIndex(obj => obj.label === metaData.label);
+							settings = await game.settings.get("autoanimations", `aaAutorec-${data.menu}`);
+							entry = settings.findIndex(obj => obj.label === data.label);
 							settings[entry].metaData = {};
-							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [metaData.menu]: settings }), { [metaData.menu]: true });
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [data.menu]: settings }), { [data.menu]: true });
 						}
 					}
 				]
 			},
 			{
-				title: `DEBUG | Add Metadata to ${metaData.label}.`
+				title: `DEBUG | Add Metadata to ${data.label}.`
 			}
 		)
 	} else if (metaData.name === "PF2e Animations") {
@@ -494,6 +495,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 			const level = args[2].find(x => x.includes("level") && !x.includes("exact-level"))?.replace('level-', '').replaceAll("-1", "~1").split('-')
 			const hasImage = game.settings.get("pf2e-jb2a-macros", "onlyImageSummons") || args[2].find(x => x.includes("has-image"))
 			const source = args[2].find(x => x.includes("source"))?.replace('source-', '').split("|").map(x => x.trim()) // separate by | for multiple sources
+			const name = args[2].find(x => x.includes("name"))?.replace('name-', '').split("|").map(x => x.trim()) // separate by | for multiple names
 			randomCreature = args[2].includes("random-creature")
 			randomAmount = args[2].find(x => x.includes("random-amount"))?.replace('random-amount-', '').split('-')
 
@@ -517,6 +519,12 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 				// level equal or less filter
 				packs = packs.filter(x => x.level <= multiplier)
 			}
+
+			if (name) {
+				// name filter
+				packs = packs.filter(x => name.some(n => x.name === n))
+			}
+
 			if (level) {
 				// level equal or greater filter
 				packs = packs.filter(x => x.level >= Number(level[0].replace("~", "-")))

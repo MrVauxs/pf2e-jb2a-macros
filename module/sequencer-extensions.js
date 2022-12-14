@@ -16,5 +16,11 @@ Hooks.once('sequencer.ready', () => {
                 .loopProperty("spriteContainer", "rotation", { from: 0, to: 360, duration: args.duration})
                 .spriteOffset({ x: args.spriteOffset }, { gridUnits: true })
         });
+        Sequencer.Presets.add("pf2eAnimations.fade", (effect, args) => {
+            args = args ?? { duration: 500, options: {} };
+            return effect
+                .fadeIn(args.duration, args.options)
+                .fadeOut(args.duration, args.options)
+        });
     }
 })
