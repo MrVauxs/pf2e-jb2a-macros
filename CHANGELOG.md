@@ -1,9 +1,9 @@
 # Version 2.7.5 a.k.a. "Conjuration Research" edition
 - Dummy NPCs are no longer visible in the sidebar without Debug mode on or disabling the module.
 - Added unique Animate Dead and Summon Animal summoning animations.
-- Fixed bug around creating custom summoning animations in Autorecognition Menu.
-- Fixed bug regarding summoned token scaling.
-- Fixed Splatter module causing splatters when summoning a creature. Note that due to how the module works, all previous splatters may get removed when summoning any new creature.
+- Fixed a bug around creating custom summoning animations in Autorecognition Menu.
+- Fixed a bug regarding summoned token scaling.
+- Fixed the Splatter module causing splatters when summoning a creature. Note that due to how the module works, all previous splatters may get removed when summoning any new creature.
 
 # Version 2.7.4
 - Fixed a variety of macros.
