@@ -845,8 +845,8 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
 		pf2eAnimations.debug("Summoning Animation", [token, item, spawnedTokenDoc])
 		await AutomatedAnimations.playAnimation(token, item ?? { name: `Summoning Animation Template (${args.origins.itemName})` }, { targets: [spawnedTokenDoc.object] });
-		if (updates.token.flags["pf2e-jb2a-macros"].scrollingText) await game.settings.set("core", "scrollingStatusText", true);
-		if (updates.token.flags["pf2e-jb2a-macros"].bloodsplatter) await game.settings.set("splatter", "enableBloodsplatter", true);
+		if (updates.token.flags["pf2e-jb2a-macros"]?.scrollingText) await game.settings.set("core", "scrollingStatusText", true);
+		if (updates.token.flags["pf2e-jb2a-macros"]?.bloodsplatter) await game.settings.set("splatter", "enableBloodsplatter", true);
 	};
 
 	new Dialog({
