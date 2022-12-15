@@ -778,7 +778,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
 
 	//if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
-	spawnArgs.actorName = `Dummy NPC (${spawnArgs.updates.token.actor.size})`
+	spawnArgs.actorName = `Dummy NPC (${spawnArgs.updates.token.actor.size === "sm" ? "med" : spawnArgs.updates.token.actor.size})`
 
 	let crossHairConfig = {
 		label: importedToken.name,
