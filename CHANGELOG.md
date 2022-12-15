@@ -1,3 +1,10 @@
+# Version 2.7.5 a.k.a. "Conjuration Research" edition
+- Dummy NPCs are no longer visible in the sidebar without Debug mode on or disabling the module.
+- Added unique Animate Dead and Summon Animal summoning animations.
+- Fixed bug around creating custom summoning animations in Autorecognition Menu.
+- Fixed bug regarding summoned token scaling.
+- Fixed Splatter module causing splatters when summoning a creature. Note that due to how the module works, all previous splatters may get removed when summoning any new creature.
+
 # Version 2.7.4
 - Fixed a variety of macros.
 - Increased the minimum version of Sequencer to 2.4.2.
@@ -91,7 +98,7 @@
 # Version 2.5.4
 - Added `.tieToDocuments` function to Bardic Cantripry, hopefully making it more reliably shut itself down when the effects are removed.
 
-# Version 2.5.3 "ZA WARUDO" edition
+# Version 2.5.3 a.k.a. "ZA WARUDO" edition
 - Fixed "the world" error.
 - Fixed more localization issues with macros.
 - Added Simplified Chinese translation by @ AlphaStarguide, thank you!
@@ -321,7 +328,7 @@
 - Updated Illusory Disguise to have "Turn original token invisible" checkbox, on by default.
 - Updated the Scorching Ray Macro to work under Sequencer 2.2.0. Requires Sequencer 2.2.0.
 
-# Version 1.10.3 - "Don't code when your brain's melted" Edition
+# Version 1.10.3 a.k.a. "Don't code when your brain's melted" Edition
 - Fixed the module breaking on startup.
 - Fixed the module not telling you updated.
 

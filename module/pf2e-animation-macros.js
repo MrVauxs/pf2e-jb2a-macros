@@ -88,12 +88,32 @@ pf2eAnimations.hooks.init = Hooks.on("init", () => {
 		type: String,
 		default: "0"
 	});
-	game.settings.register("pf2e-jb2a-macros", "dummyPCId", {
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId-folder", {
 		scope: "world",
 		type: String,
 		default: ""
 	});
-	game.settings.register("pf2e-jb2a-macros", "dummyNPCId", {
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId-tiny", {
+		scope: "world",
+		type: String,
+		default: ""
+	});
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId-medium", {
+		scope: "world",
+		type: String,
+		default: ""
+	});
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId-large", {
+		scope: "world",
+		type: String,
+		default: ""
+	});
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId-huge", {
+		scope: "world",
+		type: String,
+		default: ""
+	});
+	game.settings.register("pf2e-jb2a-macros", "dummyNPCId-garg", {
 		scope: "world",
 		type: String,
 		default: ""
@@ -202,6 +222,13 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 pf2eAnimations.hooks.preUpdateItem = Hooks.on("preUpdateItem", (data, changes) => {
 	pf2eAnimations.debug("Running Equipment Changes Macro.", { data, changes });
 	pf2eAnimations.runMacro('Equipment Changes', { data, changes })
+});
+
+pf2eAnimations.hooks.renderActorDirectory = Hooks.on("renderActorDirectory", (app, html, data) => {
+	if (!(game.user.isGM && game.settings.get("pf2e-jb2a-macros", "debug"))) {
+		let folder = html.find(`.folder[data-folder-id="${game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder")).id}"]`);
+		folder.remove();
+	}
 });
 
 pf2eAnimations.hooks.AutomatedAnimations = {}
@@ -333,49 +360,168 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args) {
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
 	let message = `PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
-	npcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId"));
-	// pcActor = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyPCId"));
-	if (!npcActor) {
+	npcFolder = game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder"));
+
+	if (!npcFolder) {
+		npcFolder = await Folder.create({ name: "PF2e Animations Dummy NPCs", type: "Actor", parent: null });
+		game.settings.set("pf2e-jb2a-macros", "dummyNPCId-folder", npcFolder.id);
+	}
+
+	npcActor1 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-tiny"));
+	npcActor2 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-medium"));
+	npcActor3 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-large"));
+	npcActor4 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-huge"));
+	npcActor5 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-garg"));
+	if (!(npcActor1 && npcActor2 && npcActor3 && npcActor4 && npcActor5)) {
 		message += ` ${game.i18n.localize("pf2e-jb2a-macros.notifications.creatingDummy")} `;
-		npcActor = await Actor.create({
-			name: "Dummy NPC",
-			type: "npc",
-			img: "icons/svg/cowled.svg",
-			data: {
-				attributes: {
-					hp: {
-						max: 999,
-						value: 999,
-						base: 999,
-						slug: "hp"
-					}
-				}
-			}
-		})
-		await game.settings.set("pf2e-jb2a-macros", "dummyNPCId", npcActor.id);
 		ui.notifications.info(message);
-	}
-	/*
-	if (!pcActor) {
-		message += " Creating dummy PC... ";
-		pcActor = await Actor.create({
-			name: "Dummy PC",
-			type: "character",
-			img: "icons/svg/aura.svg",
-			data: {
-				attributes: {
-					hp: {
-						max: 999,
-						value: 999,
-						base: 999,
-						slug: "hp"
+		if (!npcActor1) {
+			npcActor1 = await Actor.create({
+				name: "Dummy NPC (tiny)",
+				type: "npc",
+				folder: npcFolder.id,
+				img: "icons/svg/cowled.svg",
+				size: "tiny",
+				prototypeToken: {
+					width: 0.5,
+					height: 0.5,
+				},
+				system: {
+					attributes: {
+						hp: {
+							max: 999,
+							value: 999,
+							base: 999,
+							slug: "hp"
+						}
+					},
+					traits: {
+						size: {
+							value: "tiny"
+						}
 					}
-				}
-			}
-		})
-		await game.settings.set("pf2e-jb2a-macros", "dummyPCId", pcActor.id);
+				},
+			})
+			await game.settings.set("pf2e-jb2a-macros", "dummyNPCId-tiny", npcActor1.id);
+		}
+		if (!npcActor2) {
+			npcActor2 = await Actor.create({
+				name: "Dummy NPC (med)",
+				type: "npc",
+				folder: npcFolder.id,
+				img: "icons/svg/cowled.svg",
+				system: {
+					attributes: {
+						hp: {
+							max: 999,
+							value: 999,
+							base: 999,
+							slug: "hp"
+						}
+					},
+					traits: {
+						size: {
+							value: "med"
+						}
+					}
+				},
+				size: "med",
+				prototypeToken: {
+					width: 1,
+					height: 1,
+				},
+			})
+			await game.settings.set("pf2e-jb2a-macros", "dummyNPCId-medium", npcActor2.id);
+		}
+		if (!npcActor3) {
+			npcActor3 = await Actor.create({
+				name: "Dummy NPC (lg)",
+				type: "npc",
+				folder: npcFolder.id,
+				img: "icons/svg/cowled.svg",
+				system: {
+					attributes: {
+						hp: {
+							max: 999,
+							value: 999,
+							base: 999,
+							slug: "hp"
+						}
+					},
+					traits: {
+						size: {
+							value: "lg"
+						}
+					}
+				},
+				size: "lg",
+				prototypeToken: {
+					width: 2,
+					height: 2,
+				},
+			})
+			await game.settings.set("pf2e-jb2a-macros", "dummyNPCId-large", npcActor3.id);
+		}
+		if (!npcActor4) {
+			npcActor4 = await Actor.create({
+				name: "Dummy NPC (huge)",
+				type: "npc",
+				folder: npcFolder.id,
+				img: "icons/svg/cowled.svg",
+				system: {
+					attributes: {
+						hp: {
+							max: 999,
+							value: 999,
+							base: 999,
+							slug: "hp"
+						}
+					},
+					traits: {
+						size: {
+							value: "huge"
+						}
+					}
+				},
+				size: "huge",
+				prototypeToken: {
+					width: 3,
+					height: 3,
+				},
+
+			})
+			await game.settings.set("pf2e-jb2a-macros", "dummyNPCId-huge", npcActor4.id);
+		}
+		if (!npcActor5) {
+			npcActor5 = await Actor.create({
+				name: "Dummy NPC (grg)",
+				type: "npc",
+				folder: npcFolder.id,
+				img: "icons/svg/cowled.svg",
+				system: {
+					attributes: {
+						hp: {
+							max: 999,
+							value: 999,
+							base: 999,
+							slug: "hp"
+						}
+					},
+					traits: {
+						size: {
+							value: "grg"
+						}
+					}
+				},
+				size: "grg",
+				prototypeToken: {
+					width: 4,
+					height: 4,
+				},
+			})
+			await game.settings.set("pf2e-jb2a-macros", "dummyNPCId-garg", npcActor5.id);
+		}
 	}
-	*/
 }
 
 /**
@@ -627,12 +773,12 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
 	let importedToken = importedActor.prototypeToken
-	Object.assign(importedToken.flags, { "pf2e-jb2a-macros": { "scrollingText": game.settings.get("core", "scrollingStatusText") } })
+	Object.assign(importedToken.flags, { "pf2e-jb2a-macros": { "scrollingText": game.settings.get("core", "scrollingStatusText"), "bloodsplatter": game.modules.get("splatter")?.active ? game.settings.get("splatter", "enableBloodsplatter") : null } })
 
 	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
 
 	//if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
-	spawnArgs.actorName = "Dummy NPC"
+	spawnArgs.actorName = `Dummy NPC (${spawnArgs.updates.token.actor.size})`
 
 	let crossHairConfig = {
 		label: importedToken.name,
@@ -672,7 +818,8 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 				alpha: 0
 			}
 		})
-		await game.settings.set("core", "scrollingStatusText", false)
+		await game.settings.set("core", "scrollingStatusText", false);
+		if (game.modules.get("splatter")?.active) game.settings.set("splatter", "enableBloodsplatter", false);
 	};
 
 	if (args?.callbacks?.post) ui.notifications.error("PF2e Animations | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
@@ -682,7 +829,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 		if (!pack) ui.notifications.error(`PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
 		let items = (args.options.controllingActor.items || []).filter(i => i.name.includes("Summoning Animation Template"));
-		items.push((await pack.getDocuments()).filter(i => i.name.includes("Summoning Animation Template")));
+		// items.push((await pack.getDocuments()).filter(i => i.name.includes("Summoning Animation Template")));
 
 		items = items.flat();
 
@@ -691,11 +838,15 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 		// 2. Copied Actor Name (what Dummy NPC takes the form OF, like Beaver)
 		// 3. Item Name (usually a summoning spell, such as Summon Animal)
 		// 4. Default (the default summoning animation)
-		let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName})`)) ?? items.find(i => i.name.includes(`Summoning Animation Template (${args?.updates?.token?.name})`)) ?? items.find(i => i.name.includes(`Summoning Animation Template (${args.origins.itemName})`)) ?? items.find(i => i.name === `Summoning Animation Template`)
+		let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName})`))
+		?? items.find(i => i.name.includes(`Summoning Animation Template (${args?.updates?.token?.name})`))
+		?? items.find(i => i.name.includes(`Summoning Animation Template (${args.origins.itemName})`))
+		?? items.find(i => i.name === `Summoning Animation Template`)
 
 		pf2eAnimations.debug("Summoning Animation", [token, item, spawnedTokenDoc])
-		await AutomatedAnimations.playAnimation(token, item, { targets: [spawnedTokenDoc.object] });
+		await AutomatedAnimations.playAnimation(token, item ?? { name: `Summoning Animation Template (${args.origins.itemName})` }, { targets: [spawnedTokenDoc.object] });
 		if (updates.token.flags["pf2e-jb2a-macros"].scrollingText) await game.settings.set("core", "scrollingStatusText", true);
+		if (updates.token.flags["pf2e-jb2a-macros"].bloodsplatter) await game.settings.set("splatter", "enableBloodsplatter", true);
 	};
 
 	new Dialog({
@@ -707,7 +858,9 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 				callback: async () => {
 					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: { [args.userId]: 3 } };
 
+					args.updates.actor.token = args.updates.token;
 					args.location = template;
+
 					pf2eAnimations.debug("Summoning...", args)
 					await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
 					await template.document.delete();

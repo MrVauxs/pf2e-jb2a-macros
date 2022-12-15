@@ -17,7 +17,7 @@
 			"noPersistentDamage": "Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.",
 			"noToken": "No source token found.",
 			"noDummy": "Missing dummy actors for summoning macros.",
-			"creatingDummy": " Creating dummy NPC… ",
+			"creatingDummy": " Creating dummy NPCs… ",
 			"noPack": "Can't find 'pf2e-jb2a-macros.Actions' pack, somehow?",
 			"tooManyArgs": "Too many arguments for this macro! The following arguments are incompatible: {issues}",
 			"metaData": "This animation WILL be replaced when updated. If you don't want it to be, best way is to temporarily change it's <b>animation</b> or <b>variant</b> to something else, or enabling Debug mode in the settings and pressing the Metadata button again."
