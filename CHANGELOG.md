@@ -1,3 +1,7 @@
+# Version 2.7.6
+- Fixed a bug regarding small summons breaking the summoning process.
+- Fixed a bug where the player-requested summoning templates did not get removed.
+
 # Version 2.7.5 a.k.a. "Conjuration Research" edition
 - Dummy NPCs are no longer visible in the sidebar without Debug mode on or disabling the module.
 - Added unique Animate Dead and Summon Animal summoning animations.
