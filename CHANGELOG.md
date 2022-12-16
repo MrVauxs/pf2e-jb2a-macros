@@ -1,6 +1,6 @@
 # Version 2.7.7
 - Fixed Manifest Eidolon.
-- 
+
 # Version 2.7.6
 - Fixed a bug regarding small summons breaking the summoning process.
 - Fixed a bug where the player-requested summoning templates did not get removed.
