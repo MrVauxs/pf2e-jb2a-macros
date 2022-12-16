@@ -858,7 +858,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 				callback: async () => {
 					if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: { [args.userId]: 3 } };
 
-					args.updates?.actor?.token = args.updates.token;
+					if (args?.updates?.actor?.token) args.updates.actor.token = args.updates.token;
 					args.location = template;
 
 					pf2eAnimations.debug("Summoning...", args)
