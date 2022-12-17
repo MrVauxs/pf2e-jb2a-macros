@@ -1,3 +1,6 @@
+# Version 2.7.10
+- Fixed a bug in Spiritual Weapon.
+
 # Version 2.7.9
 - Added simple Spiritual Weapon. May be enhanced in the future.
 - Fixed Dazzling Flash being too small on larger templates.

@@ -360,10 +360,10 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = 
 	origin = args[1]?.itemUuid ?? token.actor.uuid;
 	actor = token.actor;
 
-	pf2eAnimations.debug("Vauxs Macro Helpers | Results", {token, tokenScale, allTargets, hitTargets, origin, actor});
+	pf2eAnimations.debug("Vauxs Macro Helpers | Results", { token, tokenScale, allTargets, hitTargets, targets, target, origin, actor});
 	// Don't delete it, even though it's just a legacy thing by this point.
 	_callback();
-	return [token, tokenScale];
+	return [token, tokenScale, allTargets, hitTargets, targets, target, origin, actor];
 }
 
 // Creates dummy NPC and PC actors for summoning purposes.
