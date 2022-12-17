@@ -1,5 +1,6 @@
 # Version 2.7.10
 - Fixed a bug in Spiritual Weapon.
+- Updated localization files.
 
 # Version 2.7.9
 - Added simple Spiritual Weapon. May be enhanced in the future.
