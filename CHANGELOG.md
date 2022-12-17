@@ -1,5 +1,6 @@
 # Version 2.7.8
 - Added simple Spiritual Weapon. May be enhanced in the future.
+- Fixed Dazzling Flash being too small on larger templates.
 - Expanded pf2eAnimation.macroHelpers.
 
 # Version 2.7.7
