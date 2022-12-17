@@ -346,14 +346,24 @@ pf2eAnimations.degreeOfSuccessWithRerollHandling = function degreeOfSuccessWithR
  * @param {Array} args Array of arguments.
  * @returns {Array} tokenD and tokenScale.
  */
-pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args) {
-	args = args || [];
-	// if (args.length === 1 && Array.isArray(args[0])) args = args.flat(); // Send help. I'm being flattened.
-	pf2eAnimations.debug("Vaux's Macro Helpers", args);
-	const tokenD = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
-	if (!tokenD) { ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
-	const tokenScale = tokenD.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
-	return [tokenD, tokenScale];
+pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = () => {}) {
+	pf2eAnimations.debug("Vaux's Macro Helpers | Args", args);
+	token = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
+
+	if (!token) { ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
+
+	tokenScale = token.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
+	allTargets = args[1]?.allTargets ?? [...game.user.targets];
+	hitTargets = args[1]?.hitTargets ?? allTargets;
+	targets = hitTargets;
+	target = hitTargets[0];
+	origin = args[1]?.itemUuid ?? token.actor.uuid;
+	actor = token.actor;
+
+	pf2eAnimations.debug("Vauxs Macro Helpers | Results", {token, tokenScale, allTargets, hitTargets, origin, actor});
+	// Don't delete it, even though it's just a legacy thing by this point.
+	_callback();
+	return [token, tokenScale];
 }
 
 // Creates dummy NPC and PC actors for summoning purposes.
