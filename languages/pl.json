@@ -5,10 +5,11 @@
 			"noPersistentDamage": "Proszę włączyć moduł PF2e Persistent Damage aby móc użyć makro Persistent Conditions.",
 			"noToken": "Nie znaleziono źródłowego tokena.",
 			"noDummy": "Brakuje sztucznego aktora dla makra wzywania.",
-			"creatingDummy": " Tworzę sztucznego NPC... ",
+			"creatingDummy": " Tworzę sztuczne NPC'ety... ",
 			"noJB2A": "Potrzebujesz włączony <a href=\"https://jb2a.com/home/content-information/#free_library\">moduł JB2A</a> aby użyć razem z PF2e Animations!",
 			"noPack": "Nie można znaleźć paczkę 'pf2e-jb2a-macros.Actions', jak to?",
-			"metaData": "Ta animacja ZOSTANIE zaktualizowana i nadpisana. Jeżeli nie chcesz aby była nadpisana, najlepiej zmień jej <b>animacje</b> lub <b>wariant</b> na coś innego."
+			"metaData": "Ta animacja ZOSTANIE zaktualizowana i nadpisana. Jeżeli nie chcesz aby była nadpisana, najlepiej zmień jej <b>animacje</b> lub <b>wariant</b> na coś innego, lub włącz tryb Debugowania w ustawieniach i ponownie klikając przycisk Metadata.",
+			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}"
 		},
 		"settings": {
 			"useLocalMacros": {
@@ -43,6 +44,14 @@
 				"name": "Aktualizacja Menu Auto-Rozpoznawania",
 				"label": "Menu Aktualizacji",
 				"hint": "Sprawdź czy nie ma aktualizacji dla twoich animacji?"
+			},
+			"allowUncommonSummons": {
+				"name": "Pozwól na Rzadkie Przywołania",
+				"hint": "Pozwól na przywołanie niezwykłych, rzadkich, lub unikatowych stworzeń przez graczy. Możesz także na to pozwolić specyficznym zaklęciom poprzez dodawania \"uncommon\" do ich list parametrów w Menu Auto-Rozpoznawania lub w samym zaklęciu na karcie postaci."
+			},
+			"onlyImageSummons": {
+				"name": "Pozwalaj tylko na Przywołanie Stworzeń z Obrazami",
+				"hint": "Tylko pozwalaj na przywoływanie stworzeń z obrazami."
 			}
 		},
 		"updateMenu": {
@@ -53,7 +62,8 @@
 			"updated": "Poniższe efekty zostaną zaktualizowane z poprzedniej wersji 'PF2e Animations' (lub z domyślnych efektów Automated Animations).",
 			"nothing": "Brak aktualizacji.",
 			"warning": "Upewnij się, że wykonano kopię zapasową menu auto-rozpoznawania! TEN PROCES JEST NIEODWRACALNY.",
-			"debugCustom": "Poniższe efekty nie istnieją w PF2e Animations. One są kompletnie nowe i pozostaną w twoim menu Auto-Rozpoznawania."
+			"debugCustom": "Poniższe efekty nie istnieją w PF2e Animations. One są kompletnie nowe i pozostaną w twoim menu Auto-Rozpoznawania.",
+			"blacklisted": "Poniższe efekty zostały postawione na czarnej liście i zostaną usunięte z twojego menu Auto-Rozpoznawania."
 		},
 		"macro": {
 			"disguise": {
@@ -77,7 +87,16 @@
 					"creature": "Stwór",
 					"amount": "Ilość",
 					"title": "Przywołaj Cokolwiek",
-					"level": "Poziom {level}"
+					"level": "Poziom {level}",
+					"unique": "Filtrowane jak wskazano przez {unique}.",
+					"nothingFound": "Nic nie znaleziono. Polepsz parametry filtrowania!",
+					"sorted": "Sortowane po poziomie i alfabetycznie.",
+					"summonArg": "Filtrowane przez poziom <b>(max. poziom {multiplier} przez {spellLevel} poziom zaklęcia)</b>.",
+					"levelArg": "Filtrowane przez poziom <b>wyższy niż {level1}, aż do {level2}</b>.",
+					"traitsArg": "Filtrowane przez cechy: <b>{traits}</b>.",
+					"hasImageArg": "Filtrowane przez posiadanie <b>obrazu</b> czy nie.",
+					"uncommonArg": "Można wybrać <b>niezwykłe lub rzadsze</b> stworzenia.",
+					"sourceArg": "Filtrowane przez źródła: <b>{sources}</b>."
 				},
 				"gm": {
 					"content": "<p>{user} chce przywołać <b>{amount} {actorName}</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
