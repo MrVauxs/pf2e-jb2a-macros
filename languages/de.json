@@ -1,0 +1,54 @@
+{
+	"pf2e-jb2a-macros": {
+		"updateMenu": {
+			"added": "Die folgenden Effekte werden zu Ihren Autorecognition-Einstellungen hinzugefügt.",
+			"custom": "Die folgenden Effekte werden nicht hinzugefügt, da sie bereits aus einer unbekannten Quelle stammen.",
+			"updated": "Die folgenden Effekte werden aus einer früheren Version von 'PF2e Animations' (oder aus dem Standardmenü für automatisierte Animationen) aktualisiert.",
+			"nothing": "Es wurden keine Aktualisierungen gefunden.",
+			"warning": "Sichern Sie unbedingt Ihr Autorecognition-Menü! DIESER VORGANG IST NICHT UMKEHRBAR.",
+			"debugCustom": "Die folgenden Effekte gibt es in PF2e-Animationen nicht, sie sind völlig neu und bleiben in deinem Autorecognition-Menü.",
+			"deleted": "Die folgenden Effekte werden aus einer früheren Version von 'PF2e Animations' LÖSCHEN.",
+			"customHint": "Wenn Sie die 'PF2e Animations'-Version wollen, löschen Sie sie aus Ihrem Autorecognition-Menü.",
+			"blacklisted": "Die folgenden Effekte wurden auf die schwarze Liste gesetzt und werden aus Ihrem Autorecognition-Menü entfernt."
+		},
+		"notifications": {
+			"update": "PF2e-Animationen v{version} geladen. Bitte überprüfen Sie, ob Sie keine neuen Animationen zu Ihrem Autorecognition-Menü hinzugefügt haben!",
+			"noPersistentDamage": "Aktivieren Sie bitte das PF2e-Modul \"Persistent Damage\", um das Makro \"Persistent Conditions\" zu verwenden.",
+			"noToken": "Kein Quellentoken gefunden.",
+			"noDummy": "Fehlende Dummy-Darsteller für Beschwörungsmakros.",
+			"creatingDummy": " Dummy-NPCs erstellen... ",
+			"tooManyArgs": "Zu viele Argumente für dieses Makro! Die folgenden Argumente sind nicht kompatibel: {Ausgaben}",
+			"noJB2A": "Sie müssen ein <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A-Modul</a> aktivieren, um das PF2e Animationsmodul zu verwenden!",
+			"noPack": "Kann das Paket 'pf2e-jb2a-macros.Actions' irgendwie nicht finden?",
+			"metaData": "Diese Animation wird bei der Aktualisierung ersetzt werden. Wenn ihr das nicht wollt, ändert ihr am besten vorübergehend die <b>animation</b>or <b>variant</b> auf etwas anderes oder aktiviert den Debug-Modus in den Einstellungen und drückt erneut auf die Schaltfläche \"Metadaten\"."
+		},
+		"macro": {
+			"suddenCharge": {
+				"notif": "Plötzliche Attacke! Wählen Sie aus, wohin Sie sich bewegen wollen. Rechtsklick zum Abbrechen.",
+				"suddenCharge": "Plötzlicher Angriff."
+			},
+			"disguise": {
+				"humanoidForm": "🎭Humanoide Form🎭",
+				"illusoryDisguise": "🎭Illusorische Verkleidung🎭",
+				"cast": "Wirken!",
+				"name": "Name",
+				"tokenImage": "Token Bild",
+				"tokenImageHint": "Stellen Sie sicher, dass es vor Ort funktioniert, denn CORS ist ein unbeständiger Gott.",
+				"tokenScale": "Token Skala",
+				"tokenScaleHint": "Für den Fall, dass der Token, in den Sie gehen, ein Pop-out-Token ist. Oder kleiner ist als Sie!",
+				"invisible": "Ihr ursprüngliches Token unsichtbar machen?",
+				"invisibleHint": "Standardmäßig aktiviert, verbirgt dies die Marke unter der Verkleidung. Nützlich für die Verkleidung in ein kleineres oder ein Top-Down-Token."
+			},
+			"summoning": {
+				"player": {
+					"unique": "Die Filter werden eindeutig nach {unique} gesetzt.",
+					"dancingLights": "Wählen Sie Ihre tanzenden Lichter aus…",
+					"sorted": "Sortiert nach Stufe und alphabetisch.",
+					"levelArg": "Gefiltert nach Stufe <b>{level1} and above, up to {level2}</b>.",
+					"traitsArg": "Gefiltert nach Eigenschaften: <b>{traits}</b>.",
+					"summonArg": "Gefiltert nach Stufe <b>(max. level {multiplier} from {spellLevel} level spell)</b>."
+				}
+			}
+		}
+	}
+}
