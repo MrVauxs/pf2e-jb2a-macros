@@ -1,3 +1,7 @@
+# Version 2.7.11
+- Updated Mirror Image to be compatible with free version of JB2A. Also made scaled tokens work in it.
+- Fixed a bug when trying to hide a folder that didn't yet exist. (#9)
+
 # Version 2.7.10
 - Fixed a bug in Spiritual Weapon.
 - Updated localization files.
