@@ -75,7 +75,6 @@
 			"summoning": {
 				"player": {
 					"dancingLights": "选择你的舞光术…",
-					"sortedByLevel": "根据等级排序<b>（{spellLevel}级法术最高能召唤{multiplier}级）</b>。",
 					"label": "根据什么排序？",
 					"amount": "总数",
 					"title": "召唤任何东西",
