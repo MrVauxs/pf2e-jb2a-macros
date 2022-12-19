@@ -82,7 +82,6 @@
 				"player": {
 					"label": "Sortowane jak…?",
 					"dancingLights": "Wybierz swe tańczące światełka…",
-					"sortedByLevel": "Sortowane przez poziom <b>(max. poziom {multiplier} z {spellLevel}-ego poziomu zaklęcia)</b>.",
 					"sortedAlphabetically": "Sortowane alfabetycznie.",
 					"creature": "Stwór",
 					"amount": "Ilość",
