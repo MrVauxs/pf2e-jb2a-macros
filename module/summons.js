@@ -1,7 +1,7 @@
 // Creates dummy NPC and PC actors for summoning purposes.
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
-    let message = `PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
+    let message = `PF2e Animations | ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
     npcFolder = game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder"));
 
     if (!npcFolder) {
@@ -15,7 +15,7 @@ pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
     npcActor4 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-huge"));
     npcActor5 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-garg"));
     if (!(npcActor1 && npcActor2 && npcActor3 && npcActor4 && npcActor5)) {
-        message += ` ${game.i18n.localize("pf2e-jb2a-macros.notifications.creatingDummy")} `;
+        message += ` ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.creatingDummy")} `;
         ui.notifications.info(message);
         if (!npcActor1) {
             npcActor1 = await Actor.create({
@@ -192,7 +192,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 
         let sortedHow = {
             type: "info",
-            label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.label")
+            label: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.label")
         }
 
         let randomCreature, randomAmount, multiplier;
@@ -295,15 +295,15 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 
             packs = packs.sort((a, b) => b.level - a.level || a.name.localeCompare(b.name));
             sortedHow.label = [
-                `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.sorted")}</p>`,
+                `<p>${pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.sorted")}</p>`,
                 args[2].length ? [
                     unique ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.unique", { unique: uniqueString })}</p>` : "",
                     summon ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.summonArg", { multiplier: multiplier, spellLevel: args[0].flags.pf2e.casting.level })}</p>` : "",
                     level ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { level1: level[0].replace("~", "-"), level2: level[1]?.replace("~", "-") ?? "<span style=\"font-size:18px\">∞</span>" })}</p>` : "",
                     exactLevel ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.levelArg", { levels: `${exactLevel}` })}</p>` : "",
                     traitsOr || traitsAnd ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.traitsArg", { traits: allTraits.join(", ") })}</p>` : "",
-                    uncommon ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.uncommonArg")}</p>` : "",
-                    hasImage ? `<p>${game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.hasImageArg")}</p>` : "",
+                    uncommon ? `<p>${pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.uncommonArg")}</p>` : "",
+                    hasImage ? `<p>${pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.hasImageArg")}</p>` : "",
                     source ? `<p>${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.sourceArg", { sources: source.join(", ") })}</p>` : "",
                 ].join("") : ""
             ].join("")
@@ -313,12 +313,12 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
             sortedHow,
         ]
 
-        if (packs.length === 0) packs.push({ level: 420, name: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.nothingFound") })
+        if (packs.length === 0) packs.push({ level: 420, name: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.nothingFound") })
 
         if (!randomCreature) {
             inputs.push({
                 type: "select",
-                label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
+                label: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
                 options: packs.map(x => `${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.level", { level: x.level })} | ${x.name}`),
             })
         }
@@ -326,7 +326,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
         if (!randomAmount) {
             inputs.push({
                 type: "number",
-                label: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.amount"),
+                label: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.amount"),
                 options: 1
             })
         }
@@ -338,7 +338,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
                     inputs: inputs
                 },
                 {
-                    title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.player.title")
+                    title: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.title")
                 }
             )
 
@@ -417,7 +417,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
     args.callbacks.post = async (location, spawnedTokenDoc, updates, iteration) => {
         const pack = game.packs.get("pf2e-jb2a-macros.Actions");
-        if (!pack) ui.notifications.error(`PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
+        if (!pack) ui.notifications.error(`PF2e Animations | ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
         let items = (args.options.controllingActor.items || []).filter(i => i.name.includes("Summoning Animation Template"));
         // items.push((await pack.getDocuments()).filter(i => i.name.includes("Summoning Animation Template")));
@@ -446,8 +446,8 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
     };
 
     new Dialog({
-        title: game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.title"),
-        content: game.i18n.format("pf2e-jb2a-macros.macro.summoning.gm.content", { actorName: args?.updates?.token?.name ?? args.actorName, amount: args?.options?.duplicates ?? "1", user: args.userId ? game.users.find(x => x.id === args.userId).name : game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser") }),
+        title: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.gm.title"),
+        content: game.i18n.format("pf2e-jb2a-macros.macro.summoning.gm.content", { actorName: args?.updates?.token?.name ?? args.actorName, amount: args?.options?.duplicates ?? "1", user: args.userId ? game.users.find(x => x.id === args.userId).name : pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser") }),
         buttons: {
             button1: {
                 label: "Accept",
@@ -466,7 +466,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
             button2: {
                 label: "Decline",
                 callback: async () => {
-                    ui.notifications.info(game.i18n.localize("pf2e-jb2a-macros.macro.summoning.gm.declined"));
+                    ui.notifications.info(pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.gm.declined"));
                     await template.document.delete();
                 },
                 icon: `<i class="fas fa-times"></i>`

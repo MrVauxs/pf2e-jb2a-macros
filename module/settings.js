@@ -1,8 +1,8 @@
 Hooks.once("init", () => {
     // updateMenu.js
     game.settings.registerMenu("pf2e-jb2a-macros", "autorecUpdate", {
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.autorecUpdate.name"),
-        label: game.i18n.localize("pf2e-jb2a-macros.settings.autorecUpdate.label"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.autorecUpdate.name"),
+        label: pf2eAnimations.localize("pf2e-jb2a-macros.settings.autorecUpdate.label"),
         icon: "fa-solid fa-wrench",
         type: autorecUpdateFormApplication,
         restricted: true
@@ -12,56 +12,56 @@ Hooks.once("init", () => {
     game.settings.register("pf2e-jb2a-macros", "autoUpdate", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.autoUpdate.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.autoUpdate.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.autoUpdate.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.autoUpdate.hint"),
         type: Boolean,
         default: true
     });
     game.settings.register("pf2e-jb2a-macros", "disableHitAnims", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.disableHitAnims.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.disableHitAnims.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.disableHitAnims.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.disableHitAnims.hint"),
         type: Boolean,
         default: false
     });
     game.settings.register("pf2e-jb2a-macros", "randomHitAnims", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.randomHitAnims.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.randomHitAnims.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.randomHitAnims.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.randomHitAnims.hint"),
         type: Boolean,
         default: false
     });
     game.settings.register("pf2e-jb2a-macros", "allowUncommonSummons", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.allowUncommonSummons.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.allowUncommonSummons.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.allowUncommonSummons.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.allowUncommonSummons.hint"),
         type: Boolean,
         default: false
     });
     game.settings.register("pf2e-jb2a-macros", "onlyImageSummons", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.onlyImageSummons.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.onlyImageSummons.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.onlyImageSummons.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.onlyImageSummons.hint"),
         type: Boolean,
         default: false
     });
     game.settings.register("pf2e-jb2a-macros", "autoAccept", {
         scope: "client",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.autoAccept.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.autoAccept.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.autoAccept.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.autoAccept.hint"),
         type: Boolean,
         default: false
     });
     game.settings.register("pf2e-jb2a-macros", "smallTokenScale", {
         scope: "world",
         config: !game.settings.get("pf2e", "tokens.autoscale"),
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.smallTokenScale.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.smallTokenScale.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.smallTokenScale.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.smallTokenScale.hint"),
         type: Number,
         default: 0.8,
         range: {
@@ -73,16 +73,16 @@ Hooks.once("init", () => {
     game.settings.register("pf2e-jb2a-macros", "debug", {
         scope: "client",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.debug.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.debug.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.debug.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.debug.hint"),
         type: Boolean,
         default: false
     });
     game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.useLocalMacros.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.useLocalMacros.hint"),
+        name: pf2eAnimations.localize("pf2e-jb2a-macros.settings.useLocalMacros.name"),
+        hint: pf2eAnimations.localize("pf2e-jb2a-macros.settings.useLocalMacros.hint"),
         type: Boolean,
         default: false
     });

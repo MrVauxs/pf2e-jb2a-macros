@@ -7,12 +7,12 @@ pf2eAnimations.hooks.ready = Hooks.on("ready", () => {
 	console.log("PF2e Animations v" + game.modules.get("pf2e-jb2a-macros").version + " loaded.");
 	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
-		ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noJB2A"), { permanent: true });
+		ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noJB2A"), { permanent: true });
 		return;
 	}
 
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
-		ui.notifications.info(game.i18n.format("pf2e-jb2a-macros.notifications.update", { version: game.modules.get("pf2e-jb2a-macros").version }))
+		ui.notifications.info(pf2eAnimations.format("pf2e-jb2a-macros.notifications.update", { version: game.modules.get("pf2e-jb2a-macros").version }))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
 		if (game.user.isGM && game.settings.get("pf2e-jb2a-macros", "autoUpdate")) new autorecUpdateFormApplication().render(true)
 	}
@@ -40,7 +40,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 			return pf2eAnimations.runMacro('Persistent Conditions', args)
 		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
 			pf2eAnimations.debug("No \"PF2e Persistent Damage\" module found!");
-			return ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noPersistentDamage"));
+			return ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noPersistentDamage"));
 		}
 	}
 	// Default Matches
@@ -58,7 +58,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
 		const degreeOfSuccess = pf2eAnimations.degreeOfSuccessWithRerollHandling(data);
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
-		if (!pack) ui.notifications.error(`PF2e Animations | ${game.i18n.localize("pf2e-jb2a-macros.notifications.noPack")}`);
+		if (!pack) ui.notifications.error(`PF2e Animations | ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noPack")}`);
 
 		let items = data.token._actor.items.filter(i => i.name.includes("Attack Animation Template"));
 		if (Object.keys(items).length === 0) {
@@ -155,7 +155,7 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 			}
 		)
 	} else if (metaData.name === "PF2e Animations") {
-		ui.notifications.notify(`${metaData.name} (v${metaData.moduleVersion}) | Animation Version: ${metaData.version}<hr>${game.i18n.localize("pf2e-jb2a-macros.notifications.metaData")}`);
+		ui.notifications.notify(`${metaData.name} (v${metaData.moduleVersion}) | Animation Version: ${metaData.version}<hr>${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.metaData")}`);
 	};
 });
 //#endregion
@@ -221,7 +221,7 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = 
 	pf2eAnimations.debug("Vaux's Macro Helpers | Args", args);
 	token = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 
-	if (!token) { ui.notifications.error(game.i18n.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
+	if (!token) { ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
 
 	tokenScale = token.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
 	allTargets = args[1]?.allTargets ?? [...game.user.targets];
@@ -264,6 +264,83 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 	if (alignment.includes("G")) traits.push("good");
 	if (alignment.includes("E")) traits.push("evil");
 	return traits;
+}
+
+pf2eAnimations.crosshairs = async function crosshairs(args = { token: Object, item: Object }, opts = { range: Number, crosshairConfig: Object, openSheet: Boolean }) {
+	mergeObject({ openSheet: true }, opts)
+
+	const tokenDoc = args.token.document
+	const callbacks = {}
+	if (opts.range > 0) {
+		let cachedDistance = 0;
+		callbacks.show = async (crosshairs) => {
+			while (crosshairs.inFlight) {
+				// make it wait or go into an unescapable infinite loop of pain
+				await warpgate.wait(50);
+
+				const ray = new Ray(args.token.center, crosshairs);
+
+				const distance = canvas.grid.measureDistances([{ ray }], { gridSpaces: true })[0]
+
+				// Only update if the distance has changed
+				if (cachedDistance !== distance) {
+					cachedDistance = distance;
+					if (distance > opts.range) {
+						crosshairs.icon = "icons/svg/hazard.svg"
+						await crosshairs.document.updateSource({
+							"flags": {
+								"pf2e-jb2a-macros": {
+									"outOfRange": true
+								}
+							}
+						})
+					} else {
+						crosshairs.icon = args?.item?.img ?? args?.token.document.texture.src
+						await crosshairs.document.updateSource({
+							"flags": {
+								"pf2e-jb2a-macros": {
+									"outOfRange": false
+								}
+							}
+						})
+					}
+					crosshairs.draw()
+					crosshairs.label = `${distance} ft.`
+				}
+			}
+		}
+	}
+
+	const crosshairConfig = {
+		label: "0 ft.",
+		label: tokenDoc.name,
+		interval: tokenDoc.height < 1 ? 4 : tokenDoc.height % 2 === 0 ? 1 : -1,
+		lockSize: true,
+		drawIcon: true,
+		size: tokenDoc.height,
+		icon: tokenDoc.texture.src,
+		rememberControlled: true,
+	}
+
+	mergeObject(crosshairConfig, opts.crosshairConfig)
+
+	tokenDoc.actor.sheet.minimize();
+	const location = await warpgate.crosshairs.show(crosshairConfig, callbacks)
+	if (opts.openSheet) tokenDoc.actor.sheet.maximize();
+	const result = location.cancelled ? false
+	: location.flags["pf2e-jb2a-macros"].outOfRange ? "outOfRange"
+	: location
+
+	if (result === "outOfRange") { ui.notifications.error("PF2e Animations | " + pf2eAnimations.localize("pf2e-jb2a-macros.notifications.outOfRange")); return false; }
+	return result
+}
+
+pf2eAnimations.localize = function localize(string = String, format = Object) {
+	if (Object.keys(format).length > 0) {
+		return game.i18n.format(string, format);
+	} else {
+		return game.i18n.localize(string);
+	}
 }
 
 // Borrowed from PF2eTools Utils
