@@ -783,7 +783,14 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 	spawnArgs.options = { ...spawnArgs.options, ...{ controllingActor: tokenD.actor } }
 
 	let importedToken = importedActor.prototypeToken
-	Object.assign(importedToken.flags, { "pf2e-jb2a-macros": { "scrollingText": game.settings.get("core", "scrollingStatusText"), "bloodsplatter": game.modules.get("splatter")?.active ? game.settings.get("splatter", "enableBloodsplatter") : null } })
+	Object.assign(importedToken.flags,
+		{
+			"pf2e-jb2a-macros": {
+				"scrollingText": game.settings.get("core", "scrollingStatusText"),
+				"bloodsplatter": game.modules.get("splatter")?.active ? game.settings.get("splatter", "enableBloodsplatter") : null
+			}
+		}
+	)
 
 	spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
 
@@ -824,8 +831,8 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
 	args.callbacks.pre = async (location, updates) => {
 		mergeObject(updates, {
-			token: {
-				alpha: 0
+			"token": {
+				"alpha": 0
 			}
 		})
 		await game.settings.set("core", "scrollingStatusText", false);
@@ -857,6 +864,11 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 		await AutomatedAnimations.playAnimation(token, item ?? { name: `Summoning Animation Template (${args.origins.itemName})` }, { targets: [spawnedTokenDoc.object] });
 		if (updates.token.flags["pf2e-jb2a-macros"]?.scrollingText) await game.settings.set("core", "scrollingStatusText", true);
 		if (updates.token.flags["pf2e-jb2a-macros"]?.bloodsplatter) await game.settings.set("splatter", "enableBloodsplatter", true);
+		if (game.modules.get("tokenmagic-automatic-wounds")?.active) {
+			// This doesn't actually work and is instead in "Opacity 1" macro but for posterity's sake, it's also included here.
+			// Not sure why it works in the macro but not in here. It just doesn't.
+			await TokenMagicAutomaticWounds.removeWoundsOnToken(token)
+		}
 	};
 
 	new Dialog({
