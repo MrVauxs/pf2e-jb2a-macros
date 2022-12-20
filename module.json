@@ -46,10 +46,13 @@
 		"verified": "10"
 	},
 	"esmodules": [
-		"module/sequencer-extensions.js"
+		"module/pf2e-animations.js",
+		"module/sequencer-extensions.js",
+		"module/settings.js",
+		"module/summons.js",
+		"module/updateMenu.js"
 	],
 	"scripts": [
-		"module/pf2e-animation-macros.js"
 	],
 	"styles": [
 		"styles/pf2e-animation-macros.css"

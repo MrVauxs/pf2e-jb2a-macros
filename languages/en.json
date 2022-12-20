@@ -76,7 +76,7 @@
 			},
 			"useLocalMacros": {
 				"name": "Use Local Macros",
-				"hint": "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local macros instead of the ones in the compendium for these specific animations.\nCurrent Animations that are under this setting include: Equipment Changes"
+				"hint": "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local WORLD macros instead of the ones in the compendium for these following macros: Equipment Changes."
 			},
 			"disableHitAnims": {
 				"name": "Disable \"On Hit or Miss\" Animations",
@@ -103,9 +103,8 @@
 				"hint": "Enables console logs of what PF2e Animations module is doing."
 			},
 			"autorecUpdate": {
-				"name": "Autorecognition Menu Update",
-				"label": "Update Menu",
-				"hint": "Check if there are any updates to be made to your animations?"
+				"name": "Animations Update",
+				"label": "Update Menu"
 			}
 		}
 	}

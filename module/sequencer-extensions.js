@@ -1,8 +1,3 @@
-/*
-    "esmodules": [
-        "module/sequencer-extensions.js"
-    ],
-*/
 Hooks.once('sequencer.ready', () => {
     Sequencer.Presets.add("pf2eAnimations.breathe", (effect, args) => {
         return effect
