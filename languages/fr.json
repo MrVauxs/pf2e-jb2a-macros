@@ -49,8 +49,7 @@
 			},
 			"autorecUpdate": {
 				"name": "Mise à jour du menu de l'auto-reconnaissance",
-				"label": "Menu de mise à jour",
-				"hint": "Vérifiez s'il y a des mises à jour à apporter à vos animations ?"
+				"label": "Menu de mise à jour"
 			},
 			"autoUpdate": {
 				"name": "Ouvrir le menu de mise à jour lors de la mise à jour du module",

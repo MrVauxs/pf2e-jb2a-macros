@@ -51,8 +51,7 @@
 			},
 			"autorecUpdate": {
 				"name": "自动识别文件更新",
-				"label": "更新文件",
-				"hint": "检查是否有动画的更新可用？"
+				"label": "更新文件"
 			}
 		},
 		"macro": {
