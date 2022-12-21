@@ -219,6 +219,11 @@ pf2eAnimations.degreeOfSuccessWithRerollHandling = function degreeOfSuccessWithR
  */
 pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = () => {}) {
 	pf2eAnimations.debug("Vaux's Macro Helpers | Args", args);
+	["token", "tokenScale", "allTargets", "hitTargets", "targets", "target", "origin", "actor"].forEach(element => {
+		if (typeof window[element] === 'undefined') {
+			window[element] = null;
+		}
+	});
 	token = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 
 	if (!token) { ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
