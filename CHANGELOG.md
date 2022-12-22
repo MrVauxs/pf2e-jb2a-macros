@@ -2,6 +2,7 @@
 - Broke the module into pieces. And by that I mean it's now not just one compiled file that was slowly becoming a mess to trawl through.
 - Dimension Door has been separated off of Dimension Jumps macro and has been improved from the last iteration. (#79)
 - Updated Blacklist to include an "Ok and Update Animations" button.
+- Updated localization files.
 
 # Version 2.7.11
 - Updated Mirror Image to be compatible with free version of JB2A. Also made scaled tokens work in it.
