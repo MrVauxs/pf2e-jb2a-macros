@@ -173,7 +173,7 @@ pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
  * @param {Object} spawnArgs Arguments to be passed down to Warpgate spawnAt function, order insensitive.
  */
 pf2eAnimations.playerSummons = async function playerSummons({ args = [], importedActor = {}, spawnArgs = {} }) {
-    const [tokenD, tokenScale] = pf2eAnimations.macroHelpers(args);
+    const [tokenD, tokenScale] = await pf2eAnimations.macroHelpers(args);
 
     // If no actor is passed, prompt a player to select one.
     if (!Object.keys(importedActor).length) {

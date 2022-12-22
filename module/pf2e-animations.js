@@ -160,7 +160,8 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 });
 //#endregion
 
-pf2eAnimations.debug = function debug(msg = "", args = "") {
+pf2eAnimations.debug = function debug(msg, args) {
+	[msg, ...args] = arguments
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) console.log(`DEBUG | PF2e Animations | ${msg}`, args);
 }
 
@@ -219,22 +220,16 @@ pf2eAnimations.degreeOfSuccessWithRerollHandling = function degreeOfSuccessWithR
  */
 pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = () => {}) {
 	pf2eAnimations.debug("Vaux's Macro Helpers | Args", args);
-	["token", "tokenScale", "allTargets", "hitTargets", "targets", "target", "origin", "actor"].forEach(element => {
-		if (typeof window[element] === 'undefined') {
-			window[element] = null;
-		}
-	});
-	token = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
-
+	let token = args[1]?.sourceToken ?? canvas.tokens.controlled[0];
 	if (!token) { ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noToken")); return; }
 
-	tokenScale = token.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
-	allTargets = args[1]?.allTargets ?? [...game.user.targets];
-	hitTargets = args[1]?.hitTargets ?? allTargets;
-	targets = hitTargets;
-	target = hitTargets[0];
-	origin = args[1]?.itemUuid ?? token.actor.uuid;
-	actor = token.actor;
+	let tokenScale = token.actor.size === "sm" ? game.settings.get("pf2e-jb2a-macros", "smallTokenScale") : 1.0;
+	let allTargets = args[1]?.allTargets ?? [...game.user.targets];
+	let hitTargets = args[1]?.hitTargets ?? allTargets;
+	let targets = hitTargets;
+	let target = hitTargets[0];
+	let origin = args[1]?.itemUuid ?? token.actor.uuid;
+	let actor = token.actor;
 
 	pf2eAnimations.debug("Vauxs Macro Helpers | Results", { token, tokenScale, allTargets, hitTargets, targets, target, origin, actor});
 	// Don't delete it, even though it's just a legacy thing by this point.
@@ -272,7 +267,7 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 }
 
 pf2eAnimations.crosshairs = async function crosshairs(args = { token: Object, item: Object }, opts = { range: Number, crosshairConfig: Object, openSheet: Boolean }) {
-	mergeObject({ openSheet: true }, opts)
+	opts = mergeObject({ openSheet: true }, opts)
 
 	const tokenDoc = args.token.document
 	const callbacks = {}
@@ -331,11 +326,18 @@ pf2eAnimations.crosshairs = async function crosshairs(args = { token: Object, it
 
 	tokenDoc.actor.sheet.minimize();
 	const location = await warpgate.crosshairs.show(crosshairConfig, callbacks)
-	if (opts.openSheet) tokenDoc.actor.sheet.maximize();
+	if (opts.openSheet === true) {
+		tokenDoc.actor.sheet.maximize()
+	};
 	const result = location.cancelled ? false
 	: location.flags["pf2e-jb2a-macros"].outOfRange ? "outOfRange"
 	: location
 
+	// Calculate the rotation from the origin in degrees, up = 0
+	location.rotationFromOrigin = (new Ray(tokenDoc.center, location).angle * 180 / Math.PI) + 90
+	if (location.rotationFromOrigin < 0) location.rotationFromOrigin += 360
+
+	pf2eAnimations.debug("Crosshairs", args, opts, location, !!result);
 	if (result === "outOfRange") { ui.notifications.error("PF2e Animations | " + pf2eAnimations.localize("pf2e-jb2a-macros.notifications.outOfRange")); return false; }
 	return result
 }
