@@ -42,8 +42,7 @@
 			},
 			"autorecUpdate": {
 				"name": "Aktualizacja Menu Auto-Rozpoznawania",
-				"label": "Menu Aktualizacji",
-				"hint": "Sprawdź czy nie ma aktualizacji dla twoich animacji?"
+				"label": "Menu Aktualizacji"
 			},
 			"allowUncommonSummons": {
 				"name": "Pozwól na Rzadkie Przywołania",
