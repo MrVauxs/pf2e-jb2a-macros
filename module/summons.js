@@ -2,18 +2,18 @@
 // Keeps the IDs of these actors in settings. If one of them is missing, it will create a new one and save the new ones ID.
 pf2eAnimations.createIfMissingDummy = async function createIfMissingDummy() {
     let message = `PF2e Animations | ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noDummy")}`;
-    npcFolder = game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder"));
+    let npcFolder = game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder"));
 
     if (!npcFolder) {
         npcFolder = await Folder.create({ name: "PF2e Animations Dummy NPCs", type: "Actor", parent: null });
         game.settings.set("pf2e-jb2a-macros", "dummyNPCId-folder", npcFolder.id);
     }
 
-    npcActor1 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-tiny"));
-    npcActor2 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-medium"));
-    npcActor3 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-large"));
-    npcActor4 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-huge"));
-    npcActor5 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-garg"));
+    let npcActor1 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-tiny"));
+    let npcActor2 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-medium"));
+    let npcActor3 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-large"));
+    let npcActor4 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-huge"));
+    let npcActor5 = game.actors.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-garg"));
     if (!(npcActor1 && npcActor2 && npcActor3 && npcActor4 && npcActor5)) {
         message += ` ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.creatingDummy")} `;
         ui.notifications.info(message);

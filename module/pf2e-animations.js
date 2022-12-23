@@ -343,7 +343,7 @@ pf2eAnimations.crosshairs = async function crosshairs(args = { token: Object, it
 }
 
 pf2eAnimations.localize = function localize(string = String, format = Object) {
-	if (!string.includes("pf2e-jba-macros.")) string = "pf2e-jb2a-macros." + string;
+	if (!string.includes("pf2e-jb2a-macros.")) string = "pf2e-jb2a-macros." + string;
 	if (Object.keys(format).length > 0) {
 		return game.i18n.format(string, format);
 	} else {
