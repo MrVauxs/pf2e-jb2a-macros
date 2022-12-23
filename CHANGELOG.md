@@ -1,3 +1,6 @@
+# Version 2.8.3
+- Fixed Localization.
+
 # Version 2.8.2
 - Made all macros fail quietly when a file cannot be found. This makes the module compatible with the free version, if not for the fact nothing will be seen.
 - Included assets needed for Action Tracker macro, and then some.
