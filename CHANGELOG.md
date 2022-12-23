@@ -1,4 +1,4 @@
-# Version 2.8.3
+# Version 2.8.4
 - Fixed Localization, again.
 - Fixed Summons being unable to be summoned.
 
