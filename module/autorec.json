@@ -82436,7 +82436,7 @@
       }
     },
     {
-      "id": "9453ecf0-42e1-49dd-9bf1-1442e2890501",
+      "id": "bee76769-c7da-4789-b481-840f820013a0",
       "label": "Dimension Door",
       "levels3d": {
         "enable": false,
@@ -82627,9 +82627,9 @@
         }
       },
       "metaData": {
-        "name": "PF2e Animation Macros",
-        "version": 12,
-        "moduleVersion": "2.6.6",
+        "name": "PF2e Animations",
+        "version": 282,
+        "moduleVersion": "2.8.2",
         "label": "Dimension Door",
         "menu": "ontoken"
       }
