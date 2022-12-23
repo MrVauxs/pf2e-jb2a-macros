@@ -12,7 +12,7 @@ pf2eAnimations.hooks.ready = Hooks.on("ready", () => {
 	}
 
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {
-		ui.notifications.info(pf2eAnimations.format("pf2e-jb2a-macros.notifications.update", { version: game.modules.get("pf2e-jb2a-macros").version }))
+		ui.notifications.info(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.update", { version: game.modules.get("pf2e-jb2a-macros").version }))
 		game.settings.set("pf2e-jb2a-macros", "version-previous", game.modules.get("pf2e-jb2a-macros").version)
 		if (game.user.isGM && game.settings.get("pf2e-jb2a-macros", "autoUpdate")) new autorecUpdateFormApplication().render(true)
 	}
@@ -228,7 +228,7 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = 
 	let hitTargets = args[1]?.hitTargets ?? allTargets;
 	let targets = hitTargets;
 	let target = hitTargets[0];
-	let origin = args[1]?.itemUuid ?? token.actor.uuid;
+	let origin = args[1]?.itemUuid ?? args[1]?.item?.uuid ?? token.actor.uuid;
 	let actor = token.actor;
 
 	pf2eAnimations.debug("Vauxs Macro Helpers | Results", { token, tokenScale, allTargets, hitTargets, targets, target, origin, actor});
