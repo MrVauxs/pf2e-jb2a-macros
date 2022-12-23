@@ -130,8 +130,8 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 						label: 'Apply',
 						value: 1,
 						callback: async (options) => {
-							settings = await game.settings.get("autoanimations", `aaAutorec-${data.menu}`);
-							entry = settings.findIndex(obj => obj.label === data.label);
+							let settings = await game.settings.get("autoanimations", `aaAutorec-${data.menu}`);
+							let entry = settings.findIndex(obj => obj.label === data.label);
 							settings[entry].metaData.name = options.inputs[0] ?? settings[entry].metaData.name;
 							settings[entry].metaData.moduleVersion = options.inputs[1] ?? settings[entry].metaData.moduleVersion;
 							settings[entry].metaData.version = options.inputs[2] ?? settings[entry].metaData.version;
@@ -343,6 +343,7 @@ pf2eAnimations.crosshairs = async function crosshairs(args = { token: Object, it
 }
 
 pf2eAnimations.localize = function localize(string = String, format = Object) {
+	if (!string.includes("pf2e-jba-macros.")) string = "pf2e-jb2a-macros." + string;
 	if (Object.keys(format).length > 0) {
 		return game.i18n.format(string, format);
 	} else {

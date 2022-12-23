@@ -1,3 +1,8 @@
+# Version 2.8.1
+- Fixed Shield having mismatched colours.
+- Added Action Tracker macro and effect.
+- Updated Dimension Door to be peacefully quit when on the wrong version of JB2A.
+
 # Version 2.8.0
 - Broke the module into pieces. And by that I mean it's now not just one compiled file that was slowly becoming a mess to trawl through.
 - Dimension Door has been separated off of Dimension Jumps macro and has been improved from the last iteration. (#79)
