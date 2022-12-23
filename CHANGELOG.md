@@ -1,3 +1,6 @@
+# Version 2.8.2
+- Made all macros fail quietly when a file cannot be found. This makes the module compatible with the free version, if not for the fact nothing will be seen.
+
 # Version 2.8.1
 - Fixed Shield having mismatched colours.
 - Added Action Tracker macro and effect.
