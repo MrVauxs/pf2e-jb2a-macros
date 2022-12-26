@@ -99943,8 +99943,8 @@
       "label": "Summoning Animation Template",
       "metaData": {
         "name": "PF2e Animation Macros",
-        "version": 12,
-        "moduleVersion": "2.6.6",
+        "version": 284,
+        "moduleVersion": "2.8.4",
         "label": "Summoning Animation Template",
         "menu": "ontoken"
       },
@@ -99968,7 +99968,8 @@
       "macro": {
         "enable": true,
         "name": "Compendium.pf2e-jb2a-macros.Macros.Opacity 1",
-        "playWhen": "3"
+        "playWhen": "3",
+        "args": "Do not remove this macro! This turns your token visible after your animation finishes (or during it, depends on when the macro is ran). Replace this with your own version or don't remove it, unless you want invisible tokens."
       },
       "menu": "ontoken",
       "primary": {
@@ -100155,7 +100156,8 @@
       "macro": {
         "enable": true,
         "name": "Compendium.pf2e-jb2a-macros.Macros.Opacity 1",
-        "playWhen": "3"
+        "playWhen": "3",
+        "args": "Do not remove this macro! This turns your token visible after your animation finishes (or during it, depends on when the macro is ran). Replace this with your own version or don't remove it, unless you want invisible tokens."
       },
       "menu": "ontoken",
       "primary": {
@@ -100322,8 +100324,8 @@
         "label": "Summoning Animation Template (Animate Dead)",
         "menu": "ontoken",
         "name": "PF2e Animations",
-        "moduleVersion": "2.7.5",
-        "version": 275
+        "moduleVersion": "2.8.4",
+        "version": 284
       }
     },
     {
@@ -100349,7 +100351,8 @@
       "macro": {
         "enable": true,
         "name": "Compendium.pf2e-jb2a-macros.Macros.Opacity 1",
-        "playWhen": "3"
+        "playWhen": "3",
+        "args": "Do not remove this macro! This turns your token visible after your animation finishes (or during it, depends on when the macro is ran). Replace this with your own version or don't remove it, unless you want invisible tokens."
       },
       "menu": "ontoken",
       "primary": {
@@ -100516,8 +100519,8 @@
         "label": "Summoning Animation Template (Summon Animal)",
         "menu": "ontoken",
         "name": "PF2e Animations",
-        "moduleVersion": "2.7.5",
-        "version": 275
+        "moduleVersion": "2.8.4",
+        "version": 284
       }
     },
     {
