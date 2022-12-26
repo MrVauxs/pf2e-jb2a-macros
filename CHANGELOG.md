@@ -1,3 +1,6 @@
+# Version 2.8.5
+- Fixed Alchemist's Fire blast happening before the end of the throwing animation.
+
 # Version 2.8.4
 - Fixed Localization, again.
 - Fixed Summons being unable to be summoned.
