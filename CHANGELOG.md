@@ -1,5 +1,7 @@
 # Version 2.8.5
 - Fixed Alchemist's Fire blast happening before the end of the throwing animation.
+- Modified Harm to being purely ran by Automated Animations.
+- Added effects for the Botanical Bestiary.
 
 # Version 2.8.4
 - Fixed Localization, again.
