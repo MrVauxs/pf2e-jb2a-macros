@@ -1,3 +1,6 @@
+# Version 2.8.6
+- Fixed rotation bug in Action Counter macro.
+
 # Version 2.8.5
 - Fixed Alchemist's Fire blast happening before the end of the throwing animation.
 - Modified Harm to being purely ran by Automated Animations.
