@@ -384,7 +384,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
     const crosshairs = await warpgate.crosshairs.show(crossHairConfig)
     if (crosshairs.cancelled) return;
 
-    spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [crosshairs]))[0]
+    spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [{ ...crosshairs, distance: importedToken.height / 2 * canvas.scene.grid.distance}]))[0]
 
     pf2eAnimations.debug("Requesting to GM", spawnArgs)
     await warpgate.event.notify("askGMforSummon", spawnArgs)
@@ -455,6 +455,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
                     if (args.options && args.updates && args.updates.token) args.updates.token.actorData = { ownership: { [args.userId]: 3 } };
 
                     if (args?.updates?.actor?.token) args.updates.actor.token = args.updates.token;
+
                     args.location = template;
 
                     pf2eAnimations.debug("Summoning...", args)

@@ -2,6 +2,7 @@
 - Fixed Alchemist's Fire blast happening before the end of the throwing animation.
 - Modified Harm to being purely ran by Automated Animations.
 - Added effects for the Botanical Bestiary.
+- Fixed some alignment issues with Summoning.
 
 # Version 2.8.4
 - Fixed Localization, again.
