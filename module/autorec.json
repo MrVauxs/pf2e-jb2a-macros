@@ -78145,7 +78145,7 @@
           "variant": "01",
           "color": "random",
           "enableCustom": true,
-          "customPath": "jb2a.ui.critical_miss."
+          "customPath": "jb2a.ui.critical_miss"
         }
       },
       "secondary": {
@@ -78275,8 +78275,8 @@
       },
       "metaData": {
         "name": "PF2e Animation Macros",
-        "version": 12,
-        "moduleVersion": "2.6.6",
+        "version": 286,
+        "moduleVersion": "2.8.6",
         "label": "Attack Animation Template (Critical Failure)",
         "menu": "ontoken"
       }
@@ -78343,7 +78343,7 @@
           "variant": "01",
           "color": "random",
           "enableCustom": true,
-          "customPath": "jb2a.ui.critical."
+          "customPath": "jb2a.ui.critical"
         }
       },
       "secondary": {
@@ -78473,8 +78473,8 @@
       },
       "metaData": {
         "name": "PF2e Animation Macros",
-        "version": 12,
-        "moduleVersion": "2.6.6",
+        "version": 286,
+        "moduleVersion": "2.8.6",
         "label": "Attack Animation Template (Critical Success)",
         "menu": "ontoken"
       }
