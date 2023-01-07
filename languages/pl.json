@@ -12,9 +12,6 @@
 			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}"
 		},
 		"settings": {
-			"useLocalMacros": {
-				"hint": "Nie można niektórych animacji skonfigurować w Automated Animations menu Auto-Rozpoznawania. \nWłącz te ustawienie aby używać lokalnych makr zamiast tych w kompendium dla tych specyficznych animacji. \nW tej chwili te makra to są: Equipment Changes"
-			},
 			"disableHitAnims": {
 				"name": "Wyłącz Animacje \"Trafić lub Chybić\"",
 				"hint": "Kiedy możesz usunąć te animacje z menu Auto-rozpoznawania, one powrócą podczas aktualizowania modułu. Włącz te ustawienie aby wyłączyć te animacje."
