@@ -14,7 +14,6 @@
 		"notifications": {
 			"noJB2A": "Vous avez besoin d'un <a href=\"https://jb2a.com/home/content-information/#free_library\">module JB2A</a> actif pour l'utiliser avec le module PF2e Animations !",
 			"update": "PF2e Animations v{version} est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
-			"noPersistentDamage": "Veuillez activer le module PF2e dégâts persistants pour utiliser la macro États persistants.",
 			"creatingDummy": " Création d'un PNJ fictif... ",
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
 			"noDummy": "Acteurs fictifs manquants pour les macros d'invocation.",
@@ -25,9 +24,6 @@
 			"noPrem": "Il vous manque les assets de la <a href='https://www.patreon.com/JB2A/membership'>version premium de JB2A</a> pour utiliser cette animation !"
 		},
 		"settings": {
-			"useLocalMacros": {
-				"hint": "Certaines animations ne sont pas configurables dans les paramètres d'autoreconnaissance des animations automatisées.\nActivez cette option pour utiliser les macros locales du MONDE au lieu de celles du compendium pour les animations suivantes : Changements d'équipement."
-			},
 			"disableHitAnims": {
 				"name": "Désactiver Animations \"Si touché ou échec\"",
 				"hint": "Bien que vous puissiez supprimer ces animations du menu d'Auto reconnaissance de AA, elles reviendront probablement lorsque vous le mettrez à jour. Activez cette option pour désactiver ces animations."

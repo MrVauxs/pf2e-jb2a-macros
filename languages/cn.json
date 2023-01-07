@@ -12,7 +12,6 @@
 		},
 		"notifications": {
 			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a>才能使用PF2e Animations模组（也就是本模组）！",
-			"noPersistentDamage": "为了使用Persistent Conditions（持续状态）宏，请启用PF2e Persistent Damage模组。",
 			"noToken": "未找到源指示物。",
 			"creatingDummy": " 正在创建假人NPC… ",
 			"noDummy": "缺少召唤宏所需的假人演员卡。",
@@ -21,9 +20,6 @@
 			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好临时更改一下它的<b>动画</b>或<b>变体</b>。"
 		},
 		"settings": {
-			"useLocalMacros": {
-				"hint": "某些动画无法被Automated Animations自动识别。\n开启本项为这些特定的动画使用本地宏而不是合集包的宏。\n现在这项设定的动画包括：Equipment Changes"
-			},
 			"disableHitAnims": {
 				"name": "关闭\"On Hit or Miss\"动画",
 				"hint": "当你更新Automated Animation时，它的自动识别文件会自动再生成，开启本项来禁用这些动画。"
