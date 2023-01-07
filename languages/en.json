@@ -76,10 +76,6 @@
 				"name": "Allow Non-Common Summons",
 				"hint": "Allow for summoning of Uncommon, Rare, or Unique creatures by the players. You can also allow this for individual spells by adding \"uncommon\" to the spells arguments in either Autorecognition Menu or the spell itself on a character sheet."
 			},
-			"useLocalMacros": {
-				"name": "Use Local Macros",
-				"hint": "Certain animations are not configurable in Automated Animations Autorecognition Settings.\nEnable this to use the local WORLD macros instead of the ones in the compendium for these following macros: Equipment Changes."
-			},
 			"disableHitAnims": {
 				"name": "Disable \"On Hit or Miss\" Animations",
 				"hint": "While you can remove these animations from AA's Autorecognition Menu, it will likely come back when you update it. Enable this to disable these animations."
@@ -107,6 +103,10 @@
 			"autorecUpdate": {
 				"name": "Animations Update",
 				"label": "Update Menu"
+			},
+			"disableHooks": {
+				"name": "Disable Hooked Animations",
+				"hint": "Disables animations that rely on PF2e Animations hooks. This setting will currently disable the following macros: Aeon Stone."
 			}
 		}
 	}

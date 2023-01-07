@@ -78,11 +78,11 @@ Hooks.once("init", () => {
         type: Boolean,
         default: false
     });
-    game.settings.register("pf2e-jb2a-macros", "useLocalMacros", {
+    game.settings.register("pf2e-jb2a-macros", "disableHooks", {
         scope: "world",
         config: true,
-        name: game.i18n.localize("pf2e-jb2a-macros.settings.useLocalMacros.name"),
-        hint: game.i18n.localize("pf2e-jb2a-macros.settings.useLocalMacros.hint"),
+        name: game.i18n.localize("pf2e-jb2a-macros.settings.disableHooks.name"),
+        hint: game.i18n.localize("pf2e-jb2a-macros.settings.disableHooks.hint"),
         type: Boolean,
         default: false
     });

@@ -3,7 +3,7 @@ const pf2eAnimations = {}
 //#region Hooks
 pf2eAnimations.hooks = {}
 
-pf2eAnimations.hooks.ready = Hooks.on("ready", () => {
+pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 	console.log("PF2e Animations v" + game.modules.get("pf2e-jb2a-macros").version + " loaded.");
 	// Warn if no JB2A is found and disable the module.
 	if (!game.modules.get("JB2A_DnD5e")?.active && !game.modules.get("jb2a_patreon")?.active) {
@@ -89,18 +89,30 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 	}
 });
 
-pf2eAnimations.hooks.preUpdateItem = Hooks.on("preUpdateItem", (data, changes) => {
-	pf2eAnimations.debug("Running Equipment Changes Macro.", { data, changes });
-	pf2eAnimations.runMacro('Equipment Changes', { data, changes })
+// Create a hook for updating inventory.
+pf2eAnimations.hooks.equipOrInvestItem = Hooks.on("pf2eAnimations-equipOrInvestItem", (...args) => {
+	// If the hooks are disabled, return.
+	if (game.settings.get("pf2e-jb2a-macros", "disableHooks")) return pf2eAnimations.debug("Hooks have been disabled!");
+
+	// If the item is an Aeon Stone, run the Aeon Stone macro.
+	if (args[0].name.includes("Aeon Stone")) pf2eAnimations.runMacro("Aeon Stone", [ args[1] /*status*/, args[0] /*data*/ ]);
+})
+
+// Call the above hook with updateItem.
+pf2eAnimations.hooks.updateItem = Hooks.on("updateItem", (data, changes) => {
+	let status = data.isInvested ? "invested" : data.isEquipped ? "equipped" : false
+	Hooks.call("pf2eAnimations-equipOrInvestItem", data, status)
 });
 
+// Remove the PF2e Animations Dummy NPC folder, unless the debug mode is on AND the user is a GM.
 pf2eAnimations.hooks.renderActorDirectory = Hooks.on("renderActorDirectory", (app, html, data) => {
 	if (!(game.user.isGM && game.settings.get("pf2e-jb2a-macros", "debug"))) {
-		let folder = html.find(`.folder[data-folder-id="${game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder"))?.id}"]`);
+		const folder = html.find(`.folder[data-folder-id="${game.folders.get(game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder"))?.id}"]`);
 		folder.remove();
 	}
 });
 
+// Create a hook for metadata modification menu.
 pf2eAnimations.hooks.AutomatedAnimations = {}
 pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimations.metaData", async (data) => {
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) {
@@ -139,6 +151,18 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 						}
 					},
 					{
+						label: 'Update',
+						value: 1,
+						callback: async (options) => {
+							let settings = await game.settings.get("autoanimations", `aaAutorec-${data.menu}`);
+							let entry = settings.findIndex(obj => obj.label === data.label);
+							settings[entry].metaData.name = "PF2e Animations";
+							settings[entry].metaData.moduleVersion = game.modules.get("pf2e-jb2a-macros").version;
+							settings[entry].metaData.version = Number(game.modules.get("pf2e-jb2a-macros").version.replaceAll(".", ""));
+							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [data.menu]: settings }), { [data.menu]: true });
+						}
+					},
+					{
 						label: 'Delete MetaData',
 						value: 1,
 						callback: async (options) => {
@@ -171,10 +195,9 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 	args,
 	compendiumName = "pf2e-jb2a-macros.Macros"
 ) {
-	const useLocal = game.settings.get("pf2e-jb2a-macros", "useLocalMacros");
 	const pack = game.packs.get(compendiumName);
 	if (pack) {
-		const macro_data = useLocal ? await game.macros.getName(macroName) : (await pack.getDocuments()).find((i) => i.name === macroName);
+		const macro_data = (await pack.getDocuments()).find((i) => i.name === macroName);
 
 		if (macro_data) {
 			const temp_macro = new Macro(macro_data.toObject());
@@ -191,9 +214,7 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 				await temp_macro.execute(args);
 			}
 		} else {
-			useLocal ?
-				ui.notifications.error("PF2e Animations | Macro " + macroName + " not found in the world (if you have enabled \"Use Local Macros\" setting, disable it or import the macros in it's description).")
-				: ui.notifications.error("PF2e Animations | Macro " + macroName + " not found in " + compendiumName + ".")
+			ui.notifications.error("PF2e Animations | Macro " + macroName + " not found in " + compendiumName + ".")
 		}
 	} else {
 		ui.notifications.error("PF2e Animations | Compendium " + compendiumName + " not found");

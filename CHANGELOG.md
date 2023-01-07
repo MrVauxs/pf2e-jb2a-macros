@@ -1,3 +1,11 @@
+# Version 2.9.0
+- Changed how equipment animations such as Aeon Stone work:
+  - Created a new hook, "pf2eAnimations-equipOrInvestItem", which is called whenever an item is updated and returns whether an item is... equipped or invested. Or neither.
+  - "Equipment Changes" macro has been removed.
+  - "Use Local Macros" setting has been replaced by "Disable Hooked Animations" setting, with clearer text as to what it does.
+  - People using a custom animations for equipping items should enable the above setting and use the new hook. PF2e Animations does not provide the means to automatically call their macros anymore though, meaning you need to use a module such as [Hook Macros](https://github.com/ardittristan/HookMacros).
+- Added proper reload sounds to Reload action.
+
 # Version 2.8.6
 - Fixed rotation bug in Action Counter macro.
 
