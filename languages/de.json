@@ -13,7 +13,6 @@
 		},
 		"notifications": {
 			"update": "PF2e-Animationen v{version} geladen. Bitte überprüfen Sie, ob Sie keine neuen Animationen zu Ihrem Autorecognition-Menü hinzugefügt haben!",
-			"noPersistentDamage": "Aktivieren Sie bitte das PF2e-Modul \"Persistent Damage\", um das Makro \"Persistent Conditions\" zu verwenden.",
 			"noToken": "Kein Quellentoken gefunden.",
 			"noDummy": "Fehlende Dummy-Darsteller für Beschwörungsmakros.",
 			"creatingDummy": " Dummy-NPCs erstellen... ",

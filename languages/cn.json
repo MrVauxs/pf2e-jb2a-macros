@@ -12,7 +12,6 @@
 		},
 		"notifications": {
 			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a>才能使用PF2e Animations模组（也就是本模组）！",
-			"noPersistentDamage": "为了使用Persistent Conditions（持续状态）宏，请启用PF2e Persistent Damage模组。",
 			"noToken": "未找到源指示物。",
 			"creatingDummy": " 正在创建假人NPC… ",
 			"noDummy": "缺少召唤宏所需的假人演员卡。",

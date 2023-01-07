@@ -14,7 +14,6 @@
 		"notifications": {
 			"noJB2A": "Vous avez besoin d'un <a href=\"https://jb2a.com/home/content-information/#free_library\">module JB2A</a> actif pour l'utiliser avec le module PF2e Animations !",
 			"update": "PF2e Animations v{version} est chargé. Veuillez vérifier si vous n'avez pas besoin d'ajouter de nouvelles animation à votre menu d'auto-reconnaissance !",
-			"noPersistentDamage": "Veuillez activer le module PF2e dégâts persistants pour utiliser la macro États persistants.",
 			"creatingDummy": " Création d'un PNJ fictif... ",
 			"noPack": "Impossible de trouver le pack 'pf2e-jb2a-macros.Actions' ?",
 			"noDummy": "Acteurs fictifs manquants pour les macros d'invocation.",

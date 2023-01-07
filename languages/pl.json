@@ -2,7 +2,6 @@
 	"pf2e-jb2a-macros": {
 		"notifications": {
 			"update": "PF2e Animations v{version} załadowany. Proszę sprawdzić czy nie ma nowych animacji dla twego menu auto-rozpoznawania!",
-			"noPersistentDamage": "Proszę włączyć moduł PF2e Persistent Damage aby móc użyć makro Persistent Conditions.",
 			"noToken": "Nie znaleziono źródłowego tokena.",
 			"noDummy": "Brakuje sztucznego aktora dla makra wzywania.",
 			"creatingDummy": " Tworzę sztuczne NPC'ety... ",
