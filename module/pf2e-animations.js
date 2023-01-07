@@ -90,18 +90,15 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 });
 
 // Create a hook for updating inventory.
-pf2eAnimations.hooks.equipOrInvestItem = Hooks.on("pf2eAnimations-equipOrInvestItem", (...args) => {
-	// If the hooks are disabled, return.
-	if (game.settings.get("pf2e-jb2a-macros", "disableHooks")) return pf2eAnimations.debug("Hooks have been disabled!");
-
+pf2eAnimations.hooks.equipOrInvestItem = Hooks.on("pf2eAnimations.equipOrInvestItem", (status, data) => {
 	// If the item is an Aeon Stone, run the Aeon Stone macro.
-	if (args[0].name.includes("Aeon Stone")) pf2eAnimations.runMacro("Aeon Stone", [ args[1] /*status*/, args[0] /*data*/ ]);
+	if (data.name.includes("Aeon Stone")) AutomatedAnimations.playAnimation(data.actor.getActiveTokens()[0], data, { "workflow": status });
 })
 
 // Call the above hook with updateItem.
 pf2eAnimations.hooks.updateItem = Hooks.on("updateItem", (data, changes) => {
-	let status = data.isInvested ? "invested" : data.isEquipped ? "equipped" : false
-	Hooks.call("pf2eAnimations-equipOrInvestItem", data, status)
+	const status = data.isInvested ? "invested" : data.isEquipped ? "equipped" : false
+	Hooks.call("pf2eAnimations.equipOrInvestItem", status, data)
 });
 
 // Remove the PF2e Animations Dummy NPC folder, unless the debug mode is on AND the user is a GM.

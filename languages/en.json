@@ -103,10 +103,6 @@
 			"autorecUpdate": {
 				"name": "Animations Update",
 				"label": "Update Menu"
-			},
-			"disableHooks": {
-				"name": "Disable Hooked Animations",
-				"hint": "Disables animations that rely on PF2e Animations hooks. This setting will currently disable the following macros: Aeon Stone."
 			}
 		}
 	}
