@@ -14,7 +14,6 @@
 		"notifications": {
 			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations module!",
 			"update": "PF2e Animations v{version} loaded. Please check if you don't have new animations to be added to your autorecognition menu!",
-			"noPersistentDamage": "Please enable the PF2e Persistent Damage module to use the Persistent Conditions macro.",
 			"noToken": "No source token found.",
 			"noDummy": "Missing dummy actors for summoning macros.",
 			"creatingDummy": " Creating dummy NPCs… ",

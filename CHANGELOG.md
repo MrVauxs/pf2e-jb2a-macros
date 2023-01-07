@@ -8,6 +8,8 @@
 - Added proper reload sounds to Reload action.
 - Added Aeon Stone to the Autorecognition menu. It's automatically called by the pf2eAnimations-equipOrInvestItem hook. You can blacklist it or modify it however you want.
 - Updated some Active Effect animations to Force Exact name Matching.
+- Removed Persistent Damage animation effects (i.e. those which stayed on your token).
+- Fixed temporary Persistent Damage animations (i.e. those which played every time your token took damage).
 
 # Version 2.8.6
 - Fixed rotation bug in Action Counter macro.

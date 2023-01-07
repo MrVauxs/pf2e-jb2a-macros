@@ -34,14 +34,9 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 	let args = data ?? null;
 
 	// Persistent Damage Matches
-	if (/Received Fast Healing|Persistent \w+ damage/.test(flavor)) {
-		if (game.modules.get("pf2e-persistent-damage")?.active) {
-			pf2eAnimations.debug("Persistent Damage / Healing", data);
-			return pf2eAnimations.runMacro('Persistent Conditions', args)
-		} else if (!game.modules.get("pf2e-persistent-damage")?.active) {
-			pf2eAnimations.debug("No \"PF2e Persistent Damage\" module found!");
-			return ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noPersistentDamage"));
-		}
+	if ((data.isDamageRoll && data.rolls[0].options.evaluatePersistent) || flavor.includes("Received regeneration")) {
+		pf2eAnimations.debug("Persistent Damage / Healing", data);
+		return pf2eAnimations.runMacro('Persistent Conditions', args)
 	}
 	// Default Matches
 	if (data.isDamageRoll && /Sneak Attack/.test(flavor)) {

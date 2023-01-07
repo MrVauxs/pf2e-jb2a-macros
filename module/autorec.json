@@ -52925,9 +52925,7 @@
       "metaData": {
         "name": "PF2e Animations",
         "moduleVersion": "2.8.6",
-        "version": 286,
-        "label": "Acid Splash",
-        "menu": "range"
+        "version": 286
       }
     },
     {
@@ -103158,6 +103156,193 @@
         "label": "Worm's Repast",
         "menu": "ontoken"
       }
+    },
+    {
+      "id": "0469d9be-637d-4b7a-b129-b25788f6f4e7",
+      "label": "Aeon Stone",
+      "levels3d": {
+        "type": "explosion",
+        "data": {
+          "color01": "#FFFFFF",
+          "color02": "#FFFFFF"
+        },
+        "sound": {
+          "enable": false
+        },
+        "secondary": {
+          "enable": false,
+          "data": {
+            "color01": "#FFFFFF",
+            "color02": "#FFFFFF"
+          }
+        }
+      },
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Aeon Stone",
+        "playWhen": "2"
+      },
+      "menu": "ontoken",
+      "primary": {
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": false,
+          "isWait": false,
+          "opacity": 1,
+          "persistent": false,
+          "playbackRate": 1,
+          "playOn": "default",
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1,
+          "unbindAlpha": false,
+          "unbindVisibility": false,
+          "zIndex": 1
+        }
+      },
+      "secondary": {
+        "enable": false,
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": true,
+          "isWait": false,
+          "opacity": 1,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1.5,
+          "zIndex": 1
+        }
+      },
+      "soundOnly": {
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        }
+      },
+      "source": {
+        "enable": false,
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": false,
+          "isWait": true,
+          "opacity": 1,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1,
+          "zIndex": 1
+        }
+      },
+      "target": {
+        "enable": false,
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": false,
+          "opacity": 1,
+          "persistent": false,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1,
+          "unbindAlpha": false,
+          "unbindVisibility": false,
+          "zIndex": 1
+        }
+      }
     }
   ],
   "templatefx": [
@@ -124197,547 +124382,6 @@
         "version": 12,
         "moduleVersion": "2.6.6",
         "label": "Paralyzed",
-        "menu": "aefx"
-      }
-    },
-    {
-      "id": "092b460f-bbe2-4315-b348-fa2246be947c",
-      "label": "Persistent Damage [Acid",
-      "menu": "aefx",
-      "secondary": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 250,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": true,
-          "isWait": false,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 0,
-          "size": 1.5,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "primary": {
-        "options": {
-          "addTokenWidth": false,
-          "elevation": 1000,
-          "delay": 250,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": false,
-          "opacity": 1,
-          "persistent": true,
-          "playOn": "source",
-          "repeat": 1,
-          "size": 1,
-          "unbindAlpha": true,
-          "unbindVisibility": true,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "animation": "drop",
-          "color": "green",
-          "customPath": "",
-          "dbSection": "static",
-          "enableCustom": false,
-          "menuType": "conditions",
-          "variant": "01"
-        }
-      },
-      "macro": {
-        "enable": false
-      },
-      "soundOnly": {
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1
-        }
-      },
-      "source": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": true,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "volume": 1
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "activeEffectType": "ontoken",
-      "metaData": {
-        "name": "PF2e Animations",
-        "version": 12,
-        "moduleVersion": "2.6.6",
-        "label": "Persistent Damage [Acid",
-        "menu": "aefx"
-      }
-    },
-    {
-      "id": "1150ff0a-733d-4b82-962d-c6e561b72ee6",
-      "label": "Persistent Damage [Bleed",
-      "menu": "aefx",
-      "secondary": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 250,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": true,
-          "isWait": false,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 0,
-          "size": 1.5,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "primary": {
-        "options": {
-          "addTokenWidth": false,
-          "elevation": 1000,
-          "delay": 250,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": false,
-          "opacity": 0.8,
-          "persistent": true,
-          "playOn": "source",
-          "repeat": 1,
-          "size": 1,
-          "unbindAlpha": true,
-          "unbindVisibility": true,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "animation": "drop",
-          "color": "red",
-          "customPath": "",
-          "dbSection": "static",
-          "enableCustom": false,
-          "menuType": "conditions",
-          "variant": "02"
-        }
-      },
-      "macro": {
-        "enable": false,
-        "playWhen": "0"
-      },
-      "soundOnly": {
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1
-        }
-      },
-      "source": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": true,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "volume": 1
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "activeEffectType": "ontoken",
-      "metaData": {
-        "name": "PF2e Animations",
-        "version": 12,
-        "moduleVersion": "2.6.6",
-        "label": "Persistent Damage [Bleed",
-        "menu": "aefx"
-      }
-    },
-    {
-      "id": "3d2828ed-ad1d-4e8b-92d1-81622d4c57ba",
-      "label": "Persistent Damage [Fire",
-      "menu": "aefx",
-      "secondary": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 250,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": true,
-          "isWait": false,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 0,
-          "size": 1.5,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "primary": {
-        "options": {
-          "addTokenWidth": false,
-          "elevation": 1000,
-          "delay": 250,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": false,
-          "opacity": 1,
-          "persistent": true,
-          "playOn": "source",
-          "repeat": 1,
-          "size": 1,
-          "unbindAlpha": true,
-          "unbindVisibility": true,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "animation": "fire",
-          "color": "orange",
-          "customPath": "",
-          "dbSection": "static",
-          "enableCustom": false,
-          "menuType": "shieldfx",
-          "variant": "03"
-        }
-      },
-      "macro": {
-        "enable": false
-      },
-      "soundOnly": {
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1
-        }
-      },
-      "source": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": true,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "volume": 1
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "activeEffectType": "ontoken",
-      "metaData": {
-        "name": "PF2e Animations",
-        "version": 12,
-        "moduleVersion": "2.6.6",
-        "label": "Persistent Damage [Fire",
-        "menu": "aefx"
-      }
-    },
-    {
-      "id": "d9b5f1ac-88ae-4a5b-9d51-4ac1375c3058",
-      "label": "Persistent Damage [Poison",
-      "menu": "aefx",
-      "secondary": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 250,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": true,
-          "isWait": false,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 0,
-          "size": 1.5,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "primary": {
-        "options": {
-          "addTokenWidth": false,
-          "elevation": 1000,
-          "delay": 250,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": false,
-          "opacity": 1,
-          "persistent": true,
-          "playOn": "source",
-          "repeat": 1,
-          "size": 1,
-          "unbindAlpha": true,
-          "unbindVisibility": true,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1,
-          "repeat": 1,
-          "repeatDelay": 250
-        },
-        "video": {
-          "animation": "poison",
-          "color": "darkgreen",
-          "customPath": "",
-          "dbSection": "static",
-          "enableCustom": false,
-          "menuType": "conditions",
-          "variant": "01"
-        }
-      },
-      "macro": {
-        "enable": false
-      },
-      "soundOnly": {
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "volume": 1
-        }
-      },
-      "source": {
-        "enable": false,
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": true,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "zIndex": 1
-        },
-        "sound": {
-          "delay": 0,
-          "enable": false,
-          "file": "",
-          "startTime": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "volume": 1
-        },
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        }
-      },
-      "activeEffectType": "ontoken",
-      "metaData": {
-        "name": "PF2e Animations",
-        "version": 12,
-        "moduleVersion": "2.6.6",
-        "label": "Persistent Damage [Poison",
         "menu": "aefx"
       }
     },
