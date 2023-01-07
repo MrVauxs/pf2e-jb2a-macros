@@ -26,7 +26,6 @@
 		},
 		"settings": {
 			"useLocalMacros": {
-				"name": "Utiliser les macros locales",
 				"hint": "Certaines animations ne sont pas configurables dans les paramètres d'autoreconnaissance des animations automatisées.\nActivez cette option pour utiliser les macros locales du MONDE au lieu de celles du compendium pour les animations suivantes : Changements d'équipement."
 			},
 			"disableHitAnims": {

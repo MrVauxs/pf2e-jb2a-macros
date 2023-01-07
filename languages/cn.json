@@ -22,7 +22,6 @@
 		},
 		"settings": {
 			"useLocalMacros": {
-				"name": "使用本地宏",
 				"hint": "某些动画无法被Automated Animations自动识别。\n开启本项为这些特定的动画使用本地宏而不是合集包的宏。\n现在这项设定的动画包括：Equipment Changes"
 			},
 			"disableHitAnims": {
