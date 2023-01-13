@@ -1,3 +1,6 @@
+# Version 2.9.1
+- Fixed Spell Effect: Shield not proccing.
+
 # Version 2.9.0
 - Changed how equipment animations such as Aeon Stone work:
   - Created a new hook, "pf2eAnimations-equipOrInvestItem", which is called whenever an item is updated and returns whether an item is... equipped or invested. Or neither.
