@@ -1,6 +1,7 @@
 # Version 2.9.1
 - Fixed Spell Effect: Shield not proccing.
 - Fixed Mirror Image and Stumbling Stance rotation.
+- Adjust and add Dirge of Doom animations.
 
 # Version 2.9.0
 - Changed how equipment animations such as Aeon Stone work:
