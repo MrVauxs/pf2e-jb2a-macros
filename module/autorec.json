@@ -103168,7 +103168,7 @@
   ],
   "templatefx": [
     {
-      "id": "52c8d3c7-35e6-4685-ba6a-6655ed40d964",
+      "id": "5513a432-8a40-4512-bf05-753e481e91e9",
       "label": "Alarm",
       "macro": {
         "enable": false,
@@ -103344,7 +103344,7 @@
       }
     },
     {
-      "id": "8f4841af-07c1-4f93-ba71-5d82993d0054",
+      "id": "315034d0-254b-4242-a80a-09d9ee970060",
       "label": "Antimagic Field",
       "macro": {
         "enable": false
@@ -103520,7 +103520,7 @@
       }
     },
     {
-      "id": "ed78aea0-7f90-4e08-876e-41bbcffc149e",
+      "id": "62da7171-a21e-4afc-a913-2c43c69aa101",
       "label": "Black Tentacles",
       "macro": {
         "enable": false
@@ -103696,7 +103696,7 @@
       }
     },
     {
-      "id": "fe4af78a-dcdf-4183-8ee0-ddce3560c279",
+      "id": "fceca8bd-b0f7-4096-9469-39b98f41fde8",
       "label": "Bless",
       "macro": {
         "enable": true,
@@ -103871,7 +103871,7 @@
       }
     },
     {
-      "id": "59c1bbb0-4823-4ee7-a2f3-7fc53eca4c8e",
+      "id": "a1f364e3-b9a3-4f20-bbac-3af90d37bd94",
       "label": "Burning Hands",
       "macro": {
         "enable": true,
@@ -104049,7 +104049,7 @@
       }
     },
     {
-      "id": "bc3ceafc-f7d1-4d78-9e4a-4551ec776d68",
+      "id": "43e6a379-d7f4-4f22-816c-250b5c2edff4",
       "label": "Chilling Spray",
       "macro": {
         "enable": true,
@@ -104227,7 +104227,7 @@
       }
     },
     {
-      "id": "50d4d5bd-abce-43d8-aad9-691f89f93f8e",
+      "id": "7e80c739-9cf1-4386-a294-c825bf7f7895",
       "label": "Color Spray",
       "macro": {
         "enable": true,
@@ -104405,7 +104405,7 @@
       }
     },
     {
-      "id": "ef9b24ff-8fa3-4718-9f23-ad6368eccf8a",
+      "id": "820fa860-b477-4ad8-84c9-68d4837f807d",
       "label": "Cone of Cold",
       "macro": {
         "enable": true,
@@ -104583,7 +104583,7 @@
       }
     },
     {
-      "id": "9cbba3f4-43b7-4f7f-97fe-8b372f65efc3",
+      "id": "2134a16a-eb5c-4637-ab65-79d57c0d4e65",
       "label": "Cry Of Destruction",
       "macro": {
         "enable": true,
@@ -104761,7 +104761,7 @@
       }
     },
     {
-      "id": "6cf5b9fa-3b60-42ad-95a1-790abc4bc429",
+      "id": "302c508a-186c-47d3-bdfa-53908bf30eca",
       "label": "Darkness",
       "macro": {
         "enable": true,
@@ -104939,7 +104939,7 @@
       }
     },
     {
-      "id": "a28dd192-d4fe-4b62-bae2-a8cf9b36ac97",
+      "id": "a5b00054-8494-4e03-aab5-b36261d9fbf1",
       "label": "Dazzling Flash",
       "macro": {
         "enable": true,
@@ -105117,7 +105117,7 @@
       }
     },
     {
-      "id": "f8b11e15-a481-4b02-8ae6-03c6b763cbcc",
+      "id": "ac11f6da-bd09-4b7d-be00-ed8efb052146",
       "label": "Detect Magic",
       "macro": {
         "enable": false,
@@ -105293,7 +105293,7 @@
       }
     },
     {
-      "id": "00cc1c57-9e74-4b70-802f-5cc4ebdfe8b5",
+      "id": "e877cd87-aacd-43ad-954b-2324f8a46ef9",
       "label": "Dirge of Doom",
       "macro": {
         "enable": false,
@@ -105466,7 +105466,7 @@
       }
     },
     {
-      "id": "68cb860d-89de-41bf-9f8c-d0087c379eda",
+      "id": "1ca5ddd3-95e2-49b8-af27-e6f915e72088",
       "label": "Divine Wrath",
       "macro": {
         "enable": false,
@@ -105643,7 +105643,7 @@
       }
     },
     {
-      "id": "f9c94fb4-899b-41ab-b071-ee92b8540d2a",
+      "id": "06136e5b-8f83-4344-8ccf-5bb10b6a2f5d",
       "label": "Entangle",
       "macro": {
         "enable": false
@@ -105819,7 +105819,7 @@
       }
     },
     {
-      "id": "33d448fb-59af-4c36-b2d5-f6105e57b618",
+      "id": "ae4ac06b-777d-413e-b50d-b14aab76cef0",
       "label": "Explode",
       "macro": {
         "enable": false,
@@ -105995,7 +105995,7 @@
       }
     },
     {
-      "id": "bcc6edeb-6343-40c9-8f09-c898a365d083",
+      "id": "28af17a9-dac6-4029-9a1a-19a35f2921db",
       "label": "Feral Shades",
       "macro": {
         "enable": true,
@@ -106173,7 +106173,7 @@
       }
     },
     {
-      "id": "170d9062-62f0-4854-80b3-1ef6955b9c5f",
+      "id": "782a75a8-984b-46a9-ab93-3d4f6b9d35d2",
       "label": "Filth Wave",
       "macro": {
         "enable": false,
@@ -106350,7 +106350,7 @@
       }
     },
     {
-      "id": "5de51e1e-c0ef-4075-a3ca-84bcc1186a56",
+      "id": "615f9dfe-092d-4342-9bf9-5c036f9d3068",
       "label": "Grim Tendrils",
       "macro": {
         "enable": true,
@@ -106529,7 +106529,7 @@
       }
     },
     {
-      "id": "16102116-2cf0-4046-8cb8-4af1b266961a",
+      "id": "c5003c6d-4f04-4738-a008-74f9ca2e0dac",
       "label": "Gust of Wind",
       "macro": {
         "enable": false,
@@ -106705,7 +106705,7 @@
       }
     },
     {
-      "id": "38abe6fc-570c-4e6f-8776-90f2f6618ef4",
+      "id": "def50e09-22a7-406b-92af-b18fde48bbf9",
       "label": "Harm",
       "macro": {
         "enable": false,
@@ -106878,7 +106878,7 @@
       }
     },
     {
-      "id": "9e6af640-a663-4879-8509-44333a01dc97",
+      "id": "3c7eb988-ddb5-47ff-983f-04d5f411364f",
       "label": "Haunting Hymn",
       "macro": {
         "enable": true,
@@ -107056,7 +107056,7 @@
       }
     },
     {
-      "id": "32fd90e5-1e27-4345-81ec-9cd81f63818e",
+      "id": "1c29c592-5b4c-46ba-8b78-ebc5f274bc73",
       "label": "Inspire Courage",
       "macro": {
         "enable": true,
@@ -107231,7 +107231,7 @@
       }
     },
     {
-      "id": "26ea2637-1810-4100-8593-2f58fc8d62dd",
+      "id": "5bb8d2ea-c6da-4b7f-a51f-a785c59a2954",
       "label": "Inspire Defense",
       "macro": {
         "enable": true,
@@ -107406,7 +107406,7 @@
       }
     },
     {
-      "id": "d3808348-77a2-4b63-b8a8-080253156923",
+      "id": "de9f9e9b-d10b-4799-a2bd-c182bd05f461",
       "label": "Lethargy Bomb",
       "macro": {
         "enable": false
@@ -107581,7 +107581,7 @@
       }
     },
     {
-      "id": "386863c7-7294-4cdb-b0b9-ef7890523287",
+      "id": "c9d217ba-b8f9-471b-bc65-7ddb92294258",
       "label": "Lightning Bolt",
       "macro": {
         "enable": true,
@@ -107759,7 +107759,7 @@
       }
     },
     {
-      "id": "d0d4dda0-01f4-4865-976a-bc2bd01a496f",
+      "id": "b916d606-81b1-4f07-ba79-b1b8c5ebdabe",
       "label": "Obscuring Mist",
       "macro": {
         "enable": false
@@ -107934,7 +107934,7 @@
       }
     },
     {
-      "id": "34ec80f2-a47b-471b-9961-cbdcaf0ccbb6",
+      "id": "6595dc67-2b5e-4175-bd0f-dc75b288a899",
       "label": "Pummeling Rubble",
       "macro": {
         "enable": true,
@@ -108113,7 +108113,7 @@
       }
     },
     {
-      "id": "3391aadf-6dc8-4056-a0e4-fe7247deb7d7",
+      "id": "863654d8-449a-4dcc-a07a-70972169b1e0",
       "label": "Rejuvenating Flames",
       "macro": {
         "enable": true,
@@ -108291,7 +108291,7 @@
       }
     },
     {
-      "id": "e2cd268a-c8eb-4cd2-ba49-e4e7a9a06785",
+      "id": "aa50f0ec-2493-4fe0-9787-65bc1deda534",
       "label": "Shockwave",
       "macro": {
         "enable": true,
@@ -108469,7 +108469,7 @@
       }
     },
     {
-      "id": "e117f39b-5628-406a-acdf-62cc23d7782c",
+      "id": "82d5c094-6c88-4a27-a31f-3f25063e7ba6",
       "label": "Sleep",
       "macro": {
         "enable": false
@@ -108645,7 +108645,7 @@
       }
     },
     {
-      "id": "d78e440b-9596-4569-9e42-866a46fb9ff5",
+      "id": "8e6c5186-a749-4582-8231-0084bc3f6794",
       "label": "Sound Burst",
       "macro": {
         "enable": false
@@ -108820,7 +108820,7 @@
       }
     },
     {
-      "id": "87129335-cdc7-448e-8f90-88917a60cedc",
+      "id": "03dd06be-6b4b-4792-b783-f8419ce0d1a2",
       "label": "Splash of Art",
       "macro": {
         "enable": false
@@ -108995,7 +108995,7 @@
       }
     },
     {
-      "id": "3b9035b3-9988-4fce-8547-df0d24203802",
+      "id": "95ef1e48-42b4-4d14-bc33-79941e59b501",
       "label": "Spray Of Stars",
       "macro": {
         "enable": true,
@@ -109173,7 +109173,7 @@
       }
     },
     {
-      "id": "321cef98-4861-4c80-a511-3011139ebeae",
+      "id": "f3d53040-cff4-4701-8e2b-f159bd9b3f64",
       "label": "Stinking Cloud",
       "macro": {
         "enable": false,
@@ -109351,7 +109351,7 @@
       }
     },
     {
-      "id": "31d1c5da-efee-499b-9355-6d9ca6214821",
+      "id": "5c10a7fa-41ce-4036-a5e1-10e768a37a64",
       "label": "Storm of Vengeance",
       "macro": {
         "enable": false
@@ -109527,7 +109527,7 @@
       }
     },
     {
-      "id": "9a230944-37d1-435d-bc07-fdc3f37893cd",
+      "id": "58af730b-036b-45f8-b543-c56ca6390983",
       "label": "Vomit Swarm",
       "macro": {
         "enable": false
@@ -109702,7 +109702,7 @@
       }
     },
     {
-      "id": "33a8c538-abcb-4429-9c79-00c53cbe783d",
+      "id": "682d68b8-c6da-4a5b-b313-0b100ba91ade",
       "label": "Web",
       "macro": {
         "enable": true,
@@ -109872,11 +109872,20 @@
         }
       },
       "metaData": {
-        "name": "PF2e Animation Macros",
-        "version": 12,
-        "moduleVersion": "2.6.6",
+        "name": "PF2e Animations",
+        "version": 291,
+        "moduleVersion": "2.9.1",
         "label": "Web",
         "menu": "templatefx"
+      },
+      "advanced": {
+        "exactMatch": false,
+        "excludedTerms": [],
+        "excludedType": {
+          "enabled": true,
+          "path": "type",
+          "property": "melee"
+        }
       }
     }
   ],
