@@ -1,3 +1,8 @@
+# Version 2.9.2
+- (Thanks to @MercuryReign for the below!)
+- Fixed Spiritual Weapon not respecting input arguments.
+- Fixed Summon Lesser Servitor giving Neutral creatures as valid summons.
+
 # Version 2.9.1
 - Fixed Spell Effect: Shield not proccing.
 - Fixed Mirror Image and Stumbling Stance rotation.
