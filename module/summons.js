@@ -218,7 +218,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
                             || ["Eagle", "Guard Dog", "Raven", "Black Bear", "Giant Bat", "Leopard", "Tiger", "Great White Shark"].some(v => x.name === v)
                         )
                         // get the actors alignment
-                        alignment = args[1].sourceToken.actor?.deity?.system?.alignment?.own ?? args[1].sourceToken.actor?.details?.alignment?.value;
+                        alignment = args[1].sourceToken.actor?.deity?.system?.alignment?.own ?? args[1].sourceToken.actor?.system.details?.alignment?.value;
                         packs = packs.filter(x => pf2eAnimations.alignmentStringToTraits(alignment, true).some(t => !x.traits.includes(t)))
                         // create string for the dialog
                         uniqueString = `<a class="content-link" draggable="true" data-pack="pf2e.spells-srd" data-uuid="Compendium.pf2e.spells-srd.B0FZLkoHsiRgw7gv" data-id="B0FZLkoHsiRgw7gv"><i class="fas fa-suitcase"></i>Summon Lesser Servitor</a>`
