@@ -259,7 +259,7 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 	// returns an array of traits for the alignment string
 	// e.g. "LG" -> ["lawful", "good"]
 
-	// reverse = true will return the opposite traits
+	// reverse = true will return the opposite traits (note that N becomes nothing)
 	// e.g. "LG" -> ["chaotic", "evil"]
 	// thanks Co-Pilot for the code below
 	if (reverse) {
@@ -268,6 +268,7 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 			a === "C" ? "L" :
 			a === "G" ? "E" :
 			a === "E" ? "G" :
+			a === "N" ? "" :
 			a).join("");
 	}
 	let traits = [];
