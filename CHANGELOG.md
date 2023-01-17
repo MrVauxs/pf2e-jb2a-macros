@@ -1,3 +1,6 @@
+# Version 2.9.3
+- Fixed Dancing Lights not working with the free version of JB2A.
+
 # Version 2.9.2
 - (Thanks to @MercuryReign for the below!)
 - Fixed Spiritual Weapon not respecting input arguments.
