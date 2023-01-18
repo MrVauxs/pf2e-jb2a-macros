@@ -1,6 +1,6 @@
 # Version 2.9.5
 - Added Taiwanese localization. (#92)
-- 
+
 # Version 2.9.4
 - Fixed alignment for actors without a deity. (#91)
 
