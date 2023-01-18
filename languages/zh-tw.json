@@ -1,0 +1,88 @@
+{
+	"pf2e-jb2a-macros": {
+		"updateMenu": {
+			"added": "下列效果將會被加入到你的自動識別設定檔案中。",
+			"updated": "下列效果將從舊的'PF2e Animations'版本（或Automated Animations的預設版本）更新。",
+			"nothing": "沒有更新。",
+			"warning": "確保你備份了你的自動識別檔案！這個操作是無法被撤銷的。",
+			"deleted": "下列效果將會從'PF2e Animations'中被移除。",
+			"custom": "下列效果不會被加入，因為他們已被從另外的源匯入。",
+			"customHint": "如果你想要使用'PF2e Animations'版本的配置，請先將他們從你的自動識別菜單里刪除。",
+			"debugCustom": "下列效果不存在於PF2e Animations中，他們將繼續留在您的自動識別檔案里。"
+		},
+		"notifications": {
+			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模組</a>才能使用PF2e Animations模組（也就是本模組）！",
+			"noToken": "未找到源指示物。",
+			"creatingDummy": " 正在建立假人NPC… ",
+			"noDummy": "缺少召喚宏所需的假人演員卡。",
+			"noPack": "無法找到'pf2e-jb2a-macros.Actions'包，解決一下？",
+			"update": "PF2e Animations v{version} 已載入。請確認你是否有新的自動識別檔案可用！",
+			"metaData": "這個動畫將在升級時被替換。如果你不想這麼做，最好臨時更改一下它的<b>動畫</b>或<b>變體</b>。"
+		},
+		"settings": {
+			"disableHitAnims": {
+				"name": "關閉\"On Hit or Miss\"動畫",
+				"hint": "當你更新Automated Animation時，它的自動識別檔案會自動再產生，開啟本項來禁用這些動畫。"
+			},
+			"randomHitAnims": {
+				"hint": "使失敗和大失敗的攻擊失手動畫隨機出現在攻擊目標的指示物附近。",
+				"name": "使\"On Hit or Miss\"的失手動畫出現在目標指示物外"
+			},
+			"autoAccept": {
+				"name": "自動使用效果",
+				"hint": "自動使用來自宏的效果，比如當你使用Rage動作時自動使用Rage的效果。"
+			},
+			"autoUpdate": {
+				"name": "模組更新時打開更新設定檔案菜單",
+				"hint": "當模組更新時，自動打開自動識別檔案的更新菜單。"
+			},
+			"smallTokenScale": {
+				"name": "預設小型指示物尺寸",
+				"hint": "定義小型角色的動畫。若你使用PF2E的\"Scale tokens according to size\"設定，本項應關閉卻自動定義為0.8。"
+			},
+			"debug": {
+				"name": "Debug模式",
+				"hint": "打開Console記錄本模組的行為。"
+			},
+			"autorecUpdate": {
+				"name": "自動識別檔案更新",
+				"label": "更新檔案"
+			}
+		},
+		"macro": {
+			"suddenCharge": {
+				"notif": "突襲衝鋒！選擇你想去的位置。右鍵取消。",
+				"suddenCharge": "突襲衝鋒。"
+			},
+			"disguise": {
+				"illusoryDisguise": "🎭幻象偽裝🎭",
+				"tokenImageHint": "確保它在場景上工作，CORS是一個善變的神。",
+				"tokenScale": "指示物尺寸",
+				"invisible": "將你原來的指示物隱形？",
+				"humanoidForm": "🎭類人形態🎭",
+				"cast": "施放！",
+				"name": "姓名",
+				"tokenImage": "指示物影象",
+				"tokenScaleHint": "如果你要進入的令牌是一個拓展畫令牌。或者比你更小！",
+				"invisibleHint": "預設打開，這會將指示物隱藏在幻象之下。在偽裝成一個比你小或者頭頂視角的指示物的時候很有用。"
+			},
+			"summoning": {
+				"player": {
+					"dancingLights": "選擇你的舞光術…",
+					"label": "根據什麼排序？",
+					"amount": "總數",
+					"title": "召喚任何東西",
+					"creature": "生物",
+					"level": "等級{level}",
+					"sorted": "根據等級和字母排序。"
+				},
+				"gm": {
+					"unknownUser": "一個未知使用者",
+					"declined": "拒絕！",
+					"title": "玩家請求召喚",
+					"content": "<p>{user}請求召喚<b>{amount} {actorName}</b>。</p><p>一個位置標識已經被建立在召喚的位置。如果你接受，召喚物將出現在那個位置。你可以在接受之前移動位置標識的位置。</p><p>拒絕請求或關閉本視窗會刪除位置標識並結束召喚流程。</p>"
+				}
+			}
+		}
+	}
+}
