@@ -11,6 +11,7 @@ Created to accompany the [Automated Animations](https://github.com/otigon/automa
 You can appropriate most of this module for other systems, I simply don't have interest in doing so.
 
 If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs) or [Ko-Fi](https://ko-fi.com/mrvauxs)! 
+
 **You can also [commission me](https://ko-fi.com/mrvauxs/commissions) if you want something animated ASAP or an unique version!**
 
 ## Optional Modules
