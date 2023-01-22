@@ -6,6 +6,8 @@
 - Added Taiwanese localization. (#92)
 - Added a random delay to Inspire Courage and Defense to avoid them all playing at the same time and thus killing performance.
 - Made Effect: Rage only play on Rage effects and not on anything containing the word "rage", including "Inspire CouRAGE".
+- Fixed Summon Lesser Servitor for actors with Neutral Alignment (thanks to MercuryReign!)
+- Fixed persistent bleed damage not animating (thanks to MercuryReign!) 
 
 # Version 2.9.4
 - Fixed alignment for actors without a deity. (#91)
