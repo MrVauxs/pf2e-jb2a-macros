@@ -199,7 +199,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 
         if (args && args[2]?.length) {
             pf2eAnimations.debug("Summoning Args", args);
-            let unique, uniqueString, alignment;
+            let unique, uniqueString, alignment, reverseAlignment;
             if (args[2].find(x => x.includes("unique"))) {
                 unique = args[2].find(x => x.includes("unique-"))?.replace('unique-', '')
                 if (unique && args[2].length > 1) return ui.notifications.error("You can only select one unique summon type.");
@@ -219,7 +219,8 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
                         )
                         // get the actors alignment
                         alignment = args[1].sourceToken.actor?.deity?.system?.alignment?.own ?? args[1].sourceToken.actor?.system.details?.alignment?.value;
-                        packs = packs.filter(x => pf2eAnimations.alignmentStringToTraits(alignment, true).some(t => !x.traits.includes(t)))
+                        reverseAlignment = pf2eAnimations.alignmentStringToTraits(alignment, true);
+                        !reverseAlignment.length ? packs : packs = packs.filter(x => pf2eAnimations.alignmentStringToTraits(alignment, true).some(t => !x.traits.includes(t)))
                         // create string for the dialog
                         uniqueString = `<a class="content-link" draggable="true" data-pack="pf2e.spells-srd" data-uuid="Compendium.pf2e.spells-srd.B0FZLkoHsiRgw7gv" data-id="B0FZLkoHsiRgw7gv"><i class="fas fa-suitcase"></i>Summon Lesser Servitor</a>`
                         break;
