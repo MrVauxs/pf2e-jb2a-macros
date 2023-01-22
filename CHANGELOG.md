@@ -1,3 +1,7 @@
+# Version 2.9.6
+- Fixed the compendium data being corrupted due to unescaped characters.
+- Updated Sequences to soft fail on errors, not disturbing the gameplay in an event something is missing (such as an animation, sound, or macro).
+
 # Version 2.9.5
 - Added Taiwanese localization. (#92)
 - Added a random delay to Inspire Courage and Defense to avoid them all playing at the same time and thus killing performance.
