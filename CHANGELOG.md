@@ -1,3 +1,7 @@
+# Version 2.9.8
+- Fixed Bless triggering on wrong spells.
+- Apply Effect macro now automatically removes templates that triggered is, if any. This means that the moment you place down at Bless or Bane template, the effect gets applied, and template removed, as it is replaced by the Aura version instead. If you don't use PF2e Workbench, the template will not be removed.
+
 # Version 2.9.7
 - Updated various effects that were often errorenously triggered when playing something else (Inspire Courage and Rage for example).
 

@@ -79746,210 +79746,6 @@
       }
     },
     {
-      "id": "6282c15c-72d2-43da-9436-f93935424f74",
-      "label": "Bless",
-      "levels3d": {
-        "type": "explosion",
-        "data": {
-          "color01": "#FFFFFF",
-          "color02": "#FFFFFF"
-        },
-        "sound": {
-          "enable": false
-        },
-        "secondary": {
-          "enable": false,
-          "data": {
-            "color01": "#FFFFFF",
-            "color02": "#FFFFFF"
-          }
-        }
-      },
-      "macro": {
-        "enable": true,
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
-        "args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.BqkDxiAi0q6Uaar4\", \"onAlt\": \"Compendium.pf2e.spell-effects.Gqy7K6FnbLtwGpud\"}",
-        "playWhen": "2"
-      },
-      "menu": "ontoken",
-      "primary": {
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        },
-        "sound": {
-          "enable": false,
-          "delay": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "startTime": 0,
-          "volume": 0.75
-        },
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": false,
-          "opacity": 1,
-          "persistent": false,
-          "playbackRate": 1,
-          "playOn": "default",
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "unbindAlpha": false,
-          "unbindVisibility": false,
-          "zIndex": 1
-        }
-      },
-      "secondary": {
-        "enable": false,
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        },
-        "sound": {
-          "enable": false,
-          "delay": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "startTime": 0,
-          "volume": 0.75
-        },
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": true,
-          "isWait": false,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1.5,
-          "zIndex": 1
-        }
-      },
-      "soundOnly": {
-        "sound": {
-          "enable": false,
-          "delay": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "startTime": 0,
-          "volume": 0.75
-        }
-      },
-      "source": {
-        "enable": false,
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        },
-        "sound": {
-          "enable": false,
-          "delay": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "startTime": 0,
-          "volume": 0.75
-        },
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "isWait": true,
-          "opacity": 1,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "zIndex": 1
-        }
-      },
-      "target": {
-        "enable": false,
-        "video": {
-          "dbSection": "static",
-          "menuType": "spell",
-          "animation": "curewounds",
-          "variant": "01",
-          "color": "blue",
-          "enableCustom": false,
-          "customPath": ""
-        },
-        "sound": {
-          "enable": false,
-          "delay": 0,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "startTime": 0,
-          "volume": 0.75
-        },
-        "options": {
-          "addTokenWidth": false,
-          "anchor": "0.5",
-          "delay": 0,
-          "elevation": 1000,
-          "fadeIn": 250,
-          "fadeOut": 500,
-          "isMasked": false,
-          "isRadius": false,
-          "opacity": 1,
-          "persistent": false,
-          "repeat": 1,
-          "repeatDelay": 250,
-          "size": 1,
-          "unbindAlpha": false,
-          "unbindVisibility": false,
-          "zIndex": 1
-        }
-      },
-      "metaData": {
-        "label": "Bless",
-        "menu": "ontoken",
-        "name": "PF2e Animations",
-        "moduleVersion": "2.9.5",
-        "version": 295
-      },
-      "advanced": {
-        "exactMatch": true,
-        "excludedTerms": [],
-        "excludedType": {
-          "enabled": false,
-          "path": "",
-          "property": ""
-        }
-      }
-    },
-    {
       "id": "aa545c17-fa4d-4b42-99db-176c1f08b65e",
       "label": "Blindness",
       "levels3d": {
@@ -103178,7 +102974,7 @@
   ],
   "templatefx": [
     {
-      "id": "a2a00b99-6811-4645-bc91-71917ef1f120",
+      "id": "37b77556-8f20-42c4-bb8e-9179daba8fd7",
       "label": "Alarm",
       "macro": {
         "enable": false,
@@ -103354,7 +103150,7 @@
       }
     },
     {
-      "id": "54b4c306-b4e1-4a1f-b61e-2b3d9e778058",
+      "id": "81a07ff3-1f28-439e-b512-960716929146",
       "label": "Antimagic Field",
       "macro": {
         "enable": false
@@ -103530,7 +103326,7 @@
       }
     },
     {
-      "id": "1eea51eb-1867-43d0-b40e-64e4ebd539ef",
+      "id": "8fa45d44-39e0-4d12-8924-53682f9ddee5",
       "label": "Black Tentacles",
       "macro": {
         "enable": false
@@ -103706,12 +103502,12 @@
       }
     },
     {
-      "id": "782bea79-2436-4aa2-a453-2bee2e86dc14",
+      "id": "b33669ab-b0e3-4112-b690-dc0cfecbcb99",
       "label": "Bless",
       "macro": {
         "enable": true,
         "name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
-        "args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.BqkDxiAi0q6Uaar4\", \"onAlt\": \"Compendium.pf2e.spell-effects.Gqy7K6FnbLtwGpud\"}",
+        "args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.BqkDxiAi0q6Uaar4\", \"onAlt\": \"Compendium.pf2e.spell-effects.Gqy7K6FnbLtwGpud\", \"deleteTemplate\": \"on\"}",
         "playWhen": "2"
       },
       "menu": "templatefx",
@@ -103875,13 +103671,22 @@
       "metaData": {
         "label": "Bless",
         "menu": "templatefx",
-        "name": "PF2e Animation Macros",
-        "moduleVersion": "2.7.3",
-        "version": 15
+        "name": "PF2e Animations",
+        "moduleVersion": "2.9.8",
+        "version": 298
+      },
+      "advanced": {
+        "exactMatch": true,
+        "excludedTerms": [],
+        "excludedType": {
+          "enabled": false,
+          "path": "",
+          "property": ""
+        }
       }
     },
     {
-      "id": "3a90d64b-4387-4cb8-8c72-fa232fe6bf60",
+      "id": "03d5cc3a-a34e-4e70-b133-c5dc93467090",
       "label": "Burning Hands",
       "macro": {
         "enable": true,
@@ -104059,7 +103864,7 @@
       }
     },
     {
-      "id": "93cef6d1-bfd6-4c26-a03c-364f422912ac",
+      "id": "7ad0907e-3f8d-4c50-b0ba-376bb9cc45d9",
       "label": "Chilling Spray",
       "macro": {
         "enable": true,
@@ -104237,7 +104042,7 @@
       }
     },
     {
-      "id": "d58b6412-ff60-40cd-bb80-158d8a46bd55",
+      "id": "e0ebc7c2-56f0-49a7-b30a-9eb75b314b2a",
       "label": "Color Spray",
       "macro": {
         "enable": true,
@@ -104415,7 +104220,7 @@
       }
     },
     {
-      "id": "8fd23658-269d-419c-b629-752035c884bb",
+      "id": "e3973452-a7f6-4b69-9687-bd6ae53025a5",
       "label": "Cone of Cold",
       "macro": {
         "enable": true,
@@ -104593,7 +104398,7 @@
       }
     },
     {
-      "id": "47892342-ff7f-4141-94b9-80d9d54e7458",
+      "id": "470a27c3-88a1-48d7-bbb9-67269e284dfe",
       "label": "Cry Of Destruction",
       "macro": {
         "enable": true,
@@ -104771,7 +104576,7 @@
       }
     },
     {
-      "id": "60a57c03-602c-4be5-8e32-6e04edd65510",
+      "id": "227aa4f0-25a4-4ec0-99b6-b2a4dfc05504",
       "label": "Darkness",
       "macro": {
         "enable": true,
@@ -104949,7 +104754,7 @@
       }
     },
     {
-      "id": "1784b44a-f41f-4141-b26b-0698be3f4018",
+      "id": "650ce88f-ae9f-41ed-97e6-81c6fad0c581",
       "label": "Dazzling Flash",
       "macro": {
         "enable": true,
@@ -105127,7 +104932,7 @@
       }
     },
     {
-      "id": "c7deb9ed-9fec-4922-9c42-a1f6f1338c7b",
+      "id": "6ab46202-aec8-4841-b85f-344a39bf6327",
       "label": "Detect Magic",
       "macro": {
         "enable": false,
@@ -105303,7 +105108,7 @@
       }
     },
     {
-      "id": "051bb65a-13e4-4d23-86e1-39ea92c2571c",
+      "id": "6e9d6aa5-8d92-4ea7-bdb1-edc23c729975",
       "label": "Dirge of Doom",
       "macro": {
         "enable": false,
@@ -105476,7 +105281,7 @@
       }
     },
     {
-      "id": "195c35db-ac76-4aac-aee7-030382a3820c",
+      "id": "f3b6bc68-7806-428f-9aa6-54071b397717",
       "label": "Divine Wrath",
       "macro": {
         "enable": false,
@@ -105653,7 +105458,7 @@
       }
     },
     {
-      "id": "7aa480e8-afa8-404d-ade1-23d1222bd165",
+      "id": "508b768c-8c4e-479f-8bf5-dadb7a2edf69",
       "label": "Entangle",
       "macro": {
         "enable": false
@@ -105829,7 +105634,7 @@
       }
     },
     {
-      "id": "2d6d3fd1-e05d-4eea-9191-557e1727a066",
+      "id": "f4921375-f875-4312-a25d-ddc8cea9d8a0",
       "label": "Explode",
       "macro": {
         "enable": false,
@@ -106005,7 +105810,7 @@
       }
     },
     {
-      "id": "b99864e2-92fa-4be3-a098-7bdddf536fc5",
+      "id": "cf4f3606-6927-4065-a96b-a67fdbe11062",
       "label": "Feral Shades",
       "macro": {
         "enable": true,
@@ -106183,7 +105988,7 @@
       }
     },
     {
-      "id": "7dd74dbf-d893-4118-bd0d-1e1d0ff95fea",
+      "id": "6db06c95-beb1-46bc-81a5-aea94647558d",
       "label": "Filth Wave",
       "macro": {
         "enable": false,
@@ -106360,7 +106165,7 @@
       }
     },
     {
-      "id": "6894f9a7-0874-42a2-8283-1a56035f74de",
+      "id": "fb12caef-6878-46e6-b9a0-ddb0acc2f6a7",
       "label": "Grim Tendrils",
       "macro": {
         "enable": true,
@@ -106539,7 +106344,7 @@
       }
     },
     {
-      "id": "2fd4f8e8-01ba-43b4-942d-68fd94f29a62",
+      "id": "89d001ba-1bc9-4037-bd8f-a6bde292a664",
       "label": "Gust of Wind",
       "macro": {
         "enable": false,
@@ -106715,7 +106520,7 @@
       }
     },
     {
-      "id": "246e0601-613a-4caa-a4bb-83325c46693c",
+      "id": "f40affe4-2428-4690-8d1c-7dffc6d1aeff",
       "label": "Harm",
       "macro": {
         "enable": false,
@@ -106888,7 +106693,7 @@
       }
     },
     {
-      "id": "6f6427fd-5015-4885-b6cd-f21214bed776",
+      "id": "a54ee175-5774-4b33-b571-7938e29bf12f",
       "label": "Haunting Hymn",
       "macro": {
         "enable": true,
@@ -107066,7 +106871,7 @@
       }
     },
     {
-      "id": "d265126f-7536-4567-9aa3-82be63935a7d",
+      "id": "1de89a59-0c09-4afd-8339-09e1bc73cbfa",
       "label": "Inspire Courage",
       "macro": {
         "enable": true,
@@ -107241,7 +107046,7 @@
       }
     },
     {
-      "id": "7e9b4487-3935-4ad9-a755-1689d5d27eaa",
+      "id": "cb9d9509-0e31-474a-b409-d01504e2960e",
       "label": "Inspire Defense",
       "macro": {
         "enable": true,
@@ -107416,7 +107221,7 @@
       }
     },
     {
-      "id": "e68856c5-091e-47c1-a1d4-dbee5ca9798c",
+      "id": "0c621921-3d9c-4bc7-9767-e8a69dc8990c",
       "label": "Lethargy Bomb",
       "macro": {
         "enable": false
@@ -107591,7 +107396,7 @@
       }
     },
     {
-      "id": "1bd625bb-5411-4100-bffd-87fc95900114",
+      "id": "0a8b30bb-5a28-435f-87a0-6070a84a5874",
       "label": "Lightning Bolt",
       "macro": {
         "enable": true,
@@ -107769,7 +107574,7 @@
       }
     },
     {
-      "id": "c9da699a-4213-4c3b-b0fc-8b7fa080f47c",
+      "id": "742d0a50-4453-4bb5-be40-b9a041c6a1b6",
       "label": "Obscuring Mist",
       "macro": {
         "enable": false
@@ -107944,7 +107749,7 @@
       }
     },
     {
-      "id": "fac842bc-151c-4a63-9c7c-e80f716c5ed2",
+      "id": "a9c63825-2a67-4a8d-8348-14931abf98b0",
       "label": "Pummeling Rubble",
       "macro": {
         "enable": true,
@@ -108123,7 +107928,7 @@
       }
     },
     {
-      "id": "075cb3af-da1a-4745-ad71-e9a9714649b1",
+      "id": "0fc03eb0-0e98-4902-92f7-f6f197e2f9ee",
       "label": "Rejuvenating Flames",
       "macro": {
         "enable": true,
@@ -108301,7 +108106,7 @@
       }
     },
     {
-      "id": "eb6aa164-9654-490a-ade3-623bd7879461",
+      "id": "242918e3-fe9c-4bde-9d83-28b6ad6723e2",
       "label": "Shockwave",
       "macro": {
         "enable": true,
@@ -108479,7 +108284,7 @@
       }
     },
     {
-      "id": "f7bb2b72-0bad-4094-acdf-baf6afa7b277",
+      "id": "baa5a18d-8a12-4012-991b-c8e45bb5d507",
       "label": "Sleep",
       "macro": {
         "enable": false
@@ -108655,7 +108460,7 @@
       }
     },
     {
-      "id": "74e9a3f3-08ff-4218-b004-ca6db1816bce",
+      "id": "34a903d2-f46a-46dc-aae8-9489472b6856",
       "label": "Sound Burst",
       "macro": {
         "enable": false
@@ -108830,7 +108635,7 @@
       }
     },
     {
-      "id": "b8bd8509-799b-48b0-8664-c7d91b116653",
+      "id": "599f0747-4de6-4ebc-9f38-0019adafbb67",
       "label": "Splash of Art",
       "macro": {
         "enable": false
@@ -109005,7 +108810,7 @@
       }
     },
     {
-      "id": "edcb77b2-ac30-479c-9ebf-96f8a01c726b",
+      "id": "0ef46feb-2969-46f6-87c2-651dd40c5759",
       "label": "Spray Of Stars",
       "macro": {
         "enable": true,
@@ -109183,7 +108988,7 @@
       }
     },
     {
-      "id": "a8315c9f-c348-4d27-880c-6f82fcc345dc",
+      "id": "8f86bab0-16d2-48b2-b832-b9076f2fc803",
       "label": "Stinking Cloud",
       "macro": {
         "enable": false,
@@ -109361,7 +109166,7 @@
       }
     },
     {
-      "id": "c5ddcc49-7724-4ff4-92ac-cdc1cb82b9b8",
+      "id": "d581bb80-d2ad-47bc-9d25-8d8bca926dfb",
       "label": "Storm of Vengeance",
       "macro": {
         "enable": false
@@ -109537,7 +109342,7 @@
       }
     },
     {
-      "id": "e7edcbc6-14ec-4005-871c-2d82a499eba3",
+      "id": "b96cc328-585d-4307-86b1-009010210a9c",
       "label": "Vomit Swarm",
       "macro": {
         "enable": false
@@ -109712,7 +109517,7 @@
       }
     },
     {
-      "id": "f0bdf530-8b32-4d20-a7c8-3c66ddb5acd2",
+      "id": "374892e2-c153-4374-b3c4-5b6181ecba86",
       "label": "Web",
       "macro": {
         "enable": true,
@@ -109896,6 +109701,190 @@
           "path": "type",
           "property": "melee"
         }
+      }
+    },
+    {
+      "id": "df83a8a9-e162-4b1c-a86e-0551c5d0503d",
+      "label": "Bane",
+      "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
+        "args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.YcyN7BDbL0Nt3CFN\", \"onAlt\": \"Compendium.pf2e.spell-effects.UTLp7omqsiC36bso\", \"deleteTemplate\": \"on\"}",
+        "playWhen": "2"
+      },
+      "menu": "templatefx",
+      "primary": {
+        "video": {
+          "dbSection": "templatefx",
+          "menuType": "circle",
+          "animation": "calllightning",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "delay": 0,
+          "elevation": 1000,
+          "isMasked": false,
+          "isWait": false,
+          "occlusionAlpha": 0.5,
+          "occlusionMode": "3",
+          "opacity": 1,
+          "persistent": false,
+          "persistType": "sequencerground",
+          "playbackRate": 1,
+          "removeTemplate": false,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "rotate": 0,
+          "scale": "1",
+          "zIndex": 1
+        }
+      },
+      "secondary": {
+        "enable": false,
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": true,
+          "isWait": false,
+          "opacity": 1,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1.5,
+          "zIndex": 1
+        }
+      },
+      "soundOnly": {
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        }
+      },
+      "source": {
+        "enable": false,
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": false,
+          "isWait": true,
+          "opacity": 1,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1,
+          "zIndex": 1
+        }
+      },
+      "target": {
+        "enable": false,
+        "video": {
+          "dbSection": "static",
+          "menuType": "spell",
+          "animation": "curewounds",
+          "variant": "01",
+          "color": "blue",
+          "enableCustom": false,
+          "customPath": ""
+        },
+        "sound": {
+          "enable": false,
+          "delay": 0,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "startTime": 0,
+          "volume": 0.75
+        },
+        "options": {
+          "addTokenWidth": false,
+          "anchor": "0.5",
+          "delay": 0,
+          "elevation": 1000,
+          "fadeIn": 250,
+          "fadeOut": 500,
+          "isMasked": false,
+          "isRadius": false,
+          "opacity": 1,
+          "persistent": false,
+          "repeat": 1,
+          "repeatDelay": 250,
+          "size": 1,
+          "unbindAlpha": false,
+          "unbindVisibility": false,
+          "zIndex": 1
+        }
+      },
+      "advanced": {
+        "exactMatch": true,
+        "excludedTerms": [],
+        "excludedType": {
+          "enabled": false,
+          "path": "",
+          "property": ""
+        }
+      },
+      "metaData": {
+        "label": "Bane",
+        "menu": "templatefx",
+        "name": "PF2e Animations",
+        "moduleVersion": "2.9.8",
+        "version": 298
       }
     }
   ],
@@ -119737,7 +119726,7 @@
         "name": "PF2e Animations",
         "version": 294,
         "moduleVersion": "2.9.4",
-        "label": "Inspire Courage",
+        "label": "Spell Effect: Inspire Courage",
         "menu": "aefx"
       },
       "advanced": {
@@ -122506,7 +122495,7 @@
         "name": "PF2e Animations",
         "version": 295,
         "moduleVersion": "2.9.5",
-        "label": "Rage",
+        "label": "Effect: Rage",
         "menu": "aefx"
       },
       "advanced": {
