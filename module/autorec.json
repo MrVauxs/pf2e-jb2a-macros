@@ -52278,7 +52278,7 @@
   ],
   "range": [
     {
-      "id": "a842d5f9-5590-42fd-8c6f-031d21c959f4",
+      "id": "64ee700a-54f3-41f3-b41c-3419cf6685c2",
       "label": "Acid Arrow",
       "levels3d": {
         "enable": false,
@@ -52495,7 +52495,7 @@
       }
     },
     {
-      "id": "fc416988-4427-4d9c-9015-bc7945a2200b",
+      "id": "1c5a68c5-02ca-49c4-927d-99d1e8aa66e9",
       "label": "Acid Flask",
       "levels3d": {
         "enable": false,
@@ -52714,7 +52714,7 @@
       }
     },
     {
-      "id": "9eb5dfbc-aedc-4260-bef8-ade69834d44d",
+      "id": "ce4c2a5e-2b6a-4472-bfea-df960b312b22",
       "label": "Acid Splash",
       "levels3d": {
         "enable": false,
@@ -52931,7 +52931,7 @@
       }
     },
     {
-      "id": "6fb49646-c3d8-46fc-8606-78d2a57f4220",
+      "id": "213aac05-19a4-489e-adb0-1e3d5b67ab09",
       "label": "Admonishing Ray",
       "levels3d": {
         "enable": false,
@@ -53147,7 +53147,7 @@
       }
     },
     {
-      "id": "f21f5543-4d15-4a4f-b183-3e6a3da07968",
+      "id": "6c2ed461-fe12-4db7-8591-e2f4d275c6a8",
       "label": "Aklys",
       "levels3d": {
         "enable": false,
@@ -53366,7 +53366,7 @@
       }
     },
     {
-      "id": "57cf43c3-1980-414d-b4ff-89bff62f6303",
+      "id": "1b9d82be-7e24-44b7-8b1a-57e1d29d4c16",
       "label": "Alchemist's Fire",
       "levels3d": {
         "enable": false,
@@ -53585,7 +53585,7 @@
       }
     },
     {
-      "id": "d19af984-d126-4c79-b739-52f66a04ce54",
+      "id": "86bdaf68-ff63-417e-bbf5-5816c8ed3afb",
       "label": "Alignment Ampoule",
       "levels3d": {
         "enable": false,
@@ -53804,7 +53804,7 @@
       }
     },
     {
-      "id": "67d91df6-9ecc-4380-91b5-857670da482b",
+      "id": "9fd68d22-e401-4dbf-894f-673ebe6f6dff",
       "label": "Animate Dreamer",
       "levels3d": {
         "enable": false,
@@ -54023,7 +54023,7 @@
       }
     },
     {
-      "id": "d7b972e1-28df-4929-abc8-f3d2f8687c2c",
+      "id": "c4a78044-f0ba-4355-b833-d7760c665018",
       "label": "Arboreal's Revenge",
       "levels3d": {
         "enable": false,
@@ -54242,7 +54242,7 @@
       }
     },
     {
-      "id": "732043e2-6e0c-4976-acea-c45c556bd103",
+      "id": "3a5536a1-3f38-4fcd-9816-a27572ef57bf",
       "label": "Black Tentacles",
       "levels3d": {
         "type": "explosion",
@@ -54427,7 +54427,7 @@
       }
     },
     {
-      "id": "56d049ff-2438-4ad2-9d60-4c7739836881",
+      "id": "f2ddce53-194e-43a5-a11f-63af97333051",
       "label": "Bladed Diabolo",
       "levels3d": {
         "enable": false,
@@ -54646,7 +54646,7 @@
       }
     },
     {
-      "id": "81891ea6-4f26-4301-bb97-9b4b63ffa69f",
+      "id": "45c43b1c-0128-4109-a56d-2d51f70d529f",
       "label": "Bladed Hoop",
       "levels3d": {
         "enable": false,
@@ -54865,7 +54865,7 @@
       }
     },
     {
-      "id": "61902a63-197d-4845-8018-dd4e69799b15",
+      "id": "42e61a17-f9d9-4556-85ba-6da350b42c86",
       "label": "Blight Bomb",
       "levels3d": {
         "enable": false,
@@ -55085,7 +55085,7 @@
       }
     },
     {
-      "id": "92c6d841-dd55-4f9b-9af1-2c2405b600a7",
+      "id": "ba85f406-90e9-40f2-a6cd-65fad75f41bd",
       "label": "Blowgun",
       "levels3d": {
         "enable": false,
@@ -55304,7 +55304,7 @@
       }
     },
     {
-      "id": "d81b2886-852c-4988-a51c-d52794e26938",
+      "id": "7ca13c76-c3d2-4a7c-b6c1-b09023a89523",
       "label": "Blunderbuss",
       "levels3d": {
         "enable": false,
@@ -55521,7 +55521,7 @@
       }
     },
     {
-      "id": "1b4dd810-f025-4c6a-ad5c-8567d48eed01",
+      "id": "6ddeb1a4-9c31-4c3f-a2b6-1954d7e41890",
       "label": "Bola",
       "levels3d": {
         "enable": false,
@@ -55740,7 +55740,7 @@
       }
     },
     {
-      "id": "1ac39c41-8ecb-4933-a542-1bf359f2c5e3",
+      "id": "ed539912-d045-4097-8512-1e35aeafc77f",
       "label": "Bomb",
       "levels3d": {
         "enable": false,
@@ -55959,7 +55959,7 @@
       }
     },
     {
-      "id": "aa60af33-ebf1-4cbc-be66-3dba298b9efd",
+      "id": "6f1e717e-0abc-49d0-a183-b621d71cd698",
       "label": "Bottled Lightning",
       "levels3d": {
         "enable": false,
@@ -56178,7 +56178,7 @@
       }
     },
     {
-      "id": "108d57de-b627-4eb9-8f70-a2baf2b875c6",
+      "id": "26ac90de-c0ff-42a6-a925-74ca963d6c99",
       "label": "Bottled Sunlight",
       "levels3d": {
         "enable": false,
@@ -56397,7 +56397,7 @@
       }
     },
     {
-      "id": "aa94fdc2-e5d4-4b94-9c53-b8499a2fd361",
+      "id": "289d3a75-ec8a-4715-9e72-2df47a6c9d2b",
       "label": "Bow",
       "levels3d": {
         "enable": false,
@@ -56617,7 +56617,7 @@
       }
     },
     {
-      "id": "16023382-4fc8-4439-9aa4-45ec7a8a7011",
+      "id": "44cc0c04-6789-44d2-ad9d-fe243366d6cf",
       "label": "Brain Drain",
       "levels3d": {
         "type": "explosion",
@@ -56805,7 +56805,7 @@
       }
     },
     {
-      "id": "a1b93a5e-6da4-47a8-89f3-fc75246cfca6",
+      "id": "89aed5aa-8522-4182-967d-3826e941df33",
       "label": "Breath Blaster",
       "levels3d": {
         "enable": false,
@@ -57024,7 +57024,7 @@
       }
     },
     {
-      "id": "8e1ba0fa-d7a0-4823-a03d-9a6a9422402b",
+      "id": "43f513df-f42e-4a9d-8fa9-74c6ac9dd84b",
       "label": "Call of the Grave",
       "levels3d": {
         "enable": false,
@@ -57243,7 +57243,7 @@
       }
     },
     {
-      "id": "0091491f-4b30-4c5f-92b7-5093df7897ea",
+      "id": "de0843c6-5ad7-448a-a044-b35871390b1d",
       "label": "Caterwaul Sling",
       "levels3d": {
         "enable": false,
@@ -57462,7 +57462,7 @@
       }
     },
     {
-      "id": "f719ba38-aa98-498c-b8a7-aaeb9c6fcaba",
+      "id": "191cb236-8711-42a0-ac4b-15ae78c9b137",
       "label": "Chain Lightning",
       "levels3d": {
         "enable": false,
@@ -57681,7 +57681,7 @@
       }
     },
     {
-      "id": "2d8f8a4b-0e19-459f-bd2e-8796adea008b",
+      "id": "04935f42-a186-4c61-a3b8-568fff2041fb",
       "label": "Chakram",
       "levels3d": {
         "enable": false,
@@ -57900,7 +57900,7 @@
       }
     },
     {
-      "id": "5c0fb997-19ab-46ff-a749-e70630634a6f",
+      "id": "88280a56-cac6-4ad5-bc07-1fe9032a7279",
       "label": "Combat Grapnel",
       "levels3d": {
         "enable": false,
@@ -58119,7 +58119,7 @@
       }
     },
     {
-      "id": "2cb26b51-f9ce-479d-af83-9195b103dfa1",
+      "id": "dd8e8453-0118-439c-ad7f-9966a7cec0c1",
       "label": "Crossbow",
       "levels3d": {
         "enable": false,
@@ -58339,7 +58339,7 @@
       }
     },
     {
-      "id": "1ca7b741-7a1a-4c46-a5ec-6a74eb736356",
+      "id": "a86f9b3a-0096-4981-8898-256aedd24911",
       "label": "Crystal Shards",
       "levels3d": {
         "enable": false,
@@ -58558,7 +58558,7 @@
       }
     },
     {
-      "id": "ed736d7f-243d-48bc-8521-b8cf9555cb09",
+      "id": "449b1b98-8a7e-44e2-a452-2fc468993556",
       "label": "Daikyu",
       "levels3d": {
         "enable": false,
@@ -58777,7 +58777,7 @@
       }
     },
     {
-      "id": "18d44b96-683d-4870-bf43-b1c9bc80cf50",
+      "id": "52f5b07e-37c9-4511-9db4-fdb555780ade",
       "label": "Dart",
       "levels3d": {
         "enable": false,
@@ -58996,7 +58996,7 @@
       }
     },
     {
-      "id": "77cec1b2-7401-46a8-a4e6-d3e00d96de6b",
+      "id": "1bdf6b65-5e94-4e9c-89f0-79a0000dfbd5",
       "label": "Dart Umbrella",
       "levels3d": {
         "enable": false,
@@ -59215,7 +59215,7 @@
       }
     },
     {
-      "id": "1df71e6f-64de-4ce9-b6de-c70bb46e7c42",
+      "id": "b50925bb-6db7-47b6-81c5-04cfc5ea086b",
       "label": "Deepdread Claw",
       "levels3d": {
         "enable": false,
@@ -59434,7 +59434,7 @@
       }
     },
     {
-      "id": "a089cb5d-61df-48b2-9c3f-213bca99e420",
+      "id": "9b0bda08-0c33-4805-b35b-d762d9739b28",
       "label": "Demoralize",
       "levels3d": {
         "enable": false,
@@ -59651,7 +59651,7 @@
       }
     },
     {
-      "id": "e3128430-ddcf-4566-954e-8824d2cf189c",
+      "id": "dd6bfecc-cc34-405e-a076-95186e1a4cc9",
       "label": "Disintegrate",
       "levels3d": {
         "enable": false,
@@ -59870,7 +59870,7 @@
       }
     },
     {
-      "id": "34839ad9-3d4f-4fae-816b-622b8d53d3a7",
+      "id": "39a88b72-c6bc-44a3-ac4b-36b5b183757e",
       "label": "Divine Lance",
       "levels3d": {
         "enable": false,
@@ -60086,7 +60086,7 @@
       }
     },
     {
-      "id": "d6a3d036-04ab-469d-987f-bcd318f15cb7",
+      "id": "c3b3f24e-4dad-4d6a-bca7-d145be557195",
       "label": "Dragon Mouth Pistol",
       "levels3d": {
         "enable": false,
@@ -60304,7 +60304,7 @@
       }
     },
     {
-      "id": "b17cb72f-5357-4abe-8621-d67ad0d6efe5",
+      "id": "6585bf82-5f07-44b4-8e08-d8f764b8de15",
       "label": "Drake Rifle (Acid)",
       "levels3d": {
         "enable": false,
@@ -60523,7 +60523,7 @@
       }
     },
     {
-      "id": "813c8be4-cb28-415f-a317-568ed0746696",
+      "id": "78273300-c9f3-440c-afd7-09d7518d0d00",
       "label": "Drake Rifle (Cold)",
       "levels3d": {
         "enable": false,
@@ -60742,7 +60742,7 @@
       }
     },
     {
-      "id": "31c3301f-0fe7-4462-95fa-b84ceda36f8d",
+      "id": "40da189e-e47d-418d-8515-7b9b72149d07",
       "label": "Drake Rifle (Electricity)",
       "levels3d": {
         "enable": false,
@@ -60961,7 +60961,7 @@
       }
     },
     {
-      "id": "4ecbd0a7-0887-4a0e-91b4-55005420719d",
+      "id": "8517aecf-2cb4-4197-94e5-d5b35e3603ee",
       "label": "Drake Rifle (Fire)",
       "levels3d": {
         "enable": false,
@@ -61180,7 +61180,7 @@
       }
     },
     {
-      "id": "64a91fe7-04c0-4fc6-b885-a1bd34a0859e",
+      "id": "5e1bfe49-5cf0-42a3-ac90-e2579e7a12ae",
       "label": "Drake Rifle (Poison)",
       "levels3d": {
         "enable": false,
@@ -61399,7 +61399,7 @@
       }
     },
     {
-      "id": "5e75cb39-b22d-41c2-b6c5-92f9b3bbe7f5",
+      "id": "c1d3d917-7eb9-4e9b-b73a-b58cb4b69683",
       "label": "Dread Ampoule",
       "levels3d": {
         "enable": false,
@@ -61618,7 +61618,7 @@
       }
     },
     {
-      "id": "9160f14a-241a-4f67-9886-654e96040434",
+      "id": "3bdd4d99-c315-4d61-9b5b-bedd9f3b0c58",
       "label": "Duchy Defender",
       "levels3d": {
         "enable": false,
@@ -61837,7 +61837,7 @@
       }
     },
     {
-      "id": "ee873005-0c13-401f-a574-07d2cd8394c6",
+      "id": "af0414fc-1c4b-4e0a-ae10-94763ab30946",
       "label": "Dwarven Daisy",
       "levels3d": {
         "enable": false,
@@ -62056,7 +62056,7 @@
       }
     },
     {
-      "id": "a3ac5808-7bb6-4e3c-9996-d39eb9089e25",
+      "id": "9851ae8e-e4b3-4c6d-8604-3cb82741f3ff",
       "label": "Dwarven Scattergun",
       "levels3d": {
         "enable": false,
@@ -62273,7 +62273,7 @@
       }
     },
     {
-      "id": "450cf356-08bd-4731-aef7-11e1e59b9c69",
+      "id": "c478a122-c57a-4fd1-b02f-fa4a20dcc2c7",
       "label": "Eclipse",
       "levels3d": {
         "enable": false,
@@ -62492,7 +62492,7 @@
       }
     },
     {
-      "id": "2e51080b-0285-4f56-b5a8-2e284786f04c",
+      "id": "ffa67273-32fb-4ae6-b7de-36eb1393fd4f",
       "label": "Electric Arc",
       "levels3d": {
         "enable": false,
@@ -62711,7 +62711,7 @@
       }
     },
     {
-      "id": "1b5e0f44-3cb3-4794-a125-35d15ee2d4d3",
+      "id": "fd4c6c5d-b5a0-4cac-a04a-4616aba0904a",
       "label": "Fire Lance",
       "levels3d": {
         "enable": false,
@@ -62930,7 +62930,7 @@
       }
     },
     {
-      "id": "bcb0e738-1ffd-4fa1-840e-d612569fe2fb",
+      "id": "6fbdc04f-bbda-4746-b65a-504551a0434a",
       "label": "Fire Poi",
       "levels3d": {
         "enable": false,
@@ -63149,7 +63149,7 @@
       }
     },
     {
-      "id": "fe426206-6813-4f4f-8499-04e7f8538785",
+      "id": "95e6b6cf-067b-426f-984a-ef6bca998ac5",
       "label": "Fire Ray",
       "levels3d": {
         "enable": false,
@@ -63368,7 +63368,7 @@
       }
     },
     {
-      "id": "bf041f85-01f8-43d0-a580-f4c4c5c5a79a",
+      "id": "5f92ceac-9e2b-4600-b17f-ef6568c0d53e",
       "label": "Firearm",
       "levels3d": {
         "enable": false,
@@ -63586,7 +63586,7 @@
       }
     },
     {
-      "id": "61c25564-3563-421d-af36-c65e8a21063a",
+      "id": "1c11991f-f489-436a-95b6-cfd3ba5a004a",
       "label": "Flingflenser",
       "levels3d": {
         "enable": false,
@@ -63803,7 +63803,7 @@
       }
     },
     {
-      "id": "905ca0e3-c2a9-4dd3-9abb-85ea6d6c183b",
+      "id": "85aeeaed-4137-40a8-a25b-deea337703e7",
       "label": "Force Bolt",
       "levels3d": {
         "enable": false,
@@ -64020,7 +64020,7 @@
       }
     },
     {
-      "id": "7cca0cc9-af20-4ead-a50c-4fe46145174b",
+      "id": "c29a23eb-3e13-4900-ac89-476844a94add",
       "label": "Force Fang",
       "levels3d": {
         "enable": false,
@@ -64236,7 +64236,7 @@
       }
     },
     {
-      "id": "b1671b68-f56c-4a38-9c20-037f23ab5a1f",
+      "id": "6bd4a341-3f20-404d-a364-0f14921e0942",
       "label": "Frost Vial",
       "levels3d": {
         "enable": false,
@@ -64455,7 +64455,7 @@
       }
     },
     {
-      "id": "4d02aa53-cbfc-4886-b25f-0379c17d81a6",
+      "id": "16519ea9-cc42-4d93-a75c-e77f692bbc81",
       "label": "Ghost Charge",
       "levels3d": {
         "enable": false,
@@ -64674,7 +64674,7 @@
       }
     },
     {
-      "id": "f8f8d9f2-2bee-42d3-8508-7f91fd75fa58",
+      "id": "dc543113-46c2-473e-a566-68cd0cbe215f",
       "label": "Growth Gun",
       "levels3d": {
         "enable": false,
@@ -64893,7 +64893,7 @@
       }
     },
     {
-      "id": "714e8e3a-7004-47e1-ac3e-e48f764f0e8e",
+      "id": "29bd255e-1809-422a-9573-f0312b312f7c",
       "label": "Guiding Star",
       "levels3d": {
         "enable": false,
@@ -65112,7 +65112,7 @@
       }
     },
     {
-      "id": "47574a80-23e8-4087-9956-d1e32e3c32ce",
+      "id": "6195fe1f-5211-4af8-9ae3-7f1e623f9575",
       "label": "Halfling Sling Staff",
       "levels3d": {
         "enable": false,
@@ -65331,7 +65331,7 @@
       }
     },
     {
-      "id": "f62d20e7-b554-4b27-ae86-cc16e623859f",
+      "id": "897ddbbc-3aca-4391-a0c0-263af7b90f9a",
       "label": "Hardened Harrow Deck",
       "levels3d": {
         "enable": false,
@@ -65550,7 +65550,7 @@
       }
     },
     {
-      "id": "2985f170-a3d2-4b56-894f-5748b3252ee1",
+      "id": "d7c1fe39-48d7-405b-bdb1-eb01de7f919f",
       "label": "Harm",
       "levels3d": {
         "type": "explosion",
@@ -65729,12 +65729,21 @@
         "label": "Harm",
         "menu": "range",
         "name": "PF2e Animations",
-        "moduleVersion": "2.8.4",
-        "version": 284
+        "moduleVersion": "2.9.9",
+        "version": 299
+      },
+      "advanced": {
+        "exactMatch": true,
+        "excludedTerms": [],
+        "excludedType": {
+          "enabled": false,
+          "path": "",
+          "property": ""
+        }
       }
     },
     {
-      "id": "a69853cf-9215-420a-b590-6183fbb491d3",
+      "id": "33f66c87-0f55-44c4-94c0-6a4283af3491",
       "label": "Hydraulic Push",
       "levels3d": {
         "enable": false,
@@ -65951,7 +65960,7 @@
       }
     },
     {
-      "id": "e7ed5ba2-d3a1-4fa5-b84b-95d4cdf59940",
+      "id": "f11729ca-a267-4ad4-92cb-1ff3035075bf",
       "label": "Iris of the Sky",
       "levels3d": {
         "enable": false,
@@ -66170,7 +66179,7 @@
       }
     },
     {
-      "id": "3ba548d1-3bf4-4c23-a0a2-af19d6e2fc06",
+      "id": "72c4dbc6-9d2b-4037-a938-7234ed1b9fe9",
       "label": "Javelin",
       "levels3d": {
         "enable": false,
@@ -66389,7 +66398,7 @@
       }
     },
     {
-      "id": "e316c08e-5539-463f-ae56-6491dd2ad26e",
+      "id": "17cd66e9-d3ca-423f-ab9a-e6693ffb755a",
       "label": "Jezail",
       "levels3d": {
         "enable": false,
@@ -66608,7 +66617,7 @@
       }
     },
     {
-      "id": "de681e03-231c-4a41-92bf-13c88e75949f",
+      "id": "f4bb77f7-ea76-4578-8a06-28ad42da3360",
       "label": "Junk Bomb",
       "levels3d": {
         "enable": false,
@@ -66827,7 +66836,7 @@
       }
     },
     {
-      "id": "d6d40ffe-e722-48ec-904e-bb3f23382486",
+      "id": "d0d3c980-bf25-4826-a71c-d34eb8b69498",
       "label": "Lashing Branch",
       "levels3d": {
         "enable": false,
@@ -67043,7 +67052,7 @@
       }
     },
     {
-      "id": "44cefd11-bea0-4c5c-a187-336d90ac9042",
+      "id": "d5b21269-3549-4ec8-a6ec-9912706215ca",
       "label": "Liar's Gun",
       "levels3d": {
         "enable": false,
@@ -67262,7 +67271,7 @@
       }
     },
     {
-      "id": "ad73a7b5-a796-40af-a23d-3c443e3d4137",
+      "id": "5e401aaf-0c96-48ab-af96-fc9f8f1b6871",
       "label": "Magic Missile",
       "levels3d": {
         "enable": false,
@@ -67481,7 +67490,7 @@
       }
     },
     {
-      "id": "f835c1a4-9684-471e-9641-e7efed2ce7d1",
+      "id": "8f9d1730-5a8f-41ce-a729-331fa2e5f50f",
       "label": "Message",
       "levels3d": {
         "enable": false,
@@ -67697,7 +67706,7 @@
       }
     },
     {
-      "id": "9c9f0dcd-4098-4771-ae80-569f00035138",
+      "id": "eca2765b-67a7-464e-ba53-16c804bc7e89",
       "label": "Moonlight Ray",
       "levels3d": {
         "enable": false,
@@ -67914,7 +67923,7 @@
       }
     },
     {
-      "id": "26ae23a0-837a-43da-8748-88240c593c42",
+      "id": "fdfdaceb-d071-4c5e-b4ee-393a05ff55a1",
       "label": "Mountebank's Passage",
       "levels3d": {
         "enable": false,
@@ -68133,7 +68142,7 @@
       }
     },
     {
-      "id": "92579ee7-5fc3-46ab-a23f-79390668897d",
+      "id": "74b11c3b-b8fb-4d61-a37e-e2e5700836fb",
       "label": "Mud Bomb",
       "levels3d": {
         "enable": false,
@@ -68352,7 +68361,7 @@
       }
     },
     {
-      "id": "1d94519a-e994-44fb-93d5-59741805ba6a",
+      "id": "f026ff5a-0440-4a61-81f6-5a7d5e12684c",
       "label": "Necrotic Bomb",
       "levels3d": {
         "enable": false,
@@ -68572,7 +68581,7 @@
       }
     },
     {
-      "id": "150d4e85-6109-4ce6-9a47-ce7933e6291d",
+      "id": "6311c08b-d262-405c-9413-6633e6f1202e",
       "label": "Pernicious Spore Bomb",
       "levels3d": {
         "enable": false,
@@ -68792,7 +68801,7 @@
       }
     },
     {
-      "id": "4ee8b3f3-9cb3-473b-8645-7addc0ab3e24",
+      "id": "957d6fa4-79bd-4cf8-9ed7-99d4664531f9",
       "label": "Peshpine Grenade",
       "levels3d": {
         "enable": false,
@@ -69011,7 +69020,7 @@
       }
     },
     {
-      "id": "ff40337f-bf86-4a47-957f-730525d2aeed",
+      "id": "397a7116-d560-40b1-8b19-6cfa76933506",
       "label": "Petrification Cannon",
       "levels3d": {
         "enable": false,
@@ -69230,7 +69239,7 @@
       }
     },
     {
-      "id": "beb0523b-ffee-4015-9302-090fb87c69cc",
+      "id": "ad3c53c9-f6ad-41a9-b7f1-0653988bac7b",
       "label": "Polar Ray",
       "levels3d": {
         "enable": false,
@@ -69446,7 +69455,7 @@
       }
     },
     {
-      "id": "048a3133-34e5-4785-889d-d5165f14fcd5",
+      "id": "67570c5a-a1d8-45bb-977c-3b3550d766b5",
       "label": "Pressure Bomb",
       "levels3d": {
         "enable": false,
@@ -69665,7 +69674,7 @@
       }
     },
     {
-      "id": "2accb727-d59d-40d6-b368-cf4df5dfb491",
+      "id": "090a88a0-f78f-4a03-9440-ee2bf9072f6f",
       "label": "Produce Flame",
       "levels3d": {
         "enable": false,
@@ -69886,7 +69895,7 @@
       }
     },
     {
-      "id": "7d89d78a-42c8-441a-b37b-18cfeba82cb5",
+      "id": "7414f446-290f-469e-8784-7826bbd792d6",
       "label": "Ranged Combatant",
       "levels3d": {
         "enable": false,
@@ -70106,7 +70115,7 @@
       }
     },
     {
-      "id": "c8038e7f-5a06-4f67-9029-d9e37d8d0d5f",
+      "id": "881d5681-56c6-49e6-a2da-1f1369f868ea",
       "label": "Ray of Enfeeblement",
       "levels3d": {
         "enable": false,
@@ -70324,7 +70333,7 @@
       }
     },
     {
-      "id": "daff5a57-2ee9-4b44-bbbf-87e47a03ad25",
+      "id": "e2ecc60a-4149-48b2-a31f-bbed213587dc",
       "label": "Ray of Frost",
       "levels3d": {
         "enable": false,
@@ -70543,7 +70552,7 @@
       }
     },
     {
-      "id": "818b7be3-3357-48c5-9042-80ca4ff46ae4",
+      "id": "2561866a-1b6c-419c-ad56-5866a8f1c99f",
       "label": "Reaper's Grasp",
       "levels3d": {
         "enable": false,
@@ -70762,7 +70771,7 @@
       }
     },
     {
-      "id": "38e7f59e-fdb4-4be8-96b2-4283ed11c742",
+      "id": "5095fd37-3eb0-43d9-b08a-047dec048956",
       "label": "Rowan Rifle",
       "levels3d": {
         "enable": false,
@@ -70981,7 +70990,7 @@
       }
     },
     {
-      "id": "a6ee9861-be34-45cb-a9d8-854b8c73d488",
+      "id": "5458a3af-2082-4122-a3da-ef573b5e7f85",
       "label": "Scorching Ray",
       "levels3d": {
         "enable": false,
@@ -71200,7 +71209,7 @@
       }
     },
     {
-      "id": "93023204-694f-484b-b817-90dd671363f7",
+      "id": "98a02871-e611-46ff-9a10-d4c0935660d6",
       "label": "Screech Shooter",
       "levels3d": {
         "enable": false,
@@ -71419,7 +71428,7 @@
       }
     },
     {
-      "id": "cd25d341-e775-494d-89a7-29078a843be3",
+      "id": "36c201b9-8f77-4acb-85c0-d75767fdf757",
       "label": "Searing Light",
       "levels3d": {
         "enable": false,
@@ -71635,7 +71644,7 @@
       }
     },
     {
-      "id": "7f539ce6-7322-4d8d-be2f-b2b48ffbe424",
+      "id": "546e23dd-8031-4c80-a320-cef5c876bc9f",
       "label": "Shobhad Longrifle",
       "levels3d": {
         "enable": false,
@@ -71855,7 +71864,7 @@
       }
     },
     {
-      "id": "d488c552-aebc-41f7-a117-7026bfd9ea4a",
+      "id": "24f0a564-39d7-4ace-bc83-edaa89ac355e",
       "label": "Shooting Star",
       "levels3d": {
         "enable": false,
@@ -72071,7 +72080,7 @@
       }
     },
     {
-      "id": "269ed33e-f97f-4a04-9b3d-9c3bff3bcc48",
+      "id": "38621547-a95a-40fb-8c42-52d33ecd7dbd",
       "label": "Shuriken",
       "levels3d": {
         "enable": false,
@@ -72290,7 +72299,7 @@
       }
     },
     {
-      "id": "862f1e51-b1a4-4eef-add2-235081e39a31",
+      "id": "1272ecd5-a845-449e-8557-556f6fd723b5",
       "label": "Sling",
       "levels3d": {
         "enable": false,
@@ -72509,7 +72518,7 @@
       }
     },
     {
-      "id": "2d201515-607b-48ff-a9c7-c200bcbc38cd",
+      "id": "f96f37e4-4b62-410a-89b7-f91535db8fe0",
       "label": "Soul Siphon",
       "levels3d": {
         "enable": false,
@@ -72728,7 +72737,7 @@
       }
     },
     {
-      "id": "c142f036-01b5-4097-88ee-ae8dd650f975",
+      "id": "f616cdfd-50cd-4bdf-bb14-5a59c149183c",
       "label": "Spider Gun",
       "levels3d": {
         "enable": false,
@@ -72947,7 +72956,7 @@
       }
     },
     {
-      "id": "c42064e1-9641-41cd-9a2d-6397f18b7a2b",
+      "id": "023fc33c-81d4-4dd3-a2da-c5f862de2c22",
       "label": "Spike Launcher",
       "levels3d": {
         "enable": false,
@@ -73166,7 +73175,7 @@
       }
     },
     {
-      "id": "61312bce-6840-4725-a98d-9380ad31697b",
+      "id": "0ea255cd-89a6-468c-895f-adaae74a39cf",
       "label": "Spoon Gun",
       "levels3d": {
         "enable": false,
@@ -73383,7 +73392,7 @@
       }
     },
     {
-      "id": "ce986e51-00ee-4d64-b954-59b48f7d6901",
+      "id": "9686feea-b034-400c-a2d1-3890f7d43986",
       "label": "Stabilize",
       "levels3d": {
         "enable": false,
@@ -73602,7 +73611,7 @@
       }
     },
     {
-      "id": "6dbed3eb-8dea-49ce-bd33-12400481d12c",
+      "id": "d1624085-ccd0-4a41-8cbb-d08278451404",
       "label": "Stoneraiser Javelin",
       "levels3d": {
         "enable": false,
@@ -73822,7 +73831,7 @@
       }
     },
     {
-      "id": "ef183dcf-5dc6-493c-99b3-25f7e0115cd5",
+      "id": "7f27e8cb-d068-4c21-a41c-c91a4dd8de2f",
       "label": "Sulfur Bomb",
       "levels3d": {
         "enable": false,
@@ -74041,7 +74050,7 @@
       }
     },
     {
-      "id": "eba322e3-8f7b-41a6-b0d3-5a91cfdd088f",
+      "id": "9d5f77a4-46d0-40ab-ad93-99304e31c40b",
       "label": "Tanglefoot",
       "levels3d": {
         "enable": false,
@@ -74260,7 +74269,7 @@
       }
     },
     {
-      "id": "f983e7d6-f723-481c-93c1-4e8e820cafe5",
+      "id": "88b62f05-963c-4c02-80d3-0e50cd5a0cee",
       "label": "Tanglefoot Bag",
       "levels3d": {
         "enable": false,
@@ -74479,7 +74488,7 @@
       }
     },
     {
-      "id": "1400115d-c1eb-4fc3-b6c3-10aa404efc90",
+      "id": "7d140d33-98c2-417a-88b7-ae543f6a6449",
       "label": "Taw Launcher",
       "levels3d": {
         "enable": false,
@@ -74698,7 +74707,7 @@
       }
     },
     {
-      "id": "764355e7-538b-4837-b084-ecb3b35bf899",
+      "id": "9686ecf2-cc3d-4620-a7b7-d27a18b09469",
       "label": "Telekinetic Projectile",
       "levels3d": {
         "enable": false,
@@ -74915,7 +74924,7 @@
       }
     },
     {
-      "id": "c9b47935-61ce-41b4-a204-4c92f9d58654",
+      "id": "dbc2b957-9ec0-407b-ac63-33a30e88ff07",
       "label": "Throwing Knife",
       "levels3d": {
         "enable": false,
@@ -75134,7 +75143,7 @@
       }
     },
     {
-      "id": "c0b7c43f-90b3-402a-b9db-ef60d5ff7a84",
+      "id": "45f50b34-7329-4731-979a-7c0a1b465d26",
       "label": "Thunderstone",
       "levels3d": {
         "enable": false,
@@ -75353,7 +75362,7 @@
       }
     },
     {
-      "id": "47ff9d62-405c-494f-95ef-c8d3f042cb3b",
+      "id": "516a6ce2-e9ea-460a-9ba2-db3b419f72a2",
       "label": "Tiger's Claw",
       "levels3d": {
         "enable": false,
@@ -75572,7 +75581,7 @@
       }
     },
     {
-      "id": "3373cd79-9064-45b6-a179-2a3b97827a8f",
+      "id": "f08c60d1-3ebe-4246-adc0-67733b89955c",
       "label": "Tongue",
       "levels3d": {
         "enable": false,
@@ -75788,7 +75797,7 @@
       }
     },
     {
-      "id": "d4f67cf9-cd94-4cc0-9be5-49b6faa39637",
+      "id": "baf8247d-57e2-476d-8e5b-251080988190",
       "label": "Twigjack Sack",
       "levels3d": {
         "enable": false,
@@ -76007,7 +76016,7 @@
       }
     },
     {
-      "id": "1c37d1a7-0274-40a1-845c-fe5971f9fbd1",
+      "id": "f5da05a4-4ea8-4e46-9d5b-e6367e000017",
       "label": "Vampiric Touch",
       "levels3d": {
         "type": "explosion",
@@ -76192,7 +76201,7 @@
       }
     },
     {
-      "id": "0696e288-6d46-402d-8bce-02d54e23d43d",
+      "id": "7f88b18f-fd9b-43b8-a7e0-5ebff24c354a",
       "label": "Vexing Vapor",
       "levels3d": {
         "enable": false,
@@ -76411,7 +76420,7 @@
       }
     },
     {
-      "id": "3272227d-2f75-4ede-bbaa-e8a894149551",
+      "id": "bf89854a-eda8-47d6-8621-32c38cbad634",
       "label": "Water Bomb",
       "levels3d": {
         "enable": false,
@@ -76630,7 +76639,7 @@
       }
     },
     {
-      "id": "008af23e-aae1-4a1e-8d9d-4bc49efa7e94",
+      "id": "f0e2346c-77df-4796-92d6-10b68af6c462",
       "label": "Wind and Fire Wheel",
       "levels3d": {
         "enable": false,
@@ -76851,7 +76860,7 @@
   ],
   "ontoken": [
     {
-      "id": "57017ffe-e032-4c7a-8d02-e1872ccbd53c",
+      "id": "7ef3f0b4-4021-42a2-8ba2-3bfe5b7418ba",
       "label": "Abundant Step",
       "levels3d": {
         "enable": false,
@@ -77050,7 +77059,7 @@
       }
     },
     {
-      "id": "0c5c6caf-5b05-4701-b926-9c54b0ce9ac3",
+      "id": "a3a5c56a-b5cc-4fcc-a565-662c15012a56",
       "label": "Aeon Stone",
       "levels3d": {
         "type": "explosion",
@@ -77244,7 +77253,7 @@
       }
     },
     {
-      "id": "bb2cfbd2-5a9e-4bdb-aa95-a787787061fb",
+      "id": "90caff10-8d4f-440b-96bb-b94a8c0e44b9",
       "label": "Agonizing Despair",
       "levels3d": {
         "enable": false,
@@ -77440,7 +77449,7 @@
       }
     },
     {
-      "id": "29af6c43-aaf8-442f-9bae-8399a27a28aa",
+      "id": "ad82fa7f-c962-4305-b5de-dcab6486e055",
       "label": "Allegro",
       "levels3d": {
         "enable": false,
@@ -77639,7 +77648,7 @@
       }
     },
     {
-      "id": "21b496c8-ea92-499a-a44e-3032e2f82983",
+      "id": "0009b6a9-f143-4d20-84ae-430cb22ad135",
       "label": "Animate Dead",
       "levels3d": {
         "enable": false,
@@ -77867,7 +77876,7 @@
       }
     },
     {
-      "id": "e9d31cde-a502-478a-8662-24310f3d14a1",
+      "id": "d7a1a3f2-727b-4fd5-a090-a94ceaca3499",
       "label": "Arcane Cascade",
       "levels3d": {
         "type": "explosion",
@@ -78062,7 +78071,7 @@
       }
     },
     {
-      "id": "62dce8a9-92c6-469b-9bc7-1f430a98e974",
+      "id": "da0ab9d5-c361-4ff4-84b5-16c2077575bf",
       "label": "Athletic Rush",
       "levels3d": {
         "enable": false,
@@ -78288,7 +78297,7 @@
       }
     },
     {
-      "id": "06e59949-91e8-4b3b-9ac6-582a9f852821",
+      "id": "cfa67495-e755-4f2b-9d96-297c82bd917d",
       "label": "Attack Animation Template (Critical Failure)",
       "levels3d": {
         "enable": false,
@@ -78496,7 +78505,7 @@
       }
     },
     {
-      "id": "08bf6747-cada-49dc-a3f4-5a5248225ac2",
+      "id": "dde8c3fd-20cf-4607-9ccd-7e0455f3bf8e",
       "label": "Attack Animation Template (Critical Success)",
       "levels3d": {
         "enable": false,
@@ -78695,7 +78704,7 @@
       }
     },
     {
-      "id": "f5ed70ed-2560-473d-93bb-e45fe5be05e6",
+      "id": "860f9fad-84a3-4491-8701-c8a1c1addb7c",
       "label": "Attack Animation Template (Failure)",
       "levels3d": {
         "enable": false,
@@ -78894,7 +78903,7 @@
       }
     },
     {
-      "id": "64dc9be6-2811-4694-9b78-5e4b55ec9629",
+      "id": "5e496e5c-7a27-4f53-9983-f10d4475102c",
       "label": "Attack Animation Template (Success)",
       "levels3d": {
         "enable": false,
@@ -79092,7 +79101,7 @@
       }
     },
     {
-      "id": "d9e15635-3312-4e33-89eb-0a7149a0dd16",
+      "id": "eb99739e-adbc-4a73-a1cf-10195bd0bafa",
       "label": "Beard",
       "levels3d": {
         "enable": false,
@@ -79289,7 +79298,7 @@
       }
     },
     {
-      "id": "312a4fe9-25af-422d-aab6-7265b2a17ca7",
+      "id": "8bbf1a6e-1154-4c9a-822b-722a3da668c6",
       "label": "Bite",
       "levels3d": {
         "enable": false,
@@ -79517,7 +79526,7 @@
       }
     },
     {
-      "id": "e61b7627-4f6c-4286-bee8-b68da96c7bb8",
+      "id": "cbed1fff-a2f5-4763-9071-d8dbb491c39d",
       "label": "Biting",
       "levels3d": {
         "enable": false,
@@ -79746,7 +79755,7 @@
       }
     },
     {
-      "id": "aa545c17-fa4d-4b42-99db-176c1f08b65e",
+      "id": "40223881-25ea-4197-b2a6-666742bd5077",
       "label": "Blindness",
       "levels3d": {
         "enable": false,
@@ -79943,7 +79952,7 @@
       }
     },
     {
-      "id": "a7598a38-713f-4426-818c-f86ad24b8cfc",
+      "id": "ed8e9685-ad3b-448a-b4f3-053e193cf6b0",
       "label": "Blink Charge",
       "levels3d": {
         "enable": false,
@@ -80142,7 +80151,7 @@
       }
     },
     {
-      "id": "31840b2f-4da9-4057-9415-3715c27fea82",
+      "id": "d7cbc80f-95a1-42c5-b85d-5faae01c7b85",
       "label": "Boost Eidolon",
       "levels3d": {
         "enable": false,
@@ -80338,7 +80347,7 @@
       }
     },
     {
-      "id": "14ad85b0-c13a-4d41-8514-6642182d684f",
+      "id": "1a6303df-9c61-4ba1-854d-e27d13f8df92",
       "label": "Change Shape",
       "levels3d": {
         "enable": false,
@@ -80537,7 +80546,7 @@
       }
     },
     {
-      "id": "1d6348c8-758a-41d1-92d5-fad602e9cb77",
+      "id": "2501cdee-43e8-4d0a-ade1-62b05875912d",
       "label": "Charm",
       "levels3d": {
         "enable": false,
@@ -80765,7 +80774,7 @@
       }
     },
     {
-      "id": "0f6e8332-8218-4aa0-9292-bd9c516a8d80",
+      "id": "a9d00248-9d89-431a-81c5-dfdbe6f8e12e",
       "label": "Chill Touch",
       "levels3d": {
         "enable": false,
@@ -80961,7 +80970,7 @@
       }
     },
     {
-      "id": "1e985fdf-a3d7-44d8-8ba6-86860ae978b4",
+      "id": "d16748db-78ac-4bbf-8443-6c05350e923c",
       "label": "Claw",
       "levels3d": {
         "enable": false,
@@ -81189,7 +81198,7 @@
       }
     },
     {
-      "id": "f7d3f1b6-007e-4bb4-a6aa-6a32172b7ffe",
+      "id": "eea5bf09-139a-4b6e-8516-7703c1763020",
       "label": "Clinging Ice",
       "levels3d": {
         "enable": false,
@@ -81389,7 +81398,7 @@
       }
     },
     {
-      "id": "95179b38-dab9-47d0-b90f-a4a7631ca286",
+      "id": "5ac7421a-10f9-4830-83d8-b6fb8ac63d53",
       "label": "Collective Transposition",
       "levels3d": {
         "enable": false,
@@ -81588,7 +81597,7 @@
       }
     },
     {
-      "id": "b97d79c7-4887-4707-9b53-eb7f446b47a4",
+      "id": "8d14a911-6034-44ca-b1c3-30beee5b65b6",
       "label": "Command",
       "levels3d": {
         "enable": false,
@@ -81816,7 +81825,7 @@
       }
     },
     {
-      "id": "410b3945-ff55-492c-85d8-649fa9dc8a0b",
+      "id": "31a2116f-e4e8-49cb-bd27-d2936644e37d",
       "label": "Conjure Bullet",
       "levels3d": {
         "enable": false,
@@ -82016,7 +82025,7 @@
       }
     },
     {
-      "id": "beb3a522-7297-443b-beaa-07672e769767",
+      "id": "f7d0f388-be7e-4bbb-8310-2c14412a6a65",
       "label": "Crisis of Faith",
       "levels3d": {
         "enable": false,
@@ -82245,7 +82254,7 @@
       }
     },
     {
-      "id": "1f7f6eb0-ec93-4bfd-a204-1f941f6ac990",
+      "id": "b52a4303-e6e9-4ce7-95b5-05bf37f8cffb",
       "label": "Dancing Lights",
       "levels3d": {
         "enable": false,
@@ -82444,7 +82453,7 @@
       }
     },
     {
-      "id": "70c8e166-4827-4856-8060-cbdbde94ad1f",
+      "id": "d6cbd4cf-e418-48ba-ab16-2bd8c636ac15",
       "label": "Daze",
       "levels3d": {
         "enable": false,
@@ -82640,7 +82649,7 @@
       }
     },
     {
-      "id": "0fa8c059-3316-49bf-9fe1-8e726242931a",
+      "id": "48fbfebc-5dff-43ff-8e64-bd95109f582f",
       "label": "Dimension Door",
       "levels3d": {
         "enable": false,
@@ -82839,7 +82848,7 @@
       }
     },
     {
-      "id": "339973f7-8a03-4475-924a-d6d7dfcdc75a",
+      "id": "4c3dfc4f-3967-4637-9392-8cf0e7c3388a",
       "label": "Dimensional Anchor",
       "levels3d": {
         "enable": false,
@@ -83065,7 +83074,7 @@
       }
     },
     {
-      "id": "a7e7bf48-9700-414a-b53c-98a58ae295c1",
+      "id": "275682c4-0d24-4e1c-bf2e-f03580747842",
       "label": "Dimensional Assault",
       "levels3d": {
         "enable": false,
@@ -83264,7 +83273,7 @@
       }
     },
     {
-      "id": "33ebbf6f-72f5-4030-a11a-140cb7569705",
+      "id": "c6e80f8b-1e58-4efa-b2f9-d617a8564257",
       "label": "Dimensional Steps",
       "levels3d": {
         "enable": false,
@@ -83463,7 +83472,7 @@
       }
     },
     {
-      "id": "def296a1-ed82-4fbe-951f-a6ea5d85032d",
+      "id": "3b4e8aa1-e408-4886-bac5-92c21898277a",
       "label": "Dispel Magic",
       "levels3d": {
         "enable": false,
@@ -83691,7 +83700,7 @@
       }
     },
     {
-      "id": "052087ee-af0b-4e58-ab95-985e708ee9cc",
+      "id": "e582da1a-2556-474f-80dc-f480d2c1f7b1",
       "label": "Disrupt Undead",
       "levels3d": {
         "enable": false,
@@ -83919,7 +83928,7 @@
       }
     },
     {
-      "id": "9b66e6c5-4716-4a47-9e31-c0cbed1a64c2",
+      "id": "47f0a1ee-1c40-4bbe-94b0-8ed9298ce4e6",
       "label": "Drain Bonded Item",
       "levels3d": {
         "enable": false,
@@ -84118,7 +84127,7 @@
       }
     },
     {
-      "id": "0cba359b-6f26-42ac-af76-e2ef60cc09b9",
+      "id": "bbf0dd65-b61f-43b1-8d49-a88767b38517",
       "label": "Elixir of Life",
       "levels3d": {
         "enable": false,
@@ -84314,7 +84323,7 @@
       }
     },
     {
-      "id": "57c57533-d5c4-43db-81e4-82a5cd08f98e",
+      "id": "fe090168-358f-450b-b9d0-bed19f89a8b5",
       "label": "Endure Elements",
       "levels3d": {
         "enable": false,
@@ -84540,7 +84549,7 @@
       }
     },
     {
-      "id": "573c2fc0-b197-4d39-92ce-7eb62ae057ad",
+      "id": "c38140e7-f527-4e49-ae38-be190b5255ea",
       "label": "Energy Shot",
       "levels3d": {
         "enable": false,
@@ -84736,7 +84745,7 @@
       }
     },
     {
-      "id": "c3d9c74d-315c-45fb-a7a3-d2261d83780f",
+      "id": "2ec0fe31-d354-42a1-8e14-e2f280f42b10",
       "label": "Evolution Surge",
       "levels3d": {
         "enable": false,
@@ -84932,7 +84941,7 @@
       }
     },
     {
-      "id": "c3f51fb0-be04-46f0-8d61-6410c4c652e9",
+      "id": "cacf689c-5116-441c-a1ea-7ab20ec41715",
       "label": "Falling Stone",
       "levels3d": {
         "enable": false,
@@ -85128,7 +85137,7 @@
       }
     },
     {
-      "id": "26f67736-abd0-40b7-b18e-f74a589e750b",
+      "id": "33d4fd55-b2f7-4a22-8fb5-15daba134bd4",
       "label": "False Life",
       "levels3d": {
         "enable": false,
@@ -85324,7 +85333,7 @@
       }
     },
     {
-      "id": "f6665390-c8b8-4744-a761-497baa3371be",
+      "id": "47efedc5-43bb-4147-87af-42f9645290a7",
       "label": "Fang",
       "levels3d": {
         "enable": false,
@@ -85521,7 +85530,7 @@
       }
     },
     {
-      "id": "905a229c-b3c7-4584-a260-5e2911f173f7",
+      "id": "f7b815d9-f4eb-4d6d-86dc-175c72752d1a",
       "label": "Fatal Aria",
       "levels3d": {
         "enable": false,
@@ -85720,7 +85729,7 @@
       }
     },
     {
-      "id": "eca65a3f-98b2-416f-9769-4ae2680cec86",
+      "id": "715c6da2-d0ae-44a4-9c68-e387b5cdf1f8",
       "label": "Fear",
       "levels3d": {
         "enable": false,
@@ -85948,7 +85957,7 @@
       }
     },
     {
-      "id": "658cd5be-006b-4c03-9185-a11e17748421",
+      "id": "acd8ed92-be0b-449a-ab11-51ab928f12b2",
       "label": "Final Sacrifice",
       "levels3d": {
         "enable": false,
@@ -86178,7 +86187,7 @@
       }
     },
     {
-      "id": "8a742ec6-4829-4b88-b46b-5d7e712cdd43",
+      "id": "318c9897-4e85-46f2-986d-d7010505618e",
       "label": "Flip Chamber",
       "levels3d": {
         "enable": false,
@@ -86378,7 +86387,7 @@
       }
     },
     {
-      "id": "3a193d88-35e9-4280-af7c-54e7742b81e2",
+      "id": "290909a4-19f6-47e9-bd82-5d8c5b0d412a",
       "label": "Foresight",
       "levels3d": {
         "enable": false,
@@ -86575,7 +86584,7 @@
       }
     },
     {
-      "id": "230670ae-4e05-4fe3-a0b0-cb6241024d80",
+      "id": "37b585cc-e264-41c7-b1ff-bb2617cb4f7b",
       "label": "Frightful Presence",
       "levels3d": {
         "enable": false,
@@ -86772,7 +86781,7 @@
       }
     },
     {
-      "id": "7015d4b7-0095-4c78-822e-fde5bdc9c076",
+      "id": "437d5795-c484-43e3-85be-3e3da04f9ea6",
       "label": "Ghost Sound",
       "levels3d": {
         "enable": false,
@@ -86969,7 +86978,7 @@
       }
     },
     {
-      "id": "bca23efb-a64e-4899-aebe-1bd9657de3f8",
+      "id": "4f6056e2-c1af-4aac-a81a-e0602eee2a5d",
       "label": "Glyph of Warding",
       "levels3d": {
         "enable": false,
@@ -87195,7 +87204,7 @@
       }
     },
     {
-      "id": "99b7ecb5-2ff5-4935-b185-3e3c579e1764",
+      "id": "c505248a-621a-49d9-aaa1-3caccec8b063",
       "label": "Heal",
       "levels3d": {
         "enable": false,
@@ -87415,15 +87424,24 @@
         }
       },
       "metaData": {
-        "name": "PF2e Animation Macros",
-        "version": 12,
-        "moduleVersion": "2.6.6",
+        "name": "PF2e Animations",
+        "version": 299,
+        "moduleVersion": "2.9.9",
         "label": "Heal",
         "menu": "ontoken"
+      },
+      "advanced": {
+        "exactMatch": true,
+        "excludedTerms": [],
+        "excludedType": {
+          "enabled": false,
+          "path": "",
+          "property": ""
+        }
       }
     },
     {
-      "id": "25959c38-1de1-4010-9b31-ae6fb13ead0c",
+      "id": "ae1a5e7a-85a8-4cff-8993-a7da7763cc49",
       "label": "House Of Imaginary Walls",
       "levels3d": {
         "enable": false,
@@ -87622,7 +87640,7 @@
       }
     },
     {
-      "id": "9b0abc3b-3552-4f08-bc1c-b38aa7d1fd10",
+      "id": "31877ff6-c002-4b24-ad14-1e81c06f1199",
       "label": "Humanoid Form",
       "levels3d": {
         "enable": false,
@@ -87821,7 +87839,7 @@
       }
     },
     {
-      "id": "6e92598a-d513-4375-9a07-29dbbeb3707f",
+      "id": "d808a10e-2a63-4b79-b29b-3719f1b4b72a",
       "label": "Hymn Of Healing",
       "levels3d": {
         "enable": false,
@@ -88020,7 +88038,7 @@
       }
     },
     {
-      "id": "6c8711c9-e596-4e65-adfb-f66b260fd836",
+      "id": "8ac92bce-13b0-4db7-a19a-63fb34259bed",
       "label": "Impaling Spike",
       "levels3d": {
         "enable": false,
@@ -88246,7 +88264,7 @@
       }
     },
     {
-      "id": "51bead08-f583-4626-9c9f-6d6e908fb629",
+      "id": "f769b81f-5c1f-48e0-a8bc-efca4216c7a9",
       "label": "Implosion",
       "levels3d": {
         "enable": false,
@@ -88471,7 +88489,7 @@
       }
     },
     {
-      "id": "8bcc819d-90dc-4db0-963b-ceb4dc6911ae",
+      "id": "0dd7fbce-7ea8-4d3c-b98f-7894ce31e765",
       "label": "Inspire Competence",
       "levels3d": {
         "enable": false,
@@ -88670,7 +88688,7 @@
       }
     },
     {
-      "id": "24ef40b5-ba65-4a99-b3c9-624c21db79f2",
+      "id": "51fed597-8722-42b6-8190-457240e8a0a5",
       "label": "Inspire Courage",
       "levels3d": {
         "type": "explosion",
@@ -88865,7 +88883,7 @@
       }
     },
     {
-      "id": "3ad266b3-a976-4498-a05b-3421aade48a7",
+      "id": "4e7228d6-19da-4357-b6d6-33e257618834",
       "label": "Inspire Defense",
       "levels3d": {
         "type": "explosion",
@@ -89060,7 +89078,7 @@
       }
     },
     {
-      "id": "85502e02-b713-461d-a59e-feb925b3f20f",
+      "id": "4569837d-267d-432b-8d90-895c439d0c29",
       "label": "Jaws",
       "levels3d": {
         "enable": false,
@@ -89257,7 +89275,7 @@
       }
     },
     {
-      "id": "badec3b9-8e64-48ab-ad5d-b5fb0f3ddce6",
+      "id": "b0bde1a0-437d-4d71-b613-0a95946aaf7d",
       "label": "Ki Rush",
       "levels3d": {
         "enable": false,
@@ -89456,7 +89474,7 @@
       }
     },
     {
-      "id": "f3705f74-6cd5-44d7-9a23-99b9948f4346",
+      "id": "bb1ae989-8527-4070-b0ca-f40aeecf9176",
       "label": "Lay on Hands",
       "levels3d": {
         "enable": false,
@@ -89653,7 +89671,7 @@
       }
     },
     {
-      "id": "4404fa4d-8983-4490-97a2-d6b207ca3da2",
+      "id": "330722f6-b597-4161-af67-d4526937b572",
       "label": "Lay on Hands (Vs. Undead)",
       "levels3d": {
         "enable": false,
@@ -89850,7 +89868,7 @@
       }
     },
     {
-      "id": "e6e0aef9-9512-4865-900b-e04239064beb",
+      "id": "aac6f801-f9c1-4c4a-ba36-2c1ff29ab941",
       "label": "Lichen's Tenacity",
       "levels3d": {
         "type": "explosion",
@@ -90045,7 +90063,7 @@
       }
     },
     {
-      "id": "c6fd072a-09ea-400b-9ebf-81b0786dcb25",
+      "id": "21e519c3-7641-4083-bc36-fe4a57804727",
       "label": "Manifest Eidolon",
       "levels3d": {
         "type": "explosion",
@@ -90240,7 +90258,7 @@
       }
     },
     {
-      "id": "9cdf325c-807f-47df-9391-1f14302cc134",
+      "id": "8584e842-0384-45ea-bb6a-061a9b5074d4",
       "label": "Mask of Terror",
       "levels3d": {
         "enable": false,
@@ -90466,7 +90484,7 @@
       }
     },
     {
-      "id": "09eaeded-e8d7-44a6-8dcb-10c5236e0bd6",
+      "id": "ca791fa1-0b49-482b-bec2-601bfcc36328",
       "label": "Mirror Image",
       "metaData": {
         "name": "PF2e Animation Macros",
@@ -90661,7 +90679,7 @@
       }
     },
     {
-      "id": "dc1b21f2-ffd5-46d2-aba7-ca5f864efc25",
+      "id": "a036ce05-c78f-4eea-aca5-c07283f506d9",
       "label": "Necromancer's Generosity",
       "levels3d": {
         "enable": false,
@@ -90857,7 +90875,7 @@
       }
     },
     {
-      "id": "e9a418e3-ecc2-4318-a002-9290ebe6af5b",
+      "id": "12908158-f97e-4a28-a847-550baef4cc53",
       "label": "Ode To Ouroboros",
       "levels3d": {
         "enable": false,
@@ -91056,7 +91074,7 @@
       }
     },
     {
-      "id": "4dae2cdd-d443-4103-88f7-04cd91f41451",
+      "id": "607c8714-66ea-4400-88bc-ac688185bd99",
       "label": "Panache",
       "levels3d": {
         "type": "explosion",
@@ -91251,7 +91269,7 @@
       }
     },
     {
-      "id": "700c812e-5f40-44a5-aa52-7f95a036e573",
+      "id": "593377e3-3c1c-42a4-ae3d-b693986700ac",
       "label": "Phantom Pain",
       "levels3d": {
         "enable": false,
@@ -91448,7 +91466,7 @@
       }
     },
     {
-      "id": "5147a558-2858-42cf-8ba4-e458143c0ab8",
+      "id": "13e3fd6f-13cf-4a57-9c60-216f1a63ab71",
       "label": "Pied Piping",
       "levels3d": {
         "enable": false,
@@ -91647,7 +91665,7 @@
       }
     },
     {
-      "id": "51d33ed2-d535-4732-861b-a3548c98da43",
+      "id": "324d1832-bf82-47d1-a50c-d103846ff57c",
       "label": "Pinch",
       "levels3d": {
         "enable": false,
@@ -91845,7 +91863,7 @@
       }
     },
     {
-      "id": "93173d15-d16e-42d8-be4a-06fe52d002f1",
+      "id": "168e67d1-b4d9-495c-ac23-6ca868748639",
       "label": "Prestidigitation",
       "levels3d": {
         "enable": false,
@@ -92071,7 +92089,7 @@
       }
     },
     {
-      "id": "116677e1-47dd-4325-b8ae-dab705c12c3d",
+      "id": "4aed568b-c05e-493d-9d47-b260178f1ada",
       "label": "Protect Companion",
       "levels3d": {
         "enable": false,
@@ -92268,7 +92286,7 @@
       }
     },
     {
-      "id": "8ba730de-82e7-4608-835e-e3c448d2ac46",
+      "id": "ca4bdc91-bcc2-4651-9d84-ee1025375f7f",
       "label": "Protective Ward",
       "levels3d": {
         "type": "explosion",
@@ -92463,7 +92481,7 @@
       }
     },
     {
-      "id": "c54f2a90-1060-4514-b2f3-08a615510732",
+      "id": "cd6aadad-8b61-4a1d-8aee-350785fe2ce3",
       "label": "Rage",
       "levels3d": {
         "type": "explosion",
@@ -92667,7 +92685,7 @@
       }
     },
     {
-      "id": "f0ab2f08-8e5f-4c27-8031-4ad005ebbbeb",
+      "id": "c0c0b1cc-4532-4ca5-ba5d-e24bf55cbc91",
       "label": "Raise a Shield",
       "levels3d": {
         "enable": false,
@@ -92866,7 +92884,7 @@
       }
     },
     {
-      "id": "cbefe913-134c-4c1f-9705-520de0f6af2d",
+      "id": "03b362f8-6d77-4b89-bb27-1fbcca093a1d",
       "label": "Read Aura",
       "levels3d": {
         "enable": false,
@@ -93092,7 +93110,7 @@
       }
     },
     {
-      "id": "cf869d60-34b7-4673-bcc8-6c669e211b18",
+      "id": "ba43d184-2db4-4db3-899b-cc54a9d994a7",
       "label": "Rebounding Toss",
       "levels3d": {
         "enable": false,
@@ -93291,7 +93309,7 @@
       }
     },
     {
-      "id": "fc24e921-5f60-4f5c-8500-349f4f5ba096",
+      "id": "715499bc-a3ee-4517-9b71-7bd923a6dce2",
       "label": "Regenerate",
       "levels3d": {
         "enable": false,
@@ -93517,7 +93535,7 @@
       }
     },
     {
-      "id": "5c08726f-dd3c-49a6-8701-9ad6eb5004d6",
+      "id": "f2f6967b-793c-40e1-95dd-e8fe1bcc38aa",
       "label": "Reload",
       "levels3d": {
         "enable": false,
@@ -93717,7 +93735,7 @@
       }
     },
     {
-      "id": "cc91ea8f-e0cf-47be-b6c5-284931137074",
+      "id": "6b51a609-11db-4723-a0e4-a1e9a20df5c0",
       "label": "Reload Magazine",
       "levels3d": {
         "enable": false,
@@ -93917,7 +93935,7 @@
       }
     },
     {
-      "id": "fefca97c-2b50-43a7-af8b-68595b3e40f1",
+      "id": "885eb8d6-bcba-4b38-b736-f06ef0d3526a",
       "label": "Restoration",
       "levels3d": {
         "enable": false,
@@ -94142,7 +94160,7 @@
       }
     },
     {
-      "id": "76f22ea3-8f03-43bd-ba78-db07846c9ef0",
+      "id": "35455953-f9b5-4fcb-9b49-b6d9b467ed08",
       "label": "Rose’s Tranquility",
       "levels3d": {
         "type": "explosion",
@@ -94337,7 +94355,7 @@
       }
     },
     {
-      "id": "071ac0d5-d27b-45e4-a793-22c6a4714c5d",
+      "id": "96d6c3c3-3f44-4456-ae23-eb4d7285e9ee",
       "label": "See Invisibility",
       "levels3d": {
         "enable": false,
@@ -94534,7 +94552,7 @@
       }
     },
     {
-      "id": "dbf421a0-f936-4a3e-b28c-e1975dc62515",
+      "id": "628a6fb9-2edc-4fa4-943c-18831ce49763",
       "label": "Shadow Jump",
       "levels3d": {
         "enable": false,
@@ -94733,7 +94751,7 @@
       }
     },
     {
-      "id": "5a4aaa64-5752-411f-93a6-3d781dac5c7f",
+      "id": "7c244be8-08c2-41c6-b683-d995c1491732",
       "label": "Shatter",
       "levels3d": {
         "enable": false,
@@ -94959,7 +94977,7 @@
       }
     },
     {
-      "id": "15055449-3449-431b-9e25-50c7b754d072",
+      "id": "978e6ccb-3809-41ad-8ff2-1b19cefc616c",
       "label": "Slam",
       "levels3d": {
         "enable": false,
@@ -95156,7 +95174,7 @@
       }
     },
     {
-      "id": "3e38c524-1a29-4d90-8646-fb3f99b4a24c",
+      "id": "ef21b478-36df-46d3-b8e6-c926195e3605",
       "label": "Snare Hopping",
       "levels3d": {
         "enable": false,
@@ -95355,7 +95373,7 @@
       }
     },
     {
-      "id": "91de10a8-16e9-4106-aea5-8e8df1c0efd7",
+      "id": "02cdc9e6-6203-4334-8570-1e294b3b8108",
       "label": "Sneak Attack",
       "levels3d": {
         "type": "explosion",
@@ -95547,7 +95565,7 @@
       }
     },
     {
-      "id": "00b7b79a-f33b-448b-9d70-6fa4e647e9b0",
+      "id": "d03bd774-c31e-40c3-a12c-aeaa404e1b66",
       "label": "Song Of Marching",
       "levels3d": {
         "enable": false,
@@ -95746,7 +95764,7 @@
       }
     },
     {
-      "id": "e7148f5a-b865-4ccb-8631-ca2f05d7a2de",
+      "id": "444c4cda-c955-4d88-8b00-d965475ff230",
       "label": "Song Of Strength",
       "levels3d": {
         "enable": false,
@@ -95945,7 +95963,7 @@
       }
     },
     {
-      "id": "717de5b5-1c91-40e5-8afe-74c9542670cc",
+      "id": "d39f9086-39b1-441e-816b-346fbabeadca",
       "label": "Soothe",
       "levels3d": {
         "enable": false,
@@ -96172,7 +96190,7 @@
       }
     },
     {
-      "id": "8f966c4a-79b8-4332-91f0-8723ea5076e0",
+      "id": "296cc08c-b1cb-4952-9ac2-2b3633751212",
       "label": "Soothing Ballad",
       "levels3d": {
         "enable": false,
@@ -96371,7 +96389,7 @@
       }
     },
     {
-      "id": "45314c1b-0f90-44e2-a980-eeba41b8ac1b",
+      "id": "51fbeaf8-c262-44e0-91af-a69489ea91aa",
       "label": "Spider Sting",
       "levels3d": {
         "enable": false,
@@ -96567,7 +96585,7 @@
       }
     },
     {
-      "id": "7cf72cc9-a56f-45a6-adb3-0426a5943087",
+      "id": "7bb4dec8-dfe6-4d14-9e6a-bcdfbb671bdf",
       "label": "Spiritual Weapon",
       "levels3d": {
         "enable": false,
@@ -96766,7 +96784,7 @@
       }
     },
     {
-      "id": "fd9fae48-27eb-4e84-ac09-1a3e784ec0d1",
+      "id": "347bb819-2555-495f-b9bb-dbb16aec00a7",
       "label": "Stabilize",
       "levels3d": {
         "enable": false,
@@ -96963,7 +96981,7 @@
       }
     },
     {
-      "id": "f15e9b3b-afc0-4502-9593-e03ae981e60b",
+      "id": "a4b264b0-f260-4c2a-8a11-b7f7888983af",
       "label": "Sudden Bolt",
       "levels3d": {
         "enable": false,
@@ -97159,7 +97177,7 @@
       }
     },
     {
-      "id": "1f943a2b-8ad3-4cd9-928f-efdcc4fade1d",
+      "id": "86f91bc8-4e88-451c-9152-2a8110724635",
       "label": "Sudden Charge",
       "levels3d": {
         "enable": false,
@@ -97358,7 +97376,7 @@
       }
     },
     {
-      "id": "37447a36-859f-4a91-aaa6-5217570c11cd",
+      "id": "1e2d2f89-9103-4e71-89f7-5938ed3de472",
       "label": "Summon Anarch",
       "levels3d": {
         "enable": false,
@@ -97557,7 +97575,7 @@
       }
     },
     {
-      "id": "d754d083-dad5-46a7-b03e-569bc7b3a7de",
+      "id": "b3851f1f-ebc3-4291-9364-7c6082ee1dce",
       "label": "Summon Animal",
       "levels3d": {
         "enable": false,
@@ -97756,7 +97774,7 @@
       }
     },
     {
-      "id": "fce09713-aed7-4391-83e3-e89219bf9d32",
+      "id": "f824839d-a7e6-4a1f-bead-c66a1dc95b95",
       "label": "Summon Axiom",
       "levels3d": {
         "enable": false,
@@ -97955,7 +97973,7 @@
       }
     },
     {
-      "id": "fb14dcb2-8d5b-4a48-9eae-8dd57064ff02",
+      "id": "5d4f5da9-574e-4382-b8d7-b1a1396dae6e",
       "label": "Summon Celestial",
       "levels3d": {
         "enable": false,
@@ -98154,7 +98172,7 @@
       }
     },
     {
-      "id": "d6478531-e09c-459a-a672-ecc6511c1b5c",
+      "id": "47e4064e-ad3d-4454-a36f-2514c0b45fd5",
       "label": "Summon Construct",
       "levels3d": {
         "enable": false,
@@ -98353,7 +98371,7 @@
       }
     },
     {
-      "id": "bd6907f1-3080-4504-9b05-5523cea67d81",
+      "id": "d52beb83-8ce9-449a-9716-b8f32deec3ba",
       "label": "Summon Dragon",
       "levels3d": {
         "enable": false,
@@ -98552,7 +98570,7 @@
       }
     },
     {
-      "id": "64ce1329-2c4e-45c0-bd2e-f1dadf69ae22",
+      "id": "0b07dbe7-968d-423e-9418-c00583df11a4",
       "label": "Summon Elemental",
       "levels3d": {
         "enable": false,
@@ -98751,7 +98769,7 @@
       }
     },
     {
-      "id": "830ee810-527c-41f2-af59-de2ff4e9af3c",
+      "id": "5701c19e-0e2f-416e-b28d-1e4babd84873",
       "label": "Summon Entity",
       "levels3d": {
         "enable": false,
@@ -98950,7 +98968,7 @@
       }
     },
     {
-      "id": "681ee296-8e4c-4bef-9386-4e34c6ed2111",
+      "id": "2fb5f509-5496-4ca7-894e-79f1f2d98dc7",
       "label": "Summon Fey",
       "levels3d": {
         "enable": false,
@@ -99149,7 +99167,7 @@
       }
     },
     {
-      "id": "dd480dc3-287f-41b4-a475-fce521fb4743",
+      "id": "3e46308e-e237-4b90-a10e-ee10c926d8e0",
       "label": "Summon Fiend",
       "levels3d": {
         "enable": false,
@@ -99348,7 +99366,7 @@
       }
     },
     {
-      "id": "ad73c306-87bd-481a-8b0b-5c527dc84a0c",
+      "id": "29d65988-122e-41f3-87a8-2cbbcb1a06ce",
       "label": "Summon Giant",
       "levels3d": {
         "enable": false,
@@ -99547,7 +99565,7 @@
       }
     },
     {
-      "id": "24cb2b22-8352-4009-86bc-6ee6eafa9c96",
+      "id": "37ee4a3e-53a7-4e35-8652-d1ba50213d06",
       "label": "Summon Instrument",
       "levels3d": {
         "enable": false,
@@ -99747,7 +99765,7 @@
       }
     },
     {
-      "id": "6e03b26d-ca3f-409c-90fd-a545457211a3",
+      "id": "1479e258-4cbc-4a2a-87fc-9755ca3f1d3c",
       "label": "Summon Lesser Servitor",
       "levels3d": {
         "enable": false,
@@ -99946,7 +99964,7 @@
       }
     },
     {
-      "id": "5651b5f3-009e-4664-95e3-a5a6874cc27f",
+      "id": "613958c7-fea2-4d62-adc6-e8f2d9deab1b",
       "label": "Summon Plant Or Fungus",
       "levels3d": {
         "enable": false,
@@ -100145,7 +100163,7 @@
       }
     },
     {
-      "id": "d63d331e-2f2d-483f-90c1-bd90619113a6",
+      "id": "80e626ff-995b-44d3-a9c4-97c731d57f25",
       "label": "Summoning Animation Template",
       "metaData": {
         "name": "PF2e Animation Macros",
@@ -100340,7 +100358,7 @@
       }
     },
     {
-      "id": "89ca7ca7-17da-4369-98fb-fcd9ca350017",
+      "id": "42177bc2-c38e-455b-a5de-601fef041cc0",
       "label": "Summoning Animation Template (Animate Dead)",
       "levels3d": {
         "type": "explosion",
@@ -100535,7 +100553,7 @@
       }
     },
     {
-      "id": "af138615-442c-4c80-b3aa-97746636e471",
+      "id": "ae100e69-1a7c-48b3-af74-86a23309c624",
       "label": "Summoning Animation Template (Summon Animal)",
       "levels3d": {
         "type": "explosion",
@@ -100730,7 +100748,7 @@
       }
     },
     {
-      "id": "f412a56b-8049-4530-8357-12f465e81e98",
+      "id": "0b77e56e-519b-4467-ae2f-ffddcc0e8c87",
       "label": "Symphony Of The Unfettered Heart",
       "levels3d": {
         "enable": false,
@@ -100929,7 +100947,7 @@
       }
     },
     {
-      "id": "56da32ac-cd16-45cc-82b7-f28a820e6f8e",
+      "id": "57f0d2d9-626e-4984-980c-cabf9115ae06",
       "label": "Talon",
       "levels3d": {
         "enable": false,
@@ -101157,7 +101175,7 @@
       }
     },
     {
-      "id": "2b73c321-637e-47ad-a956-15cc2d53cf4a",
+      "id": "21909ed9-91d5-4452-bc2d-6aaad83dd0ec",
       "label": "Teleport",
       "levels3d": {
         "enable": false,
@@ -101356,7 +101374,7 @@
       }
     },
     {
-      "id": "a3f1cfd6-aaff-4870-86b6-30f17a5a58f2",
+      "id": "0112122e-d289-4151-a46f-491acf269076",
       "label": "Terrain Transposition",
       "levels3d": {
         "enable": false,
@@ -101555,7 +101573,7 @@
       }
     },
     {
-      "id": "74544918-4cff-4d61-90ef-b62faf49f5d6",
+      "id": "89eb3595-6e18-4657-809b-d066af483ac3",
       "label": "Treat Wounds",
       "levels3d": {
         "enable": false,
@@ -101784,7 +101802,7 @@
       }
     },
     {
-      "id": "9a373306-efd2-4ff3-a712-6cfa845018f3",
+      "id": "81b82637-f318-446e-a40e-8ab41a7b06e9",
       "label": "Triple Time",
       "levels3d": {
         "enable": false,
@@ -101983,7 +102001,7 @@
       }
     },
     {
-      "id": "6559ab45-e4c2-4ed5-98ac-f3cbe9506597",
+      "id": "d048936e-df0a-4082-89f3-8664fbd07040",
       "label": "Unexpected Transposition",
       "levels3d": {
         "enable": false,
@@ -102182,7 +102200,7 @@
       }
     },
     {
-      "id": "7c3f7fb9-5cfc-400c-bcdf-667723640c33",
+      "id": "ed80167e-5c29-4ed9-8abe-87de59557534",
       "label": "Unload",
       "levels3d": {
         "enable": false,
@@ -102381,7 +102399,7 @@
       }
     },
     {
-      "id": "eacab7d8-42ce-4518-97eb-226ca2a995f0",
+      "id": "720845a8-597e-4f4f-8678-8ae913331485",
       "label": "Wild Shape",
       "levels3d": {
         "enable": false,
@@ -102577,7 +102595,7 @@
       }
     },
     {
-      "id": "04b3c747-29d9-43da-ab44-ab50e566bff9",
+      "id": "625d5e93-f5b6-429d-b66b-3412526707f3",
       "label": "Wing Deflection",
       "levels3d": {
         "enable": false,
@@ -102775,7 +102793,7 @@
       }
     },
     {
-      "id": "e7351204-28df-415f-bb37-693952c29b45",
+      "id": "b0820d8f-f9d6-4a26-9fd9-c618a32db198",
       "label": "Worm's Repast",
       "levels3d": {
         "enable": false,
@@ -102974,7 +102992,7 @@
   ],
   "templatefx": [
     {
-      "id": "37b77556-8f20-42c4-bb8e-9179daba8fd7",
+      "id": "2f898d70-9d8e-4e61-86ea-56121fd51001",
       "label": "Alarm",
       "macro": {
         "enable": false,
@@ -103150,7 +103168,7 @@
       }
     },
     {
-      "id": "81a07ff3-1f28-439e-b512-960716929146",
+      "id": "359e59b4-85e5-4869-b247-d3da968c2186",
       "label": "Antimagic Field",
       "macro": {
         "enable": false
@@ -103326,7 +103344,7 @@
       }
     },
     {
-      "id": "8fa45d44-39e0-4d12-8924-53682f9ddee5",
+      "id": "93f17875-8221-4687-b093-a251be0cea36",
       "label": "Black Tentacles",
       "macro": {
         "enable": false
@@ -103502,7 +103520,7 @@
       }
     },
     {
-      "id": "b33669ab-b0e3-4112-b690-dc0cfecbcb99",
+      "id": "597beeb1-ca7d-4099-b9b4-7f1c8faf1ccc",
       "label": "Bless",
       "macro": {
         "enable": true,
@@ -103686,7 +103704,7 @@
       }
     },
     {
-      "id": "03d5cc3a-a34e-4e70-b133-c5dc93467090",
+      "id": "d712f1b7-d8ce-4324-8c0e-484f7cc91ad6",
       "label": "Burning Hands",
       "macro": {
         "enable": true,
@@ -103864,7 +103882,7 @@
       }
     },
     {
-      "id": "7ad0907e-3f8d-4c50-b0ba-376bb9cc45d9",
+      "id": "e4620eb0-f2ab-4282-b407-fc1e2f4f6514",
       "label": "Chilling Spray",
       "macro": {
         "enable": true,
@@ -104042,7 +104060,7 @@
       }
     },
     {
-      "id": "e0ebc7c2-56f0-49a7-b30a-9eb75b314b2a",
+      "id": "d2d829ce-4618-46ef-9257-7abda48333bb",
       "label": "Color Spray",
       "macro": {
         "enable": true,
@@ -104220,7 +104238,7 @@
       }
     },
     {
-      "id": "e3973452-a7f6-4b69-9687-bd6ae53025a5",
+      "id": "10c53cd2-14e3-4da1-b531-cd8078f4f21d",
       "label": "Cone of Cold",
       "macro": {
         "enable": true,
@@ -104398,7 +104416,7 @@
       }
     },
     {
-      "id": "470a27c3-88a1-48d7-bbb9-67269e284dfe",
+      "id": "4153feae-50ba-4a78-99b2-57e27310d4a7",
       "label": "Cry Of Destruction",
       "macro": {
         "enable": true,
@@ -104576,7 +104594,7 @@
       }
     },
     {
-      "id": "227aa4f0-25a4-4ec0-99b6-b2a4dfc05504",
+      "id": "4df2b148-4988-42e1-8193-a7e36f6d9248",
       "label": "Darkness",
       "macro": {
         "enable": true,
@@ -104754,7 +104772,7 @@
       }
     },
     {
-      "id": "650ce88f-ae9f-41ed-97e6-81c6fad0c581",
+      "id": "926a7636-8ff7-4335-8fcc-6c1b16ac897b",
       "label": "Dazzling Flash",
       "macro": {
         "enable": true,
@@ -104932,7 +104950,7 @@
       }
     },
     {
-      "id": "6ab46202-aec8-4841-b85f-344a39bf6327",
+      "id": "e6c7574b-970f-48d4-b3e3-062922c8cfda",
       "label": "Detect Magic",
       "macro": {
         "enable": false,
@@ -105108,7 +105126,7 @@
       }
     },
     {
-      "id": "6e9d6aa5-8d92-4ea7-bdb1-edc23c729975",
+      "id": "11804b1d-422f-4448-805a-bef23ff4020b",
       "label": "Dirge of Doom",
       "macro": {
         "enable": false,
@@ -105281,7 +105299,7 @@
       }
     },
     {
-      "id": "f3b6bc68-7806-428f-9aa6-54071b397717",
+      "id": "16942527-1d3e-4bd0-9a69-d659091b21f2",
       "label": "Divine Wrath",
       "macro": {
         "enable": false,
@@ -105458,7 +105476,7 @@
       }
     },
     {
-      "id": "508b768c-8c4e-479f-8bf5-dadb7a2edf69",
+      "id": "0eccb087-223b-440d-a6e5-b43d910edd0e",
       "label": "Entangle",
       "macro": {
         "enable": false
@@ -105634,7 +105652,7 @@
       }
     },
     {
-      "id": "f4921375-f875-4312-a25d-ddc8cea9d8a0",
+      "id": "51d31e76-0039-416c-b5f1-c0fcf7448994",
       "label": "Explode",
       "macro": {
         "enable": false,
@@ -105810,7 +105828,7 @@
       }
     },
     {
-      "id": "cf4f3606-6927-4065-a96b-a67fdbe11062",
+      "id": "62ad8033-cf06-456f-b9cb-053d9c9c8aab",
       "label": "Feral Shades",
       "macro": {
         "enable": true,
@@ -105988,7 +106006,7 @@
       }
     },
     {
-      "id": "6db06c95-beb1-46bc-81a5-aea94647558d",
+      "id": "7adb5be6-e8ca-472b-ba68-cd300e39971f",
       "label": "Filth Wave",
       "macro": {
         "enable": false,
@@ -106165,7 +106183,7 @@
       }
     },
     {
-      "id": "fb12caef-6878-46e6-b9a0-ddb0acc2f6a7",
+      "id": "b1a4f4d2-801c-457c-9bc1-5cc6e596ee9e",
       "label": "Grim Tendrils",
       "macro": {
         "enable": true,
@@ -106344,7 +106362,7 @@
       }
     },
     {
-      "id": "89d001ba-1bc9-4037-bd8f-a6bde292a664",
+      "id": "20183eea-d4f3-476c-bad5-f7ef005861dc",
       "label": "Gust of Wind",
       "macro": {
         "enable": false,
@@ -106520,7 +106538,7 @@
       }
     },
     {
-      "id": "f40affe4-2428-4690-8d1c-7dffc6d1aeff",
+      "id": "9eb19224-c17e-4c4c-8d22-93fe0dd41456",
       "label": "Harm",
       "macro": {
         "enable": false,
@@ -106688,12 +106706,21 @@
         "label": "Harm",
         "menu": "templatefx",
         "name": "PF2e Animations",
-        "moduleVersion": "2.8.4",
-        "version": 284
+        "moduleVersion": "2.9.9",
+        "version": 299
+      },
+      "advanced": {
+        "exactMatch": true,
+        "excludedTerms": [],
+        "excludedType": {
+          "enabled": false,
+          "path": "",
+          "property": ""
+        }
       }
     },
     {
-      "id": "a54ee175-5774-4b33-b571-7938e29bf12f",
+      "id": "1d481cc0-4864-4154-8156-c55c1a49d0a2",
       "label": "Haunting Hymn",
       "macro": {
         "enable": true,
@@ -106871,7 +106898,7 @@
       }
     },
     {
-      "id": "1de89a59-0c09-4afd-8339-09e1bc73cbfa",
+      "id": "b5050dbf-1815-4900-bfd7-395e5360861d",
       "label": "Inspire Courage",
       "macro": {
         "enable": true,
@@ -107046,7 +107073,7 @@
       }
     },
     {
-      "id": "cb9d9509-0e31-474a-b409-d01504e2960e",
+      "id": "0fea1bd8-07db-4c5d-aa51-6d06929ea25f",
       "label": "Inspire Defense",
       "macro": {
         "enable": true,
@@ -107221,7 +107248,7 @@
       }
     },
     {
-      "id": "0c621921-3d9c-4bc7-9767-e8a69dc8990c",
+      "id": "34b652a7-df0f-4045-8774-5c1d4ab0c78d",
       "label": "Lethargy Bomb",
       "macro": {
         "enable": false
@@ -107396,7 +107423,7 @@
       }
     },
     {
-      "id": "0a8b30bb-5a28-435f-87a0-6070a84a5874",
+      "id": "16c75566-e79e-4d79-a9f4-88f5ffd0afac",
       "label": "Lightning Bolt",
       "macro": {
         "enable": true,
@@ -107574,7 +107601,7 @@
       }
     },
     {
-      "id": "742d0a50-4453-4bb5-be40-b9a041c6a1b6",
+      "id": "a920b5aa-d5ab-4c86-af43-06533ee153cb",
       "label": "Obscuring Mist",
       "macro": {
         "enable": false
@@ -107749,7 +107776,7 @@
       }
     },
     {
-      "id": "a9c63825-2a67-4a8d-8348-14931abf98b0",
+      "id": "512b878b-e2b7-44ba-a276-dd2d745f0370",
       "label": "Pummeling Rubble",
       "macro": {
         "enable": true,
@@ -107928,7 +107955,7 @@
       }
     },
     {
-      "id": "0fc03eb0-0e98-4902-92f7-f6f197e2f9ee",
+      "id": "4d47b492-2948-43bf-995e-feaf8ae43c31",
       "label": "Rejuvenating Flames",
       "macro": {
         "enable": true,
@@ -108106,7 +108133,7 @@
       }
     },
     {
-      "id": "242918e3-fe9c-4bde-9d83-28b6ad6723e2",
+      "id": "0405bbf0-07d5-4333-aa11-f772114f1c27",
       "label": "Shockwave",
       "macro": {
         "enable": true,
@@ -108284,7 +108311,7 @@
       }
     },
     {
-      "id": "baa5a18d-8a12-4012-991b-c8e45bb5d507",
+      "id": "a06f256b-741f-4398-a5d6-48a6a998c925",
       "label": "Sleep",
       "macro": {
         "enable": false
@@ -108460,7 +108487,7 @@
       }
     },
     {
-      "id": "34a903d2-f46a-46dc-aae8-9489472b6856",
+      "id": "e4233564-2090-45fd-ae89-8e22f214d4cb",
       "label": "Sound Burst",
       "macro": {
         "enable": false
@@ -108635,7 +108662,7 @@
       }
     },
     {
-      "id": "599f0747-4de6-4ebc-9f38-0019adafbb67",
+      "id": "eafe5c64-9f1a-4ada-a18a-2ee67622217b",
       "label": "Splash of Art",
       "macro": {
         "enable": false
@@ -108810,7 +108837,7 @@
       }
     },
     {
-      "id": "0ef46feb-2969-46f6-87c2-651dd40c5759",
+      "id": "218dfc6a-ec34-4b48-844d-e8e48153b928",
       "label": "Spray Of Stars",
       "macro": {
         "enable": true,
@@ -108988,7 +109015,7 @@
       }
     },
     {
-      "id": "8f86bab0-16d2-48b2-b832-b9076f2fc803",
+      "id": "204b7990-f0a9-46f0-bcb8-a733820a1edc",
       "label": "Stinking Cloud",
       "macro": {
         "enable": false,
@@ -109166,7 +109193,7 @@
       }
     },
     {
-      "id": "d581bb80-d2ad-47bc-9d25-8d8bca926dfb",
+      "id": "f508f042-8bc5-4d3c-b0ec-aee300c890d2",
       "label": "Storm of Vengeance",
       "macro": {
         "enable": false
@@ -109342,7 +109369,7 @@
       }
     },
     {
-      "id": "b96cc328-585d-4307-86b1-009010210a9c",
+      "id": "90fa1dbe-a27f-49af-948e-1c0488f40973",
       "label": "Vomit Swarm",
       "macro": {
         "enable": false
@@ -109517,7 +109544,7 @@
       }
     },
     {
-      "id": "374892e2-c153-4374-b3c4-5b6181ecba86",
+      "id": "f6223d02-5298-45a1-b8e6-98ef7a11fa22",
       "label": "Web",
       "macro": {
         "enable": true,
@@ -109704,7 +109731,7 @@
       }
     },
     {
-      "id": "df83a8a9-e162-4b1c-a86e-0551c5d0503d",
+      "id": "0d2db47b-606d-4efc-8126-efce00f23fd6",
       "label": "Bane",
       "macro": {
         "enable": true,
@@ -119726,7 +119753,7 @@
         "name": "PF2e Animations",
         "version": 294,
         "moduleVersion": "2.9.4",
-        "label": "Spell Effect: Inspire Courage",
+        "label": "Inspire Courage",
         "menu": "aefx"
       },
       "advanced": {
@@ -122495,7 +122522,7 @@
         "name": "PF2e Animations",
         "version": 295,
         "moduleVersion": "2.9.5",
-        "label": "Effect: Rage",
+        "label": "Rage",
         "menu": "aefx"
       },
       "advanced": {
