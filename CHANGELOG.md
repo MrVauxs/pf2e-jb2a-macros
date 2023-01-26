@@ -1,3 +1,6 @@
+# Version 2.9.10
+- Updated dependency on Warpgate to 1.16.1.
+
 # Version 2.9.9
 - Fixed Heal triggering on wrong spells.
 - Removed erroneous "Run as GM" Advanced Macros flags.

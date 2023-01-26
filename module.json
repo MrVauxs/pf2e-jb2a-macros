@@ -137,6 +137,9 @@
 			{
 				"id": "warpgate",
 				"type": "module",
+				"compatibility": {
+					"minimum": "1.16.1"
+				},
 				"manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
 			}
 		]

@@ -320,7 +320,12 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
             inputs.push({
                 type: "select",
                 label: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.player.creature"),
-                options: packs.map(x => `${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.level", { level: x.level })} | ${x.name}`),
+                options: packs.map(x => {
+                    return {
+                        value: x.name,
+                        html: `${x.name} <span style="text-align:center;">| ${game.i18n.format("pf2e-jb2a-macros.macro.summoning.player.level", { level: x.level })}</span>`
+                    }
+                }),
             })
         }
 
@@ -348,7 +353,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
 
         const actor = randomCreature ?
             packs[Math.floor(Math.random() * packs.length)]
-            : (await packs.filter(x => x.name === options.inputs[1].split("|")[1].trim())[0]);
+            : (await packs.filter(x => x.name === options.inputs[1])[0]);
         importedActor = await fromUuid(actor.uuid);
         (spawnArgs.options ??= {}).duplicates = randomAmount ? Sequencer.Helpers.random_int_between(randomAmount[0], randomAmount[1]) : options.inputs[randomCreature ? 1 : 2];
     }
