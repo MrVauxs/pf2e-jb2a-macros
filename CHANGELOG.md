@@ -1,5 +1,6 @@
 # Version 2.9.9
 - Fixed Heal triggering on wrong spells.
+- Removed errorenous "Run as GM" Advanced Macros flags.
 
 # Version 2.9.8
 - Fixed Bless triggering on wrong spells.
