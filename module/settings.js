@@ -70,6 +70,14 @@ Hooks.once("init", () => {
             step: 0.1
         }
     });
+    game.settings.register("pf2e-jb2a-macros", "tmfx", {
+        scope: "client",
+        config: game.modules.get("tokenmagic")?.active,
+        name: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.name"),
+        hint: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.hint"),
+        type: Boolean,
+        default: game.modules.get("tokenmagic")?.active
+    });
     game.settings.register("pf2e-jb2a-macros", "debug", {
         scope: "client",
         config: true,

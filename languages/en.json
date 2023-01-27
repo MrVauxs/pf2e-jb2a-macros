@@ -99,6 +99,10 @@
 				"name": "Debug Mode",
 				"hint": "Enables console logs of what PF2e Animations module is doing."
 			},
+			"tmfx": {
+				"name": "Use Token Magic Effects",
+				"hint": "A few animations benefit from being animated by Token Magic FX rather than Sequencer. Note that this setting is only shown when the Token Magic FX module is installed."
+			},
 			"autorecUpdate": {
 				"name": "Animations Update",
 				"label": "Update Menu"

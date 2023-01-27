@@ -1,5 +1,7 @@
 # Version 2.9.10
 - Updated dependency on Warpgate to 1.16.1.
+- Fixed Action Counter and Mirror Image.
+- Added an optional Token Magic FX dependency. Used for effects such as Encumbered, Petrified, and Stumbling Stance. If you don't have it, the effects will still work, but without the TMFX elements, either replaced by Sequencer or nothing.
 
 # Version 2.9.9
 - Fixed Heal triggering on wrong spells.
