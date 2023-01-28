@@ -1,3 +1,6 @@
+# Version 2.9.11
+- Updated localization files.
+
 # Version 2.9.10
 - Updated dependency on Warpgate to 1.16.1.
 - Fixed Action Counter and Mirror Image.
