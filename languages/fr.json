@@ -59,6 +59,10 @@
 			"onlyImageSummons": {
 				"name": "N'autoriser que les Invocations qui ont une image",
 				"hint": "Permet d'invoquer uniquement des créatures qui ont une image."
+			},
+			"tmfx": {
+				"hint": "Quelques animations tirent avantage d'être animées par Token Magic FX au lieu de Sequencer. Notez que ce réglage n'est montré que lorsque le module Token magic FX est installé.",
+				"name": "Utiliser les effets de Token magic"
 			}
 		},
 		"macro": {
