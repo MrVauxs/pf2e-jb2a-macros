@@ -1,5 +1,9 @@
-# Version 2.9.11
+# Version 2.10.0
 - Updated localization files.
+- Added the following effects:
+  - Blur (Extempore)
+  - Heat Haze (Extempore Effect)
+  - Concealed
 
 # Version 2.9.10
 - Updated dependency on Warpgate to 1.16.1.

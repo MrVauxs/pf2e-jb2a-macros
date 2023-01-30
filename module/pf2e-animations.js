@@ -250,6 +250,22 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(args = [], _callback = 
 	return [token, tokenScale, allTargets, hitTargets, targets, target, origin, actor];
 }
 
+pf2eAnimations.applyTokenMagic = function tokenMagicHelpers(args, params) {
+	const [token] = pf2eAnimations.macroHelpers(args)
+	pf2eAnimations.debug("Token Magic Helpers | Args | Params", args, params);
+
+	const tokenMagic = game.settings.get("pf2e-jb2a-macros", "tmfx")
+	if (!tokenMagic) return this.debug("Token Magic FX has beem Disabled!");
+
+	if (args[0] === "on") {
+		TokenMagic.addFilters(token, params)
+	} else if (args[0] == "off") {
+		params.every(param => {
+			TokenMagic.deleteFilters(token, param.filterId)
+		})
+	}
+}
+
 /**
  * @param {string} alignment Alignment as a String ex. CG.
  * @param {boolean} reverse Reverse the alignment, ex. CG to LE.
