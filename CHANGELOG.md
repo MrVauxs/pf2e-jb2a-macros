@@ -1,9 +1,10 @@
 # Version 2.10.0
 - Updated localization files.
+- "Fix" an issue of Unlinked Tokens doubling effects such as Guidance. And by fix I mean add a 100ms delay between removing Guidance and adding Guidance Immunity.
 - Added the following effects:
-  - Blur (Extempore)
-  - Heat Haze (Extempore Effect)
-  - Concealed
+  - Blur (TMFX, Extempore)
+  - Heat Haze (TMFX, Extempore Effect)
+  - Concealed (TMFX)
 
 # Version 2.9.10
 - Updated dependency on Warpgate to 1.16.1.
