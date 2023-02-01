@@ -1,6 +1,6 @@
 # Version 2.10.0
 - Updated localization files.
-- "Fix" an issue of Unlinked Tokens doubling effects such as Guidance. And by fix I mean add a 100ms delay between removing Guidance and adding Guidance Immunity.
+- "Fix" an issue of Unlinked Tokens doubling effects such as Guidance. And by fix I mean add a 100ms delay between removing Guidance and adding Guidance Immunity because of some kind of race condition going on with `createEmbeddedDocuments`.
 - Added the following effects:
   - Blur (TMFX, Extempore)
   - Heat Haze (TMFX, Extempore Effect)
