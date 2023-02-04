@@ -34,7 +34,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 	let args = data ?? null;
 
 	// Persistent Damage Matches
-	if ((data.isDamageRoll && data.rolls[0].options.evaluatePersistent) || flavor.includes("Received regeneration")) {
+	if ((data.isDamageRoll && data.rolls[0].options.evaluatePersistent) || flavor.match(/Received (regeneration|fast healing)/g)) {
 		pf2eAnimations.debug("Persistent Damage / Healing", data);
 		return pf2eAnimations.runMacro('Persistent Conditions', args)
 	}
@@ -150,7 +150,7 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 							let entry = settings.findIndex(obj => obj.label === data.label);
 							settings[entry].metaData.name = "PF2e Animations";
 							settings[entry].metaData.moduleVersion = game.modules.get("pf2e-jb2a-macros").version;
-							settings[entry].metaData.version = Number(game.modules.get("pf2e-jb2a-macros").version.replaceAll(".", ""));
+							settings[entry].metaData.version = settings[entry].metaData.version + 1;
 							await AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify({ version: await game.settings.get('autoanimations', 'aaAutorec').version, [data.menu]: settings }), { [data.menu]: true });
 						}
 					},
