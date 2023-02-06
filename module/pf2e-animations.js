@@ -19,7 +19,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 					game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => { return { id: i.id, title: i.title } }).filter(i => !game.modules.get(i.id)?.active).map(i => i.title).join(", ")
 			}
 		), { permanent: true });
-	} else if (game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => i.id).every(i => game.modules.get(i)?.active)) {
+	} else {
 		const wrongVersions = game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => { return { id: i.id, title: i.title, version: i.compatibility.minimum } }).filter(i => isNewerVersion(game.modules.get(i.id).version, i.version))
 		if (wrongVersions.length > 0) {
 			ui.notifications.error(pf2eAnimations.localize(
