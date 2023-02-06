@@ -1,10 +1,14 @@
 # Version 2.10.0
 - Updated localization files.
-- "Fix" an issue of Unlinked Tokens doubling effects such as Guidance. And by fix I mean add a 100ms delay between removing Guidance and adding Guidance Immunity because of some kind of race condition going on with `createEmbeddedDocuments`.
+- Updated dependecy on Sequencer to 2.411.
+- Removed libwrapper and socket-lib dependencies of other modules.
+- Added a check when the game is ready to see if the required modules are enabled. If not, a warning is displayed. Same goes for their versions.
+- Upgraded pf2eAnimations.crosshairs to account for wall collision, whether it be vision collision for spells, or move collision like Sudden Charge.
 - Added the following effects:
   - Blur (TMFX, Extempore)
   - Heat Haze (TMFX, Extempore Effect)
   - Concealed (TMFX)
+  - Mirror's Reflection
 
 # Version 2.9.10
 - Updated dependency on Warpgate to 1.16.1.

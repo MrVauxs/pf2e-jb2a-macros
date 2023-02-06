@@ -2,7 +2,7 @@
 	"id": "pf2e-jb2a-macros",
 	"title": "PF2e Animations",
 	"description": "<p>A module dedicated to making PF2e shine.</p>",
-	"version": "2.10.0",
+	"version": "2.10.1",
 	"authors": [
 		{
 			"name": "MrVauxs",
@@ -104,16 +104,6 @@
 		],
 		"requires": [
 			{
-				"id": "lib-wrapper",
-				"type": "module",
-				"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
-			},
-			{
-				"id": "socketlib",
-				"type": "module",
-				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
-			},
-			{
 				"id": "advanced-macros",
 				"type": "module",
 				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
@@ -123,7 +113,7 @@
 				"type": "module",
 				"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
 				"compatibility": {
-					"minimum": "2.4.2"
+					"minimum": "2.411"
 				}
 			},
 			{
