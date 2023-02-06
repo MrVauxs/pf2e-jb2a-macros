@@ -12,6 +12,7 @@
 			"debugCustom": "The following effects do not exist in PF2e Animations, they are completely new and will remain in your Autorecognition Menu."
 		},
 		"notifications": {
+			"wrongVersion": "You are missing <b>{modules}</b> for PF2e Animations to fully function! Please update the modules listed!",
 			"noDependencies": "You are missing <b>{modules}</b> for PF2e Animations to fully function! Please enable the modules listed!",
 			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations module!",
 			"update": "PF2e Animations v{version} loaded. Please check if you don't have new animations to be added to your autorecognition menu!",

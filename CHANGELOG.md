@@ -1,8 +1,11 @@
+# Version 2.10.1
+- Added a warning for wrong versions of dependencies as well.
+
 # Version 2.10.0
 - Updated localization files.
 - Updated dependecy on Sequencer to 2.411.
 - Removed libwrapper and socket-lib dependencies of other modules.
-- Added a check when the game is ready to see if the required modules are enabled. If not, a warning is displayed. Same goes for their versions.
+- Added a check when the game is ready to see if the required modules are enabled. If not, a warning is displayed.
 - Upgraded pf2eAnimations.crosshairs to account for wall collision, whether it be vision collision for spells, or move collision like Sudden Charge.
 - Fixed the optional TMFX dependency erroring if TMFX is not installed at all.
 - Added the following effects (and probably more that I forgot):

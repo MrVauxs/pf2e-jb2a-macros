@@ -16,11 +16,20 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 			"pf2e-jb2a-macros.notifications.noDependencies",
 			{
 				modules:
-					game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => i.id).filter(i => !game.modules.get(i)?.active).join(", ")
+					game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => { return { id: i.id, title: i.title } }).filter(i => !game.modules.get(i.id)?.active).map(i => i.title).join(", ")
 			}
 		), { permanent: true });
 	} else if (game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => i.id).every(i => game.modules.get(i)?.active)) {
-
+		const wrongVersions = game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject().map(i => { return { id: i.id, title: i.title, version: i.compatibility.minimum } }).filter(i => isNewerVersion(game.modules.get(i.id).version, i.version))
+		if (wrongVersions.length > 0) {
+			ui.notifications.error(pf2eAnimations.localize(
+				"pf2e-jb2a-macros.notifications.wrongVersion",
+				{
+					modules:
+						wrongVersions.map(i => `${i.title} v${i.version}`).join(", ")
+				}
+			), { permanent: true });
+		}
 	}
 
 	if (game.settings.get("pf2e-jb2a-macros", "version-previous") !== game.modules.get("pf2e-jb2a-macros").version) {

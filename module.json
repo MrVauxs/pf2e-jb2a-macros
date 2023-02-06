@@ -2,7 +2,7 @@
 	"id": "pf2e-jb2a-macros",
 	"title": "PF2e Animations",
 	"description": "<p>A module dedicated to making PF2e shine.</p>",
-	"version": "2.10.1",
+	"version": "2.10.2",
 	"authors": [
 		{
 			"name": "MrVauxs",
@@ -121,7 +121,7 @@
 				"id": "autoanimations",
 				"type": "module",
 				"compatibility": {
-					"minimum": "4.0.22"
+					"minimum": "4.2.15"
 				}
 			},
 			{
