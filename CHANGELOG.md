@@ -5,7 +5,7 @@
 - Added a check when the game is ready to see if the required modules are enabled. If not, a warning is displayed. Same goes for their versions.
 - Upgraded pf2eAnimations.crosshairs to account for wall collision, whether it be vision collision for spells, or move collision like Sudden Charge.
 - Fixed the optional TMFX dependency erroring if TMFX is not installed at all.
-- Added the following effects:
+- Added the following effects (and probably more that I forgot):
   - Blur (TMFX, Extempore)
   - Heat Haze (TMFX, Extempore Effect)
   - Concealed (TMFX)
