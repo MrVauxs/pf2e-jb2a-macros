@@ -76,7 +76,7 @@ Hooks.once("init", () => {
         name: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.name"),
         hint: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.hint"),
         type: Boolean,
-        default: game.modules.get("tokenmagic")?.active ?? false
+        default: false
     });
     game.settings.register("pf2e-jb2a-macros", "debug", {
         scope: "client",

@@ -49,6 +49,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 	// GM-Only stuff.
 	if (!game.user.isGM) return;
 	if (game.settings.get("pf2e", "tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
+	if (!game.modules.get("tokenmagic")?.active) game.settings.set("pf2e-jb2a-macros", "tmfx", false);
 });
 
 pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (data) => {

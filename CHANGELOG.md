@@ -1,3 +1,6 @@
+# Version 2.10.4
+- Fixed some settings not appropriately getting updated when TMFX is not enabled.
+
 # Version 2.10.3
 - Fixed the warning for wrong versions of dependencies.
 
