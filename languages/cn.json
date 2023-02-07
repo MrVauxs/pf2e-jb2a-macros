@@ -8,16 +8,20 @@
 			"deleted": "下列效果将会从'PF2e Animations'中被移除。",
 			"custom": "下列效果不会被加入，因为他们已被从另外的源导入。",
 			"customHint": "如果你想要使用'PF2e Animations'版本的配置，请先将他们从你的自动识别菜单里删除。",
-			"debugCustom": "下列效果不存在于PF2e Animations中，他们将继续留在您的自动识别文件里。"
+			"debugCustom": "下列效果不存在于PF2e Animations中，他们将继续留在您的自动识别文件里。",
+			"blacklisted": "下列特效已经被加入黑名单且会被从你的自动识别文件内移除。"
 		},
 		"notifications": {
 			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模组</a>才能使用PF2e Animations模组（也就是本模组）！",
 			"noToken": "未找到源指示物。",
-			"creatingDummy": " 正在创建假人NPC… ",
+			"creatingDummy": " 正在创建假人NPCs… ",
 			"noDummy": "缺少召唤宏所需的假人演员卡。",
 			"noPack": "无法找到'pf2e-jb2a-macros.Actions'包，解决一下？",
 			"update": "PF2e Animations v{version} 已加载。请确认你是否有新的自动识别文件可用！",
-			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好临时更改一下它的<b>动画</b>或<b>变体</b>。"
+			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好临时更改一下它的<b>动画</b>或<b>变体</b>。",
+			"noDependencies": "你缺少<b>{modules}</b>模组，请启动他们来让本模组正常运行！",
+			"wrongVersion": "你缺少<b>{modules}</b>模组，请安装或升级他们来让本模组正常运行！",
+			"outOfRange": "目标超出射程。"
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -45,7 +49,7 @@
 				"hint": "打开Console记录本模组的行为。"
 			},
 			"autorecUpdate": {
-				"name": "自动识别文件更新",
+				"name": "动画更新",
 				"label": "更新文件"
 			}
 		},
