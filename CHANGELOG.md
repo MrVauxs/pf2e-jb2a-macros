@@ -1,3 +1,6 @@
+# Version 2.10.3
+- Fixed the warning for wrong versions of dependencies.
+
 # Version 2.10.2
 - Added an Advanced Macros minimum version dependency (1.19.3, newest).
 - Fixed undefined titles, mainly appearing as a result of the above module.
