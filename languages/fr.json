@@ -21,7 +21,9 @@
 			"metaData": "Cette animation SERA remplacée lors de la mise à jour. Si vous ne voulez pas qu'elle le soit, le meilleur moyen est de changer temporairement son <b>animation</b> ou sa <b>variante</b> en autre chose, ou en activant le mode débogage dans les réglages et en pressant de nouveau le bouton Metadonnées de nouveau.",
 			"tooManyArgs": "Trop d'arguments pour cette macro ! Les arguments suivants sont incompatibles : {issues}",
 			"outOfRange": "La cible est hors de portée.",
-			"noPrem": "Il vous manque les assets de la <a href='https://www.patreon.com/JB2A/membership'>version premium de JB2A</a> pour utiliser cette animation !"
+			"noPrem": "Il vous manque les assets de la <a href='https://www.patreon.com/JB2A/membership'>version premium de JB2A</a> pour utiliser cette animation !",
+			"noDependencies": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez activer les modules indiqués !",
+			"wrongVersion": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez mettre à jour les modules indiqués !"
 		},
 		"settings": {
 			"disableHitAnims": {
