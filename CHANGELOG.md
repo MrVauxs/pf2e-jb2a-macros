@@ -2,6 +2,7 @@
 - Updated crosshairs to instead show the full icon or token image instead of a default Warpgate template.
   - Now you can see a detailed preview of how a summoned token will look like on the map.
 - Added a check for gridless maps for crosshairs.
+
 # Version 2.10.4
 - Fixed some settings not appropriately getting updated when TMFX is not enabled.
 
