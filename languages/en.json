@@ -12,6 +12,7 @@
 			"debugCustom": "The following effects do not exist in PF2e Animations, they are completely new and will remain in your Autorecognition Menu."
 		},
 		"notifications": {
+			"gridless": "Crosshairs can only be used on a grid-based scene.",
 			"wrongVersion": "You are missing <b>{modules}</b> for PF2e Animations to fully function! Please update the modules listed!",
 			"noDependencies": "You are missing <b>{modules}</b> for PF2e Animations to fully function! Please enable the modules listed!",
 			"noJB2A": "You need a <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A module</a> enabled to use with PF2e Animations module!",
@@ -26,6 +27,7 @@
 			"metaData": "This animation WILL be replaced when updated. If you don't want it to be, best way is to temporarily change it's <b>animation</b> or <b>variant</b> to something else, or enabling Debug mode in the settings and pressing the Metadata button again."
 		},
 		"macro": {
+			"outOfRange": "Out of Range!",
 			"suddenCharge": {
 				"notif": "Sudden Charge! Select where you want to move. Right click to cancel.",
 				"suddenCharge": "Sudden Charge."

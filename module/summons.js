@@ -377,17 +377,29 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
     //if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
     spawnArgs.actorName = `Dummy NPC (${spawnArgs.updates.token.actor.size === "sm" ? "med" : spawnArgs.updates.token.actor.size})`
 
-    let crossHairConfig = {
+    const crosshairConfig = {
         label: importedToken.name,
         interval: importedToken.height < 1 ? 4 : importedToken.height % 2 === 0 ? 1 : -1,
         lockSize: true,
-        drawIcon: true,
-        size: importedToken.height,
-        icon: importedToken.texture.src
+        drawOutline: false,
+        drawIcon: false
+    }
+
+    const crosshairShow = {
+        show: async (crosshair) => {
+            new Sequence("PF2e Animations")
+                .effect()
+                .file(importedToken.texture.src)
+                .attachTo(crosshair)
+                .persist()
+                .scaleToObject(importedToken.height * importedToken.texture.scaleX)
+                .opacity(0.5)
+            .play();
+        }
     }
 
     tokenD.actor.sheet.minimize();
-    const crosshairs = await warpgate.crosshairs.show(crossHairConfig)
+    const crosshairs = await warpgate.crosshairs.show(crosshairConfig, crosshairShow)
     if (crosshairs.cancelled) return;
 
     spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [{ ...crosshairs, distance: importedToken.height / 2 * canvas.scene.grid.distance}]))[0]

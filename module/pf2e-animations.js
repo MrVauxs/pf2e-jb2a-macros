@@ -325,27 +325,62 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 
 pf2eAnimations.crosshairs = async function crosshairs(
 	args = {
-		token: Object,
-		item: Object
+		token,
+		item
 	},
 	opts = {
-		range: Number,
-		crosshairConfig: Object,
-		openSheet: Boolean,
-		noCollision: Boolean,
-		noCollisionType: String
+		range,
+		crosshairConfig,
+		openSheet,
+		noCollision,
+		noCollisionType
 	}) {
 	opts = mergeObject({ openSheet: true, noCollision: true, range: 999999, noCollisionType: "sight" }, opts)
 
 	if (!CONST.WALL_RESTRICTION_TYPES.includes(opts.noCollisionType)) {
-		throw new Error("A valid wall restriction type is required for testCollision.");
+		throw new Error("A valid wall restriction type is required for testCollision. Passed " + opts.noCollisionType);
+	}
+
+	if (canvas.scene.grid.type === 0) {
+		ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.gridless"));
+		return;
 	}
 
 	const tokenDoc = args.token.document
 	const callbacks = {}
 
+	const crosshairConfig = {
+		label: "0 ft.",
+		label: tokenDoc.name,
+		interval: tokenDoc.height < 1 ? 4 : tokenDoc.height % 2 === 0 ? 1 : -1,
+		lockSize: true,
+		drawIcon: false,
+		drawOutline: false,
+		size: tokenDoc.height,
+		icon: tokenDoc.texture.src,
+		ogIcon: tokenDoc.texture.src,
+		rememberControlled: true,
+	}
+
+	mergeObject(crosshairConfig, opts.crosshairConfig)
+
+	crosshairConfig.ogIcon = crosshairConfig.icon
+
 	let cachedDistance = 0;
 	callbacks.show = async (crosshairs) => {
+		crosshairs.ogIcon = crosshairs.icon
+		if (!crosshairConfig.drawIcon) {
+			await new Sequence("PF2e Animations")
+				.effect()
+				.file(crosshairConfig.icon)
+				.attachTo(crosshairs)
+				.persist()
+				.name("Crosshairs")
+				.scaleToObject(crosshairConfig.size * (tokenDoc?.texture?.scaleX ?? 1))
+				.opacity(0.5)
+			.play();
+		}
+
 		while (crosshairs.inFlight) {
 			// make it wait or go into an unescapable infinite loop of pain
 			await warpgate.wait(50);
@@ -357,7 +392,8 @@ pf2eAnimations.crosshairs = async function crosshairs(
 			// Only update if the distance has changed
 			if (cachedDistance !== distance) {
 				cachedDistance = distance;
-				if (distance > opts.range || opts.noCollision ? canvas.walls.checkCollision(ray, { type: opts.noCollisionType }).length : false) {
+				crosshairs.label = `${distance} ft.`
+				if (distance > opts.range || (opts.noCollision ? canvas.walls.checkCollision(ray, { type: opts.noCollisionType }).length : false)) {
 					crosshairs.icon = "icons/svg/hazard.svg"
 					await crosshairs.document.updateSource({
 						"flags": {
@@ -366,8 +402,21 @@ pf2eAnimations.crosshairs = async function crosshairs(
 							}
 						}
 					})
+
+					crosshairs.label += ` (${pf2eAnimations.localize("pf2e-jb2a-macros.macro.outOfRange")})`
+
+					await new Sequence("PF2e Animations")
+						.effect()
+						.file("icons/svg/cancel.svg")
+						.attachTo(crosshairs)
+						.persist()
+						.zIndex(100)
+						.tint("#ff0000")
+						.scaleToObject(crosshairConfig.size * (tokenDoc?.texture?.scaleX ?? 1) + 0.5)
+						.name("Out of Range!")
+					.play();
 				} else {
-					crosshairs.icon = args?.item?.img ?? args?.token.document.texture.src
+					crosshairs.icon = crosshairs.ogIcon
 					await crosshairs.document.updateSource({
 						"flags": {
 							"pf2e-jb2a-macros": {
@@ -375,43 +424,30 @@ pf2eAnimations.crosshairs = async function crosshairs(
 							}
 						}
 					})
+
+					await Sequencer.EffectManager.endEffects({name: "Out of Range!"})
 				}
 				crosshairs.draw()
-				crosshairs.label = `${distance} ft.`
 			}
 		}
 	}
-
-
-	const crosshairConfig = {
-		label: "0 ft.",
-		label: tokenDoc.name,
-		interval: tokenDoc.height < 1 ? 4 : tokenDoc.height % 2 === 0 ? 1 : -1,
-		lockSize: true,
-		drawIcon: true,
-		size: tokenDoc.height,
-		icon: tokenDoc.texture.src,
-		rememberControlled: true,
-	}
-
-	mergeObject(crosshairConfig, opts.crosshairConfig)
 
 	tokenDoc.actor.sheet.minimize();
 	const location = await warpgate.crosshairs.show(crosshairConfig, callbacks)
 	if (opts.openSheet === true) {
 		tokenDoc.actor.sheet.maximize()
 	};
-	const result = location.cancelled ? false
-	: location.flags["pf2e-jb2a-macros"]?.outOfRange ? "outOfRange"
-	: location
 
 	// Calculate the rotation from the origin in degrees, up = 0
 	location.rotationFromOrigin = (new Ray(tokenDoc.center, location).angle * 180 / Math.PI) + 90
 	if (location.rotationFromOrigin < 0) location.rotationFromOrigin += 360
 
-	pf2eAnimations.debug("Crosshairs", args, opts, location, !!result);
-	if (result === "outOfRange") { ui.notifications.error("PF2e Animations | " + pf2eAnimations.localize("pf2e-jb2a-macros.notifications.outOfRange")); return false; }
-	return result
+	pf2eAnimations.debug("Crosshairs", args, opts, location);
+	if (location.flags["pf2e-jb2a-macros"]?.outOfRange === "outOfRange") {
+		ui.notifications.error("PF2e Animations | " + pf2eAnimations.localize("pf2e-jb2a-macros.notifications.outOfRange"));
+		location = { cancelled: true };
+	}
+	return location
 }
 
 pf2eAnimations.localize = function localize(string = String, format = Object) {
