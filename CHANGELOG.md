@@ -1,3 +1,7 @@
+# Version 2.10.6
+- Added a check for scenes with uneven grid sizes.
+- Removed the automatic cancelling of crosshairs on problematic scenes. You will be and have been warned.
+
 # Version 2.10.5
 - Updated crosshairs to instead show the full icon or token image instead of a default Warpgate template.
   - Now you can see a detailed preview of how a summoned token will look like on the map.

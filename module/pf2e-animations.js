@@ -342,8 +342,11 @@ pf2eAnimations.crosshairs = async function crosshairs(
 	}
 
 	if (canvas.scene.grid.type === 0) {
-		ui.notifications.error(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.gridless"));
-		return;
+		ui.notifications.warn(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.gridless"));
+	}
+
+	if (canvas.scene.grid.size % 2) {
+		ui.notifications.warn(pf2eAnimations.localize("pf2e-jb2a-macros.notifications.unevenGrid", {grid: canvas.scene.grid.size}));
 	}
 
 	const tokenDoc = args.token.document
