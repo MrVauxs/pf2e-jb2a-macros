@@ -1,6 +1,7 @@
 # Version 2.10.7
 - Updated localization files.
 - Fixed Sudden Charge macro being offset on certain maps.
+- Fixed missing modules notification coming up blank.
 
 # Version 2.10.6
 - Added a check for scenes with uneven grid sizes.

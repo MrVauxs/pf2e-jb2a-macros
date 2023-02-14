@@ -447,7 +447,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
         // 2. Copied Actor Name (what Dummy NPC takes the form OF, like Beaver)
         // 3. Item Name (usually a summoning spell, such as Summon Animal)
         // 4. Default (the default summoning animation)
-        let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName})`))
+        let item = items.find(i => i.name.includes(`Summoning Animation Template (${args.actorName?.actor?.name ?? args.actorName})`))
             ?? items.find(i => i.name.includes(`Summoning Animation Template (${args?.updates?.token?.name})`))
             ?? items.find(i => i.name.includes(`Summoning Animation Template (${args.origins.itemName})`))
             ?? items.find(i => i.name === `Summoning Animation Template`)
@@ -465,7 +465,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
 
     new Dialog({
         title: pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.gm.title"),
-        content: game.i18n.format("pf2e-jb2a-macros.macro.summoning.gm.content", { actorName: args?.updates?.token?.name ?? args.actorName, amount: args?.options?.duplicates ?? "1", user: args.userId ? game.users.find(x => x.id === args.userId).name : pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser") }),
+        content: game.i18n.format("pf2e-jb2a-macros.macro.summoning.gm.content", { actorName: args?.updates?.token?.name ?? args.actorName?.actor?.name ?? args.actorName, amount: args?.options?.duplicates ?? "1", user: args.userId ? game.users.find(x => x.id === args.userId).name : pf2eAnimations.localize("pf2e-jb2a-macros.macro.summoning.gm.unknownUser") }),
         buttons: {
             button1: {
                 label: "Accept",
@@ -477,8 +477,14 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
                     args.location = template;
 
                     pf2eAnimations.debug("Summoning...", args)
-                    await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
-                    await template.document.delete();
+                    try {
+                        await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
+                    } catch(error) {
+                        console.error(error)
+                    }
+                    finally {
+                        await template.document.delete();
+                    }
                 },
                 icon: `<i class="fas fa-check"></i>`
             },

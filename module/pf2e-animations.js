@@ -17,8 +17,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 			{
 				modules:
 					game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject()
-						.map(i => { return { id: i.id, title: i.title } })
-						.filter(i => !game.modules.get(i.id)?.active).map(i => i.title).join(", ") || "Unknown"
+						.filter(i => !game.modules.get(i.id)?.active).map(i => i.id).join(", ") || "Unknown"
 			}
 		), { permanent: true });
 	} else {
