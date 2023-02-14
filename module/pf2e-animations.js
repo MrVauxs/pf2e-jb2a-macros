@@ -18,7 +18,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 				modules:
 					game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject()
 						.map(i => { return { id: i.id, title: i.title } })
-						.filter(i => !game.modules.get(i.id)?.active).map(i => i.title).join(", ")
+						.filter(i => !game.modules.get(i.id)?.active).map(i => i.title).join(", ") || "Unknown"
 			}
 		), { permanent: true });
 	} else {
@@ -31,7 +31,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 				"pf2e-jb2a-macros.notifications.wrongVersion",
 				{
 					modules:
-						wrongVersions.map(i => `${i.title} v${i.version}`).join(", ")
+						wrongVersions.map(i => `${i.title} v${i.version}`).join(", ") || "Unknown"
 				}
 			), { permanent: true });
 		}

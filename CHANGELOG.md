@@ -1,3 +1,7 @@
+# Version 2.10.7
+- Updated localization files.
+- Fixed Sudden Charge macro being offset on certain maps.
+
 # Version 2.10.6
 - Added a check for scenes with uneven grid sizes.
 - Removed the automatic cancelling of crosshairs on problematic scenes. You will be and have been warned.
