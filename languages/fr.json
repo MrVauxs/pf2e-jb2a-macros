@@ -23,7 +23,8 @@
 			"outOfRange": "La cible est hors de portée.",
 			"noPrem": "Il vous manque les assets de la <a href='https://www.patreon.com/JB2A/membership'>version premium de JB2A</a> pour utiliser cette animation !",
 			"noDependencies": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez activer les modules indiqués !",
-			"wrongVersion": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez mettre à jour les modules indiqués !"
+			"wrongVersion": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez mettre à jour les modules indiqués !",
+			"gridless": "La mire ne peut être utilisée que sur une scène avec une grille."
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -108,7 +109,8 @@
 					"declined": "Refusé !",
 					"content": "<p>{user} a demandé à invoquer <b>{amount} {actorName}</b>.</p><p>Un modèle a été créé pour montrer le gabarit de l'invocation. Si vous acceptez, l'invocation sera placée sur le gabarit. Vous pouvez déplacer le gabarit avant d'accepter.</p><p>Si vous refusez la demande ou si vous fermez cette fenêtre, le gabarit sera supprimé et rien ne sera placé.</p>"
 				}
-			}
+			},
+			"outOfRange": "Hors de portée !"
 		}
 	}
 }
