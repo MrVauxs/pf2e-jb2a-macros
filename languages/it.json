@@ -1,1 +1,117 @@
-{}
+{
+	"pf2e-jb2a-macros": {
+		"updateMenu": {
+			"added": "I seguenti effetti verranno aggiunti alle tue configurazioni di Auto-Riconoscimento.",
+			"custom": "I seguenti effetti non verranno aggiunti dato che esistono già e hanno un'origine sconosciuta.",
+			"nothing": "Non è stato trovato alcun aggiornamento.",
+			"blacklisted": "I seguenti effetti sono stati aggiunti alla lista nera e verranno rimossi dal tuo Menu di Auto-Riconoscimento.",
+			"warning": "Assicurati di fare un backup del tuo menu di auto-riconoscimento! QUESTO PROCESSO È IRREVERSIBILE.",
+			"deleted": "I seguenti effetti verranno ELIMINATI da una precedente versione di 'PF2e Animations'.",
+			"customHint": "Se vuoi la versione di 'PF2e Animations', eliminali dal tuo Menu di Auto-Riconoscimento.",
+			"updated": "I seguenti effetti verranno aggiornati da una versione precedente di 'PF2e Animations' (o dall'impostazione di default del menu di Automated Animations).",
+			"debugCustom": "I seguenti effetti non esistono in PF2e Animations, sono completamente nuovi e rimarranno nel tuo Menu di Auto-Riconoscimento."
+		},
+		"notifications": {
+			"unevenGrid": "La tua scene ha una griglia irregolare ({grid}px). Probabilmente questo sposterà la posizione del bersaglio!",
+			"gridless": "È raccomandato che i mirini siano usati solo nelle scene con griglia. Le scene senza griglia possono causare problemi.",
+			"noDependencies": "Ti mancano <b>{modules}</b> per far funzionare correttamente PF2e Animations! Per favore abilita i moduli elencati!",
+			"update": "PF2e Animations v{version} caricato. Per favore assicurati di non avere nuove animazioni aggiunte al tuo menu di Auto-Riconoscimento!",
+			"noToken": "Nessun token origine trovato.",
+			"noDummy": "Personaggi fittizzi mancanti per le macro di evocazione.",
+			"outOfRange": "Il bersagio è fuori gittata.",
+			"tooManyArgs": "Troppi parametri per questa macro! I seguenti parametri sono incompatibili: {issues}",
+			"wrongVersion": "Ti mancano <b>{modules}</b> per far funzionare correttamente PF2e Animations! Per favore aggiorna i moduli elencati!",
+			"noJB2A": "Hai bisogno di un <a href=\"https://jb2a.com/home/content-information/#free_library\">modulo JB2A</a> abilitato per usare il modulo PF2e Animations!",
+			"creatingDummy": " Creazione di PNG fittizzi… ",
+			"noPack": "In qualche modo non è stato possibile trovare il pacchetto 'pf2e-jb2a-macros.Actions'?",
+			"noPrem": "Per utilizzare questa animazione manca la versione premium <a href='https://www.patreon.com/JB2A/membership'>di JB2A assets</a>!",
+			"metaData": "Questa animazione VERRÀ sostituita quando verrà aggiornata. Se non vuoi che accada, l'opzione migliore è di cambiare temporaneamente la sua <b>animazione</b> or <b>variante</b> a qualcos'altro oppure abilitare la modalità di Debug nelle impostazioni e premere il pulsante Metadati nuovamente."
+		},
+		"macro": {
+			"suddenCharge": {
+				"suddenCharge": "Carica Improvvisa.",
+				"notif": "Carica Improvvisa! Seleziona dove vuoi moverti. Tasto destro per annullare."
+			},
+			"disguise": {
+				"humanoidForm": "🎭Forma Umanoide 🎭",
+				"illusoryDisguise": "🎭Camuffamento Illusorio🎭",
+				"cast": "Lancia!",
+				"name": "Nome",
+				"tokenScale": "Scala Token",
+				"tokenScaleHint": "Nel caso il token nel quale ti stai trasformando sia un token in rilievo. O è più piccolo di te!",
+				"tokenImage": "Immagine Token",
+				"tokenImageHint": "Assicurati che funziona nella scena, i CORS sono un dio volubile.",
+				"invisible": "Rendi invisibile il tuo token originale?",
+				"invisibleHint": "Abilitato di default, questo nasconde il token sotto il camuffamento. Utile quando ti stai camuffando in un token più piccolo o un token con vista dall'alto."
+			},
+			"summoning": {
+				"player": {
+					"unique": "I filtri sono impostati in modo univoco come da {unique}.",
+					"dancingLights": "Seleziona le tue luci danzanti…",
+					"sorted": "Ordinato per livello e in ordine alfabetico.",
+					"summonArg": "Filtrato per livello <b>(livello massimo {multiplier} da incantesimo di livello {spellLevel})</b>.",
+					"levelArg": "Filtrato per livello <b>{level1} e superiore, fino a {level2}</b>.",
+					"traitsArg": "Filtrato per tratti: <b>{traits}</b>.",
+					"uncommonArg": "Scelte con <b>rarità non comune o superiore</b> consentite.",
+					"sourceArg": "Filtrato per origine: <b>{sources}</b>.",
+					"label": "Ordinato con...?",
+					"creature": "Creatura",
+					"nothingFound": "Non è stato trovato nulla. Rifinisci i tuoi parametri di filtro!",
+					"amount": "Ammontare",
+					"title": "Evoca Qualsiasi Cosa",
+					"level": "Livello {level}",
+					"hasImageArg": "Filtrato in base al fatto che una creatura abbia o meno un'<b>immagine</b> ."
+				},
+				"gm": {
+					"unknownUser": "Un utente sconosciuto",
+					"declined": "Rifiutata!",
+					"content": "<p>{user} ha richiesto di evocare <b>{amount} {actorName}</b>.</p><p>Un modello è stato creato per mostrare la posizione dell'evocazione. Se accetti, l'evocazione verrà posizionata sul modello. Puoi muovere il modello prima di accettare.</p><p>Rifiutare la richiesta o Chiudere questa finestra cancellerà il modello e nulla verrà evocato.</p>",
+					"title": "Richiesta di Evocazione del Giocatore"
+				}
+			},
+			"outOfRange": "Fuori Gittata!"
+		},
+		"settings": {
+			"onlyImageSummons": {
+				"name": "Consenti Solo Evocazioni che hanno un Immagine",
+				"hint": "Consenti solo evocazioni di creature che hanno un'immagine."
+			},
+			"allowUncommonSummons": {
+				"name": "Consenti Evocazioni Non Comuni",
+				"hint": "Consenti ai giocatori di evocare creature Non Comuni, Rare o Uniche. Puoi anche consentirlo solo per incantesimi specifici aggiungendo \"uncommon\" ai parametri dell'incantesimo o nel menu di Auto-Riconoscimento o nell'incantesimo stesso nella scheda di un personaggio."
+			},
+			"disableHitAnims": {
+				"name": "Disabilita le Animazioni \"Se Colpito o Mancato\"",
+				"hint": "Sebbene puoi rimuovere queste animazioni dal Menu di Auto-Riconoscimento di AA, probabilmente ritorneranno quando lo aggiorni. Abilita questa impostazione per disabilitare tali animazioni."
+			},
+			"randomHitAnims": {
+				"name": "Fai Apparire le Animazioni di Mancato di \"Se Colpito o Mancato\" Fuori Bersaglio",
+				"hint": "Fai apparire le animazioni di mancato e mancato critico apparire in un posto casuale vicino al token mancato."
+			},
+			"autoAccept": {
+				"name": "Accetta Effetti Automaticamente",
+				"hint": "Accetta gli Effetti dalle macro automaticamente, ad esempio aggiungendo l'Effetto Infuriarsi quando usi l'azione Infuriarsi."
+			},
+			"autoUpdate": {
+				"name": "Apri il Menu di Aggiornamento all'Aggiornamento del Modulo",
+				"hint": "Apri automaticamente il Menu di Aggiornamento dell'Auto-Riconoscimento quando il modulo è aggiornato."
+			},
+			"smallTokenScale": {
+				"name": "Scala di Default per i Token Piccoli",
+				"hint": "Determina a che scala assume l'animazione per i personaggi Piccoli. Se usi \"Ridimensiona i token in base alla taglia\" del sistema Pathfinder 2e, questa impostazione è disabilitata e l'assume essere 0.8."
+			},
+			"debug": {
+				"name": "Modalità di Debug",
+				"hint": "Abilita i log di console di quello che sta facendo il modulo PF2e Animations."
+			},
+			"tmfx": {
+				"name": "Usa Token Magic Effects",
+				"hint": "Qualche animazione beneficia di un'animazione tramite Token Magic FX invece che Sequencer. Nota che questa impostazione è mostrata soltanto quando il modulo Token Magic FX è installato."
+			},
+			"autorecUpdate": {
+				"name": "Aggiornamento Animazioni",
+				"label": "Menu di Aggiornamento"
+			}
+		}
+	}
+}
