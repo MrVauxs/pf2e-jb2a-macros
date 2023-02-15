@@ -43,6 +43,11 @@
 			"lang": "de",
 			"name": "Deutsch",
 			"path": "languages/de.json"
+		},
+		{
+			"lang": "it",
+			"name": "Italiano",
+			"path": "languages/it.json"
 		}
 	],
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
@@ -57,8 +62,7 @@
 		"module/summons.js",
 		"module/updateMenu.js"
 	],
-	"scripts": [
-	],
+	"scripts": [],
 	"styles": [
 		"styles/pf2e-animation-macros.css"
 	],
