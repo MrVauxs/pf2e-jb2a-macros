@@ -1,3 +1,5 @@
+# Version 2.10.8
+
 # Version 2.10.7
 - Updated localization files.
 - Fixed Sudden Charge macro being offset on certain maps.
