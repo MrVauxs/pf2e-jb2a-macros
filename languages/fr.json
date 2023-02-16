@@ -24,7 +24,8 @@
 			"noPrem": "Il vous manque les assets de la <a href='https://www.patreon.com/JB2A/membership'>version premium de JB2A</a> pour utiliser cette animation !",
 			"noDependencies": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez activer les modules indiqués !",
 			"wrongVersion": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez mettre à jour les modules indiqués !",
-			"gridless": "La mire ne peut être utilisée que sur une scène avec une grille."
+			"gridless": "Il est recommandé d'utiliser la mire seulement sur une scène avec grille. Les scènes sans grille pourraient provoquer des soucis.",
+			"unevenGrid": "La grille de votre scène est inégale ({grid}px). Cela entraînera probablement un décalage de l'emplacement de votre cible !"
 		},
 		"settings": {
 			"disableHitAnims": {
