@@ -8,7 +8,8 @@
 			"deleted": "下列效果將會從'PF2e Animations'中被移除。",
 			"custom": "下列效果不會被加入，因為他們已被從另外的源匯入。",
 			"customHint": "如果你想要使用'PF2e Animations'版本的配置，請先將他們從你的自動識別菜單里刪除。",
-			"debugCustom": "下列效果不存在於PF2e Animations中，他們將繼續留在您的自動識別檔案里。"
+			"debugCustom": "下列效果不存在於PF2e Animations中，他們將繼續留在您的自動識別檔案里。",
+			"blacklisted": ""
 		},
 		"notifications": {
 			"noJB2A": "你需要<a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A 模組</a>才能使用PF2e Animations模組（也就是本模組）！",
@@ -17,7 +18,14 @@
 			"noDummy": "缺少召喚宏所需的假人演員卡。",
 			"noPack": "無法找到'pf2e-jb2a-macros.Actions'包，解決一下？",
 			"update": "PF2e Animations v{version} 已載入。請確認你是否有新的自動識別檔案可用！",
-			"metaData": "這個動畫將在升級時被替換。如果你不想這麼做，最好臨時更改一下它的<b>動畫</b>或<b>變體</b>。"
+			"metaData": "這個動畫將在升級時被替換。如果你不想這麼做，最好臨時更改一下它的<b>動畫</b>或<b>變體</b>。",
+			"noDependencies": "",
+			"unevenGrid": "",
+			"tooManyArgs": "",
+			"noPrem": "",
+			"wrongVersion": "",
+			"outOfRange": "",
+			"gridless": ""
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -47,6 +55,18 @@
 			"autorecUpdate": {
 				"name": "自動識別檔案更新",
 				"label": "更新檔案"
+			},
+			"onlyImageSummons": {
+				"hint": "",
+				"name": ""
+			},
+			"allowUncommonSummons": {
+				"name": "",
+				"hint": ""
+			},
+			"tmfx": {
+				"name": "",
+				"hint": ""
 			}
 		},
 		"macro": {
@@ -74,7 +94,15 @@
 					"title": "召喚任何東西",
 					"creature": "生物",
 					"level": "等級{level}",
-					"sorted": "根據等級和字母排序。"
+					"sorted": "根據等級和字母排序。",
+					"unique": "",
+					"summonArg": "",
+					"traitsArg": "",
+					"uncommonArg": "",
+					"sourceArg": "",
+					"levelArg": "",
+					"hasImageArg": "",
+					"nothingFound": ""
 				},
 				"gm": {
 					"unknownUser": "一個未知使用者",
@@ -82,7 +110,8 @@
 					"title": "玩家請求召喚",
 					"content": "<p>{user}請求召喚<b>{amount} {actorName}</b>。</p><p>一個位置標識已經被建立在召喚的位置。如果你接受，召喚物將出現在那個位置。你可以在接受之前移動位置標識的位置。</p><p>拒絕請求或關閉本視窗會刪除位置標識並結束召喚流程。</p>"
 				}
-			}
+			},
+			"outOfRange": ""
 		}
 	}
 }

@@ -8,7 +8,13 @@
 			"noJB2A": "Potrzebujesz włączony <a href=\"https://jb2a.com/home/content-information/#free_library\">moduł JB2A</a> aby użyć razem z PF2e Animations!",
 			"noPack": "Nie można znaleźć paczkę 'pf2e-jb2a-macros.Actions', jak to?",
 			"metaData": "Ta animacja ZOSTANIE zaktualizowana i nadpisana. Jeżeli nie chcesz aby była nadpisana, najlepiej zmień jej <b>animacje</b> lub <b>wariant</b> na coś innego, lub włącz tryb Debugowania w ustawieniach i ponownie klikając przycisk Metadata.",
-			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}"
+			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}",
+			"gridless": "",
+			"noDependencies": "",
+			"wrongVersion": "",
+			"outOfRange": "",
+			"noPrem": "",
+			"unevenGrid": ""
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -46,6 +52,10 @@
 			"onlyImageSummons": {
 				"name": "Pozwalaj tylko na Przywołanie Stworzeń z Obrazami",
 				"hint": "Tylko pozwalaj na przywoływanie stworzeń z obrazami."
+			},
+			"tmfx": {
+				"name": "",
+				"hint": ""
 			}
 		},
 		"updateMenu": {
@@ -100,7 +110,8 @@
 			"suddenCharge": {
 				"notif": "Nagła Szarża! Wybierz gdzie chcesz się poruszyć. Kliknij prawy przycisk aby anulować.",
 				"suddenCharge": "Nagła Szarża."
-			}
+			},
+			"outOfRange": ""
 		}
 	}
 }

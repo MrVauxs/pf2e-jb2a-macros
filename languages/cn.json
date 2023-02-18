@@ -21,7 +21,11 @@
 			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好临时更改一下它的<b>动画</b>或<b>变体</b>。",
 			"noDependencies": "你缺少<b>{modules}</b>模组，请启动他们来让本模组正常运行！",
 			"wrongVersion": "你缺少<b>{modules}</b>模组，请安装或升级他们来让本模组正常运行！",
-			"outOfRange": "目标超出射程。"
+			"outOfRange": "目标超出射程。",
+			"tooManyArgs": "",
+			"noPrem": "",
+			"gridless": "",
+			"unevenGrid": ""
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -51,6 +55,18 @@
 			"autorecUpdate": {
 				"name": "动画更新",
 				"label": "更新文件"
+			},
+			"allowUncommonSummons": {
+				"name": "",
+				"hint": ""
+			},
+			"onlyImageSummons": {
+				"hint": "",
+				"name": ""
+			},
+			"tmfx": {
+				"name": "",
+				"hint": ""
 			}
 		},
 		"macro": {
@@ -78,7 +94,15 @@
 					"title": "召唤任何东西",
 					"creature": "生物",
 					"level": "等级{level}",
-					"sorted": "根据等级和字母排序。"
+					"sorted": "根据等级和字母排序。",
+					"sourceArg": "",
+					"uncommonArg": "",
+					"summonArg": "",
+					"traitsArg": "",
+					"hasImageArg": "",
+					"levelArg": "",
+					"nothingFound": "",
+					"unique": ""
 				},
 				"gm": {
 					"unknownUser": "一个未知用户",
@@ -86,7 +110,8 @@
 					"title": "玩家请求召唤",
 					"content": "<p>{user}请求召唤<b>{amount} {actorName}</b>。</p><p>一个位置标识已经被创建在召唤的位置。如果你接受，召唤物将出现在那个位置。你可以在接受之前移动位置标识的位置。</p><p>拒绝请求或关闭本窗口会删除位置标识并结束召唤流程。</p>"
 				}
-			}
+			},
+			"outOfRange": ""
 		}
 	}
 }
