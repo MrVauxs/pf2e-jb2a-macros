@@ -69,10 +69,10 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 		pf2eAnimations.debug("Sneak Attack", data);
 		let [sneak] = data.token._actor.items.filter(i => i.name === "Sneak Attack")
 		// Modify sneak to not be a feat because AA no like feat
-		sneak.type = "strike"
+		// sneak.type = "strike"
 		await AutomatedAnimations.playAnimation(token, sneak, { targets: targets })
 		// Go back to not break opening the sheet, apparently
-		sneak.type = "feat"
+		// sneak.type = "feat"
 	}
 	// Attack Matches
 	if (data.flags.pf2e?.context?.type === "attack-roll") {
