@@ -18,14 +18,14 @@
 			"noDummy": "缺少召唤宏所需的假人演员卡。",
 			"noPack": "无法找到'pf2e-jb2a-macros.Actions'包，解决一下？",
 			"update": "PF2e Animations v{version} 已加载。请确认你是否有新的自动识别文件可用！",
-			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好临时更改一下它的<b>动画</b>或<b>变体</b>。",
+			"metaData": "这个动画将在升级时被替换。如果你不想这么做，最好将它的<b>动画</b>或<b>变体</b>临时更改为其他，或在配置中启用Debug模式并再次点击MetaData按钮。",
 			"noDependencies": "你缺少<b>{modules}</b>模组，请启动他们来让本模组正常运行！",
 			"wrongVersion": "你缺少<b>{modules}</b>模组，请安装或升级他们来让本模组正常运行！",
 			"outOfRange": "目标超出射程。",
-			"tooManyArgs": "",
-			"noPrem": "",
-			"gridless": "",
-			"unevenGrid": ""
+			"tooManyArgs": "此宏的条件过多！以下条件不可用：{issues}",
+			"noPrem": "你没有安装<a href='https://www.patreon.com/JB2A/membership'>JB2A Patreon版本</a> ，无法使用此动画！",
+			"gridless": "仅推荐在网格地图中使用十字准星，无网格地图可能会引起错误",
+			"unevenGrid": "你的场景网格宽度不一致，这可能会因此目标定位错误！"
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -57,16 +57,16 @@
 				"label": "更新文件"
 			},
 			"allowUncommonSummons": {
-				"name": "",
-				"hint": ""
+				"name": "允许召唤非常见生物",
+				"hint": "允许玩家召唤罕见、稀有或独特生物。你可以在A-A设置中（或角色卡中法术右上的A-A设置中）通过增加“罕见”条件允许个别法术召唤罕见生物。"
 			},
 			"onlyImageSummons": {
-				"hint": "",
-				"name": ""
+				"hint": "仅允许召唤有图像生物",
+				"name": "仅允许召唤有图像生物"
 			},
 			"tmfx": {
-				"name": "",
-				"hint": ""
+				"name": "使用Token Magic的效果",
+				"hint": "部分动画效果来自Token Magic FX而非Sequencer。此选项仅在安装Token Magic FX后出现。"
 			}
 		},
 		"macro": {
@@ -95,14 +95,14 @@
 					"creature": "生物",
 					"level": "等级{level}",
 					"sorted": "根据等级和字母排序。",
-					"sourceArg": "",
-					"uncommonArg": "",
-					"summonArg": "",
-					"traitsArg": "",
-					"hasImageArg": "",
-					"levelArg": "",
-					"nothingFound": "",
-					"unique": ""
+					"sourceArg": "根据来源筛选：<b>{sources}</b>.",
+					"uncommonArg": "允许选取<b>罕见及更高稀有度</b>.",
+					"summonArg": "根据等级筛选<b>从{spellLevel}环级法术中(max. level {multiplier})</b>.",
+					"traitsArg": "根据特征筛选： <b>{traits}</b>.",
+					"hasImageArg": "根据生物是否有<b>图像</b>筛选.",
+					"levelArg": "根据等级筛选<b>{level1}到{level2}</b>.",
+					"nothingFound": "找不到结果。检查你的筛选条件！",
+					"unique": "此筛选器根据{unique}单独设置"
 				},
 				"gm": {
 					"unknownUser": "一个未知用户",
@@ -111,7 +111,7 @@
 					"content": "<p>{user}请求召唤<b>{amount} {actorName}</b>。</p><p>一个位置标识已经被创建在召唤的位置。如果你接受，召唤物将出现在那个位置。你可以在接受之前移动位置标识的位置。</p><p>拒绝请求或关闭本窗口会删除位置标识并结束召唤流程。</p>"
 				}
 			},
-			"outOfRange": ""
+			"outOfRange": "超出射程！"
 		}
 	}
 }
