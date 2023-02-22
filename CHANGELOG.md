@@ -1,4 +1,9 @@
 # Version 2.10.8
+- Updated localization files.
+- Updated minimal version of Sequencer to 2.412.
+- Fixed an issue with Token Mold changing the names of the summons.
+- Fixed Sneak Attack issues.
+- Fixed broken images in the module.json.
 
 # Version 2.10.7
 - Updated localization files.

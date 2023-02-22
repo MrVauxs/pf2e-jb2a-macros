@@ -19,13 +19,7 @@
 			"tooManyArgs": "Zu viele Argumente für dieses Makro! Die folgenden Argumente sind nicht kompatibel: {Ausgaben}",
 			"noJB2A": "Sie müssen ein <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A-Modul</a> aktivieren, um das PF2e Animationsmodul zu verwenden!",
 			"noPack": "Kann das Paket 'pf2e-jb2a-macros.Actions' irgendwie nicht finden?",
-			"metaData": "Diese Animation wird bei der Aktualisierung ersetzt werden. Wenn ihr das nicht wollt, ändert ihr am besten vorübergehend die <b>animation</b>or <b>variant</b> auf etwas anderes oder aktiviert den Debug-Modus in den Einstellungen und drückt erneut auf die Schaltfläche \"Metadaten\".",
-			"wrongVersion": "",
-			"noDependencies": "",
-			"outOfRange": "",
-			"noPrem": "",
-			"gridless": "",
-			"unevenGrid": ""
+			"metaData": "Diese Animation wird bei der Aktualisierung ersetzt werden. Wenn ihr das nicht wollt, ändert ihr am besten vorübergehend die <b>animation</b>or <b>variant</b> auf etwas anderes oder aktiviert den Debug-Modus in den Einstellungen und drückt erneut auf die Schaltfläche \"Metadaten\"."
 		},
 		"macro": {
 			"suddenCharge": {
@@ -51,66 +45,9 @@
 					"sorted": "Sortiert nach Stufe und alphabetisch.",
 					"levelArg": "Gefiltert nach Stufe <b>{level1} and above, up to {level2}</b>.",
 					"traitsArg": "Gefiltert nach Eigenschaften: <b>{traits}</b>.",
-					"summonArg": "Gefiltert nach Stufe <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
-					"hasImageArg": "",
-					"uncommonArg": "",
-					"sourceArg": "",
-					"label": "",
-					"creature": "",
-					"nothingFound": "",
-					"amount": "",
-					"title": "",
-					"level": ""
+					"summonArg": "Gefiltert nach Stufe <b>(max. level {multiplier} from {spellLevel} level spell)</b>."
 				},
-				"gm": {
-					"content": "",
-					"title": "",
-					"unknownUser": "",
-					"declined": ""
-				}
-			},
-			"outOfRange": ""
-		},
-		"settings": {
-			"autorecUpdate": {
-				"label": "",
-				"name": ""
-			},
-			"allowUncommonSummons": {
-				"hint": "",
-				"name": ""
-			},
-			"randomHitAnims": {
-				"hint": "",
-				"name": ""
-			},
-			"disableHitAnims": {
-				"name": "",
-				"hint": ""
-			},
-			"autoUpdate": {
-				"name": "",
-				"hint": ""
-			},
-			"autoAccept": {
-				"hint": "",
-				"name": ""
-			},
-			"smallTokenScale": {
-				"name": "",
-				"hint": ""
-			},
-			"debug": {
-				"name": "",
-				"hint": ""
-			},
-			"onlyImageSummons": {
-				"name": "",
-				"hint": ""
-			},
-			"tmfx": {
-				"name": "",
-				"hint": ""
+				"gm": {}
 			}
 		}
 	}

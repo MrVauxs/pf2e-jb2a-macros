@@ -367,7 +367,8 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
         {
             "pf2e-jb2a-macros": {
                 "scrollingText": game.settings.get("core", "scrollingStatusText"),
-                "bloodsplatter": game.modules.get("splatter")?.active ? game.settings.get("splatter", "enableBloodsplatter") : null
+                "bloodsplatter": game.modules.get("splatter")?.active ? game.settings.get("splatter", "enableBloodsplatter") : null,
+                "token-mold": game.modules.get("token-mold")?.active ? game.settings.get("Token-Mold", "everyone").name.use : null,
             }
         }
     )
@@ -428,7 +429,8 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
             }
         })
         await game.settings.set("core", "scrollingStatusText", false);
-        if (game.modules.get("splatter")?.active) game.settings.set("splatter", "enableBloodsplatter", false);
+        if (game.modules.get("splatter")?.active) await game.settings.set("splatter", "enableBloodsplatter", false);
+        if (game.modules.get("token-mold")?.active) await game.settings.set("Token-Mold", "everyone", { ...game.settings.get("Token-Mold", "everyone"), ...{ name: { use: false } } });
     };
 
     if (args?.callbacks?.post) ui.notifications.error("PF2e Animations | You are providing a callbacks.post function to the summoning macro. Please note it is going to be overriden in the module.");
@@ -456,6 +458,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
         await AutomatedAnimations.playAnimation(token, item ?? { name: `Summoning Animation Template (${args.origins.itemName})` }, { targets: [spawnedTokenDoc.object] });
         if (updates.token.flags["pf2e-jb2a-macros"]?.scrollingText) await game.settings.set("core", "scrollingStatusText", true);
         if (updates.token.flags["pf2e-jb2a-macros"]?.bloodsplatter) await game.settings.set("splatter", "enableBloodsplatter", true);
+        if (updates.token.flags["pf2e-jb2a-macros"]?.tokenmold) await game.settings.set("Token-Mold", "everyone", {...game.settings.get("Token-Mold", "everyone"), ...{ name: { use: true }}});
         if (game.modules.get("tokenmagic-automatic-wounds")?.active) {
             // This doesn't actually work and is instead in "Opacity 1" macro but for posterity's sake, it's also included here.
             // Not sure why it works in the macro but not in here. It just doesn't.
