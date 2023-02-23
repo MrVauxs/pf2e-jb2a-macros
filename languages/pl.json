@@ -27,7 +27,7 @@
 			},
 			"autoAccept": {
 				"name": "Automatycznie akceptuj Efekty",
-				"hint": "Automatycznie akceptuj Efekty z mark, jak np. dodawanie efektu Rage kiedy się używa akcji Rage."
+				"hint": "Automatycznie akceptuj efekty z makr, jak np. dodawanie efektu Rage kiedy się używa akcji Rage."
 			},
 			"autoUpdate": {
 				"name": "Otwórz Menu Aktualizacji podczas aktualizacji modułu",
