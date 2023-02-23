@@ -210,7 +210,6 @@ class autorecUpdateFormApplication extends FormApplication {
             template: `modules/pf2e-jb2a-macros/module/autorecUpdateMenu.html`,
             id: 'autorecUpdateMenu',
             title: 'PF2e Animations Update',
-            resizable: true,
         });
     }
 

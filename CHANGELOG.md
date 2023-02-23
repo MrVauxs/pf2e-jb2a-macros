@@ -1,3 +1,6 @@
+# Version 2.10.9
+- Added scroll and made the update menu not take up the entire height of the screen.
+
 # Version 2.10.8
 - Updated localization files.
 - Updated minimal version of Sequencer to 2.412.

@@ -16,6 +16,8 @@
 
 .pf2e-animations-autorec-update-ul {
     column-count: 2;
+    overflow-x: scroll;
+    max-height: 400px;
 }
 
 .pf2e-animations-autorec-update-buttons {
