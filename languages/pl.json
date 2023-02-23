@@ -8,7 +8,13 @@
 			"noJB2A": "Potrzebujesz włączony <a href=\"https://jb2a.com/home/content-information/#free_library\">moduł JB2A</a> aby użyć razem z PF2e Animations!",
 			"noPack": "Nie można znaleźć paczkę 'pf2e-jb2a-macros.Actions', jak to?",
 			"metaData": "Ta animacja ZOSTANIE zaktualizowana i nadpisana. Jeżeli nie chcesz aby była nadpisana, najlepiej zmień jej <b>animacje</b> lub <b>wariant</b> na coś innego, lub włącz tryb Debugowania w ustawieniach i ponownie klikając przycisk Metadata.",
-			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}"
+			"tooManyArgs": "Za dużo parametrów dla tego makra! Następujące parametry są niekompatybilne: {issues}",
+			"gridless": "Celowniki są polecane do użycia tylko w scenach bazujących na siatce. Sceny pozbawione siatki mogą sprawiać problemy.",
+			"noDependencies": "Do pełnego funkcjonowania PF2e Animations brakuje <b>{modules}</b>! Uruchom wymieniona moduły!",
+			"wrongVersion": "Do pełnego funkcjonowania PF2e Animations brakuje <b>{modules}</b>! Zaktualizuj wymieniona moduły!",
+			"outOfRange": "Cel jest poza zasięgiem.",
+			"noPrem": "Potrzebujesz <a href='https://www.patreon.com/JB2A/membership'>wersji premium zasobów JB2A</a>, żeby używać tej animacji!",
+			"unevenGrid": "Siatka twojej sceny jest nierówna ({grid}px). To może sprawić, że pozycja postaci będzie nieprawidłowa!"
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -36,7 +42,7 @@
 				"hint": "Włącza logi konsoli pokazujące co PF2e Animations robi."
 			},
 			"autorecUpdate": {
-				"name": "Aktualizacja Menu Auto-Rozpoznawania",
+				"name": "Aktualizacja animacji",
 				"label": "Menu Aktualizacji"
 			},
 			"allowUncommonSummons": {
@@ -47,7 +53,10 @@
 				"name": "Pozwalaj tylko na Przywołanie Stworzeń z Obrazami",
 				"hint": "Tylko pozwalaj na przywoływanie stworzeń z obrazami."
 			},
-			"tmfx": {}
+			"tmfx": {
+				"name": "Używaj Token Magic Effects",
+				"hint": "Niektóre animacje używają Token Magic FX zamiast Sequencera. Ta opcja jest widoczna tylko kiedy zainstalowany jest moduł Token Magic FX."
+			}
 		},
 		"updateMenu": {
 			"deleted": "Poniższe efekty zostaną USUNIĘTE z poprzedniej wersji 'PF2e Animations'.",
@@ -101,7 +110,8 @@
 			"suddenCharge": {
 				"notif": "Nagła Szarża! Wybierz gdzie chcesz się poruszyć. Kliknij prawy przycisk aby anulować.",
 				"suddenCharge": "Nagła Szarża."
-			}
+			},
+			"outOfRange": "Poza zasięgiem!"
 		}
 	}
 }
