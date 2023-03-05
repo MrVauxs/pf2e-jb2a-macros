@@ -48,6 +48,11 @@
 			"lang": "it",
 			"name": "Italiano",
 			"path": "languages/it.json"
+		},
+		{
+			"lang": "ru",
+			"name": "Русский",
+			"path": "languages/ru.json"
 		}
 	],
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
