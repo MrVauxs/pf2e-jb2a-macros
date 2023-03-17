@@ -115534,7 +115534,10 @@
       },
       "metaData": {
         "label": "Dragon Form (Silver)",
-        "menu": "aefx"
+        "menu": "aefx",
+        "name": "PF2e Animations",
+        "moduleVersion": "2.9.10",
+        "version": 1
       }
     },
     {
