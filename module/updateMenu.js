@@ -4,8 +4,8 @@ async function getJSON(url) {
     return json;
 }
 
-async function generateAutorecUpdate(quiet = true) {
-    if (quiet) console.group("PF2e Animations | Autorecognition Menu Check");
+async function generateAutorecUpdate(loud = true) {
+    if (loud) console.group("PF2e Animations | Autorecognition Menu Check");
     const autorec = await getJSON("modules/pf2e-jb2a-macros/module/autorec.json");
     let settings = {}
     settings.melee = [...new Map(await game.settings.get('autoanimations', 'aaAutorec-melee').map(v => [v.id, v])).values()]
@@ -72,14 +72,14 @@ async function generateAutorecUpdate(quiet = true) {
             }
         })
     }
-    if (quiet) console.info("The following effects did not exist before. They will be ADDED.", missingEntries)
-    if (quiet) console.info("The following effects can be updated from a previous version of 'PF2e Animations'. They will be UPDATED.", updatedEntries)
-    if (quiet) console.info("The following effects no LONGER exist in PF2e Animations. They will be DELETED.", removed)
-    if (quiet) console.info("The following effects do not exist in PF2e Animations. They will be IGNORED.", customNew)
-    if (quiet) console.info("The following effects cannot be added or updated, due to them already existing from an unknown source. They will be IGNORED.", custom)
-    if (quiet) console.info("The following effects have no updates.", same)
-    if (quiet) console.info("The following effects have been blacklisted.", blacklist)
-    if (quiet) console.groupEnd()
+    if (loud) console.info("The following effects did not exist before. They will be ADDED.", missingEntries)
+    if (loud) console.info("The following effects can be updated from a previous version of 'PF2e Animations'. They will be UPDATED.", updatedEntries)
+    if (loud) console.info("The following effects no LONGER exist in PF2e Animations. They will be DELETED.", removed)
+    if (loud) console.info("The following effects do not exist in PF2e Animations. They will be IGNORED.", customNew)
+    if (loud) console.info("The following effects cannot be added or updated, due to them already existing from an unknown source. They will be IGNORED.", custom)
+    if (loud) console.info("The following effects have no updates.", same)
+    if (loud) console.info("The following effects have been blacklisted.", blacklist)
+    if (loud) console.groupEnd()
 
     // Create a list of all effects done.
     let missingEntriesList = []
@@ -221,12 +221,12 @@ class autorecUpdateFormApplication extends FormApplication {
     async activateListeners(html) {
         const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, blacklistEntriesList } = await this.settings()
         if (!(
-                missingEntriesList.length
-                || updatedEntriesList.length
-                || customEntriesList.length
-                || removedEntriesList.length
-                || blacklistEntriesList.length
-            )) $('[name="update"]').remove();
+            missingEntriesList.length
+            || updatedEntriesList.length
+            || customEntriesList.length
+            || removedEntriesList.length
+            || blacklistEntriesList.length
+        )) $('[name="update"]').remove();
         super.activateListeners(html);
     }
 
