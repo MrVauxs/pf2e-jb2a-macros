@@ -1,3 +1,9 @@
+# Version 2.11.0
+
+- Added PF2e Modifiers Matter integration.
+  - You can now have animations and macros trigger on specific bonuses from the PF2e Modifiers Matter module. An example is "Modifiers Matter: Bless".
+  - The animation names also accept the degree of how the modifier helped, ranging from and to: ESSENTIAL, HELPFUL, HARMFUL, DETRIMENTAL. An example is "Modifiers Matter: Bless (ESSENTIAL)".
+
 # Version 2.10.10
 
 - Fixed Humanoid Form not working with autoscaling on.
