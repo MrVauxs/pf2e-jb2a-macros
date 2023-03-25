@@ -59,6 +59,8 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 	let flavor = data.flavor ?? null;
 	let args = data ?? null;
 
+	if (!token) return pf2eAnimations.debug("No token for the animation.", data);
+
 	// Persistent Damage Matches
 	if ((data.isDamageRoll && data.rolls[0].options.evaluatePersistent) || flavor.match(/Received (regeneration|fast healing)/g)) {
 		pf2eAnimations.debug("Persistent Damage / Healing", data);
@@ -281,7 +283,7 @@ pf2eAnimations.applyTokenMagic = function tokenMagicHelpers(args, params) {
 	pf2eAnimations.debug("Token Magic Helpers | Args | Params", args, params);
 
 	const tokenMagic = game.settings.get("pf2e-jb2a-macros", "tmfx")
-	if (!tokenMagic) return this.debug("Token Magic FX has beem Disabled!");
+	if (!tokenMagic) return this.debug("Token Magic FX has been Disabled!");
 
 	if (args[0] === "on") {
 		TokenMagic.addFilters(token, params)
@@ -303,7 +305,6 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(alignm
 
 	// reverse = true will return the opposite traits (note that N becomes nothing)
 	// e.g. "LG" -> ["chaotic", "evil"]
-	// thanks Co-Pilot for the code below
 	if (reverse) {
 		alignment = alignment.split("").map(a =>
 			a === "L" ? "C" :
@@ -460,40 +461,5 @@ pf2eAnimations.localize = function localize(string = String, format = Object) {
 		return game.i18n.localize(string);
 	}
 }
-
-// Borrowed from PF2eTools Utils
-// https://github.com/Pf2eToolsOrg/Pf2eTools/blob/1f241bbb353c20bbcc726843b4ae0992dad7f999/js/utils.js#L69
-String.prototype.toTitleCase = String.prototype.toTitleCase || function () {
-	let str = this.replace(/([^\W_]+[^\s-/]*) */g, m0 => m0.charAt(0).toUpperCase() + m0.substr(1).toLowerCase());
-
-	StrUtil = {
-		// Certain minor words should be left lowercase unless they are the first or last words in the string
-		TITLE_LOWER_WORDS: ["a", "an", "the", "and", "but", "or", "for", "nor", "as", "at", "by", "for", "from", "in", "into", "near", "of", "on", "onto", "to", "with", "over"],
-		// Certain words such as initialisms or acronyms should be left uppercase
-		TITLE_UPPER_WORDS: ["Id", "Tv", "Dm", "Ok"],
-	};
-
-	// Require space surrounded, as title-case requires a full word on either side
-	StrUtil._TITLE_LOWER_WORDS_RE = StrUtil._TITLE_LOWER_WORDS_RE = StrUtil.TITLE_LOWER_WORDS.map(it => new RegExp(`\\s${it}\\s`, "gi"));
-	StrUtil._TITLE_UPPER_WORDS_RE = StrUtil._TITLE_UPPER_WORDS_RE = StrUtil.TITLE_UPPER_WORDS.map(it => new RegExp(`\\b${it}\\b`, "g"));
-
-	const len = StrUtil.TITLE_LOWER_WORDS.length;
-	for (let i = 0; i < len; i++) {
-		str = str.replace(
-			StrUtil._TITLE_LOWER_WORDS_RE[i],
-			txt => txt.toLowerCase(),
-		);
-	}
-
-	const len1 = StrUtil.TITLE_UPPER_WORDS.length;
-	for (let i = 0; i < len1; i++) {
-		str = str.replace(
-			StrUtil._TITLE_UPPER_WORDS_RE[i],
-			StrUtil.TITLE_UPPER_WORDS[i].toUpperCase(),
-		);
-	}
-
-	return str;
-};
 
 self.pf2eAnimations = pf2eAnimations
