@@ -92656,9 +92656,18 @@
 			"metaData": {
 				"label": "Protective Ward",
 				"menu": "ontoken",
-				"name": "PF2e Animation Macros",
-				"moduleVersion": "2.7.3",
-				"version": 15
+				"name": "PF2e Animations",
+				"moduleVersion": "2.11.0",
+				"version": 16
+			},
+			"advanced": {
+				"exactMatch": true,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
 			}
 		},
 		{
@@ -113863,10 +113872,19 @@
 			"activeEffectType": "ontoken",
 			"metaData": {
 				"name": "PF2e Animations",
-				"version": 12,
-				"moduleVersion": "2.6.6",
+				"version": 13,
+				"moduleVersion": "2.11.0",
 				"label": "Aura: Protective Ward",
 				"menu": "aefx"
+			},
+			"advanced": {
+				"exactMatch": true,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
 			}
 		},
 		{
@@ -126095,7 +126113,7 @@
 		},
 		{
 			"id": "613",
-			"label": "Protective Ward",
+			"label": "Spell Effect: Protective Ward",
 			"menu": "aefx",
 			"primary": {
 				"options": {
@@ -126204,7 +126222,8 @@
 				}
 			},
 			"macro": {
-				"enable": false
+				"enable": false,
+				"playWhen": "0"
 			},
 			"soundOnly": {
 				"sound": {
@@ -126218,10 +126237,19 @@
 			"activeEffectType": "ontoken",
 			"metaData": {
 				"name": "PF2e Animations",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Protective Ward",
+				"version": 13,
+				"moduleVersion": "2.11.0",
+				"label": "Spell Effect: Protective Ward",
 				"menu": "aefx"
+			},
+			"advanced": {
+				"exactMatch": true,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
 			}
 		},
 		{
