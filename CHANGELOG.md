@@ -3,12 +3,11 @@
 - Updated the Modifiers Matter integration to be strict in it's matching effects.
 - Updated Aura: Protective Ward to use the system aura effect, not Workbench.
 - Added a function that allows the "Add Effect" macro to increase the badge value of an effect if it already exists.
-- Added the following animations:
-  - Fling Magic
+- Added Fling Magic animation.
 
 # Version 2.11.0
 
-- Added Healer's Blessing.
+- Added Healer's Blessing animation.
 - Added PF2e Modifiers Matter integration.
   - You can now have animations and macros trigger on specific bonuses from the PF2e Modifiers Matter module. An example is "Modifiers Matter: Bless".
   - The animation names also accept the degree of how the modifier helped, ranging from and to: ESSENTIAL, HELPFUL, HARMFUL, DETRIMENTAL. An example is "Modifiers Matter: Bless (ESSENTIAL)".
