@@ -1,3 +1,10 @@
+# Version 2.12.0
+
+- Updated Aura: Protective Ward to use the system effect, not Workbench.
+- Added a function that allows the "Add Effect" macro to increase the badge value of an effect if it already exists.
+- Added the following animations:
+  - Fling Magic
+
 # Version 2.11.0
 
 - Added Healer's Blessing.
