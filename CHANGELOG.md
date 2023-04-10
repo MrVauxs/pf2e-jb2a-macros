@@ -1,3 +1,7 @@
+# Version 2.12.2
+
+- Fixed Manifest Eidolon macro breaking on translated eidolons.
+
 # Version 2.12.1
 
 - Fixed Add Effects breaking on effects with no system property (???).
