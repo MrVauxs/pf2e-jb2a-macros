@@ -1,3 +1,7 @@
+# Version 2.12.1
+
+- Fixed Add Effects breaking on effects with no system property (???).
+
 # Version 2.12.0
 
 - Updated the Modifiers Matter integration to be strict in it's matching effects.
