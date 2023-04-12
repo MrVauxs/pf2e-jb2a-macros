@@ -1,6 +1,7 @@
 # Version 2.12.3
 
 - Fixed TMFX setting not being disabled when the user first enables and then disables TMFX.
+- Fixed Manifest Eidolon macro breaking on normal eidolons but with different sourceId. Also added a check for the "eidolon" slug, once PF2e Companion Compendium adds it.
 
 # Version 2.12.2
 
