@@ -1,3 +1,7 @@
+# Version 2.12.3
+
+- Fixed TMFX setting not being disabled when the user first enables and then disables TMFX.
+
 # Version 2.12.2
 
 - Fixed Manifest Eidolon macro breaking on translated eidolons.

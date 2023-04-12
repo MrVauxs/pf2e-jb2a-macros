@@ -72,12 +72,17 @@ Hooks.once("init", () => {
     });
     game.settings.register("pf2e-jb2a-macros", "tmfx", {
         scope: "client",
-        config: game.modules.get("tokenmagic")?.active ?? false,
+        config: game.modules.get("tokenmagic")?.active ?? false, // Only show if TokenMagic is active
         name: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.name"),
         hint: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.hint"),
         type: Boolean,
         default: false
     });
+
+    if (!game.modules.get("tokenmagic")?.active) {
+        game.settings.set("pf2e-jb2a-macros", "tmfx", false)
+    }
+
     game.settings.register("pf2e-jb2a-macros", "debug", {
         scope: "client",
         config: true,
