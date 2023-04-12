@@ -1,3 +1,7 @@
+# Version 2.12.4
+
+- Fixed Manifest Eidolon macro breaking when there is only one eidolon in the game.
+
 # Version 2.12.3
 
 - Fixed TMFX setting not being disabled when the user first enables and then disables TMFX.
