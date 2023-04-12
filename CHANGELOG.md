@@ -1,3 +1,7 @@
+# Version 2.12.5
+
+- Fixed Manifest Eidolon macro.
+
 # Version 2.12.4
 
 - Fixed Manifest Eidolon macro breaking when there is only one eidolon in the game.
