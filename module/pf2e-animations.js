@@ -462,4 +462,32 @@ pf2eAnimations.localize = function localize(string = String, format = Object) {
 	}
 }
 
+pf2eAnimations.screenshake = function screenshake({ intensity = 1, duration = 500, iterations = 1 } = {}) {
+	if (!(Number.isInteger(intensity) && Number.isInteger(duration))) {
+		return ui.notifications.error("PF2e Animations | Either Intensity or Duration is not an integer.")
+	}
+	const a = 1 * intensity;
+	const b = 2 * intensity;
+	const c = 3 * intensity;
+	return document.getElementById('board').animate(
+		[
+			{ transform: `translate(${a}px, ${a}px) rotate(0deg)` },
+			{ transform: `translate(-${a}px, -${b}px) rotate(-${a}deg)` },
+			{ transform: `translate(-${c}px, 0px) rotate(${a}deg)` },
+			{ transform: `translate(${c}px, ${b}px) rotate(0deg)` },
+			{ transform: `translate(${a}px, -${a}px) rotate(${a}deg)` },
+			{ transform: `translate(-${a}px, ${b}px) rotate(-${a}deg)` },
+			{ transform: `translate(-${c}px, ${a}px) rotate(0deg)` },
+			{ transform: `translate(${c}px, ${a}px) rotate(-${a}deg)` },
+			{ transform: `translate(-${a}px, -${a}px) rotate(${a}deg)` },
+			{ transform: `translate(${a}px, ${b}px) rotate(0deg)` },
+			{ transform: `translate(${a}px, -${b}px) rotate(-${a}deg)` }
+		],
+		{
+			duration,
+			iterations
+		}
+	);
+}
+
 self.pf2eAnimations = pf2eAnimations
