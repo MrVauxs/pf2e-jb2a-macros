@@ -23,7 +23,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 	} else {
 		const wrongVersions = game.modules.get("pf2e-jb2a-macros").relationships.requires.toObject()
 			.map(i => { return { id: i.id, title: game.modules.get(i.id).title, version: i.compatibility.minimum } })
-			.filter(i => isNewerVersion(i.version, game.modules.get(i.id).version?.replace("v", "")));
+			.filter(i => isNewerVersion(i.version, game.modules.get(i.id).version?.replace(/v|!/g, "")));
 
 		if (wrongVersions.length > 0) {
 			ui.notifications.error(pf2eAnimations.localize(
