@@ -16,7 +16,7 @@ Created to accompany the [Automated Animations](https://github.com/otigon/automa
 
 You can appropriate most of this module for other systems, I simply don't have interest in doing so.
 
-If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs) or [Ko-Fi](https://ko-fi.com/mrvauxs)! 
+If you want to support me, you can tip me over on [Patreon](https://www.patreon.com/mrvauxs) or [Ko-Fi](https://ko-fi.com/mrvauxs)!
 
 **You can also [commission me](https://ko-fi.com/mrvauxs/commissions) if you want something animated ASAP or an unique version of an animation!**
 
@@ -24,7 +24,7 @@ If you want to support me, you can tip me over on [Patreon](https://www.patreon.
 - [SoundFx Library](https://github.com/CDeenen/SoundFxLibrary) and [Animated Spell Effects: Cartoon](https://github.com/jackkerouac/animated-spell-effects-cartoon) for sounds.
 - [PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat) is integrated into the module. Various reload actions can be found in the PF2e Animations Compendiums which provide both reloading functions and animation + sound effects to your reloads.
 - [Token Magic FX](https://github.com/Feu-Secret/Tokenmagic) is an optional dependency for animations that modify how your token looks, such as Petrified grayed out tokens or the "heavy breathing" effect of Encumbered.
-- [PF2e Modifiers Matter](https://github.com/shemetz/pf2e-modifiers-matter) is integrated into the module. You can now trigger effects, sounds, or macros, in Automated Animations whenever a modifier has made or broke your DC. 
+- [PF2e Modifiers Matter](https://github.com/shemetz/pf2e-modifiers-matter) is integrated into the module. You can now trigger effects, sounds, or macros, in Automated Animations whenever a modifier has made or broke your DC.
 
 ## Not-Recommended Modules
 - [Automated Evocations](https://github.com/theripper93/automated-evocations), PF2e Animations provides full range of automation for summoning spells as well as animations for them, which are fully customizable by both the GM and the player, on global and individual actor scale.
@@ -34,3 +34,6 @@ Until [this feature](https://github.com/foundryvtt/foundryvtt/issues/7184) is im
 
 ## Languages
 [![Translation status](https://weblate.foundryvtt-hub.com/widgets/pf2e-animation-macros/-/multi-auto.svg)](https://weblate.foundryvtt-hub.com/engage/pf2e-animation-macros/)
+
+# Community Use License
+PF2e Animations uses trademarks and/or copyrights owned by Paizo Inc., used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. PF2e Animations is not published, endorsed, or specifically approved by Paizo. For more information about Paizo Inc. and Paizo products, visit [paizo.com](paizo.com).
