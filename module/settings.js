@@ -71,7 +71,7 @@ Hooks.once("init", () => {
         }
     });
     game.settings.register("pf2e-jb2a-macros", "tmfx", {
-        scope: "client",
+        scope: "world",
         config: game.modules.get("tokenmagic")?.active ?? false, // Only show if TokenMagic is active
         name: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.name"),
         hint: game.i18n.localize("pf2e-jb2a-macros.settings.tmfx.hint"),
