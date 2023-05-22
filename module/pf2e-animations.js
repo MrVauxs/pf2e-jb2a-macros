@@ -77,8 +77,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (da
 		// sneak.type = "feat"
 	}
 	// Attack Matches
-	if (data.flags.pf2e?.context?.type === "attack-roll") {
-		if (game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) return;
+	if (data.flags.pf2e?.context?.type === "attack-roll" && !game.settings.get("pf2e-jb2a-macros", "disableHitAnims")) {
 		const degreeOfSuccess = pf2eAnimations.degreeOfSuccessWithRerollHandling(data);
 		const pack = game.packs.get("pf2e-jb2a-macros.Actions");
 		if (!pack) ui.notifications.error(`PF2e Animations | ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.noPack")}`);
@@ -135,9 +134,9 @@ pf2eAnimations.hooks.renderActorDirectory = Hooks.on("renderActorDirectory", (ap
 // Create a hook for metadata modification menu.
 pf2eAnimations.hooks.AutomatedAnimations = {}
 pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimations.metaData", async (data) => {
+	let metaData = data.metaData;
 	if (game.settings.get("pf2e-jb2a-macros", "debug")) {
-		pf2eAnimations.debug("AutomatedAnimations.metaData hook", data);
-		let metaData = data.metaData;
+		pf2eAnimations.debug("'AutomatedAnimations.metaData' hook", data);
 		await warpgate.menu(
 			{
 				inputs: [

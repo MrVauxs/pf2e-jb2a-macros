@@ -1,3 +1,8 @@
+# Version 2.13.0
+
+- Added JB2A's Runelord Sins Rune animations.
+- (Commissioned) Added a "Brain Response" animation. Runs when you Devise a Stratagem and Recall Knowledge.
+
 # Version 2.12.5
 
 - Fixed Manifest Eidolon macro.
