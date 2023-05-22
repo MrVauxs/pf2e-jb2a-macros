@@ -2,6 +2,8 @@
 
 - Added JB2A's Runelord Sins Rune animations.
 - (Commissioned) Added a "Brain Response" animation. Runs when you Devise a Stratagem and Recall Knowledge.
+- Fixed the summoned creatures alliance not matching that of the players, causing problems with flanking.
+- Added a setting (on by default) to automatically remove animations from Defeated tokens in Initiative.
 
 # Version 2.12.5
 
