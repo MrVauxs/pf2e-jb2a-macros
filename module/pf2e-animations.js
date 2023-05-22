@@ -45,10 +45,36 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 	// Create an event for summoning macros.
 	warpgate.event.watch("askGMforSummon", (eventData) => { pf2eAnimations.askGMforSummon(eventData) })
 
+	// Welcome message for new users.
+	if (!(game.user.getFlag("pf2e-jb2a-macros", "displayedWelcomeMessage") ?? false)) {
+		game.user.setFlag("pf2e-jb2a-macros", "displayedWelcomeMessage", true);
+		ChatMessage.implementation.create({
+			whisper: [game.user.id],
+			speaker: { alias: "PF2e Animations" },
+			content: `	<div class="pf2e-animations-welcome">
+							<h3>${game.i18n.localize("pf2e-jb2a-macros.welcomeMessage.header")}</h3>
+							<p>${game.i18n.localize("pf2e-jb2a-macros.welcomeMessage.description")}</p>
+							<button class="pf2e-animations-settings-button">
+								<i class="fas fa-cogs"></i>
+								${game.i18n.localize("pf2e-jb2a-macros.welcomeMessage.settingsButton")}
+							</button>
+						</div>`
+		});
+	}
+
 	// GM-Only stuff.
 	if (!game.user.isGM) return;
 	if (game.settings.get("pf2e", "tokens.autoscale")) game.settings.set("pf2e-jb2a-macros", "smallTokenScale", 0.8);
 	if (!game.modules.get("tokenmagic")?.active) game.settings.set("pf2e-jb2a-macros", "tmfx", false);
+});
+
+pf2eAnimations.hooks.renderChatMessage = Hooks.on("renderChatMessage", async (message, [html]) => {
+	for (const btn of html.querySelectorAll("button.pf2e-animations-settings-button")) {
+		btn.addEventListener("click", (event) => {
+			event.preventDefault();
+			game.settings.sheet.render(true);
+		});
+	}
 });
 
 pf2eAnimations.hooks.createChatMessage = Hooks.on("createChatMessage", async (data) => {

@@ -117,6 +117,11 @@
 				"name": "Animations Update",
 				"label": "Update Menu"
 			}
+		},
+		"welcomeMessage": {
+			"header": "Welcome to PF2e Animations!",
+			"description": "This module provides animation presets for the PF2e system. If you don't want these, please check the settings:",
+			"settingsButton": "Open Settings"
 		}
 	}
 }
