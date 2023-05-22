@@ -1,3 +1,8 @@
+# Version 2.13.1
+
+- Increased the minimum version of all dependencies to their latest version.
+- Added a message that opens up on startup for new users, informing them of the module. (Thank you @Dana / dmarcus!)
+
 # Version 2.13.0
 
 - Added JB2A's Runelord Sins Rune animations.

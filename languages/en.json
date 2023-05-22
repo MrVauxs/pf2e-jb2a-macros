@@ -120,7 +120,8 @@
 		},
 		"welcomeMessage": {
 			"header": "Welcome to PF2e Animations!",
-			"description": "This module provides animation presets for the PF2e system. If you don't want these, please check the settings:",
+			"description": "This module provides animation presets for the PF2e system. These animations can slow down your machine, whether it be due to having a lower-end computer or there being a lot of effects on screen, which is common in higher level play.<p/>If you don't want to see these animations, please see the <b>Sequencer</b> module settings and disable the <b>\"Enable Effects\"</b> setting.",
+			"footer": "You can safely delete this message, you will not be sent another one.",
 			"settingsButton": "Open Settings"
 		}
 	}

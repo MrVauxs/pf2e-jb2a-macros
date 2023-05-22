@@ -1,29 +1,33 @@
 .pf2e-animations-autorec-update-child {
-    flex: 1;
-    border: 2px solid #6f6c66;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+  flex: 1;
+  border: 2px solid #6f6c66;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 .pf2e-animations-autorec-update-text {
-    text-align: center;
+  text-align: center;
 }
 
 .pf2e-animations-autorec-update-child:first-child {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .pf2e-animations-autorec-update-ul {
-    column-count: 2;
-    overflow-x: scroll;
-    max-height: 400px;
+  column-count: 2;
+  overflow-x: scroll;
+  max-height: 400px;
 }
 
 .pf2e-animations-autorec-update-buttons {
-    height: 36px;
+  height: 36px;
 }
 
 .pf2e-animations-muted {
-    color: #777 !important;
+  color: #777 !important;
+}
+
+.pf2e-animations-welcome h3 {
+  text-align: center;
 }

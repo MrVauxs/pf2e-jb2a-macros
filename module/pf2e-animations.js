@@ -58,6 +58,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 								<i class="fas fa-cogs"></i>
 								${game.i18n.localize("pf2e-jb2a-macros.welcomeMessage.settingsButton")}
 							</button>
+							<p style="text-align: center; margin: 0; margin-top: 5px;"><i>${game.i18n.localize("pf2e-jb2a-macros.welcomeMessage.footer")}</i></p>
 						</div>`
 		});
 	}
