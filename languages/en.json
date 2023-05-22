@@ -12,6 +12,7 @@
 			"debugCustom": "The following effects do not exist in PF2e Animations, they are completely new and will remain in your Autorecognition Menu."
 		},
 		"notifications": {
+			"killAnimationsOnKill": "Removed animations from defeated combatant \"{name}\".",
 			"unevenGrid": "Your scene's grid is uneven ({grid}px). This will likely cause your target location to be offset!",
 			"gridless": "Crosshairs are recommended to be used only on a grid-based scene. Gridless scenes can cause issues.",
 			"wrongVersion": "You are missing <b>{modules}</b> for PF2e Animations to fully function! Please update the modules listed!",
@@ -72,6 +73,10 @@
 			}
 		},
 		"settings": {
+			"killAnimationsOnKill": {
+				"name": "Remove Animations on Defeated Tokens",
+				"hint": "Automatically remove animations on tokens marked as defeated in Initiative."
+			},
 			"onlyImageSummons": {
 				"name": "Only Allow Summons that have an Image",
 				"hint": "Only allow for summoning of creatures that have an image."

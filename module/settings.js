@@ -17,6 +17,14 @@ Hooks.once("init", () => {
         type: Boolean,
         default: true
     });
+    game.settings.register("pf2e-jb2a-macros", "killAnimationsOnKill", {
+        scope: "world",
+        config: true,
+        name: game.i18n.localize("pf2e-jb2a-macros.settings.killAnimationsOnKill.name"),
+        hint: game.i18n.localize("pf2e-jb2a-macros.settings.killAnimationsOnKill.hint"),
+        type: Boolean,
+        default: true
+    });
     game.settings.register("pf2e-jb2a-macros", "disableHitAnims", {
         scope: "world",
         config: true,

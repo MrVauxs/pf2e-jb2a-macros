@@ -201,6 +201,13 @@ pf2eAnimations.hooks.AutomatedAnimations.metaData = Hooks.on("AutomatedAnimation
 		ui.notifications.notify(`${metaData.name} (v${metaData.moduleVersion}) | Animation Version: ${metaData.version}<hr>${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.metaData")}`);
 	};
 });
+
+pf2eAnimations.hooks.updateCombatant = Hooks.on("updateCombatant", (combatant, changes, options, userId) => {
+	if (game.settings.get("pf2e-jb2a-macros", "killAnimationsOnKill") && changes.defeated) {
+		if (Sequencer.EffectManager.getEffects({ object: combatant.token }).length) ui.notifications.info(`PF2e Animations | ${pf2eAnimations.localize("pf2e-jb2a-macros.notifications.killAnimationsOnKill", { name: combatant.name })}`);
+		Sequencer.EffectManager.endEffects({ object: combatant.token });
+	}
+});
 //#endregion
 
 pf2eAnimations.debug = function debug(msg, args) {
