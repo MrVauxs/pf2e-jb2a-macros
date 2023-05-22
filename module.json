@@ -2,7 +2,7 @@
 	"id": "pf2e-jb2a-macros",
 	"title": "PF2e Animations",
 	"description": "<p>A module dedicated to making PF2e shine.</p>",
-	"version": "2.11.0",
+	"version": "2.13.1",
 	"authors": [
 		{
 			"name": "MrVauxs",
@@ -103,7 +103,7 @@
 				"id": "pf2e",
 				"type": "system",
 				"compatibility": {
-					"minimum": "4.2.5"
+					"minimum": "4.12.0"
 				}
 			}
 		],
@@ -113,7 +113,7 @@
 				"type": "module",
 				"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json",
 				"compatibility": {
-					"minimum": "1.19.3"
+					"minimum": "1.19.6"
 				}
 			},
 			{
@@ -121,7 +121,7 @@
 				"type": "module",
 				"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
 				"compatibility": {
-					"minimum": "2.412"
+					"minimum": "3.0.6"
 				}
 			},
 			{
@@ -129,14 +129,14 @@
 				"id": "autoanimations",
 				"type": "module",
 				"compatibility": {
-					"minimum": "4.2.15"
+					"minimum": "4.2.52"
 				}
 			},
 			{
 				"id": "warpgate",
 				"type": "module",
 				"compatibility": {
-					"minimum": "1.16.1"
+					"minimum": "1.16.2"
 				},
 				"manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
 			}
