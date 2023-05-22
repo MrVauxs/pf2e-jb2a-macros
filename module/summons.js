@@ -374,6 +374,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
     )
 
     spawnArgs.updates = { token: importedToken, actor: importedActor.data.toObject() }
+    spawnArgs.updates.actor.system.details.alliance = tokenD.actor.system.details.alliance
 
     //if (importedActor.type === "character") { spawnArgs.actorName = "Dummy PC" } else if (importedActor.type === "npc") { spawnArgs.actorName = "Dummy NPC" }
     spawnArgs.actorName = `Dummy NPC (${spawnArgs.updates.token.actor.size === "sm" ? "med" : spawnArgs.updates.token.actor.size})`
@@ -395,7 +396,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
                 .persist()
                 .scaleToObject(importedToken.height * importedToken.texture.scaleX)
                 .opacity(0.5)
-            .play();
+                .play();
         }
     }
 
@@ -403,7 +404,7 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
     const crosshairs = await warpgate.crosshairs.show(crosshairConfig, crosshairShow)
     if (crosshairs.cancelled) return;
 
-    spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [{ ...crosshairs, distance: importedToken.height / 2 * canvas.scene.grid.distance}]))[0]
+    spawnArgs.location = (await canvas.scene.createEmbeddedDocuments('MeasuredTemplate', [{ ...crosshairs, distance: importedToken.height / 2 * canvas.scene.grid.distance }]))[0]
 
     pf2eAnimations.debug("Requesting to GM", spawnArgs)
     await warpgate.event.notify("askGMforSummon", spawnArgs)
@@ -458,7 +459,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
         await AutomatedAnimations.playAnimation(token, item ?? { name: `Summoning Animation Template (${args.origins.itemName})` }, { targets: [spawnedTokenDoc.object] });
         if (updates.token.flags["pf2e-jb2a-macros"]?.scrollingText) await game.settings.set("core", "scrollingStatusText", true);
         if (updates.token.flags["pf2e-jb2a-macros"]?.bloodsplatter) await game.settings.set("splatter", "enableBloodsplatter", true);
-        if (updates.token.flags["pf2e-jb2a-macros"]?.tokenmold) await game.settings.set("Token-Mold", "everyone", {...game.settings.get("Token-Mold", "everyone"), ...{ name: { use: true }}});
+        if (updates.token.flags["pf2e-jb2a-macros"]?.tokenmold) await game.settings.set("Token-Mold", "everyone", { ...game.settings.get("Token-Mold", "everyone"), ...{ name: { use: true } } });
         if (game.modules.get("tokenmagic-automatic-wounds")?.active) {
             // This doesn't actually work and is instead in "Opacity 1" macro but for posterity's sake, it's also included here.
             // Not sure why it works in the macro but not in here. It just doesn't.
@@ -482,7 +483,7 @@ pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
                     pf2eAnimations.debug("Summoning...", args)
                     try {
                         await warpgate.spawnAt(args.location, args.actorName, args.updates, args.callbacks, args.options);
-                    } catch(error) {
+                    } catch (error) {
                         console.error(error)
                     }
                     finally {
