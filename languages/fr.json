@@ -25,7 +25,8 @@
 			"noDependencies": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez activer les modules indiqués !",
 			"wrongVersion": "Il vous manque <b>{modules}</b> pour que les Animations PF2e fonctionnent pleinement ! Veuillez mettre à jour les modules indiqués !",
 			"gridless": "Il est recommandé d'utiliser la mire seulement sur une scène avec grille. Les scènes sans grille pourraient provoquer des soucis.",
-			"unevenGrid": "La grille de votre scène est inégale ({grid}px). Cela entraînera probablement un décalage de l'emplacement de votre cible !"
+			"unevenGrid": "La grille de votre scène est inégale ({grid}px). Cela entraînera probablement un décalage de l'emplacement de votre cible !",
+			"killAnimationsOnKill": "A retiré les animations du combattant vaincu \"{name}\"."
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -67,6 +68,10 @@
 			"tmfx": {
 				"hint": "Quelques animations tirent avantage d'être animées par Token Magic FX au lieu de Sequencer. Notez que ce réglage n'est montré que lorsque le module Token magic FX est installé.",
 				"name": "Utiliser les effets de Token magic"
+			},
+			"killAnimationsOnKill": {
+				"hint": "Retirer automatiquement les animations sur les jetons marqués comme vaincus dans l'initiative.",
+				"name": "Retirer les animations sur les jetons vaincus"
 			}
 		},
 		"macro": {
@@ -112,6 +117,12 @@
 				}
 			},
 			"outOfRange": "Hors de portée !"
+		},
+		"welcomeMessage": {
+			"header": "Bienvenue sur PF2e Animations !",
+			"settingsButton": "Ouvrir les réglages",
+			"footer": "Vous pouvez effacer ce message en toute sécurité, il ne vous sera pas envoyé d'autre message.",
+			"description": "Ce module fournit des préréglages d'animation pour le système PF2e. Ces animations peuvent ralentir votre machine, que ce soit parce que vous avez un ordinateur en bout de course ou parce qu'il y a beaucoup d'effets à l'écran, ce qui est courant dans les hauts niveaux du jeu.<p/>Si vous ne voulez pas voir ces animations, veuillez consulter les paramètres du module <b>Sequencer</b> et désactiver le paramètre <b>\"Activer les effets\"</b>."
 		}
 	}
 }
