@@ -25,7 +25,8 @@
 			"tooManyArgs": "此宏的条件过多！以下条件不可用：{issues}",
 			"noPrem": "你没有安装<a href='https://www.patreon.com/JB2A/membership'>JB2A Patreon版本</a> ，无法使用此动画！",
 			"gridless": "仅推荐在网格地图中使用十字准星，无网格地图可能会引起错误",
-			"unevenGrid": "你的场景网格宽度不一致，这可能会因此目标定位错误！"
+			"unevenGrid": "你的场景网格宽度不一致，这可能会因此目标定位错误！",
+			"killAnimationsOnKill": "被击败的参战者\"{name}\"上的动画特效已被移除。"
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -67,6 +68,10 @@
 			"tmfx": {
 				"name": "使用Token Magic的效果",
 				"hint": "部分动画效果来自Token Magic FX而非Sequencer。此选项仅在安装Token Magic FX后出现。"
+			},
+			"killAnimationsOnKill": {
+				"name": "移除被击败的指示物上的动画特效",
+				"hint": "自动移除被击败的指示物上的动画特效。"
 			}
 		},
 		"macro": {
@@ -112,6 +117,12 @@
 				}
 			},
 			"outOfRange": "超出射程！"
+		},
+		"welcomeMessage": {
+			"header": "欢迎使用PF2e动画特效！",
+			"settingsButton": "打开设置",
+			"description": "本模组为PF2e系统提供了预制的动画特效。如果你的电脑配置较低或者画面中同时存在大量特效（常见于高级别的游戏中），这些动画特效可能会造成你的游戏卡顿。<p/>如果你不想看见这些动画特效，请查看<b>Sequencer</b>模组的设置并关闭<b>\"Enable Effects\"</b>选项。",
+			"footer": "你可以安全地删除本消息，本消息不会被再次发送。"
 		}
 	}
 }
