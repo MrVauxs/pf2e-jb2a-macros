@@ -87,10 +87,6 @@ Hooks.once("init", () => {
         default: false
     });
 
-    if (!game.modules.get("tokenmagic")?.active) {
-        game.settings.set("pf2e-jb2a-macros", "tmfx", false)
-    }
-
     game.settings.register("pf2e-jb2a-macros", "debug", {
         scope: "client",
         config: true,
@@ -147,3 +143,9 @@ Hooks.once("init", () => {
     });
     //#endregion
 });
+
+Hooks.once("ready", () => {
+    if (!game.modules.get("tokenmagic")?.active) {
+        game.settings.set("pf2e-jb2a-macros", "tmfx", false)
+    }
+})
