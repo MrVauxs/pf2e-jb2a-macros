@@ -16,4 +16,4 @@ Hooks.once('sequencer.ready', () => {
             .fadeIn(args.duration, args.options)
             .fadeOut(args.duration, args.options)
     });
-})
+});

@@ -25,6 +25,7 @@ If you want to support me, you can tip me over on [Patreon](https://www.patreon.
 - [PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat) is integrated into the module. Various reload actions can be found in the PF2e Animations Compendiums which provide both reloading functions and animation + sound effects to your reloads.
 - [Token Magic FX](https://github.com/Feu-Secret/Tokenmagic) is an optional dependency for animations that modify how your token looks, such as Petrified grayed out tokens or the "heavy breathing" effect of Encumbered.
 - [PF2e Modifiers Matter](https://github.com/shemetz/pf2e-modifiers-matter) is integrated into the module. You can now trigger effects, sounds, or macros, in Automated Animations whenever a modifier has made or broke your DC.
+- [JB2A Extras](https://github.com/Jules-Bens-Aa/jb2a-extras) includes a few animations that are not included either versions of the JB2A Assets modules. These include edited Forgotten Adventure assets as well as Pathfinder Sins Runes animations.
 
 ## Not-Recommended Modules
 - [Automated Evocations](https://github.com/theripper93/automated-evocations), PF2e Animations provides full range of automation for summoning spells as well as animations for them, which are fully customizable by both the GM and the player, on global and individual actor scale.
