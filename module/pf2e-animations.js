@@ -43,7 +43,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 	}
 
 	// Create an event for summoning macros.
-	warpgate.event.watch("askGMforSummon", (eventData) => { pf2eAnimations.askGMforSummon(eventData) })
+	warpgate.event.watch("askGMforSummon", (eventData) => { pf2eAnimations.debug("Received Warpgate Watch Event", eventData); pf2eAnimations.askGMforSummon(eventData) })
 
 	// Welcome message for new users.
 	if (!(game.user.getFlag("pf2e-jb2a-macros", "displayedWelcomeMessage") ?? false)) {

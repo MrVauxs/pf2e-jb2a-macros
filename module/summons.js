@@ -411,8 +411,15 @@ pf2eAnimations.playerSummons = async function playerSummons({ args = [], importe
     tokenD.actor.sheet.maximize();
 }
 
+/*
+    In the Hooks.once("ready") function, we register the event listener for the "askGMforSummon" event.
+    Line 46 in pf2e-animations.js
+
+    warpgate.event.watch("askGMforSummon", (eventData) => { pf2eAnimations.debug("Received Warpgate Watch Event", eventData); pf2eAnimations.askGMforSummon(eventData) })
+*/
+
 pf2eAnimations.askGMforSummon = async function askGMforSummon(args) {
-    if (!warpgate.util.isFirstGM()) return;
+    if (!warpgate.util.isFirstGM()) return pf2eAnimations.debug("Not the first GM, ignoring request!", args);
 
     // Checks if Dummy NPC/PC actors exist. If not, creates them.
     pf2eAnimations.createIfMissingDummy();
