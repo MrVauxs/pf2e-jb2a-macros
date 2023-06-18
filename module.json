@@ -1,159 +1,159 @@
 {
-	"id": "pf2e-jb2a-macros",
-	"title": "PF2e Animations",
-	"description": "<p>A module dedicated to making PF2e shine.</p>",
-	"version": "2.15.0",
-	"authors": [
-		{
-			"name": "MrVauxs",
-			"discord": "MrVauxs#8622",
-			"twitter": "@ThatVauxs",
-			"patreon": "mrvauxs",
-			"ko-fi": "mrvauxs",
-			"flags": {}
-		}
-	],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "languages/en.json"
-		},
-		{
-			"lang": "pl",
-			"name": "polski",
-			"path": "languages/pl.json"
-		},
-		{
-			"lang": "fr",
-			"name": "Français",
-			"path": "languages/fr.json"
-		},
-		{
-			"lang": "cn",
-			"name": "中文（简体）",
-			"path": "languages/cn.json"
-		},
-		{
-			"lang": "zh-tw",
-			"name": "正體中文",
-			"path": "languages/zh-tw.json"
-		},
-		{
-			"lang": "de",
-			"name": "Deutsch",
-			"path": "languages/de.json"
-		},
-		{
-			"lang": "it",
-			"name": "Italiano",
-			"path": "languages/it.json"
-		}
-	],
-	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
-	"compatibility": {
-		"minimum": "10",
-		"verified": "11"
-	},
-	"esmodules": [
-		"module/pf2e-animations.js",
-		"module/sequencer-extensions.js",
-		"module/settings.js",
-		"module/summons.js",
-		"module/updateMenu.js",
-		"module/modifiers-matter.js"
-	],
-	"scripts": [],
-	"styles": [
-		"styles/pf2e-animation-macros.css"
-	],
-	"manifestPlusVersion": "1.2.0",
-	"packs": [
-		{
-			"label": "PF2e Animation Macros",
-			"name": "Macros",
-			"path": "packs/macros.db",
-			"system": "pf2e",
-			"type": "Macro",
-			"private": false,
-			"flags": {}
-		},
-		{
-			"label": "PF2e Animation Actors",
-			"name": "Actors",
-			"path": "packs/actors.db",
-			"system": "pf2e",
-			"type": "Actor",
-			"private": false,
-			"flags": {}
-		},
-		{
-			"label": "PF2e Animation Items",
-			"name": "Actions",
-			"path": "packs/actions.db",
-			"system": "pf2e",
-			"type": "Item",
-			"private": false,
-			"flags": {}
-		}
-	],
-	"relationships": {
-		"systems": [
-			{
-				"id": "pf2e",
-				"type": "system",
-				"compatibility": {
-					"minimum": "4.12.0"
-				}
-			}
-		],
-		"requires": [
-			{
-				"id": "sequencer",
-				"type": "module",
-				"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "3.0.11"
-				}
-			},
-			{
-				"manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json",
-				"id": "autoanimations",
-				"type": "module",
-				"compatibility": {
-					"minimum": "4.2.60"
-				}
-			},
-			{
-				"id": "warpgate",
-				"type": "module",
-				"compatibility": {
-					"minimum": "1.17.2"
-				},
-				"manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
-			}
-		]
-	},
-	"media": [
-		{
-			"type": "icon",
-			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/logo.png?raw=true"
-		},
-		{
-			"type": "setup",
-			"url": "/modules/pf2e-jb2a-macros/cover.png"
-		},
-		{
-			"type": "cover",
-			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/cover.png?raw=true"
-		},
-		{
-			"type": "screenshot",
-			"url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/preview.gif?raw=true",
-			"caption": "Preview of PF2e Animations module."
-		}
-	],
-	"changelog": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/CHANGELOG.md",
-	"manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
-	"download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.zip"
+    "id": "pf2e-jb2a-macros",
+    "title": "PF2e Animations",
+    "description": "<p>A module dedicated to making PF2e shine.</p>",
+    "version": "2.14.3",
+    "authors": [
+        {
+            "name": "MrVauxs",
+            "discord": "MrVauxs#8622",
+            "twitter": "@ThatVauxs",
+            "patreon": "mrvauxs",
+            "ko-fi": "mrvauxs",
+            "flags": {}
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "pl",
+            "name": "polski",
+            "path": "languages/pl.json"
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "languages/fr.json"
+        },
+        {
+            "lang": "cn",
+            "name": "中文（简体）",
+            "path": "languages/cn.json"
+        },
+        {
+            "lang": "zh-tw",
+            "name": "正體中文",
+            "path": "languages/zh-tw.json"
+        },
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "languages/de.json"
+        },
+        {
+            "lang": "it",
+            "name": "Italiano",
+            "path": "languages/it.json"
+        }
+    ],
+    "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11"
+    },
+    "esmodules": [
+        "module/pf2e-animations.js",
+        "module/sequencer-extensions.js",
+        "module/settings.js",
+        "module/summons.js",
+        "module/updateMenu.js",
+        "module/modifiers-matter.js"
+    ],
+    "scripts": [],
+    "styles": [
+        "styles/pf2e-animation-macros.css"
+    ],
+    "manifestPlusVersion": "1.2.0",
+    "packs": [
+        {
+            "label": "PF2e Animation Macros",
+            "name": "Macros",
+            "path": "packs/macros.db",
+            "system": "pf2e",
+            "type": "Macro",
+            "private": false,
+            "flags": {}
+        },
+        {
+            "label": "PF2e Animation Actors",
+            "name": "Actors",
+            "path": "packs/actors.db",
+            "system": "pf2e",
+            "type": "Actor",
+            "private": false,
+            "flags": {}
+        },
+        {
+            "label": "PF2e Animation Items",
+            "name": "Actions",
+            "path": "packs/actions.db",
+            "system": "pf2e",
+            "type": "Item",
+            "private": false,
+            "flags": {}
+        }
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "pf2e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "5.0.1"
+                }
+            }
+        ],
+        "requires": [
+            {
+                "id": "sequencer",
+                "type": "module",
+                "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
+                "compatibility": {
+                    "minimum": "3.0.11"
+                }
+            },
+            {
+                "manifest": "https://github.com/otigon/automated-jb2a-animations/releases/latest/download/module.json",
+                "id": "autoanimations",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "4.2.60"
+                }
+            },
+            {
+                "id": "warpgate",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "1.17.2"
+                },
+                "manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
+            }
+        ]
+    },
+    "media": [
+        {
+            "type": "icon",
+            "url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/logo.png?raw=true"
+        },
+        {
+            "type": "setup",
+            "url": "/modules/pf2e-jb2a-macros/cover.png"
+        },
+        {
+            "type": "cover",
+            "url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/cover.png?raw=true"
+        },
+        {
+            "type": "screenshot",
+            "url": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/preview.gif?raw=true",
+            "caption": "Preview of PF2e Animations module."
+        }
+    ],
+    "changelog": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/CHANGELOG.md",
+    "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
+    "download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.zip"
 }
