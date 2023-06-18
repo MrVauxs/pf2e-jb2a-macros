@@ -30,9 +30,6 @@ If you want to support me, you can tip me over on [Patreon](https://www.patreon.
 ## Not-Recommended Modules
 - [Automated Evocations](https://github.com/theripper93/automated-evocations), PF2e Animations provides full range of automation for summoning spells as well as animations for them, which are fully customizable by both the GM and the player, on global and individual actor scale.
 
-## Why Advanced Macros?
-Until [this feature](https://github.com/foundryvtt/foundryvtt/issues/7184) is implemented, it's a necessary part of the module.
-
 ## Languages
 [![Translation status](https://weblate.foundryvtt-hub.com/widgets/pf2e-animation-macros/-/multi-auto.svg)](https://weblate.foundryvtt-hub.com/engage/pf2e-animation-macros/)
 

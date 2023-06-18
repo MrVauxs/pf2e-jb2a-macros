@@ -2,7 +2,7 @@
 	"id": "pf2e-jb2a-macros",
 	"title": "PF2e Animations",
 	"description": "<p>A module dedicated to making PF2e shine.</p>",
-	"version": "2.14.0",
+	"version": "2.15.0",
 	"authors": [
 		{
 			"name": "MrVauxs",
@@ -53,7 +53,7 @@
 	"url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
 	"compatibility": {
 		"minimum": "10",
-		"verified": "10"
+		"verified": "11"
 	},
 	"esmodules": [
 		"module/pf2e-animations.js",
