@@ -652,6 +652,7 @@ pf2eAnimations.alignmentStringToTraits = function alignmentStringToTraits(
 
 pf2eAnimations.crosshairs = async function crosshairs(
   args = {
+    tokenD,
     token,
     item,
   },
@@ -694,7 +695,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
     );
   }
 
-  const tokenDoc = args.token.document;
+  const tokenDoc = args?.token?.document ?? args?.tokenD?.document;
   const callbacks = {};
 
   const crosshairConfig = {
