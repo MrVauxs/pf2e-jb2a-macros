@@ -1,3 +1,20 @@
+# Version 2.14.4
+- Fixed macros that used "token" as a variable.
+- Fixed Manifest Eidolon macro not working on V11-transitioned but older versions of PF2e Companion Compendium.
+
+# Version 2.14.3
+- Fixed spell level filtering on Summoning being broken on V11.
+
+# Version 2.14.2
+- Updated minimum requirements for V11 version.
+
+# Version 2.14.1
+- Added thumbnail image.
+
+# Version 2.14.0
+- Confirmed V11 Compatibility.
+- Removed Advanced Macros dependency.
+
 # Version 2.13.1
 
 - Increased the minimum version of all dependencies to their latest version.
