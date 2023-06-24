@@ -88,12 +88,6 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
       new autorecUpdateFormApplication().render(true);
   }
 
-  // Create an event for summoning macros.
-  warpgate.event.watch("askGMforSummon", (eventData) => {
-    pf2eAnimations.debug("Received Warpgate Watch Event", eventData);
-    pf2eAnimations.askGMforSummon(eventData);
-  });
-
   // Welcome message for new users.
   if (
     !(game.user.getFlag("pf2e-jb2a-macros", "displayedWelcomeMessage") ?? false)
@@ -163,9 +157,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on(
     // Default Matches
     if (data.isDamageRoll && /Sneak Attack/.test(flavor)) {
       pf2eAnimations.debug("Sneak Attack", data);
-      let [sneak] = data.token._actor.items.filter(
-        (i) => i.name === "Sneak Attack"
-      );
+      let [sneak] = data.actor.items.filter((i) => i.name === "Sneak Attack");
       // Modify sneak to not be a feat because AA no like feat
       // sneak.type = "strike"
       await AutomatedAnimations.playAnimation(token, sneak, {
@@ -189,7 +181,9 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on(
           )}`
         );
 
-      let items = data.token._actor.items.filter((i) =>
+      console.log("degreeOfSuccess", data);
+
+      let items = data.actor.items.filter((i) =>
         i.name.includes("Attack Animation Template")
       );
       if (Object.keys(items).length === 0) {

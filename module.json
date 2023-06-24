@@ -59,7 +59,6 @@
         "module/pf2e-animations.js",
         "module/sequencer-extensions.js",
         "module/settings.js",
-        "module/summons.js",
         "module/updateMenu.js",
         "module/modifiers-matter.js"
     ],

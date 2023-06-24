@@ -51,6 +51,7 @@
 					"unique": "The filters are uniquely set as per {unique}.",
 					"dancingLights": "Select your dancing lights…",
 					"sorted": "Sorted by level and alphabetically.",
+					"nameArg": "Filtered by name: <b>{name}</b>.",
 					"summonArg": "Filtered by level <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
 					"levelArg": "Filtered by level <b>{level1} and above, up to {level2}</b>.",
 					"traitsArg": "Filtered by traits: <b>{traits}</b>.",
