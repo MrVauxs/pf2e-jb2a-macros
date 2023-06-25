@@ -1,3 +1,6 @@
+# Version 2.15.1
+- Added safeguards for people who don't have Foundry Summons installed. Because I forgot to add it to the two other macros that use it.
+
 # Version 2.15.0
 - Deleted the summoning functionality in favor of Foundry Summons.
 - Moved animations to using Foundry Summons hooks.
