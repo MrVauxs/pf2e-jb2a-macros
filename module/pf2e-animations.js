@@ -478,7 +478,7 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
     AutomatedAnimations.playAnimation(
       sourceData.summonerTokenDocument,
       item ?? {
-        name: `Summoning Animation Template (${sourceData.flags.item.name})`,
+        name: `Summoning Animation Template (${sourceData?.flags?.item?.name})`,
       },
       {
         targets: [tokenDoc.object],
