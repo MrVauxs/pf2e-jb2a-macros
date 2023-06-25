@@ -67,6 +67,18 @@
         "styles/pf2e-animation-macros.css"
     ],
     "manifestPlusVersion": "1.2.0",
+    "packFolders": [
+        {
+            "name": "PF2e Animations",
+            "sorting": "a",
+            "color": "#6f1c17",
+            "packs": [
+                "Macros",
+                "Actors",
+                "Actions"
+            ]
+        }
+    ],
     "packs": [
         {
             "label": "PF2e Animation Macros",

@@ -455,6 +455,38 @@ pf2eAnimations.hooks.updateCombatant = Hooks.on(
     }
   }
 );
+
+pf2eAnimations.hooks.foundrySummons = Hooks.on(
+  "fs-postSummon",
+  ({ tokenDoc, sourceData }) => {
+    sourceData.flags.doNotContinue = true;
+    let items = sourceData.summonerTokenDocument.actor.items.filter((item) => {
+      item.name.includes("Summoning Animation Template");
+    });
+
+    let item =
+      items.find((i) =>
+        i.name.includes(`Summoning Animation Template (${tokenDoc.name})`)
+      ) ??
+      items.find((i) =>
+        i.name.includes(
+          `Summoning Animation Template (${sourceData.flags.item.name})`
+        )
+      ) ??
+      items.find((i) => i.name === `Summoning Animation Template`);
+
+    AutomatedAnimations.playAnimation(
+      sourceData.summonerTokenDocument,
+      item ?? {
+        name: `Summoning Animation Template (${sourceData.flags.item.name})`,
+      },
+      {
+        targets: [tokenDoc.object],
+        hitTargets: [tokenDoc.object],
+      }
+    );
+  }
+);
 //#endregion
 
 pf2eAnimations.debug = function debug(msg, args) {

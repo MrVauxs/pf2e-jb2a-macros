@@ -1,3 +1,8 @@
+# Version 2.15.0
+- Deleted the summoning functionality in favor of Foundry Summons.
+- Moved animations to using Foundry Summons hooks.
+- Fixed sounds not triggering on Hit/Miss attack rolls.
+
 # Version 2.14.4
 - Fixed macros that used "token" as a variable.
 - Fixed Manifest Eidolon macro not working on V11-transitioned but older versions of PF2e Companion Compendium.
