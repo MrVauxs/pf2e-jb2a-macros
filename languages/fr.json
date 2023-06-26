@@ -107,7 +107,8 @@
 					"uncommonArg": "Les choix <b>peu courants ou plus rares</b> sont autorisés.",
 					"sourceArg": "Filtré par source : <b>{sources}</b>.",
 					"nothingFound": "Rien trouvé. Affinez vos arguments pour filtrer !",
-					"unique": "Les filtres sont définis de manière unique selon {unique}."
+					"unique": "Les filtres sont définis de manière unique selon {unique}.",
+					"nameArg": "Filtré par nom : <b>{name}</b>."
 				},
 				"gm": {
 					"title": "Demande d'invocation du joueur",
