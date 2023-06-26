@@ -460,20 +460,26 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
   "fs-postSummon",
   ({ tokenDoc, sourceData }) => {
     sourceData.flags.doNotContinue = true;
-    let items = sourceData.summonerTokenDocument.actor.items.filter((item) => {
-      item.name.includes("Summoning Animation Template");
-    });
+    console.log(sourceData.summonerTokenDocument);
+    let items = sourceData.summonerTokenDocument?.actor?.items?.filter(
+      (item) => {
+        item.name.includes("Summoning Animation Template");
+      }
+    );
+    let item;
 
-    let item =
-      items.find((i) =>
-        i.name.includes(`Summoning Animation Template (${tokenDoc.name})`)
-      ) ??
-      items.find((i) =>
-        i.name.includes(
-          `Summoning Animation Template (${sourceData.flags.item.name})`
-        )
-      ) ??
-      items.find((i) => i.name === `Summoning Animation Template`);
+    if (items?.length > 0) {
+      item =
+        items.find((i) =>
+          i.name.includes(`Summoning Animation Template (${tokenDoc.name})`)
+        ) ??
+        items.find((i) =>
+          i.name.includes(
+            `Summoning Animation Template (${sourceData?.flags?.item?.name})`
+          )
+        ) ??
+        items.find((i) => i.name === `Summoning Animation Template`);
+    }
 
     AutomatedAnimations.playAnimation(
       sourceData.summonerTokenDocument,
@@ -487,6 +493,47 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
     );
   }
 );
+
+pf2eAnimations.hooks.foundrySummonsWrapper = Hooks.on(
+  "fs-addWrapperClasses",
+  (wrappers) => {
+    class DancingLight extends CONFIG.FoundrySummons.docWrapperClasses
+      .DocWrapper {
+      constructor(indexItem, variant) {
+        super(indexItem);
+        this.variant = this.variant ?? variant;
+        this.img = this.getLamp(this.variant, true);
+        this.texture = this.getLamp(this.variant, false);
+        this.id = variant;
+        this.name = variant + " " + indexItem.name;
+      }
+
+      getLamp(color, isThumb) {
+        return `modules/${
+          game.modules.get("jb2a_patreon") ? "jb2a_patreon" : "JB2A_DnD5e"
+        }/Library/Cantrip/Dancing_Lights/DancingLights_01_${color.replaceAll(
+          "-",
+          ""
+        )}_${isThumb ? "Thumb.webp" : "200x200.webm"}`;
+      }
+
+      async loadDocument() {
+        let document = await fromUuid(this.uuid);
+        document = document.clone({
+          img: this.img,
+          prototypeToken: {
+            texture: { src: this.texture },
+          },
+        });
+
+        return document;
+      }
+    }
+
+    wrappers.DancingLight = DancingLight;
+  }
+);
+
 //#endregion
 
 pf2eAnimations.debug = function debug(msg, args) {
