@@ -1,5 +1,6 @@
 # Version 2.15.2
 - Fixed and updated compatibility with Foundry Summons 1.3.0.
+- Updated French localization.
 
 # Version 2.15.1
 - Added safeguards for people who don't have Foundry Summons installed. Because I forgot to add it to the two other macros that use it.
