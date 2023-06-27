@@ -459,8 +459,6 @@ pf2eAnimations.hooks.updateCombatant = Hooks.on(
 pf2eAnimations.hooks.foundrySummons = Hooks.on(
   "fs-postSummon",
   ({ tokenDoc, sourceData }) => {
-    sourceData.flags.doNotContinue = true;
-
     let items = sourceData.summonerTokenDocument?.actor?.items?.filter(
       (item) => {
         item.name.includes("Summoning Animation Template");
@@ -484,16 +482,20 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
     const summoner = canvas.tokens.get(sourceData.summonerTokenDocument._id);
     const summoned = tokenDoc.object;
 
-    AutomatedAnimations.playAnimation(
-      summoner,
-      item ?? {
-        name: `Summoning Animation Template (${sourceData?.flags?.item?.name})`,
-      },
-      {
-        targets: [summoned],
-        hitTargets: [summoned],
-      }
-    );
+    setTimeout(() => {
+      AutomatedAnimations.playAnimation(
+        summoner,
+        item ?? {
+          name: `Summoning Animation Template (${sourceData?.flags?.item?.name})`,
+        },
+        {
+          targets: [summoned],
+          hitTargets: [summoned],
+        }
+      );
+    }, 100);
+
+    return false;
   }
 );
 
