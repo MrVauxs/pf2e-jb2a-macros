@@ -1,3 +1,8 @@
+# Version 2.15.3
+- Fixed Manifest Eidolon not manifesting.
+- Fixed Summon Spells not animating.
+- Added a tiny delay from the time of the summoning to animating it, due to it apparently being so fast it broke Foundry's rendering as it attempts to reveal a token that did not yet exist.
+
 # Version 2.15.2
 - Fixed and updated compatibility with Foundry Summons 1.3.0.
 - Updated French localization.
