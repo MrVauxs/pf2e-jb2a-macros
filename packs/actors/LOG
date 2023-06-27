@@ -1,8 +1,8 @@
-2023/06/27-11:20:39.379090 ffff86681160 Recovering log #59
-2023/06/27-11:20:39.387011 ffff86681160 Delete type=3 #57
-2023/06/27-11:20:39.387071 ffff86681160 Delete type=0 #59
-2023/06/27-11:35:27.484663 fffe654e0160 Level-0 table #64: started
-2023/06/27-11:35:27.484708 fffe654e0160 Level-0 table #64: 0 bytes OK
-2023/06/27-11:35:27.487766 fffe654e0160 Delete type=0 #62
-2023/06/27-11:35:27.501694 fffe654e0160 Manual compaction at level-0 from '!actors!teCoIt8sjArsIl4D' @ 72057594037927935 : 1 .. '!actors!teCoIt8sjArsIl4D' @ 0 : 0; will stop at (end)
-2023/06/27-11:35:27.501799 fffe654e0160 Manual compaction at level-1 from '!actors!teCoIt8sjArsIl4D' @ 72057594037927935 : 1 .. '!actors!teCoIt8sjArsIl4D' @ 0 : 0; will stop at (end)
+2023/06/27-21:51:05.046375 ffff8567f160 Recovering log #63
+2023/06/27-21:51:05.055323 ffff8567f160 Delete type=0 #63
+2023/06/27-21:51:05.055355 ffff8567f160 Delete type=3 #61
+2023/06/27-22:28:00.300902 fffe654e0160 Level-0 table #68: started
+2023/06/27-22:28:00.300931 fffe654e0160 Level-0 table #68: 0 bytes OK
+2023/06/27-22:28:00.303699 fffe654e0160 Delete type=0 #66
+2023/06/27-22:28:00.309490 fffe654e0160 Manual compaction at level-0 from '!actors!teCoIt8sjArsIl4D' @ 72057594037927935 : 1 .. '!actors!teCoIt8sjArsIl4D' @ 0 : 0; will stop at (end)
+2023/06/27-22:28:00.309528 fffe654e0160 Manual compaction at level-1 from '!actors!teCoIt8sjArsIl4D' @ 72057594037927935 : 1 .. '!actors!teCoIt8sjArsIl4D' @ 0 : 0; will stop at (end)

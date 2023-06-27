@@ -460,7 +460,7 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
   "fs-postSummon",
   ({ tokenDoc, sourceData }) => {
     sourceData.flags.doNotContinue = true;
-    console.log(sourceData.summonerTokenDocument);
+
     let items = sourceData.summonerTokenDocument?.actor?.items?.filter(
       (item) => {
         item.name.includes("Summoning Animation Template");
@@ -481,14 +481,17 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
         items.find((i) => i.name === `Summoning Animation Template`);
     }
 
+    const summoner = canvas.tokens.get(sourceData.summonerTokenDocument._id);
+    const summoned = tokenDoc.object;
+
     AutomatedAnimations.playAnimation(
-      sourceData.summonerTokenDocument,
+      summoner,
       item ?? {
         name: `Summoning Animation Template (${sourceData?.flags?.item?.name})`,
       },
       {
-        targets: [tokenDoc.object],
-        hitTargets: [tokenDoc.object],
+        targets: [summoned],
+        hitTargets: [summoned],
       }
     );
   }
