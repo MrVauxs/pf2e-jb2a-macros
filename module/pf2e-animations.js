@@ -445,12 +445,16 @@ pf2eAnimations.hooks.updateCombatant = Hooks.on(
       if (
         Sequencer.EffectManager.getEffects({ object: combatant.token }).length
       )
-        ui.notifications.info(
-          `PF2e Animations | ${pf2eAnimations.localize(
-            "pf2e-jb2a-macros.notifications.killAnimationsOnKill",
-            { name: combatant.name }
-          )}`
-        );
+        if (
+          game.settings.get("pf2e-jb2a-macros", "killAnimationsOnKillNotify")
+        ) {
+          ui.notifications.info(
+            `PF2e Animations | ${pf2eAnimations.localize(
+              "pf2e-jb2a-macros.notifications.killAnimationsOnKill",
+              { name: combatant.name }
+            )}`
+          );
+        }
       Sequencer.EffectManager.endEffects({ object: combatant.token });
     }
   }
