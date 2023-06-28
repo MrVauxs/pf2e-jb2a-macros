@@ -107,7 +107,8 @@
 					"hasImageArg": "根据生物是否有<b>图像</b>筛选.",
 					"levelArg": "根据等级筛选<b>{level1}到{level2}</b>.",
 					"nothingFound": "找不到结果。检查你的筛选条件！",
-					"unique": "此筛选器根据{unique}单独设置"
+					"unique": "此筛选器根据{unique}单独设置",
+					"nameArg": "根据名称筛选： <b>{name}</b>。"
 				},
 				"gm": {
 					"unknownUser": "一个未知用户",
