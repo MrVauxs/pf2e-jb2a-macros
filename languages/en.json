@@ -76,7 +76,7 @@
 		"settings": {
 			"killAnimationsOnKillNotify": {
 				"name": "Notify about Removing Animations on Defeated Tokens",
-				"hint": "Notify the GM about removing animations on tokens marked as defeated in Initiative."
+				"hint": "Notify about removing animations on tokens marked as defeated in Initiative."
 			},
 			"killAnimationsOnKill": {
 				"name": "Remove Animations on Defeated Tokens",
