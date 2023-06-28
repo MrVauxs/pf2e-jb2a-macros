@@ -1,5 +1,5 @@
 # Version 2.15.5
-- Add a Setting to turn off "Removed animations from defeated combatant" notifications.
+- Added a Setting to turn off "Removed animations from defeated combatant" notifications.
 
 # Version 2.15.4
 - Fixed Spiritual Weapon.
