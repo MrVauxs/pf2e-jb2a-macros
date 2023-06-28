@@ -1,3 +1,9 @@
+# Version 2.15.5
+- Add a Setting to turn off "Removed animations from defeated combatant" notifications.
+
+# Version 2.15.4
+- Fixed Spiritual Weapon.
+
 # Version 2.15.3
 - Fixed Manifest Eidolon not manifesting.
 - Fixed Summon Spells not animating.
