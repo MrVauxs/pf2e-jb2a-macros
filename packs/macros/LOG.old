@@ -1,15 +1,8 @@
-2023/06/27-22:29:08.038311 ffff85e80160 Recovering log #74
-2023/06/27-22:29:08.046840 ffff85e80160 Delete type=3 #72
-2023/06/27-22:29:08.046881 ffff85e80160 Delete type=0 #74
-2023/06/27-22:33:54.317850 fffe654e0160 Level-0 table #79: started
-2023/06/27-22:33:54.320643 fffe654e0160 Level-0 table #79: 1607 bytes OK
-2023/06/27-22:33:54.323197 fffe654e0160 Delete type=0 #77
-2023/06/27-22:33:54.328987 fffe654e0160 Manual compaction at level-0 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
-2023/06/27-22:33:54.329404 fffe654e0160 Manual compaction at level-1 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at '!macros!Qyoalm1R3chywfE0' @ 167 : 1
-2023/06/27-22:33:54.329412 fffe654e0160 Compacting 1@1 + 1@2 files
-2023/06/27-22:33:54.334549 fffe654e0160 Generated table #80@1: 62 keys, 97513 bytes
-2023/06/27-22:33:54.334576 fffe654e0160 Compacted 1@1 + 1@2 files => 97513 bytes
-2023/06/27-22:33:54.337232 fffe654e0160 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/06/27-22:33:54.337317 fffe654e0160 Delete type=2 #79
-2023/06/27-22:33:54.337417 fffe654e0160 Delete type=2 #71
-2023/06/27-22:33:54.341704 fffe654e0160 Manual compaction at level-1 from '!macros!Qyoalm1R3chywfE0' @ 167 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
+2023/06/27-22:39:20.179170 ffff86e82160 Recovering log #78
+2023/06/27-22:39:20.191430 ffff86e82160 Delete type=3 #76
+2023/06/27-22:39:20.191469 ffff86e82160 Delete type=0 #78
+2023/06/27-22:57:35.227918 fffe654e0160 Level-0 table #84: started
+2023/06/27-22:57:35.227961 fffe654e0160 Level-0 table #84: 0 bytes OK
+2023/06/27-22:57:35.230691 fffe654e0160 Delete type=0 #82
+2023/06/27-22:57:35.230811 fffe654e0160 Manual compaction at level-0 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
+2023/06/27-22:57:35.230849 fffe654e0160 Manual compaction at level-1 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
