@@ -58,7 +58,7 @@
 				"hint": "Ouvre automatiquement le menu de mise à jour de l'auto-reconnaissance lorsque le module est mis à jour."
 			},
 			"allowUncommonSummons": {
-				"name": "Autoriser des invocations pas courantes",
+				"name": "Autoriser des invocations qui ne sont pas courantes",
 				"hint": "Permet aux joueurs d'invoquer des créatures peu courantes, rares ou uniques. Vous pouvez également autoriser cela pour des sorts individuels en ajoutant le terme en anglais \"uncommon\" aux arguments des sorts soit dans le menu de reconnaissance automatique soit dans le sort lui-même sur une feuille de personnage."
 			},
 			"onlyImageSummons": {
@@ -72,6 +72,10 @@
 			"killAnimationsOnKill": {
 				"hint": "Retirer automatiquement les animations sur les jetons marqués comme vaincus dans l'initiative.",
 				"name": "Retirer les animations sur les jetons vaincus"
+			},
+			"killAnimationsOnKillNotify": {
+				"name": "Notifier le retrait des animations sur les jetons vaincus",
+				"hint": "Notifier le retrait des animations sur les jetons marqués comme vaincus dans l'initiative."
 			}
 		},
 		"macro": {
