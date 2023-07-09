@@ -21,6 +21,7 @@ If you want to support me, you can tip me over on [Patreon](https://www.patreon.
 **You can also [commission me](https://ko-fi.com/mrvauxs/commissions) if you want something animated ASAP or an unique version of an animation!**
 
 ## Optional Modules
+- [Foundry Summons](https://foundryvtt.com/packages/foundry-summons) for all summoning animations and functions.
 - [SoundFx Library](https://github.com/CDeenen/SoundFxLibrary) and [Animated Spell Effects: Cartoon](https://github.com/jackkerouac/animated-spell-effects-cartoon) for sounds.
 - [PF2e Ranged Combat](https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat) is integrated into the module. Various reload actions can be found in the PF2e Animations Compendiums which provide both reloading functions and animation + sound effects to your reloads.
 - [Token Magic FX](https://github.com/Feu-Secret/Tokenmagic) is an optional dependency for animations that modify how your token looks, such as Petrified grayed out tokens or the "heavy breathing" effect of Encumbered.
