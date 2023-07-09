@@ -72,6 +72,10 @@
 			"killAnimationsOnKill": {
 				"name": "移除被击败的指示物上的动画特效",
 				"hint": "自动移除被击败的指示物上的动画特效。"
+			},
+			"killAnimationsOnKillNotify": {
+				"name": "提醒移除被击败的指示物上的动画",
+				"hint": "提醒移除那些在遭遇中被标记为被击败的指示物上的动画。"
 			}
 		},
 		"macro": {
