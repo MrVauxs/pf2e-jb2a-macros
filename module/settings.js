@@ -57,26 +57,6 @@ Hooks.once("init", () => {
     type: Boolean,
     default: false,
   });
-  game.settings.register("pf2e-jb2a-macros", "allowUncommonSummons", {
-    scope: "world",
-    config: true,
-    name: game.i18n.localize(
-      "pf2e-jb2a-macros.settings.allowUncommonSummons.name"
-    ),
-    hint: game.i18n.localize(
-      "pf2e-jb2a-macros.settings.allowUncommonSummons.hint"
-    ),
-    type: Boolean,
-    default: false,
-  });
-  game.settings.register("pf2e-jb2a-macros", "onlyImageSummons", {
-    scope: "world",
-    config: true,
-    name: game.i18n.localize("pf2e-jb2a-macros.settings.onlyImageSummons.name"),
-    hint: game.i18n.localize("pf2e-jb2a-macros.settings.onlyImageSummons.hint"),
-    type: Boolean,
-    default: false,
-  });
   game.settings.register("pf2e-jb2a-macros", "autoAccept", {
     scope: "client",
     config: true,

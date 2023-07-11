@@ -1,3 +1,7 @@
+# Version 2.16.0
+- Removed vestigial summon settings.
+- Added a working Harm animation. Thank you Acheronx98 for the commission!
+
 # Version 2.15.5
 - Added a Setting to turn off "Removed animations from defeated combatant" notifications.
 
