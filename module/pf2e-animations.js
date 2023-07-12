@@ -463,11 +463,12 @@ pf2eAnimations.hooks.updateCombatant = Hooks.on(
 pf2eAnimations.hooks.foundrySummons = Hooks.on(
   "fs-postSummon",
   ({ tokenDoc, sourceData }) => {
-    let items = sourceData.summonerTokenDocument?.actor?.items?.filter(
-      (item) => {
-        item.name.includes("Summoning Animation Template");
-      }
-    );
+    let items =
+      sourceData.summonerTokenDocument?.actor?.itemTypes?.action.filter(
+        (item) => {
+          return item.name.includes("Summoning Animation Template");
+        }
+      );
     let item;
 
     if (items?.length > 0) {
@@ -483,7 +484,7 @@ pf2eAnimations.hooks.foundrySummons = Hooks.on(
         items.find((i) => i.name === `Summoning Animation Template`);
     }
 
-    const summoner = canvas.tokens.get(sourceData.summonerTokenDocument._id);
+    const summoner = sourceData.summonerTokenDocument.object;
     const summoned = tokenDoc.object;
 
     setTimeout(() => {
