@@ -87184,6 +87184,227 @@
 		},
 		{
 			"id": "381",
+			"label": "Harm",
+			"levels3d": {
+				"type": "explosion",
+				"data": {
+					"color01": "#FFFFFF",
+					"color02": "#FFFFFF",
+					"spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
+				},
+				"sound": {
+					"enable": false
+				},
+				"secondary": {
+					"enable": false,
+					"data": {
+						"color01": "#FFFFFF",
+						"color02": "#FFFFFF",
+						"spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
+					}
+				}
+			},
+			"macro": {
+				"enable": true,
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Harm",
+				"playWhen": "2"
+			},
+			"menu": "ontoken",
+			"primary": {
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": false,
+					"opacity": 1,
+					"persistent": false,
+					"playbackRate": 1,
+					"playOn": "default",
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"unbindAlpha": false,
+					"unbindVisibility": false,
+					"zIndex": 1
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1.5,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"zIndex": 1
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				}
+			},
+			"source": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"zIndex": 1
+				}
+			},
+			"target": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"unbindAlpha": false,
+					"unbindVisibility": false,
+					"zIndex": 1
+				}
+			},
+			"metaData": {
+				"label": "Harm",
+				"menu": "ontoken",
+				"name": "PF2e Animations",
+				"moduleVersion": "2.16.0",
+				"version": 2145
+			},
+			"advanced": {
+				"exactMatch": false,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
+			}
+		},
+		{
+			"id": "382",
 			"label": "Heal",
 			"levels3d": {
 				"enable": false,
@@ -87404,13 +87625,13 @@
 			},
 			"metaData": {
 				"name": "PF2e Animations",
-				"version": 299,
-				"moduleVersion": "2.9.9",
+				"version": 300,
+				"moduleVersion": "2.16.0",
 				"label": "Heal",
 				"menu": "ontoken"
 			},
 			"advanced": {
-				"exactMatch": true,
+				"exactMatch": false,
 				"excludedTerms": [],
 				"excludedType": {
 					"enabled": false,
@@ -87420,7 +87641,7 @@
 			}
 		},
 		{
-			"id": "382",
+			"id": "383",
 			"label": "Healer's Blessing",
 			"levels3d": {
 				"type": "explosion",
@@ -87631,7 +87852,7 @@
 			}
 		},
 		{
-			"id": "383",
+			"id": "384",
 			"label": "House Of Imaginary Walls",
 			"levels3d": {
 				"enable": false,
@@ -87830,7 +88051,7 @@
 			}
 		},
 		{
-			"id": "384",
+			"id": "385",
 			"label": "Humanoid Form",
 			"levels3d": {
 				"enable": false,
@@ -88029,7 +88250,7 @@
 			}
 		},
 		{
-			"id": "385",
+			"id": "386",
 			"label": "Hymn Of Healing",
 			"levels3d": {
 				"enable": false,
@@ -88228,7 +88449,7 @@
 			}
 		},
 		{
-			"id": "386",
+			"id": "387",
 			"label": "Impaling Spike",
 			"levels3d": {
 				"enable": false,
@@ -88454,7 +88675,7 @@
 			}
 		},
 		{
-			"id": "387",
+			"id": "388",
 			"label": "Implosion",
 			"levels3d": {
 				"enable": false,
@@ -88679,7 +88900,7 @@
 			}
 		},
 		{
-			"id": "388",
+			"id": "389",
 			"label": "Inspire Competence",
 			"levels3d": {
 				"enable": false,
@@ -88878,7 +89099,7 @@
 			}
 		},
 		{
-			"id": "389",
+			"id": "390",
 			"label": "Inspire Courage",
 			"levels3d": {
 				"type": "explosion",
@@ -89073,7 +89294,7 @@
 			}
 		},
 		{
-			"id": "390",
+			"id": "391",
 			"label": "Inspire Defense",
 			"levels3d": {
 				"type": "explosion",
@@ -89268,7 +89489,7 @@
 			}
 		},
 		{
-			"id": "391",
+			"id": "392",
 			"label": "Jaws",
 			"levels3d": {
 				"enable": false,
@@ -89465,7 +89686,7 @@
 			}
 		},
 		{
-			"id": "392",
+			"id": "393",
 			"label": "Ki Rush",
 			"levels3d": {
 				"enable": false,
@@ -89664,7 +89885,7 @@
 			}
 		},
 		{
-			"id": "393",
+			"id": "394",
 			"label": "Lay on Hands",
 			"levels3d": {
 				"enable": false,
@@ -89861,7 +90082,7 @@
 			}
 		},
 		{
-			"id": "394",
+			"id": "395",
 			"label": "Lay on Hands (Vs. Undead)",
 			"levels3d": {
 				"enable": false,
@@ -90058,7 +90279,7 @@
 			}
 		},
 		{
-			"id": "395",
+			"id": "396",
 			"label": "Lichen's Tenacity",
 			"levels3d": {
 				"type": "explosion",
@@ -90253,7 +90474,7 @@
 			}
 		},
 		{
-			"id": "396",
+			"id": "397",
 			"label": "Manifest Eidolon",
 			"levels3d": {
 				"type": "explosion",
@@ -90448,7 +90669,7 @@
 			}
 		},
 		{
-			"id": "397",
+			"id": "398",
 			"label": "Mask of Terror",
 			"levels3d": {
 				"enable": false,
@@ -90674,7 +90895,7 @@
 			}
 		},
 		{
-			"id": "398",
+			"id": "399",
 			"label": "Mirror Image",
 			"metaData": {
 				"name": "PF2e Animation Macros",
@@ -90869,7 +91090,7 @@
 			}
 		},
 		{
-			"id": "399",
+			"id": "400",
 			"label": "Mirror's Reflection",
 			"levels3d": {
 				"type": "explosion",
@@ -91064,7 +91285,7 @@
 			}
 		},
 		{
-			"id": "400",
+			"id": "401",
 			"label": "Modifiers Matter: Bless",
 			"levels3d": {
 				"type": "explosion",
@@ -91284,7 +91505,7 @@
 			}
 		},
 		{
-			"id": "401",
+			"id": "402",
 			"label": "Necromancer's Generosity",
 			"levels3d": {
 				"enable": false,
@@ -91480,7 +91701,7 @@
 			}
 		},
 		{
-			"id": "402",
+			"id": "403",
 			"label": "Ode To Ouroboros",
 			"levels3d": {
 				"enable": false,
@@ -91679,7 +91900,7 @@
 			}
 		},
 		{
-			"id": "403",
+			"id": "404",
 			"label": "Panache",
 			"levels3d": {
 				"type": "explosion",
@@ -91874,7 +92095,7 @@
 			}
 		},
 		{
-			"id": "404",
+			"id": "405",
 			"label": "Phantom Pain",
 			"levels3d": {
 				"enable": false,
@@ -92071,7 +92292,7 @@
 			}
 		},
 		{
-			"id": "405",
+			"id": "406",
 			"label": "Pied Piping",
 			"levels3d": {
 				"enable": false,
@@ -92270,7 +92491,7 @@
 			}
 		},
 		{
-			"id": "406",
+			"id": "407",
 			"label": "Pinch",
 			"levels3d": {
 				"enable": false,
@@ -92468,7 +92689,7 @@
 			}
 		},
 		{
-			"id": "407",
+			"id": "408",
 			"label": "Prestidigitation",
 			"levels3d": {
 				"enable": false,
@@ -92694,7 +92915,7 @@
 			}
 		},
 		{
-			"id": "408",
+			"id": "409",
 			"label": "Protect Companion",
 			"levels3d": {
 				"enable": false,
@@ -92891,7 +93112,7 @@
 			}
 		},
 		{
-			"id": "409",
+			"id": "410",
 			"label": "Protective Ward",
 			"levels3d": {
 				"type": "explosion",
@@ -93095,7 +93316,7 @@
 			}
 		},
 		{
-			"id": "410",
+			"id": "411",
 			"label": "Rage",
 			"levels3d": {
 				"type": "explosion",
@@ -93299,7 +93520,7 @@
 			}
 		},
 		{
-			"id": "411",
+			"id": "412",
 			"label": "Raise a Shield",
 			"levels3d": {
 				"enable": false,
@@ -93498,7 +93719,7 @@
 			}
 		},
 		{
-			"id": "412",
+			"id": "413",
 			"label": "Read Aura",
 			"levels3d": {
 				"enable": false,
@@ -93724,7 +93945,7 @@
 			}
 		},
 		{
-			"id": "413",
+			"id": "414",
 			"label": "Rebounding Toss",
 			"levels3d": {
 				"enable": false,
@@ -93923,7 +94144,7 @@
 			}
 		},
 		{
-			"id": "414",
+			"id": "415",
 			"label": "Recall Knowledge",
 			"levels3d": {
 				"type": "explosion",
@@ -94136,7 +94357,7 @@
 			}
 		},
 		{
-			"id": "415",
+			"id": "416",
 			"label": "Regenerate",
 			"levels3d": {
 				"enable": false,
@@ -94362,7 +94583,7 @@
 			}
 		},
 		{
-			"id": "416",
+			"id": "417",
 			"label": "Reload",
 			"levels3d": {
 				"enable": false,
@@ -94562,7 +94783,7 @@
 			}
 		},
 		{
-			"id": "417",
+			"id": "418",
 			"label": "Reload Magazine",
 			"levels3d": {
 				"enable": false,
@@ -94762,7 +94983,7 @@
 			}
 		},
 		{
-			"id": "418",
+			"id": "419",
 			"label": "Restoration",
 			"levels3d": {
 				"enable": false,
@@ -94987,7 +95208,7 @@
 			}
 		},
 		{
-			"id": "419",
+			"id": "420",
 			"label": "Rose’s Tranquility",
 			"levels3d": {
 				"type": "explosion",
@@ -95182,7 +95403,7 @@
 			}
 		},
 		{
-			"id": "420",
+			"id": "421",
 			"label": "See Invisibility",
 			"levels3d": {
 				"enable": false,
@@ -95379,7 +95600,7 @@
 			}
 		},
 		{
-			"id": "421",
+			"id": "422",
 			"label": "Shadow Jump",
 			"levels3d": {
 				"enable": false,
@@ -95578,7 +95799,7 @@
 			}
 		},
 		{
-			"id": "422",
+			"id": "423",
 			"label": "Shatter",
 			"levels3d": {
 				"enable": false,
@@ -95804,7 +96025,7 @@
 			}
 		},
 		{
-			"id": "423",
+			"id": "424",
 			"label": "Slam",
 			"levels3d": {
 				"enable": false,
@@ -96001,7 +96222,7 @@
 			}
 		},
 		{
-			"id": "424",
+			"id": "425",
 			"label": "Snare Hopping",
 			"levels3d": {
 				"enable": false,
@@ -96200,7 +96421,7 @@
 			}
 		},
 		{
-			"id": "425",
+			"id": "426",
 			"label": "Sneak Attack",
 			"levels3d": {
 				"type": "explosion",
@@ -96392,7 +96613,7 @@
 			}
 		},
 		{
-			"id": "426",
+			"id": "427",
 			"label": "Song Of Marching",
 			"levels3d": {
 				"enable": false,
@@ -96591,7 +96812,7 @@
 			}
 		},
 		{
-			"id": "427",
+			"id": "428",
 			"label": "Song Of Strength",
 			"levels3d": {
 				"enable": false,
@@ -96790,7 +97011,7 @@
 			}
 		},
 		{
-			"id": "428",
+			"id": "429",
 			"label": "Soothe",
 			"levels3d": {
 				"enable": false,
@@ -97017,7 +97238,7 @@
 			}
 		},
 		{
-			"id": "429",
+			"id": "430",
 			"label": "Soothing Ballad",
 			"levels3d": {
 				"enable": false,
@@ -97216,7 +97437,7 @@
 			}
 		},
 		{
-			"id": "430",
+			"id": "431",
 			"label": "Spider Sting",
 			"levels3d": {
 				"enable": false,
@@ -97412,7 +97633,7 @@
 			}
 		},
 		{
-			"id": "431",
+			"id": "432",
 			"label": "Spiritual Weapon",
 			"levels3d": {
 				"enable": false,
@@ -97611,7 +97832,7 @@
 			}
 		},
 		{
-			"id": "432",
+			"id": "433",
 			"label": "Stabilize",
 			"levels3d": {
 				"enable": false,
@@ -97808,7 +98029,7 @@
 			}
 		},
 		{
-			"id": "433",
+			"id": "434",
 			"label": "Sudden Bolt",
 			"levels3d": {
 				"enable": false,
@@ -98004,7 +98225,7 @@
 			}
 		},
 		{
-			"id": "434",
+			"id": "435",
 			"label": "Sudden Charge",
 			"levels3d": {
 				"enable": false,
@@ -98203,7 +98424,7 @@
 			}
 		},
 		{
-			"id": "435",
+			"id": "436",
 			"label": "Summon Anarch",
 			"levels3d": {
 				"enable": false,
@@ -98402,7 +98623,7 @@
 			}
 		},
 		{
-			"id": "436",
+			"id": "437",
 			"label": "Summon Animal",
 			"levels3d": {
 				"enable": false,
@@ -98601,7 +98822,7 @@
 			}
 		},
 		{
-			"id": "437",
+			"id": "438",
 			"label": "Summon Axiom",
 			"levels3d": {
 				"enable": false,
@@ -98800,7 +99021,7 @@
 			}
 		},
 		{
-			"id": "438",
+			"id": "439",
 			"label": "Summon Celestial",
 			"levels3d": {
 				"enable": false,
@@ -98999,7 +99220,7 @@
 			}
 		},
 		{
-			"id": "439",
+			"id": "440",
 			"label": "Summon Construct",
 			"levels3d": {
 				"enable": false,
@@ -99198,7 +99419,7 @@
 			}
 		},
 		{
-			"id": "440",
+			"id": "441",
 			"label": "Summon Dragon",
 			"levels3d": {
 				"enable": false,
@@ -99397,7 +99618,7 @@
 			}
 		},
 		{
-			"id": "441",
+			"id": "442",
 			"label": "Summon Elemental",
 			"levels3d": {
 				"enable": false,
@@ -99596,7 +99817,7 @@
 			}
 		},
 		{
-			"id": "442",
+			"id": "443",
 			"label": "Summon Entity",
 			"levels3d": {
 				"enable": false,
@@ -99795,7 +100016,7 @@
 			}
 		},
 		{
-			"id": "443",
+			"id": "444",
 			"label": "Summon Fey",
 			"levels3d": {
 				"enable": false,
@@ -99994,7 +100215,7 @@
 			}
 		},
 		{
-			"id": "444",
+			"id": "445",
 			"label": "Summon Fiend",
 			"levels3d": {
 				"enable": false,
@@ -100193,7 +100414,7 @@
 			}
 		},
 		{
-			"id": "445",
+			"id": "446",
 			"label": "Summon Giant",
 			"levels3d": {
 				"enable": false,
@@ -100392,7 +100613,7 @@
 			}
 		},
 		{
-			"id": "446",
+			"id": "447",
 			"label": "Summon Instrument",
 			"levels3d": {
 				"enable": false,
@@ -100592,7 +100813,7 @@
 			}
 		},
 		{
-			"id": "447",
+			"id": "448",
 			"label": "Summon Lesser Servitor",
 			"levels3d": {
 				"enable": false,
@@ -100791,7 +101012,7 @@
 			}
 		},
 		{
-			"id": "448",
+			"id": "449",
 			"label": "Summon Plant Or Fungus",
 			"levels3d": {
 				"enable": false,
@@ -100990,7 +101211,7 @@
 			}
 		},
 		{
-			"id": "449",
+			"id": "450",
 			"label": "Summoning Animation Template",
 			"metaData": {
 				"name": "PF2e Animation Macros",
@@ -101185,7 +101406,7 @@
 			}
 		},
 		{
-			"id": "450",
+			"id": "451",
 			"label": "Summoning Animation Template (Animate Dead)",
 			"levels3d": {
 				"type": "explosion",
@@ -101380,7 +101601,7 @@
 			}
 		},
 		{
-			"id": "451",
+			"id": "452",
 			"label": "Summoning Animation Template (Mirror's Reflection)",
 			"levels3d": {
 				"type": "explosion",
@@ -101575,7 +101796,7 @@
 			}
 		},
 		{
-			"id": "452",
+			"id": "453",
 			"label": "Summoning Animation Template (Summon Animal)",
 			"levels3d": {
 				"type": "explosion",
@@ -101770,7 +101991,7 @@
 			}
 		},
 		{
-			"id": "453",
+			"id": "454",
 			"label": "Symphony Of The Unfettered Heart",
 			"levels3d": {
 				"enable": false,
@@ -101969,7 +102190,7 @@
 			}
 		},
 		{
-			"id": "454",
+			"id": "455",
 			"label": "Talon",
 			"levels3d": {
 				"enable": false,
@@ -102197,7 +102418,7 @@
 			}
 		},
 		{
-			"id": "455",
+			"id": "456",
 			"label": "Teleport",
 			"levels3d": {
 				"enable": false,
@@ -102396,7 +102617,7 @@
 			}
 		},
 		{
-			"id": "456",
+			"id": "457",
 			"label": "Terrain Transposition",
 			"levels3d": {
 				"enable": false,
@@ -102595,7 +102816,7 @@
 			}
 		},
 		{
-			"id": "457",
+			"id": "458",
 			"label": "Treat Wounds",
 			"levels3d": {
 				"enable": false,
@@ -102824,7 +103045,7 @@
 			}
 		},
 		{
-			"id": "458",
+			"id": "459",
 			"label": "Triple Time",
 			"levels3d": {
 				"enable": false,
@@ -103023,7 +103244,7 @@
 			}
 		},
 		{
-			"id": "459",
+			"id": "460",
 			"label": "Unexpected Transposition",
 			"levels3d": {
 				"enable": false,
@@ -103222,7 +103443,7 @@
 			}
 		},
 		{
-			"id": "460",
+			"id": "461",
 			"label": "Unload",
 			"levels3d": {
 				"enable": false,
@@ -103421,7 +103642,7 @@
 			}
 		},
 		{
-			"id": "461",
+			"id": "462",
 			"label": "Wild Shape",
 			"levels3d": {
 				"enable": false,
@@ -103617,7 +103838,7 @@
 			}
 		},
 		{
-			"id": "462",
+			"id": "463",
 			"label": "Wing Deflection",
 			"levels3d": {
 				"enable": false,
@@ -103815,7 +104036,7 @@
 			}
 		},
 		{
-			"id": "463",
+			"id": "464",
 			"label": "Worm's Repast",
 			"levels3d": {
 				"enable": false,
@@ -104009,218 +104230,6 @@
 				"moduleVersion": "2.6.6",
 				"label": "Worm's Repast",
 				"menu": "ontoken"
-			}
-		},
-		{
-			"id": "464",
-			"label": "Harm",
-			"levels3d": {
-				"type": "explosion",
-				"data": {
-					"color01": "#FFFFFF",
-					"color02": "#FFFFFF",
-					"spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
-				},
-				"sound": {
-					"enable": false
-				},
-				"secondary": {
-					"enable": false,
-					"data": {
-						"color01": "#FFFFFF",
-						"color02": "#FFFFFF",
-						"spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
-					}
-				}
-			},
-			"macro": {
-				"enable": true,
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Harm",
-				"playWhen": "2"
-			},
-			"menu": "ontoken",
-			"primary": {
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"contrast": 0,
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": false,
-					"opacity": 1,
-					"persistent": false,
-					"playbackRate": 1,
-					"playOn": "default",
-					"repeat": 1,
-					"repeatDelay": 250,
-					"saturate": 0,
-					"size": 1,
-					"tint": false,
-					"tintColor": "#FFFFFF",
-					"unbindAlpha": false,
-					"unbindVisibility": false,
-					"zIndex": 1
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"contrast": 0,
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"saturate": 0,
-					"size": 1.5,
-					"tint": false,
-					"tintColor": "#FFFFFF",
-					"zIndex": 1
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				}
-			},
-			"source": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"contrast": 0,
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"saturate": 0,
-					"size": 1,
-					"tint": false,
-					"tintColor": "#FFFFFF",
-					"zIndex": 1
-				}
-			},
-			"target": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"contrast": 0,
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"saturate": 0,
-					"size": 1,
-					"tint": false,
-					"tintColor": "#FFFFFF",
-					"unbindAlpha": false,
-					"unbindVisibility": false,
-					"zIndex": 1
-				}
-			},
-			"metaData": {
-				"label": "Harm",
-				"menu": "ontoken",
-				"name": "PF2e Animations",
-				"moduleVersion": "2.14.3",
-				"version": 2144
 			}
 		}
 	],
@@ -108148,3017 +108157,6 @@
 		},
 		{
 			"id": "487",
-			"label": "Haunting Hymn",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Haunting Hymn",
-				"args": ""
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "cone",
-					"animation": "coneofcold",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Haunting Hymn",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "488",
-			"label": "Inspire Courage",
-			"macro": {
-				"enable": true,
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
-				"args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.MRmGlGAFd3tSJioo\", \"onAlt\": \"Compendium.pf2e.spell-effects.beReeFroAx24hj83\"}",
-				"playWhen": "2"
-			},
-			"menu": "templatefx",
-			"primary": {
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0.5,
-					"occlusionMode": "3",
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"playbackRate": 1,
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"rotate": 0,
-					"scale": "1",
-					"zIndex": 1
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1.5,
-					"zIndex": 1
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				}
-			},
-			"source": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				}
-			},
-			"target": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": false,
-					"unbindVisibility": false,
-					"zIndex": 1
-				}
-			},
-			"metaData": {
-				"label": "Inspire Courage",
-				"menu": "templatefx",
-				"name": "PF2e Animation Macros",
-				"moduleVersion": "2.7.3",
-				"version": 15
-			}
-		},
-		{
-			"id": "489",
-			"label": "Inspire Defense",
-			"macro": {
-				"enable": true,
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
-				"args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.89T07EBAgn78RBbJ\", \"onAlt\": \"Compendium.pf2e.spell-effects.DLwTvjjnqs2sNGuG\"}",
-				"playWhen": "2"
-			},
-			"menu": "templatefx",
-			"primary": {
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0.5,
-					"occlusionMode": "3",
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"playbackRate": 1,
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"rotate": 0,
-					"scale": "1",
-					"zIndex": 1
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1.5,
-					"zIndex": 1
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				}
-			},
-			"source": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				}
-			},
-			"target": {
-				"enable": false,
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				},
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"startTime": 0,
-					"volume": 0.75
-				},
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": false,
-					"unbindVisibility": false,
-					"zIndex": 1
-				}
-			},
-			"metaData": {
-				"label": "Inspire Defense",
-				"menu": "templatefx",
-				"name": "PF2e Animation Macros",
-				"moduleVersion": "2.7.3",
-				"version": 15
-			}
-		},
-		{
-			"id": "490",
-			"label": "Lethargy Bomb",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 0.8,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "2, 2",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "vortex",
-					"variant": "intro",
-					"color": "purple",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Lethargy Bomb",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "491",
-			"label": "Lightning Bolt",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Lightning Bolt",
-				"args": ""
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Lightning Bolt",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "492",
-			"label": "Obscuring Mist",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 0.65,
-					"persistent": true,
-					"persistType": "attachtemplate",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "fogcloud",
-					"variant": "02",
-					"color": "white",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Obscuring Mist",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "493",
-			"label": "Pummeling Rubble",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Pummeling Rubble",
-				"args": ""
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": true,
-					"customPath": "jb2a.falling_rocks.side.1x1"
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Pummeling Rubble",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "494",
-			"label": "Rejuvenating Flames",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
-				"args": "jb2a.burning_hands.02.green"
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "cone",
-					"animation": "burninghands",
-					"variant": "02",
-					"color": "green",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Rejuvenating Flames",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "495",
-			"label": "Shockwave",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Dazzling Flash",
-				"args": ""
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Shockwave",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "496",
-			"label": "Sleep",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 0.8,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "2, 2",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": true,
-					"customPath": "jb2a.sleep.target"
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Sleep",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "497",
-			"label": "Sound Burst",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "outpulse",
-					"variant": "01",
-					"color": "whiteblue",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Sound Burst",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "498",
-			"label": "Splash of Art",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "fogcloud",
-					"variant": "01",
-					"color": "random",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Splash of Art",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "499",
-			"label": "Spray Of Stars",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
-				"args": "jb2a.cone_of_cold.purple"
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "cone",
-					"animation": "coneofcold",
-					"variant": "01",
-					"color": "purple",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Spray Of Stars",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "500",
-			"label": "Stinking Cloud",
-			"macro": {
-				"enable": false,
-				"playWhen": "0",
-				"name": "",
-				"args": ""
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0.65,
-					"occlusionMode": "3",
-					"opacity": 0.75,
-					"persistent": true,
-					"persistType": "attachtemplate",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 500,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "armsofhadar",
-					"variant": "01",
-					"color": "darkgreen",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 500,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Stinking Cloud",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "501",
-			"label": "Storm of Vengeance",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": true,
-					"persistType": "attachtemplate",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": true,
-					"file": "modules/soundfxlibrary/Nature/Single/Thunder/thunder-3.mp3",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "random",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"file": "modules/soundfxlibrary/Nature/Single/Thunder/thunder-3.mp3",
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Storm of Vengeance",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "502",
-			"label": "Vomit Swarm",
-			"macro": {
-				"enable": false
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 0.75,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "cone",
-					"animation": "breathweapon",
-					"variant": "poison",
-					"color": "green",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animation Macros",
-				"version": 12,
-				"moduleVersion": "2.6.6",
-				"label": "Vomit Swarm",
-				"menu": "templatefx"
-			}
-		},
-		{
-			"id": "503",
-			"label": "Web",
-			"macro": {
-				"enable": true,
-				"playWhen": "2",
-				"name": "Compendium.pf2e-jb2a-macros.Macros.Web",
-				"args": ""
-			},
-			"menu": "templatefx",
-			"primary": {
-				"options": {
-					"delay": 0,
-					"elevation": 1000,
-					"isMasked": false,
-					"isWait": false,
-					"occlusionAlpha": 0,
-					"occlusionMode": 0,
-					"opacity": 1,
-					"persistent": false,
-					"persistType": "sequencerground",
-					"removeTemplate": false,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"rotate": 0,
-					"scale": "1, 1",
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "templatefx",
-					"menuType": "circle",
-					"animation": "calllightning",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false
-				}
-			},
-			"secondary": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 250,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": true,
-					"isWait": false,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 0,
-					"size": 1.5,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"soundOnly": {
-				"sound": {
-					"enable": false,
-					"delay": 0,
-					"startTime": 0,
-					"volume": 1,
-					"repeat": 1,
-					"repeatDelay": 250
-				}
-			},
-			"source": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isRadius": false,
-					"isWait": true,
-					"opacity": 1,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"target": {
-				"enable": false,
-				"options": {
-					"addTokenWidth": false,
-					"anchor": "0.5",
-					"delay": 0,
-					"elevation": 1000,
-					"fadeIn": 250,
-					"fadeOut": 500,
-					"isMasked": false,
-					"isWait": false,
-					"isRadius": false,
-					"opacity": 1,
-					"persistent": false,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"size": 1,
-					"unbindAlpha": true,
-					"unbindVisibility": true,
-					"zIndex": 1
-				},
-				"sound": {
-					"delay": 0,
-					"enable": false,
-					"file": "",
-					"startTime": 0,
-					"repeat": 1,
-					"repeatDelay": 250,
-					"volume": 1
-				},
-				"video": {
-					"dbSection": "static",
-					"menuType": "spell",
-					"animation": "curewounds",
-					"variant": "01",
-					"color": "blue",
-					"enableCustom": false,
-					"customPath": ""
-				}
-			},
-			"metaData": {
-				"name": "PF2e Animations",
-				"version": 291,
-				"moduleVersion": "2.9.1",
-				"label": "Web",
-				"menu": "templatefx"
-			},
-			"advanced": {
-				"exactMatch": false,
-				"excludedTerms": [],
-				"excludedType": {
-					"enabled": true,
-					"path": "type",
-					"property": "melee"
-				}
-			}
-		},
-		{
-			"id": "504",
 			"label": "Harm",
 			"macro": {
 				"enable": true,
@@ -111344,14 +108342,3234 @@
 				"label": "Harm",
 				"menu": "templatefx",
 				"name": "PF2e Animations",
-				"moduleVersion": "2.14.3",
-				"version": 2144
+				"moduleVersion": "2.16.0",
+				"version": 2145
+			},
+			"advanced": {
+				"exactMatch": false,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
+			}
+		},
+		{
+			"id": "488",
+			"label": "Haunting Hymn",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Haunting Hymn",
+				"args": ""
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "cone",
+					"animation": "coneofcold",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Haunting Hymn",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "489",
+			"label": "Heal",
+			"macro": {
+				"enable": true,
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Heal",
+				"playWhen": "2",
+				"args": "{ deleteTemplate: true }"
+			},
+			"menu": "templatefx",
+			"primary": {
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0.5,
+					"occlusionMode": "3",
+					"opacity": 0,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"playbackRate": 1,
+					"removeTemplate": true,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"rotate": 0,
+					"saturate": 0,
+					"scale": "1",
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"zIndex": 1
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1.5,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"zIndex": 1
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				}
+			},
+			"source": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"zIndex": 1
+				}
+			},
+			"target": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"contrast": 0,
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"saturate": 0,
+					"size": 1,
+					"tint": false,
+					"tintColor": "#FFFFFF",
+					"unbindAlpha": false,
+					"unbindVisibility": false,
+					"zIndex": 1
+				}
+			},
+			"advanced": {
+				"exactMatch": false,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
+			},
+			"metaData": {
+				"label": "Heal",
+				"menu": "templatefx",
+				"name": "PF2e Animations",
+				"moduleVersion": "2.16.0",
+				"version": 2161
+			}
+		},
+		{
+			"id": "490",
+			"label": "Inspire Courage",
+			"macro": {
+				"enable": true,
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
+				"args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.MRmGlGAFd3tSJioo\", \"onAlt\": \"Compendium.pf2e.spell-effects.beReeFroAx24hj83\"}",
+				"playWhen": "2"
+			},
+			"menu": "templatefx",
+			"primary": {
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0.5,
+					"occlusionMode": "3",
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"playbackRate": 1,
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"rotate": 0,
+					"scale": "1",
+					"zIndex": 1
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1.5,
+					"zIndex": 1
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				}
+			},
+			"source": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				}
+			},
+			"target": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": false,
+					"unbindVisibility": false,
+					"zIndex": 1
+				}
+			},
+			"metaData": {
+				"label": "Inspire Courage",
+				"menu": "templatefx",
+				"name": "PF2e Animation Macros",
+				"moduleVersion": "2.7.3",
+				"version": 15
+			}
+		},
+		{
+			"id": "491",
+			"label": "Inspire Defense",
+			"macro": {
+				"enable": true,
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Add Effect",
+				"args": "{ \"on\": \"Compendium.xdy-pf2e-workbench.xdy-pf2e-workbench-items.89T07EBAgn78RBbJ\", \"onAlt\": \"Compendium.pf2e.spell-effects.DLwTvjjnqs2sNGuG\"}",
+				"playWhen": "2"
+			},
+			"menu": "templatefx",
+			"primary": {
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0.5,
+					"occlusionMode": "3",
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"playbackRate": 1,
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"rotate": 0,
+					"scale": "1",
+					"zIndex": 1
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1.5,
+					"zIndex": 1
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				}
+			},
+			"source": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				}
+			},
+			"target": {
+				"enable": false,
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				},
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"startTime": 0,
+					"volume": 0.75
+				},
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": false,
+					"unbindVisibility": false,
+					"zIndex": 1
+				}
+			},
+			"metaData": {
+				"label": "Inspire Defense",
+				"menu": "templatefx",
+				"name": "PF2e Animation Macros",
+				"moduleVersion": "2.7.3",
+				"version": 15
+			}
+		},
+		{
+			"id": "492",
+			"label": "Lethargy Bomb",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 0.8,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "2, 2",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "vortex",
+					"variant": "intro",
+					"color": "purple",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Lethargy Bomb",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "493",
+			"label": "Lightning Bolt",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Lightning Bolt",
+				"args": ""
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Lightning Bolt",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "494",
+			"label": "Obscuring Mist",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 0.65,
+					"persistent": true,
+					"persistType": "attachtemplate",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "fogcloud",
+					"variant": "02",
+					"color": "white",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Obscuring Mist",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "495",
+			"label": "Pummeling Rubble",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Pummeling Rubble",
+				"args": ""
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": true,
+					"customPath": "jb2a.falling_rocks.side.1x1"
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Pummeling Rubble",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "496",
+			"label": "Rejuvenating Flames",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+				"args": "jb2a.burning_hands.02.green"
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "cone",
+					"animation": "burninghands",
+					"variant": "02",
+					"color": "green",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Rejuvenating Flames",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "497",
+			"label": "Shockwave",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Dazzling Flash",
+				"args": ""
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Shockwave",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "498",
+			"label": "Sleep",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 0.8,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "2, 2",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": true,
+					"customPath": "jb2a.sleep.target"
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Sleep",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "499",
+			"label": "Sound Burst",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "outpulse",
+					"variant": "01",
+					"color": "whiteblue",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Sound Burst",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "500",
+			"label": "Splash of Art",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "fogcloud",
+					"variant": "01",
+					"color": "random",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Splash of Art",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "501",
+			"label": "Spray Of Stars",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Cone Hands",
+				"args": "jb2a.cone_of_cold.purple"
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "cone",
+					"animation": "coneofcold",
+					"variant": "01",
+					"color": "purple",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Spray Of Stars",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "502",
+			"label": "Stinking Cloud",
+			"macro": {
+				"enable": false,
+				"playWhen": "0",
+				"name": "",
+				"args": ""
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0.65,
+					"occlusionMode": "3",
+					"opacity": 0.75,
+					"persistent": true,
+					"persistType": "attachtemplate",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 500,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "armsofhadar",
+					"variant": "01",
+					"color": "darkgreen",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 500,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Stinking Cloud",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "503",
+			"label": "Storm of Vengeance",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": true,
+					"persistType": "attachtemplate",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": true,
+					"file": "modules/soundfxlibrary/Nature/Single/Thunder/thunder-3.mp3",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "random",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"file": "modules/soundfxlibrary/Nature/Single/Thunder/thunder-3.mp3",
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Storm of Vengeance",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "504",
+			"label": "Vomit Swarm",
+			"macro": {
+				"enable": false
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 0.75,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "cone",
+					"animation": "breathweapon",
+					"variant": "poison",
+					"color": "green",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Vomit Swarm",
+				"menu": "templatefx"
+			}
+		},
+		{
+			"id": "505",
+			"label": "Web",
+			"macro": {
+				"enable": true,
+				"playWhen": "2",
+				"name": "Compendium.pf2e-jb2a-macros.Macros.Web",
+				"args": ""
+			},
+			"menu": "templatefx",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isMasked": false,
+					"isWait": false,
+					"occlusionAlpha": 0,
+					"occlusionMode": 0,
+					"opacity": 1,
+					"persistent": false,
+					"persistType": "sequencerground",
+					"removeTemplate": false,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"rotate": 0,
+					"scale": "1, 1",
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "templatefx",
+					"menuType": "circle",
+					"animation": "calllightning",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 0,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animations",
+				"version": 291,
+				"moduleVersion": "2.9.1",
+				"label": "Web",
+				"menu": "templatefx"
+			},
+			"advanced": {
+				"exactMatch": false,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": true,
+					"path": "type",
+					"property": "melee"
+				}
 			}
 		}
 	],
 	"preset": [
 		{
-			"id": "505",
+			"id": "506",
 			"data": {
 				"projectile": {
 					"dbSection": "range",
@@ -111545,7 +111763,7 @@
 	"aura": [],
 	"aefx": [
 		{
-			"id": "506",
+			"id": "507",
 			"label": " Air Walk",
 			"menu": "aefx",
 			"secondary": {
@@ -111690,7 +111908,7 @@
 			}
 		},
 		{
-			"id": "507",
+			"id": "508",
 			"label": " Athletic Rush",
 			"menu": "aefx",
 			"secondary": {
@@ -111826,7 +112044,7 @@
 			}
 		},
 		{
-			"id": "508",
+			"id": "509",
 			"label": " Dueling Cape",
 			"menu": "aefx",
 			"secondary": {
@@ -111964,7 +112182,7 @@
 			}
 		},
 		{
-			"id": "509",
+			"id": "510",
 			"label": " Dueling Parry",
 			"menu": "aefx",
 			"secondary": {
@@ -112102,7 +112320,7 @@
 			}
 		},
 		{
-			"id": "510",
+			"id": "511",
 			"label": " Veil of Confidence",
 			"menu": "aefx",
 			"secondary": {
@@ -112238,7 +112456,7 @@
 			}
 		},
 		{
-			"id": "511",
+			"id": "512",
 			"label": "Action Counter",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -112378,7 +112596,7 @@
 			}
 		},
 		{
-			"id": "512",
+			"id": "513",
 			"label": "Aerial Form (Bat)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -112519,7 +112737,7 @@
 			}
 		},
 		{
-			"id": "513",
+			"id": "514",
 			"label": "Aerial Form (Bird)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -112660,7 +112878,7 @@
 			}
 		},
 		{
-			"id": "514",
+			"id": "515",
 			"label": "Aerial Form (Pterosaur)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -112801,7 +113019,7 @@
 			}
 		},
 		{
-			"id": "515",
+			"id": "516",
 			"label": "Aerial Form (Wasp)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -112942,7 +113160,7 @@
 			}
 		},
 		{
-			"id": "516",
+			"id": "517",
 			"label": "Animal Form (Ape)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113083,7 +113301,7 @@
 			}
 		},
 		{
-			"id": "517",
+			"id": "518",
 			"label": "Animal Form (Bear)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113224,7 +113442,7 @@
 			}
 		},
 		{
-			"id": "518",
+			"id": "519",
 			"label": "Animal Form (Bull)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113365,7 +113583,7 @@
 			}
 		},
 		{
-			"id": "519",
+			"id": "520",
 			"label": "Animal Form (Canine)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113506,7 +113724,7 @@
 			}
 		},
 		{
-			"id": "520",
+			"id": "521",
 			"label": "Animal Form (Cat)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113647,7 +113865,7 @@
 			}
 		},
 		{
-			"id": "521",
+			"id": "522",
 			"label": "Animal Form (Deer)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113788,7 +114006,7 @@
 			}
 		},
 		{
-			"id": "522",
+			"id": "523",
 			"label": "Animal Form (Frog)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -113929,7 +114147,7 @@
 			}
 		},
 		{
-			"id": "523",
+			"id": "524",
 			"label": "Animal Form (Shark)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -114070,7 +114288,7 @@
 			}
 		},
 		{
-			"id": "524",
+			"id": "525",
 			"label": "Animal Form (Snake)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -114211,7 +114429,7 @@
 			}
 		},
 		{
-			"id": "525",
+			"id": "526",
 			"label": "Arcane Cascade",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -114351,7 +114569,7 @@
 			}
 		},
 		{
-			"id": "526",
+			"id": "527",
 			"label": "Aura of Courage",
 			"activeEffectType": "aura",
 			"menu": "aefx",
@@ -114496,7 +114714,7 @@
 			}
 		},
 		{
-			"id": "527",
+			"id": "528",
 			"label": "Aura: Bane",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -114645,7 +114863,7 @@
 			}
 		},
 		{
-			"id": "528",
+			"id": "529",
 			"label": "Aura: Bless",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -114794,7 +115012,7 @@
 			}
 		},
 		{
-			"id": "529",
+			"id": "530",
 			"label": "Aura: Protective Ward",
 			"menu": "aefx",
 			"primary": {
@@ -114937,7 +115155,7 @@
 			}
 		},
 		{
-			"id": "530",
+			"id": "531",
 			"label": "Aura: Rose’s Tranquility",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -115076,7 +115294,7 @@
 			}
 		},
 		{
-			"id": "531",
+			"id": "532",
 			"label": "Blur",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -115216,7 +115434,7 @@
 			}
 		},
 		{
-			"id": "532",
+			"id": "533",
 			"label": "Clumsy",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -115356,7 +115574,7 @@
 			}
 		},
 		{
-			"id": "533",
+			"id": "534",
 			"label": "Cognitive Mutagen",
 			"menu": "aefx",
 			"secondary": {
@@ -115492,7 +115710,7 @@
 			}
 		},
 		{
-			"id": "534",
+			"id": "535",
 			"label": "Concealed",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -115632,7 +115850,7 @@
 			}
 		},
 		{
-			"id": "535",
+			"id": "536",
 			"label": "Confused",
 			"menu": "aefx",
 			"secondary": {
@@ -115768,7 +115986,7 @@
 			}
 		},
 		{
-			"id": "536",
+			"id": "537",
 			"label": "Controlled",
 			"menu": "aefx",
 			"secondary": {
@@ -115904,7 +116122,7 @@
 			}
 		},
 		{
-			"id": "537",
+			"id": "538",
 			"label": "Dazzled",
 			"menu": "aefx",
 			"secondary": {
@@ -116040,7 +116258,7 @@
 			}
 		},
 		{
-			"id": "538",
+			"id": "539",
 			"label": "Deafened",
 			"menu": "aefx",
 			"secondary": {
@@ -116176,7 +116394,7 @@
 			}
 		},
 		{
-			"id": "539",
+			"id": "540",
 			"label": "Dimensional Anchor",
 			"menu": "aefx",
 			"secondary": {
@@ -116311,7 +116529,7 @@
 			}
 		},
 		{
-			"id": "540",
+			"id": "541",
 			"label": "Dinosaur Form (Ankylosaurus)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -116452,7 +116670,7 @@
 			}
 		},
 		{
-			"id": "541",
+			"id": "542",
 			"label": "Dinosaur Form (Brontosaurus)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -116593,7 +116811,7 @@
 			}
 		},
 		{
-			"id": "542",
+			"id": "543",
 			"label": "Dinosaur Form (Deinonychus)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -116734,7 +116952,7 @@
 			}
 		},
 		{
-			"id": "543",
+			"id": "544",
 			"label": "Dinosaur Form (Stegosaurus)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -116875,7 +117093,7 @@
 			}
 		},
 		{
-			"id": "544",
+			"id": "545",
 			"label": "Dinosaur Form (Triceratops)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117016,7 +117234,7 @@
 			}
 		},
 		{
-			"id": "545",
+			"id": "546",
 			"label": "Dinosaur Form (Tyrannosaurus)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117157,7 +117375,7 @@
 			}
 		},
 		{
-			"id": "546",
+			"id": "547",
 			"label": "Dirge of Doom",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117307,7 +117525,7 @@
 			}
 		},
 		{
-			"id": "547",
+			"id": "548",
 			"label": "Dragon Form (Black)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117448,7 +117666,7 @@
 			}
 		},
 		{
-			"id": "548",
+			"id": "549",
 			"label": "Dragon Form (Blue)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117589,7 +117807,7 @@
 			}
 		},
 		{
-			"id": "549",
+			"id": "550",
 			"label": "Dragon Form (Brass)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117730,7 +117948,7 @@
 			}
 		},
 		{
-			"id": "550",
+			"id": "551",
 			"label": "Dragon Form (Bronze)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -117871,7 +118089,7 @@
 			}
 		},
 		{
-			"id": "551",
+			"id": "552",
 			"label": "Dragon Form (Copper)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -118012,7 +118230,7 @@
 			}
 		},
 		{
-			"id": "552",
+			"id": "553",
 			"label": "Dragon Form (Gold)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -118153,7 +118371,7 @@
 			}
 		},
 		{
-			"id": "553",
+			"id": "554",
 			"label": "Dragon Form (Green)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -118294,7 +118512,7 @@
 			}
 		},
 		{
-			"id": "554",
+			"id": "555",
 			"label": "Dragon Form (Red)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -118435,7 +118653,7 @@
 			}
 		},
 		{
-			"id": "555",
+			"id": "556",
 			"label": "Dragon Form (Silver)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -118576,7 +118794,7 @@
 			}
 		},
 		{
-			"id": "556",
+			"id": "557",
 			"label": "Dragon Form (White)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -118717,7 +118935,7 @@
 			}
 		},
 		{
-			"id": "557",
+			"id": "558",
 			"label": "Drained",
 			"menu": "aefx",
 			"secondary": {
@@ -118852,7 +119070,7 @@
 			}
 		},
 		{
-			"id": "558",
+			"id": "559",
 			"label": "Drakeheart Mutagen",
 			"menu": "aefx",
 			"secondary": {
@@ -118990,7 +119208,7 @@
 			}
 		},
 		{
-			"id": "559",
+			"id": "560",
 			"label": "Dying",
 			"menu": "aefx",
 			"secondary": {
@@ -119125,7 +119343,7 @@
 			}
 		},
 		{
-			"id": "560",
+			"id": "561",
 			"label": "Eagle Eye Elixir",
 			"menu": "aefx",
 			"secondary": {
@@ -119261,7 +119479,7 @@
 			}
 		},
 		{
-			"id": "561",
+			"id": "562",
 			"label": "Effect: Protect Companion",
 			"menu": "aefx",
 			"secondary": {
@@ -119397,7 +119615,7 @@
 			}
 		},
 		{
-			"id": "562",
+			"id": "563",
 			"label": "Effect: Rage",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -119546,7 +119764,7 @@
 			}
 		},
 		{
-			"id": "563",
+			"id": "564",
 			"label": "Effect: Rose’s Tranquility",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -119685,7 +119903,7 @@
 			}
 		},
 		{
-			"id": "564",
+			"id": "565",
 			"label": "Elemental Form (Air)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -119826,7 +120044,7 @@
 			}
 		},
 		{
-			"id": "565",
+			"id": "566",
 			"label": "Elemental Form (Earth)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -119967,7 +120185,7 @@
 			}
 		},
 		{
-			"id": "566",
+			"id": "567",
 			"label": "Elemental Form (Fire)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -120108,7 +120326,7 @@
 			}
 		},
 		{
-			"id": "567",
+			"id": "568",
 			"label": "Elemental Form (Water)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -120249,7 +120467,7 @@
 			}
 		},
 		{
-			"id": "568",
+			"id": "569",
 			"label": "Encumbered",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -120389,7 +120607,7 @@
 			}
 		},
 		{
-			"id": "569",
+			"id": "570",
 			"label": "Endure Elements",
 			"menu": "aefx",
 			"secondary": {
@@ -120524,7 +120742,7 @@
 			}
 		},
 		{
-			"id": "570",
+			"id": "571",
 			"label": "Energy Aegis",
 			"menu": "aefx",
 			"secondary": {
@@ -120659,7 +120877,7 @@
 			}
 		},
 		{
-			"id": "571",
+			"id": "572",
 			"label": "Enfeebled",
 			"menu": "aefx",
 			"secondary": {
@@ -120794,7 +121012,7 @@
 			}
 		},
 		{
-			"id": "572",
+			"id": "573",
 			"label": "Fascinated",
 			"menu": "aefx",
 			"secondary": {
@@ -120929,7 +121147,7 @@
 			}
 		},
 		{
-			"id": "573",
+			"id": "574",
 			"label": "Feather Fall",
 			"menu": "aefx",
 			"secondary": {
@@ -121064,7 +121282,7 @@
 			}
 		},
 		{
-			"id": "574",
+			"id": "575",
 			"label": "Fleeing",
 			"menu": "aefx",
 			"secondary": {
@@ -121199,7 +121417,7 @@
 			}
 		},
 		{
-			"id": "575",
+			"id": "576",
 			"label": "Fly",
 			"menu": "aefx",
 			"secondary": {
@@ -121334,7 +121552,7 @@
 			}
 		},
 		{
-			"id": "576",
+			"id": "577",
 			"label": "Forbidding Ward",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -121474,7 +121692,7 @@
 			}
 		},
 		{
-			"id": "577",
+			"id": "578",
 			"label": "Foresight",
 			"menu": "aefx",
 			"secondary": {
@@ -121609,7 +121827,7 @@
 			}
 		},
 		{
-			"id": "578",
+			"id": "579",
 			"label": "Frightened",
 			"menu": "aefx",
 			"secondary": {
@@ -121744,7 +121962,7 @@
 			}
 		},
 		{
-			"id": "579",
+			"id": "580",
 			"label": "Guidance",
 			"menu": "aefx",
 			"macro": {
@@ -121879,7 +122097,7 @@
 			}
 		},
 		{
-			"id": "580",
+			"id": "581",
 			"label": "Heat Haze",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -122019,7 +122237,7 @@
 			}
 		},
 		{
-			"id": "581",
+			"id": "582",
 			"label": "Heroism",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -122158,7 +122376,7 @@
 			}
 		},
 		{
-			"id": "582",
+			"id": "583",
 			"label": "Hunted Prey",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -122297,7 +122515,7 @@
 			}
 		},
 		{
-			"id": "583",
+			"id": "584",
 			"label": "Illusory Disguise",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -122437,7 +122655,7 @@
 			}
 		},
 		{
-			"id": "584",
+			"id": "585",
 			"label": "Immobilized",
 			"menu": "aefx",
 			"secondary": {
@@ -122573,7 +122791,7 @@
 			}
 		},
 		{
-			"id": "585",
+			"id": "586",
 			"label": "Incapacitated",
 			"menu": "aefx",
 			"secondary": {
@@ -122708,7 +122926,7 @@
 			}
 		},
 		{
-			"id": "586",
+			"id": "587",
 			"label": "Incendiary Aura",
 			"menu": "aefx",
 			"secondary": {
@@ -122846,7 +123064,7 @@
 			}
 		},
 		{
-			"id": "587",
+			"id": "588",
 			"label": "Insect Form (Ant)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -122987,7 +123205,7 @@
 			}
 		},
 		{
-			"id": "588",
+			"id": "589",
 			"label": "Insect Form (Beetle)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -123128,7 +123346,7 @@
 			}
 		},
 		{
-			"id": "589",
+			"id": "590",
 			"label": "Insect Form (Centipede)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -123269,7 +123487,7 @@
 			}
 		},
 		{
-			"id": "590",
+			"id": "591",
 			"label": "Insect Form (Mantis)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -123410,7 +123628,7 @@
 			}
 		},
 		{
-			"id": "591",
+			"id": "592",
 			"label": "Insect Form (Scorpion)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -123551,7 +123769,7 @@
 			}
 		},
 		{
-			"id": "592",
+			"id": "593",
 			"label": "Insect Form (Spider)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -123692,7 +123910,7 @@
 			}
 		},
 		{
-			"id": "593",
+			"id": "594",
 			"label": "Inspire Defense",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -123832,7 +124050,7 @@
 			}
 		},
 		{
-			"id": "594",
+			"id": "595",
 			"label": "Lay on Hands",
 			"menu": "aefx",
 			"secondary": {
@@ -123967,7 +124185,7 @@
 			}
 		},
 		{
-			"id": "595",
+			"id": "596",
 			"label": "Lay on Hands Vs. Undead",
 			"menu": "aefx",
 			"secondary": {
@@ -124102,7 +124320,7 @@
 			}
 		},
 		{
-			"id": "596",
+			"id": "597",
 			"label": "Lichen's Tenacity",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -124241,7 +124459,7 @@
 			}
 		},
 		{
-			"id": "597",
+			"id": "598",
 			"label": "Mage Armor",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -124381,7 +124599,7 @@
 			}
 		},
 		{
-			"id": "598",
+			"id": "599",
 			"label": "Magic Weapon",
 			"menu": "aefx",
 			"secondary": {
@@ -124519,7 +124737,7 @@
 			}
 		},
 		{
-			"id": "599",
+			"id": "600",
 			"label": "Marshal's Aura",
 			"menu": "aefx",
 			"secondary": {
@@ -124655,7 +124873,7 @@
 			}
 		},
 		{
-			"id": "600",
+			"id": "601",
 			"label": "Mirror Image",
 			"metaData": {
 				"name": "PF2e Animations",
@@ -124792,7 +125010,7 @@
 			"activeEffectType": "ontoken"
 		},
 		{
-			"id": "601",
+			"id": "602",
 			"label": "Monstrosity Form (Phoenix)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -124933,7 +125151,7 @@
 			}
 		},
 		{
-			"id": "602",
+			"id": "603",
 			"label": "Monstrosity Form (Purple Worm)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -125074,7 +125292,7 @@
 			}
 		},
 		{
-			"id": "603",
+			"id": "604",
 			"label": "Monstrosity Form (Sea Serpent)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -125215,7 +125433,7 @@
 			}
 		},
 		{
-			"id": "604",
+			"id": "605",
 			"label": "Mountain Stronghold",
 			"menu": "aefx",
 			"secondary": {
@@ -125350,7 +125568,7 @@
 			}
 		},
 		{
-			"id": "605",
+			"id": "606",
 			"label": "Needle of Vengeance",
 			"menu": "aefx",
 			"secondary": {
@@ -125485,7 +125703,7 @@
 			}
 		},
 		{
-			"id": "606",
+			"id": "607",
 			"label": "Ooze Form (Black Pudding)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -125626,7 +125844,7 @@
 			}
 		},
 		{
-			"id": "607",
+			"id": "608",
 			"label": "Ooze Form (Gelatinous Cube)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -125767,7 +125985,7 @@
 			}
 		},
 		{
-			"id": "608",
+			"id": "609",
 			"label": "Ooze Form (Gray Ooze)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -125908,7 +126126,7 @@
 			}
 		},
 		{
-			"id": "609",
+			"id": "610",
 			"label": "Ooze Form (Ochre Jelly)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -126049,7 +126267,7 @@
 			}
 		},
 		{
-			"id": "610",
+			"id": "611",
 			"label": "Overdrive",
 			"menu": "aefx",
 			"secondary": {
@@ -126187,7 +126405,7 @@
 			}
 		},
 		{
-			"id": "611",
+			"id": "612",
 			"label": "Panache",
 			"menu": "aefx",
 			"secondary": {
@@ -126325,7 +126543,7 @@
 			}
 		},
 		{
-			"id": "612",
+			"id": "613",
 			"label": "Paralyzed",
 			"menu": "aefx",
 			"secondary": {
@@ -126463,7 +126681,7 @@
 			}
 		},
 		{
-			"id": "613",
+			"id": "614",
 			"label": "Petrified",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -126603,7 +126821,7 @@
 			}
 		},
 		{
-			"id": "614",
+			"id": "615",
 			"label": "Plant Form (Arboreal)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -126744,7 +126962,7 @@
 			}
 		},
 		{
-			"id": "615",
+			"id": "616",
 			"label": "Plant Form (Flytrap)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -126885,7 +127103,7 @@
 			}
 		},
 		{
-			"id": "616",
+			"id": "617",
 			"label": "Plant Form (Shambler)",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -127026,7 +127244,7 @@
 			}
 		},
 		{
-			"id": "617",
+			"id": "618",
 			"label": "Prone",
 			"menu": "aefx",
 			"secondary": {
@@ -127161,7 +127379,7 @@
 			}
 		},
 		{
-			"id": "618",
+			"id": "619",
 			"label": "Quickened",
 			"menu": "aefx",
 			"secondary": {
@@ -127299,7 +127517,7 @@
 			}
 		},
 		{
-			"id": "619",
+			"id": "620",
 			"label": "Quicksilver Mutagen",
 			"menu": "aefx",
 			"secondary": {
@@ -127434,7 +127652,7 @@
 			}
 		},
 		{
-			"id": "620",
+			"id": "621",
 			"label": "Raise a Shield",
 			"menu": "aefx",
 			"secondary": {
@@ -127572,7 +127790,7 @@
 			}
 		},
 		{
-			"id": "621",
+			"id": "622",
 			"label": "Resilient Sphere",
 			"menu": "aefx",
 			"secondary": {
@@ -127708,7 +127926,7 @@
 			}
 		},
 		{
-			"id": "622",
+			"id": "623",
 			"label": "Resist Energy",
 			"menu": "aefx",
 			"metaData": {
@@ -127841,7 +128059,7 @@
 			"activeEffectType": "ontoken"
 		},
 		{
-			"id": "623",
+			"id": "624",
 			"label": "Restrained",
 			"menu": "aefx",
 			"secondary": {
@@ -127977,7 +128195,7 @@
 			}
 		},
 		{
-			"id": "624",
+			"id": "625",
 			"label": "Sanctuary",
 			"menu": "aefx",
 			"secondary": {
@@ -128112,7 +128330,7 @@
 			}
 		},
 		{
-			"id": "625",
+			"id": "626",
 			"label": "Shillelagh",
 			"menu": "aefx",
 			"secondary": {
@@ -128248,7 +128466,7 @@
 			}
 		},
 		{
-			"id": "626",
+			"id": "627",
 			"label": "Slowed",
 			"menu": "aefx",
 			"secondary": {
@@ -128384,7 +128602,7 @@
 			}
 		},
 		{
-			"id": "627",
+			"id": "628",
 			"label": "Spell Effect: Bane",
 			"menu": "aefx",
 			"secondary": {
@@ -128529,7 +128747,7 @@
 			}
 		},
 		{
-			"id": "628",
+			"id": "629",
 			"label": "Spell Effect: Bless",
 			"menu": "aefx",
 			"secondary": {
@@ -128674,7 +128892,7 @@
 			}
 		},
 		{
-			"id": "629",
+			"id": "630",
 			"label": "Spell Effect: Inspire Courage",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -128823,7 +129041,7 @@
 			}
 		},
 		{
-			"id": "630",
+			"id": "631",
 			"label": "Spell Effect: Protective Ward",
 			"menu": "aefx",
 			"primary": {
@@ -128964,7 +129182,7 @@
 			}
 		},
 		{
-			"id": "631",
+			"id": "632",
 			"label": "Spell Effect: Shield",
 			"menu": "aefx",
 			"primary": {
@@ -129108,7 +129326,7 @@
 			}
 		},
 		{
-			"id": "632",
+			"id": "633",
 			"label": "Stumbling Stance",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -129249,7 +129467,7 @@
 			}
 		},
 		{
-			"id": "633",
+			"id": "634",
 			"label": "Stunned",
 			"menu": "aefx",
 			"secondary": {
@@ -129384,7 +129602,7 @@
 			}
 		},
 		{
-			"id": "634",
+			"id": "635",
 			"label": "Stupefied",
 			"menu": "aefx",
 			"secondary": {
@@ -129519,7 +129737,7 @@
 			}
 		},
 		{
-			"id": "635",
+			"id": "636",
 			"label": "True Strike",
 			"menu": "aefx",
 			"secondary": {
@@ -129654,7 +129872,7 @@
 			}
 		},
 		{
-			"id": "636",
+			"id": "637",
 			"label": "Unconscious",
 			"menu": "aefx",
 			"secondary": {
@@ -129789,7 +130007,7 @@
 			}
 		},
 		{
-			"id": "637",
+			"id": "638",
 			"label": "Unleash Psyche",
 			"activeEffectType": "ontoken",
 			"menu": "aefx",
@@ -129929,7 +130147,7 @@
 			}
 		},
 		{
-			"id": "638",
+			"id": "639",
 			"label": "Wild Shape",
 			"menu": "aefx",
 			"secondary": {
@@ -130065,7 +130283,7 @@
 			}
 		},
 		{
-			"id": "639",
+			"id": "640",
 			"label": "Wounded",
 			"menu": "aefx",
 			"secondary": {

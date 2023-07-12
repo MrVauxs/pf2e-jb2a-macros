@@ -1,3 +1,6 @@
+# Version 2.16.2
+- Updated the autorec to include the Heal template animation.
+
 # Version 2.16.1
 - Fixed dumb typo preventing Summoning Customization from working. (#155)
 - Simplified and revamped the Heal animation.
