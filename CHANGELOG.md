@@ -1,3 +1,6 @@
+# Version 2.16.3
+- Hopefully fixed an issue with summoned creatures being invisible by making animations async. 
+
 # Version 2.16.2
 - Updated the autorec to include the Heal template animation.
 
