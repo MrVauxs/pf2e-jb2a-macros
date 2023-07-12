@@ -1,3 +1,7 @@
+# Version 2.16.1
+- Fixed dumb typo preventing Summoning Customization from working. (#155)
+- Simplified and revamped the Heal animation.
+
 # Version 2.16.0
 - Removed vestigial summon settings.
 - Added a working Harm animation. Thank you Acheronx98 for the commission!
