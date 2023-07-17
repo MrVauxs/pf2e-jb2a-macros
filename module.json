@@ -117,7 +117,7 @@
                 "compatibility": {
                     "minimum": "1.5.0"
                 }
-            },
+            }
         ],
         "systems": [
             {
