@@ -1,3 +1,6 @@
+# Version 2.16.5
+- Made the "Add Effect" macro no longer add effects if they already exist (except for those that can be increased instead).
+
 # Version 2.16.4
 - Fixed the issue of summoned creatures being invisible.
 
