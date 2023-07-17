@@ -1,3 +1,8 @@
+# Version 2.16.6
+- Fixed "traits-and" argument in Summon Anything macro acting like "traits-or" argument.
+- Minimum recommended Foundry Summons version is 1.5.0 so "Summon Anarch" and similar macros can work.
+- Fixed Heal and Harm breaking if loot actors are in vicinity.
+
 # Version 2.16.5
 - Made the "Add Effect" macro no longer add effects if they already exist (except for those that can be increased instead).
 - Added Unseen Servant summon macro.
