@@ -1,5 +1,6 @@
 # Version 2.16.4
 - Fixed the issue of summoned creatures being invisible.
+- Added Unseen Servant summon macro.
 
 # Version 2.16.3
 - Hopefully fixed an issue with summoned creatures being invisible by making animations async.
