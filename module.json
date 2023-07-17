@@ -2,7 +2,7 @@
     "id": "pf2e-jb2a-macros",
     "title": "PF2e Animations",
     "description": "<p>A module dedicated to making PF2e shine.</p>",
-    "version": "2.16.2",
+    "version": "2.16.6",
     "authors": [
         {
             "name": "MrVauxs",
@@ -109,6 +109,16 @@
         }
     ],
     "relationships": {
+        "recommended": [
+            {
+                "id": "foundry-summons",
+                "type": "module",
+                "manifest": "https://github.com/MrVauxs/foundry-summons/releases/latest/download/module.json",
+                "compatibility": {
+                    "minimum": "1.5.0"
+                }
+            },
+        ],
         "systems": [
             {
                 "id": "pf2e",
