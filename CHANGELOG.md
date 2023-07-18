@@ -1,3 +1,7 @@
+# Version 2.16.7
+- Removed the involvement of the "Add Effect" macro in animations and other functions. That task has been delegated to PF2e Action Support.
+- Removed the custom Mirror Image effect in favor of the base system one (since when was that there?)
+
 # Version 2.16.6
 - Fixed "traits-and" argument in Summon Anything macro acting like "traits-or" argument.
 - Minimum recommended Foundry Summons version is 1.5.0 so "Summon Anarch" and similar macros can work.
