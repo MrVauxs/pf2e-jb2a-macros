@@ -1,8 +1,15 @@
-2023/07/19-19:01:46.072611 ffffa4a95160 Recovering log #212
-2023/07/19-19:01:46.083830 ffffa4a95160 Delete type=3 #210
-2023/07/19-19:01:46.083866 ffffa4a95160 Delete type=0 #212
-2023/07/19-21:34:12.414013 fffe77cf3160 Level-0 table #217: started
-2023/07/19-21:34:12.414043 fffe77cf3160 Level-0 table #217: 0 bytes OK
-2023/07/19-21:34:12.417030 fffe77cf3160 Delete type=0 #215
-2023/07/19-21:34:12.420335 fffe77cf3160 Manual compaction at level-0 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
-2023/07/19-21:34:12.423384 fffe77cf3160 Manual compaction at level-1 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
+2023/07/31-19:08:03.640744 ffff949f4160 Recovering log #252
+2023/07/31-19:08:03.651218 ffff949f4160 Delete type=3 #250
+2023/07/31-19:08:03.651249 ffff949f4160 Delete type=0 #252
+2023/08/02-00:18:52.461560 fffe67bf4160 Level-0 table #257: started
+2023/08/02-00:18:52.464673 fffe67bf4160 Level-0 table #257: 3365 bytes OK
+2023/08/02-00:18:52.467191 fffe67bf4160 Delete type=0 #255
+2023/08/02-00:18:52.471107 fffe67bf4160 Manual compaction at level-0 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
+2023/08/02-00:18:52.476799 fffe67bf4160 Manual compaction at level-1 from '!macros!0O8rNzIVLo8p3tXj' @ 72057594037927935 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at '!macros!emzJwDdpyYpuYkcm' @ 395 : 1
+2023/08/02-00:18:52.476805 fffe67bf4160 Compacting 1@1 + 1@2 files
+2023/08/02-00:18:52.481837 fffe67bf4160 Generated table #258@1: 63 keys, 94754 bytes
+2023/08/02-00:18:52.481851 fffe67bf4160 Compacted 1@1 + 1@2 files => 94754 bytes
+2023/08/02-00:18:52.484370 fffe67bf4160 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/08/02-00:18:52.484429 fffe67bf4160 Delete type=2 #257
+2023/08/02-00:18:52.484500 fffe67bf4160 Delete type=2 #189
+2023/08/02-00:18:52.484589 fffe67bf4160 Manual compaction at level-1 from '!macros!emzJwDdpyYpuYkcm' @ 395 : 1 .. '!macros!ya0hNKP4l4uOfoGJ' @ 0 : 0; will stop at (end)
