@@ -462,42 +462,44 @@ pf2eAnimations.hooks.updateCombatant = Hooks.on(
 
 pf2eAnimations.hooks.foundrySummons = Hooks.on(
   "fs-postSummon",
-  ({ tokenDoc, sourceData }) => {
-    let items =
-      sourceData.summonerTokenDocument?.actor?.itemTypes?.action.filter(
-        (item) => {
-          return item.name.includes("Summoning Animation Template");
-        }
-      );
-    let item;
+  (postSummon) => {
+    let { tokenDoc, sourceData } = postSummon;
+    if (!postSummon.animated) {
+      postSummon.animated = true;
+      let items =
+        sourceData.summonerTokenDocument?.actor?.itemTypes?.action.filter(
+          (item) => {
+            return item.name.includes("Summoning Animation Template");
+          }
+        );
+      let item;
 
-    if (items?.length > 0) {
-      item =
-        items.find((i) =>
-          i.name.includes(`Summoning Animation Template (${tokenDoc.name})`)
-        ) ??
-        items.find((i) =>
-          i.name.includes(
-            `Summoning Animation Template (${sourceData?.flags?.item?.name})`
-          )
-        ) ??
-        items.find((i) => i.name === `Summoning Animation Template`);
+      if (items?.length > 0) {
+        item =
+          items.find((i) =>
+            i.name.includes(`Summoning Animation Template (${tokenDoc.name})`)
+          ) ??
+          items.find((i) =>
+            i.name.includes(
+              `Summoning Animation Template (${sourceData?.flags?.item?.name})`
+            )
+          ) ??
+          items.find((i) => i.name === `Summoning Animation Template`);
+      }
+
+      setTimeout(() => {
+        AutomatedAnimations.playAnimation(
+          canvas.tokens.get(sourceData.summonerTokenDocument._id),
+          item ?? {
+            name: `Summoning Animation Template (${sourceData?.flags?.item?.name})`,
+          },
+          {
+            targets: [tokenDoc.object],
+            hitTargets: [tokenDoc.object],
+          }
+        );
+      }, 100);
     }
-
-    setTimeout(() => {
-      AutomatedAnimations.playAnimation(
-        canvas.tokens.get(sourceData.summonerTokenDocument._id),
-        item ?? {
-          name: `Summoning Animation Template (${sourceData?.flags?.item?.name})`,
-        },
-        {
-          targets: [tokenDoc.object],
-          hitTargets: [tokenDoc.object],
-        }
-      );
-    }, 100);
-
-    return false;
   }
 );
 

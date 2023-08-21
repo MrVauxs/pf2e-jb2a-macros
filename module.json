@@ -1,12 +1,12 @@
 {
     "id": "pf2e-jb2a-macros",
-    "title": "PF2e Animations",
-    "description": "<p>A module dedicated to making PF2e shine.</p>",
+    "title": "PF2e Animation Macros",
+    "description": "<p>A module dedicated to making PF2e shine. Deprecated in favor of <a href=\"https://github.com/MrVauxs/pf2e-animations-2\">PF2e Animations (2)!</a></p>",
     "version": "2.16.6",
     "authors": [
         {
             "name": "MrVauxs",
-            "discord": "MrVauxs#8622",
+            "discord": "vauxs",
             "twitter": "@ThatVauxs",
             "patreon": "mrvauxs",
             "ko-fi": "mrvauxs",
