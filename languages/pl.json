@@ -14,7 +14,8 @@
 			"wrongVersion": "Do pełnego funkcjonowania PF2e Animations brakuje <b>{modules}</b>! Zaktualizuj wymieniona moduły!",
 			"outOfRange": "Cel jest poza zasięgiem.",
 			"noPrem": "Potrzebujesz <a href='https://www.patreon.com/JB2A/membership'>wersji premium zasobów JB2A</a>, żeby używać tej animacji!",
-			"unevenGrid": "Siatka twojej sceny jest nierówna ({grid}px). To może sprawić, że pozycja postaci będzie nieprawidłowa!"
+			"unevenGrid": "Siatka twojej sceny jest nierówna ({grid}px). To może sprawić, że pozycja postaci będzie nieprawidłowa!",
+			"killAnimationsOnKill": "Usunięto animacje pokonanego wojownika \"{name}\"."
 		},
 		"settings": {
 			"disableHitAnims": {
@@ -56,6 +57,14 @@
 			"tmfx": {
 				"name": "Używaj Token Magic Effects",
 				"hint": "Niektóre animacje używają Token Magic FX zamiast Sequencera. Ta opcja jest widoczna tylko kiedy zainstalowany jest moduł Token Magic FX."
+			},
+			"killAnimationsOnKillNotify": {
+				"name": "Powiadomienie o usunięciu animacji na pokonanych Tokenach",
+				"hint": "Powiadomienie o usunięciu animacji na tokenach oznaczonych jako pokonane w inicjatywie."
+			},
+			"killAnimationsOnKill": {
+				"name": "Usunięcie animacji na pokonanych tokenach",
+				"hint": "Automatycznie usunięcie animacji tokenów oznaczonych jako pokonane w inicjatywie."
 			}
 		},
 		"updateMenu": {
@@ -98,7 +107,8 @@
 					"traitsArg": "Filtrowane przez cechy: <b>{traits}</b>.",
 					"hasImageArg": "Filtrowane przez posiadanie <b>obrazu</b> czy nie.",
 					"uncommonArg": "Można wybrać <b>niezwykłe lub rzadsze</b> stworzenia.",
-					"sourceArg": "Filtrowane przez źródła: <b>{sources}</b>."
+					"sourceArg": "Filtrowane przez źródła: <b>{sources}</b>.",
+					"nameArg": "Filtrowane według nazwy: <b>{name}</b>."
 				},
 				"gm": {
 					"content": "<p>{user} chce przywołać <b>{amount} {actorName}</b>.</p><p>Schemat został stworzony pokazujący gdzie będzie przywołane stworzenie. Jeżeli zaakceptujesz, przywołanie stworzenia stanie się tam gdzie jest schemat. Możesz zmienić pozycję schematu zanim zaakceptujesz.</p><p>Zamykanie lub Odmawianie tej oto prośby usunie schemat i nic nie będzie przywołane.</p>",
@@ -112,6 +122,12 @@
 				"suddenCharge": "Nagła Szarża."
 			},
 			"outOfRange": "Poza zasięgiem!"
+		},
+		"welcomeMessage": {
+			"description": "Ten moduł zawiera ustawienia animacji dla systemu PF2e. Animacje te mogą spowolnić działanie komputera, niezależnie od tego, czy jest to spowodowane posiadaniem komputera niższej klasy, czy też dużą ilością efektów na ekranie, co jest powszechne w grach na wyższych poziomach.<p/>Jeśli nie chcesz widzieć tych animacji, zapoznaj się z ustawieniami modułu <b>Sequencer</b> i wyłącz ustawienie <b>\"Enable Effects\"</b>.",
+			"header": "Witamy w PF2e Animations!",
+			"settingsButton": "Otwórz Ustawienia",
+			"footer": "Możesz bezpiecznie usunąć tę wiadomość, nie otrzymasz kolejnej."
 		}
 	}
 }
