@@ -70975,6 +70975,225 @@
 			}
 		},
 		{
+			"id": "300",
+			"label": "Frostbite",
+			"levels3d": {
+				"enable": false,
+				"type": "",
+				"data": {
+					"color01": "#000000",
+					"color02": "#000000",
+					"speed": null,
+					"repeat": null,
+					"arc": null,
+					"delay": null,
+					"scale": null,
+					"alpha": null,
+					"gravity": null,
+					"mass": null,
+					"life": null,
+					"emittersize": null,
+					"rate": null,
+					"addexplosion": {
+						"enable": false,
+						"color01": "#000000",
+						"color02": "#000000",
+						"speed": null,
+						"scale": null,
+						"alpha": null,
+						"gravity": null,
+						"mass": null,
+						"life": null,
+						"emittersize": null,
+						"rate": null,
+						"sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+					},
+					"sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+				},
+				"secondary": {
+					"enable": false,
+					"data": {}
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				}
+			},
+			"macro": {
+				"enable": false,
+				"playWhen": "0",
+				"name": "",
+				"args": ""
+			},
+			"menu": "range",
+			"primary": {
+				"options": {
+					"delay": 0,
+					"elevation": 1000,
+					"isReturning": false,
+					"isWait": false,
+					"onlyX": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 500,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "range",
+					"menuType": "spell",
+					"animation": "rayoffrost",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false
+				}
+			},
+			"secondary": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 250,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": true,
+					"isWait": false,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 500,
+					"size": 1.5,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"soundOnly": {
+				"sound": {
+					"enable": false,
+					"delay": 0,
+					"startTime": 0,
+					"volume": 1,
+					"repeat": 1,
+					"repeatDelay": 250
+				}
+			},
+			"source": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isRadius": false,
+					"isWait": true,
+					"opacity": 1,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"target": {
+				"enable": false,
+				"options": {
+					"addTokenWidth": false,
+					"anchor": "0.5",
+					"delay": 0,
+					"elevation": 1000,
+					"fadeIn": 250,
+					"fadeOut": 500,
+					"isMasked": false,
+					"isWait": false,
+					"isRadius": false,
+					"opacity": 1,
+					"persistent": false,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"size": 1,
+					"unbindAlpha": true,
+					"unbindVisibility": true,
+					"zIndex": 1
+				},
+				"sound": {
+					"delay": 0,
+					"enable": false,
+					"file": "",
+					"startTime": 0,
+					"repeat": 1,
+					"repeatDelay": 250,
+					"volume": 1
+				},
+				"video": {
+					"dbSection": "static",
+					"menuType": "spell",
+					"animation": "curewounds",
+					"variant": "01",
+					"color": "blue",
+					"enableCustom": false,
+					"customPath": ""
+				}
+			},
+			"metaData": {
+				"name": "PF2e Animation Macros",
+				"version": 12,
+				"moduleVersion": "2.6.6",
+				"label": "Ray of Frost",
+				"menu": "range"
+			}
+		},
+		{
 			"id": "301",
 			"label": "Reaper's Grasp",
 			"levels3d": {
