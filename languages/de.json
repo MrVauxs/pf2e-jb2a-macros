@@ -19,7 +19,13 @@
 			"tooManyArgs": "Zu viele Argumente für dieses Makro! Die folgenden Argumente sind nicht kompatibel: {Ausgaben}",
 			"noJB2A": "Sie müssen ein <a href=\"https://jb2a.com/home/content-information/#free_library\">JB2A-Modul</a> aktivieren, um das PF2e Animationsmodul zu verwenden!",
 			"noPack": "Kann das Paket 'pf2e-jb2a-macros.Actions' irgendwie nicht finden?",
-			"metaData": "Diese Animation wird bei der Aktualisierung ersetzt werden. Wenn ihr das nicht wollt, ändert ihr am besten vorübergehend die <b>animation</b>or <b>variant</b> auf etwas anderes oder aktiviert den Debug-Modus in den Einstellungen und drückt erneut auf die Schaltfläche \"Metadaten\"."
+			"metaData": "Diese Animation wird bei der Aktualisierung ersetzt werden. Wenn ihr das nicht wollt, ändert ihr am besten vorübergehend die <b>animation</b>or <b>variant</b> auf etwas anderes oder aktiviert den Debug-Modus in den Einstellungen und drückt erneut auf die Schaltfläche \"Metadaten\".",
+			"gridless": "Fadenkreuze sind nur für Grid-basierte Szenen empfohlen. Bei Szenen ohne Grid kann es Probleme geben.",
+			"noDependencies": "Es fehlen <b>{modules}</b>, damit PF2e Animations richtig funktioniert! Bitte die genannten Module aktivieren!",
+			"outOfRange": "Ziel ist außerhalb der Reichweite.",
+			"wrongVersion": "Es fehlen <b>{modules}</b>, damit PF2e Animations richtig funktioniert! Bitte die genannten Module updaten!",
+			"unevenGrid": "Dein Szenen-Gitter ist ungerade ({grid}px). Dadurch wird die Zielposition wahrscheinlich versetzt sein!",
+			"noPrem": "Dir fehlt die <a href='https://www.patreon.com/JB2A/membership'>JB2A-Assets Premium-Version</a>, um diese Animation zu nutzen!"
 		},
 		"macro": {
 			"suddenCharge": {
@@ -45,10 +51,20 @@
 					"sorted": "Sortiert nach Stufe und alphabetisch.",
 					"levelArg": "Gefiltert nach Stufe <b>{level1} and above, up to {level2}</b>.",
 					"traitsArg": "Gefiltert nach Eigenschaften: <b>{traits}</b>.",
-					"summonArg": "Gefiltert nach Stufe <b>(max. level {multiplier} from {spellLevel} level spell)</b>."
+					"summonArg": "Gefiltert nach Stufe <b>(max. level {multiplier} from {spellLevel} level spell)</b>.",
+					"hasImageArg": "Gefiltert ob die Kreatur ein <b>Bild</b> besitzt.",
+					"label": "Sortiert nach...?",
+					"nameArg": "Gefiltert nach Name: <b>{name}</b>.",
+					"creature": "Kreatur",
+					"amount": "Anzahl",
+					"uncommonArg": "Auswahl erlaubt für <b>Seltenheit Ungewöhnlich oder höher</b>.",
+					"sourceArg": "Gefiltert nach Quelle: <b>{sources}</b>."
 				},
-				"gm": {}
-			}
+				"gm": {
+					"unknownUser": "Ein unbekannter Nutzer"
+				}
+			},
+			"outOfRange": "Außerhalb der Reichweite!"
 		}
 	}
 }
