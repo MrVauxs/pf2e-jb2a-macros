@@ -24,7 +24,7 @@ self.pf2eAnimations.modifiersMatter = Hooks.on("modifiersMatter", ({
             animationName = `Modifiers Matter: ${name}`
         }
 
-        if (!name) {
+        if (!animationName) {
             return pf2eAnimations.debug(`Modifiers Matter | No Animation Found for:`, `${name} (${significance})`);
         } else {
             AutomatedAnimations.playAnimation(
