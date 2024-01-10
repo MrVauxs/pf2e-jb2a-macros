@@ -1,3 +1,24 @@
+# Version 2.17.3
+- Fixed Modifier Matter animations not working on targeted tokens.
+
+# Version 2.17.2
+- Fix integration bug with Modifiers Matter (#171)
+
+# Version 2.17.1
+- Fixed Illusory Disguise not working.
+- Fixed Divine variant of the Heal animation.
+
+# Version 2.17.0
+- Added Remaster renames to spells from the Remaster Changes document. (#168)
+- Updated German localization.
+
+# Version 2.16.9
+- Fixed Summon Anything macro not obeying default Foundry Summons filters.
+-
+# Version 2.16.8
+- Updated summoning-relevant code to match Foundry Summons 1.5.1.
+- Updated localization files.
+
 # Version 2.16.7
 - Removed the involvement of the "Add Effect" macro in animations and other functions. That task has been delegated to PF2e Action Support.
 - Removed the custom Mirror Image effect in favor of the base system one (since when was that there?)
