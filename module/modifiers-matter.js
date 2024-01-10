@@ -33,7 +33,7 @@ self.pf2eAnimations.modifiersMatter = Hooks.on("modifiersMatter", ({
                     name: animationName
                 },
                 {
-                    targets: [targetedToken]
+                    targets: [targetedToken.object]
                 }
             )
         }
