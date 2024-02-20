@@ -84360,6 +84360,15 @@
 				"moduleVersion": "2.6.6",
 				"label": "Dancing Lights",
 				"menu": "ontoken"
+			},
+			"advanced": {
+				"exactMatch": true,
+				"excludedTerms": [],
+				"excludedType": {
+					"enabled": false,
+					"path": "",
+					"property": ""
+				}
 			}
 		},
 		{
