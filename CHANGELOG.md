@@ -1,3 +1,6 @@
+# Version 2.17.5
+- Added Summon Monitor.
+
 # Version 2.17.4
 - Fixed Summon Lesser Servitor still attempting to filter by alignment which no longer exists.
 - Fixed Light spell activating on any mention of "Light"
