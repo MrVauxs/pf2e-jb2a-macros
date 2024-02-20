@@ -1,3 +1,8 @@
+# Version 2.17.4
+- Fixed Summon Lesser Servitor still attempting to filter by traits which no longer exist.
+- Fixed Light spell activating on any mention of "Light"
+- Fixed Recall Knowledge / Devise a Stratagem animations to be based on token position and only zoom to the token once per browser session.
+
 # Version 2.17.3
 - Fixed Modifier Matter animations not working on targeted tokens.
 
