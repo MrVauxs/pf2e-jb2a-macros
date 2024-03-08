@@ -565,7 +565,7 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 
     if (macro_data) {
       if (isNewerVersion(game.version, "11")) {
-        await macro_data.execute(args);
+        await macro_data.execute({args});
       } else {
         const temp_macro = new Macro(macro_data.toObject());
         temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
