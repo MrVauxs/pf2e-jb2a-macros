@@ -152,7 +152,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on(
       flavor.match(/Received (regeneration|fast healing)/g)
     ) {
       pf2eAnimations.debug("Persistent Damage / Healing", data);
-      return pf2eAnimations.runMacro("Persistent Conditions", args);
+      return pf2eAnimations.runMacro("Persistent Conditions", [args]);
     }
     // Default Matches
     if (data.isDamageRoll && /Sneak Attack/.test(flavor)) {
