@@ -152,7 +152,7 @@ pf2eAnimations.hooks.createChatMessage = Hooks.on(
       flavor.match(/Received (regeneration|fast healing)/g)
     ) {
       pf2eAnimations.debug("Persistent Damage / Healing", data);
-      return pf2eAnimations.runMacro("Persistent Conditions", args);
+      return pf2eAnimations.runMacro("Persistent Conditions", [args]);
     }
     // Default Matches
     if (data.isDamageRoll && /Sneak Attack/.test(flavor)) {
@@ -565,7 +565,7 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 
     if (macro_data) {
       if (isNewerVersion(game.version, "11")) {
-        await macro_data.execute(args);
+        await macro_data.execute({args});
       } else {
         const temp_macro = new Macro(macro_data.toObject());
         temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
