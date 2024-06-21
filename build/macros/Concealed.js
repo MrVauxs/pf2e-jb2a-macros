@@ -2,16 +2,25 @@
 const [tokenD] = pf2eAnimations.macroHelpers(args)
 const tokenMagic = game.settings.get("pf2e-jb2a-macros", "tmfx")
 
-if (!args.length) args[0] = tokenMagic ? TokenMagic.hasFilterId(tokenD, "Concealed") ? "off" : "on" : null
+if (!args.length)
+  args[0] = tokenMagic
+    ? TokenMagic.hasFilterId(tokenD, "Concealed")
+      ? "off"
+      : "on"
+    : null
 
-if (TokenMagic.hasFilterId(tokenD, "Blur") || TokenMagic.hasFilterId(tokenD, "Heat Haze")) return;
+if (
+  TokenMagic.hasFilterId(tokenD, "Blur") ||
+  TokenMagic.hasFilterId(tokenD, "Heat Haze")
+)
+  return
 
-const params =
-[{
+const params = [
+  {
     filterType: "xfire",
     filterId: "Concealed",
     time: 0,
-    color: 0xBBDDEE,
+    color: 0xbbddee,
     blend: 1,
     amplitude: 1,
     dispersion: 0,
@@ -19,15 +28,14 @@ const params =
     scaleX: 1,
     scaleY: 1,
     inlay: false,
-    animated :
-    {
-      time : 
-      { 
-        active: true, 
-        speed: -0.0015, 
-        animType: "move" 
-      }
-    }
-}];
+    animated: {
+      time: {
+        active: true,
+        speed: -0.0015,
+        animType: "move",
+      },
+    },
+  },
+]
 
-pf2eAnimations.applyTokenMagic(args, params);
+pf2eAnimations.applyTokenMagic(args, params)
