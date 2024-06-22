@@ -48,7 +48,7 @@ if (mods.length > 1) {
 
 seqe
   .effect()
-  .file("jb2a.throwable.throw.flask.03.green", true)
+  .file("jb2a.throwable.throw.flask.03.green")
   .atLocation(tokenD)
   .stretchTo(target)
   .fadeIn(300)
@@ -66,12 +66,12 @@ seqe
   )
   .effect()
   .playIf(options !== "Directional")
-  .file("jb2a.liquid.splash.bright_green", true)
+  .file("jb2a.liquid.splash.bright_green")
   .atLocation(target)
   .size({ width: 3.5, height: 3.5 }, { gridUnits: true })
   .effect()
   .playIf(options !== "Directional")
-  .file("jb2a.explosion.side_fracture.flask.03", true)
+  .file("jb2a.explosion.side_fracture.flask.03")
   .offset({ x: 0.5, y: 0.5 }, { gridUnits: true })
   .atLocation(target)
   .rotate(180)

@@ -7,7 +7,7 @@ const [templateX, templateY] = [template.data.x, template.data.y]
 
 new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .effect()
-  .file("jb2a.thunderwave.center.blue", true)
+  .file("jb2a.thunderwave.center.blue")
   .mask(template)
   .attachTo(tokenD)
   .scale(args[1].item.level > 2 ? 2 : 1)

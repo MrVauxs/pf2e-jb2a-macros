@@ -72,7 +72,7 @@ const actionCounter = (number, origin) =>
   new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .effect()
     .name(tokenD.name + " Action " + (1 + number))
-    .file("modules/pf2e-jb2a-macros/assets/actions/one.png", true)
+    .file("modules/pf2e-jb2a-macros/assets/actions/one.png")
     .origin(origin.uuid)
     .fadeIn(1000)
     .animateProperty("sprite", `position.y`, {

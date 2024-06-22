@@ -4,7 +4,7 @@ const template =
   canvas.templates.placeables[canvas.templates.placeables.length - 1]
 new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .effect()
-  .file("jb2a.energy_strands.range.multiple.purple.01", true)
+  .file("jb2a.energy_strands.range.multiple.purple.01")
   .fadeIn(500)
   .fadeOut(500)
   .atLocation(template)

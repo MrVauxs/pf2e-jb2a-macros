@@ -38,7 +38,7 @@ for (let i = 0; i < 2; i++) {
       y: -(canvas.scene.grid.size / 2),
     })
     .effect()
-    .file("jb2a.gust_of_wind.veryfast", true)
+    .file("jb2a.gust_of_wind.veryfast")
     .atLocation(tokenD, { cacheLocation: true })
     .stretchTo(location, { onlyX: true })
     .randomizeMirrorY()

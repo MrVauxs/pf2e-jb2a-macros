@@ -16,7 +16,7 @@ if (typeof args[0] === "string") {
         new Sequence({ moduleName: "PF2e Animations", softFail: true })
           .wait(100, 5000)
           .effect()
-          .file("jb2a.wind_stream.white", true)
+          .file("jb2a.wind_stream.white")
           .name(spellName)
           .attachTo(tokenD)
           .scaleToObject(tokenScale)
@@ -29,7 +29,7 @@ if (typeof args[0] === "string") {
           .tint("#FF0000")
           .persist(true, { persistTokenPrototype: true })
           .effect()
-          .file("jb2a.token_border.circle.static.blue.001", true)
+          .file("jb2a.token_border.circle.static.blue.001")
           .name(spellName)
           .attachTo(tokenD)
           .opacity(0.6)
@@ -49,7 +49,7 @@ if (typeof args[0] === "string") {
         new Sequence({ moduleName: "PF2e Animations", softFail: true })
           .wait(100, 5000)
           .effect()
-          .file("jb2a.shield_themed.below.ice.01.blue", true)
+          .file("jb2a.shield_themed.below.ice.01.blue")
           .name(spellName)
           .belowTokens()
           .rotate(randomD)
@@ -60,7 +60,7 @@ if (typeof args[0] === "string") {
           .scaleToObject(1.5 * tokenScale)
           .persist(true, { persistTokenPrototype: true })
           .effect()
-          .file("jb2a.shield_themed.above.ice.01.blue", true)
+          .file("jb2a.shield_themed.above.ice.01.blue")
           .name(spellName)
           .attachTo(tokenD)
           .rotate(randomD)
@@ -134,12 +134,12 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.greenorange", true)
+          .file("jb2a.bardic_inspiration.greenorange")
           .waitUntilFinished(-1000)
           .effect()
           .atLocation(target)
           .scaleToObject(1.5)
-          .file("jb2a.healing_generic.400px.green", true)
+          .file("jb2a.healing_generic.400px.green")
           .play()
         break
       }
@@ -149,11 +149,11 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.pink", true)
+          .file("jb2a.bardic_inspiration.pink")
           .effect()
           .atLocation(target)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.pink", true)
+          .file("jb2a.bardic_inspiration.pink")
           .play()
         break
       }
@@ -166,13 +166,13 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.dark_red", true)
+          .file("jb2a.bardic_inspiration.dark_red")
         targets.forEach((element, index) => {
           seq
             .effect()
             .atLocation(targets[index])
             .scaleToObject(1.5)
-            .file("jb2a.divine_smite.caster.blueyellow", true)
+            .file("jb2a.divine_smite.caster.blueyellow")
         })
         seq.play()
         break
@@ -186,13 +186,13 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.blueyellow", true)
+          .file("jb2a.bardic_inspiration.blueyellow")
         targets.forEach((element, index) => {
           seq
             .effect()
             .atLocation(targets[index])
             .scaleToObject(1.5)
-            .file("jb2a.divine_smite.caster.blueyellow", true)
+            .file("jb2a.divine_smite.caster.blueyellow")
         })
         seq.play()
         break
@@ -202,11 +202,11 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.blueyellow", true)
+          .file("jb2a.bardic_inspiration.blueyellow")
           .effect()
           .atLocation(target)
           .scaleToObject(1.5)
-          .file("jb2a.divine_smite.caster.blueyellow", true)
+          .file("jb2a.divine_smite.caster.blueyellow")
           .play()
         break
       }
@@ -215,7 +215,7 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.greenorange", true)
+          .file("jb2a.bardic_inspiration.greenorange")
           .effect()
           .atLocation(tokenD)
           .attachTo(tokenD)
@@ -229,7 +229,7 @@ if (typeof args[0] === "string") {
           .opacity(0.5)
           .persist()
           .name("Bardic Cantrips - Song of Marching")
-          .file("jb2a.markers.music.greenorange", true)
+          .file("jb2a.markers.music.greenorange")
           .play()
         ui.notifications.info(
           'Persistent Effect created, once you don\'t want it playing you can remove it in <i class="fas fa-film"></i> Sequencers Effect Manager.'
@@ -241,7 +241,7 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.dark_red", true)
+          .file("jb2a.bardic_inspiration.dark_red")
           .effect()
           .atLocation(tokenD)
           .attachTo(tokenD)
@@ -255,7 +255,7 @@ if (typeof args[0] === "string") {
           .opacity(0.5)
           .persist()
           .name("Bardic Cantrips - Dirge of Doom")
-          .file("jb2a.spirit_guardians.dark_red.ring", true)
+          .file("jb2a.spirit_guardians.dark_red.ring")
           .effect()
           .atLocation(tokenD)
           .attachTo(tokenD)
@@ -271,7 +271,7 @@ if (typeof args[0] === "string") {
           })
           .endTime(600)
           .name("Bardic Cantrips - Dirge of Doom")
-          .file("jb2a.divine_smite.caster.dark_red", true)
+          .file("jb2a.divine_smite.caster.dark_red")
           .play()
         ui.notifications.info(
           'Persistent Effect created, once you don\'t want it playing you can remove it in <i class="fas fa-film"></i> Sequencers Effect Manager.'
@@ -286,13 +286,13 @@ if (typeof args[0] === "string") {
           .effect()
           .atLocation(tokenD)
           .scaleToObject(2)
-          .file("jb2a.bardic_inspiration.greenorange", true)
+          .file("jb2a.bardic_inspiration.greenorange")
         targets.forEach((element, index) => {
           seq
             .effect()
             .atLocation(targets[index])
             .scaleToObject(1.5)
-            .file("jb2a.divine_smite.caster.greenyellow", true)
+            .file("jb2a.divine_smite.caster.greenyellow")
         })
         seq.play()
         break

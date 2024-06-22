@@ -92,7 +92,7 @@ const mirrorImage = (number, origin) =>
 const seq = new Sequence({ moduleName: "PF2e Animations", softFail: true })
   // Blast
   .effect()
-  .file("jb2a.impact.004.blue", true)
+  .file("jb2a.impact.004.blue")
   .atLocation(tokenD)
   .fadeIn(500)
   .tieToDocuments([args[1].item])
@@ -100,7 +100,7 @@ const seq = new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .fadeOut(1500)
   // Illusion Mark
   .effect()
-  .file("jb2a.extras.tmfx.runes.circle.simple.illusion", true)
+  .file("jb2a.extras.tmfx.runes.circle.simple.illusion")
   .atLocation(tokenD)
   .duration(2000)
   .fadeIn(500)

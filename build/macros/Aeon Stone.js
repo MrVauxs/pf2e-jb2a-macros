@@ -97,7 +97,7 @@ if (args[0] === "invested") {
 
   new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .effect()
-    .file(stone, true)
+    .file(stone)
     .attachTo(tokenD, { followRotation: false })
     .scale(stoneScale)
     .spriteOffset({ y: 0.5 }, { gridUnits: true })

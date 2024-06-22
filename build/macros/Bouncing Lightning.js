@@ -7,21 +7,19 @@ if (targetTokens.length === 0) return
 
 let sequence = new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .effect()
-  .file("jb2a.chain_lightning.primary.blue", true)
+  .file("jb2a.chain_lightning.primary.blue")
   .atLocation(tokenD)
   .stretchTo(targetTokens[0])
   .waitUntilFinished(-1100)
   .sound()
   .volume(0.3)
   .file(
-    "modules/soundfxlibrary/Combat/Single/Spell%20Impact%20Lightning/spell-impact-lightning-3.mp3",
-    true,
-    true
+    "modules/soundfxlibrary/Combat/Single/Spell%20Impact%20Lightning/spell-impact-lightning-3.mp3"
   )
   .fadeInAudio(500)
   .fadeOutAudio(500)
   .effect()
-  .file("jb2a.static_electricity.02.blue", true)
+  .file("jb2a.static_electricity.02.blue")
   .atLocation(targetTokens[0])
   .scaleToObject(1.2)
   .repeats(2)
@@ -29,7 +27,7 @@ let sequence = new Sequence({ moduleName: "PF2e Animations", softFail: true })
 for (let i = 1; i < targetTokens.length; i++) {
   sequence
     .effect()
-    .file("jb2a.chain_lightning.secondary.blue", true)
+    .file("jb2a.chain_lightning.secondary.blue")
     .repeats(2)
     .atLocation(targetTokens[i - 1])
     .stretchTo(targetTokens[i])
@@ -37,14 +35,12 @@ for (let i = 1; i < targetTokens.length; i++) {
     .sound()
     .volume(0.3)
     .file(
-      "modules/soundfxlibrary/Combat/Single/Spell%20Impact%20Lightning/spell-impact-lightning-4.mp3",
-      true,
-      true
+      "modules/soundfxlibrary/Combat/Single/Spell%20Impact%20Lightning/spell-impact-lightning-4.mp3"
     )
     .fadeInAudio(500)
     .fadeOutAudio(500)
     .effect()
-    .file("jb2a.static_electricity.02.blue", true)
+    .file("jb2a.static_electricity.02.blue")
     .atLocation(targetTokens[i])
     .scaleToObject(1.2)
     .repeats(2)

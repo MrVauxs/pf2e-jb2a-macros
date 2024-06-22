@@ -6,7 +6,7 @@ const template =
 const [templateX, templateY] = [template.data.x, template.data.y]
 new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .effect()
-  .file("jb2a.template_circle.out_pulse.01.burst", true)
+  .file("jb2a.template_circle.out_pulse.01.burst")
   .mask(template)
   .atLocation(tokenD)
   .randomRotation()

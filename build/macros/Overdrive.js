@@ -18,7 +18,7 @@ const assets = game.modules.get("JB2A_DnD5e")?.active
 if (args[0] == "on" || testArgs === "on") {
   new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .effect()
-    .file("jb2a.divine_smite.caster.blueyellow", true)
+    .file("jb2a.divine_smite.caster.blueyellow")
     .origin("overdrive")
     .name(tokenD.name + "'s Overdrive")
     .filter("ColorMatrix", {
@@ -33,7 +33,7 @@ if (args[0] == "on" || testArgs === "on") {
     .waitUntilFinished(-1500)
     .effect()
     .playIf(args[1]?.itemName.includes("Critical"))
-    .file("jb2a.static_electricity.03.blue", true)
+    .file("jb2a.static_electricity.03.blue")
     .origin("overdrive")
     .name(tokenD.name + "'s Overdrive")
     .attachTo(tokenD)
@@ -42,7 +42,7 @@ if (args[0] == "on" || testArgs === "on") {
     .fadeOut(500)
     .persist(true, { persistTokenPrototype: true })
     .effect()
-    .file(assets[0], true)
+    .file(assets[0])
     .origin("overdrive")
     .name(tokenD.name + "'s Overdrive")
     .attachTo(tokenD)

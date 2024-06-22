@@ -85,7 +85,7 @@ if (args[0] === "on") {
     .name("Stumbling Stance Bubble")
     .zIndex(3)
     .origin(args[1].item.uuid)
-    .file("jb2a.markers.bubble.loop.blue", true)
+    .file("jb2a.markers.bubble.loop.blue")
     .atLocation(tokenD, { randomOffset: 0.5 })
     .repeats(bubbles, 100, sobriety)
     .preset("pf2eAnimations.fade")

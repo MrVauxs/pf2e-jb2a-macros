@@ -6,7 +6,7 @@ const template =
 const [templateX, templateY] = [template.data.x, template.data.y]
 new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .effect()
-  .file("jb2a.falling_rocks.side.1x1", true)
+  .file("jb2a.falling_rocks.side.1x1")
   .mask(template)
   .atLocation(tokenD)
   .stretchTo(template, { offset: { x: 100 } })

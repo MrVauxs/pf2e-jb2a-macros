@@ -38,12 +38,12 @@ async function spiritualWeaponIN() {
 
   new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .effect()
-    .file(entry, true)
+    .file(entry)
     .atLocation(position)
     .origin(origin)
     .waitUntilFinished(-800)
     .effect()
-    .file(file, true)
+    .file(file)
     .atLocation(position)
     .origin(origin)
     .duration(duration)
@@ -57,7 +57,7 @@ async function spiritualWeaponOUT() {
   let persistentEffect = Sequencer.EffectManager.getEffects({ origin })[0]
   new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .effect()
-    .file(exit, true)
+    .file(exit)
     .atLocation(persistentEffect, { cacheLocation: true })
     .scale(0.4)
     .waitUntilFinished(-4100)

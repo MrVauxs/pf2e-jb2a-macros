@@ -6,7 +6,7 @@ const template =
 const [templateX, templateY] = [template.data.x, template.data.y]
 new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .effect()
-  .file("jb2a.darkness.black", true)
+  .file("jb2a.darkness.black")
   .mask(template)
   .atLocation(tokenD)
   .opacity(0.8)
@@ -27,7 +27,7 @@ new Sequence({ moduleName: "PF2e Animations", softFail: true })
     ease: "easeOutCirc",
   })
   .effect()
-  .file("jb2a.energy_strands.range.standard.dark_purple.01", true)
+  .file("jb2a.energy_strands.range.standard.dark_purple.01")
   .mask(template)
   .atLocation(template)
   .zIndex(1)

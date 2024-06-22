@@ -15,7 +15,7 @@ const gridUnits = 1.5 + 3 * (isNaN(auraRadius) ? 1 : auraRadius / 5)
 if (args[0] == "on") {
   new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .effect()
-    .file("jb2a.shield.01.complete.01.yellow", true)
+    .file("jb2a.shield.01.complete.01.yellow")
     .attachTo(tokenD)
     .origin("protective-ward-aura")
     .name("Pf2e x JB2A Aura - Protective Ward")

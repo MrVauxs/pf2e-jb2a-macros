@@ -49,7 +49,7 @@ if (args[0] == "on") {
     .origin("petrified")
     .name(`${tokenD.name} - Petrified`)
     .attachTo(tokenD, { bindAlpha: false })
-    .file("jb2a.impact.ground_crack.still_frame.01", true)
+    .file("jb2a.impact.ground_crack.still_frame.01")
     .scaleToObject(2)
     .persist()
     .zIndex(9999)

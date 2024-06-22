@@ -19,7 +19,7 @@ if (typeof args[0] === "string") {
       .attachTo(tokenD)
       .fadeIn(500)
       .persist(true, { persistTokenPrototype: true })
-      .file("jb2a.entangle.green", true)
+      .file("jb2a.entangle.green")
       .play()
   } else if (args[0] == "off") {
     await Sequencer.EffectManager.endEffects({
@@ -32,7 +32,7 @@ if (typeof args[0] === "string") {
     .effect()
     .atLocation(tokenD)
     .stretchTo(target)
-    .file(assets[0], true)
+    .file(assets[0])
     .filter("ColorMatrix", assets[1])
     .waitUntilFinished(-3000)
     .effect()
@@ -42,6 +42,6 @@ if (typeof args[0] === "string") {
     .fadeOut(500)
     .repeats(2)
     .fadeIn(500)
-    .file(assets[2], true)
+    .file(assets[2])
     .play()
 }

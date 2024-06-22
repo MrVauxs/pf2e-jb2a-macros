@@ -181,7 +181,7 @@ const seq = new Sequence({ moduleName: "PF2e Animations", softFail: true })
 seq
   .effect()
   .playIf(!args[2]?.length)
-  .file("jb2a.magic_signs.rune.evocation.intro.red", true)
+  .file("jb2a.magic_signs.rune.evocation.intro.red")
   .atLocation(square)
   .offset({ x: -square.w / 2, y: -square.h / 2 })
   .scaleToObject(1.6)
@@ -189,7 +189,7 @@ seq
   .waitUntilFinished()
   .effect()
   .playIf(!args[2]?.length)
-  .file("jb2a.burning_hands.02.orange", true)
+  .file("jb2a.burning_hands.02.orange")
   .fadeIn(300)
   .attachTo(template)
   .stretchTo(template, { onlyX: true })
@@ -201,7 +201,7 @@ seq
       args[2].forEach((element) =>
         seq
           .effect()
-          .file(element, true)
+          .file(element)
           .fadeIn(300)
           .attachTo(template)
           .stretchTo(template, { onlyX: true })
