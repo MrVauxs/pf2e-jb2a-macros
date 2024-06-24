@@ -1,6 +1,8 @@
 /* {"name":"Blacklist Animations","img":"icons/svg/cancel.svg","_id":"esYTq7TExwwQwodx"} */
+
 const blacklist = await game.settings.get("pf2e-jb2a-macros", "blacklist")
 
+pf2eAnimations.requireModule("warpgate")
 const options = await warpgate.menu(
   {
     inputs: [

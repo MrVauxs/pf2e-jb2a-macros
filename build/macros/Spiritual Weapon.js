@@ -28,6 +28,7 @@ if (Object.keys(args[2]).length > 0) {
 target = allTargets[0]
 
 async function spiritualWeaponIN() {
+  pf2eAnimations.requireModule("warpgate")
   let position = await warpgate.crosshairs.show({
     rememberControlled: true,
     icon: Sequencer.Database.getEntry(file).file,

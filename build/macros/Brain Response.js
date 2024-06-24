@@ -39,6 +39,7 @@ let colors = args?.[2]?.color ?? ["#" + genColor(), "#" + genColor()]
 console.log(args[2])
 
 if (args?.[2]?.prompt) {
+  pf2eAnimations.requireModule("warpgate")
   const menu = await warpgate.menu(
     {
       inputs: [

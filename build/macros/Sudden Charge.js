@@ -1,6 +1,8 @@
 /* {"name":"Sudden Charge","img":"icons/skills/movement/ball-spinning-blue.webp","_id":"OrBFtL6vBRyDHgfV"} */
 const [tokenD, tokenScale] = await pf2eAnimations.macroHelpers(args)
 
+pf2eAnimations.requireModule("warpgate")
+
 ui.notifications.info(
   game.i18n.localize("pf2e-jb2a-macros.macro.suddenCharge.notif")
 )

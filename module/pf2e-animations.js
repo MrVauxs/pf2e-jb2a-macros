@@ -675,6 +675,14 @@ pf2eAnimations.macroHelpers = function vauxsMacroHelpers(
   ];
 };
 
+pf2eAnimations.requireModule = function (id) {
+  if (!game.modules.get(id)?.active) {
+    throw new Error(
+      `PF2e Animations | Macro requires module ${id} to be enabled.`
+    );
+  }
+};
+
 pf2eAnimations.applyTokenMagic = function tokenMagicHelpers(args, params) {
   const [token] = pf2eAnimations.macroHelpers(args);
   pf2eAnimations.debug("Token Magic Helpers | Args | Params", args, params);
@@ -746,6 +754,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
     noCollisionType,
   }
 ) {
+  pf2eAnimations.requireModule("warpgate");
   opts = mergeObject(
     {
       openSheet: true,

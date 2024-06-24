@@ -42,6 +42,7 @@ if (
   })
 
 if (mods.length > 1) {
+  pf2eAnimations.requireModule("warpgate")
   options = await warpgate.buttonDialog({ buttons: mods }, "column")
 }
 // check for Expanded Splash and Bomber's singular splash feature and add 3 to splashBonus

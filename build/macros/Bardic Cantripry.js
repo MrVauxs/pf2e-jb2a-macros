@@ -88,6 +88,7 @@ if (typeof args[0] === "string") {
     source: token,
   })[0]
   if (songOfMarching || dirgeOfDoom) {
+    pf2eAnimations.requireModule("warpgate")
     let menu = await warpgate.menu(
       {
         inputs: [

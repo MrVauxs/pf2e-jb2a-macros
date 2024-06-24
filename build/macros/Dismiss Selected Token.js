@@ -1,4 +1,6 @@
 /* {"name":"Dismiss Selected Token","img":"icons/magic/fire/beam-strike-whip-red.webp","_id":"Z4NYhV3lBTkOJTSD"} */
+pf2eAnimations.requireModule("warpgate")
+
 const selected = canvas.tokens.controlled
 Dialog.confirm({
   title: "Confirmation Title",

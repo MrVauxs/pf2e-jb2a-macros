@@ -2,6 +2,8 @@
 // WIP!
 return // Comment me out to test
 
+pf2eAnimations.requireModule("warpgate")
+
 let targets = Array.from(game.user.targets)
 let token = args[0].token
 let items = args[0].token._actor.items.filter(

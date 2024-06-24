@@ -32,6 +32,7 @@ if (game.system.id === "pf2e") {
       label: `Rays to ${targets[i].name}`,
     })
   }
+  pf2eAnimations.requireModule("warpgate")
   rayCount = await warpgate.dialog(targetDialogue, "🔥Scorching Ray🔥", "Cast!")
 }
 

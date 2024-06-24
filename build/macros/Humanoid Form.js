@@ -3,6 +3,8 @@
 // Rebuilt by: MrVauxs#8622
 // To go back to your original form, click the Revert button at the top of the sheet that's been transformed.
 
+pf2eAnimations.requireModule("warpgate")
+
 const [tokenD, tokenScale] = await pf2eAnimations.macroHelpers(args)
 
 if (args[0] !== "off") {

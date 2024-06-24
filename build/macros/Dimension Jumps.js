@@ -1,6 +1,8 @@
 /* {"name":"Dimension Jumps","img":"icons/magic/movement/pinwheel-turning-blue.webp","_id":"lmKZBrfclq8V6sJI"} */
 // Cannot be used standalone.
 
+pf2eAnimations.requireModule("warpgate")
+
 let opts = {}
 let seq = new Sequence({ moduleName: "PF2e Animations", softFail: true })
 const [tokenD, tokenScale] = await pf2eAnimations.macroHelpers(args)

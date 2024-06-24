@@ -33,6 +33,7 @@ if (args[0] === "on" || testArgs === "on") {
     ]
   }
 
+  pf2eAnimations.requireModule("warpgate")
   let disguise = await warpgate.menu(
     {
       inputs: [
