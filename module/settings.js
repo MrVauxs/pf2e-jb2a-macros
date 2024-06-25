@@ -8,6 +8,15 @@ Hooks.once("init", () => {
     restricted: true,
   });
 
+  game.settings.registerMenu("pf2e-jb2a-macros", "blacklistMenu", {
+    name: "Blacklist Menu",
+    label: "Open Menu",
+    hint: "Disable animations by type or name.",
+    icon: "fa-solid fa-circle-xmark",
+    type: pf2eAnimations.blacklistMenu,
+    restricted: true,
+  });
+
   //#region Settings
   game.settings.register("pf2e-jb2a-macros", "autoUpdate", {
     scope: "world",

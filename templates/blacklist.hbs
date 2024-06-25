@@ -1,0 +1,90 @@
+<table style="width:100%">
+  <tbody>
+    <tr>
+      <td colspan="2">
+        <h2>Menu Wide Blacklists</h2>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">For blacklisting entire sections of the PF2e Animations
+        module.</td>
+    </tr>
+    <tr>
+      <th style="width:50%"><label for="disable-melee">Melee</label></th>
+      <td style="width:50%"><input
+          type="checkbox"
+          id="disable-melee"
+          {{checked disabledSections.melee}}
+        /></td>
+    </tr>
+    <tr>
+      <th style="width:50%"><label for="disable-range">Range</label></th>
+      <td style="width:50%"><input
+          type="checkbox"
+          id="disable-range"
+          {{checked disabledSections.range}}
+        /></td>
+    </tr>
+    <tr>
+      <th style="width:50%"><label for="disable-ontoken">On Token</label></th>
+      <td style="width:50%"><input
+          type="checkbox"
+          id="disable-ontoken"
+          {{checked disabledSections.ontoken}}
+        /></td>
+    </tr>
+    <tr>
+      <th style="width:50%"><label
+          for="disable-templatefx"
+        >Templates</label></th>
+      <td style="width:50%"><input
+          type="checkbox"
+          id="disable-templatefx"
+          {{checked disabledSections.templatefx}}
+        /></td>
+    </tr>
+    <tr>
+      <th style="width:50%"><label for="disable-preset">Preset</label></th>
+      <td style="width:50%"><input
+          type="checkbox"
+          id="disable-preset"
+          {{checked disabledSections.preset}}
+        /></td>
+    </tr>
+    <tr>
+      <th style="width:50%"><label for="disable-aefx">Active Effects</label></th>
+      <td style="width:50%"><input
+          type="checkbox"
+          id="disable-aefx"
+          {{checked disabledSections.aefx}}
+        /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h2>Specific Animation Names</h2>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        For blacklisting specific animations from the PF2e Animations module.
+        <br />
+        You can put multiple entries using
+        <code>,</code>
+        to separate them.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <textarea rows="3" id="anim-entries">{{entries}}</textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="save">Save</button>
+      </td>
+      <td>
+        <button id="save-update">Save and Update Animations</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
