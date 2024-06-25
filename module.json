@@ -53,7 +53,7 @@
     "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
     "compatibility": {
         "minimum": "11",
-        "verified": "11"
+        "verified": "12"
     },
     "esmodules": [
         "module/pf2e-animations.js",
