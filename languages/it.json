@@ -29,7 +29,7 @@
 		},
 		"macro": {
 			"suddenCharge": {
-				"suddenCharge": "Carica Improvvisa.",
+				"suddenCharge": "Carica Improvvisa",
 				"notif": "Carica Improvvisa! Seleziona dove vuoi moverti. Tasto destro per annullare."
 			},
 			"disguise": {

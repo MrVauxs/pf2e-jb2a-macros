@@ -30,7 +30,7 @@
 		"macro": {
 			"suddenCharge": {
 				"notif": "Plötzliche Attacke! Wählen Sie aus, wohin Sie sich bewegen wollen. Rechtsklick zum Abbrechen.",
-				"suddenCharge": "Plötzlicher Angriff."
+				"suddenCharge": "Plötzlicher Angriff"
 			},
 			"disguise": {
 				"humanoidForm": "🎭Humanoide Form🎭",

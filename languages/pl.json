@@ -119,7 +119,7 @@
 			},
 			"suddenCharge": {
 				"notif": "Nagła Szarża! Wybierz gdzie chcesz się poruszyć. Kliknij prawy przycisk aby anulować.",
-				"suddenCharge": "Nagła Szarża."
+				"suddenCharge": "Nagła Szarża"
 			},
 			"outOfRange": "Poza zasięgiem!"
 		},

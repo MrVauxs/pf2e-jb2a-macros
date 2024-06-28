@@ -565,7 +565,7 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
 
     if (macro_data) {
       if (isNewerVersion(game.version, "11")) {
-        await macro_data.execute({args});
+        await macro_data.execute({ args });
       } else {
         const temp_macro = new Macro(macro_data.toObject());
         temp_macro.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.OWNER;
@@ -825,7 +825,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
       // make it wait or go into an unescapable infinite loop of pain
       await warpgate.wait(50);
 
-      const ray = new Ray(args.token.center, crosshairs);
+      const ray = new Ray((args.token ?? args.tokenD).center, crosshairs);
 
       const distance = canvas.grid.measureDistances([{ ray }], {
         gridSpaces: true,
@@ -879,6 +879,10 @@ pf2eAnimations.crosshairs = async function crosshairs(
 
           await Sequencer.EffectManager.endEffects({ name: "Out of Range!" });
         }
+
+        if (opts.crosshairConfig?.label)
+          crosshairs.label += `\n${opts.crosshairConfig.label}`;
+
         crosshairs.draw();
       }
     }

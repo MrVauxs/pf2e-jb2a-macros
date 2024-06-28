@@ -15,19 +15,21 @@ for (let i = 0; i < 2; i++) {
     { tokenD },
     {
       crosshairConfig: {
-        label:
-          `${game.i18n.localize(
-            "pf2e-jb2a-macros.macro.suddenCharge.suddenCharge"
-          )} ` +
-          (i + 1),
+        label: `${game.i18n.localize(
+          "pf2e-jb2a-macros.macro.suddenCharge.suddenCharge"
+        )} (${i + 1}/2)`,
       },
       noCollisionType: "move",
+      openSheet: false,
     }
   )
 
   console.log(location)
 
-  if (location === false || location.cancelled) return
+  if (location === false || location.cancelled) {
+    tokenD.actor.sheet.maximize()
+    return
+  }
 
   await new Sequence({ moduleName: "PF2e Animations", softFail: true })
     .animation()
@@ -47,6 +49,7 @@ for (let i = 0; i < 2; i++) {
     .belowTokens()
     .fadeOut(1000)
     .scale(0.5 * tokenD.document.height)
+    .waitUntilFinished()
     .play()
 }
 
