@@ -34,7 +34,7 @@ for (const file of await fs.readdir(inputDir)) {
   })
 
   const firstNewline = content.indexOf("\n")
-  const firstLine = content.slice(0, firstNewline)
+  const firstLine = content.slice(0, firstNewline).trim()
   // Slice off comment start/end. No need to slice off whitespace, because JSON ignores whitespace characters
   const json = firstLine.slice(2, -2)
 
