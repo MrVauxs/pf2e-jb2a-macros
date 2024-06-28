@@ -53,13 +53,14 @@
     "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
     "compatibility": {
         "minimum": "11",
-        "verified": "11"
+        "verified": "12"
     },
     "esmodules": [
         "module/pf2e-animations.js",
         "module/sequencer-extensions.js",
         "module/settings.js",
         "module/updateMenu.js",
+        "module/blacklistMenu.js",
         "module/modifiers-matter.js"
     ],
     "scripts": [],
@@ -144,14 +145,6 @@
                 "compatibility": {
                     "minimum": "4.2.60"
                 }
-            },
-            {
-                "id": "warpgate",
-                "type": "module",
-                "compatibility": {
-                    "minimum": "1.17.2"
-                },
-                "manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json"
             }
         ]
     },
@@ -174,6 +167,18 @@
             "caption": "Preview of PF2e Animations module."
         }
     ],
+    "flags": {
+        "hotReload": {
+            "extensions": [
+                "css",
+                "hbs"
+            ],
+            "paths": [
+                "templates",
+                "styles"
+            ]
+        }
+    },
     "changelog": "https://github.com/MrVauxs/pf2e-jb2a-macros/blob/main/CHANGELOG.md",
     "manifest": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.json",
     "download": "https://github.com/MrVauxs/pf2e-jb2a-macros/releases/latest/download/module.zip"

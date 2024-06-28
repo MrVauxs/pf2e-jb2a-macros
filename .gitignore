@@ -15,3 +15,5 @@ node_modules/
 /style.css
 my-app
 *.zip
+
+packs/macros/

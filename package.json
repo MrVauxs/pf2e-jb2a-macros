@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "classic-level": "^1.4.1"
+  },
+  "scripts": {
+    "pack": "node ./build/pack.mjs",
+    "extract": "node ./build/extract.mjs"
+  }
+}
