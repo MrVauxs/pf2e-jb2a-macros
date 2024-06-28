@@ -1,1 +1,2 @@
 packs/** binary
+*.js text eol=crlf
