@@ -16,18 +16,19 @@ jobs:
           node-version: 20
 
       - run: npm ci
+
       - name: Build macro pack
-        run: node build/pack.mjs
+        run: npm run pack
 
       # get part of the tag after the `v`
       - name: Extract tag version number
         id: get_version
-        uses: battila7/get-version-action@v2
+        run: echo "version-without-v=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
 
       # Substitute the Manifest and Download URLs in the module.json
       - name: Substitute Manifest and Download Links For Versioned Ones
         id: sub_manifest_link_version
-        uses: microsoft/variable-substitution@v1
+        uses: devops-actions/variable-substitution@v1.2
         with:
           files: "module.json"
         env:
@@ -45,22 +46,16 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true # Set this to false if you want to prevent updating existing releases
-          name: ${{ github.event.release.name }}
-          prerelease: ${{ github.event.release.prerelease }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          omitBodyDuringUpdate: true
+          omitNameDuringUpdate: true
+          omitDraftDuringUpdate: true
+          omitPrereleaseDuringUpdate: true
           artifacts: "./module.json, ./module.zip, ./module/autorec.json"
-          tag: ${{ github.event.release.tag_name }}
-          body: ${{ github.event.release.body }}
 
       # Publish to FoundryVTT
-      - name: Publish to Foundry VTT Repo
-        if: ${{ !github.event.release.prerelease }}
-        id: publish_foundry_repo
-        run: npx @ghost-fvtt/foundry-publish@2.4.0
-        env:
-          FVTT_MANIFEST_PATH: "module.json"
-          FVTT_PACKAGE_ID: "pf2e-jb2a-macros"
-          FVTT_USE_NEW_PACKAGE_ADMINISTRATION_INTERFACE: true
-          FVTT_USERNAME: ${{ secrets.FOUNDRY_ADMIN_USERNAME }}
-          FVTT_PASSWORD: ${{ secrets.FOUNDRY_ADMIN_PASSWORD }}
-          FVTT_MANIFEST_URL: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.json
+      - name: Publish FoundryVTT Package
+        if: '!github.event.release.prerelease && env.package-token'
+        uses: cs96and/FoundryVTT-release-package@v1.0.2
+        with:
+          package-token: ${{ secrets.PACKAGE_TOKEN }}
+          manifest-url: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.json
