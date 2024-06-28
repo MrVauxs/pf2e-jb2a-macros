@@ -1,3 +1,10 @@
+# Version 2.18.0
+(All changes below contributed by the wonderful @oWave!)
+- Bump verified compatibility to v12.
+- Added macro extracting and packing scripts to the main repo - PRs involving macros are welcome!
+- Removed warpgate dependency - Macros that required it now check if its enabled and quit early if absent.
+- Rewrote the blacklist menu to not require Warpgate and be an easily accessible button in the module settings.
+
 # Version 2.17.5
 - Added Summon Monitor.
 
