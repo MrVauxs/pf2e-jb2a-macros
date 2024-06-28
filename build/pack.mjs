@@ -21,7 +21,10 @@ for (const file of await fs.readdir(dir)) {
   if ((await fs.lstat(fp)).isFile()) await fs.rm(fp)
 }
 
-const db = new ClassicLevel(dir, { keyEncoding: "utf8", valueEncoding: "json" })
+const db = new ClassicLevel(dir, {
+  keyEncoding: "utf8",
+  valueEncoding: "json",
+})
 // if (db.status !== "open") throw new Error("DB is not open! Maybe locked?")
 const batch = db.batch()
 
@@ -30,13 +33,22 @@ for (const file of await fs.readdir(inputDir)) {
     encoding: "utf-8",
   })
 
-  const re = /\/\*\s+(.+?)\s+\*\/\n(.+)/gms
+  const firstNewline = content.indexOf("\n")
+  const firstLine = content.slice(0, firstNewline)
+  // Slice off comment start/end. No need to slice off whitespace, because JSON ignores whitespace characters
+  const json = firstLine.slice(2, -2)
 
-  const match = re.exec(content)
-  if (!match) throw new Error(`Content of ${file} doesn't match regex`)
-  const [_, meta, macro] = match
+  const macro = content.slice(firstNewline + 1)
 
-  const doc = { ...DOCUMENT_DEFAULT, ...JSON.parse(meta) }
+  let doc
+  try {
+    doc = { ...DOCUMENT_DEFAULT, ...JSON.parse(json) }
+  } catch (e) {
+    throw new Error(
+      `${file} doesn't match expected format.\nFirst line has to be "/* <json> */".\nIs: "${firstLine}"`,
+      { cause: e }
+    )
+  }
   doc.command = macro
 
   batch.put(`!macros!${doc._id}`, doc)
