@@ -5,7 +5,7 @@ if (!game.modules.get("jb2a_patreon")?.active) {
 
 const [tokenD, tokenScale] = await pf2eAnimations.macroHelpers(args)
 
-let spellLevel = args[0]?.data?.flags?.pf2e?.casting?.level ?? 11
+let spellLevel = args[0]?.item?.level ?? 11
 
 if (spellLevel === 11 && args.length !== 0)
   pf2eAnimations.debug(
@@ -20,7 +20,10 @@ const location = await pf2eAnimations.crosshairs(
   { range, openSheet: false, noCollision: spellLevel < 5 }
 )
 
-if (!location) return
+if (!location || location.cancelled) {
+  tokenD.actor.sheet.maximize()
+  return
+}
 
 await Sequencer.Preloader.preloadForClients([
   "jb2a.magic_signs.rune.conjuration.intro.blue",
