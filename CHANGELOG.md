@@ -1,3 +1,9 @@
+# Version 2.18.1
+(All changes below contributed by the wonderful @oWave!)
+- Fixed Sudden Charge's await loop making the game potentially freeze.
+- Updated Dimension Door to not use outdated property paths.
+- Updated Dimension Door and Sudden Charge to handle cancelling the crosshair and re-open the sheet.
+
 # Version 2.18.0
 (All changes below contributed by the wonderful @oWave!)
 - Bump verified compatibility to v12.
