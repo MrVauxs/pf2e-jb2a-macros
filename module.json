@@ -67,7 +67,6 @@
     "styles": [
         "styles/pf2e-animation-macros.css"
     ],
-    "manifestPlusVersion": "1.2.0",
     "packFolders": [
         {
             "name": "PF2e Animations",
