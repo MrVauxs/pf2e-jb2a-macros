@@ -1,8 +1,4 @@
 /* {"name":"Heal","img":"systems/pf2e/icons/spells/heal.webp","_id":"BTiU7cD7DOpDFIWQ"} */
-if (!game.version.startsWith("11"))
-  return ui.notifications.warn(
-    "PF2e Animations | This version of the Heal macro has been created for Foundry V11!"
-  )
 if (!scope?.args)
   return ui.notifications.warn(
     "PF2e Animations | Heal macro has been triggered with no arguments. If this was a manual activation, please use the actual spell instead."
