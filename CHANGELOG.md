@@ -1,3 +1,7 @@
+# Version 2.18.2
+(All changes below contributed by the wonderful @oWave!)
+- Remove version check from Heal macro
+
 # Version 2.18.1
 (All changes below contributed by the wonderful @oWave!)
 - Fixed Sudden Charge's await loop making the game potentially freeze.
