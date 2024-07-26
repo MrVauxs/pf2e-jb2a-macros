@@ -135,7 +135,7 @@ pf2eAnimations.hooks.renderChatMessage = Hooks.on(
 pf2eAnimations.hooks.createChatMessage = Hooks.on(
   "createChatMessage",
   async (data) => {
-    if (game.user.id !== data.user.id) return;
+    if (game.user.id !== data.author.id) return;
     let targets =
       data?.flags?.pf2e?.target?.token ?? Array.from(game.user.targets);
     targets = [targets].flat();
