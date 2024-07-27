@@ -37,10 +37,6 @@ if (args[0] == "on") {
     ]
     TokenMagic.addFilters(tokenD, params)
   } else {
-    const arrayOfThings = [
-      1 * tokenD.document.data.scale,
-      0.9 * tokenD.document.data.scale,
-    ]
     new Sequence({ moduleName: "PF2e Animations", softFail: true })
       .effect()
       .name(`${tokenD.name} - Encumbered`)
@@ -48,12 +44,12 @@ if (args[0] == "on") {
       .from(tokenD)
       .persist()
       .loopProperty("spriteContainer", "scale.x", {
-        values: arrayOfThings,
+        values: [1, 0.9],
         duration: 2000,
         pingPong: true,
       })
       .loopProperty("spriteContainer", "scale.y", {
-        values: arrayOfThings,
+        values: [1, 0.9],
         duration: 2000,
         pingPong: true,
       })

@@ -42,7 +42,7 @@ if (args[0] == "on") {
       contrast: 0,
       saturate: -1,
     })
-    .scaleToObject(tokenD.document.data.scale)
+    .scaleToObject(1, { considerTokenScale: true })
     .persist()
     .fadeOut(500)
     .effect()
