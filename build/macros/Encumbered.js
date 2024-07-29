@@ -38,8 +38,8 @@ if (args[0] == "on") {
     TokenMagic.addFilters(tokenD, params)
   } else {
     const arrayOfThings = [
-      1 * tokenD.document.data.scale,
-      0.9 * tokenD.document.data.scale,
+      1 * tokenD.document.texture.scaleX,
+      0.9 * tokenD.document.texture.scaleX,
     ]
     new Sequence({ moduleName: "PF2e Animations", softFail: true })
       .effect()
