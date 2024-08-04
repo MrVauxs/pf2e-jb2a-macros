@@ -52,7 +52,7 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
         };
       })
       .filter((i) =>
-        isNewerVersion(
+        foundry.utils.isNewerVersion(
           i.version,
           game.modules.get(i.id).version?.replace(/v|!/g, "")
         )
@@ -564,7 +564,7 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
     );
 
     if (macro_data) {
-      if (isNewerVersion(game.version, "11")) {
+      if (foundry.utils.isNewerVersion(game.version, "11")) {
         await macro_data.execute({ args });
       } else {
         const temp_macro = new Macro(macro_data.toObject());
@@ -578,11 +578,11 @@ pf2eAnimations.runMacro = async function runJB2Apf2eMacro(
         const version = game.modules.get("advanced-macros")?.version;
         const bugAdvancedMacros =
           game.modules.get("advanced-macros")?.active &&
-          isNewerVersion(
+          foundry.utils.isNewerVersion(
             version.startsWith("v") ? version.slice(1) : version,
             "1.18.2"
           ) &&
-          !isNewerVersion(
+          !foundry.utils.isNewerVersion(
             version.startsWith("v") ? version.slice(1) : version,
             "1.19.1"
           );
