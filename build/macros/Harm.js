@@ -1,8 +1,4 @@
 /* {"name":"Harm","img":"systems/pf2e/icons/spells/harm.webp","_id":"kz6IN257FJ58SgmE"} */
-if (!game.version.startsWith("11"))
-  return ui.notifications.warn(
-    "PF2e Animations | This version of the Harm macro has been created for Foundry V11!"
-  )
 if (!scope?.args)
   return ui.notifications.warn(
     "PF2e Animations | Harm macro has been triggered with no arguments. If this was a manual activation, please use the actual spell instead."
