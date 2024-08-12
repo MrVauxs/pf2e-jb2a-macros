@@ -1,3 +1,7 @@
+# Version 2.18.3
+- Remove version check from Harm macro (thanks @oWave!)
+- Reduce console log spam (thanks @ThiefMaster!)
+
 # Version 2.18.2
 (All changes below contributed by the wonderful @oWave!)
 - Remove version check from Heal macro
