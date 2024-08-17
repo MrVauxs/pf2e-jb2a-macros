@@ -1,6 +1,7 @@
 > [!warning]
-> The module is in maintenance mode, replaced by PF2e Graphics. 
-> Read more about it [here](https://github.com/MrVauxs/pf2e-jb2a-macros/issues/202).
+> The module is in maintenance mode, replaced by [PF2e Graphics](https://github.com/MrVauxs/pf2e-graphics).
+> 
+> Read more about the situation [here](https://github.com/MrVauxs/pf2e-jb2a-macros/issues/202).
 
 # PF2e Animations [![Test Autorec](https://github.com/MrVauxs/pf2e-jb2a-macros/actions/workflows/test.yml/badge.svg)](https://github.com/MrVauxs/pf2e-jb2a-macros/actions/workflows/test.yml)
 ![](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fversion%3Fstyle%3Dflat%26url%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FMrVauxs%2Fpf2e-jb2a-macros%2Fmain%2Fmodule.json)
