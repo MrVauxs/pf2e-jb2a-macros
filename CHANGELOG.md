@@ -1,3 +1,6 @@
+# Version 2.18.4
+- Update Humanoid Form to no longer use Warpgate (thanks @AmayoriRPG!)
+
 # Version 2.18.3
 - Remove version check from Harm macro (thanks @oWave!)
 - Reduce console log spam (thanks @ThiefMaster!)
