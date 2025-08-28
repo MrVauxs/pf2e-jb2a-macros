@@ -53,7 +53,7 @@
     "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
     "compatibility": {
         "minimum": "11",
-        "verified": "12"
+        "verified": "13"
     },
     "esmodules": [
         "module/pf2e-animations.js",
@@ -134,7 +134,7 @@
                 "type": "module",
                 "manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/latest/download/module.json",
                 "compatibility": {
-                    "minimum": "3.0.11"
+                    "minimum": "3.6"
                 }
             },
             {
