@@ -1,3 +1,10 @@
+# Version 2.19.0
+- Bump compatibility to V13
+- Bump minimum Sequencer version to 3.6.10
+- Fix sequencer 3.6.10 noloop() (Thanks @Razytos!)
+- Fix for sequencer 3.6.10 changes with from() (Thanks @Razytos!)
+- Disable dynamic token ring for Humanoid Form (Thanks @oWave!)
+
 # Version 2.18.4
 - Update Humanoid Form to no longer use Warpgate (thanks @AmayoriRPG!)
 
@@ -933,3 +940,4 @@
 - Fixed Release Workflow.
 
 # Version 1.0.0 - Initialization
+
