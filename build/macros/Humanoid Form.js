@@ -15,6 +15,9 @@ if (args[0] !== "off") {
       scaleX: tokenD.document.texture.scaleX,
       scaleY: tokenD.document.texture.scaleY,
     },
+    ring: {
+      enabled: tokenD.document.ring.enabled,
+    },
   };
 
   let disguise;
@@ -121,6 +124,9 @@ if (args[0] !== "off") {
           scaleX: Number(disguise[2]),
           scaleY: Number(disguise[2]),
         },
+        ring: {
+          enabled: false,
+        },
         flags: { pf2e: { autoscale: false } },
       });
     })
@@ -145,6 +151,9 @@ if (args[0] !== "off") {
         src: originalData.texture.src,
         scaleX: originalData.texture.scaleX,
         scaleY: originalData.texture.scaleY,
+      },
+      ring: {
+        enabled: originalData.ring.enabled,
       },
     });
 
