@@ -13,7 +13,7 @@ if (args[0] == "on") {
     .effect()
     .name(`${token.name} - Conditions Overhead - Clumsy`)
     .attachTo(token, { bindAlpha: false })
-    .from(token)
+    .copySprite(token)
     .loopProperty("spriteContainer", "rotation", {
       values: [0, 5, 0, -5],
       duration: 2000,

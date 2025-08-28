@@ -24,7 +24,7 @@ const seq = new Sequence({ inModuleName: "PF2e Animations", softFail: true })
 seq
   .effect()
   .file("jb2a.cast_generic.01.dark_purple.0")
-  .from(sourceToken)
+  .copySprite(sourceToken)
   .scaleToObject(1.5)
   .aboveLighting()
   .waitUntilFinished()
@@ -59,7 +59,7 @@ if (args[0]?.collectionName === "templates") {
         .effect()
         .file("jb2a.magic_missile.dark_red")
         .stretchTo(token, { randomOffset: 0.5 })
-        .from(sourceToken)
+        .copySprite(sourceToken)
         .filter("ColorMatrix", {
           hue: 280,
         })
@@ -80,7 +80,7 @@ if (args[0]?.collectionName === "templates") {
     seq
       .effect()
       .stretchTo(token, { randomOffset: 0.5 })
-      .from(sourceToken)
+      .copySprite(sourceToken)
       .file(
         sourceToken.distanceTo(token) > sourceToken.actor.attributes.reach.base
           ? "jb2a.magic_missile.dark_red"

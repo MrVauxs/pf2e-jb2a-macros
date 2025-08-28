@@ -22,7 +22,7 @@ let sequ = new Sequence()
 copies.forEach((copyToken, index) => {
   sequ
     .effect()
-    .from(copyToken)
+    .copySprite(copyToken)
     .moveTowards(target, { rotate: false, ease: "easeInOutBack" })
     .scale(tokenD.document.texture.scaleX)
     .moveSpeed(200)
