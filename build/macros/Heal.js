@@ -34,7 +34,7 @@ seq
   .file(
     `jb2a.cast_shape.circle.01.${tradition === "divine" ? "yellow" : "green"}`
   )
-  .from(sourceToken)
+  .copySprite(sourceToken)
   .scaleToObject(2.5)
   .aboveLighting()
   .zIndex(2)
@@ -44,7 +44,7 @@ seq
       tradition === "divine" ? "blueyellow" : "greenorange"
     }`
   )
-  .from(sourceToken)
+  .copySprite(sourceToken)
   .scaleToObject(2)
   .aboveLighting()
   .zIndex(1)
@@ -86,7 +86,7 @@ if (args[0]?.collectionName === "templates") {
           `jb2a.magic_missile.${tradition === "divine" ? "yellow" : "green"}`
         )
         .stretchTo(token, { randomOffset: 0.5 })
-        .from(sourceToken)
+        .copySprite(sourceToken)
         .randomizeMirrorY()
         .repeats(2)
         .effect()
@@ -108,7 +108,7 @@ if (args[0]?.collectionName === "templates") {
     seq
       .effect()
       .stretchTo(token, { randomOffset: 0.5 })
-      .from(sourceToken)
+      .copySprite(sourceToken)
       .file(
         sourceToken.distanceTo(token) > sourceToken.actor.attributes.reach.base
           ? `jb2a.magic_missile.${tradition === "divine" ? "yellow" : "green"}`

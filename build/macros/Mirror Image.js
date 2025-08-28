@@ -64,7 +64,7 @@ const mirrorImage = (number, origin) =>
   new Sequence({ moduleName: "PF2e Animations", softFail: false })
     .effect()
     .name("Mirror Image Nr." + (1 + number))
-    .from(tokenD)
+    .copySprite(tokenD)
     .origin(origin.uuid)
     .fadeIn(1000)
     .tieToDocuments([origin])

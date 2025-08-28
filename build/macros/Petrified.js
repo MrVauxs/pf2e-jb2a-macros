@@ -34,7 +34,7 @@ if (args[0] == "on") {
     .origin("petrified")
     .name(`${tokenD.name} - Petrified`)
     .attachTo(tokenD, { bindAlpha: false })
-    .from(tokenD)
+    .copySprite(tokenD)
     .playIf(!tokenMagic)
     .filter("ColorMatrix", {
       hue: 0,

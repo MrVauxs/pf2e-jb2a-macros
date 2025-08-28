@@ -45,7 +45,7 @@ if (args[0] == "on") {
       .effect()
       .name(`${tokenD.name} - Encumbered`)
       .attachTo(tokenD, { bindAlpha: false })
-      .from(tokenD)
+      .copySprite(tokenD)
       .persist()
       .loopProperty("spriteContainer", "scale.x", {
         values: arrayOfThings,
@@ -58,7 +58,7 @@ if (args[0] == "on") {
         pingPong: true,
       })
       .filter("Glow", {
-        color: 000000,
+        color: 0o0,
         distance: 20,
         outerStrength: 1,
         innerStrength: 0,

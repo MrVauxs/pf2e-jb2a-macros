@@ -209,7 +209,7 @@ switch (args[0].item.system.slug) {
         values: [0, -15, 0, 15],
         duration: 50,
       })
-      .from(tokenD)
+      .copySprite(tokenD)
       .filter("Blur", { blurX: 5, blurY: 0, quality: 5 })
       .fadeIn(500)
       .fadeOut(500)
@@ -251,7 +251,7 @@ switch (args[0].item.system.slug) {
       .on(tokenD)
       .opacity(0)
       .effect()
-      .from(tokenD)
+      .copySprite(tokenD)
       .moveTowards(
         { x: tokenD.center.x, y: tokenD.center.y - tokenD.h },
         { ease: "easeInCubic", rotate: false }
@@ -269,7 +269,7 @@ switch (args[0].item.system.slug) {
       .fadeOut(500)
       .fadeIn(200)
       .effect()
-      .from(tokenD)
+      .copySprite(tokenD)
       .atLocation(
         { x: targetLocation.x, y: targetLocation.y - tokenD.h },
         { ease: "easeInCubic", rotate: false }
@@ -422,7 +422,7 @@ switch (args[0].item.system.slug) {
       .waitUntilFinished(-2000)
       .fadeOut(500)
       .effect()
-      .from(tokenD)
+      .copySprite(tokenD)
       .fadeOut(500)
       .atLocation(tokenD)
       .attachTo(tokenD, { bindAlpha: false })

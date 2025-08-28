@@ -50,7 +50,7 @@ new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .fadeOut(500)
   .belowTokens()
   .effect() //location.rotationFromOrigin
-  .from(tokenD)
+  .copySprite(tokenD)
   .atLocation(tokenD)
   .shape("circle", {
     radius: 0.8,
@@ -86,7 +86,7 @@ new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .fadeOut(500)
   .belowTokens()
   .effect() //location.rotationFromOrigin
-  .from(tokenD)
+  .copySprite(tokenD)
   .scale(tokenD.document.toObject().scale)
   .atLocation(location)
   .shape("circle", {
