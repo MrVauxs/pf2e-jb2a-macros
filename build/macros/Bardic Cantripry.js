@@ -263,7 +263,7 @@ if (typeof args[0] === "string") {
           .belowTokens()
           .persist()
           .scaleToObject(3)
-          .noLoop(true)
+          .loopOptions({ loops: 1 })
           .scaleOut(0, 600)
           .loopProperty("sprite", "rotation", {
             from: 0,
