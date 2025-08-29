@@ -1,3 +1,6 @@
+# Version 2.19.1
+- Fix Harm and Heal healing people by the power of duplication.
+
 # Version 2.19.0
 - Bump compatibility to V13
 - Bump minimum Sequencer version to 3.6.10
@@ -940,4 +943,5 @@
 - Fixed Release Workflow.
 
 # Version 1.0.0 - Initialization
+
 
