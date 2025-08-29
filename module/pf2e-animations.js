@@ -288,7 +288,8 @@ pf2eAnimations.hooks.renderActorDirectory = Hooks.on(
   "renderActorDirectory",
   (app, html, data) => {
     if (!(game.user.isGM && game.settings.get("pf2e-jb2a-macros", "debug"))) {
-      const folder = html.find(
+	  const $html = html instanceof jQuery ? html : $(html);
+      const folder = $html.find(
         `.folder[data-folder-id="${
           game.folders.get(
             game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder")
@@ -957,3 +958,4 @@ pf2eAnimations.screenshake = function screenshake({
 };
 
 self.pf2eAnimations = pf2eAnimations;
+
