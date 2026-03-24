@@ -1,0 +1,181 @@
+{
+    "label": "Brain Drain",
+    "levels3d": {
+        "type": "explosion",
+        "data": {
+            "color01": "#FFFFFF",
+            "color02": "#FFFFFF"
+        },
+        "sound": {
+            "enable": false
+        },
+        "secondary": {
+            "enable": false,
+            "data": {
+                "color01": "#FFFFFF",
+                "color02": "#FFFFFF"
+            }
+        }
+    },
+    "macro": {
+        "enable": true,
+        "playWhen": "0",
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Brain Drain",
+        "args": "{ color: \"orange\", \"otherChoicesInclude\": \"purple\" }"
+    },
+    "menu": "range",
+    "primary": {
+        "video": {
+            "dbSection": "range",
+            "menuType": "generic",
+            "animation": "energystrand",
+            "variant": "01",
+            "color": "purple",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": true,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75,
+            "file": "modules/psfx-patreon/library/impacts/magicaleffects/psychic/meleeattack-impacts-magicaleffects-psychic-01.ogg"
+        },
+        "options": {
+            "delay": 0,
+            "elevation": 1000,
+            "isReturning": false,
+            "isWait": false,
+            "onlyX": false,
+            "opacity": 1,
+            "playbackRate": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "zIndex": 1,
+            "reverse": true,
+            "animationSource": false
+        }
+    },
+    "secondary": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "generic",
+            "animation": "vortex",
+            "variant": "intro",
+            "color": "purple",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": true,
+            "isWait": false,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "zIndex": 1
+        }
+    },
+    "soundOnly": {
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        }
+    },
+    "source": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "generic",
+            "animation": "vortex",
+            "variant": "intro",
+            "color": "purple",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "isWait": true,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "zIndex": 1
+        }
+    },
+    "target": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "generic",
+            "animation": "vortex",
+            "variant": "intro",
+            "color": "purple",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "opacity": 1,
+            "persistent": false,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "unbindAlpha": true,
+            "unbindVisibility": true,
+            "zIndex": 1
+        }
+    }
+}

@@ -1,5 +1,5 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import * as fs from "fs";
+import * as path from "path";
 
 function getAllJsonFiles(dir) {
   if (!fs.existsSync(dir)) {
@@ -26,7 +26,11 @@ function getAllJsonFiles(dir) {
   return files;
 }
 
-function combineAnimations(animationsDir = "./animations", baseFile = null, types) {
+function combineAnimations(
+  animationsDir = "./animations",
+  baseFile = null,
+  types,
+) {
   const base = {};
   let cnt = 1;
   for (const type of types) {
@@ -40,7 +44,7 @@ function combineAnimations(animationsDir = "./animations", baseFile = null, type
         const content = fs.readFileSync(file, "utf8");
         const data = JSON.parse(content);
         data.id = String(cnt);
-        base[type].push(data)
+        base[type].push(data);
         console.log(`- ${file}`);
       } catch (error) {
         console.error(`Error processing ${file}:`, error.message);
@@ -64,20 +68,16 @@ function combineAnimations(animationsDir = "./animations", baseFile = null, type
   return base;
 }
 
-if (require.main === module) {
-  const animationsDir = process.argv[2] || "./animations";
-  const baseFile = process.argv[3] || "./module/autorec.json";
-  const types = [
-    "melee",
-    "range",
-    "ontoken",
-    "templatefx",
-    "preset",
-    "aura",
-    "aefx",
-  ];
+const animationsDir = process.argv[2] || "./animations";
+const baseFile = process.argv[3] || "./module/autorec.json";
+const types = [
+  "melee",
+  "range",
+  "ontoken",
+  "templatefx",
+  "preset",
+  "aura",
+  "aefx",
+];
 
-  combineAnimations(animationsDir, baseFile, types);
-}
-
-module.exports = { combineTriggers: combineAnimations, getAllJsonFiles };
+combineAnimations(animationsDir, baseFile, types);

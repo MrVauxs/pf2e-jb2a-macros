@@ -1,0 +1,178 @@
+{
+    "label": "Vampiric Feast",
+    "levels3d": {
+        "type": "explosion",
+        "data": {
+            "color01": "#FFFFFF",
+            "color02": "#FFFFFF"
+        },
+        "sound": {
+            "enable": false
+        },
+        "secondary": {
+            "enable": false,
+            "data": {
+                "color01": "#FFFFFF",
+                "color02": "#FFFFFF"
+            }
+        }
+    },
+    "macro": {
+        "enable": false,
+        "playWhen": "0"
+    },
+    "menu": "range",
+    "primary": {
+        "video": {
+            "dbSection": "range",
+            "menuType": "generic",
+            "animation": "energystrand",
+            "variant": "01",
+            "color": "darkred",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": true,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75,
+            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/necromancy-magic-sign-circle-outro.ogg"
+        },
+        "options": {
+            "delay": null,
+            "elevation": 1000,
+            "isReturning": false,
+            "isWait": false,
+            "onlyX": false,
+            "opacity": 1,
+            "playbackRate": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "zIndex": 1,
+            "reverse": true
+        }
+    },
+    "secondary": {
+        "enable": true,
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "divinesmite",
+            "variant": "source",
+            "color": "darkred",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "isWait": false,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "zIndex": 1
+        }
+    },
+    "soundOnly": {
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        }
+    },
+    "source": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "generichealing",
+            "variant": "01",
+            "color": "red",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "isWait": true,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "zIndex": 1
+        }
+    },
+    "target": {
+        "enable": true,
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "divinesmite",
+            "variant": "reverse",
+            "color": "darkred",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "opacity": 1,
+            "persistent": false,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "unbindAlpha": true,
+            "unbindVisibility": true,
+            "zIndex": 1
+        }
+    }
+}

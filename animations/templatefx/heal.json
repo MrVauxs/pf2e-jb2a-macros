@@ -1,0 +1,193 @@
+{
+    "label": "Heal",
+    "macro": {
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Heal",
+        "playWhen": "0",
+        "args": "{ deleteTemplate: true }"
+    },
+    "menu": "templatefx",
+    "primary": {
+        "video": {
+            "dbSection": "templatefx",
+            "menuType": "circle",
+            "animation": "calllightning",
+            "variant": "01",
+            "color": "blue",
+            "enableCustom": true,
+            "customPath": "modules/jb2a_patreon/Library/1st_Level/Detect_Magic/DetectMagicCircle_01_Regular_Yellow_1200x1200.webm"
+        },
+        "sound": {
+            "enable": true,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75,
+            "file": "modules/psfx-patreon/library/1st-level-spells/bless/v2/bless-v2-001.ogg"
+        },
+        "options": {
+            "contrast": 0,
+            "delay": 0,
+            "elevation": 1000,
+            "isMasked": false,
+            "isWait": false,
+            "occlusionAlpha": 0.5,
+            "occlusionMode": "3",
+            "opacity": 0,
+            "persistent": false,
+            "persistType": "sequencerground",
+            "playbackRate": 1,
+            "removeTemplate": true,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "rotate": 0,
+            "saturate": 0,
+            "scale": "1",
+            "tint": false,
+            "tintColor": "#FFFFFF",
+            "zIndex": 1
+        }
+    },
+    "secondary": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "curewounds",
+            "variant": "01",
+            "color": "blue",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "contrast": 0,
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": true,
+            "isWait": false,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "saturate": 0,
+            "size": 1.5,
+            "tint": false,
+            "tintColor": "#FFFFFF",
+            "zIndex": 1
+        }
+    },
+    "soundOnly": {
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        }
+    },
+    "source": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "curewounds",
+            "variant": "01",
+            "color": "blue",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "contrast": 0,
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "isWait": true,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "saturate": 0,
+            "size": 1,
+            "tint": false,
+            "tintColor": "#FFFFFF",
+            "zIndex": 1
+        }
+    },
+    "target": {
+        "enable": false,
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "curewounds",
+            "variant": "01",
+            "color": "blue",
+            "enableCustom": false,
+            "customPath": ""
+        },
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "startTime": 0,
+            "volume": 0.75
+        },
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "contrast": 0,
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": false,
+            "opacity": 1,
+            "persistent": false,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "saturate": 0,
+            "size": 1,
+            "tint": false,
+            "tintColor": "#FFFFFF",
+            "unbindAlpha": false,
+            "unbindVisibility": false,
+            "zIndex": 1
+        }
+    },
+    "advanced": {
+        "exactMatch": false,
+        "excludedTerms": [],
+        "excludedType": {
+            "enabled": false,
+            "path": "",
+            "property": ""
+        }
+    }
+}

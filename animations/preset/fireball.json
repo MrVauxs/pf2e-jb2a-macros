@@ -1,0 +1,190 @@
+{
+    "data": {
+        "projectile": {
+            "dbSection": "range",
+            "menuType": "spell",
+            "animation": "fireballbeam",
+            "variant": "01",
+            "color": "orange",
+            "options": {
+                "repeat": null,
+                "repeatDelay": null,
+                "wait": 200,
+                "elevation": 1000,
+                "removeTemplate": false
+            },
+            "sound": {
+                "delay": 0,
+                "enable": false,
+                "file": "",
+                "startTime": 0,
+                "volume": 1,
+                "repeat": 1,
+                "repeatDelay": 250
+            }
+        },
+        "preExplosion": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "curewounds",
+            "variant": "01",
+            "color": "blue",
+            "options": {
+                "repeat": null,
+                "repeatDelay": null,
+                "scale": null,
+                "wait": null,
+                "elevation": 1000
+            },
+            "sound": {
+                "delay": 0,
+                "enable": false,
+                "file": "",
+                "startTime": 0,
+                "volume": 1,
+                "repeat": 1,
+                "repeatDelay": 250
+            },
+            "enable": false
+        },
+        "explosion": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "fireball",
+            "variant": "explode",
+            "color": "orange",
+            "options": {
+                "elevation": 1000,
+                "repeat": null,
+                "repeatDelay": null,
+                "scale": 1.5,
+                "wait": null
+            },
+            "sound": {
+                "delay": 0,
+                "enable": false,
+                "file": "",
+                "startTime": 0,
+                "volume": 1,
+                "repeat": 1,
+                "repeatDelay": 250
+            }
+        },
+        "afterImage": {
+            "enable": false,
+            "customPath": "",
+            "options": {
+                "elevation": 0,
+                "persistent": false,
+                "scale": 1
+            }
+        }
+    },
+    "macro": {
+        "enable": false,
+        "playWhen": "0"
+    },
+    "presetType": "proToTemp",
+    "label": "Fireball",
+    "soundOnly": {
+        "sound": {
+            "enable": false,
+            "delay": 0,
+            "startTime": 0,
+            "volume": 1
+        }
+    },
+    "secondary": {
+        "enable": false,
+        "options": {
+            "addTokenWidth": false,
+            "delay": 250,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isRadius": true,
+            "isWait": false,
+            "opacity": 1,
+            "repeat": 1,
+            "repeatDelay": 0,
+            "size": 1.5,
+            "zIndex": 1
+        },
+        "sound": {
+            "delay": 0,
+            "enable": false,
+            "file": "",
+            "startTime": 0,
+            "volume": 1,
+            "repeat": 1,
+            "repeatDelay": 250
+        },
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "curewounds",
+            "variant": "01",
+            "color": "blue",
+            "enableCustom": false,
+            "customPath": ""
+        }
+    },
+    "target": {
+        "enable": false,
+        "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
+            "delay": 0,
+            "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
+            "isMasked": false,
+            "isWait": false,
+            "isRadius": false,
+            "opacity": 1,
+            "persistent": false,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "size": 1,
+            "unbindAlpha": true,
+            "unbindVisibility": true,
+            "zIndex": 1
+        },
+        "sound": {
+            "delay": 0,
+            "enable": false,
+            "file": "",
+            "startTime": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "volume": 1
+        },
+        "video": {
+            "dbSection": "static",
+            "menuType": "spell",
+            "animation": "curewounds",
+            "variant": "01",
+            "color": "blue",
+            "enableCustom": false,
+            "customPath": ""
+        }
+    },
+    "menu": "preset",
+    "metaData": {
+        "name": "PF2e Animation Macros",
+        "version": 12,
+        "moduleVersion": "2.6.6",
+        "label": "Fireball",
+        "menu": "preset"
+    },
+    "advanced": {
+        "exactMatch": true,
+        "excludedTerms": [],
+        "excludedType": {
+            "enabled": false,
+            "path": "",
+            "property": ""
+        }
+    }
+}
