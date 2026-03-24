@@ -20,6 +20,10 @@ jobs:
       - name: Build macro pack
         run: npm run pack
 
+      # Combine individual animations files into a single file
+      - name: Combine Animation Files
+        run: node ./scripts/combine-animations.mjs
+
       # get part of the tag after the `v`
       - name: Extract tag version number
         id: get_version
