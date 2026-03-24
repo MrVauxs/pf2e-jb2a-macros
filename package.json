@@ -5,6 +5,8 @@
   },
   "scripts": {
     "pack": "node ./build/pack.mjs",
-    "extract": "node ./build/extract.mjs"
+    "extract": "node ./build/extract.mjs",
+    "combine": "node ./scripts/combine-animations.mjs",
+    "split": "node ./scripts/split-animations.mjs"
   }
 }
