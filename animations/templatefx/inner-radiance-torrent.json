@@ -1,5 +1,5 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Inner Radiance Torrent",
     "macro": {
         "enable": false,
         "playWhen": "0"
@@ -8,17 +8,16 @@
     "primary": {
         "video": {
             "dbSection": "templatefx",
-            "menuType": "cone",
+            "menuType": "ray",
             "animation": "breathweapon",
-            "variant": "cold",
+            "variant": "acid",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Line/Breath_Weapon/BreathWeapon_Lightning01_Regular_Blue_30ft_Line_Burst_1200x200.webm"
         },
         "sound": {
-            "enable": true,
+            "enable": false,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -98,15 +97,15 @@
         }
     },
     "source": {
-        "enable": false,
+        "enable": true,
         "video": {
             "dbSection": "static",
             "menuType": "spell",
             "animation": "curewounds",
             "variant": "01",
             "color": "blue",
-            "enableCustom": false,
-            "customPath": ""
+            "enableCustom": true,
+            "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyStrandIN01_01_Regular_Blue_600x600.webm"
         },
         "sound": {
             "enable": false,

@@ -1,5 +1,5 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Quench",
     "macro": {
         "enable": false,
         "playWhen": "0"
@@ -8,17 +8,17 @@
     "primary": {
         "video": {
             "dbSection": "templatefx",
-            "menuType": "cone",
-            "animation": "breathweapon",
-            "variant": "cold",
+            "menuType": "circle",
+            "animation": "calllightning",
+            "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "customPath": "modules/jb2a_patreon/Library/Generic/Liquid/Bubble/BubbleComplete001_001_Blue_2x2_400x400.webm"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "modules/psfx-patreon/library/2nd-level-spells/misty-step/v1/intro/misty-step-intro-water-001.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -32,9 +32,9 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
+            "opacity": 0.5,
+            "persistent": true,
+            "persistType": "attachtemplate",
             "playbackRate": 1,
             "removeTemplate": false,
             "repeat": 1,

@@ -1,5 +1,5 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Swallow Light",
     "macro": {
         "enable": false,
         "playWhen": "0"
@@ -8,12 +8,12 @@
     "primary": {
         "video": {
             "dbSection": "templatefx",
-            "menuType": "cone",
-            "animation": "breathweapon",
-            "variant": "cold",
+            "menuType": "circle",
+            "animation": "calllightning",
+            "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/Breathweapon02_Arcana01_Dark_Black_Cone_Loop_800x800.webm"
         },
         "sound": {
             "enable": true,

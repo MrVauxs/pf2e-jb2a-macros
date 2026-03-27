@@ -1,5 +1,5 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Roar",
     "macro": {
         "enable": false,
         "playWhen": "0"
@@ -8,17 +8,17 @@
     "primary": {
         "video": {
             "dbSection": "templatefx",
-            "menuType": "cone",
-            "animation": "breathweapon",
-            "variant": "cold",
-            "color": "blue",
-            "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "menuType": "circle",
+            "animation": "outpulse",
+            "variant": "02",
+            "color": "purplepink",
+            "enableCustom": false,
+            "customPath": ""
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "modules/psfx-patreon/library/creature/dragons/roar/dragon-roar-large-001.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

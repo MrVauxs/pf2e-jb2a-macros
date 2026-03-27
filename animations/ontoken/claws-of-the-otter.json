@@ -1,49 +1,71 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Claws of the Otter",
+    "levels3d": {
+        "type": "explosion",
+        "data": {
+            "color01": "#FFFFFF",
+            "color02": "#FFFFFF",
+            "spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
+        },
+        "sound": {
+            "enable": false
+        },
+        "secondary": {
+            "enable": false,
+            "data": {
+                "color01": "#FFFFFF",
+                "color02": "#FFFFFF",
+                "spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
+            }
+        }
+    },
     "macro": {
         "enable": false,
         "playWhen": "0"
     },
-    "menu": "templatefx",
+    "menu": "ontoken",
     "primary": {
         "video": {
-            "dbSection": "templatefx",
-            "menuType": "cone",
-            "animation": "breathweapon",
-            "variant": "cold",
+            "dbSection": "static",
+            "menuType": "creature",
+            "animation": "claw",
+            "variant": "01",
             "color": "blue",
-            "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "enableCustom": false,
+            "customPath": ""
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "modules/psfx-patreon/library/creature/dragons/attacks/rend-slash-cold-001.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75
         },
         "options": {
+            "addTokenWidth": false,
+            "anchor": "0.5",
             "contrast": 0,
             "delay": 0,
             "elevation": 1000,
+            "fadeIn": 250,
+            "fadeOut": 500,
             "isMasked": false,
+            "isRadius": false,
             "isWait": false,
-            "occlusionAlpha": 0.5,
-            "occlusionMode": "3",
             "opacity": 1,
             "persistent": false,
-            "persistType": "sequencerground",
             "playbackRate": 1,
-            "removeTemplate": false,
+            "playOn": "source",
             "repeat": 1,
             "repeatDelay": 250,
-            "rotate": 0,
             "saturate": 0,
-            "scale": "1",
+            "size": 1,
             "tint": false,
             "tintColor": "#FFFFFF",
+            "unbindAlpha": false,
+            "unbindVisibility": false,
             "zIndex": 1
         }
     },

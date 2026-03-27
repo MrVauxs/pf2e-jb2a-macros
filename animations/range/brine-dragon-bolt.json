@@ -1,55 +1,94 @@
 {
-    "label": "Web",
-    "macro": {
-        "enable": true,
-        "playWhen": "0",
-        "name": "Compendium.pf2e-jb2a-macros.Macros.Web",
-        "args": ""
+    "label": "Brine Dragon Bolt",
+    "levels3d": {
+        "enable": false,
+        "type": "",
+        "data": {
+            "color01": "#000000",
+            "color02": "#000000",
+            "speed": null,
+            "repeat": null,
+            "arc": null,
+            "delay": null,
+            "scale": null,
+            "alpha": null,
+            "gravity": null,
+            "mass": null,
+            "life": null,
+            "emittersize": null,
+            "rate": null,
+            "addexplosion": {
+                "enable": false,
+                "color01": "#000000",
+                "color02": "#000000",
+                "speed": null,
+                "scale": null,
+                "alpha": null,
+                "gravity": null,
+                "mass": null,
+                "life": null,
+                "emittersize": null,
+                "rate": null,
+                "sprite": "modules/levels-3d-preview/assets/particles/dust.png"
+            },
+            "sprite": "modules/levels-3d-preview/assets/particles/emberssmall.png"
+        },
+        "secondary": {
+            "enable": false,
+            "data": {}
+        },
+        "sound": {
+            "delay": 0,
+            "enable": false,
+            "file": "",
+            "startTime": 0,
+            "repeat": 1,
+            "repeatDelay": 250,
+            "volume": 1
+        }
     },
-    "menu": "templatefx",
+    "macro": {
+        "enable": false,
+        "playWhen": "0"
+    },
+    "menu": "range",
     "primary": {
         "options": {
-            "delay": 0,
+            "delay": -1000,
             "elevation": 1000,
-            "isMasked": false,
-            "isWait": false,
-            "occlusionAlpha": 0,
-            "occlusionMode": 0,
+            "isReturning": false,
+            "isWait": true,
+            "onlyX": false,
             "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
-            "removeTemplate": false,
             "repeat": 1,
             "repeatDelay": 0,
-            "rotate": 0,
-            "scale": "1, 1",
             "zIndex": 1
         },
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/creature/movement/footsteps/outdoors/001/footsteps-sequence-outdoors-001.ogg",
+            "file": "modules/psfx-patreon/library/cantrips/acid-splash/v1/acid-splash-003-30ft.ogg",
             "startTime": 0,
             "volume": 1,
-            "repeat": 5,
-            "repeatDelay": 40
+            "repeat": 1,
+            "repeatDelay": 250
         },
         "video": {
-            "dbSection": "templatefx",
-            "menuType": "circle",
-            "animation": "calllightning",
+            "dbSection": "range",
+            "menuType": "spell",
+            "animation": "firebolt",
             "variant": "01",
-            "color": "blue",
+            "color": "green",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/2nd_Level/Web/Web_01_White_01_400x400.webm"
+            "customPath": "modules/jb2a_patreon/Library/Generic/RangedSpell/Missile/001/RangedMissile001_02_GreenYellow_30ft_1600x400.webm"
         }
     },
     "secondary": {
-        "enable": false,
+        "enable": true,
         "options": {
-            "addTokenWidth": false,
+            "addTokenWidth": true,
             "anchor": "0.5",
-            "delay": 250,
+            "delay": null,
             "elevation": 1000,
             "fadeIn": 250,
             "fadeOut": 500,
@@ -59,13 +98,13 @@
             "opacity": 1,
             "repeat": 1,
             "repeatDelay": 0,
-            "size": 1.5,
+            "size": 2,
             "zIndex": 1
         },
         "sound": {
             "delay": 0,
-            "enable": false,
-            "file": "",
+            "enable": true,
+            "file": "modules/soundfxlibrary/Misc/Single/Water%20Splash/water-splash-2.mp3",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -73,10 +112,10 @@
         },
         "video": {
             "dbSection": "static",
-            "menuType": "spell",
-            "animation": "curewounds",
+            "menuType": "liquid",
+            "animation": "splash",
             "variant": "01",
-            "color": "blue",
+            "color": "green",
             "enableCustom": false,
             "customPath": ""
         }
@@ -166,15 +205,6 @@
             "color": "blue",
             "enableCustom": false,
             "customPath": ""
-        }
-    },
-    "advanced": {
-        "exactMatch": false,
-        "excludedTerms": [],
-        "excludedType": {
-            "enabled": true,
-            "path": "type",
-            "property": "melee"
         }
     }
 }

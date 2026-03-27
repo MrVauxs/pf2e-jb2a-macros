@@ -1,5 +1,5 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Sudden Blight",
     "macro": {
         "enable": false,
         "playWhen": "0"
@@ -8,12 +8,12 @@
     "primary": {
         "video": {
             "dbSection": "templatefx",
-            "menuType": "cone",
-            "animation": "breathweapon",
-            "variant": "cold",
-            "color": "blue",
-            "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "menuType": "circle",
+            "animation": "drop",
+            "variant": "01",
+            "color": "darkgreen",
+            "enableCustom": false,
+            "customPath": ""
         },
         "sound": {
             "enable": true,

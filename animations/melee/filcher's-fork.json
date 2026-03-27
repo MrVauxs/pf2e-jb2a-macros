@@ -60,8 +60,8 @@
             "animation": "arrow",
             "variant": "regular",
             "color": "regular",
-            "enableCustom": false,
-            "customPath": ""
+            "enableCustom": true,
+            "customPath": "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/Fork01_01_Regular_White_30ft_1600x400.webm"
         },
         "sound": {
             "delay": 0,
@@ -76,7 +76,7 @@
             "detect": "automatic",
             "range": 2,
             "isReturning": false,
-            "switchType": "on"
+            "switchType": "custom"
         }
     },
     "menu": "melee",

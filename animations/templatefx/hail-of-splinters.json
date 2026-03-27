@@ -13,7 +13,7 @@
             "variant": "cold",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/001/TemplateConePF2e001_001_GreenYellow_30ft_800x1000.webm"
+            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Projectile/PF2e/VolleyProjectileArrow001_001_01_ConePF2e_GreenYellow_30ft_800x1000.webm"
         },
         "sound": {
             "enable": true,

@@ -1,5 +1,5 @@
 {
-    "label": "Fungal Infestation",
+    "label": "Sonata Span",
     "macro": {
         "enable": false,
         "playWhen": "0"
@@ -8,17 +8,17 @@
     "primary": {
         "video": {
             "dbSection": "templatefx",
-            "menuType": "cone",
+            "menuType": "ray",
             "animation": "breathweapon",
-            "variant": "cold",
+            "variant": "acid",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "customPath": "modules/jb2a_patreon/Library/Generic/Zoning/DirectionalIndicator03Line_02_Regular_BlueGreen_400x200.webm"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "modules/psfx-patreon/library/musical-instruments/strummed-plucked/lute/strummed-tremolo/lute-Cadd9-strum-tremolo.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -32,10 +32,10 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
-            "playbackRate": 1,
+            "opacity": 0.5,
+            "persistent": true,
+            "persistType": "attachtemplate",
+            "playbackRate": 0.5,
             "removeTemplate": false,
             "repeat": 1,
             "repeatDelay": 250,

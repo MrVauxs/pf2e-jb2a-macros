@@ -31,13 +31,13 @@
             "animation": "curewounds",
             "variant": "01",
             "color": "blue",
-            "enableCustom": false,
-            "customPath": ""
+            "enableCustom": true,
+            "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Boon01/ConditionBoon01_015_Blue_600x600.webm"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/enchantment-magic-sign-circle-intro.ogg",
+            "file": "modules/psfx-patreon/library/casting/generic/002/cast-generic-002-03.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

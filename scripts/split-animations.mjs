@@ -11,13 +11,15 @@ function separateAnimations(
 ) {
   const content = fs.readFileSync(baseFile, "utf8");
   const data = JSON.parse(content);
+  console.log("==== Splitting Animations ====");
+  let cnt = 0;
   for (const type of types) {
     const baseOutputDir = `${animationsDir}/${type}`;
     if (!fs.existsSync(baseOutputDir)) {
       fs.mkdirSync(baseOutputDir, { recursive: true });
     }
 
-    const animations = data[type];
+    const animations = data?.[type] || [];
     for (const anim of animations) {
       delete anim.id;
       const name = convertName(anim.label);
@@ -25,8 +27,11 @@ function separateAnimations(
         `${baseOutputDir}/${name}.json`,
         JSON.stringify(anim, null, 4),
       );
+      console.log(` - ${name}`);
+      cnt++;
     }
   }
+  console.log(`==== Finished Splitting all ${cnt} animations ====`);
 }
 
 const animationsDir = process.argv[2] || "./animations";
