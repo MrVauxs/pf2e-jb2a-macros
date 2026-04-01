@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/001/TemplateConePF2e001_003_BlueTeal_30ft_800x1000.webm"
+            "customPath": "jb2a.template_cone_PF2e.001.003.blue.30ft"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/5th-level-spells/cone-of-cold/v1/cone-of-cold-00.ogg",
+            "file": "psfx.5th-level-spells.cone-of-cold.v1.001",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
