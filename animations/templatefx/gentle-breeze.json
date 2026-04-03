@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Wind/WindStreams_01_White_20OPA_400x400.webm"
+            "customPath": "jb2a.wind_stream.200.white"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/magic-signs/runes/v1/evocation-magic-sign-rune-intro-fade.ogg",
+            "file": "psfx.2nd-level-spells.misty-step.v1.intro.air",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Gentle Breeze",
-        "menu": "templatefx"
     }
 }

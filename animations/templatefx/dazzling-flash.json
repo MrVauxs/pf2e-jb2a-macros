@@ -28,7 +28,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/impacts/magicaleffects/generic/002/impact-magicaleffects-generic-002-03.ogg",
+            "file": "psfx.impacts.magicaleffects.generic.002.002",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -41,7 +41,7 @@
             "variant": "cold",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/1st_Level/Detect_Magic/DetectMagicCone_01_Regular_Yellow_15ft_500x500.webm"
+            "customPath": "jb2a.detect_magic.cone.yellow"
         }
     },
     "secondary": {
@@ -167,12 +167,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Dazzling Flash",
-        "menu": "templatefx"
     }
 }

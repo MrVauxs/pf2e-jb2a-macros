@@ -76,7 +76,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-004-01.ogg",
+            "file": "psfx.conditions.boon.004.01",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -217,9 +217,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Mask of Terror",
         "menu": "ontoken"
     }

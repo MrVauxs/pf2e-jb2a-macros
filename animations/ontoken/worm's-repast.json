@@ -59,7 +59,7 @@
             "variant": "01",
             "color": "darkgreen",
             "enableCustom": false,
-            "customPath": "modules/jb2a_patreon/Library/2nd_Level/Divine_Smite/DivineSmite_01_Dark_Red_Target_400x400.webm"
+            "customPath": "jb2a.divine_smite.target.dark_red"
         }
     },
     "secondary": {
@@ -96,7 +96,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": false,
-            "customPath": "modules/jb2a_patreon/Library/1st_Level/Arms_Of_Hadar/ArmsOfHadar_01_Dark_Red_500x500.webm"
+            "customPath": "jb2a.arms_of_hadar.dark_red"
         }
     },
     "soundOnly": {

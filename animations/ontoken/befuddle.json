@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/impacts/magicaleffects/psychic/meleeattack-impacts-magicaleffects-psychic-03.ogg",
+            "file": "psfx.weapon-swooshes.psychic.v1.group01.3",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Befuddle",
         "menu": "ontoken"
     }

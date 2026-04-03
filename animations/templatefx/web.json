@@ -15,9 +15,9 @@
             "isWait": false,
             "occlusionAlpha": 0,
             "occlusionMode": 0,
-            "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
+            "opacity": 0.5,
+            "persistent": true,
+            "persistType": "attachtemplate",
             "removeTemplate": false,
             "repeat": 1,
             "repeatDelay": 0,
@@ -28,7 +28,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/creature/movement/footsteps/outdoors/001/footsteps-sequence-outdoors-001.ogg",
+            "file": "psfx.creature.movement.footsteps.outdoors.001.sequence",
             "startTime": 0,
             "volume": 1,
             "repeat": 5,
@@ -41,7 +41,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/2nd_Level/Web/Web_01_White_01_400x400.webm"
+            "customPath": "jb2a.web.01"
         }
     },
     "secondary": {
@@ -176,12 +176,5 @@
             "path": "type",
             "property": "melee"
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Web",
-        "menu": "templatefx"
     }
 }

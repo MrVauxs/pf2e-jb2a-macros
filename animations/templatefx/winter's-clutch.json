@@ -18,7 +18,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/ray-of-frost/v2/ray-of-frost-001.ogg",
+            "file": "psfx.cantrips.ray-of-frost.v2",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -32,9 +32,9 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
+            "opacity": 0.5,
+            "persistent": true,
+            "persistType": "attachtemplate",
             "playbackRate": 1,
             "removeTemplate": false,
             "repeat": 1,
@@ -180,9 +180,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Winter's Clutch",
         "menu": "templatefx"
     }

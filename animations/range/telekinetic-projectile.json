@@ -67,7 +67,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/ranged-magic/generic/missile/001/ranged-magic-missile-only-001-30ft-03.ogg",
+            "file": "psfx.1st-level-spells.magic-missile.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -208,9 +208,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Telekinetic Projectile",
         "menu": "range"
     }

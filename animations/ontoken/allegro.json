@@ -49,7 +49,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/class-features/bardic-inspiration/v1/bardicInspiration-layer-keyOfA-001.ogg",
+            "file": "psfx.class-features.bardic-inspiration.v1.keyOfA.001",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -189,9 +189,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Allegro",
         "menu": "ontoken"
     }

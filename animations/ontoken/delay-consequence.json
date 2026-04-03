@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/TMFX/OutPulse/Circle/OutPulse_01_Circle_Slow_500.webm"
+            "customPath": "jb2a.extras.tmfx.outpulse.circle.01.slow"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-015-01.ogg",
+            "file": "psfx.conditions.boon.015.01",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Delay Consequence",
         "menu": "ontoken"
     }

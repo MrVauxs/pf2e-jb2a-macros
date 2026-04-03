@@ -18,7 +18,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-007-01.ogg",
+            "file": "psfx.conditions.boon.007.01",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -181,9 +181,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Animal Allies",
         "menu": "templatefx"
     }

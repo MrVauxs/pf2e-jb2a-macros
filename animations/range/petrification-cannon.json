@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/ranged-weapons/guns/energy-rifle/single-fire/energy-rifle-single-fire-001.ogg",
+            "file": "psfx.ranged-weapons.guns.single-fire.energy-rifle.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -209,9 +209,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Petrification Cannon",
         "menu": "range"
     }

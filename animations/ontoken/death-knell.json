@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Curse01/ConditionCurse01_013_Red_600x600.webm"
+            "customPath": "jb2a.condition.curse.01.013.red"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/necromancy-magic-sign-circle-intro.ogg",
+            "file": "psfx.magic-signs.circle.v1.necromancy.intro",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -78,7 +78,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Boon01/ConditionBoon01_014_Red_600x600.webm"
+            "customPath": "jb2a.condition.boon.01.014.red"
         },
         "sound": {
             "enable": false,
@@ -128,7 +128,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Boon01/ConditionBoon01_014_Red_600x600.webm"
+            "customPath": "jb2a.condition.boon.01.014.red"
         },
         "sound": {
             "enable": false,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Death Knell",
         "menu": "ontoken"
     }

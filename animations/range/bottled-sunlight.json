@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/moonbeam/v1/moonbeam-outro-v1-001.ogg",
+            "file": "psfx.weapon-swooshes.light.v1.group01.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -191,8 +191,8 @@
         },
         "sound": {
             "delay": 0,
-            "enable": false,
-            "file": "",
+            "enable": true,
+            "file": "psfx.2nd-level-spells.moonbeam.outro.v2.005",
             "startTime": 0,
             "repeat": 1,
             "repeatDelay": 250,
@@ -207,12 +207,5 @@
             "enableCustom": true,
             "customPath": "jb2a.markers.light.intro.yellow"
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Bottled Sunlight",
-        "menu": "range"
     }
 }

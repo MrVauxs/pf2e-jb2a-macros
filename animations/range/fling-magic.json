@@ -41,7 +41,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/psfx-patreon/library/casting/generic/002/cast-generic-002-03.ogg"
+            "file": "psfx.ranged-magic.generic.missile.only.001"
         },
         "options": {
             "contrast": 0,
@@ -193,9 +193,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Fling Magic",
         "menu": "range"
     }

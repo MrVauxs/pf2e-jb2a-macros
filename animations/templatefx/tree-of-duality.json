@@ -12,13 +12,13 @@
             "animation": "complete",
             "variant": "nature",
             "color": "green",
-            "enableCustom": false,
-            "customPath": ""
+            "enableCustom": true,
+            "customPath": "jb2a.spirit_guardians.green.particles"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/1st-level-spells/entangle/vines/v1/entangle-intro.ogg",
+            "file": "psfx.1st-level-spells.entangle.vines.v1.001.intro",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -32,9 +32,9 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
+            "opacity": 0.75,
+            "persistent": true,
+            "persistType": "attachtemplate",
             "playbackRate": 1,
             "removeTemplate": false,
             "repeat": 1,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Tree of Duality",
-        "menu": "templatefx"
     }
 }

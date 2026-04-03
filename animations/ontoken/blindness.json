@@ -47,7 +47,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/cantrips/mind-sliver/v1/mind-sliver-001.ogg",
+            "file": "psfx.cantrips.mind-sliver.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -60,7 +60,7 @@
             "variant": "01",
             "color": "bluegreen",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Eyes/Eyes_Single01_03_Dark_Purple_300x300.webm"
+            "customPath": "jb2a.eyes.01.dark_purple.single"
         }
     },
     "secondary": {
@@ -188,9 +188,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Blindness",
         "menu": "ontoken"
     }

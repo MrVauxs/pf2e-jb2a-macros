@@ -19,7 +19,8 @@
         }
     },
     "macro": {
-        "enable": false
+        "enable": false,
+        "playWhen": "0"
     },
     "menu": "ontoken",
     "primary": {

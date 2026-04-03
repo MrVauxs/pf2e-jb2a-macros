@@ -33,12 +33,13 @@
             "customPath": ""
         },
         "sound": {
-            "enable": false,
+            "enable": true,
             "delay": 0,
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
-            "volume": 0.75
+            "volume": 0.75,
+            "file": "psfx.conditions.boon.014.01"
         },
         "options": {
             "delay": null,
@@ -173,12 +174,5 @@
             "unbindVisibility": true,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Vampiric Touch",
-        "menu": "range"
     }
 }

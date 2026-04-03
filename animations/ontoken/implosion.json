@@ -76,7 +76,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/3rd-level-spells/fireball/v1/fireball-explosion-01.ogg",
+            "file": "psfx.3rd-level-spells.fireball.v1.001.explosion",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -89,7 +89,7 @@
             "variant": "intro",
             "color": "purple",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Explosion/Explosion_04_Regular_Orange_400x400.webm"
+            "customPath": "jb2a.explosion.04.orange"
         }
     },
     "secondary": {
@@ -217,9 +217,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Implosion",
         "menu": "ontoken"
     }

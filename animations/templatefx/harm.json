@@ -15,7 +15,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/1st_Level/Detect_Magic/DetectMagicCircle_01_Dark_Red_1200x1200.webm"
+            "customPath": "jb2a.detect_magic.circle.purple"
         },
         "sound": {
             "enable": true,
@@ -24,7 +24,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/psfx-patreon/library/magic-signs/runes/v1/necromancy-magic-sign-rune-outro.ogg"
+            "file": "psfx.magic-signs.circle.v1.necromancy.outro"
         },
         "options": {
             "contrast": 0,
@@ -189,12 +189,5 @@
             "path": "",
             "property": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Harm",
-        "menu": "templatefx"
     }
 }

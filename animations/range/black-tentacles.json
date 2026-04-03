@@ -39,7 +39,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/psfx-patreon/library/magic-signs/runes/v1/necromancy-magic-sign-rune-complete.ogg"
+            "file": "psfx.magic-signs.circle.v1.necromancy.complete"
         },
         "options": {
             "delay": 0,
@@ -176,9 +176,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Black Tentacles",
         "menu": "range"
     }

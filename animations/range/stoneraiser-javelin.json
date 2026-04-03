@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/weapon-attacks/spear/v1/spear-001-01.ogg",
+            "file": "psfx.weapon-attacks.spear.v1.2",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -82,7 +82,7 @@
             "variant": "regular",
             "color": "regular",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Ice/IceSpikesRadialBurst_01_Regular_White_1000x1000.webm"
+            "customPath": "jb2a.ice_spikes.radial.burst.white"
         }
     },
     "secondary": {
@@ -210,9 +210,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Stoneraiser Javelin",
         "menu": "range"
     }

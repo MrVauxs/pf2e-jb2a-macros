@@ -49,7 +49,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/conjuration-magic-sign-circle-intro.ogg",
+            "file": "psfx.magic-signs.circle.v1.conjuration.intro",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -189,9 +189,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Summon Anarch",
         "menu": "ontoken"
     }

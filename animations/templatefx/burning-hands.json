@@ -28,7 +28,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/1st-level-spells/burning-hands/v1/burning-hands-01.ogg",
+            "file": "psfx.1st-level-spells.burning-hands.v1.001",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -168,9 +168,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Burning Hands",
         "menu": "templatefx"
     }

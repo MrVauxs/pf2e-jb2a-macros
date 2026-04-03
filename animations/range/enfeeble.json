@@ -67,7 +67,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/conditions/generic-layers/generic-layer-001.ogg",
+            "file": "psfx.casting.generic-v2.001.01.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -209,9 +209,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Enfeeble",
         "menu": "range"
     }

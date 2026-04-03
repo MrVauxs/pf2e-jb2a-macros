@@ -4,8 +4,7 @@
         "type": "explosion",
         "data": {
             "color01": "#FFFFFF",
-            "color02": "#FFFFFF",
-            "spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
+            "color02": "#FFFFFF"
         },
         "sound": {
             "enable": false
@@ -14,14 +13,15 @@
             "enable": false,
             "data": {
                 "color01": "#FFFFFF",
-                "color02": "#FFFFFF",
-                "spritePath": "modules/levels-3d-preview/assets/particles/dust.png"
+                "color02": "#FFFFFF"
             }
         }
     },
     "macro": {
-        "enable": false,
-        "playWhen": "0"
+        "enable": true,
+        "name": "Compendium.pf2e-jb2a-macros.Macros.Mirror Reflection",
+        "args": "",
+        "playWhen": "2"
     },
     "menu": "ontoken",
     "primary": {
@@ -45,7 +45,6 @@
         "options": {
             "addTokenWidth": false,
             "anchor": "0.5",
-            "contrast": 0,
             "delay": 0,
             "elevation": 1000,
             "fadeIn": 250,
@@ -59,12 +58,9 @@
             "playOn": "default",
             "repeat": 1,
             "repeatDelay": 250,
-            "saturate": 0,
             "size": 1,
-            "tint": false,
-            "tintColor": "#FFFFFF",
-            "unbindAlpha": false,
-            "unbindVisibility": false,
+            "unbindAlpha": true,
+            "unbindVisibility": true,
             "zIndex": 1
         }
     },
@@ -90,7 +86,6 @@
         "options": {
             "addTokenWidth": false,
             "anchor": "0.5",
-            "contrast": 0,
             "delay": 0,
             "elevation": 1000,
             "fadeIn": 250,
@@ -101,18 +96,14 @@
             "opacity": 1,
             "repeat": 1,
             "repeatDelay": 250,
-            "saturate": 0,
             "size": 1.5,
-            "tint": false,
-            "tintColor": "#FFFFFF",
             "zIndex": 1
         }
     },
     "soundOnly": {
         "sound": {
-            "enable": true,
+            "enable": false,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/impacts/magicaleffects/psychic/meleeattack-impacts-magicaleffects-psychic-03.ogg",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -141,7 +132,6 @@
         "options": {
             "addTokenWidth": false,
             "anchor": "0.5",
-            "contrast": 0,
             "delay": 0,
             "elevation": 1000,
             "fadeIn": 250,
@@ -152,10 +142,7 @@
             "opacity": 1,
             "repeat": 1,
             "repeatDelay": 250,
-            "saturate": 0,
             "size": 1,
-            "tint": false,
-            "tintColor": "#FFFFFF",
             "zIndex": 1
         }
     },
@@ -181,7 +168,6 @@
         "options": {
             "addTokenWidth": false,
             "anchor": "0.5",
-            "contrast": 0,
             "delay": 0,
             "elevation": 1000,
             "fadeIn": 250,
@@ -192,20 +178,17 @@
             "persistent": false,
             "repeat": 1,
             "repeatDelay": 250,
-            "saturate": 0,
             "size": 1,
-            "tint": false,
-            "tintColor": "#FFFFFF",
-            "unbindAlpha": false,
-            "unbindVisibility": false,
+            "unbindAlpha": true,
+            "unbindVisibility": true,
             "zIndex": 1
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Mirror's Reflection",
-        "menu": "ontoken"
+        "menu": "ontoken",
+        "name": "PF2e Animations",
+        "moduleVersion": "2.10.0",
+        "version": 21002
     }
 }

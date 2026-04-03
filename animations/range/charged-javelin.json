@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/weapon-attacks/spear/v1/spear-001-04.ogg",
+            "file": "psfx.weapon-attacks.spear.v1.4",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -74,7 +74,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/3rd-level-spells/call-lightning/v1/secondary/chain-lightning-secondary-strike-5ft-00.ogg",
+            "file": "psfx.3rd-level-spells.call-lightning.v1.secondary.2",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -195,9 +195,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Charged Javelin",
         "menu": "range"
     }

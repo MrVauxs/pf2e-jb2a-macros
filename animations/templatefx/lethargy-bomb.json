@@ -1,7 +1,8 @@
 {
     "label": "Lethargy Bomb",
     "macro": {
-        "enable": false
+        "enable": false,
+        "playWhen": "0"
     },
     "menu": "templatefx",
     "primary": {

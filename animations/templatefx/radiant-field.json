@@ -13,15 +13,16 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Cast/CastShapeCircle01_01_Regular_Yellow_600x600.webm"
+            "customPath": "jb2a.markers.light.nopulse.yellow"
         },
         "sound": {
-            "enable": false,
+            "enable": true,
             "delay": 0,
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
-            "volume": 0.75
+            "volume": 0.75,
+            "file": "psfx.2nd-level-spells.moonbeam.intro.v1.001"
         },
         "options": {
             "contrast": 0,
@@ -177,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Radiant Field",
-        "menu": "templatefx"
     }
 }

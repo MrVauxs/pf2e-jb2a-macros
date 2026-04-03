@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/impacts/magicaleffects/psychic/meleeattack-impacts-magicaleffects-psychic-01.ogg",
+            "file": "psfx.weapon-swooshes.light.v1.group01.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -169,7 +169,7 @@
         }
     },
     "target": {
-        "enable": false,
+        "enable": true,
         "options": {
             "addTokenWidth": false,
             "anchor": "0.5",
@@ -191,8 +191,8 @@
         },
         "sound": {
             "delay": 0,
-            "enable": false,
-            "file": "",
+            "enable": true,
+            "file": "psfx.impacts.magicaleffects.psychic.3",
             "startTime": 0,
             "repeat": 1,
             "repeatDelay": 250,
@@ -200,19 +200,12 @@
         },
         "video": {
             "dbSection": "static",
-            "menuType": "spell",
-            "animation": "curewounds",
-            "variant": "01",
-            "color": "blue",
+            "menuType": "generic",
+            "animation": "ui",
+            "variant": "horror",
+            "color": "purple",
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Dread Ampoule",
-        "menu": "range"
     }
 }

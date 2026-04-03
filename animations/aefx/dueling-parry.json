@@ -67,7 +67,7 @@
         "video": {
             "animation": "spinning",
             "color": "orange",
-            "customPath": "modules/jb2a_patreon/Library/Generic/Energy/Shimmer01_01_Regular_Orange_400x400.webm",
+            "customPath": "jb2a.shimmer.01.orange",
             "dbSection": "static",
             "enableCustom": false,
             "menuType": "tokenborder",

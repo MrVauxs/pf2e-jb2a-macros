@@ -28,7 +28,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/musical-instruments/strummed-plucked/lute/strummed/lute-Cmaj7sharp11-strum.ogg",
+            "file": "psfx.musical-instruments.flute.01.long.keyOfC.Cmaj7sharp11",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -41,7 +41,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/001/TemplateCone5e001_002_Blue_30ft_800x800.webm"
+            "customPath": "jb2a.template_cone_PF2e.001.002.blueteal"
         }
     },
     "secondary": {
@@ -167,12 +167,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Haunting Hymn",
-        "menu": "templatefx"
     }
 }

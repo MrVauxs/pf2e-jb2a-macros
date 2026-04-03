@@ -13,12 +13,12 @@
             "variant": "acid",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/2nd_Level/Scorching_Ray/ScorchingRayLoop_01_Regular_Rainbow02_30ft_1600x400.webm"
+            "customPath": "jb2a.scorching_ray.loop.01.rainbow02"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/musical-instruments/strummed-plucked/lute/strummed-tremolo/lute-Cadd9-strum-tremolo.ogg",
+            "file": "psfx.musical-instruments.lute.01.strummed-tremolo.keyOfA",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "The Queen's Rainbow",
-        "menu": "templatefx"
     }
 }

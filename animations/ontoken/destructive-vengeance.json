@@ -132,7 +132,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/conditions/generic-layers/generic-layer-001.ogg",
+            "file": "psfx.conditions.generic-layer.001",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Destructive Vengeance",
         "menu": "ontoken"
     }

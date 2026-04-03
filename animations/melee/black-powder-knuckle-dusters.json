@@ -66,7 +66,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+            "file": "psfx.ranged-weapons.guns.single-fire.revolver",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -94,7 +94,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/weapon-swooshes/fire/v1/group01/meleeattack-swoosh-magicaleffect-group01-fire-03.ogg",
+            "file": "psfx.weapon-swooshes.fire.v1.group01",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -234,9 +234,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Black Powder Knuckle Dusters",
         "menu": "melee"
     }

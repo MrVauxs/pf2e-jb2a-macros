@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fire/Flame/Flames_01_Regular_Orange_200x200.webm"
+            "customPath": "jb2a.flames.01.orange"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/casting/fire/cast-fire-02.ogg",
+            "file": "psfx.casting.fire",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Heat Metal",
         "menu": "ontoken"
     }

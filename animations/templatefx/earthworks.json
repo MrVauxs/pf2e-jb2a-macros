@@ -12,13 +12,13 @@
             "animation": "sleetstorm",
             "variant": "01",
             "color": "green",
-            "enableCustom": false,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Traps/Falling_Rocks/FallingRocks01Top_02_Regular_Black_05x05ft_Endframe.webp"
+            "enableCustom": true,
+            "customPath": "jb2a.ground_cracks.green"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/misty-step/v1/intro/misty-step-intro-earth-001.ogg",
+            "file": "psfx.2nd-level-spells.misty-step.v1.intro.earth",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -32,7 +32,7 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
+            "opacity": 0.5,
             "persistent": true,
             "persistType": "attachtemplate",
             "playbackRate": 1,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Earthworks",
-        "menu": "templatefx"
     }
 }

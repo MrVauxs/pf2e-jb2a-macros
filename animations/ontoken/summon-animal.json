@@ -189,9 +189,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Summon Animal",
         "menu": "ontoken"
     }

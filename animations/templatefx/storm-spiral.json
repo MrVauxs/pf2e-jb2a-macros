@@ -18,7 +18,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/3rd-level-spells/call-lightning/v1/cast/call-lightning-001.ogg",
+            "file": "psfx.3rd-level-spells.call-lightning.v1.cast",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -138,23 +138,24 @@
         }
     },
     "target": {
-        "enable": false,
+        "enable": true,
         "video": {
             "dbSection": "static",
-            "menuType": "spell",
-            "animation": "curewounds",
+            "menuType": "lightning",
+            "animation": "strike",
             "variant": "01",
             "color": "blue",
             "enableCustom": false,
             "customPath": ""
         },
         "sound": {
-            "enable": false,
+            "enable": true,
             "delay": 0,
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
-            "volume": 0.75
+            "volume": 0.75,
+            "file": "psfx.3rd-level-spells.call-lightning.v1.primary"
         },
         "options": {
             "addTokenWidth": false,
@@ -178,12 +179,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Storm Spiral",
-        "menu": "templatefx"
     }
 }

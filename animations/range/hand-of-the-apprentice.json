@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/class-features/divine-smite/v1/divine-smite-target-01.ogg",
+            "file": "psfx.class-features.divine-smite.v1.001.target",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -193,9 +193,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Hand of the Apprentice",
         "menu": "range"
     }

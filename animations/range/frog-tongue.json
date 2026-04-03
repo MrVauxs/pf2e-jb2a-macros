@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "darkred",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Line/Nature/Piercing_Nature01_01_Regular_Green_1000x400.webm"
+            "customPath": "jb2a.template_line_piercing.nature.01.green"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/creature/movement/footsteps/indoors/002/footsteps-single-indoors-002-07.ogg",
+            "file": "psfx.creature.movement.footsteps.indoors.002.single.6",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -193,9 +193,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Frog Tongue",
         "menu": "range"
     }

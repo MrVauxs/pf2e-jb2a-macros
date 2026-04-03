@@ -67,7 +67,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/moonbeam/v1/moonbeam-outro-v1-001.ogg",
+            "file": "psfx.cantrips.eldritch-blast.v1.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -76,11 +76,11 @@
         "video": {
             "dbSection": "range",
             "menuType": "spell",
-            "animation": "witchbolt",
+            "animation": "eldritchblast",
             "variant": "01",
-            "color": "blue",
-            "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/2nd_Level/Scorching_Ray/ScorchingRay_01_Regular_Purple_30ft_1600x400.webm"
+            "color": "lightblue",
+            "enableCustom": false,
+            "customPath": "jb2a.scorching_ray.01.purple"
         }
     },
     "secondary": {
@@ -206,12 +206,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Moonlight Ray",
-        "menu": "range"
     }
 }

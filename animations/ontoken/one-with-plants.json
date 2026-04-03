@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/1st-level-spells/entangle/vines/v1/entangle-intro.ogg",
+            "file": "psfx.1st-level-spells.entangle.vines.v1.001.intro",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "One With Plants",
         "menu": "ontoken"
     }

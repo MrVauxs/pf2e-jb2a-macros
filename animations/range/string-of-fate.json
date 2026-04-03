@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/mind-sliver/v1/mind-sliver-001.ogg",
+            "file": "psfx.cantrips.mind-sliver.v1.0",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -193,9 +193,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "String of Fate",
         "menu": "range"
     }

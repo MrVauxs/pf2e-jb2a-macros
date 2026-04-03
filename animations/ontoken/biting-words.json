@@ -82,7 +82,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/musical-instruments/blown/bagpipes/drone/bagpipes-Amaj7sharp11-drone.ogg",
+            "file": "psfx.musical-instruments.bagpipes.01.drone.keyOfF.Fmaj7sharp11",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Biting Words",
         "menu": "ontoken"
     }

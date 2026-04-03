@@ -92,7 +92,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/weapon-attacks/spear/v1/spear-001-02.ogg",
+            "file": "psfx.weapon-attacks.spear",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -105,7 +105,7 @@
             "variant": "01",
             "color": "white",
             "enableCustom": false,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Melee/DmgPiercing_01_Regular_Yellow_2Handed_800x600.webm"
+            "customPath": "jb2a.melee_generic.piercing.two_handed"
         }
     },
     "secondary": {
@@ -233,9 +233,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Beak",
         "menu": "melee"
     }

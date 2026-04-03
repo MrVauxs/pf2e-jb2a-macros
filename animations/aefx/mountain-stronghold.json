@@ -67,7 +67,7 @@
         "video": {
             "animation": "earth",
             "color": "darkorange",
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fire/ShieldMoltenEarthBelow01_01_Dark_Orange_400x400.webm",
+            "customPath": "jb2a.shield_themed.below.molten_earth.01.dark_orange",
             "dbSection": "static",
             "enableCustom": false,
             "menuType": "shieldfx",

@@ -26,7 +26,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/misty-step/v1/intro/misty-step-intro-water-001.ogg",
+            "file": "psfx.2nd-level-spells.misty-step.v1.intro.water",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -39,7 +39,7 @@
             "variant": "01",
             "color": "random",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Liquid/LiquidSplash01_Bright_Blue_400x400.webm"
+            "customPath": "jb2a.liquid.splash.bright_purple"
         }
     },
     "secondary": {
@@ -165,12 +165,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Creative Splash",
-        "menu": "templatefx"
     }
 }

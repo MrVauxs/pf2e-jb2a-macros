@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/ranged-magic/generic/projectile/003/ranged-magic-projectile-003-30ft-03.ogg",
+            "file": "psfx.ranged-magic.generic.missile.only.001",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -51,9 +51,9 @@
             "isWait": false,
             "onlyX": false,
             "opacity": 1,
-            "playbackRate": 1,
-            "repeat": 1,
-            "repeatDelay": 250,
+            "playbackRate": 2,
+            "repeat": 3,
+            "repeatDelay": 100,
             "saturate": 0,
             "tint": false,
             "tintColor": "#FFFFFF",
@@ -193,9 +193,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Needle Darts",
         "menu": "range"
     }

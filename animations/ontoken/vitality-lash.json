@@ -78,7 +78,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/cantrips/sacred-flame/v1/sacred-flame-caster-01.ogg",
+            "file": "psfx.cantrips.sacred-flame.v1.001.caster",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -218,9 +218,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Vitality Lash",
         "menu": "ontoken"
     }

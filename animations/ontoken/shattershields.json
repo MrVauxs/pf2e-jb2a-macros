@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Marker/MarkerShieldRampart01_01_Regular_White_400x400.webm"
+            "customPath": "jb2a.markers.shield_rampart.complete.01.white"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/1st-level-spells/shield-spell/v3/shield-spell-v3-intro-03.ogg",
+            "file": "psfx.1st-level-spells.shield-spell.intro.v3.003",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Shattershields",
         "menu": "ontoken"
     }

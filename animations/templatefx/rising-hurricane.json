@@ -18,7 +18,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/gust/v1/gust-001.ogg",
+            "file": "psfx.cantrips.gust.v1",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -180,9 +180,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Rising Hurricane",
         "menu": "templatefx"
     }

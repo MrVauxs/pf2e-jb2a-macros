@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "green",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fireflies/Fireflies_01_Green_Many01_400x400.webm"
+            "customPath": "jb2a.fireflies.many.01.green"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "psfx.1st-level-spells.detect-magic.v1.006",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Buzzing Bites",
         "menu": "ontoken"
     }

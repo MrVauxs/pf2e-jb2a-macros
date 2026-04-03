@@ -5,7 +5,7 @@ function convertName(name) {
 }
 
 function separateAnimations(
-  animationsDir = "./triggers",
+  animationsDir = "./animations",
   baseFile = null,
   types,
 ) {

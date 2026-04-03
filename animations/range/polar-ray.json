@@ -67,7 +67,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/cantrips/ray-of-frost/v2/ray-of-frost-001.ogg",
+            "file": "psfx.cantrips.ray-of-frost.v2.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -207,9 +207,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Polar Ray",
         "menu": "range"
     }

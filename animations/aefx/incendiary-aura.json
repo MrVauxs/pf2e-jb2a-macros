@@ -67,7 +67,7 @@
         "video": {
             "animation": "fire",
             "color": "orange",
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fire/FireRing_01_Circle_Red_500.webm",
+            "customPath": "jb2a.fire_ring.500px.red",
             "dbSection": "static",
             "enableCustom": false,
             "menuType": "shieldfx",

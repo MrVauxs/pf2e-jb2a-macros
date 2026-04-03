@@ -26,7 +26,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-017-01.ogg",
+            "file": "psfx.cantrips.poison-spray.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -166,9 +166,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Retch Rust",
         "menu": "templatefx"
     }

@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "darkgreen",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fire/Campfire/Bonfire_01_Regular_Orange_400x400.webm"
+            "customPath": "jb2a.bonfire.01.orange"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/create-bonfire/v1/create-bonfire-002.ogg",
+            "file": "psfx.cantrips.create-bonfire.v1.002",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Living Bonfire",
-        "menu": "templatefx"
     }
 }

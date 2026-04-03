@@ -15,7 +15,7 @@
             "isWait": false,
             "occlusionAlpha": 0.65,
             "occlusionMode": "3",
-            "opacity": 0.75,
+            "opacity": 0.5,
             "persistent": true,
             "persistType": "attachtemplate",
             "removeTemplate": false,
@@ -28,7 +28,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-018-01.ogg",
+            "file": "psfx.cantrips.poison-spray.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -37,11 +37,11 @@
         "video": {
             "dbSection": "templatefx",
             "menuType": "circle",
-            "animation": "armsofhadar",
+            "animation": "fogcloud",
             "variant": "01",
-            "color": "darkgreen",
+            "color": "white",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Circle/Aura/AuraLoop02_01_Regular_Green_500x500.webm"
+            "customPath": "jb2a.fog_cloud.02.green"
         }
     },
     "secondary": {
@@ -167,12 +167,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Stinking Cloud",
-        "menu": "templatefx"
     }
 }

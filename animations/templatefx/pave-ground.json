@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/TMFX/OutPulse/Line/OutPulse_01_Line_Fast_500.webm"
+            "customPath": "jb2a.extras.tmfx.outpulse.line.01.fast"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-020-01.ogg",
+            "file": "psfx.creature.movement.burrow.001.ranged",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Pave Ground",
-        "menu": "templatefx"
     }
 }

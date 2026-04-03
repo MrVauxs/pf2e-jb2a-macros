@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Traps/Falling_Rocks/FallingRocks01Top_02_Regular_Grey_05x05ft_600x600.webm"
+            "customPath": "jb2a.falling_rocks.top.1x1.grey"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/misty-step/v1/complete/misty-step-complete-earth-001.ogg",
+            "file": "psfx.creature.movement.burrow.001.ranged.90ft",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Weight of Stone",
-        "menu": "templatefx"
     }
 }

@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/ranged-weapons/guns/shotgun/prepare/shotgun-prepare-001-04.ogg",
+            "file": "psfx.ranged-weapons.guns.prepare.shotgun",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Covered Reload",
         "menu": "ontoken"
     }

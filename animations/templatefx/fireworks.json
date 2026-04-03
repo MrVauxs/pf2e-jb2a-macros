@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fireworks/Firework03_01_Regular_OrangeYellow_600x600.webm"
+            "customPath": "jb2a.firework"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/sacred-flame/v1/sacred-flame-target-01.ogg",
+            "file": "psfx.cantrips.sacred-flame.v1.001.target",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Fireworks",
-        "menu": "templatefx"
     }
 }

@@ -67,7 +67,7 @@
         "video": {
             "animation": "drop",
             "color": "red",
-            "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Dizzy_Stars/DizzyStars_01_Green_Thumb.webp",
+            "customPath": "",
             "dbSection": "static",
             "enableCustom": false,
             "menuType": "conditions",

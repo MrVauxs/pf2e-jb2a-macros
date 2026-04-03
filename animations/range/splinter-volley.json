@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "white",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Line/Projectile/VolleyProjectileBullet001_001_01_Line_GreenYellow_30ft_1600x400.webm"
+            "customPath": "jb2a.volley_of_projectiles_Line.bullet.001.002.greenyellow"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/ranged-weapons/guns/revolver/single-fire/revolver-single-fire-001-01.ogg",
+            "file": "psfx.ranged-weapons.guns.single-fire.revolver.1",
             "repeat": 10,
             "repeatDelay": 75,
             "startTime": 0,
@@ -192,12 +192,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Splinter Volley",
-        "menu": "range"
     }
 }

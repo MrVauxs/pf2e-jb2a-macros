@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/1st-level-spells/sleep/v4/sleep-v4-001.ogg",
+            "file": "psfx.1st-level-spells.sleep.v4.001",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Sweet Dreams",
         "menu": "ontoken"
     }

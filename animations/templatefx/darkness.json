@@ -28,8 +28,8 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/1st-level-spells/sleep/v1/sleep-v1-002.ogg",
-            "startTime": 0,
+            "file": "psfx.1st-level-spells.sleep.v1.002",
+            "startTime": 4000,
             "volume": 1,
             "repeat": 1,
             "repeatDelay": 250
@@ -168,9 +168,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Darkness",
         "menu": "templatefx"
     }

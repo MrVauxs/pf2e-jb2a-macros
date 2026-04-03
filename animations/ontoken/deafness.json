@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Conditions/Curse01/ConditionCurse01_018_Purple_600x600.webm"
+            "customPath": "jb2a.condition.curse.01.018.purple"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/casting/sound/cast-sound-03.ogg",
+            "file": "psfx.casting.sound.001.2",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Deafness",
         "menu": "ontoken"
     }

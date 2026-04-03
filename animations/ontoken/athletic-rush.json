@@ -76,7 +76,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/misty-step/v1/intro/misty-step-intro-generic-001.ogg",
+            "file": "psfx.2nd-level-spells.misty-step.v1.intro.generic",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -89,7 +89,7 @@
             "variant": "chevron",
             "color": "yellow",
             "enableCustom": false,
-            "customPath": "modules/jb2a_patreon/Library/Generic/UI/Indicator_01_Regular_Yellow_Thumb.webp"
+            "customPath": ""
         }
     },
     "secondary": {
@@ -217,9 +217,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Athletic Rush",
         "menu": "ontoken"
     }

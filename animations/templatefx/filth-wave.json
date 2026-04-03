@@ -26,7 +26,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "audio/wow/abomination_aggro.ogg",
+            "file": "psfx.cantrips.poison-spray.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,

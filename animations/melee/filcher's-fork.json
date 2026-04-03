@@ -61,7 +61,7 @@
             "variant": "regular",
             "color": "regular",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Weapon_Attacks/Ranged/Fork01_01_Regular_White_30ft_1600x400.webm"
+            "customPath": "jb2a.fork.throw.01.white"
         },
         "sound": {
             "delay": 0,
@@ -94,7 +94,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/weapon-attacks/spear/v1/spear-001-04.ogg",
+            "file": "psfx.weapon-attacks.spear.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -234,9 +234,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Filcher's Fork",
         "menu": "melee"
     }

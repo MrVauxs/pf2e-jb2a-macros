@@ -67,7 +67,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/1st-level-spells/bless/v1/bless-v1-001.ogg",
+            "file": "psfx.1st-level-spells.bless.v1.001",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -80,7 +80,7 @@
             "variant": "02",
             "color": "yellow",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyBeam_02_Regular_Yellow_30ft_1600x400.webm"
+            "customPath": "jb2a.energy_beam.normal.yellow.03"
         }
     },
     "secondary": {
@@ -206,12 +206,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Holy Light",
-        "menu": "range"
     }
 }

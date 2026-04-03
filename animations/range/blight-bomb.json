@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/consumables/potions-vials/cork-bottle/cork-bottle-002.ogg",
+            "file": "psfx.consumables.potions-vials.cork-bottle.002",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -193,7 +193,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "psfx.cantrips.poison-spray.v1.0",
             "startTime": 0,
             "repeat": 1,
             "repeatDelay": 250,
@@ -210,9 +210,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Blight Bomb",
         "menu": "range"
     }

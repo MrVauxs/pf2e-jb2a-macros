@@ -62,12 +62,13 @@
             "opacity": 1,
             "repeat": 1,
             "repeatDelay": 0,
-            "zIndex": 1
+            "zIndex": 1,
+            "playbackRate": 2
         },
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/casting/water/cast-water-02.ogg",
+            "file": "psfx.2nd-level-spells.misty-step.v1.intro.water",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -80,7 +81,7 @@
             "variant": "regular",
             "color": "regular",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/RangedSpell/Missile/001/RangedMissile001_02_Blue_30ft_1600x400.webm"
+            "customPath": "jb2a.ranged_missile.001.blue"
         }
     },
     "secondary": {
@@ -206,12 +207,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Hydraulic Push",
-        "menu": "range"
     }
 }

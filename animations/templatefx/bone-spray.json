@@ -13,13 +13,13 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/Breathweapon02_Arcana01_Dark_Black_Cone_Burst_800x800.webm"
+            "customPath": "jb2a.breath_weapons02.burst.cone.arcana.dark_black.01"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/casting/generic-v2/001/cast-generic-001-02.ogg",
-            "repeat": 1,
+            "file": "psfx.weapon-swooshes.light",
+            "repeat": 5,
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75
@@ -180,9 +180,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Bone Spray",
         "menu": "templatefx"
     }

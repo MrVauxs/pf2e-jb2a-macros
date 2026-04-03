@@ -78,7 +78,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/1st-level-spells/arms-of-hadar/v1/arms-of-hadar-00.ogg",
+            "file": "psfx.1st-level-spells.arms-of-hadar.v1.001",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -91,7 +91,7 @@
             "variant": "shockwave",
             "color": "green",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/UI/IconFear_01_Dark_Purple_200x200.webm"
+            "customPath": "jb2a.icon.fear.dark_purple"
         }
     },
     "secondary": {
@@ -219,9 +219,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Fear",
         "menu": "ontoken"
     }

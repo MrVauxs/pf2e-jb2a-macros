@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/3rd-level-spells/call-lightning/v1/primary/lightning-strike-001.ogg",
+            "file": "psfx.3rd-level-spells.call-lightning.v1.primary.0",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -129,7 +129,7 @@
             "volume": 1,
             "repeat": 1,
             "repeatDelay": 250,
-            "file": "modules/psfx-patreon/library/3rd-level-spells/call-lightning/v1/primary/lightning-strike-001.ogg"
+            "file": "psfx.3rd-level-spells.call-lightning.v1.primary"
         }
     },
     "source": {
@@ -210,9 +210,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Chain Lightning",
         "menu": "range"
     }

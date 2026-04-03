@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/ranged-magic/generic/missile/003/ranged-magic-missile-complete-003-30ft-03.ogg",
+            "file": "psfx.ranged-magic.generic.missile.complete.003",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

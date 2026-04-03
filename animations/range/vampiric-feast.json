@@ -39,7 +39,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/necromancy-magic-sign-circle-outro.ogg"
+            "file": "psfx.magic-signs.circle.v1.necromancy.outro"
         },
         "options": {
             "delay": null,
@@ -176,9 +176,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Vampiric Feast",
         "menu": "range"
     }

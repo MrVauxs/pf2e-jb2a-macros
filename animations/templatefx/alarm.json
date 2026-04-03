@@ -13,12 +13,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Cantrip/Toll_The_Dead/TollTheDeadBell_01_Regular_Grey_400x400.webm"
+            "customPath": "jb2a.toll_the_dead.grey.bell"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/ranged-magic/generic/projectile/002/ranged-magic-projectile-002-30ft-03.ogg",
+            "file": "psfx.ranged-magic.generic.projectile.ranged.002",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Alarm",
-        "menu": "templatefx"
     }
 }

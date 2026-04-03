@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/impacts/slashing/v1/meleeattack-impacts-slashing-01.ogg",
+            "file": "psfx.impacts.slashing.v1.1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -209,9 +209,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Bladed Hoop",
         "menu": "range"
     }

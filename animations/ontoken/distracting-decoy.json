@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyAttack_01_01_Regular_MultiColor01_1000x1000.webm"
+            "customPath": "jb2a.energy_attack.01.multicolored01"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/creature/movement/flight/wings/beating-wings-small-001.ogg",
+            "file": "psfx.creature.movement.flight.wings.small",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Distracting Decoy",
         "menu": "ontoken"
     }

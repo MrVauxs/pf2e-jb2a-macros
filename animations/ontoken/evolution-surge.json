@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-009-01.ogg",
+            "file": "psfx.conditions.boon.009.01",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

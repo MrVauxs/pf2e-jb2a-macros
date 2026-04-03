@@ -109,7 +109,7 @@
             "volume": 1,
             "repeat": 1,
             "repeatDelay": 250,
-            "file": "modules/psfx-patreon/library/2nd-level-spells/misty-step/v1/intro/misty-step-intro-generic-001.ogg"
+            "file": "psfx.2nd-level-spells.misty-step.v1.complete.generic"
         }
     },
     "source": {
@@ -190,9 +190,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Abundant Step",
         "menu": "ontoken"
     }

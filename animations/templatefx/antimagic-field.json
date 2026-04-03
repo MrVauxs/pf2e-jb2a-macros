@@ -1,7 +1,8 @@
 {
     "label": "Antimagic Field",
     "macro": {
-        "enable": false
+        "enable": false,
+        "playWhen": "0"
     },
     "menu": "templatefx",
     "primary": {
@@ -24,8 +25,8 @@
         },
         "sound": {
             "delay": 0,
-            "enable": false,
-            "file": "",
+            "enable": true,
+            "file": "psfx.1st-level-spells.detect-magic.v1.004",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -164,12 +165,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Antimagic Field",
-        "menu": "templatefx"
     }
 }

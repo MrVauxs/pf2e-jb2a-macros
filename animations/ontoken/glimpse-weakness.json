@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/ranged-magic/generic/missile/001/ranged-magic-missile-only-001-30ft-03.ogg",
+            "file": "psfx.ranged-magic.generic.missile.only.001",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Glimpse Weakness",
         "menu": "ontoken"
     }

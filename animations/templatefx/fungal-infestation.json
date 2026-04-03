@@ -10,15 +10,15 @@
             "dbSection": "templatefx",
             "menuType": "cone",
             "animation": "breathweapon",
-            "variant": "cold",
-            "color": "blue",
-            "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Breath_Weapon/BreathWeapon_Poison01_Regular_Green_30ft_Cone_Burst_600x600.webm"
+            "variant": "poison",
+            "color": "black",
+            "enableCustom": false,
+            "customPath": ""
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/cantrips/poison-spray/v1/poison-spray-001.ogg",
+            "file": "psfx.cantrips.poison-spray.v1",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -180,9 +180,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Fungal Infestation",
         "menu": "templatefx"
     }

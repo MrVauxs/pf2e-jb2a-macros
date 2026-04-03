@@ -18,7 +18,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/musical-instruments/strummed-plucked/lute/strummed/lute-Cmaj7sharp11-strum.ogg",
+            "file": "psfx.musical-instruments.lute.01.strummed.keyOfC",
             "repeat": 2,
             "repeatDelay": 250,
             "startTime": 0,
@@ -180,9 +180,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Silver's Refrain",
         "menu": "templatefx"
     }

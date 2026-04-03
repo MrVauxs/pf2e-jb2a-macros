@@ -138,7 +138,7 @@
             "volume": 1,
             "repeat": 1,
             "repeatDelay": 250,
-            "file": "modules/psfx-patreon/library/magic-signs/runes/v1/necromancy-magic-sign-rune-intro.ogg"
+            "file": "psfx.magic-signs.rune.v1.necromancy.intro"
         }
     },
     "source": {
@@ -219,9 +219,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Animate Dead",
         "menu": "ontoken"
     }

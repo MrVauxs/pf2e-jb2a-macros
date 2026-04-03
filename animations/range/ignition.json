@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-3.mp3",
+            "file": "psfx.cantrips.fire-bolt.v2",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,

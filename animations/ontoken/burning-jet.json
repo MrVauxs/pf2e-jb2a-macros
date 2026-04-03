@@ -32,12 +32,12 @@
             "variant": "complete",
             "color": "red",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Fire/FireRing_01_Circle_Red_500.webm"
+            "customPath": "jb2a.fire_ring.500px.red"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/casting/fire/cast-fire-01.ogg",
+            "file": "psfx.casting.fire",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Burning Jet",
         "menu": "ontoken"
     }

@@ -13,13 +13,13 @@
             "variant": "cold",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Cone/Projectile/PF2e/VolleyProjectileArrow001_001_01_ConePF2e_GreenYellow_30ft_800x1000.webm"
+            "customPath": "jb2a.volley_of_projectiles_ConePF2e.arrow.001.003.greenyellow"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/5th-level-spells/cone-of-cold/v1/cone-of-cold-00.ogg",
-            "repeat": 1,
+            "file": "psfx.weapon-swooshes.light",
+            "repeat": 4,
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Hail of Splinters",
-        "menu": "templatefx"
     }
 }

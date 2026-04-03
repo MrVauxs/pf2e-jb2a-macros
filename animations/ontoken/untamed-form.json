@@ -47,7 +47,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/creature/dragons/roar/dragon-roar-large-001.ogg",
+            "file": "psfx.creature.dragons.roar.large",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -59,7 +59,8 @@
             "animation": "static",
             "variant": "07",
             "color": "random",
-            "enableCustom": false
+            "enableCustom": true,
+            "customPath": "jb2a.condition.boon.01.009.green"
         }
     },
     "secondary": {
@@ -185,12 +186,5 @@
             "enableCustom": false,
             "customPath": ""
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Untamed Form",
-        "menu": "ontoken"
     }
 }

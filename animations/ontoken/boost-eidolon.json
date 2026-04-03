@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/conjuration-magic-sign-circle-intro.ogg",
+            "file": "psfx.magic-signs.circle.v1.conjuration.intro",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

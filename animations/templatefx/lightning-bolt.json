@@ -28,7 +28,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/psfx-patreon/library/3rd-level-spells/call-lightning/v1/primary/lightning-strike-001.ogg",
+            "file": "psfx.3rd-level-spells.call-lightning.v1.primary",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -168,9 +168,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Lightning Bolt",
         "menu": "templatefx"
     }

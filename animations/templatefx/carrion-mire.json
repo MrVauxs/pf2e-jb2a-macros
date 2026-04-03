@@ -12,13 +12,13 @@
             "animation": "calllightning",
             "variant": "01",
             "color": "blue",
-            "enableCustom": false,
-            "customPath": ""
+            "enableCustom": true,
+            "customPath": "jb2a.grease.dark_green.loop"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/magic-signs/runes/v1/necromancy-magic-sign-rune-intro-fade.ogg",
+            "file": "psfx.magic-signs.rune.v1.necromancy.intro-fade",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -32,9 +32,9 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
-            "persistent": false,
-            "persistType": "sequencerground",
+            "opacity": 0.5,
+            "persistent": true,
+            "persistType": "attachtemplate",
             "playbackRate": 1,
             "removeTemplate": false,
             "repeat": 1,
@@ -178,12 +178,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Carrion Mire",
-        "menu": "templatefx"
     }
 }

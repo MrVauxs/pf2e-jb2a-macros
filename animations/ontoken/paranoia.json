@@ -32,12 +32,12 @@
             "variant": "01",
             "color": "black",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Marker/MarkerFear_01_Dark_Purple_400x400.webm"
+            "customPath": "jb2a.markers.fear.dark_purple.01"
         },
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/magic-signs/circles/v1/illusion-magic-sign-circle-intro.ogg",
+            "file": "psfx.magic-signs.circle.v1.illusion.intro",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
@@ -202,9 +202,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Paranoia",
         "menu": "ontoken"
     }

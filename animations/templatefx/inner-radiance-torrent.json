@@ -13,15 +13,16 @@
             "variant": "acid",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Template/Line/Breath_Weapon/BreathWeapon_Lightning01_Regular_Blue_30ft_Line_Burst_1200x200.webm"
+            "customPath": "jb2a.ranged.beam.002.01.blue"
         },
         "sound": {
-            "enable": false,
+            "enable": true,
             "delay": 0,
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
-            "volume": 0.75
+            "volume": 0.75,
+            "file": "psfx.cantrips.eldritch-blast.v1"
         },
         "options": {
             "contrast": 0,
@@ -100,20 +101,21 @@
         "enable": true,
         "video": {
             "dbSection": "static",
-            "menuType": "spell",
-            "animation": "curewounds",
+            "menuType": "energy",
+            "animation": "strands",
             "variant": "01",
             "color": "blue",
-            "enableCustom": true,
-            "customPath": "modules/jb2a_patreon/Library/Generic/Energy/EnergyStrandIN01_01_Regular_Blue_600x600.webm"
+            "enableCustom": false,
+            "customPath": "jb2a.energy_strands.in.blue.01"
         },
         "sound": {
-            "enable": false,
+            "enable": true,
             "delay": 0,
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,
-            "volume": 0.75
+            "volume": 0.75,
+            "file": "psfx.1st-level-spells.detect-magic.v1.004"
         },
         "options": {
             "addTokenWidth": false,
@@ -177,12 +179,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Inner Radiance Torrent",
-        "menu": "templatefx"
     }
 }

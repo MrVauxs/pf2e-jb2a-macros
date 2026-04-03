@@ -13,7 +13,7 @@
             "variant": "01",
             "color": "blue",
             "enableCustom": true,
-            "customPath": "jb2a.energy_wall.01.25x05ft.01.complete.orange"
+            "customPath": "jb2a.energy_wall.01.05x05ft.01.complete.blue"
         },
         "sound": {
             "enable": true,
@@ -22,7 +22,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/psfx-patreon/library/conditions/boon/boon-001-01.ogg"
+            "file": "psfx.conditions.boon.001.01"
         },
         "options": {
             "contrast": 0,
@@ -32,7 +32,7 @@
             "isWait": false,
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
-            "opacity": 1,
+            "opacity": 0.5,
             "persistent": true,
             "persistType": "attachtemplate",
             "playbackRate": 1,
@@ -179,12 +179,5 @@
             "unbindVisibility": false,
             "zIndex": 1
         }
-    },
-    "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
-        "label": "Blade Barrier",
-        "menu": "templatefx"
     }
 }

@@ -41,7 +41,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/psfx-patreon/library/impacts/magicaleffects/psychic/meleeattack-impacts-magicaleffects-psychic-01.ogg"
+            "file": "psfx.casting.generic-v2.002.02.0"
         },
         "options": {
             "delay": 0,
@@ -179,9 +179,6 @@
         }
     },
     "metaData": {
-        "name": "PF2e Animations",
-        "moduleVersion": "2.20.0",
-        "version": 2200,
         "label": "Brain Drain",
         "menu": "range"
     }
