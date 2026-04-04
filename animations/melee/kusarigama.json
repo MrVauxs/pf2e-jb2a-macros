@@ -234,6 +234,9 @@
         }
     },
     "metaData": {
+        "name": "PF2e Animations",
+        "moduleVersion": "2.20.1",
+        "version": 2201,
         "label": "Kusarigama",
         "menu": "melee"
     }
