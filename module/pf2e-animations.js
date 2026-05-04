@@ -118,10 +118,17 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
     game.settings.set("pf2e-jb2a-macros", "tmfx", false);
 });
 
+// V13 renamed renderChatMessage → renderChatMessageHTML and changed the second
+// argument from a jQuery wrapper to a raw HTMLElement. Listen on whichever the
+// running version exposes so we work on v11–v14 without tripping deprecations.
 pf2eAnimations.hooks.renderChatMessage = Hooks.on(
-  "renderChatMessage",
-  async (message, [html]) => {
-    for (const btn of html.querySelectorAll(
+  foundry.utils.isNewerVersion(game.version ?? "0", "12")
+    ? "renderChatMessageHTML"
+    : "renderChatMessage",
+  async (message, html) => {
+    const root = html instanceof HTMLElement ? html : html?.[0];
+    if (!root) return;
+    for (const btn of root.querySelectorAll(
       "button.pf2e-animations-settings-button"
     )) {
       btn.addEventListener("click", (event) => {
@@ -754,7 +761,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
   }
 ) {
   pf2eAnimations.requireModule("warpgate");
-  opts = mergeObject(
+  opts = foundry.utils.mergeObject(
     {
       openSheet: true,
       noCollision: true,
@@ -801,7 +808,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
     rememberControlled: true,
   };
 
-  mergeObject(crosshairConfig, opts.crosshairConfig);
+  foundry.utils.mergeObject(crosshairConfig, opts.crosshairConfig);
 
   crosshairConfig.ogIcon = crosshairConfig.icon;
 
@@ -820,27 +827,39 @@ pf2eAnimations.crosshairs = async function crosshairs(
         .play();
     }
 
+    // V13 namespaced Ray under foundry.canvas.geometry; v15 will remove the
+    // global. Prefer the namespaced class but fall back for v11/v12.
+    const RayClass = foundry.canvas?.geometry?.Ray ?? Ray;
+
     while (crosshairs.inFlight) {
       // make it wait or go into an unescapable infinite loop of pain
       await warpgate.wait(50);
 
-      const ray = new Ray((args.token ?? args.tokenD).center, crosshairs);
+      const ray = new RayClass((args.token ?? args.tokenD).center, crosshairs);
 
-      const distance = canvas.grid.measureDistances([{ ray }], {
-        gridSpaces: true,
-      })[0];
+      // V12 deprecated grid.measureDistances in favour of measurePath; V14 removed it.
+      const distance = canvas.grid.measurePath
+        ? canvas.grid.measurePath([ray.A, ray.B]).distance
+        : canvas.grid.measureDistances([{ ray }], { gridSpaces: true })[0];
 
       // Only update if the distance has changed
       if (cachedDistance !== distance) {
         cachedDistance = distance;
         crosshairs.label = `${distance} ft.`;
-        if (
-          distance > opts.range ||
-          (opts.noCollision
-            ? canvas.walls.checkCollision(ray, { type: opts.noCollisionType })
-              .length
-            : false)
-        ) {
+        // V13 removed canvas.walls.checkCollision; collision checks now go
+        // through CONFIG.Canvas.polygonBackends.<type>.testCollision.
+        const collides = (() => {
+          if (!opts.noCollision) return false;
+          const backend = CONFIG.Canvas?.polygonBackends?.[opts.noCollisionType];
+          if (backend) {
+            return backend.testCollision(ray.A, ray.B, {
+              type: opts.noCollisionType,
+              mode: "any",
+            });
+          }
+          return canvas.walls.checkCollision(ray, { type: opts.noCollisionType }).length > 0;
+        })();
+        if (distance > opts.range || collides) {
           crosshairs.icon = "icons/svg/hazard.svg";
           await crosshairs.document.updateSource({
             flags: {
@@ -894,8 +913,9 @@ pf2eAnimations.crosshairs = async function crosshairs(
   }
 
   // Calculate the rotation from the origin in degrees, up = 0
+  const RayClass = foundry.canvas?.geometry?.Ray ?? Ray;
   location.rotationFromOrigin =
-    (new Ray(tokenDoc.center, location).angle * 180) / Math.PI + 90;
+    (new RayClass(tokenDoc.center, location).angle * 180) / Math.PI + 90;
   if (location.rotationFromOrigin < 0) location.rotationFromOrigin += 360;
 
   pf2eAnimations.debug("Crosshairs", args, opts, location);

@@ -204,7 +204,7 @@ class autorecUpdateFormApplication extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ['form'],
             popOut: true,
             template: `modules/pf2e-jb2a-macros/module/autorecUpdateMenu.html`,

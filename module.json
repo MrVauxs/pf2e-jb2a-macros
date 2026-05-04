@@ -53,7 +53,7 @@
     "url": "https://github.com/MrVauxs/pf2e-jb2a-macros",
     "compatibility": {
         "minimum": "11",
-        "verified": "13"
+        "verified": "14"
     },
     "esmodules": [
         "module/settings.js",
