@@ -1,11 +1,9 @@
 <div class="pf2e-animations-autorec-update">{{{literallyEverything}}}</div>
-<form class="flexcol">
-  <footer class="sheet-footer flexrow">
-    <button class="pf2e-animations-autorec-update-buttons" type="update" name="update">
-        <i class="fa fa-check"></i> {{localize 'Update'}}
-    </button>
-    <button class="pf2e-animations-autorec-update-buttons" type="cancel" name="cancel">
-        <i class="fa fa-xmark"></i> {{localize 'Cancel'}}
-    </button>
-  </footer>
-</form>
+<footer class="sheet-footer flexrow form-footer">
+  <button class="pf2e-animations-autorec-update-buttons" type="button" data-action="update">
+      <i class="fa fa-check"></i> {{localize 'Update'}}
+  </button>
+  <button class="pf2e-animations-autorec-update-buttons" type="button" data-action="cancel">
+      <i class="fa fa-xmark"></i> {{localize 'Cancel'}}
+  </button>
+</footer>

@@ -119,8 +119,8 @@ pf2eAnimations.hooks.ready = Hooks.once("ready", () => {
 });
 
 pf2eAnimations.hooks.renderChatMessage = Hooks.on(
-  "renderChatMessage",
-  async (message, [html]) => {
+  "renderChatMessageHTML",
+  async (message, html) => {
     for (const btn of html.querySelectorAll(
       "button.pf2e-animations-settings-button"
     )) {
@@ -289,14 +289,15 @@ pf2eAnimations.hooks.renderActorDirectory = Hooks.on(
   "renderActorDirectory",
   (app, html, data) => {
     if (!(game.user.isGM && game.settings.get("pf2e-jb2a-macros", "debug"))) {
-      const $html = html instanceof jQuery ? html : $(html);
-      const folder = $html.find(
-        `.folder[data-folder-id="${game.folders.get(
-          game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder")
-        )?.id
-        }"]`
-      );
-      folder.remove();
+      const root = html instanceof HTMLElement ? html : html?.[0];
+      if (!root) return;
+      const folderId = game.folders.get(
+        game.settings.get("pf2e-jb2a-macros", "dummyNPCId-folder")
+      )?.id;
+      if (!folderId) return;
+      root
+        .querySelectorAll(`.folder[data-folder-id="${folderId}"]`)
+        .forEach((el) => el.remove());
     }
   }
 );
@@ -754,7 +755,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
   }
 ) {
   pf2eAnimations.requireModule("warpgate");
-  opts = mergeObject(
+  opts = foundry.utils.mergeObject(
     {
       openSheet: true,
       noCollision: true,
@@ -801,7 +802,7 @@ pf2eAnimations.crosshairs = async function crosshairs(
     rememberControlled: true,
   };
 
-  mergeObject(crosshairConfig, opts.crosshairConfig);
+  foundry.utils.mergeObject(crosshairConfig, opts.crosshairConfig);
 
   crosshairConfig.ogIcon = crosshairConfig.icon;
 

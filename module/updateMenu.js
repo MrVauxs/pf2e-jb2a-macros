@@ -190,67 +190,100 @@ async function generateAutorecUpdateHTML() {
     return html
 }
 
-class autorecUpdateFormApplication extends FormApplication {
-    constructor() {
-        super();
-    }
+const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
+
+class autorecUpdateFormApplication extends HandlebarsApplicationMixin(ApplicationV2) {
+    static DEFAULT_OPTIONS = {
+        id: "autorecUpdateMenu",
+        classes: ["pf2e-animations", "form"],
+        tag: "form",
+        window: {
+            title: "PF2e Animations Update",
+            contentClasses: ["standard-form"],
+        },
+        position: { width: 600, height: "auto" },
+        actions: {
+            update: autorecUpdateFormApplication._onUpdate,
+            cancel: autorecUpdateFormApplication._onCancel,
+        },
+    };
+
+    static PARTS = {
+        body: {
+            template: "modules/pf2e-jb2a-macros/module/autorecUpdateMenu.html",
+        },
+    };
 
     async html() {
-        return await generateAutorecUpdateHTML()
+        return await generateAutorecUpdateHTML();
     }
 
     async settings() {
-        return await generateAutorecUpdate()
+        return await generateAutorecUpdate();
     }
 
-    static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
-            classes: ['form'],
-            popOut: true,
-            template: `modules/pf2e-jb2a-macros/module/autorecUpdateMenu.html`,
-            id: 'autorecUpdateMenu',
-            title: 'PF2e Animations Update',
-        });
-    }
-
-    async getData() {
-        // Send data to the template
+    async _prepareContext() {
         return { literallyEverything: await this.html() };
     }
 
-    async activateListeners(html) {
-        const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, blacklistEntriesList } = await this.settings()
-        if (!(
-            missingEntriesList.length
-            || updatedEntriesList.length
-            || customEntriesList.length
-            || removedEntriesList.length
-            || blacklistEntriesList.length
-        )) $('[name="update"]').remove();
-        super.activateListeners(html);
+    async _onRender(context, options) {
+        await super._onRender(context, options);
+        const {
+            missingEntriesList,
+            updatedEntriesList,
+            customEntriesList,
+            removedEntriesList,
+            blacklistEntriesList,
+        } = await generateAutorecUpdate(false);
+        if (
+            !(
+                missingEntriesList.length ||
+                updatedEntriesList.length ||
+                customEntriesList.length ||
+                removedEntriesList.length ||
+                blacklistEntriesList.length
+            )
+        ) {
+            this.element.querySelector('[data-action="update"]')?.remove();
+        }
     }
 
-    async _updateObject(event) {
-        $(".pf2e-animations-autorec-update-buttons").attr("disabled", true)
-        if (event.submitter.name === "update") {
-            console.group("PF2e Animations | Autorecognition Menu Update");
-            const { newSettings, missingEntriesList, updatedEntriesList, customEntriesList, removedEntriesList, blacklistEntriesList } = await this.settings()
-            if (!(
-                missingEntriesList.length
-                || updatedEntriesList.length
-                || customEntriesList.length
-                || removedEntriesList.length
-                || blacklistEntriesList.length
-            )) return console.log("Nothing to update!");
-            /*
-            for (const key of Object.keys(newSettings)) {
-                await game.settings.set('autoanimations', `aaAutorec-${key}`, newSettings[key])
-                console.log(`Updated aaAutorec-${key} with:`, newSettings[key])
-            };
-            */
-            // Passing submitAll: true to ensure menus are updated
-            AutomatedAnimations.AutorecManager.overwriteMenus(JSON.stringify(newSettings), { submitAll: true });
+    static async _onUpdate(event, target) {
+        this.element
+            .querySelectorAll(".pf2e-animations-autorec-update-buttons")
+            .forEach((btn) => (btn.disabled = true));
+        console.group("PF2e Animations | Autorecognition Menu Update");
+        const {
+            newSettings,
+            missingEntriesList,
+            updatedEntriesList,
+            customEntriesList,
+            removedEntriesList,
+            blacklistEntriesList,
+        } = await this.settings();
+        if (
+            !(
+                missingEntriesList.length ||
+                updatedEntriesList.length ||
+                customEntriesList.length ||
+                removedEntriesList.length ||
+                blacklistEntriesList.length
+            )
+        ) {
+            console.log("Nothing to update!");
+            console.groupEnd();
+            return this.close();
         }
+        AutomatedAnimations.AutorecManager.overwriteMenus(
+            JSON.stringify(newSettings),
+            { submitAll: true }
+        );
+        console.groupEnd();
+        return this.close();
+    }
+
+    static async _onCancel(event, target) {
+        return this.close();
     }
 }
 
