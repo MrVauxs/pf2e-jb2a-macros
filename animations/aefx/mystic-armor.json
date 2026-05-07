@@ -27,7 +27,7 @@
             "isRadius": false,
             "isWait": false,
             "opacity": 1,
-            "persistent": true,
+            "persistent": false,
             "playbackRate": 1,
             "playOn": "source",
             "repeat": 1,
@@ -126,7 +126,7 @@
             "repeatDelay": 250,
             "size": 1.2,
             "zIndex": 1,
-            "persistent": true
+            "persistent": false
         }
     },
     "metaData": {

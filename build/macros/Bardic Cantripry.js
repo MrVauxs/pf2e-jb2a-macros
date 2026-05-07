@@ -27,7 +27,7 @@ if (typeof args[0] === "string") {
           .mask()
           .filter("ColorMatrix", { saturate: 1 })
           .tint("#FF0000")
-          .persist(true, { persistTokenPrototype: true })
+          .persist(false, { persistTokenPrototype: false })
           .effect()
           .file("jb2a.token_border.circle.static.blue.001")
           .name(spellName)
@@ -39,7 +39,7 @@ if (typeof args[0] === "string") {
           .scaleToObject(2 * tokenScale)
           .filter("ColorMatrix", { saturate: 1 })
           .tint("#FF0000")
-          .persist(true, { persistTokenPrototype: true })
+          .persist(false, { persistTokenPrototype: false })
           .play()
         break
       }
@@ -58,7 +58,7 @@ if (typeof args[0] === "string") {
           .fadeIn(3000)
           .fadeOut(3000)
           .scaleToObject(1.5 * tokenScale)
-          .persist(true, { persistTokenPrototype: true })
+          .persist(false, { persistTokenPrototype: false })
           .effect()
           .file("jb2a.shield_themed.above.ice.01.blue")
           .name(spellName)
@@ -68,7 +68,7 @@ if (typeof args[0] === "string") {
           .fadeIn(3000)
           .fadeOut(3000)
           .scaleToObject(1.5 * tokenScale)
-          .persist(true, { persistTokenPrototype: true })
+          .persist(false, { persistTokenPrototype: false })
           .play()
         break
       }

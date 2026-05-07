@@ -18,7 +18,7 @@ if (typeof args[0] === "string") {
       .fadeOut(500)
       .attachTo(tokenD)
       .fadeIn(500)
-      .persist(true, { persistTokenPrototype: true })
+      .persist(false, { persistTokenPrototype: false })
       .file("jb2a.entangle.green")
       .play()
   } else if (args[0] == "off") {

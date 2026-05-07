@@ -42,7 +42,7 @@ if (args[0] == "on") {
         .fadeOut(1000)
         .fadeIn(1000)
         .belowTokens()
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -53,7 +53,7 @@ if (args[0] == "on") {
         .fadeIn(2000)
         .belowTokens()
         .scaleToObject(1.3 * tokenScale)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -64,7 +64,7 @@ if (args[0] == "on") {
         .fadeOut(3000)
         .fadeIn(3000)
         .scaleToObject(1.4 * tokenScale)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -75,7 +75,7 @@ if (args[0] == "on") {
         .fadeIn(4000)
         .belowTokens()
         .scaleToObject(1.5 * tokenScale)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -86,7 +86,7 @@ if (args[0] == "on") {
         .fadeOut(5000)
         .fadeIn(5000)
         .scaleToObject(1.6 * tokenScale)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "poison":
@@ -128,7 +128,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(1500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .playIf(!game.modules.get("JB2A_DnD5e")?.active)
         .origin("arcane cascade")
@@ -140,7 +140,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(1500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "positive":
@@ -166,7 +166,7 @@ if (args[0] == "on") {
           hue: 240,
         })
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -179,7 +179,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "negative":
@@ -204,7 +204,7 @@ if (args[0] == "on") {
         .fadeOut(500)
         .playIf(!game.modules.get("JB2A_DnD5e")?.active)
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -215,7 +215,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -242,7 +242,7 @@ if (args[0] == "on") {
           hue: 60,
         })
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .origin("arcane cascade")
         .name(tokenD.name + "'s Arcane Cascade")
@@ -256,7 +256,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "mental":
@@ -302,7 +302,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "lawful":
@@ -327,7 +327,7 @@ if (args[0] == "on") {
         .mask()
         .fadeIn(700)
         .tint("#FFA500")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.ward.rune.yellow.01")
         .origin("arcane cascade")
@@ -341,7 +341,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeOut(500)
         .fadeIn(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "good":
@@ -372,7 +372,7 @@ if (args[0] == "on") {
         .belowTokens()
         .scaleToObject(1.7 * tokenScale)
         .fadeOut(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "force":
@@ -393,7 +393,7 @@ if (args[0] == "on") {
         .attachTo(tokenD)
         .tieToDocuments([args[1]?.item, tokenD])
         .scaleToObject(1.4 * tokenScale)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.wall_of_force.sphere.blue")
         .origin("arcane cascade")
@@ -403,7 +403,7 @@ if (args[0] == "on") {
         .scaleToObject(1.3 * tokenScale)
         .fadeIn(800)
         .fadeOut(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "fire":
@@ -422,7 +422,7 @@ if (args[0] == "on") {
         .fadeIn(500)
         .fadeOut(500)
         .opacity(0.7)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.fumes.fire.orange")
         .origin("arcane cascade")
@@ -434,7 +434,7 @@ if (args[0] == "on") {
         .scaleToObject(1.5 * tokenScale)
         .fadeIn(500)
         .fadeOut(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.token_border.circle.static.blue.005")
         .origin("arcane cascade")
@@ -448,7 +448,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
         .opacity(0.9)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "electricity":
@@ -475,7 +475,7 @@ if (args[0] == "on") {
         .tieToDocuments([args[1]?.item, tokenD])
         .scaleToObject(1.5 * tokenScale)
         .fadeOut(500)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file(assets[0])
         .origin("arcane cascade")
@@ -485,7 +485,7 @@ if (args[0] == "on") {
         .fadeOut(3000)
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .play()
       break
     case "evil":
@@ -512,7 +512,7 @@ if (args[0] == "on") {
         .mask()
         .fadeIn(700)
         .tint("#ff4500")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.token_border.circle.static.blue.001")
         .origin("arcane cascade")
@@ -524,7 +524,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
         .tint("#ff4500")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
       break
     case "cold":
       seq
@@ -550,7 +550,7 @@ if (args[0] == "on") {
         .fadeOut(1500)
         .mask()
         .fadeIn(700)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.token_border.circle.static.blue.001")
         .origin("arcane cascade")
@@ -561,7 +561,7 @@ if (args[0] == "on") {
         .opacity(0.6)
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.shield_themed.below.ice.01.blue")
         .origin("arcane cascade")
@@ -573,7 +573,7 @@ if (args[0] == "on") {
         .belowTokens()
         .scaleToObject(1.4 * tokenScale)
         .fadeIn(700)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.shield_themed.above.ice.01.blue")
         .origin("arcane cascade")
@@ -583,7 +583,7 @@ if (args[0] == "on") {
         .fadeOut(3000)
         .scaleToObject(1.4 * tokenScale)
         .fadeIn(700)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
       break
     case "chaotic":
       seq
@@ -609,7 +609,7 @@ if (args[0] == "on") {
         .mask()
         .fadeIn(700)
         .tint("#800080")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.token_border.circle.static.blue.001")
         .origin("arcane cascade")
@@ -621,7 +621,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
         .tint("#800080")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
       break
     case "acid":
       seq
@@ -656,7 +656,7 @@ if (args[0] == "on") {
         .mask()
         .fadeIn(700)
         .tint("#8ffe09")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.token_border.circle.static.blue.001")
         .origin("arcane cascade")
@@ -668,7 +668,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
         .tint("#8ffe09")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
       break
     case "slashing":
     case "piercing":
@@ -711,7 +711,7 @@ if (args[0] == "on") {
         .fadeOut(1500)
         .mask()
         .fadeIn(700)
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
         .effect()
         .file("jb2a.token_border.circle.static.blue.001")
         .origin("arcane cascade")
@@ -723,7 +723,7 @@ if (args[0] == "on") {
         .scaleToObject(2 * tokenScale)
         .fadeIn(700)
         .tint("#808080")
-        .persist(true, { persistTokenPrototype: true })
+        .persist(false, { persistTokenPrototype: false })
       break
   }
   seq.play()

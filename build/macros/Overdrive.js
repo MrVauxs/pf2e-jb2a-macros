@@ -40,7 +40,7 @@ if (args[0] == "on" || testArgs === "on") {
     .tieToDocuments(args.length ? args[1].item : [])
     .scaleToObject(1.5 * tokenScale)
     .fadeOut(500)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .effect()
     .file(assets[0])
     .origin("overdrive")
@@ -50,7 +50,7 @@ if (args[0] == "on" || testArgs === "on") {
     .fadeOut(500)
     .scaleToObject(2 * tokenScale)
     .fadeIn(700)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .play()
 } else if (testArgs == "off") {
   await Sequencer.EffectManager.endEffects({
