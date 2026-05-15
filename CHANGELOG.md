@@ -1,3 +1,6 @@
+# Version 2.20.3
+- Bumped compatibility to v14. (Thanks @takaqiao!)
+
 # Version 2.20.2
 - Updated animations to use Sequencer DB paths instead of file paths. (Thanks @ChasarooniZ!)
 
