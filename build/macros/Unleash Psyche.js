@@ -52,7 +52,7 @@ if (args[0] == "on" || testArgs === "on") {
     .filter("ColorMatrix", { hue: 250 })
     .scaleToObject(tokenScale)
     .fadeIn(300)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .effect()
     .origin("UnleashPsyche")
     .name(nameOfEffect + " - Particles (Swirl)")
@@ -63,7 +63,7 @@ if (args[0] == "on" || testArgs === "on") {
     .filter("ColorMatrix", { hue: 250 })
     .scaleToObject(1.7 * tokenScale)
     .fadeIn(300)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .effect()
     .origin("UnleashPsyche")
     .name(nameOfEffect + " - Token Border")
@@ -75,7 +75,7 @@ if (args[0] == "on" || testArgs === "on") {
     .fadeOut(3000)
     .scaleToObject(2 * tokenScale)
     .filter("ColorMatrix", { hue: 250 })
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .play()
 } else if (testArgs === "off") {
   await Sequencer.EffectManager.endEffects({

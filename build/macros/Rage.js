@@ -111,7 +111,7 @@ if (args[0] === "on" || testArgs === "on") {
     .mask()
     .filter("ColorMatrix", { saturate: 1 })
     .tint("#FF0000")
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .effect()
     .file(assets[1])
     .atLocation(tokenD)
@@ -124,7 +124,7 @@ if (args[0] === "on" || testArgs === "on") {
     .scaleToObject(2 * tokenScale)
     .filter("ColorMatrix", { saturate: 1 })
     .tint("#FF0000")
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .play()
 } else if (testArgs === "off") {
   Sequencer.EffectManager.endEffects({ origin: "rage", source: tokenD })

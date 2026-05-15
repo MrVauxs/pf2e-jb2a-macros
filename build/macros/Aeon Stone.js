@@ -129,7 +129,7 @@ if (args[0] === "invested") {
     .scaleOut(0, 800)
     .scaleIn(0, 800)
     .tieToDocuments(args[1].item)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .name(`${args[1].sourceToken.name} - Aeon Stone - ${stoneType}`)
     .extraEndDuration(3000)
     .play()

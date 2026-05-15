@@ -16,7 +16,7 @@
             "occlusionAlpha": 0,
             "occlusionMode": 0,
             "opacity": 1,
-            "persistent": true,
+            "persistent": false,
             "persistType": "attachtemplate",
             "removeTemplate": false,
             "repeat": 1,

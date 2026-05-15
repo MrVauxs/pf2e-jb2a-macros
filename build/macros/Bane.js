@@ -28,7 +28,7 @@ if (args[0] == "on") {
     .file("jb2a.bless.400px.loop.purple")
     .atLocation(tokenD)
     .fadeOut(500)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .attachTo(tokenD)
     .belowTokens(true)
     .origin("aura-effect-bane")

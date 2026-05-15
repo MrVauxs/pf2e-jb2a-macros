@@ -18,7 +18,7 @@
             "isMasked": false,
             "isRadius": false,
             "opacity": 1,
-            "persistent": true,
+            "persistent": false,
             "repeat": 1,
             "repeatDelay": 250,
             "size": 1,

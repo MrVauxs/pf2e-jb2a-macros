@@ -33,7 +33,7 @@
             "occlusionAlpha": 0.5,
             "occlusionMode": "3",
             "opacity": 0.75,
-            "persistent": true,
+            "persistent": false,
             "persistType": "attachtemplate",
             "playbackRate": 1,
             "removeTemplate": false,

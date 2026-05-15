@@ -39,7 +39,7 @@ if (args[0] == "on" || testArgs === "on") {
     .fadeOut(1500)
     .mask()
     .fadeIn(700)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .effect()
     .file(assets[0])
     .origin("panache")
@@ -52,7 +52,7 @@ if (args[0] == "on" || testArgs === "on") {
     .fadeOut(3000)
     .scaleToObject(2 * tokenScale)
     .fadeIn(700)
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .play()
 } else if (testArgs === "off") {
   await Sequencer.EffectManager.endEffects({

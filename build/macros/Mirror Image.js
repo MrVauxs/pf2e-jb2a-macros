@@ -70,7 +70,7 @@ const mirrorImage = (number, origin) =>
     .tieToDocuments([origin])
     .fadeOut(1000)
     .attachTo(tokenD, { followRotation: !tokenD.document.lockRotation })
-    .persist(true, { persistTokenPrototype: true })
+    .persist(false, { persistTokenPrototype: false })
     .loopProperty("spriteContainer", "rotation", {
       from: 0,
       to: 360,
