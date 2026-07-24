@@ -94,7 +94,7 @@
         "sound": {
             "delay": 1000,
             "enable": true,
-            "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-9.mp3",
+            "file": "psfx.impacts.slashing.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,

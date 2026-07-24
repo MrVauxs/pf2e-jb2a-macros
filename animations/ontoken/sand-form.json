@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/creature/movement/burrow/001/burrow-ranged-001-05ft-03.ogg",
+            "file": "psfx.creature.movement.burrow.001.ranged.05ft",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

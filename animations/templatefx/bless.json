@@ -18,7 +18,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/psfx-patreon/library/1st-level-spells/bless/v2/bless-v2-001.ogg",
+            "file": "psfx.1st-level-spells.bless.v2.001",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

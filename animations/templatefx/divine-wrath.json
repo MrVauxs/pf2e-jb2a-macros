@@ -85,7 +85,7 @@
             "delay": 0,
             "startTime": 0,
             "volume": 1,
-            "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-2.mp3",
+            "file": "psfx.impacts.magicaleffects.generic.002.002",
             "repeat": 1,
             "repeatDelay": 250
         }
