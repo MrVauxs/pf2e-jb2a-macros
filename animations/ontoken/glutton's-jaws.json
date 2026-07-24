@@ -37,7 +37,7 @@
         "sound": {
             "enable": true,
             "delay": 0,
-            "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-6.mp3",
+            "file": "psfx.impacts.slashing.v1",
             "repeat": 1,
             "repeatDelay": 250,
             "startTime": 0,

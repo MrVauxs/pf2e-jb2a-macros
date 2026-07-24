@@ -62,7 +62,7 @@
             "repeatDelay": 250,
             "startTime": 0,
             "volume": 0.75,
-            "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-2.mp3"
+            "file": "psfx.impacts.bludgeoning.v1"
         },
         "options": {
             "delay": 0,

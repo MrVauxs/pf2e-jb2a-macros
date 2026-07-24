@@ -94,7 +94,7 @@
         "sound": {
             "delay": 900,
             "enable": true,
-            "file": "modules/soundfxlibrary/Combat/Single/Melee%20Hit/melee-hit-4.mp3",
+            "file": "psfx.impacts.bludgeoning.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,

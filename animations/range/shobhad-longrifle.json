@@ -127,7 +127,7 @@
             "delay": 0,
             "startTime": 0,
             "volume": 1,
-            "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Fly-By/arrow-fly-by-3.mp3",
+            "file": "psfx.ranged-weapons.guns.single-fire.energy-blaster",
             "repeat": 1,
             "repeatDelay": 250
         }

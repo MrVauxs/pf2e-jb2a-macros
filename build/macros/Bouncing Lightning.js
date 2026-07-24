@@ -14,7 +14,7 @@ let sequence = new Sequence({ moduleName: "PF2e Animations", softFail: true })
   .sound()
   .volume(0.3)
   .file(
-    "modules/soundfxlibrary/Combat/Single/Spell%20Impact%20Lightning/spell-impact-lightning-3.mp3"
+    "psfx.3rd-level-spells.call-lightning.v1.primary"
   )
   .fadeInAudio(500)
   .fadeOutAudio(500)
@@ -35,7 +35,7 @@ for (let i = 1; i < targetTokens.length; i++) {
     .sound()
     .volume(0.3)
     .file(
-      "modules/soundfxlibrary/Combat/Single/Spell%20Impact%20Lightning/spell-impact-lightning-4.mp3"
+      "psfx.3rd-level-spells.call-lightning.v1.secondary"
     )
     .fadeInAudio(500)
     .fadeOutAudio(500)

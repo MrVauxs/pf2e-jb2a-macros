@@ -103,7 +103,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/soundfxlibrary/Misc/Single/Water%20Splash/water-splash-2.mp3",
+            "file": "psfx.cantrips.acid-splash.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,

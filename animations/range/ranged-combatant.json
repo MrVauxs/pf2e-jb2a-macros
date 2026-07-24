@@ -127,7 +127,7 @@
             "delay": 0,
             "startTime": 0,
             "volume": 1,
-            "file": "modules/soundfxlibrary/Combat/Single/Spell%20Impact/spell-impact-1.mp3",
+            "file": "psfx.ranged-magic.generic.projectile.instant.001",
             "repeat": 1,
             "repeatDelay": 250
         }

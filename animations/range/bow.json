@@ -69,7 +69,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Fly-By/arrow-fly-by-*.mp3",
+            "file": "psfx.ranged-weapons.longbow.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -105,7 +105,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Impact/arrow-impact-*.mp3",
+            "file": "psfx.impacts.slashing.v1",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -127,7 +127,7 @@
             "delay": 0,
             "startTime": 0,
             "volume": 1,
-            "file": "modules/soundfxlibrary/Combat/Single/Arrow%20Fly-By/arrow-fly-by-*.mp3",
+            "file": "psfx.ranged-weapons.longbow.v1",
             "repeat": 1,
             "repeatDelay": 250
         }

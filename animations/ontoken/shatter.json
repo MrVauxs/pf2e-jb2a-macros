@@ -76,7 +76,7 @@
         "sound": {
             "delay": 0,
             "enable": true,
-            "file": "modules/soundfxlibrary/Misc/Single/Impact/impact-3.mp3",
+            "file": "psfx.impacts.magicaleffects.generic.002.002",
             "startTime": 0,
             "volume": 1,
             "repeat": 1,
@@ -134,7 +134,7 @@
             "delay": 0,
             "startTime": 0,
             "volume": 1,
-            "file": "modules/soundfxlibrary/Misc/Single/Impact/impact-3.mp3",
+            "file": "psfx.impacts.magicaleffects.generic.002.002",
             "repeat": 1,
             "repeatDelay": 250
         }
